@@ -1,0 +1,39 @@
+---
+layout: post
+title: "怎么用windbg查看managed dump里面的string的值"
+date: 2013-05-12
+comments: true
+categories: 
+---
+<p><a href="http://stackoverflow.com/a/5352242/304115">stackoverflow</a>上这个回答很不错，用一个脚本把string的值打印到文本文件里，很方便。</p>  <div style="border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid; padding-bottom: 5px; background-color: #f5f5f5; padding-left: 5px; padding-right: 5px; border-top: #cccccc 1px solid; border-right: #cccccc 1px solid; padding-top: 5px" class="cnblogs_code">   <pre>$$ Dumps the managed strings to a <span style="color: #0000ff">file</span><span style="color: #000000">
+$$ Platform x86
+$$ Usage $$</span>&gt;a&lt;<span style="color: #800000">&quot;</span><span style="color: #800000">c:\temp\dumpstringtofolder.txt</span><span style="color: #800000">&quot;</span> 6544f9ac <span style="color: #800080">5000</span><span style="color: #000000"> c:\temp\stringtest
+$$ First argument is the </span><span style="color: #0000ff">string</span><span style="color: #000000"> method table pointer
+$$ Second argument is the Min size of the </span><span style="color: #0000ff">string</span><span style="color: #000000"> that needs to be used filter
+$$ the strings
+$$ Third is the path of the </span><span style="color: #0000ff">file</span><span style="color: #000000">
+.foreach ($</span><span style="color: #0000ff">string</span> {!dumpheap -<span style="color: #0000ff">short</span> -mt ${$arg1}  -<span style="color: #000000">min ${$arg2}})
+{ 
+
+  $$ MT        Field      Offset               Type  VT     Attr    Value Name
+  $$ </span><span style="color: #800080">65452978</span>  40000ed        <span style="color: #800080">4</span>         System.Int32  <span style="color: #800080">1</span> instance    <span style="color: #800080">71117</span><span style="color: #000000"> m_stringLength
+  $$ 65451dc8  40000ee        </span><span style="color: #800080">8</span>          System.Char  <span style="color: #800080">1</span><span style="color: #000000"> instance       3c m_firstChar
+  $$ 6544f9ac  40000ef        </span><span style="color: #800080">8</span>        System.String  <span style="color: #800080">0</span><span style="color: #000000">   shared   static Empty
+
+  $$ start of </span><span style="color: #0000ff">string</span> is stored <span style="color: #0000ff">in</span> the 8th offset, <span style="color: #0000ff">which</span><span style="color: #000000"> can be inferred from above
+  $$ Size of the </span><span style="color: #0000ff">string</span> <span style="color: #0000ff">which</span> is stored <span style="color: #0000ff">in</span><span style="color: #000000"> the 4th offset
+  r@$t0</span>=  poi(${$<span style="color: #0000ff">string</span>}+<span style="color: #800080">4</span>)*<span style="color: #800080">2</span><span style="color: #000000">
+  .writemem ${$arg3}${$</span><span style="color: #0000ff">string</span>}.txt ${$<span style="color: #0000ff">string</span>}+<span style="color: #800080">8</span> ${$<span style="color: #0000ff">string</span>}+<span style="color: #800080">8</span>+<span style="color: #000000">@$t0
+}</span></pre>
+</div>
+
+<p>把上面的代码村到一个文件里面，比如<code>c:\temp\dumpstringtofolder.txt。</code></p>
+
+<p><code>然后在windbg里面敲如下的命令：</code></p>
+
+<div style="border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid; padding-bottom: 5px; background-color: #f5f5f5; padding-left: 5px; padding-right: 5px; border-top: #cccccc 1px solid; border-right: #cccccc 1px solid; padding-top: 5px" class="cnblogs_code">
+  <pre>$$&gt;a&lt;”c:\temp\dumpstringtofolder.txt” 6544f9ac <span style="color: #800080">5000</span> c:\temp\stringtest</pre>
+</div>
+
+
+<font face="Courier New"></font>就能把string的值打印在c:\temp\stringtest+address.txt里。

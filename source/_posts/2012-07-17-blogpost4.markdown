@@ -1,0 +1,33 @@
+---
+layout: post
+title: "定义Enum的开始和结束，这样就能循环Enum了"
+date: 2012-07-17
+comments: true
+categories: 
+---
+<div class="highlight">
+<div id="LC1" class="line">示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。</div>
+<div class="line">
+<div class="cnblogs_code">
+<pre><span style="color: #0000ff;">    enum</span><span style="color: #000000;"> ProgrammingLanguage
+    {
+        Language_First </span>= <span style="color: #800080;">0</span><span style="color: #000000;">,
+        CPP </span>= <span style="color: #800080;">1</span><span style="color: #000000;">,
+        CSharp </span>= <span style="color: #800080;">2</span><span style="color: #000000;">,
+        Java </span>=<span style="color: #800080;">3</span><span style="color: #000000;">,
+        Language_Last </span>= <span style="color: #800080;">4</span><span style="color: #000000;">,
+    }
+    </span><span style="color: #0000ff;">class</span><span style="color: #000000;"> Program
+    {
+        </span><span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span> Main(<span style="color: #0000ff;">string</span><span style="color: #000000;">[] args)
+        {
+           </span><span style="color: #0000ff;">for</span> (ProgrammingLanguage i = ProgrammingLanguage.Language_First + <span style="color: #800080;">1</span>; i &lt; ProgrammingLanguage.Language_Last; i++<span style="color: #000000;">)
+            {
+                Console.WriteLine(i);
+            }
+        }
+    }</span></pre>
+</div>
+</div>
+</div>
+<div><embed id="lingoes_plugin_object" width="0" height="0" type="application/lingoes-npruntime-capture-word-plugin" hidden="true" /></div>

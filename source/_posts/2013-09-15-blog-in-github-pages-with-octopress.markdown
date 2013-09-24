@@ -1,4 +1,4 @@
-ori---
+---
 layout: post
 title: "用octopress在Github pages上写博客"
 date: 2013-09-15 21:16

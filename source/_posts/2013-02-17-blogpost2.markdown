@@ -1,0 +1,8 @@
+---
+layout: post
+title: "一个免费轻量的Mathematica替代Mathics"
+date: 2013-02-17
+comments: true
+categories: 
+---
+<a href="http://www.mathics.org/index.html">Mathics - A free, light-weight alternative to Mathematica</a>是一个免费轻量的Mathematica替代Mathics<br /><blockquote></blockquote><script src="http://browser.gwdang.com/get.js?f=/js/gwdang-notifier.js" charset="utf-8" type="text/javascript"></script><script src="http://browser.gwdang.com/get.js?f=/js/gwdang-notifier.js" charset="utf-8" type="text/javascript"></script>

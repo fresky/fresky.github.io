@@ -1,0 +1,76 @@
+---
+layout: post
+title: "C#如何阻止计算机进入屏保或者省电模式"
+date: 2013-04-18
+comments: true
+categories: 
+---
+<p>有时候我们希望阻止计算机进入屏保或者省电模式，比如计算机进入了屏保或者省电模式后可能会导致automation test失败，或者我们就是想在自己出去玩的时候让屏幕一直亮着让老板以为自己刚出去：）</p>
+<p>那这篇文章介绍一下如何用C#程序阻止计算机进入屏保或者省电模式。</p>
+<p>要实现这个功能可以使用下面两个API。</p>
+<h3>1. <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/aa373208%28v=vs.85%29.aspx">SetThreadExecutionState</a></h3>
+<p>通过这个API应用程序可以通知系统它正在运行,从而阻止计算机进入屏保.</p>
+<p>实例代码如下:</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">using</span><span style="color: #000000;"> System;
+</span><span style="color: #0000ff;">using</span><span style="color: #000000;"> System.Runtime.InteropServices;
+
+</span><span style="color: #0000ff;">namespace</span><span style="color: #000000;"> NoSleepMonitor
+{
+    </span><span style="color: #0000ff;">static</span> <span style="color: #0000ff;">internal</span> <span style="color: #0000ff;">class</span><span style="color: #000000;"> NoSleepWay1
+    {
+       [Flags()]
+        </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">enum</span> EXECUTION_STATE : <span style="color: #0000ff;">uint</span> <span style="color: #008000;">//</span><span style="color: #008000;">Determine Monitor State</span>
+<span style="color: #000000;">        {
+            ES_AWAYMODE_REQUIRED </span>= <span style="color: #800080;">0x00000040</span><span style="color: #000000;">,
+            ES_CONTINUOUS </span>= <span style="color: #800080;">0x80000000</span><span style="color: #000000;">,
+            ES_DISPLAY_REQUIRED </span>= <span style="color: #800080;">0x00000002</span><span style="color: #000000;">,
+            ES_SYSTEM_REQUIRED </span>= <span style="color: #800080;">0x00000001</span>
+            <span style="color: #008000;">//</span><span style="color: #008000;"> Legacy flag, should not be used.
+            </span><span style="color: #008000;">//</span><span style="color: #008000;"> ES_USER_PRESENT = 0x00000004</span>
+<span style="color: #000000;">        }
+
+        [DllImport(</span><span style="color: #800000;">"</span><span style="color: #800000;">kernel32.dll</span><span style="color: #800000;">"</span>, CharSet = CharSet.Auto, SetLastError = <span style="color: #0000ff;">true</span><span style="color: #000000;">)]
+        </span><span style="color: #0000ff;">private</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">extern</span><span style="color: #000000;"> EXECUTION_STATE SetThreadExecutionState(EXECUTION_STATE esFlags);
+
+        </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span><span style="color: #000000;"> Sleep()
+        {
+            SetThreadExecutionState(EXECUTION_STATE.ES_CONTINUOUS);
+        }
+
+        </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span><span style="color: #000000;"> NoSleep()
+        {
+            SetThreadExecutionState(EXECUTION_STATE.ES_DISPLAY_REQUIRED </span>|<span style="color: #000000;"> EXECUTION_STATE.ES_CONTINUOUS);
+        }
+    }
+}</span></pre>
+</div>
+<h3>2.<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms724947%28v=vs.85%29.aspx">&nbsp;</a><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ms724947%28v=vs.85%29.aspx">SystemParametersInfo</a></h3>
+<p>通过这个API应用程序可以设置系统参数,其中可以设置屏保的参数,从而取消屏保.</p>
+<p>示例代码如下:</p>
+<div class="cnblogs_code" style="background-color: #f5f5f5; border: #cccccc 1px solid; padding: 5px;">
+<pre><span style="color: #0000ff;">using</span><span style="color: #000000;"> System.Runtime.InteropServices;
+
+
+</span><span style="color: #0000ff;">namespace</span><span style="color: #000000;"> NoSleepMonitor
+{
+    </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">class</span><span style="color: #000000;"> NoSleepWay2
+    {
+        [DllImport(</span><span style="color: #800000;">"</span><span style="color: #800000;">user32</span><span style="color: #800000;">"</span>, EntryPoint = <span style="color: #800000;">"</span><span style="color: #800000;">SystemParametersInfo</span><span style="color: #800000;">"</span>, CharSet = CharSet.Auto, SetLastError = <span style="color: #0000ff;">true</span><span style="color: #000000;">)]
+        </span><span style="color: #0000ff;">private</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">extern</span> <span style="color: #0000ff;">int</span> SystemParametersInfo(<span style="color: #0000ff;">int</span> uAction, <span style="color: #0000ff;">int</span> uParam, <span style="color: #0000ff;">string</span> lpvParam, <span style="color: #0000ff;">int</span><span style="color: #000000;"> fuWinIni);
+
+        </span><span style="color: #0000ff;">private</span> <span style="color: #0000ff;">const</span> <span style="color: #0000ff;">int</span> SPI_SETSCREENSAVEACTIVE = <span style="color: #800080;">0x0011</span><span style="color: #000000;">;
+
+        </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span><span style="color: #000000;"> NoSleep()
+        {
+            SystemParametersInfo(SPI_SETSCREENSAVEACTIVE, </span><span style="color: #800080;">0</span>, <span style="color: #800000;">"</span><span style="color: #800000;">0</span><span style="color: #800000;">"</span>, <span style="color: #800080;">0</span><span style="color: #000000;">);
+        }
+        </span><span style="color: #0000ff;">public</span> <span style="color: #0000ff;">static</span> <span style="color: #0000ff;">void</span><span style="color: #000000;"> Sleep()
+        {
+            SystemParametersInfo(SPI_SETSCREENSAVEACTIVE, </span><span style="color: #800080;">1</span>, <span style="color: #800000;">"</span><span style="color: #800000;">0</span><span style="color: #800000;">"</span>, <span style="color: #800080;">0</span><span style="color: #000000;">);
+        }
+    }
+}</span></pre>
+</div>
+<p>&nbsp;</p>
+<p>我在<a href="https://github.com/fresky/NoSleepMonitor">github</a>上放了一个wpf的小程序,包含了上述代码.</p>

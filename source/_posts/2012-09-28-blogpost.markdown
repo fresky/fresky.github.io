@@ -1,0 +1,17 @@
+---
+layout: post
+title: "C# XMLSerialize 去掉xml声明和xml namespace"
+date: 2012-09-28
+comments: true
+categories: 
+---
+<p>下面的代码可以在C# XMLSerialize 时去掉xml声明和xml namespace。</p>  <div style="border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid; padding-bottom: 5px; background-color: #f5f5f5; padding-left: 5px; padding-right: 5px; border-top: #cccccc 1px solid; border-right: #cccccc 1px solid; padding-top: 5px" class="cnblogs_code">   <pre>ObjectToSerialize objectToSerialize = <span style="color: #0000ff">new</span><span style="color: #000000"> ObjectToSerialize();
+StringBuilder sb </span>= <span style="color: #0000ff">new</span><span style="color: #000000"> StringBuilder();
+XmlSerializerNamespaces ns </span>= <span style="color: #0000ff">new</span><span style="color: #000000"> XmlSerializerNamespaces();
+ns.Add(</span><span style="color: #800000">&quot;&quot;</span>, <span style="color: #800000">&quot;&quot;</span><span style="color: #000000">);
+XmlWriterSettings settings </span>= <span style="color: #0000ff">new</span><span style="color: #000000"> XmlWriterSettings();
+settings.OmitXmlDeclaration </span>= <span style="color: #0000ff">true</span><span style="color: #000000">;
+XmlWriter xmlWriter </span>= XmlWriter.Create(<span style="color: #0000ff">new</span><span style="color: #000000"> StringWriter(sb), settings);
+xmlSerializer.Serialize(xmlWriter, objectToSerialize, ns);
+Console.WriteLine(sb.ToString());</span></pre>
+</div>

@@ -1,0 +1,75 @@
+---
+layout: post
+title: "silverlight中的richtextbox和rtf格式的转换"
+date: 2010-10-09
+comments: true
+categories: 
+---
+<p>silvergliht 4.0中有了richtextbox控件，但是它只接受xaml格式的输入，下面这个函数实现了rtf和xaml的转换，用到了flowdocument。<br /><br />需要注意的是直接从rtf转换过来的话有些attribute silverlight不认。我也不知道找全了没有，目前发现的是 section 里面的一堆attribute，然后就是margin和textindent。另外中文字体也会出错。<br /><br /></p>
+&nbsp;
+<div style="font-family: Courier New; font-size: 10pt; color: black; background: none repeat scroll 0% 0% #cce8cf;">
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;1</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;summary&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;2</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: gray;">///</span><span style="color: green;"> convert the string "from" from sourceFormat to targetFormat</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;3</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;/summary&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;4</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;param name="from"&gt;&lt;/param&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;5</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;param name="sourceFormat"&gt;System.Windows.DataFormats.Rtf</span><span style="color: gray;">&lt;/param&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;6</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;param name="targetFormat"&gt;System.Windows.DataFormats.Xaml</span><span style="color: green;">&nbsp;</span><span style="color: gray;">&lt;/param&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;7</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: gray;">///</span><span style="color: green;"> </span><span style="color: gray;">&lt;returns&gt;&lt;/returns&gt;</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;8</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">private</span> <span style="color: blue;">string</span> convertFormat(<span style="color: blue;">string</span> from, <span style="color: blue;">string</span> sourceFormat, <span style="color: blue;">string</span> targetFormat)</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;&nbsp;9</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;10</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">string</span> xaml = <span style="color: #2b91af;">String</span>.Empty;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;11</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; System.Windows.Documents.<span style="color: #2b91af;">FlowDocument</span> doc = <span style="color: blue;">new</span> System.Windows.Documents.<span style="color: #2b91af;">FlowDocument</span>();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;12</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; System.Windows.Documents.<span style="color: #2b91af;">TextRange</span> range = <span style="color: blue;">new</span> System.Windows.Documents.<span style="color: #2b91af;">TextRange</span>(doc.ContentStart, doc.ContentEnd);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;13</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;14</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">using</span> (<span style="color: #2b91af;">MemoryStream</span> ms = <span style="color: blue;">new</span> <span style="color: #2b91af;">MemoryStream</span>())</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;15</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;16</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">using</span> (<span style="color: #2b91af;">StreamWriter</span> sw = <span style="color: blue;">new</span> <span style="color: #2b91af;">StreamWriter</span>(ms))</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;17</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;18</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; sw.Write(from);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;19</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; sw.Flush();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;20</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ms.Seek(0, <span style="color: #2b91af;">SeekOrigin</span>.Begin);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;21</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; range.Load(ms, sourceFormat);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;22</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;23</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;24</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;25</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;26</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">using</span> (<span style="color: #2b91af;">MemoryStream</span> ms = <span style="color: blue;">new</span> <span style="color: #2b91af;">MemoryStream</span>())</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;27</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;28</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; range = <span style="color: blue;">new</span> System.Windows.Documents.<span style="color: #2b91af;">TextRange</span>(doc.ContentStart, doc.ContentEnd);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;29</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;30</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; range.Save(ms, targetFormat);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;31</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ms.Seek(0, <span style="color: #2b91af;">SeekOrigin</span>.Begin);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;32</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">using</span> (<span style="color: #2b91af;">StreamReader</span> sr = <span style="color: blue;">new</span> <span style="color: #2b91af;">StreamReader</span>(ms))</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;33</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;34</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; xaml = sr.ReadToEnd();</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;35</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;36</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;37</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;38</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: green;">// remove all attribuites in section and remove attribute margin </span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;39</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">if</span> (targetFormat.Equals(System.Windows.<span style="color: #2b91af;">DataFormats</span>.Xaml))</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;40</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; {</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;41</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">int</span> start = xaml.IndexOf(<span style="color: #a31515;">"&lt;Section"</span>);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;42</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">int</span> stop = xaml.IndexOf(<span style="color: #a31515;">"&gt;"</span>) + 1;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;43</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;44</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">string</span> section = xaml.Substring(start, stop);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;45</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;46</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; xaml = xaml.Replace(section, <span style="color: #a31515;">"&lt;Section xml:space=\"preserve\" HasTrailingParagraphBreakOnPaste=\"False\" xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"&gt;"</span>);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;47</span>&nbsp;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;48</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: green;">// remove Margin attribute</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;49</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: #2b91af;">Regex</span> reg = <span style="color: blue;">new</span> <span style="color: #2b91af;">Regex</span>(<span style="color: #a31515;">"Margin=\"[^\"]*\""</span>);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp;&nbsp;50</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; xaml = reg.Replace(xaml, <span style="color: blue;">string</span>.Empty);</p>
+<span style="color: #2b91af;">&nbsp;&nbsp; 51</span>&nbsp;
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp; 52</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: green;">// remove TextIndent attribute</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp; 53</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; reg = <span style="color: blue;">new</span> <span style="color: #2b91af;">Regex</span>(<span style="color: #a31515;">"TextIndent=\"[^\"]*\""</span>);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp; 54</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; xaml = reg.Replace(xaml, <span style="color: blue;">string</span>.Empty);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp; 55</span> </p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp; 56</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: green;">// change the non english font family</span></p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp; 57</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; reg = <span style="color: blue;">new</span> <span style="color: #2b91af;">Regex</span>(<span style="color: #a31515;">"FontFamily=\"[^a-zA-Z]*\""</span>);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp; 58</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; xaml = reg.Replace(xaml, <span style="color: #a31515;">"FontFamily=\"Arial\""</span>);</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;</span><span style="color: #2b91af;">&nbsp; 59</span>&nbsp; </p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp; 60</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp; 61</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span style="color: blue;">return</span> xaml;</p>
+<p style="margin: 0px;"><span style="color: #2b91af;">&nbsp;&nbsp; 62</span> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; }</p>
+</div>
+<p>  <br /><br /></p>
+<div class="zemanta-pixie"><img class="zemanta-pixie-img" src="http://img.zemanta.com/pixy.gif?x-id=ef66d6bc-8980-8f0f-8d17-5ec8d180a374" alt="" /></div>

@@ -1,0 +1,61 @@
+---
+layout: post
+title: "C#的继承类中static constructor的调用问题"
+date: 2013-02-19
+comments: true
+categories: 
+---
+<p>Eric Lippert写了一系列的关于static constructor的文章，<a href="http://ericlippert.com/2013/02/06/static-constructors-part-one/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-one">1</a>，<a href="http://ericlippert.com/2013/02/11/static-constructors-part-two/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-two">2</a>，<a href="http://ericlippert.com/2013/02/14/static-constructors-part-three/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-three">3</a>，<a href="http://ericlippert.com/2013/02/18/static-constructors-part-four/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-four">4</a>，可以读读对static constructor有更好的理解。</p>  <p>转一个其中的例子吧，假设有如下代码。</p>  <div style="border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid; padding-bottom: 5px; background-color: #f5f5f5; padding-left: 5px; padding-right: 5px; border-top: #cccccc 1px solid; border-right: #cccccc 1px solid; padding-top: 5px" class="cnblogs_code">   <pre><span style="color: #0000ff">using</span><span style="color: #000000"> System;
+</span><span style="color: #0000ff">class</span><span style="color: #000000"> B
+{
+  </span><span style="color: #0000ff">static</span> B() { Console.WriteLine(<span style="color: #800000">&quot;</span><span style="color: #800000">B cctor</span><span style="color: #800000">&quot;</span><span style="color: #000000">); }
+  </span><span style="color: #0000ff">public</span> B() { Console.WriteLine(<span style="color: #800000">&quot;</span><span style="color: #800000">B ctor</span><span style="color: #800000">&quot;</span><span style="color: #000000">); }
+  </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">static</span> <span style="color: #0000ff">void</span> M() { Console.WriteLine(<span style="color: #800000">&quot;</span><span style="color: #800000">B.M</span><span style="color: #800000">&quot;</span><span style="color: #000000">); }
+}
+</span><span style="color: #0000ff">class</span><span style="color: #000000"> D : B
+{
+  </span><span style="color: #0000ff">static</span> D() { Console.WriteLine(<span style="color: #800000">&quot;</span><span style="color: #800000">D cctor</span><span style="color: #800000">&quot;</span><span style="color: #000000">); }
+  </span><span style="color: #0000ff">public</span> D() { Console.WriteLine(<span style="color: #800000">&quot;</span><span style="color: #800000">D ctor</span><span style="color: #800000">&quot;</span><span style="color: #000000">); }
+  </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">static</span> <span style="color: #0000ff">void</span> N() { Console.WriteLine(<span style="color: #800000">&quot;</span><span style="color: #800000">D.N</span><span style="color: #800000">&quot;</span><span style="color: #000000">); }
+}
+</span><span style="color: #0000ff">class</span><span style="color: #000000"> P 
+{
+  </span><span style="color: #0000ff">static</span> <span style="color: #0000ff">void</span><span style="color: #000000"> Main()
+  {
+    System.Console.WriteLine(</span><span style="color: #800000">&quot;</span><span style="color: #800000">Main</span><span style="color: #800000">&quot;</span><span style="color: #000000">);
+    </span><span style="color: #0000ff">new</span><span style="color: #000000"> D();
+  }  
+}</span></pre>
+</div>
+
+<p>如果main函数是这样的，</p>
+
+<div style="border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid; padding-bottom: 5px; background-color: #f5f5f5; padding-left: 5px; padding-right: 5px; border-top: #cccccc 1px solid; border-right: #cccccc 1px solid; padding-top: 5px" class="cnblogs_code">
+  <pre><span style="color: #0000ff">static</span> <span style="color: #0000ff">void</span><span style="color: #000000"> Main() 
+{
+  D.M();
+}</span></pre>
+</div>
+
+<p>哪个static constructor会被调到呢？</p>
+
+<p>答案是只有B的会被调到。</p>
+
+<p>如果main函数是这样的，</p>
+
+<div style="border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid; padding-bottom: 5px; background-color: #f5f5f5; padding-left: 5px; padding-right: 5px; border-top: #cccccc 1px solid; border-right: #cccccc 1px solid; padding-top: 5px" class="cnblogs_code">
+  <pre><span style="color: #0000ff">static</span> <span style="color: #0000ff">void</span><span style="color: #000000"> Main() 
+{
+  D.N();
+}</span></pre>
+</div>
+
+
+
+
+
+<p>哪个static constructor会被调到呢？</p>
+
+<p>答案是只有D的会被调到。</p>
+
+<p>是不是有点意外：）</p>

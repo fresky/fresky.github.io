@@ -1,0 +1,11 @@
+---
+layout: post
+title: "C++的vector::push_back()和vector::resize()比较"
+date: 2011-06-24
+comments: true
+categories: 
+---
+今天看别的code写着下面几行来往vector里面添加一个元素。<br />vector&lt;Type&gt; v;<br />long size = (long)v.size();<br />v.resize(size+1);<br />v[size] = newValue;<br /><br />觉得挺奇怪，就去查了查resize()和push_back()的区别，可以看到他们的源代码如下：<br />
+<pre>	void resize(size_type _Newsize)<br />	{	// determine new length, padding with _Ty() elements as needed<br />		resize(_Newsize, _Ty());<br />	}<br />	void resize(size_type _Newsize, _Ty _Val)<br />	{	// determine new length, padding with _Val elements as needed<br />		if (size() &lt; _Newsize)<br />			_Insert_n(end(), _Newsize - size(), _Val);<br />		else if (_Newsize &lt; size())<br />			erase(begin() + _Newsize, end());<br />	}<br /><br />	void push_back(const _Ty&amp; _Val)<br />	{	// insert element at end<br />		if (size() &lt; capacity())<br />			_Mylast = _Ufill(_Mylast, 1, _Val);<br />		else<br />			insert(end(), _Val);<br />	}<br />	iterator insert(const_iterator _Where, const _Ty&amp; _Val)<br />	{	// insert _Val at _Where<br />		size_type _Off = size() == 0 ? 0 : _Where - begin();<br />		_Insert_n(_Where, (size_type)1, _Val);<br />		return (begin() + _Off);<br />	}</pre>
+<br />从代码可以看出来，如果size()小于capasity()肯定是push_back()比resize()要好。如果size()大于等于capacity()，那么push_back()和resize()差不多，但是怎么着都比resize()然后再赋值好。所以最开始的代码应该用push_back()。<br /><br />
+<div class="zemanta-pixie"><img class="zemanta-pixie-img" src="http://img.zemanta.com/pixy.gif?x-id=a3a595c8-59b3-8b5e-9cc2-62c1e84576a8" /></div>

@@ -1,0 +1,25 @@
+---
+layout: post
+title: "C#的overload检查总是发生在编译时吗？"
+date: 2012-10-25
+comments: true
+categories: 
+---
+<p><a href="http://stackoverflow.com/questions/12842712/why-does-the-c-sharp-compiler-not-fault-code-where-a-static-method-calls-an-inst?newsletter=1&amp;nlcode=55866|c739">stackoverflow</a>上有人问为什么下面的代码可以编译成功，但是运行时报错：</p>  <div style="border-bottom: #cccccc 1px solid; border-left: #cccccc 1px solid; padding-bottom: 5px; background-color: #f5f5f5; padding-left: 5px; padding-right: 5px; border-top: #cccccc 1px solid; border-right: #cccccc 1px solid; padding-top: 5px" class="cnblogs_code">   <pre><span style="color: #0000ff">public</span> <span style="color: #0000ff">sealed</span> <span style="color: #0000ff">class</span><span style="color: #000000"> Example
+{
+    </span><span style="color: #0000ff">int</span><span style="color: #000000"> count;
+
+    </span><span style="color: #0000ff">public</span> <span style="color: #0000ff">static</span> <span style="color: #0000ff">void</span><span style="color: #000000"> Foo( dynamic x )
+    {
+        Bar(x);
+    }
+
+    </span><span style="color: #0000ff">void</span><span style="color: #000000"> Bar( dynamic x )
+    {
+        count</span>++<span style="color: #000000">;
+    }
+}</span></pre>
+</div>
+原因是C#如果参数中有dynamic，或者传进来的值是dynamic时，overload的检查发生在运行时，而不是编译时。<a href="http://msdn.microsoft.com/en-us/library/dd264736.aspx">MSDN</a>上有详细的说明。
+
+

@@ -1,0 +1,8 @@
+---
+layout: post
+title: "resharper的convert if to switch太好用了"
+date: 2012-08-09
+comments: true
+categories: 
+---
+<p>在试着用多态，子类来解决if/else 的问题时，resharper的convert if to switch太好用了。</p>

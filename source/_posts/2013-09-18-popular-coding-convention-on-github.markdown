@@ -9,4 +9,4 @@ categories:
 
 [Popular Coding Convention on Github](http://sideeffect.kr/popularconvention/)是一个有趣的网站，它根据Github的代码提交情况分析了几种语言流行的代码规范，目前支持对JavaScript，Java，Python，Scala和Ruby进行统计分析。
 下图是一个针对Python的统计截图。  
-![Popular Python Convention on Github](https://raw.github.com/fresky/fresky.github.io/master/images/20130918PythonConventionGithub.PNG)
+![Popular Python Convention on Github](https://raw.github.com/fresky/fresky.github.io/source/images/20130918PythonConventionGithub.PNG)

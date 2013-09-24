@@ -6,7 +6,7 @@ comments: true
 categories: 
 ---
 
-前段时间开始在Github Pages上用Octopress写博客，可以参见[用octopress在Github pages上写博客](http://fresky.github.io/blog/2013/09/15/blog-in-github-pages-with-octopress/)。于是就想着把自己之前在博客园写的[博客]()也同步到Github上，就做了一个小工具[Blog2Github](https://github.com/fresky/Blog2Github)。
+前段时间开始在Github Pages上用Octopress写博客，可以参见[用octopress在Github pages上写博客](http://fresky.github.io/blog/2013/09/15/blog-in-github-pages-with-octopress/)。于是就想着把自己之前在博客园写的[博客](http://www.cnblogs.com/fresky/)也同步到Github上，就做了一个小工具[Blog2Github](https://github.com/fresky/Blog2Github)。
 
 ##使用方法
 1. 下载[Blog2Github](https://raw.github.com/fresky/Blog2Github/master/Blog2Github.zip)，解压缩，运行Blog2Github.exe。

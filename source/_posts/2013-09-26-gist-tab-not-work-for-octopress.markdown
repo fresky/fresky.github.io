@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "gist tab not work for octopress"
+title: "在octopress中gist tab不能正确的插入gist代码"
 date: 2013-09-26 00:09
 comments: true
 categories: 

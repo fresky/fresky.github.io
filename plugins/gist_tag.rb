@@ -46,7 +46,7 @@ module Jekyll
     end
 
     def get_gist_url_for(gist, file)
-      "https://raw.github.com/gist/#{gist}/#{file}"
+      "https://gist.github.com/#{gist}##{file}"
     end
 
     def cache(gist, file, data)
@@ -84,7 +84,7 @@ module Jekyll
       https.verify_mode = OpenSSL::SSL::VERIFY_NONE
       request           = Net::HTTP::Get.new raw_uri.request_uri
       data              = https.request request
-      if data.code.to_i != 200
+      if data.code.to_i != 200 and data.code.to_i != 302
         raise RuntimeError, "Gist replied with #{data.code} for #{gist_url}"
       end
       data              = data.body

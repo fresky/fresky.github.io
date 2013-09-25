@@ -139,7 +139,7 @@ $ rake setup_github_pages
 如果在多台机器上用，需要每次发布前都pull，发布完都push两个分支。
 
 ##参考
-1. [Tutorial: Create a Blog With Octopress and Host It in Github Pages](http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html)  
+1. [Tutorial: Create a Blog With Octopress and Host It in Github Pages](http://miguelcamba.com/blog/2013/04/22/tutorial-create-a-blog-with-octopress-and-host-it-in-github-pages/)  
 1. [Clone Your Octopress to Blog From Two Places](http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/)  
 1. [Windows下搭建Octopress博客](http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html)
   

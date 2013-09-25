@@ -8,20 +8,18 @@ categories:
 
 今天尝试用Octopress的[gits tab](http://octopress.org/docs/plugins/gist-tag/)插件来把gist插入到博客中，但是发现没有插入成功，调用```rake generate```报如下的错误：
 
-```
-Gist replied with 404 for https://raw.github.com/gist/6700691/ClassHierarchy.cpp
-```
+`Gist replied with 404 for https://raw.github.com/gist/6700691/ClassHierarchy.cpp`
 
 我看了一下这个url，确实是404。于是就到了自己的gist页面看了看，发现应该用如下的url：  
-```https://gist.github.com/6700691#ClassHierarchy.cpp```
+`https://gist.github.com/6700691#ClassHierarchy.cpp`
 
 但是其实这个url也会重定向到：
 
-```https://gist.github.com/fresky/6700691#ClassHierarchy.cpp```
+`https://gist.github.com/fresky/6700691#ClassHierarchy.cpp`
 
-于是就把```plugins\gist_tag.rb```的代码改了改，改成如下：
+于是就把`plugins\gist_tag.rb`的代码改了改，改成如下：
 
-```ruby
+```
     def get_gist_url_for(gist, file)
       "https://gist.github.com/#{gist}##{file}"
     end
@@ -29,7 +27,7 @@ Gist replied with 404 for https://raw.github.com/gist/6700691/ClassHierarchy.cpp
 
 另外如果html返回302，不报异常：
 
-```ruby
+```
     def get_gist_from_web(gist, file)
       gist_url          = get_gist_url_for gist, file
       raw_uri           = URI.parse gist_url

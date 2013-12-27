@@ -6,4 +6,4 @@ comments: true
 categories: 
 ---
 
-[My GitHub Résumé](http://resume.github.io/)可以帮你生成一份github简历，你只需要输入你的github用户名。
+[My GitHub Resume](http://resume.github.io/)可以帮你生成一份github简历，你只需要输入你的github用户名。

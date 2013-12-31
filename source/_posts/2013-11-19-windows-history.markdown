@@ -17,7 +17,7 @@ categories:
 ![2.0](https://raw.github.com/fresky/fresky.github.io/source/images/windows2.0.png)
 
 ###1990, Windows 3.0
-![3.0](https://raw.github.com/fresky/fresky.github.io/source/images/windows3.0.png)
+![3.0](https://raw.github.com/fresky/fresky.github.io/source/images/Windows3.0.png)
 
 ###1995, Windows 95
 ![95](https://raw.github.com/fresky/fresky.github.io/source/images/Windows95.png)

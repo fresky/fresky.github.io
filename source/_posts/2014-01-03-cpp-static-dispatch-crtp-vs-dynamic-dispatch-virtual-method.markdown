@@ -18,7 +18,7 @@ CRTP通过模板实现了静态分发，会带来很多性能的好处。可以�
 下面简单介绍一下怎么实现CRTP。
 
 首先看我们的父类：
-```
+```cpp
 template<typename Derived>  class Parent 
 {
 public:
@@ -38,7 +38,7 @@ private:
 
 再来看看它的子类：
 
-```
+```cpp
 class ChildA :public Parent<ChildA>
 {
 public:
@@ -57,7 +57,7 @@ class ChildB :public Parent<ChildB>
 
 在写一个普通的用虚函数实现分发的类：
 
-```
+```cpp
 class ParentB
 {
 public:
@@ -84,7 +84,7 @@ class ChildD : public ParentB
 然后是调用这两个父类的函数：
 
 
-```
+```cpp
 template<typename Derived> void CRTP(Parent<Derived>& p)
 {
     p.SayHi();
@@ -98,7 +98,7 @@ void Dynamic(ParentB& p)
 
 再来看看```main```函数：
 
-```
+```cpp
 int _tmain(int argc, TCHAR* argv[])
 {
 

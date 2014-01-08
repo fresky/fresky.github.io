@@ -10,7 +10,7 @@ categories:
 
 先看代码:
 
-```
+```cpp
 template<typename Derived>  class Parent 
 {
 public:

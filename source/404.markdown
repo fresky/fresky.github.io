@@ -1,0 +1,9 @@
+﻿---
+layout: page
+title: "404:是您迷路了？还是这个页面不见了……"
+date: 2014-01-01 19:17
+comments: false
+sharing: false
+footer: false
+---
+<script type="text/javascript" src="http://www.qq.com/404/search_children,js" charset="utf-8></script>

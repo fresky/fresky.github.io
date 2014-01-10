@@ -1,4 +1,10 @@
 <section>
   <h1>About Me</h1>
-  <p>A little something about me.</p>
+  {% if site.gravatar_email %}
+	<span>
+		<img src="{% gravatar_image 200 %}" alt="Gravatar of {{ site.author}} " title="Gravatar of {{ site.author }}" />
+	</span>
+  {% endif %}
+  <p/>
+  <span>Email: <a href="mailto:dawei.xu@gmail.com">dawei.xu@gmail.com</a></span>
 </section>

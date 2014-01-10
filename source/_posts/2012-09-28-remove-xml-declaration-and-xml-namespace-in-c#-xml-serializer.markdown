@@ -3,7 +3,7 @@ layout: post
 title: "C# XMLSerialize 去掉xml声明和xml namespace"
 date: 2012-09-28
 comments: true
-categories: 
+categories: C#
 ---
 下面的代码可以在C# XMLSerialize 时去掉xml声明和xml namespace。
 

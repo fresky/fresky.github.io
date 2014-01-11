@@ -107,5 +107,5 @@ gravatar_email: dawei.xu@gmail.com
 # top category
 top_category_limit: 0
 
-# original_url_pre
-#original_url_pre: Original URL: 
+#comment and share                                                                                    
+comment_and_share: true

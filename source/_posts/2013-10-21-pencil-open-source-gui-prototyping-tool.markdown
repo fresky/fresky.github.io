@@ -3,7 +3,7 @@ layout: post
 title: "Pencil-一个开源免费的UI原型工具，自带ios和android模板"
 date: 2013-10-21 09:37
 comments: true
-categories: 
+categories: Resource
 ---
 
 [Pencil](http://pencil.evolus.vn/)是一个开源免费的UI原型工具，自带ios和android模板，可以很方便的做mockup。

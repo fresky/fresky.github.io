@@ -3,7 +3,7 @@ layout: post
 title: ".NET中使用Unity和StructureMap来实现依赖注入Dependency Injection"
 date: 2012-12-22
 comments: true
-categories: 
+categories: CSharp
 ---
 <p>本文用一个非常简单的示例来演示一下如何使用<a href="http://unity.codeplex.com/">Unity</a>和<a href="http://docs.structuremap.net/index.html">StructureMap</a>在C#中实现Dependency Injection。</p>  <p>我们来做一个非常简单的程序，这个程序会把用户输入的字符串做个逆序，然后输出，同时要求记录一下每次用户的输入和结果，我们支持两种Logger，一种是命令行的，一种是对话框的，用户可以选择使用哪种Logger。</p>  <p>界面如下：</p>  <p><a href="http://images.cnblogs.com/cnblogs_com/fresky/201212/201212220029116068.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnblogs.com/cnblogs_com/fresky/201212/201212220029121575.png" width="293" height="129" /></a></p>  <p>这个程序使用MVP来实现的，我们有4个接口如下，分别对应V，P，M和Logger：</p> 
 

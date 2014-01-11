@@ -3,7 +3,7 @@ layout: post
 title: "编码规范"
 date: 2014-01-07 14:26
 comments: true
-categories: 
+categories: [Resource, CPP, CSharp]
 ---
 
 [Google编码规范](http://google-styleguide.googlecode.com/svn/trunk/)，包含C++，Java，R，Python，HTML/CSS，Javascript，JSON，Lisp，Objective-C，Shell，XML。  

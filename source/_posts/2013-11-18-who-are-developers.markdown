@@ -3,7 +3,7 @@ layout: post
 title: "看看程序员都是哪些人"
 date: 2013-11-18 12:56
 comments: true
-categories: 
+categories: Other
 ---
 
 drdobbs上有篇文章[谁是软件工程师](http://www.drdobbs.com/architecture-and-design/who-are-software-developers/240162014)，针对程序员做了一些统计，有一些有趣的结论。比如一个典型的程序员是已婚中年男子，有2到3个子女。

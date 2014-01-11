@@ -16,7 +16,9 @@ Console.WriteLine(z);
 
 <p>然后在命令行写：</p>
 
-```scriptcs Sample.csx```
+```
+scriptcs Sample.csx
+```
 
 <p>然后就能得到如下的输出：</p>
 

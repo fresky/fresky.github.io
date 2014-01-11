@@ -5,4 +5,4 @@ date: 2013-01-21
 comments: true
 categories: 
 ---
-转一个<a href="http://webdevchecklist.com/">Web Developer Checklist</a><br /><blockquote></blockquote><script src="http://browser.gwdang.com/get.js?f=/js/gwdang-notifier.js" charset="utf-8" type="text/javascript"></script>
+转一个<a href="http://webdevchecklist.com/">Web Developer Checklist</a><br />

@@ -5,4 +5,4 @@ date: 2013-01-21
 comments: true
 categories: 
 ---
-<a href="http://www.codeguru.com/csharp/.net/working-with-windows-management-instrumentation.htm">Working with Windows Management Instrumentation</a>演示了怎么通过<span class="body">Windows Management Instrumentation (WMI)拿到系统信息，包括CPU ID，MAC ID，硬盘信息等。<br /></span><blockquote></blockquote><script src="http://browser.gwdang.com/get.js?f=/js/gwdang-notifier.js" charset="utf-8" type="text/javascript"></script>
+<a href="http://www.codeguru.com/csharp/.net/working-with-windows-management-instrumentation.htm">Working with Windows Management Instrumentation</a>演示了怎么通过<span class="body">Windows Management Instrumentation (WMI)拿到系统信息，包括CPU ID，MAC ID，硬盘信息等。<br /></span>

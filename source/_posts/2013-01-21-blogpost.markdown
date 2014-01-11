@@ -5,4 +5,4 @@ date: 2013-01-21
 comments: true
 categories: 
 ---
-<a href="http://calumgrant.net/units/index.html">C++ Units</a>是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，比如把一个length加到了一个area上。<br /><blockquote></blockquote><script src="http://browser.gwdang.com/get.js?f=/js/gwdang-notifier.js" charset="utf-8" type="text/javascript"></script>
+<a href="http://calumgrant.net/units/index.html">C++ Units</a>是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，比如把一个length加到了一个area上。<br />

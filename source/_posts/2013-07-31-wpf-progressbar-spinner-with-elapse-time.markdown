@@ -7,7 +7,7 @@ categories: CSharp
 ---
 <p>今天用.NET 4.5中的TPL的特性做了个小例子，实现了WPF的进度条progressbar，运行时间elapse time和等待spinner。</p>  <p>先上图吧。</p>  <p><img src="https://raw.github.com/fresky/WPFWaiterExample/master/screenshot.png" /></p>  <p>&#160;</p>  <p>这个例子包含4个实现，分别是同步版本（Sync），异步版本（Async），并发版本（Parallel）和通过数据绑定实现的并发版本（Parallel with Data Binding）。代码放在了<a href="https://github.com/fresky/WPFWaiterExample">Github</a>上。其中Spinner的实现来源于stackoverflow上Drew Noakes提供的<a href="http://stackoverflow.com/a/1492141/304115">代码</a>。</p>  <h3>1. 同步版本（Sync）</h3>  <p>这个版本中进度条、运行时间都不能更新，而且用户不能取消，因为所有的工作都是在UI线程中做的，整个UI被阻塞了。示例代码如下：</p>  
 
-```
+```c#
 internal override void Start()
 {
 	startWaiting();
@@ -25,108 +25,43 @@ internal override void Start()
 
 <p>使用C#的<code>await<code><font face="Arial">和</font><code>async<font face="Arial">关键字实现异步调用，这样进度条、运行时间都可以更新了，而且用户可以取消，因为UI没有被阻塞。示例代码如下：</font></code></code></code></p>
 
-<div style="overflow: auto; border-top: gray 0.1em solid; border-right: gray 0.1em solid; background: #ffffff; border-bottom: gray 0.1em solid; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em; width: auto">
-  <table><tbody>
-      <tr>
-        <td>
-          <pre style="margin: 0px; line-height: 125%"> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20</pre>
-        </td>
-
-        <td>
-          <pre style="margin: 0px; line-height: 125%">        <span style="color: #0000ff">internal</span> <span style="color: #0000ff">override</span> <span style="color: #0000ff">async</span> <span style="color: #0000ff">void</span> Start()
+```c#
+        internal override async void Start()
         {
             startWaiting();
 
-            <span style="color: #0000ff">try</span>
+            try
             {
-                <span style="color: #0000ff">for</span> (<span style="color: #2b91af">int</span> i = 1; i &lt;= Job.JobNumber; i++)
+                for (int i = 1; i <= Job.JobNumber; i++)
                 {
-                    <span style="color: #0000ff">await</span> Task.Factory.StartNew(Job.TimeConsumingJob, m_CancellationTokenSource.Token);
+                    await Task.Factory.StartNew(Job.TimeConsumingJob, m_CancellationTokenSource.Token);
                     m_FinishedJob++;
                     m_Progressbar.Value = m_FinishedJob;
                 }
             }
-            <span style="color: #0000ff">catch</span> (OperationCanceledException)
+            catch (OperationCanceledException)
             {
-                m_CancellationTokenSource = <span style="color: #0000ff">new</span> CancellationTokenSource();
+                m_CancellationTokenSource = new CancellationTokenSource();
             }
             
             stopWaiting();
-        }</pre>
-        </td>
-      </tr>
-    </tbody></table>
-</div>
+        }
+```
 
 <h3><code><code></code></code>3. 并发版本（Parallel）</h3>
 
 <p>把后台的工作都并发处理了，除了不阻塞UI之外处理速度得到了提高。示例代码如下：</p>
 
-<div style="overflow: auto; border-top: gray 0.1em solid; border-right: gray 0.1em solid; background: #ffffff; border-bottom: gray 0.1em solid; padding-bottom: 0.2em; padding-top: 0.2em; padding-left: 0.6em; border-left: gray 0.8em solid; padding-right: 0.6em; width: auto">
-  <table><tbody>
-      <tr>
-        <td>
-          <pre style="margin: 0px; line-height: 125%"> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30</pre>
-        </td>
-
-        <td>
-          <pre style="margin: 0px; line-height: 125%">        <span style="color: #0000ff">internal</span> <span style="color: #0000ff">override</span> <span style="color: #0000ff">async</span> <span style="color: #0000ff">void</span> Start()
+```c#
+        internal override async void Start()
         {
             startWaiting();
 
-            List&lt;Task&gt; taskList = <span style="color: #0000ff">new</span> List&lt;Task&gt;();
-            <span style="color: #0000ff">for</span> (<span style="color: #2b91af">int</span> i = 1; i &lt;= Job.JobNumber; i++)
+            List<Task> taskList = new List<Task>();
+            for (int i = 1; i <= Job.JobNumber; i++)
             {
                 taskList.Add(
-                        Task.Factory.StartNew(Job.TimeConsumingJob).ContinueWith(t =&gt;
+                        Task.Factory.StartNew(Job.TimeConsumingJob).ContinueWith(t =>
                             {
                                 m_FinishedJob++;
                                 m_Progressbar.Value = m_FinishedJob;
@@ -137,21 +72,18 @@ internal override void Start()
                         );
             }
 
-            <span style="color: #0000ff">try</span>
+            try
             {
-                <span style="color: #0000ff">await</span> Task.WhenAll(taskList);
+                await Task.WhenAll(taskList);
             }
-            <span style="color: #0000ff">catch</span> (OperationCanceledException)
+            catch (OperationCanceledException)
             {
-                m_CancellationTokenSource = <span style="color: #0000ff">new</span> CancellationTokenSource();
+                m_CancellationTokenSource = new CancellationTokenSource();
             }
 
             stopWaiting();
-        }</pre>
-        </td>
-      </tr>
-    </tbody></table>
-</div>
+        }
+```
 
 <h3>4. 通过数据绑定实现的并发版本（Parallel with Data Binding）</h3>
 

@@ -1,9 +1,0 @@
----
-layout: post
-title: "bug值多少钱（图片转自typemock）"
-date: 2012-11-15
-comments: true
-categories: 
----
-<p><a href="http://www.typemock.com/software-bugs-infographic"> <img src="http://www.typemock.com/images/severity-of-bugs-are-we-doomed-infographic.jpg" alt="The Severity of Bugs: Are We Doomed Infographic" /></a></p>
-<div><embed id="lingoes_plugin_object" width="0" height="0" type="application/lingoes-npruntime-capture-word-plugin" hidden="true" /></div>

@@ -1,8 +1,0 @@
----
-layout: post
-title: "一行语句让你的浏览器变成记事本"
-date: 2013-01-31
-comments: true
-categories: 
----
-<a href="https://coderwall.com/p/lhsrcq">Jose Jesus Perez Aguinaga : One line browser notepad</a><code class="xml">， 只需要在浏览器地址栏键入： data:text/html, <span class="tag">&lt;<span class="title">html</span> <span class="attribute">contenteditable</span>&gt;</span></code><script src="http://browser.gwdang.com/get.js?f=/js/gwdang-notifier.js" charset="utf-8" type="text/javascript"></script>

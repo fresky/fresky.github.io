@@ -3,7 +3,7 @@ layout: post
 title: "在octopress中gist tab不能正确的插入gist代码"
 date: 2013-09-26 00:09
 comments: true
-categories: Github
+categories: [Github, Ruby]
 ---
 
 今天尝试用Octopress的[gits tab](http://octopress.org/docs/plugins/gist-tag/)插件来把gist插入到博客中，但是发现没有插入成功，调用```rake generate```报如下的错误：
@@ -19,7 +19,7 @@ categories: Github
 
 于是就把`plugins\gist_tag.rb`的代码改了改，改成如下：
 
-```
+```ruby
     def get_gist_url_for(gist, file)
       "https://gist.github.com/#{gist}##{file}"
     end
@@ -27,7 +27,7 @@ categories: Github
 
 另外如果html返回302，不报异常：
 
-```
+```ruby
     def get_gist_from_web(gist, file)
       gist_url          = get_gist_url_for gist, file
       raw_uri           = URI.parse gist_url

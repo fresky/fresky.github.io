@@ -10,13 +10,13 @@ categories: CSharp
 ```c#
 	public abstract class IdleMonitor
     {
-        ...
+        // ...
         public event EventHandler TimeoutEventHandler;
 
           protected IdleMonitor(TimeSpan timeout){...}
         public abstract void Start();
         public abstract void Stop();
-        ...
+        //...
     }
 ```
 

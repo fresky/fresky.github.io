@@ -1,0 +1,17 @@
+---
+layout: post
+title: "定制自己的Visual Studio的Debugger Visualizer"
+date: 2012-07-16
+comments: true
+categories: [CSharp, Debug]
+---
+又加了一个debugger visualizer的例子。<br /><img style="max-width: 800px;" src="http://images.cnblogs.com/cnblogs_com/fresky/201207/20120716113443402.png" /><br />更新了代码，见<a href="https://github.com/fresky/DebuggerAttribute">这里</a>。代码里包含了下面的属性：<br />
+	[DebuggerTypeProxy]
+	[DebuggerDisplay]
+	[DebuggerVisualizer]
+	[DebuggerStepThrough]
+	[DebuggerHidden]
+	[Conditional("DEBUG")]
+	[DebuggerBrowsable]
+	[DebuggerVisualizer]
+	

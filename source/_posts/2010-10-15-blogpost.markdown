@@ -1,8 +1,0 @@
----
-layout: post
-title: "Android初体验-悲剧"
-date: 2010-10-15
-comments: true
-categories: 
----
-最近手上有个HTC G2，沃达丰版的，32B，昨晚准备刷最新的2.2ROM，结果刷错了SPL，导致变砖，开门不利啊……<br /><br /><div class="zemanta-pixie"><img class="zemanta-pixie-img" alt="" src="http://img.zemanta.com/pixy.gif?x-id=6735e79c-d71e-8f2f-b35c-bc7e1f2839f0" /></div>

@@ -3,7 +3,7 @@ layout: post
 title: "怎么让Visual Studiot在遇到一个project编译错误时停止编译其它project"
 date: 2013-01-22
 comments: true
-categories: 
+categories: Tool
 ---
 Visual studio一个solution中含有多个project时，当编译整个solution，如果一个project编译出错，visual studio会继续编译其它的project，这在大多数情况下都是不需要的，只是浪费了时间。<br /><a href="http://visualstudiogallery.msdn.microsoft.com/91aaa139-5d3c-43a7-b39f-369196a84fa5">StopOnFirstBuildError extension</a>是一个Visual Studio2012 和2010的插件，可以让Visual Studiot在遇到一个project编译错误时停止编译其它project。对于2008，可以用<a href="http://www.csharpfritz.com/blog/stop-that-build-dont-waste-time-building-projects-in">Stop that Build! Don't waste time building projects in Visual Studio</a>的方法。<br />打开菜单：Tools-&gt;Macros-&gt;Macros IDE，双击"MyMacros",在EnviromentEvents中加入如下代码：
 

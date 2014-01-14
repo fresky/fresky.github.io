@@ -3,7 +3,7 @@ layout: post
 title: "2009年底泰国游总结"
 date: 2010-10-09
 comments: true
-categories: 
+categories: Life
 ---
 <p>圣诞到元旦这段时间和老婆去泰国玩了一趟，下面做个简单的总结，给以后要去玩的同学们一个参考。</p>
 <p><strong>机票篇：</strong></p>
@@ -35,6 +35,6 @@ categories:
 <p>先写这么多吧，以后想起什么来再补上：）</p>
 <br /></blockquote>
 <p><br /> <br /><br /></p>
-<div class="zemanta-pixie"><img class="zemanta-pixie-img" src="http://img.zemanta.com/pixy.gif?x-id=284fc8f5-6986-8ba3-af5c-73c2c2124e7c" alt="" /></div>
+
 <p>
 <a href="http://www.blogabond.com/Promo/GetABlogMap.aspx"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt="" /><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25489" border="0" alt="" width="450" height="300" /></a></p>

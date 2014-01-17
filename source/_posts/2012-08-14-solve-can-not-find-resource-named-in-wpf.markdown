@@ -9,5 +9,5 @@ categories: CSharp
 
 解决这个问题的简单办法有两个：
 
-1. 在App.xaml中指定一个``` x:Name="App" ```
-2. 在Resource中添加一个没用的resource，``` <Style x:Key="unused" /> ```
+1. 在App.xaml中指定一个`x:Name="App"`
+2. 在Resource中添加一个没用的resource，`<Style x:Key="unused" />`

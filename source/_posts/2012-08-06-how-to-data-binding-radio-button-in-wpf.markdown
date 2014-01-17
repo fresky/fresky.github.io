@@ -9,34 +9,37 @@ WPF中的radiobox通过data binding绑定到一个bool属性后，如下所示�
 
 ```c#
 <RadioButton Content="Yes" IsChecked="{Binding UserChoice}"/>
-<RadioButton Content="No"/>
+<RadioButton Content="No" />
 ```
 
 需要用如下的方式：
 ```c#
 <RadioButton Content="Yes" IsChecked="{Binding UserChoice}"/>
 <RadioButton Content="No" IsChecked="{Binding UserChoice, Converter={StaticResource radioConverter}}"/>
+```
 
-radioconverter如下：
-    public class RadioButtonConverter : IValueConverter
-    {
-        public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            if (value is bool)
-            {
-                return !(bool)value;
-            }
-            return value;
-        }
+`radioConverter`如下：
 
-        public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-        {
-            if (value is bool)
-            {
-                return !(bool)value;
-            }
-            return value;
-        }
-    }
+```c#
+public class RadioButtonConverter : IValueConverter
+{
+	public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+	{
+		if (value is bool)
+		{
+			return !(bool)value;
+		}
+		return value;
+	}
+
+	public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
+	{
+		if (value is bool)
+		{
+			return !(bool)value;
+		}
+		return value;
+	}
+}
 ```
 这样就能正确更新了。

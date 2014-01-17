@@ -13,7 +13,7 @@ categories: CSharp
         // ...
         public event EventHandler TimeoutEventHandler;
 
-          protected IdleMonitor(TimeSpan timeout){...}
+        protected IdleMonitor(TimeSpan timeout){...}
         public abstract void Start();
         public abstract void Stop();
         //...

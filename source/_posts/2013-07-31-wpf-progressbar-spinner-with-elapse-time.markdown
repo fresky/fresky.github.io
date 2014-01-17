@@ -23,7 +23,7 @@ internal override void Start()
 
 <h3>2. 异步版本（Async）</h3>
 
-<p>使用C#的`await`和`async<`关键字实现异步调用，这样进度条、运行时间都可以更新了，而且用户可以取消，因为UI没有被阻塞。示例代码如下：
+<p>使用C#的`await`和`async`关键字实现异步调用，这样进度条、运行时间都可以更新了，而且用户可以取消，因为UI没有被阻塞。示例代码如下：
 
 ```c#
         internal override async void Start()

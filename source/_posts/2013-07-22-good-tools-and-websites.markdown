@@ -58,6 +58,8 @@ Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google
 
 [Codecademy](http://www.codecademy.com/)：在线编程学习网站，目前支持JavaScript，HTML/CSS，PHP，Python，Ruby。
 
+[Google的免费Python课程](https://developers.google.com/edu/python/)
+
 [CheckiO](http://www.checkio.org/)：练习Python的网站，用Python完成任务来玩游戏。
 
 [Syncfusion Succinctly系列电子书](http://www.syncfusion.com/resources/techportal/ebooks)：非常简捷明了，比如[C++](http://www.syncfusion.com/resources/techportal/ebooks/cplusplus)的也就100多页，坐几次地铁就看完了。
@@ -65,6 +67,8 @@ Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google
 [Try jQuery](http://try.jquery.com/)
 
 [WiX Tutorial](http://wix.tramontana.co.hu/tutorial)
+
+[Github上的免费电子书](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md?utm_campaign=Manong_Weekly_Issue_5&utm_medium=EDM&utm_source=Manong_Weekly#net-c--vb--nemerle--visual-studio)
 
 ##找工作相关##
 [Careercup](http://www.careercup.com/)  

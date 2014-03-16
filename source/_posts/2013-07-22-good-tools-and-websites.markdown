@@ -26,6 +26,9 @@ WPF应用的spy工具，可以看运行的WPF程序的控件树并且修改属�
 
 ### HTML ###
 Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google/gumbo-parser)
+[Smush.it](http://developer.yahoo.com/yslow/smushit/)： 网站图像优化工具。
+[YSlow](http://developer.yahoo.com/yslow/)：网站性能优化工具。
+
 
 ##学习##
 优化学习过程的闪卡工具：[Mnemosyne](http://mnemosyne-proj.org/)
@@ -62,3 +65,8 @@ Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google
 [Try jQuery](http://try.jquery.com/)
 
 [WiX Tutorial](http://wix.tramontana.co.hu/tutorial)
+
+##找工作相关##
+[Careercup](http://www.careercup.com/)  
+[Glassdoor](http://www.glassdoor.com)  
+[GeekInterview](http://www.geekinterview.com/)  

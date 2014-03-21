@@ -27,6 +27,8 @@ WPF应用的spy工具，可以看运行的WPF程序的控件树并且修改属�
 ### HTML ###
 Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google/gumbo-parser)
 
+测试你的网站是否符合现代标准：[Modern.IE](http://modern.ie/en-us)
+
 ##学习##
 优化学习过程的闪卡工具：[Mnemosyne](http://mnemosyne-proj.org/)
 

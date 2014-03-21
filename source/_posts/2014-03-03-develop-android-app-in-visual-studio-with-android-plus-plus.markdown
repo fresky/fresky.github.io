@@ -8,4 +8,4 @@ keywords: android++, android, visual studio.
 description: Android++是一个免费的Visual Studio插件，安装之后可以在Visual Studio中用C/C++来开发Androi应用。
 ---
 
-[Android++](http://android-plus-plus.com/)是一个免费的Visual Studio插件，安装之后可以在Visual Studio中用C/C++来开发Androi应用。
+[Android++](http://android-plus-plus.com/)是一个免费的Visual Studio插件，安装之后可以在Visual Studio中用C/C++来开发Android应用。

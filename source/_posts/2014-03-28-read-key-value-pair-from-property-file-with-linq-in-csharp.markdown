@@ -23,6 +23,7 @@ File.ReadAllLines(fileName)
 .ToDictionary(split => split[0].Trim(), split => split[1].Trim());
 ```
 用到了如下Linq扩展方法：
+
 - [Enumerable.Select](http://msdn.microsoft.com/en-us/library/system.linq.enumerable.select.aspx)，用来对每一行做split操作，分隔出Key和Value。注意这里要写上分隔成两段。另外要`StringSplitOptions.RemoveEmptyEntries`。
 - [Enumerable.Where](http://msdn.microsoft.com/en-us/library/system.linq.enumerable.where%28v=vs.110%29.aspx)，用来过滤到不符合Key-Value的行。
 - [Enumerable.ToDictionary](http://msdn.microsoft.com/en-us/library/system.linq.enumerable.todictionary%28v=vs.110%29.aspx)，把分隔成两段的第一段作为Key，第二个作为Value存在Dictionary里面。
@@ -35,7 +36,7 @@ Name = Dawei XU
 Email = dawei.xu@gmail.com
 ```
 
-就会抛出[ArgumentException](http://msdn.microsoft.com/en-us/library/system.argumentexception(v=vs.110).aspx)
+就会抛出[ArgumentException](http://msdn.microsoft.com/en-us/library/system.argumentexception.aspx)
 
 > An element with the same key already exists in the Dictionary<TKey, TValue>.
 

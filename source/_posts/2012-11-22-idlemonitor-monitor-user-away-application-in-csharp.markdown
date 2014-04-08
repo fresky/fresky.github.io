@@ -44,14 +44,14 @@ categories: CSharp
 
 <p>combobox中是可选的3种IdleMonitor。</p>
 
-<p><a href="http://images.cnblogs.com/cnblogs_com/fresky/201211/201211221015157046.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnblogs.com/cnblogs_com/fresky/201211/201211221017163728.png" width="345" height="153" /></a></p>
+![3 idle ways](https://raw.github.com/fresky/fresky.github.io/source/images/IdleMonitor1.png)
 
 <p>打开IdleMonitor。</p>
 
-<p><a href="http://images.cnblogs.com/cnblogs_com/fresky/201211/201211221017201126.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnblogs.com/cnblogs_com/fresky/201211/201211221017464705.png" width="352" height="133" /></a></p>
+![turn on](https://raw.github.com/fresky/fresky.github.io/source/images/IdleMonitor2.png)
 
 <p>时间到的时候会调用wpf中写好的event handler，抛如下对话框。</p>
 
-<p><a href="http://images.cnblogs.com/cnblogs_com/fresky/201211/201211221017463343.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnblogs.com/cnblogs_com/fresky/201211/201211221017489986.png" width="365" height="135" /></a></p>
+![idle warning](https://raw.github.com/fresky/fresky.github.io/source/images/IdleMonitor3.png)
 
 <p>在WinForm中的例子类似。</p>

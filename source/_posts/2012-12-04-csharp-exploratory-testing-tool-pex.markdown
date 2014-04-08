@@ -21,7 +21,7 @@ categories: [CSharp, Testing]
 
 <p>用pex.exe命令行跑过之后出了一个report。</p>
 
-<p><a href="http://images.cnblogs.com/cnblogs_com/fresky/201212/201212040041106000.png"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnblogs.com/cnblogs_com/fresky/201212/20121204004115979.png" width="1080" height="156" /></a></p>
+![Pex result](https://raw.github.com/fresky/fresky.github.io/source/images/Pex.png)
 
 <p>并且针对这3种情况自动生成3个unit test，很不错。</p>
 

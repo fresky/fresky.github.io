@@ -5,4 +5,8 @@ date: 2013-07-18
 comments: true
 categories: [Resource, Github]
 ---
-<p>在我之前的一篇博客里面介绍过<a href="http://www.cnblogs.com/fresky/p/3175391.html">tl;drLegal &mdash;&mdash;开源软件license的搜索引擎</a>，可以很方便的查询各种license，并且给出了很简洁的解释。今天又发现了另外一个帮助你选择你的开源软件license的网站<a href="http://choosealicense.com/">ChooseALicense.com</a>，这个网站首页就写了3中最常见的license： MIT， Apache和GPL。点<a href="http://choosealicense.com/licenses/">More Licenses</a>，可以看到其他license的说明。</p><p>另外一个网站<a href="http://addalicense.com/">Add a License</a>，提供了一个很贴心的服务，能自动帮你的没有放置license的github项目加上你选好的license文件。</p>
+在我之前的一篇博客里面介绍过[tl;drLegal——开源软件license的搜索引擎](http://fresky.github.io/blog/2013/07/06/tldrlegal-opensource-license-search-engine/)，可以很方便的查询各种license，并且给出了很简洁的解释。
+
+今天又发现了另外一个帮助你选择你的开源软件license的网站[ChooseALicense.com](http://choosealicense.com/)，这个网站首页就写了3中最常见的license： MIT， Apache和GPL。点[More Licenses](http://choosealicense.com/licenses/)，可以看到其他license的说明。
+
+另外一个网站[Add a License](http://addalicense.com/)，提供了一个很贴心的服务，能自动帮你的没有放置license的github项目加上你选好的license文件。

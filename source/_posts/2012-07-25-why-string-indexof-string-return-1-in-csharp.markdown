@@ -38,4 +38,4 @@ When you develop with the .NET Framework, follow these simple recommendations wh
 
 下表是如何选择StringComparison：
 
-<img style="max-width: 800px;" src="http://images.cnblogs.com/cnblogs_com/fresky/201207/201207251534237908.png" />
+![string comparision](https://raw.github.com/fresky/fresky.github.io/source/images/StringComparison.png)

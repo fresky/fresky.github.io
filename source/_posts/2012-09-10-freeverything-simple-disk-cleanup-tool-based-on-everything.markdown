@@ -8,7 +8,9 @@ categories: [CSharp, Tool]
 <p>用Visual Studiode attach to process调试时，无论你有没有设置symbol path，Visual Studio都会把下载的symbol乱放，特别是会放到solution下面，导致文件夹很乱，所以写了一个小工具来删除这些symbol文件夹。同时也能删除resharper和mstest的临时文件。</p>
 <p><a href="http://www.voidtools.com/">Everything</a>是一个非常快的磁盘搜索，正好基于他的<a href="http://support.voidtools.com/everything/SDK">SDK</a>来做这个小工具。</p>
 <p>界面如下：</p>
-<p><a href="http://images.cnblogs.com/cnblogs_com/fresky/201209/20120910114000832.png"><img style="background-image: none; padding-left: 0px; padding-right: 0px; display: inline; padding-top: 0px; border-width: 0px;" title="image" src="http://images.cnblogs.com/cnblogs_com/fresky/201209/201209101140028749.png" alt="image" width="422" height="319" border="0" /></a></p>
+
+![free everything screenshot](https://raw.github.com/fresky/fresky.github.io/source/images/freeeverything.png)
+
 <p>搜索因为是基于Everything的，所以很快。可以增加新的过滤，用正则表达式搜索，这些过滤存放在启动目录下的GarbageCan.xml里面。还能对搜索到的结果计算大小（如果文件很多会比较慢）。</p>
 <p>源代码放在<a href="https://github.com/fresky/FreeEverything">Github</a>上，可执行文件在<a href="https://github.com/fresky/FreeEverything/blob/master/FreeEverything.zip">这里</a>下载。</p>
 <p>1. 使用<a href="http://www.galasoft.ch/mvvm/">MVVMLight</a>这个mvvm的框架，这个框架很容易上手。</p>

@@ -6,7 +6,14 @@ comments: true
 categories: CSharp
 ---
 <p>今天做了个小东西，需要定制combobox的下拉框，打开下拉框时如下图。</p>
-<p><img src="http://pic002.cnblogs.com/images/2010/163228/2010110822061782.jpg" alt="" /><br />选择一个后，如下图。<br /><img src="http://pic002.cnblogs.com/images/2010/163228/2010110822064085.jpg" alt="" /><br />实现的方法是需要把combobox的DrawoMode设置成OwnerDrawVariable，然后处理DrawItem事件，详见<a href="http://msdn.microsoft.com/en-us/library/system.windows.forms.combobox.drawitem.aspx">ComboBox.DrawItem Event (System.Windows.Forms)</a>代码如下：</p>
+
+![colored combo box](https://raw.github.com/fresky/fresky.github.io/source/images/coloredcombobox.jpg)
+
+选择一个后，如下图。
+
+![colored combo box selected](https://raw.github.com/fresky/fresky.github.io/source/images/coloredcombobox2.jpg)
+
+实现的方法是需要把combobox的DrawoMode设置成OwnerDrawVariable，然后处理DrawItem事件，详见<a href="http://msdn.microsoft.com/en-us/library/system.windows.forms.combobox.drawitem.aspx">ComboBox.DrawItem Event (System.Windows.Forms)</a>代码如下：</p>
 
 ```c#
 private void cb_Risk_DrawItem(object sender, DrawItemEventArgs e)

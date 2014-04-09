@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "值得记录的工具和网站"
-date: 2014-03-15
+date: 2014-04-09
 comments: true
 categories: [Tool, Resource]
 ---
@@ -28,11 +28,17 @@ WPF应用的spy工具，可以看运行的WPF程序的控件树并且修改属�
 Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google/gumbo-parser)
 [Smush.it](http://developer.yahoo.com/yslow/smushit/)： 网站图像优化工具。
 [YSlow](http://developer.yahoo.com/yslow/)：网站性能优化工具。
-
 测试你的网站是否符合现代标准：[Modern.IE](http://modern.ie/en-us)
+
+### Git ###
+[Bonobog Git Server for Windows](http://bonobogitserver.com/)
+[GitLab](https://www.gitlab.com/)，[在windows安装GitLab](http://fresky.github.io/blog/2013/07/16/how-to-install-gitlab-in-windows-github-open-source-alternative/)
 
 ##学习##
 优化学习过程的闪卡工具：[Mnemosyne](http://mnemosyne-proj.org/)
+
+##书籍##
+[GitBook](http://www.gitbook.io/)，从git/github和markdown生成书籍（支持静态网页、pdf、电子书等格式）的命令行工具（也是一个Node.js库）。
 
 ##其它##
 直接把截图复制到硬盘：[Screenshot2Disk](http://screenshot2disk.codeplex.com/)
@@ -53,24 +59,30 @@ Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google
 - [ideone.com](http://ideone.com/) (GCC 4.3.4 and 4.5.1)
 - [Comeau Test Drive](http://comeaucomputing.com/tryitout/) (EDG 4.3.3)
 
+###帮助文档###
+
+[Explain Shell](http://explainshell.com/)
+
 ##在线学习##
 
-[LearnGitBranching](http://pcottle.github.io/learnGitBranching/)：可视化的学习Git。
+[LearnGitBranching](http://pcottle.github.io/learnGitBranching/)：可视化的学习Git。  
+[TryRegex](http://tryregex.com/), [Regex Crossword](http://regexcrossword.com/) (学习正则表达式的游戏网站，用正则表达式玩Crossword)  
+[Codecademy](http://www.codecademy.com/)：在线编程学习网站，目前支持JavaScript，HTML/CSS，PHP，Python，Ruby。  
+[CheckiO](http://www.checkio.org/)：练习Python的网站，用Python完成任务来玩游戏。  
+[Syncfusion Succinctly系列电子书](http://www.syncfusion.com/resources/techportal/ebooks)：非常简捷明了，比如[C++](http://www.syncfusion.com/resources/techportal/ebooks/cplusplus)的也就100多页，坐几次地铁就看完了。  
+[Try jQuery](http://try.jquery.com/)  
+[WiX Tutorial](http://wix.tramontana.co.hu/tutorial)  
+[Simple Programming Problems](http://adriann.github.io/programming_problems.html)
 
-[TryRegex](http://tryregex.com/), [Regex Crossword](http://regexcrossword.com/)
-(学习正则表达式的游戏网站，用正则表达式玩Crossword)
-
-[Codecademy](http://www.codecademy.com/)：在线编程学习网站，目前支持JavaScript，HTML/CSS，PHP，Python，Ruby。
-
-[Google的免费Python课程](https://developers.google.com/edu/python/)
-[CheckiO](http://www.checkio.org/)：练习Python的网站，用Python完成任务来玩游戏。
-
-[Syncfusion Succinctly系列电子书](http://www.syncfusion.com/resources/techportal/ebooks)：非常简捷明了，比如[C++](http://www.syncfusion.com/resources/techportal/ebooks/cplusplus)的也就100多页，坐几次地铁就看完了。
-
-[Try jQuery](http://try.jquery.com/)
-
-[WiX Tutorial](http://wix.tramontana.co.hu/tutorial)
-[Github上的免费电子书](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md?utm_campaign=Manong_Weekly_Issue_5&utm_medium=EDM&utm_source=Manong_Weekly#net-c--vb--nemerle--visual-studio)
+##书籍##
+[free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)  
+[The-Art-Of-Programming-By-July](https://github.com/julycoding/The-Art-Of-Programming-by-July)  
+[C/Go/Python学习笔记](https://github.com/qyuhen/book)  
+[Bits and Bytes of Python from the Internet](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)  
+[Bayesian Methods for Hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)  
+[marathon's reading and summary](http://dirlt.com/)  
+[Free Mathematics Books](http://www.e-booksdirectory.com/mathematics.php)
+[Free Programming Books Collections ](http://www.freeprogrammingbook.com/)
 
 ##找工作相关##
 [Careercup](http://www.careercup.com/)  

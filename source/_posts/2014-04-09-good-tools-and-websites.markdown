@@ -12,33 +12,33 @@ categories: [Tool, Resource]
 ##编程##
 
 ### C# ###
-托管代码帮助文件生成：[Sandcastle Help File Builder](http://shfb.codeplex.com/)  
-C#的IOC框架：[StructureMap](http://docs.structuremap.net/)， [Unity](http://unity.codeplex.com/)， [autofac](http://code.google.com/p/autofac/)  
-C#的unit test的3个A中的第一个Arrange框架：[AutoFixture](https://github.com/AutoFixture)  
-C#的mutation测试框架：[NinjaTurtles](http://www.mutation-testing.net)  
-WPF应用的spy工具，可以看运行的WPF程序的控件树并且修改属性：[Snoop](http://snoopwpf.codeplex.com/)  
-.NET的一些开源框架Castle：[Castle Project](http://www.castleproject.org/)
+- 托管代码帮助文件生成：[Sandcastle Help File Builder](http://shfb.codeplex.com/)  
+- C#的IOC框架：[StructureMap](http://docs.structuremap.net/)， [Unity](http://unity.codeplex.com/)， [autofac](http://code.google.com/p/autofac/)  
+- C#的unit test的3个A中的第一个Arrange框架：[AutoFixture](https://github.com/AutoFixture)  
+- C#的mutation测试框架：[NinjaTurtles](http://www.mutation-testing.net)  
+- WPF应用的spy工具，可以看运行的WPF程序的控件树并且修改属性：[Snoop](http://snoopwpf.codeplex.com/)  
+- .NET的一些开源框架Castle：[Castle Project](http://www.castleproject.org/)
 
 ### HTML ###
-Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google/gumbo-parser)  
-[Smush.it](http://developer.yahoo.com/yslow/smushit/)： 网站图像优化工具。  
-[YSlow](http://developer.yahoo.com/yslow/)：网站性能优化工具。  
-测试你的网站是否符合现代标准：[Modern.IE](http://modern.ie/en-us)
+- Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google/gumbo-parser)  
+- [Smush.it](http://developer.yahoo.com/yslow/smushit/)： 网站图像优化工具。  
+- [YSlow](http://developer.yahoo.com/yslow/)：网站性能优化工具。  
+- 测试你的网站是否符合现代标准：[Modern.IE](http://modern.ie/en-us)
 
 ### Git ###
-[Bonobog Git Server for Windows](http://bonobogitserver.com/)  
-[GitLab](https://www.gitlab.com/)，[在windows安装GitLab](http://fresky.github.io/blog/2013/07/16/how-to-install-gitlab-in-windows-github-open-source-alternative/)
+- [Bonobog Git Server for Windows](http://bonobogitserver.com/)  
+- [GitLab](https://www.gitlab.com/)，[在windows安装GitLab](http://fresky.github.io/blog/2013/07/16/how-to-install-gitlab-in-windows-github-open-source-alternative/)
 
 ##学习##
-优化学习过程的闪卡工具：[Mnemosyne](http://mnemosyne-proj.org/)
+- 优化学习过程的闪卡工具：[Mnemosyne](http://mnemosyne-proj.org/)
 
 ##书籍##
-[GitBook](http://www.gitbook.io/)，从git/github和markdown生成书籍（支持静态网页、pdf、电子书等格式）的命令行工具（也是一个Node.js库）。
+- [GitBook](http://www.gitbook.io/)，从git/github和markdown生成书籍（支持静态网页、pdf、电子书等格式）的命令行工具（也是一个Node.js库）。
 
 ##其它##
-直接把截图复制到硬盘：[Screenshot2Disk](http://screenshot2disk.codeplex.com/)  
-资源管理器增强软件，使用后走一下它的那个tutorial，就知道有多强大了。：[Listary](http://www.listary.com/)  
-多台电脑共享鼠标键盘：[Synergy](http://synergy-foss.org/)
+- 直接把截图复制到硬盘：[Screenshot2Disk](http://screenshot2disk.codeplex.com/)  
+- 资源管理器增强软件，使用后走一下它的那个tutorial，就知道有多强大了。：[Listary](http://www.listary.com/)  
+- 多台电脑共享鼠标键盘：[Synergy](http://synergy-foss.org/)
 
 #网站#
 
@@ -58,26 +58,26 @@ Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google
 
 ##在线学习##
 
-[LearnGitBranching](http://pcottle.github.io/learnGitBranching/)：可视化的学习Git。  
-[TryRegex](http://tryregex.com/), [Regex Crossword](http://regexcrossword.com/) (学习正则表达式的游戏网站，用正则表达式玩Crossword)  
-[Codecademy](http://www.codecademy.com/)：在线编程学习网站，目前支持JavaScript，HTML/CSS，PHP，Python，Ruby。  
-[CheckiO](http://www.checkio.org/)：练习Python的网站，用Python完成任务来玩游戏。  
-[Syncfusion Succinctly系列电子书](http://www.syncfusion.com/resources/techportal/ebooks)：非常简捷明了，比如[C++](http://www.syncfusion.com/resources/techportal/ebooks/cplusplus)的也就100多页，坐几次地铁就看完了。  
-[Try jQuery](http://try.jquery.com/)  
-[WiX Tutorial](http://wix.tramontana.co.hu/tutorial)  
-[Simple Programming Problems](http://adriann.github.io/programming_problems.html)
+- [LearnGitBranching](http://pcottle.github.io/learnGitBranching/)：可视化的学习Git。  
+- [TryRegex](http://tryregex.com/), [Regex Crossword](http://regexcrossword.com/) (学习正则表达式的游戏网站，用正则表达式玩Crossword)  
+- [Codecademy](http://www.codecademy.com/)：在线编程学习网站，目前支持JavaScript，HTML/CSS，PHP，Python，Ruby。  
+- [CheckiO](http://www.checkio.org/)：练习Python的网站，用Python完成任务来玩游戏。  
+- [Syncfusion Succinctly系列电子书](http://www.syncfusion.com/resources/techportal/ebooks)：非常简捷明了，比如[C++](http://www.syncfusion.com/resources/techportal/ebooks/cplusplus)的也就100多页，坐几次地铁就看完了。  
+- [Try jQuery](http://try.jquery.com/)  
+- [WiX Tutorial](http://wix.tramontana.co.hu/tutorial)  
+- [Simple Programming Problems](http://adriann.github.io/programming_problems.html)
 
 ##书籍##
-[free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)  
-[The-Art-Of-Programming-By-July](https://github.com/julycoding/The-Art-Of-Programming-by-July)  
-[C/Go/Python学习笔记](https://github.com/qyuhen/book)  
-[Bits and Bytes of Python from the Internet](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)  
-[Bayesian Methods for Hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)  
-[marathon's reading and summary](http://dirlt.com/)  
-[Free Mathematics Books](http://www.e-booksdirectory.com/mathematics.php)
-[Free Programming Books Collections ](http://www.freeprogrammingbook.com/)
+- [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)  
+- [The-Art-Of-Programming-By-July](https://github.com/julycoding/The-Art-Of-Programming-by-July)  
+- [C/Go/Python学习笔记](https://github.com/qyuhen/book)  
+- [Bits and Bytes of Python from the Internet](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)  
+- [Bayesian Methods for Hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)  
+- [marathon's reading and summary](http://dirlt.com/)  
+- [Free Mathematics Books](http://www.e-booksdirectory.com/mathematics.php)
+- [Free Programming Books Collections ](http://www.freeprogrammingbook.com/)
 
 ##找工作相关##
-[Careercup](http://www.careercup.com/)  
-[Glassdoor](http://www.glassdoor.com)  
-[GeekInterview](http://www.geekinterview.com/)  
+- [Careercup](http://www.careercup.com/)  
+- [Glassdoor](http://www.glassdoor.com)  
+- [GeekInterview](http://www.geekinterview.com/)  

@@ -24,6 +24,8 @@ categories: [Tool, Resource]
 - [Smush.it](http://developer.yahoo.com/yslow/smushit/)： 网站图像优化工具。  
 - [YSlow](http://developer.yahoo.com/yslow/)：网站性能优化工具。  
 - 测试你的网站是否符合现代标准：[Modern.IE](http://modern.ie/en-us)
+- [EpicEditor](http://epiceditor.com/)：可嵌入的JavaScript的Markdown编辑器。
+
 
 ### Git ###
 - [Bonobog Git Server for Windows](http://bonobogitserver.com/)  
@@ -54,10 +56,12 @@ categories: [Tool, Resource]
 
 ###帮助文档###
 
-[Explain Shell](http://explainshell.com/)
+- [Explain Shell](http://explainshell.com/)
 
 ##在线学习##
-
+- [edx](https://www.edx.org/)
+- [Udacity](https://www.udacity.com/)
+- [Coursera](https://www.coursera.org/)
 - [LearnGitBranching](http://pcottle.github.io/learnGitBranching/)：可视化的学习Git。  
 - [TryRegex](http://tryregex.com/), [Regex Crossword](http://regexcrossword.com/) (学习正则表达式的游戏网站，用正则表达式玩Crossword)  
 - [Codecademy](http://www.codecademy.com/)：在线编程学习网站，目前支持JavaScript，HTML/CSS，PHP，Python，Ruby。  
@@ -76,6 +80,9 @@ categories: [Tool, Resource]
 - [marathon's reading and summary](http://dirlt.com/)  
 - [Free Mathematics Books](http://www.e-booksdirectory.com/mathematics.php)
 - [Free Programming Books Collections ](http://www.freeprogrammingbook.com/)
+- [500 Free eBooks On Programming](http://www.efytimes.com/e1/creativenews.asp?edid=119319)
+- [Python新手教程](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000)
+- [Free ebooks from Microsoft Press](http://www.microsoftvirtualacademy.com/ebooks#?fbid=X761K25-L20)
 
 ##找工作相关##
 - [Careercup](http://www.careercup.com/)  

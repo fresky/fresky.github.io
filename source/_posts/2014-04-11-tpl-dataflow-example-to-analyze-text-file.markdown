@@ -13,15 +13,17 @@ description: 使用Task.ContinueWith和TPL的Dataflow来解决工作流（管道
 
 问题描述
 ---
-首先描述一下我们的问题，我们有一个文件夹，里面放了一些文本文件，我们需要找出每个文件中词频最高的前5个词。把这个问题分解成几个子模块，分别是：
-- 从文件中读取字符串
-- 创建文字列表
-- 过滤文字列表统计词频
-- 打印出现频率最高的5个词
+首先描述一下我们的问题，我们有一个文件夹，里面放了一些文本文件，我们需要找出每个文件中词频最高的前5个词。把这个问题分解成几个子模块，分别是： 
+
+1. 从文件中读取字符串  
+1. 创建文字列表  
+1. 过滤文字列表统计词频  
+1. 打印出现频率最高的5个词  
 
 子问题解决
 ---
-1. 从文件中读取字符串
+
+ 1 . 从文件中读取字符串
 ```c#
 private static string readFileText(string fileName)
 {
@@ -29,7 +31,7 @@ private static string readFileText(string fileName)
 	return File.ReadAllText(fileName);
 }
 ```
-1. 创建文字列表
+ 2 . 创建文字列表
 ```c#
 private static string[] createWordList(string text)
 {
@@ -50,7 +52,7 @@ private static string[] createWordList(string text)
 		StringSplitOptions.RemoveEmptyEntries);
 }
 ```
-1. 过滤文字列表统计词频
+ 3 . 过滤文字列表统计词频
 ```c#
 private static Dictionary<string, int> fileterWordList(string[] words)
 {
@@ -61,7 +63,7 @@ private static Dictionary<string, int> fileterWordList(string[] words)
 		.ToDictionary(group => @group.Key, group => @group.Count());
 }
 ```
-1. 打印出现频率最高的5个词
+ 4 . 打印出现频率最高的5个词
 ```c#
 private static Dictionary<string, int> fileterWordList(string[] words)
 {
@@ -97,11 +99,12 @@ private static void getWordFrequencyWithTask()
 使用TPL的Dataflow
 ---
 首先要注意的是Dataflow需要用Nuget加进来。用到的类和函数如下：
-- `TransformBlock`：有输入有输出，一般用于非最后一个处理模块。
-- `ActionBlock`：只有输入，没有输出，一般用于最后一个处理模块。
-- `LinkTo`：把模块关联起来。
-- `Completion.ContinueWith`：表明这个模块完成后标识下一个模块完成。
-- `Complete()`：告诉第一个模块已经没有新的输入了。
+
+1. `TransformBlock`：有输入有输出，一般用于非最后一个处理模块。  
+1. `ActionBlock`：只有输入，没有输出，一般用于最后一个处理模块。  
+1. `LinkTo`：把模块关联起来。  
+1. `Completion.ContinueWith`：表明这个模块完成后标识下一个模块完成。  
+1. `Complete()`：告诉第一个模块已经没有新的输入了。  
 
 代码如下：
 ```c#

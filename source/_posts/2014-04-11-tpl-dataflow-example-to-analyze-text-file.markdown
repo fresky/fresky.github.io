@@ -59,19 +59,22 @@ private static Dictionary<string, int> fileterWordList(string[] words)
 	Console.WriteLine("Group and ordering word list...");
 
 	return words.Where(word => word.Length > 3).GroupBy(word => word)
-		.OrderByDescending(group => @group.Count())
-		.ToDictionary(group => @group.Key, group => @group.Count());
+		.OrderByDescending(group => group.Count())
+		.ToDictionary(group => group.Key, group => group.Count());
 }
 ```
  4 . 打印出现频率最高的5个词
 ```c#
-private static Dictionary<string, int> fileterWordList(string[] words)
+private static void printWordFrequency(Dictionary<string, int> dic)
 {
-	Console.WriteLine("Group and ordering word list...");
-
-	return words.Where(word => word.Length > 3).GroupBy(word => word)
-		.OrderByDescending(group => @group.Count())
-		.ToDictionary(group => @group.Key, group => @group.Count());
+	Console.WriteLine("Top 5:");
+	int top = 0;
+	foreach (var pair in dic)
+	{
+		Console.WriteLine("{0}   :   {1}", pair.Key, pair.Value);
+		if (++top > 5)
+			break;
+	}
 }
 ```
 

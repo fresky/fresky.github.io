@@ -17,7 +17,8 @@ categories: [Tool, Resource]
 - C#的unit test的3个A中的第一个Arrange框架：[AutoFixture](https://github.com/AutoFixture)  
 - C#的mutation测试框架：[NinjaTurtles](http://www.mutation-testing.net)  
 - WPF应用的spy工具，可以看运行的WPF程序的控件树并且修改属性：[Snoop](http://snoopwpf.codeplex.com/)  
-- .NET的一些开源框架Castle：[Castle Project](http://www.castleproject.org/)
+- .NET的一些开源框架Castle：[Castle Project](http://www.castleproject.org/)  
+- [Netjs](https://github.com/praeclarum/Netjs)：一个开源工具可以把`.NET`编译成`TypeScript`或者`JavaScript`。
 
 ### HTML ###
 - Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google/gumbo-parser)  
@@ -69,11 +70,18 @@ categories: [Tool, Resource]
 - [Syncfusion Succinctly系列电子书](http://www.syncfusion.com/resources/techportal/ebooks)：非常简捷明了，比如[C++](http://www.syncfusion.com/resources/techportal/ebooks/cplusplus)的也就100多页，坐几次地铁就看完了。  
 - [Try jQuery](http://try.jquery.com/)  
 - [WiX Tutorial](http://wix.tramontana.co.hu/tutorial)  
-- [Simple Programming Problems](http://adriann.github.io/programming_problems.html)
+- [Simple Programming Problems](http://adriann.github.io/programming_problems.html)  
+- [Superhero.js](http://superherojs.com/)：关于如何创建、测试、维护大型Javascript项目的一系列最佳实践、视频和演讲。  
+- [DevDoc](http://devdocs.io/)：组合了很多API文档，而且能够快速搜索。支持CSS、DOM、HTML、HTTP、Javascript等。  
+- [10 Resources to Learn Python](http://codecondo.com/10-ways-to-learn-python/)：10个学习Python的资源。    
+- [系统架构领域的一些学习材料](http://www.valleytalk.org/2014/03/18/%E6%9E%97%E4%BB%95%E9%BC%8E-%E3%80%82-%E3%80%8A%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E9%A2%86%E5%9F%9F%E7%9A%84%E4%B8%80%E4%BA%9B%E5%AD%A6%E4%B9%A0%E6%9D%90%E6%96%99%E3%80%8B/)  
+- [Papers We Love](https://github.com/papers-we-love/papers-we-love)  
+- [C++ FAQ](http://isocpp.org/faq)  
+
 
 ##书籍##
 - [free-programming-books](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)  
-- [The-Art-Of-Programming-By-July](https://github.com/julycoding/The-Art-Of-Programming-by-July)  
+- [The-Art-Of-Programming-By-July](https://github.com/julycoding/The-Art-Of-Programming-by-July),[程序员编程艺术](http://blog.csdn.net/v_JULY_v/article/details/6460494)  
 - [C/Go/Python学习笔记](https://github.com/qyuhen/book)  
 - [Bits and Bytes of Python from the Internet](https://github.com/kirang89/pycrumbs/blob/master/pycrumbs.md)  
 - [Bayesian Methods for Hackers](https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers)  
@@ -82,7 +90,9 @@ categories: [Tool, Resource]
 - [Free Programming Books Collections ](http://www.freeprogrammingbook.com/)
 - [500 Free eBooks On Programming](http://www.efytimes.com/e1/creativenews.asp?edid=119319)
 - [Python新手教程](http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000)
-- [Free ebooks from Microsoft Press](http://www.microsoftvirtualacademy.com/ebooks#?fbid=X761K25-L20)
+- [Free ebooks from Microsoft Press](http://www.microsoftvirtualacademy.com/ebooks#?fbid=X761K25-L20)  
+- [免费的中文书籍索引](https://code.csdn.net/JustJavaC/free-programming-books-zh_cn)
+- [97 Things Every Software Architect Should Know](http://architect.97things.oreilly.com/wiki/index.php/97_Things_Every_Software_Architect_Should_Know_-_The_Book)  
 
 ##找工作相关##
 - [Careercup](http://www.careercup.com/)  

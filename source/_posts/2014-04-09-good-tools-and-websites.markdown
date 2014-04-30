@@ -42,10 +42,17 @@ categories: [Tool, Resource]
 - 直接把截图复制到硬盘：[Screenshot2Disk](http://screenshot2disk.codeplex.com/)  
 - 资源管理器增强软件，使用后走一下它的那个tutorial，就知道有多强大了。：[Listary](http://www.listary.com/)  
 - 多台电脑共享鼠标键盘：[Synergy](http://synergy-foss.org/)
+- 直接在图片中选取文字[Naptha](http://projectnaptha.com/)  
 
 #网站#
 
 ##工具##
+
+###在线IDE###
+[RegExr](http://www.regexr.com/)  
+[IDEOne](http://ideone.com/)  
+[pythonfiddle](pythonfiddle.com)  
+
 ###在线C++编译器###
 
 - [LiveWorkspace](http://liveworkspace.org/) (Clang 3.2, GCC 4.6.3 4.7.2)
@@ -53,7 +60,7 @@ categories: [Tool, Resource]
 - [Rise4Fun](http://rise4fun.com/vcpp) (Microsoft VC++ 2012 and November 2012 CTP)
 - [Stacked-Crooked](http://stacked-crooked.com/) (GCC 4.7)
 - [ideone.com](http://ideone.com/) (GCC 4.3.4 and 4.5.1)
-- [Comeau Test Drive](http://comeaucomputing.com/tryitout/) (EDG 4.3.3)
+- [Comeau Test Drive](http://comeaucomputing.com/tryitout/) (EDG 4.3.3)  
 
 ###帮助文档###
 
@@ -93,6 +100,7 @@ categories: [Tool, Resource]
 - [Free ebooks from Microsoft Press](http://www.microsoftvirtualacademy.com/ebooks#?fbid=X761K25-L20)  
 - [免费的中文书籍索引](https://code.csdn.net/JustJavaC/free-programming-books-zh_cn)
 - [97 Things Every Software Architect Should Know](http://architect.97things.oreilly.com/wiki/index.php/97_Things_Every_Software_Architect_Should_Know_-_The_Book)  
+- [Herb Sutter's concurrency articles](http://herbsutter.com/2010/09/24/effective-concurrency-know-when-to-use-an-active-object-instead-of-a-mutex/)  
 
 ##找工作相关##
 - [Careercup](http://www.careercup.com/)  

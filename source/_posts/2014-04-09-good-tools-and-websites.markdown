@@ -101,6 +101,7 @@ categories: [Tool, Resource]
 - [免费的中文书籍索引](https://code.csdn.net/JustJavaC/free-programming-books-zh_cn)
 - [97 Things Every Software Architect Should Know](http://architect.97things.oreilly.com/wiki/index.php/97_Things_Every_Software_Architect_Should_Know_-_The_Book)  
 - [Herb Sutter's concurrency articles](http://herbsutter.com/2010/09/24/effective-concurrency-know-when-to-use-an-active-object-instead-of-a-mutex/)  
+- [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)  
 
 ##找工作相关##
 - [Careercup](http://www.careercup.com/)  

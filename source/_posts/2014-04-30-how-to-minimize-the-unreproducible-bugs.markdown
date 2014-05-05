@@ -73,5 +73,6 @@ description:
 #####开发
 - 遵守好的[日志规范](http://googletesting.blogspot.com/2013/06/optimal-logging.html)  
 - 如果日志在用户的机器上，提供一种简单的方式是你能够拿到日志  
+
 #####测试
 - 保存测试产生的日志  

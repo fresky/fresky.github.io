@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C#中5中timer的比较"
+title: "C#中5种timer的比较"
 date: 2013-07-09
 comments: true
 categories: CSharp

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Diable C#的tree node"
+title: "禁用C#的树的单个节点"
 date: 2012-07-17
 comments: true
 categories: CSharp

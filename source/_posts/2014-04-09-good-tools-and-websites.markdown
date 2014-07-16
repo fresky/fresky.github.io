@@ -18,7 +18,8 @@ categories: [Tool, Resource]
 - C#的mutation测试框架：[NinjaTurtles](http://www.mutation-testing.net)  
 - WPF应用的spy工具，可以看运行的WPF程序的控件树并且修改属性：[Snoop](http://snoopwpf.codeplex.com/)  
 - .NET的一些开源框架Castle：[Castle Project](http://www.castleproject.org/)  
-- [Netjs](https://github.com/praeclarum/Netjs)：一个开源工具可以把`.NET`编译成`TypeScript`或者`JavaScript`。
+- [Netjs](https://github.com/praeclarum/Netjs)：一个开源工具可以把`.NET`编译成`TypeScript`或者`JavaScript`。  
+- 直接在C#应用中生成pddf文件：[PDF File Writer C# Class Library](http://www.codeproject.com/Articles/570682/PDF-File-Writer-Csharp-Class-Library-Version)  
 
 ### HTML ###
 - Google的开源html5 解析器：[google/gumbo-parser](https://github.com/google/gumbo-parser)  

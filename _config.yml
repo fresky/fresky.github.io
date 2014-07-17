@@ -35,12 +35,13 @@ code_dir: downloads/code
 category_dir: blog/categories
 markdown: rdiscount
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "tables"]
 rdiscount:
   extensions:
     - autolink
     - footnotes
     - smart
+
 pygments: false # default python pygments have been replaced by pygments.rb
 
 paginate: 10          # Posts per page on the blog index

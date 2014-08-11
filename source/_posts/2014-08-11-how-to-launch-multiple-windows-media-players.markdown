@@ -8,10 +8,10 @@ keywords: Mutex,Semaphore,Event,Critical Section
 description: 如何在Windows中打开多个Windows Media Player，本文介绍了Windows中的Mutex、Semaphore、Event和Critical Section的区别。
 ---
 
-在很多情况下我们需要保证我们的应用只有一个实例在运行，要实现这个目的有很多种做法，比如
- - 我们可以在启动程序时遍历现在运行的进程列表，来看看我们这个进程是不是已经在运行了，如果已经在运行了就直接退出。
- - 我们可以在启动程序时在硬盘生成一个文件，下次启动时来检查这个文件。
- - 等等。。。
+在很多情况下我们需要保证我们的应用只有一个实例在运行，要实现这个目的有很多种做法，比如  
+1. 我们可以在启动程序时遍历现在运行的进程列表，来看看我们这个进程是不是已经在运行了，如果已经在运行了就直接退出。  
+2. 我们可以在启动程序时在硬盘生成一个文件，下次启动时来检查这个文件。  
+3. 等等。。。  
 
 我们知道在windows中是不能打开多个Windows Media Player的，下面来看看Windows Media Player是怎么做的。
 

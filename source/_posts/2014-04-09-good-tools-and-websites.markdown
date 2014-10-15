@@ -27,7 +27,8 @@ categories: [Tool, Resource]
 - [Smush.it](http://developer.yahoo.com/yslow/smushit/)： 网站图像优化工具。  
 - [YSlow](http://developer.yahoo.com/yslow/)：网站性能优化工具。  
 - 测试你的网站是否符合现代标准：[Modern.IE](http://modern.ie/en-us)
-- [EpicEditor](http://epiceditor.com/)：可嵌入的JavaScript的Markdown编辑器。
+- [EpicEditor](http://epiceditor.com/)：可嵌入的JavaScript的Markdown编辑器。  
+- [GifShot](http://yahoo.github.io/gifshot/index.html)：一个javascript的库，可以从摄像头，视频或者图片中生成gif文件。  
 
 
 ### Git ###

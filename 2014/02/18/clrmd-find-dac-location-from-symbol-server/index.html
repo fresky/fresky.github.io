@@ -1,0 +1,587 @@
+
+ <!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  
+    <title>使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime | Dawei XU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Dawei XU">
+    
+
+    <meta name="keywords" content="CLRMD, debugger, csharp, symbol server">
+    <meta name="description" content="使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime">
+<meta name="keywords" content="CLRMD, debugger, csharp, symbol server">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime">
+<meta property="og:url" content="http://fresky.github.io/2014/02/18/clrmd-find-dac-location-from-symbol-server/index.html">
+<meta property="og:site_name" content="Dawei XU">
+<meta property="og:description" content="使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-20T08:29:07.281Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime">
+<meta name="twitter:description" content="使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Dawei XU" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Dawei XU" title="Dawei XU"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Dawei XU">Dawei XU</a></h1>
+				<h2 class="blog-motto">Flying in the free sky</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" >
+						<input type="search" id="st-search-input" placeholder="Search" />
+					</form>
+					<script type="text/javascript">
+					var Swiftype = window.Swiftype || {};
+						(function() {
+							Swiftype.key = 'kh-hxC3krCFFsasryDzy';
+							var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+							script.src = "//s.swiftypecdn.com/embed.js";
+							var entry = document.getElementsByTagName('script')[0];
+							entry.parentNode.insertBefore(script, entry);
+						}());
+					</script>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2014/02/18/clrmd-find-dac-location-from-symbol-server/" title="使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime" itemprop="url">使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dawei XU" target="_blank" itemprop="author">Dawei XU</a>
+		
+  <p class="article-time">
+    <time datetime="2014-02-18T06:38:00.000Z" itemprop="datePublished"> Published Feb 18 2014</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>在我昨天的博客<a href="/2014/02/17/use-clrmd-to-create-your-own-csharp-debugger/">使用CLRMD编写一个自己的C#调试器</a>介绍了一下如果使用CLRMD的API，其中第二个例子是打开一个CLR的dump，来遍历所有线程，把call stack打印出来，类似在每个线程上运行<code>!clrstack</code>命令。</p>
+<p>昨天的那个小例子有一个潜在的问题，就是如果dump是别的机器生成的，自己机器上没有装匹配的clr时，函数<code>TryGetDacLocation</code>会返回<code>null</code>。这样就不能正确的初始化<code>ClrRuntime</code>了。</p>
+<p><a href="http://winterdom.com/2013/05/clrmd-fetching-dac-libraries-from-symbol-servers" target="_blank" rel="noopener">ClrMD: Fetching DAC Libraries From Symbol Servers</a>介绍了如果通过使用<code>dbghelp.dll</code>（在安装windbg或者debugdia时会装在你的电脑上）来从symbol路径里面找Dac。我参考这篇文章写了一个读取dump，打印异常的小程序。</p>
+<p>先看输出吧，和在windbg里面用sos扩展敲<code>!pe</code>的效果很类似，不过自动把inner exception也打印出来了。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">ThreadID: 11EC</span><br><span class="line">Managed ThreadID: 1</span><br><span class="line">Exception Address: 244A086C</span><br><span class="line">Exception Type: System.Reflection.TargetInvocationException</span><br><span class="line">Message: Exception has been thrown by the target of an invocation.</span><br><span class="line">Call stack:</span><br><span class="line">           SP           IP Function</span><br><span class="line">            0            0 System.RuntimeMethodHandle._InvokeMethodFast(System.Object, System.Object[], System.SignatureStruct ByRef, System.Reflection.MethodAttributes, System.RuntimeTypeHandle)</span><br><span class="line">       33E458     6FD15637 System.RuntimeMethodHandle.InvokeMethodFast(System.Object, System.Object[], System.Signature, System.Reflection.MethodAttributes, System.RuntimeTypeHandle)</span><br><span class="line">...</span><br><span class="line">HResult: 80131604</span><br><span class="line">Inner Exception:</span><br><span class="line">Exception Type: System.OutOfMemoryException</span><br><span class="line">Message: Out of memory.</span><br><span class="line">Call stack:</span><br><span class="line">           SP           IP Function</span><br><span class="line">       33CD04     6F313341 System.Drawing.Graphics.FromHdcInternal(IntPtr)</span><br><span class="line">       33CD14     6F2115F0 System.Drawing.Font.ToLogFont(System.Object)</span><br><span class="line">       33CD44     6F211538 System.Drawing.Font.ToHfont()</span><br><span class="line">       33CD74     6E7E37DE System.Windows.Forms.Control+FontHandleWrapper..ctor(System.Drawing.Font)</span><br><span class="line">       33CD80     6EEAB7FA System.Windows.Forms.OwnerDrawPropertyBag.get_FontHandle()</span><br><span class="line">       33CD90     6F04AEA3 System.Windows.Forms.TreeView.CustomDraw(System.Windows.Forms.Message ByRef)</span><br><span class="line">       33CEA8     6E80C16C System.Windows.Forms.TreeView.WmNotify(System.Windows.Forms.Message ByRef)</span><br><span class="line">       33CF28     6E80BDB6 System.Windows.Forms.TreeView.WndProc(System.Windows.Forms.Message ByRef)</span><br><span class="line">...</span><br><span class="line">HResult: 8007000E</span><br><span class="line">Press any key to <span class="built_in">continue</span> . . .</span><br></pre></td></tr></table></figure>
+<p>加载dump的代码：<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">LoadDump</span>(<span class="params"><span class="keyword">string</span> file</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">using</span> (DataTarget dataTarget = DataTarget.LoadCrashDump(file))</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="comment">// use microsoft public symbol server to find the DAC</span></span><br><span class="line">		<span class="keyword">string</span> symcache = <span class="string">@"D:\NotBackedUp\SymCache"</span>;</span><br><span class="line">		DacLocator dacloc = DacLocator.FromPublicSymbolServer(symcache);</span><br><span class="line">		<span class="keyword">string</span> dacLocation = dacloc.FindDac(dataTarget.ClrVersions[<span class="number">0</span>]);</span><br><span class="line">		</span><br><span class="line">		ClrRuntime runtime = dataTarget.CreateRuntime(dacLocation);</span><br><span class="line">		<span class="keyword">foreach</span> (ClrThread thread <span class="keyword">in</span> runtime.Threads)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">if</span> (thread.CurrentException != <span class="literal">null</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				</span><br><span class="line">				Console.WriteLine(<span class="string">"ThreadID: &#123;0:X&#125;"</span>, thread.OSThreadId);</span><br><span class="line">				Console.WriteLine(<span class="string">"Managed ThreadID: &#123;0:X&#125;"</span>, thread.ManagedThreadId);</span><br><span class="line">				Console.WriteLine(<span class="string">"Exception Address: &#123;0:X&#125;"</span>, thread.CurrentException.Address);</span><br><span class="line"></span><br><span class="line">				ClrException ex = thread.CurrentException;</span><br><span class="line">				PrintException(ex);</span><br><span class="line">				<span class="keyword">if</span> (ex.Inner !=<span class="literal">null</span>)</span><br><span class="line">				&#123;</span><br><span class="line">					Console.WriteLine(<span class="string">"Inner Exception:"</span>);</span><br><span class="line">					PrintException(ex.Inner);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>打印exception的代码：<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">PrintException</span>(<span class="params">ClrException ex</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	Console.WriteLine(<span class="string">"Exception Type: &#123;0&#125;"</span>, ex.Type.Name);</span><br><span class="line">	<span class="keyword">try</span></span><br><span class="line">	&#123;</span><br><span class="line">		Console.WriteLine(<span class="string">"Message: &#123;0&#125;"</span>, ex.Message);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">catch</span></span><br><span class="line">	&#123;</span><br><span class="line">		Console.WriteLine(<span class="string">"Message: No Message due to mini dump!"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	Console.WriteLine(<span class="string">"Call stack:"</span>);</span><br><span class="line">	Console.WriteLine(<span class="string">" &#123;0,12:X&#125; &#123;1,12:X&#125; &#123;2&#125;"</span>, <span class="string">"SP"</span>, <span class="string">"IP"</span>, <span class="string">"Function"</span>);</span><br><span class="line">	<span class="keyword">foreach</span> (<span class="keyword">var</span> frame <span class="keyword">in</span> ex.StackTrace)</span><br><span class="line">	&#123;</span><br><span class="line">		Console.WriteLine(<span class="string">" &#123;0,12:X&#125; &#123;1,12:X&#125; &#123;2&#125;"</span>, frame.StackPointer, frame.InstructionPointer, frame.DisplayString);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">try</span></span><br><span class="line">	&#123;</span><br><span class="line">		Console.WriteLine(<span class="string">"HResult: &#123;0:X&#125;"</span>, ex.HResult);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">catch</span></span><br><span class="line">	&#123;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>注意这里有两个try，是因为我发现如果打开的mini dump，在拿Messages和HResult时会出exception。</p>
+<p>通过symbol路径寻找Dac的代码如下：（主要是上面提到的那篇文章的代码）<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">DacLocator</span> : <span class="title">IDisposable</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">int</span> sfImage = <span class="number">0</span>;</span><br><span class="line">	[<span class="meta">DllImport(<span class="meta-string">"dbghelp.dll"</span>, SetLastError = true)</span>]</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">bool</span> <span class="title">SymInitialize</span>(<span class="params">IntPtr hProcess, String symPath, <span class="keyword">bool</span> fInvadeProcess</span>)</span>;</span><br><span class="line"></span><br><span class="line">	[<span class="meta">DllImport(<span class="meta-string">"dbghelp.dll"</span>, SetLastError = true)</span>]</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">bool</span> <span class="title">SymCleanup</span>(<span class="params">IntPtr hProcess</span>)</span>;</span><br><span class="line"></span><br><span class="line">	[<span class="meta">DllImport(<span class="meta-string">"dbghelp.dll"</span>, SetLastError = true)</span>]</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">bool</span> <span class="title">SymFindFileInPath</span>(<span class="params">IntPtr hProcess, String searchPath, String filename, <span class="keyword">uint</span> id, <span class="keyword">uint</span> two, <span class="keyword">uint</span> three, <span class="keyword">uint</span> flags, StringBuilder filePath, IntPtr callback, IntPtr context</span>)</span>;</span><br><span class="line"></span><br><span class="line">	[<span class="meta">DllImport(<span class="meta-string">"kernel32.dll"</span>, SetLastError = true)</span>]</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">extern</span> LibrarySafeHandle <span class="title">LoadLibrary</span>(<span class="params">String name</span>)</span>;</span><br><span class="line"></span><br><span class="line">	[<span class="meta">DllImport(<span class="meta-string">"kernel32.dll"</span>, SetLastError = true)</span>]</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">bool</span> <span class="title">FreeLibrary</span>(<span class="params">IntPtr hModule</span>)</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">	<span class="keyword">private</span> String searchPath;</span><br><span class="line">	<span class="keyword">private</span> LibrarySafeHandle dbghelpModule;</span><br><span class="line">	<span class="keyword">private</span> Process ourProcess;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="title">DacLocator</span>(<span class="params">String searchPath</span>)</span></span><br><span class="line"><span class="function"></span>	&#123;</span><br><span class="line">		<span class="keyword">this</span>.searchPath = searchPath;</span><br><span class="line">		ourProcess = Process.GetCurrentProcess();</span><br><span class="line">		dbghelpModule = LoadLibrary(<span class="string">"dbghelp.dll"</span>);</span><br><span class="line">		<span class="keyword">if</span> (dbghelpModule.IsInvalid)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> Win32Exception(String.Format(<span class="string">"Could not load dbghelp.dll: &#123;0&#125;"</span>, Marshal.GetLastWin32Error()));</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (!SymInitialize(ourProcess.Handle, searchPath, <span class="literal">false</span>))</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> Win32Exception(String.Format(<span class="string">"SymInitialize() failed: &#123;0&#125;"</span>, Marshal.GetLastWin32Error()));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> DacLocator <span class="title">FromPublicSymbolServer</span>(<span class="params">String localCache</span>)</span></span><br><span class="line"><span class="function"></span>	&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> DacLocator(String.Format(<span class="string">"SRV*&#123;0&#125;*http://msdl.microsoft.com/download/symbols"</span>, localCache));</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> DacLocator <span class="title">FromEnvironment</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>	&#123;</span><br><span class="line">		String ntSymbolPath = Environment.GetEnvironmentVariable(<span class="string">"_NT_SYMBOL_PATH"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> DacLocator(ntSymbolPath);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> DacLocator <span class="title">FromSearchPath</span>(<span class="params">String searchPath</span>)</span></span><br><span class="line"><span class="function"></span>	&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> DacLocator(searchPath);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">FindDac</span>(<span class="params">ClrInfo clrInfo</span>)</span></span><br><span class="line"><span class="function"></span>	&#123;</span><br><span class="line">		String dac = clrInfo.TryGetDacLocation();</span><br><span class="line">		<span class="keyword">if</span> (String.IsNullOrEmpty(dac))</span><br><span class="line">		&#123;</span><br><span class="line">			dac = FindDac(clrInfo.DacInfo.FileName, clrInfo.DacInfo.TimeStamp, clrInfo.DacInfo.FileSize);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> dac;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">FindDac</span>(<span class="params">String dacname, <span class="keyword">uint</span> timestamp, <span class="keyword">uint</span> fileSize</span>)</span></span><br><span class="line"><span class="function"></span>	&#123;</span><br><span class="line">		<span class="comment">// attempt using the symbol server</span></span><br><span class="line">		StringBuilder symbolFile = <span class="keyword">new</span> StringBuilder(<span class="number">2048</span>);</span><br><span class="line">		<span class="keyword">if</span> (SymFindFileInPath(ourProcess.Handle, searchPath, dacname,</span><br><span class="line">			timestamp, fileSize, <span class="number">0</span>, <span class="number">0x02</span>, symbolFile, IntPtr.Zero, IntPtr.Zero))</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">return</span> symbolFile.ToString();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> Win32Exception(String.Format(<span class="string">"SymFindFileInPath() failed: &#123;0&#125;"</span>, Marshal.GetLastWin32Error()));</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Dispose</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>	&#123;</span><br><span class="line">		<span class="keyword">if</span> (ourProcess != <span class="literal">null</span>)</span><br><span class="line">		&#123;</span><br><span class="line">			SymCleanup(ourProcess.Handle);</span><br><span class="line">			ourProcess = <span class="literal">null</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (dbghelpModule != <span class="literal">null</span> &amp;&amp; !dbghelpModule.IsClosed)</span><br><span class="line">		&#123;</span><br><span class="line">			dbghelpModule.Dispose();</span><br><span class="line">			dbghelpModule = <span class="literal">null</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">class</span> <span class="title">LibrarySafeHandle</span> : <span class="title">SafeHandleZeroOrMinusOneIsInvalid</span></span><br><span class="line">	&#123;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="title">LibrarySafeHandle</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">			: <span class="title">base</span>(<span class="params"><span class="literal">true</span></span>)</span></span><br><span class="line"><span class="function"></span>		&#123;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="function"><span class="keyword">public</span> <span class="title">LibrarySafeHandle</span>(<span class="params">IntPtr handle</span>)</span></span><br><span class="line"><span class="function">			: <span class="title">base</span>(<span class="params"><span class="literal">true</span></span>)</span></span><br><span class="line"><span class="function"></span>		&#123;</span><br><span class="line">			<span class="keyword">this</span>.SetHandle(handle);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="function"><span class="keyword">protected</span> <span class="keyword">override</span> <span class="keyword">bool</span> <span class="title">ReleaseHandle</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>		&#123;</span><br><span class="line">			<span class="keyword">return</span> FreeLibrary(<span class="keyword">this</span>.handle);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/CSharp/">CSharp</a><a href="/tags/Debug/">Debug</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	<div class="share-jiathis">
+	  
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_googleplus"></a>
+	<a class="jiathis_button_douban"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1656049415"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+1886896" charset="utf-8"></script>      
+
+	 </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2014/02/27/see-dot-net-source-code-in-web-and-integrate-with-visual-studio-go-to-definition/" title="在网上浏览.NET的所有代码，并且让你的Visual Studio的go to definition(F12)指向在线代码">
+  <strong>上一篇：</strong><br/>
+  <span>
+  在网上浏览.NET的所有代码，并且让你的Visual Studio的go to definition(F12)指向在线代码</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2014/02/17/use-clrmd-to-create-your-own-csharp-debugger/"  title="使用CLRMD编写一个自己的C#调试器">
+ <strong>下一篇：</strong><br/> 
+ <span>使用CLRMD编写一个自己的C#调试器
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2014/02/18/clrmd-find-dac-location-from-symbol-server/" data-title="使用CLRMD时通过Symbol Server找Dac的位置来初始化ClrRuntime" data-url="http://fresky.github.io/2014/02/18/clrmd-find-dac-location-from-symbol-server/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <br/>
+<div class="widget-wrap">
+  <p class="asidetitle">Total Posts: 397</p>
+</div>
+
+
+  </br>
+
+  <div class="widget-wrap">
+    <p class="asidetitle">Recent Posts</p>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            * <a href="/2019/10/25/visual-vocabulary/">来自金融时报的可视化辞典</a>
+          </li>
+        
+          <li>
+            * <a href="/2019/05/29/code-search-with-opengrok/">用opengrok搭建代码搜索引擎</a>
+          </li>
+        
+          <li>
+            * <a href="/2019/02/18/package-net-core-in-one-single-exe/">打包.NET Core的程序到一个单独的可执行文件</a>
+          </li>
+        
+          <li>
+            * <a href="/2018/10/10/how-to-choose-brand-color/">如何给自己的品牌选择颜色</a>
+          </li>
+        
+          <li>
+            * <a href="/2018/09/30/how-many-lines-of-code/">看看这些软件有多少行代码</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/CSharp/" title="CSharp">CSharp<sup>133</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>91</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Other/" title="Other">Other<sup>60</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/CPP/" title="CPP">CPP<sup>50</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Resource/" title="Resource">Resource<sup>35</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Debug/" title="Debug">Debug<sup>33</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Github/" title="Github">Github<sup>11</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Development/" title="Development">Development<sup>8</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Design/" title="Design">Design<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Regex/" title="Regex">Regex<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Opensource/" title="Opensource">Opensource<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Installer/" title="Installer">Installer<sup>2</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="stackoverflow">
+	<p class="asidetitle">Stack Overflow</p>
+	<a href="http://stackoverflow.com/users/304115/fresky">
+			<img src="http://stackoverflow.com/users/flair/304115.png" width="100%" height="100%" alt="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers" title="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers">
+	</a>
+</div>
+
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="fresky" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+
+<div class="doubanshow">
+<p class="asidetitle">Douban Show</p>
+<div>
+<script type="text/javascript" src="http://www.douban.com/service/badge/fresky/?show=collection&amp;n=12&amp;columns=3&amp;hidelogo=yes&amp;hideself=yes&amp;cat=book" ></script>
+</div>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1656049415" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/fresky" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/304115" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		
+		
+		<a href="https://www.linkedin.com/in/daweix" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/fresky" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		
+		<a href="mailto:dawei.xu@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
+		
+		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"fresky"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47027591-1', 'auto');  
+ga('send', 'pageview');
+</script>
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc461a6c03d4676862a12df80e9304bfd' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000250782'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000250782' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

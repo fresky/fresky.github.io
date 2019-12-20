@@ -1,0 +1,592 @@
+
+ <!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  
+    <title>如何通过进程名获取进程ID | Dawei XU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Dawei XU">
+    
+
+    
+    <meta name="description" content="本文通过查看C#的GetProcessesByName的源代码来看如何在C++中获取所有系统进程信息。">
+<meta name="keywords" content="CSharp,CPP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何通过进程名获取进程ID">
+<meta property="og:url" content="http://fresky.github.io/2015/08/20/get-process-id-by-name/index.html">
+<meta property="og:site_name" content="Dawei XU">
+<meta property="og:description" content="本文通过查看C#的GetProcessesByName的源代码来看如何在C++中获取所有系统进程信息。">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-20T08:29:07.305Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何通过进程名获取进程ID">
+<meta name="twitter:description" content="本文通过查看C#的GetProcessesByName的源代码来看如何在C++中获取所有系统进程信息。">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Dawei XU" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Dawei XU" title="Dawei XU"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Dawei XU">Dawei XU</a></h1>
+				<h2 class="blog-motto">Flying in the free sky</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" >
+						<input type="search" id="st-search-input" placeholder="Search" />
+					</form>
+					<script type="text/javascript">
+					var Swiftype = window.Swiftype || {};
+						(function() {
+							Swiftype.key = 'kh-hxC3krCFFsasryDzy';
+							var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+							script.src = "//s.swiftypecdn.com/embed.js";
+							var entry = document.getElementsByTagName('script')[0];
+							entry.parentNode.insertBefore(script, entry);
+						}());
+					</script>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/08/20/get-process-id-by-name/" title="如何通过进程名获取进程ID" itemprop="url">如何通过进程名获取进程ID</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dawei XU" target="_blank" itemprop="author">Dawei XU</a>
+		
+  <p class="article-time">
+    <time datetime="2015-08-20T10:45:02.000Z" itemprop="datePublished"> Published Aug 20 2015</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>之前的博客<a href="/2015/08/19/how-to-get-the-window-title/">C++如何拿到一个窗口的标题</a>在最后总结如何获取窗口标题时的一个建议是只查询属于自己感兴趣的进程的窗口。Windows的函数<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms633522%28v=vs.85%29.aspx" target="_blank" rel="noopener">GetWindowThreadProcessId</a>可以拿到一个窗口属于的进程ID，通常我们是知道我们感兴趣的进程名字，那么怎么根据进程名字来找到进程ID呢？</p>
+<p>如果是C#那就非常简单了，直接使用<a href="https://msdn.microsoft.com/en-us/library/z3w4xdc9%28v=vs.110%29.aspx" target="_blank" rel="noopener">Process.GetProcessesByName</a>函数就能返回对应进程名字的进程数组。那如何在C++中实现呢？</p>
+<p>老办法，翻翻C#的源代码（<code>Process.cs</code>）：</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Process[] <span class="title">GetProcessesByName</span>(<span class="params"><span class="keyword">string</span> processName</span>)</span> &#123;</span><br><span class="line">	<span class="keyword">return</span> GetProcessesByName(processName, <span class="string">"."</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Process[] <span class="title">GetProcessesByName</span>(<span class="params"><span class="keyword">string</span> processName, <span class="keyword">string</span> machineName</span>)</span> &#123;</span><br><span class="line">	<span class="keyword">if</span> (processName == <span class="literal">null</span>) processName = String.Empty;</span><br><span class="line">	Process[] procs = GetProcesses(machineName);</span><br><span class="line">	ArrayList list = <span class="keyword">new</span> ArrayList();</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; procs.Length; i++) &#123;                </span><br><span class="line">		<span class="keyword">if</span>( String.Equals(processName, procs[i].ProcessName, StringComparison.OrdinalIgnoreCase)) &#123;</span><br><span class="line">			list.Add( procs[i]);                    </span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			procs[i].Dispose();</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	Process[] temp = <span class="keyword">new</span> Process[list.Count];</span><br><span class="line">	list.CopyTo(temp, <span class="number">0</span>);</span><br><span class="line">	<span class="keyword">return</span> temp;</span><br><span class="line">&#125;</span><br><span class="line">			</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Process[] <span class="title">GetProcesses</span>(<span class="params"><span class="keyword">string</span> machineName</span>)</span> &#123;</span><br><span class="line">	<span class="keyword">bool</span> isRemoteMachine = ProcessManager.IsRemoteMachine(machineName);</span><br><span class="line">	ProcessInfo[] processInfos = ProcessManager.GetProcessInfos(machineName);</span><br><span class="line">	Process[] processes = <span class="keyword">new</span> Process[processInfos.Length];</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; processInfos.Length; i++) &#123;</span><br><span class="line">		ProcessInfo processInfo = processInfos[i];</span><br><span class="line">		processes[i] = <span class="keyword">new</span> Process(machineName, isRemoteMachine, processInfo.processId, processInfo);</span><br><span class="line">	&#125;</span><br><span class="line">	Debug.WriteLineIf(processTracing.TraceVerbose, <span class="string">"Process.GetProcesses("</span> + machineName + <span class="string">")"</span>);</span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> DEBUG</span></span><br><span class="line">	<span class="keyword">if</span> (processTracing.TraceVerbose) &#123;</span><br><span class="line">		Debug.Indent();</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; processInfos.Length; i++) &#123;</span><br><span class="line">			Debug.WriteLine(processes[i].Id + <span class="string">": "</span> + processes[i].ProcessName);</span><br><span class="line">		&#125;</span><br><span class="line">		Debug.Unindent();</span><br><span class="line">	&#125;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line">	<span class="keyword">return</span> processes;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>先拿到所有的进程，然后比较进程名字。<code>Process.cs</code>调用了<code>ProcessManager.cs</code>来拿所有的进程，接着看源代码（<code>ProcessManager.cs</code>）：</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ProcessInfo[] <span class="title">GetProcessInfos</span>(<span class="params"><span class="keyword">string</span> machineName</span>)</span> &#123;</span><br><span class="line">	<span class="keyword">bool</span> isRemoteMachine = IsRemoteMachine(machineName);</span><br><span class="line">	<span class="keyword">if</span> (IsNt) &#123;</span><br><span class="line">		<span class="comment">// Do not use performance counter for local machine with Win2000 and above</span></span><br><span class="line">		<span class="keyword">if</span>( !isRemoteMachine &amp;&amp; </span><br><span class="line">			(Environment.OSVersion.Version.Major &gt;= <span class="number">5</span> ))   &#123;</span><br><span class="line">			<span class="keyword">return</span> NtProcessInfoHelper.GetProcessInfos();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> NtProcessManager.GetProcessInfos(machineName, isRemoteMachine);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">if</span> (isRemoteMachine)</span><br><span class="line">			<span class="keyword">throw</span> <span class="keyword">new</span> PlatformNotSupportedException(SR.GetString(SR.WinNTRequiredForRemote));</span><br><span class="line">		<span class="keyword">return</span> WinProcessManager.GetProcessInfos();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>接着往下看就能看到C#是如何取进程ID的了。有下面几种实现：</p>
+<ol>
+<li>Windows 2000以上的系统用<code>NtProcessInfoHelper.GetProcessInfos()</code>。实现就是使用<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724509%28v=vs.85%29.aspx" target="_blank" rel="noopener">NtQuerySystemInformation</a>函数，根据参数<code>SYSTEM_PROCESS_INFORMATION</code>，可以获取包含所有进程信息的一个数组。  </li>
+<li>Windows NT以上Windows2000以下用<code>NtProcessManager.GetProcessInfos</code>。实现就是通过<code>PerformanceCounterLib</code>来获取进程数组。  </li>
+<li>Windows NT之前的用<code>WinProcessManager.GetProcessInfos()</code>。实现就是使用<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms682489%28v=vs.85%29.aspx" target="_blank" rel="noopener">CreateToolhelp32Snapshot</a>函数，根据参数<code>TH32CS_SNAPPROCESS</code>来包含所有进程，然后根据<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms684834%28v=vs.85%29.aspx" target="_blank" rel="noopener">Process32First</a>来遍历进程。  </li>
+</ol>
+<p>下面是一个简化版的用<code>CreateToolhelp32Snapshot</code>来获取给定进程名字进程ID的例子。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">vector</span>&lt;DWORD&gt; GetProcessIDByName(CComBSTR processName)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">vector</span>&lt;DWORD&gt; processIDs;</span><br><span class="line"></span><br><span class="line">    PROCESSENTRY32 entry;</span><br><span class="line">    entry.dwSize = <span class="keyword">sizeof</span>(PROCESSENTRY32);</span><br><span class="line"></span><br><span class="line">    HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, <span class="literal">NULL</span>);</span><br><span class="line">    <span class="keyword">if</span> (Process32First(snapshot, &amp;entry) == TRUE)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span> (Process32Next(snapshot, &amp;entry) == TRUE)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (CComBSTR(entry.szExeFile) == processName)</span><br><span class="line">            &#123;</span><br><span class="line">                processIDs.push_back(entry.th32ProcessID);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    CloseHandle(snapshot);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> processIDs;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/CSharp/">CSharp</a><a href="/tags/CPP/">CPP</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	<div class="share-jiathis">
+	  
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_googleplus"></a>
+	<a class="jiathis_button_douban"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1656049415"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+1886896" charset="utf-8"></script>      
+
+	 </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/09/11/analyze-wait-chain/" title="使用Windows的分析等待链（analyze wait chain）来诊断没用响应的应用">
+  <strong>上一篇：</strong><br/>
+  <span>
+  使用Windows的分析等待链（analyze wait chain）来诊断没用响应的应用</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/08/20/how-csharp-get-window-title/"  title="C#是怎么获取窗口标题的">
+ <strong>下一篇：</strong><br/> 
+ <span>C#是怎么获取窗口标题的
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/08/20/get-process-id-by-name/" data-title="如何通过进程名获取进程ID" data-url="http://fresky.github.io/2015/08/20/get-process-id-by-name/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <br/>
+<div class="widget-wrap">
+  <p class="asidetitle">Total Posts: 397</p>
+</div>
+
+
+  </br>
+
+  <div class="widget-wrap">
+    <p class="asidetitle">Recent Posts</p>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            * <a href="/2019/10/25/visual-vocabulary/">来自金融时报的可视化辞典</a>
+          </li>
+        
+          <li>
+            * <a href="/2019/05/29/code-search-with-opengrok/">用opengrok搭建代码搜索引擎</a>
+          </li>
+        
+          <li>
+            * <a href="/2019/02/18/package-net-core-in-one-single-exe/">打包.NET Core的程序到一个单独的可执行文件</a>
+          </li>
+        
+          <li>
+            * <a href="/2018/10/10/how-to-choose-brand-color/">如何给自己的品牌选择颜色</a>
+          </li>
+        
+          <li>
+            * <a href="/2018/09/30/how-many-lines-of-code/">看看这些软件有多少行代码</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/CSharp/" title="CSharp">CSharp<sup>133</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>91</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Other/" title="Other">Other<sup>60</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/CPP/" title="CPP">CPP<sup>50</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Resource/" title="Resource">Resource<sup>35</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Debug/" title="Debug">Debug<sup>33</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Github/" title="Github">Github<sup>11</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Development/" title="Development">Development<sup>8</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Design/" title="Design">Design<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Regex/" title="Regex">Regex<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Opensource/" title="Opensource">Opensource<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Installer/" title="Installer">Installer<sup>2</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="stackoverflow">
+	<p class="asidetitle">Stack Overflow</p>
+	<a href="http://stackoverflow.com/users/304115/fresky">
+			<img src="http://stackoverflow.com/users/flair/304115.png" width="100%" height="100%" alt="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers" title="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers">
+	</a>
+</div>
+
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="fresky" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+
+<div class="doubanshow">
+<p class="asidetitle">Douban Show</p>
+<div>
+<script type="text/javascript" src="http://www.douban.com/service/badge/fresky/?show=collection&amp;n=12&amp;columns=3&amp;hidelogo=yes&amp;hideself=yes&amp;cat=book" ></script>
+</div>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1656049415" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/fresky" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/304115" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		
+		
+		<a href="https://www.linkedin.com/in/daweix" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/fresky" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		
+		<a href="mailto:dawei.xu@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
+		
+		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"fresky"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47027591-1', 'auto');  
+ga('send', 'pageview');
+</script>
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc461a6c03d4676862a12df80e9304bfd' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000250782'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000250782' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

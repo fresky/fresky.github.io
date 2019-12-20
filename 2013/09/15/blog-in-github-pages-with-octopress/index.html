@@ -1,0 +1,613 @@
+
+ <!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  
+    <title>用octopress在Github pages上写博客 | Dawei XU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Dawei XU">
+    
+
+    
+    <meta name="description" content="安装Git环境 下载msysgit(git for windows)，并安装。 可以选择安装TortoiseGit，这个在windows的资源管理器里装了很多git的右键菜单，对git命令行不熟悉的同学用起来很方便。  安装Ruby环境 从RubyInstaller下载RubyInstaller，直接安装。 从RubyInstaller下载Devkit。注意下载合适的版本：   Ruby 1.8.">
+<meta name="keywords" content="Github">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用octopress在Github pages上写博客">
+<meta property="og:url" content="http://fresky.github.io/2013/09/15/blog-in-github-pages-with-octopress/index.html">
+<meta property="og:site_name" content="Dawei XU">
+<meta property="og:description" content="安装Git环境 下载msysgit(git for windows)，并安装。 可以选择安装TortoiseGit，这个在windows的资源管理器里装了很多git的右键菜单，对git命令行不熟悉的同学用起来很方便。  安装Ruby环境 从RubyInstaller下载RubyInstaller，直接安装。 从RubyInstaller下载Devkit。注意下载合适的版本：   Ruby 1.8.">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-20T08:29:07.274Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用octopress在Github pages上写博客">
+<meta name="twitter:description" content="安装Git环境 下载msysgit(git for windows)，并安装。 可以选择安装TortoiseGit，这个在windows的资源管理器里装了很多git的右键菜单，对git命令行不熟悉的同学用起来很方便。  安装Ruby环境 从RubyInstaller下载RubyInstaller，直接安装。 从RubyInstaller下载Devkit。注意下载合适的版本：   Ruby 1.8.">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Dawei XU" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Dawei XU" title="Dawei XU"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Dawei XU">Dawei XU</a></h1>
+				<h2 class="blog-motto">Flying in the free sky</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" >
+						<input type="search" id="st-search-input" placeholder="Search" />
+					</form>
+					<script type="text/javascript">
+					var Swiftype = window.Swiftype || {};
+						(function() {
+							Swiftype.key = 'kh-hxC3krCFFsasryDzy';
+							var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+							script.src = "//s.swiftypecdn.com/embed.js";
+							var entry = document.getElementsByTagName('script')[0];
+							entry.parentNode.insertBefore(script, entry);
+						}());
+					</script>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2013/09/15/blog-in-github-pages-with-octopress/" title="用octopress在Github pages上写博客" itemprop="url">用octopress在Github pages上写博客</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dawei XU" target="_blank" itemprop="author">Dawei XU</a>
+		
+  <p class="article-time">
+    <time datetime="2013-09-15T13:16:00.000Z" itemprop="datePublished"> Published Sep 15 2013</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Git环境"><span class="toc-number">1.</span> <span class="toc-text">安装Git环境</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Ruby环境"><span class="toc-number">2.</span> <span class="toc-text">安装Ruby环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#tags-ruby-octopress"><span class="toc-number">2.1.</span> <span class="toc-text">tags: [ruby,octopress]</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考"><span class="toc-number">3.</span> <span class="toc-text">参考</span></a></li></ol>
+		
+		</div>
+		
+		<h1 id="安装Git环境"><a href="#安装Git环境" class="headerlink" title="安装Git环境"></a>安装Git环境</h1><ol>
+<li>下载<a href="https://code.google.com/p/msysgit/downloads/list" target="_blank" rel="noopener">msysgit(git for windows)</a>，并安装。</li>
+<li>可以选择安装<a href="http://code.google.com/p/tortoisegit/" target="_blank" rel="noopener">TortoiseGit</a>，这个在windows的资源管理器里装了很多git的右键菜单，对git命令行不熟悉的同学用起来很方便。</li>
+</ol>
+<h1 id="安装Ruby环境"><a href="#安装Ruby环境" class="headerlink" title="安装Ruby环境"></a>安装Ruby环境</h1><ol>
+<li>从<a href="http://www.rubyinstaller.org/downloads/" target="_blank" rel="noopener">RubyInstaller</a>下载RubyInstaller，直接安装。</li>
+<li>从<a href="http://www.rubyinstaller.org/downloads/" target="_blank" rel="noopener">RubyInstaller</a>下载Devkit。<br>注意下载合适的版本：  <ul>
+<li>Ruby 1.8.6 to 1.9.3: tdm-32-4.5.2</li>
+<li>Ruby 2.0.0: mingw64-32-4.7.2</li>
+<li>Ruby 2.0.0 x64 (64bits): mingw64-64-4.7.2</li>
+</ul>
+</li>
+<li>下载的Devkit其实就是7zip的压缩包，双击时候选择解压位置，比如<code>c:\devkit</code>。</li>
+<li>在命令行运行如下命令安装devkit：  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">	cd DevKit  </span><br><span class="line">	ruby dk.rb init  </span><br><span class="line">	ruby dk.rb install</span><br><span class="line">```  </span><br><span class="line">注意如果安装失败（不是两个[INFO]），可以在跑完`ruby dk.rb init`之后跑一下`ruby dk.rb review`来看看生成的`.yml`文件对不对，如果没有正确的找到ruby的安装目录，就手动加在下面。</span><br><span class="line">5. 可以把gem的源更换到淘宝的镜像，这样比较快。</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>gem sources -a <a href="http://ruby.taobao.org/" target="_blank" rel="noopener">http://ruby.taobao.org/</a><br>gem sources -r <a href="https://rubygems.org/" target="_blank" rel="noopener">https://rubygems.org/</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">然后可以`gem sources -l`看看结果。</span><br><span class="line"></span><br><span class="line"># 安装Octorpress</span><br><span class="line"></span><br><span class="line"> 1 . 首先把Octopress的代码拿到本地。</span><br></pre></td></tr></table></figure></p>
+<p>git clone git://github.com/imathis/octopress.git blog<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">2 . 修改Octopress目录下的Gemfile文件，将第一行的`http://rubygems.org/` 修改为`http://ruby.taobao.org/`  </span><br><span class="line"></span><br><span class="line">3 . 然后进入文件夹，安装Octopress。</span><br></pre></td></tr></table></figure></p>
+<p>gem install bundler<br>bundle install<br>rake install<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">4 . 解决中文问题。  </span><br><span class="line"></span><br><span class="line">  * 在环境变量中设置下面的键值对：</span><br></pre></td></tr></table></figure></p>
+<p>LANG=zh_CN.UTF-8<br>LC_ALL=zh_CN.UTF-8<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 含有中文的文件需要保存为UTF-8无BOM格式编码。  </span><br><span class="line">* 在Ruby的安装路径找到文件convertible.rb，将27行修改为：</span><br></pre></td></tr></table></figure></p>
+<p>self.content = File.read(File.join(base, name), :encoding =&gt; ‘utf-8’)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5 . 配置Octopress，修改`_config.yml`。重点修改如下几个：</span><br></pre></td></tr></table></figure></p>
+<p>url: <a href="http://fresky.github.io">http://fresky.github.io</a><br>title: Flying in the free sky<br>subtitle: Dawei’s Blog<br>author: Dawei XU<br>simple_search: <a href="http://google.com/search" target="_blank" rel="noopener">http://google.com/search</a><br>description:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 写博客</span><br><span class="line"></span><br><span class="line">博客必须存放在`source/_posts`目录下，并且满足[Jekyll](http://jekyllrb.com/)的命名规范：`YYYY-MM-DD-post-title.markdown`。</span><br><span class="line">    </span><br><span class="line">1 . 用`rake new_post[&quot;Title of the post&quot;]`自动生成一个新的符合命名规范的博文。注意这里的标题不能有中文。</span><br><span class="line"></span><br><span class="line">2 . 这个自动生成的文件的开头如下：</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>layout: post<br>title: “Tutorial: Create a blog with octopress and host it in github pages”<br>date: 2013-04-22T21:24:21+02:00<br>comments: true</p>
+<h2 id="tags-ruby-octopress"><a href="#tags-ruby-octopress" class="headerlink" title="tags: [ruby,octopress]"></a>tags: [ruby,octopress]</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">在这里可以修改title为中文。</span><br><span class="line"></span><br><span class="line">3 . 用你喜欢的编辑器编辑Markdown文本。我用的是[MarkdownPad](http://markdownpad.com/)。    </span><br><span class="line"></span><br><span class="line">4 . 编辑完之后可以运行`rake preview`来预览自己的博客（本地机器4000端口）。</span><br><span class="line"></span><br><span class="line"># 发布到Github Pages上</span><br><span class="line"></span><br><span class="line">1 . 在Github上创建一个新的repository，名字叫做`your-username.github.io`。名字一定要符合这个规范。  </span><br><span class="line"></span><br><span class="line">2 . 运行命令绑定到Github Pages上：</span><br></pre></td></tr></table></figure>
+<p>rake setup_github_pages[<a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:fresky/fresky.github.com.git(reponame)]<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Github pages需要有2个分支，一个是`main`，一个是`source`。`main`上的内容用来显示。  </span><br><span class="line"></span><br><span class="line">3 . 运行命令来发布：`rake deploy`</span><br><span class="line"></span><br><span class="line">  </span><br><span class="line">4 . 调用`git push origin source`来把你的博文的markdown也放到github上。</span><br><span class="line"></span><br><span class="line"># 在另一台机器上发布博文</span><br><span class="line"></span><br><span class="line">Octopress的repository有2个分支，一个是`source`，相当于源代码，包含我们写的博文等文件，这些文件会被处理然后用来生成blog。另一个是`main`,包含博客本身。  </span><br><span class="line">`main`分支存储在`_deploy`的目录下，这个目录以下划线开头，所以在`git push origin source`时会被忽略掉。当运行`rake deploy`时，会提交`master`。</span><br><span class="line">所以我们要做的就是在新机器上重建一个Octopress的repository。</span><br><span class="line"></span><br><span class="line">  1 . 克隆`source`到一个本地目录。</span><br></pre></td></tr></table></figure></p>
+<p>$ git clone -b source <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:fresky/fresky.github.com.git blog<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2 . 克隆`master`到`_deploy`目录。</span><br></pre></td></tr></table></figure></p>
+<p>$ cd blog<br>$ git clone <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:fresky/fresky.github.com.git _deploy<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">3  . 运行rake来配置</span><br></pre></td></tr></table></figure></p>
+<p>$ gem install bundler<br>$ bundle install<br>$ rake setup_github_pages<br><code>`</code><br>跟上面的步骤一样。<br>这样就在一个新的机器上设置好了Octopress的环境。</p>
+<p>如果在多台机器上用，需要每次发布前都pull，发布完都push两个分支。</p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol>
+<li><a href="http://miguelcamba.com/blog/2013/04/22/tutorial-create-a-blog-with-octopress-and-host-it-in-github-pages/" target="_blank" rel="noopener">Tutorial: Create a Blog With Octopress and Host It in Github Pages</a>  </li>
+<li><a href="http://blog.zerosharp.com/clone-your-octopress-to-blog-from-two-places/" target="_blank" rel="noopener">Clone Your Octopress to Blog From Two Places</a>  </li>
+<li><a href="http://www.cnblogs.com/oec2003/archive/2013/05/27/3100896.html" target="_blank" rel="noopener">Windows下搭建Octopress博客</a></li>
+</ol>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Github/">Github</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	<div class="share-jiathis">
+	  
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_googleplus"></a>
+	<a class="jiathis_button_douban"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1656049415"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+1886896" charset="utf-8"></script>      
+
+	 </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2013/09/18/popular-coding-convention-on-github/" title="来看看Github上流行的编码规范">
+  <strong>上一篇：</strong><br/>
+  <span>
+  来看看Github上流行的编码规范</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2013/09/11/why-have-Run-Time-Check-Failure-0-The-value-of-ESP-was-not-properly-saved-across-a-function-call-error/"  title="C++程序在debug模式下遇到Run-Time Check Failure #0 - The value of ESP was not properly saved across a function call问题">
+ <strong>下一篇：</strong><br/> 
+ <span>C++程序在debug模式下遇到Run-Time Check Failure #0 - The value of ESP was not properly saved across a function call问题
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2013/09/15/blog-in-github-pages-with-octopress/" data-title="用octopress在Github pages上写博客" data-url="http://fresky.github.io/2013/09/15/blog-in-github-pages-with-octopress/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Git环境"><span class="toc-number">1.</span> <span class="toc-text">安装Git环境</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#安装Ruby环境"><span class="toc-number">2.</span> <span class="toc-text">安装Ruby环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#tags-ruby-octopress"><span class="toc-number">2.1.</span> <span class="toc-text">tags: [ruby,octopress]</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考"><span class="toc-number">3.</span> <span class="toc-text">参考</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <br/>
+<div class="widget-wrap">
+  <p class="asidetitle">Total Posts: 397</p>
+</div>
+
+
+  </br>
+
+  <div class="widget-wrap">
+    <p class="asidetitle">Recent Posts</p>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            * <a href="/2019/10/25/visual-vocabulary/">来自金融时报的可视化辞典</a>
+          </li>
+        
+          <li>
+            * <a href="/2019/05/29/code-search-with-opengrok/">用opengrok搭建代码搜索引擎</a>
+          </li>
+        
+          <li>
+            * <a href="/2019/02/18/package-net-core-in-one-single-exe/">打包.NET Core的程序到一个单独的可执行文件</a>
+          </li>
+        
+          <li>
+            * <a href="/2018/10/10/how-to-choose-brand-color/">如何给自己的品牌选择颜色</a>
+          </li>
+        
+          <li>
+            * <a href="/2018/09/30/how-many-lines-of-code/">看看这些软件有多少行代码</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/CSharp/" title="CSharp">CSharp<sup>133</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>91</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Other/" title="Other">Other<sup>60</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/CPP/" title="CPP">CPP<sup>50</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Resource/" title="Resource">Resource<sup>35</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Debug/" title="Debug">Debug<sup>33</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Github/" title="Github">Github<sup>11</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Development/" title="Development">Development<sup>8</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Design/" title="Design">Design<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Regex/" title="Regex">Regex<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Opensource/" title="Opensource">Opensource<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Installer/" title="Installer">Installer<sup>2</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="stackoverflow">
+	<p class="asidetitle">Stack Overflow</p>
+	<a href="http://stackoverflow.com/users/304115/fresky">
+			<img src="http://stackoverflow.com/users/flair/304115.png" width="100%" height="100%" alt="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers" title="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers">
+	</a>
+</div>
+
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="fresky" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+
+<div class="doubanshow">
+<p class="asidetitle">Douban Show</p>
+<div>
+<script type="text/javascript" src="http://www.douban.com/service/badge/fresky/?show=collection&amp;n=12&amp;columns=3&amp;hidelogo=yes&amp;hideself=yes&amp;cat=book" ></script>
+</div>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1656049415" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/fresky" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/304115" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		
+		
+		<a href="https://www.linkedin.com/in/daweix" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/fresky" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		
+		<a href="mailto:dawei.xu@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
+		
+		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"fresky"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47027591-1', 'auto');  
+ga('send', 'pageview');
+</script>
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc461a6c03d4676862a12df80e9304bfd' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000250782'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000250782' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

@@ -1,0 +1,594 @@
+
+ <!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  
+    <title>如何调试msbuild？ | Dawei XU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Dawei XU">
+    
+
+    
+    <meta name="description" content="本文介绍了如何调试msbuild，以及如何让msbuild编译solution文件sln。">
+<meta name="keywords" content="Debug">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何调试msbuild？">
+<meta property="og:url" content="http://fresky.github.io/2015/04/15/how-to-debug-msbuild/index.html">
+<meta property="og:site_name" content="Dawei XU">
+<meta property="og:description" content="本文介绍了如何调试msbuild，以及如何让msbuild编译solution文件sln。">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-12-20T08:29:07.297Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="如何调试msbuild？">
+<meta name="twitter:description" content="本文介绍了如何调试msbuild，以及如何让msbuild编译solution文件sln。">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Dawei XU" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Dawei XU" title="Dawei XU"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Dawei XU">Dawei XU</a></h1>
+				<h2 class="blog-motto">Flying in the free sky</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" >
+						<input type="search" id="st-search-input" placeholder="Search" />
+					</form>
+					<script type="text/javascript">
+					var Swiftype = window.Swiftype || {};
+						(function() {
+							Swiftype.key = 'kh-hxC3krCFFsasryDzy';
+							var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+							script.src = "//s.swiftypecdn.com/embed.js";
+							var entry = document.getElementsByTagName('script')[0];
+							entry.parentNode.insertBefore(script, entry);
+						}());
+					</script>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/04/15/how-to-debug-msbuild/" title="如何调试msbuild？" itemprop="url">如何调试msbuild？</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dawei XU" target="_blank" itemprop="author">Dawei XU</a>
+		
+  <p class="article-time">
+    <time datetime="2015-04-15T15:34:28.000Z" itemprop="datePublished"> Published Apr 15 2015</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前期准备工作"><span class="toc-number">1.</span> <span class="toc-text">前期准备工作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编译单个项目"><span class="toc-number">2.</span> <span class="toc-text">编译单个项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编译整个solution"><span class="toc-number">3.</span> <span class="toc-text">编译整个solution</span></a></li></ol>
+		
+		</div>
+		
+		<p>有没有想过调试<code>msbuild</code>呢？可以参考<a href="http://blogs.msdn.com/b/visualstudio/archive/2010/07/06/debugging-msbuild-script-with-visual-studio.aspx" target="_blank" rel="noopener">Debugging MSBuild script with Visual Studio</a>，<a href="http://blogs.msdn.com/b/visualstudio/archive/2010/07/09/debugging-msbuild-script-with-visual-studio-2.aspx" target="_blank" rel="noopener">part2</a>，<a href="http://blogs.msdn.com/b/visualstudio/archive/2010/07/09/debugging-msbuild-script-with-visual-studio-3.aspx" target="_blank" rel="noopener">part3</a>。</p>
+<h1 id="前期准备工作"><a href="#前期准备工作" class="headerlink" title="前期准备工作"></a>前期准备工作</h1><ol>
+<li>修改注册表，在键值<code>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSBuild\4.0</code>下添加<code>String Value</code>，名字是<strong> DebuggerEnabled</strong>，值是<strong>true</strong>。（注意区分32位和64位，我给出的例子是32位的）  </li>
+<li>在命令行运行<code>msbuild /?</code>，可以看到多了一个<code>/debug</code>的选项，它的解释是：<blockquote>
+<pre><code>Causes a debugger prompt to appear immediately so that
+Visual Studio can be attached for you to debug the
+MSBuild XML and any tasks and loggers it uses.  
+</code></pre></blockquote>
+</li>
+<li>确认Visual Studio是exception handler。就是确认注册表的<code>HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger</code>的值是<code>vsjitdebugger.exe -p %ld -e %ld</code>。或者直接在命令行运行<code>vsjitdebugger.exe /regserver</code>。</li>
+</ol>
+<h1 id="编译单个项目"><a href="#编译单个项目" class="headerlink" title="编译单个项目"></a>编译单个项目</h1><p>在命令行运行<code>msbuild /t:rebuild /debug Demo.csproj</code>就会在刚刚启动<code>msbuild</code>时弹出Visual Studio的Attach窗口，接着就能F10，F11一步步的看<code>.csproj</code>这个文件是怎么执行的了，还可以在Locals窗口看到局部变量的值。</p>
+<h1 id="编译整个solution"><a href="#编译整个solution" class="headerlink" title="编译整个solution"></a>编译整个solution</h1><ol>
+<li>生成<code>*.sln.metaproj</code>文件。<br>因为<code>msbuild</code>缺省不支持编译<code>sln</code>，我们需要首先设置环境变量<code>set MSBUILDEMITSOLUTION=1</code>，这样用<code>msbuild</code>编译<code>sln</code>时就会生成一个<code>*.sln.metaproj</code>的文件。  </li>
+<li>在命令行运行<code>msbuild /t:rebuild /debug Demo.sln.metaproj</code>就可以编译整个solution了，可以在每一个项目文件的开头打上断点看编译是怎么执行的。</li>
+</ol>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Debug/">Debug</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	<div class="share-jiathis">
+	  
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_googleplus"></a>
+	<a class="jiathis_button_douban"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1656049415"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+1886896" charset="utf-8"></script>      
+
+	 </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/04/16/10-ways-to-improve-productivity/" title="10个提高效率的小技巧">
+  <strong>上一篇：</strong><br/>
+  <span>
+  10个提高效率的小技巧</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/04/03/can-we-call-a-private-method-of-csharp-class/"  title="在C#中我们能调用一个类的私有方法吗">
+ <strong>下一篇：</strong><br/> 
+ <span>在C#中我们能调用一个类的私有方法吗
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/04/15/how-to-debug-msbuild/" data-title="如何调试msbuild？" data-url="http://fresky.github.io/2015/04/15/how-to-debug-msbuild/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前期准备工作"><span class="toc-number">1.</span> <span class="toc-text">前期准备工作</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编译单个项目"><span class="toc-number">2.</span> <span class="toc-text">编译单个项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#编译整个solution"><span class="toc-number">3.</span> <span class="toc-text">编译整个solution</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <br/>
+<div class="widget-wrap">
+  <p class="asidetitle">Total Posts: 397</p>
+</div>
+
+
+  </br>
+
+  <div class="widget-wrap">
+    <p class="asidetitle">Recent Posts</p>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            * <a href="/2019/10/25/visual-vocabulary/">来自金融时报的可视化辞典</a>
+          </li>
+        
+          <li>
+            * <a href="/2019/05/29/code-search-with-opengrok/">用opengrok搭建代码搜索引擎</a>
+          </li>
+        
+          <li>
+            * <a href="/2019/02/18/package-net-core-in-one-single-exe/">打包.NET Core的程序到一个单独的可执行文件</a>
+          </li>
+        
+          <li>
+            * <a href="/2018/10/10/how-to-choose-brand-color/">如何给自己的品牌选择颜色</a>
+          </li>
+        
+          <li>
+            * <a href="/2018/09/30/how-many-lines-of-code/">看看这些软件有多少行代码</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/CSharp/" title="CSharp">CSharp<sup>133</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>91</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Other/" title="Other">Other<sup>60</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/CPP/" title="CPP">CPP<sup>50</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Resource/" title="Resource">Resource<sup>35</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Debug/" title="Debug">Debug<sup>33</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Github/" title="Github">Github<sup>11</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Development/" title="Development">Development<sup>8</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Design/" title="Design">Design<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Regex/" title="Regex">Regex<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Opensource/" title="Opensource">Opensource<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Installer/" title="Installer">Installer<sup>2</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="stackoverflow">
+	<p class="asidetitle">Stack Overflow</p>
+	<a href="http://stackoverflow.com/users/304115/fresky">
+			<img src="http://stackoverflow.com/users/flair/304115.png" width="100%" height="100%" alt="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers" title="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers">
+	</a>
+</div>
+
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="fresky" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+
+<div class="doubanshow">
+<p class="asidetitle">Douban Show</p>
+<div>
+<script type="text/javascript" src="http://www.douban.com/service/badge/fresky/?show=collection&amp;n=12&amp;columns=3&amp;hidelogo=yes&amp;hideself=yes&amp;cat=book" ></script>
+</div>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1656049415" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/fresky" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/304115" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		
+		
+		<a href="https://www.linkedin.com/in/daweix" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/fresky" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		
+		<a href="mailto:dawei.xu@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
+		
+		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"fresky"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47027591-1', 'auto');  
+ga('send', 'pageview');
+</script>
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc461a6c03d4676862a12df80e9304bfd' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000250782'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000250782' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

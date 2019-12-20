@@ -1,0 +1,624 @@
+
+ <!DOCTYPE HTML>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  
+    <title>调试内存泄漏问题的一些经验 | Dawei XU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Dawei XU">
+    
+
+    
+    <meta name="description" content="内存泄漏（memory leak）是软件中经常遇到的一类问题，这类问题又是比较难以检测的，通常我们在程序遇到Out Of Memory的异常时才会注意到。拿到Out Of Memory的dump文件后，如何分析dump文件找到内存泄漏的线索又是一个难点。这篇文章分享了一些在Windows平台如何调试，检测C++和C#的内存泄漏的一些经验。Windbg，VLD，gflags，UMDH，Visual">
+<meta name="keywords" content="CSharp,Debug,CPP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="调试内存泄漏问题的一些经验">
+<meta property="og:url" content="http://fresky.github.io/2015/06/21/how-to-attack-the-memory-leak-issue/index.html">
+<meta property="og:site_name" content="Dawei XU">
+<meta property="og:description" content="内存泄漏（memory leak）是软件中经常遇到的一类问题，这类问题又是比较难以检测的，通常我们在程序遇到Out Of Memory的异常时才会注意到。拿到Out Of Memory的dump文件后，如何分析dump文件找到内存泄漏的线索又是一个难点。这篇文章分享了一些在Windows平台如何调试，检测C++和C#的内存泄漏的一些经验。Windbg，VLD，gflags，UMDH，Visual">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://fresky.github.io/images/gflags_stack.png">
+<meta property="og:image" content="https://i-msdn.sec.s-msft.com/dynimg/IC720150.png">
+<meta property="og:image" content="https://i-msdn.sec.s-msft.com/dynimg/IC750722.png">
+<meta property="og:image" content="https://i-msdn.sec.s-msft.com/dynimg/IC720152.png">
+<meta property="og:updated_time" content="2019-12-20T08:29:07.301Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="调试内存泄漏问题的一些经验">
+<meta name="twitter:description" content="内存泄漏（memory leak）是软件中经常遇到的一类问题，这类问题又是比较难以检测的，通常我们在程序遇到Out Of Memory的异常时才会注意到。拿到Out Of Memory的dump文件后，如何分析dump文件找到内存泄漏的线索又是一个难点。这篇文章分享了一些在Windows平台如何调试，检测C++和C#的内存泄漏的一些经验。Windbg，VLD，gflags，UMDH，Visual">
+<meta name="twitter:image" content="http://fresky.github.io/images/gflags_stack.png">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Dawei XU" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Dawei XU" title="Dawei XU"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Dawei XU">Dawei XU</a></h1>
+				<h2 class="blog-motto">Flying in the free sky</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" >
+						<input type="search" id="st-search-input" placeholder="Search" />
+					</form>
+					<script type="text/javascript">
+					var Swiftype = window.Swiftype || {};
+						(function() {
+							Swiftype.key = 'kh-hxC3krCFFsasryDzy';
+							var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+							script.src = "//s.swiftypecdn.com/embed.js";
+							var entry = document.getElementsByTagName('script')[0];
+							entry.parentNode.insertBefore(script, entry);
+						}());
+					</script>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2015/06/21/how-to-attack-the-memory-leak-issue/" title="调试内存泄漏问题的一些经验" itemprop="url">调试内存泄漏问题的一些经验</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dawei XU" target="_blank" itemprop="author">Dawei XU</a>
+		
+  <p class="article-time">
+    <time datetime="2015-06-21T06:03:45.000Z" itemprop="datePublished"> Published Jun 21 2015</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、内存泄漏的Dump分析"><span class="toc-number">1.</span> <span class="toc-text">一、内存泄漏的Dump分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#非托管（C-）内存泄漏分析"><span class="toc-number">1.1.</span> <span class="toc-text">非托管（C++）内存泄漏分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#托管（C-）内存泄漏分析"><span class="toc-number">1.2.</span> <span class="toc-text">托管（C#）内存泄漏分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GDI句柄超过限制"><span class="toc-number">1.3.</span> <span class="toc-text">GDI句柄超过限制</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、内存泄漏的实时调试"><span class="toc-number">2.</span> <span class="toc-text">二、内存泄漏的实时调试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#非托管内存泄漏检测"><span class="toc-number">2.1.</span> <span class="toc-text">非托管内存泄漏检测</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用VLD来检测内存泄漏。"><span class="toc-number">2.1.1.</span> <span class="toc-text">使用VLD来检测内存泄漏。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#打开“Create-user-mode-stack-trace-database”，分析dump"><span class="toc-number">2.1.2.</span> <span class="toc-text">打开“Create user mode stack trace database”，分析dump</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用Windbg的-heap-l命令。"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">使用Windbg的!heap -l命令。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用Windbg的-heap-p-a-lt-address-gt-命令"><span class="toc-number">2.1.2.2.</span> <span class="toc-text">使用Windbg的!heap -p -a &lt;address&gt;命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用UMDH"><span class="toc-number">2.1.2.3.</span> <span class="toc-text">使用UMDH</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#托管（C-）内存泄漏检测"><span class="toc-number">2.2.</span> <span class="toc-text">托管（C#）内存泄漏检测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GDI句柄监测"><span class="toc-number">2.3.</span> <span class="toc-text">GDI句柄监测</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<p>内存泄漏（memory leak）是软件中经常遇到的一类问题，这类问题又是比较难以检测的，通常我们在程序遇到<code>Out Of Memory</code>的异常时才会注意到。拿到<code>Out Of Memory</code>的dump文件后，如何分析dump文件找到内存泄漏的线索又是一个难点。这篇文章分享了一些在Windows平台如何调试，检测C++和C#的内存泄漏的一些经验。</p>
+<h1 id="一、内存泄漏的Dump分析"><a href="#一、内存泄漏的Dump分析" class="headerlink" title="一、内存泄漏的Dump分析"></a>一、内存泄漏的Dump分析</h1><p>通常拿到<code>Out Of Memory</code>的dump之后，用windbg打开，抛出异常的call stack一般是在分配内存时，这个call stack其实意义不大，我们需要知道的是内存为什么被用完了。</p>
+<p>一般第一个要运行的命令是<code>!address -summary</code>，它会给出一个内存情况的总结，如下所示。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">0:000&gt; !address -summary</span><br><span class="line"></span><br><span class="line">--- Usage Summary ---------------- RgnCount ----------- Total Size -------- %ofBusy %ofTotal</span><br><span class="line">Heap                                    340          3c876000 ( 968.461 Mb)  48.38%   47.29%</span><br><span class="line">&lt;unknown&gt;                              2001          2c3b5000 ( 707.707 Mb)  35.36%   34.56%</span><br><span class="line">Image                                  1115          119cf000 ( 281.809 Mb)  14.08%   13.76%</span><br><span class="line">Free                                    544           2e40000 (  46.250 Mb)            2.26%</span><br><span class="line">Stack                                   139           2b00000 (  43.000 Mb)   2.15%    2.10%</span><br><span class="line">Other                                    95             8a000 ( 552.000 kb)   0.03%    0.03%</span><br><span class="line">TEB                                      43             2b000 ( 172.000 kb)   0.01%    0.01%</span><br><span class="line">PEB                                       1              1000 (   4.000 kb)   0.00%    0.00%</span><br><span class="line"></span><br><span class="line">--- Type Summary (for busy) ------ RgnCount ----------- Total Size -------- %ofBusy %ofTotal</span><br><span class="line">MEM_PRIVATE                             889          46725000 (   1.101 Gb)  56.31%   55.04%</span><br><span class="line">MEM_MAPPED                             1686          24707000 ( 583.027 Mb)  29.13%   28.47%</span><br><span class="line">MEM_IMAGE                              1159          12384000 ( 291.516 Mb)  14.56%   14.23%</span><br><span class="line"></span><br><span class="line">--- State Summary ---------------- RgnCount ----------- Total Size -------- %ofBusy %ofTotal</span><br><span class="line">MEM_COMMIT                             3425          717c1000 (   1.773 Gb)  90.71%   88.66%</span><br><span class="line">MEM_RESERVE                             309           b9ef000 ( 185.934 Mb)   9.29%    9.08%</span><br><span class="line">MEM_FREE                                544           2e40000 (  46.250 Mb)            2.26%</span><br><span class="line"></span><br><span class="line">--- Protect Summary (for commit) - RgnCount ----------- Total Size -------- %ofBusy %ofTotal</span><br><span class="line">PAGE_READWRITE                         2300          5e7fd000 (   1.477 Gb)  75.54%   73.83%</span><br><span class="line">PAGE_EXECUTE_READ                       201           abb4000 ( 171.703 Mb)   8.58%    8.38%</span><br><span class="line">PAGE_READONLY                           656           616f000 (  97.434 Mb)   4.87%    4.76%</span><br><span class="line">PAGE_WRITECOPY                          125           20d3000 (  32.824 Mb)   1.64%    1.60%</span><br><span class="line">PAGE_READWRITE|PAGE_GUARD                86             bb000 ( 748.000 kb)   0.04%    0.04%</span><br><span class="line">PAGE_EXECUTE_READWRITE                   44             a4000 ( 656.000 kb)   0.03%    0.03%</span><br><span class="line">PAGE_EXECUTE_WRITECOPY                   13             6f000 ( 444.000 kb)   0.02%    0.02%</span><br><span class="line"></span><br><span class="line">--- Largest Region by Usage ----------- Base Address -------- Region Size ----------</span><br><span class="line">Heap                                         7f30000            fd0000 (  15.813 Mb)</span><br><span class="line">&lt;unknown&gt;                                   12670000           4020000 (  64.125 Mb)</span><br><span class="line">Image                                       68f27000           19cb000 (  25.793 Mb)</span><br><span class="line">Free                                        717f2000             7e000 ( 504.000 kb)</span><br><span class="line">Stack                                        2cf0000             fd000 (1012.000 kb)</span><br><span class="line">Other                                       7efb0000             23000 ( 140.000 kb)</span><br><span class="line">TEB                                         7eeb0000              1000 (   4.000 kb)</span><br><span class="line">PEB                                         7efde000              1000 (   4.000 kb)</span><br></pre></td></tr></table></figure></p>
+<p>第一个部分是使用情况，按照大小排序。通常排第一的不是<code>Heap</code>就是<code>&lt;unkown&gt;</code>。<code>Heap</code>是C++的非托管内存，<code>&lt;unkown&gt;</code>是C#的托管内存。</p>
+<p>第二个部分是类型情况，分了3类，分别是：  </p>
+<ol>
+<li><code>MEM_PRIVATE</code>：当前进程独占的内存。  </li>
+<li><code>MEM_MAPPED</code>：映射到文件的内存，这些文件不属于进程程序本身，比如Memory Mapping File。  </li>
+<li><code>MEM_IMAGE</code>：映射到进程程序的内存，比如程序加载的dll。  </li>
+</ol>
+<p>最后一个部分是最大连续内存，比如上图中我们可以看到现在最大的连续可用内存只有500k了。</p>
+<h2 id="非托管（C-）内存泄漏分析"><a href="#非托管（C-）内存泄漏分析" class="headerlink" title="非托管（C++）内存泄漏分析"></a>非托管（C++）内存泄漏分析</h2><p>如果<code>!address -summary</code>的输出中发现<code>Heap</code>被用掉了很多，那很有可能有C++的内存泄漏，我们需要检查堆（heap）来找到可疑的对象。</p>
+<p>1.通过<code>!heap -s</code>来看堆的使用情况，会把堆按照大小列出来，如下所示：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">0:000&gt; !heap -s</span><br><span class="line">LFH Key                   : 0x352f041c</span><br><span class="line">Termination on corruption : DISABLED</span><br><span class="line">  Heap     Flags   Reserv  Commit  Virt   Free  List   UCR  Virt  Lock  Fast </span><br><span class="line">                    (k)     (k)    (k)     (k) length      blocks cont. heap </span><br><span class="line">-----------------------------------------------------------------------------</span><br><span class="line">Virtual block: 39ee0000 - 39ee0000 (size 00000000)</span><br><span class="line">00520000 00000002  619112 617928 619112   1712  2165    95    1      0   LFH</span><br><span class="line">00ef0000 00001002    1088    324   1088      6     5     2    0      0   LFH</span><br><span class="line">02590000 00001002    1088    316   1088     12     7     2    0      0   LFH</span><br><span class="line">02aa0000 00001002    1088    256   1088      4     4     2    0      0   LFH</span><br><span class="line">00340000 00001002      64     12     64      1     2     1    0      0</span><br></pre></td></tr></table></figure>
+<p>2.我们用<code>!heap -stat -h &lt;HeapEntry&gt;</code>来看最大的那个堆，它会列出这个堆上分配的所有对象的统计情况。如果幸运的话我们会看到某个大小的对象数目非常大，占用了很多内存。比如下面的例子中大小为<code>1f64</code>的对象有<code>0x76c6</code>个，占了99%的内存。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">0:000&gt; !heap -stat -h 00520000</span><br><span class="line"> heap @ 00520000</span><br><span class="line">group-by: TOTSIZE max-display: 20</span><br><span class="line">    size     #blocks     total     ( %) (percent of total busy bytes)</span><br><span class="line">    1f64 76c6 - e905f58  (99.99)</span><br><span class="line">    1800 1 - 1800  (0.00)</span><br><span class="line">    824 2 - 1048  (0.00)</span><br></pre></td></tr></table></figure>
+<p>3.我们可以用<code>!heap -flt s &lt;ObjSize&gt;</code>来列出所有大小是制定大小的对象。输出结果中的<code>UserPtr</code>就是对象的地址，然后可以用<code>d</code>命令来显示这个地址的内容。如果幸运的话，比如这个地址直接存了个字符串，那就好办多了。<br>4.还有一些情况我们可能能猜到是某些对象泄漏了。比如如果在<code>!address -summary</code>的输出里我们看到<code>MEM_MAPPED</code>大的离谱，而我们程序里所有的MemoryMappingFile都继承自某个基类，那么我们就可以直接看看内存中有多少个这类对象。<br>5.用命令<code>x modulename!*classname*table*</code>来找内存中虚表的地址。<br>6.用命令<code>!heap -srch vtableaddress</code>来找到所有的对象。<br>7.用命令<code>dt modulename!classname objectaddress</code>来看对象的内容是什么，接着就能分析出为什么这些对象有这么多。  </p>
+<h2 id="托管（C-）内存泄漏分析"><a href="#托管（C-）内存泄漏分析" class="headerlink" title="托管（C#）内存泄漏分析"></a>托管（C#）内存泄漏分析</h2><p>如果<code>!address -summary</code>的输出中发现<code>&lt;unkown&gt;</code>被用掉了很多，那很有可能有C#的内存泄漏，调试相对简单。</p>
+<p>1.运行<code>loadby sos mscorwks</code>（.net4之前）或者<code>loadby sos clr</code>（.net4及以后）来加载SOS扩展。<br>2.运行<code>!dumpheap -stat</code>来看托管堆的统计信息，输出如下：</p>
+<p><code>total 976456 objects
+Statistics:
+      MT    Count    TotalSize Class Name
+71497de4        1           12 System.Runtime.Remoting.Channels.Tcp.TcpClientTransportSinkProvider
+...</code>输出是按照TotalSize的递增顺序显示的，直接翻到最后一行，看看是哪个对象占用了最大的TotalSize。<br>3.运行<code>!dumpheap -mt &lt;mt&gt;</code>来把内存中这个Method Table的所有对象都列出来。结果的第一列就是对象的地址。<br>4.运行<code>!do &lt;address&gt;</code>来看这个对象的内容是什么。<br>5.运行<code>!gcroot &lt;address&gt;</code>来看这些对象是被谁引用的，这样多半就能找到发生内存泄漏的原因了。  </p>
+<h2 id="GDI句柄超过限制"><a href="#GDI句柄超过限制" class="headerlink" title="GDI句柄超过限制"></a>GDI句柄超过限制</h2><p>还有一种发生<code>Out Of Memory</code>异常的情况是GDI句柄超过限制了，可以看到dump中crash的call stack中是有关句柄操作的。默认情况下Windows的每个进程的GDI句柄额度是10000，可以通过注册表<code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\WindowsNT\CurrentVersion\Windows\GDIProcessHandleQuota</code>来修改这个值。</p>
+<p>这种情况相对比较好处理，windows上的<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724291%28v=vs.85%29.aspx" target="_blank" rel="noopener">GDI对象</a>就这些：Bitmap，Brush，DC，Enhanced metafile，Enhanced-metafile DC，Font，Memory DC，Metafile，Metafile DC，Palette，Pen and extended pen，Region。</p>
+<h1 id="二、内存泄漏的实时调试"><a href="#二、内存泄漏的实时调试" class="headerlink" title="二、内存泄漏的实时调试"></a>二、内存泄漏的实时调试</h1><p>如果可以非常容易重现的话，可以实时调试内存泄漏，这样就会容易很多了。</p>
+<h2 id="非托管内存泄漏检测"><a href="#非托管内存泄漏检测" class="headerlink" title="非托管内存泄漏检测"></a>非托管内存泄漏检测</h2><h3 id="使用VLD来检测内存泄漏。"><a href="#使用VLD来检测内存泄漏。" class="headerlink" title="使用VLD来检测内存泄漏。"></a>使用VLD来检测内存泄漏。</h3><p><a href="https://vld.codeplex.com/" target="_blank" rel="noopener">VLD</a>是一个VC++的开源内存泄漏检测工具，非常易于使用。在调试器中运行程序，会在结束时生成一个内存泄漏的报告，包含内存分配的call stack。</p>
+<h3 id="打开“Create-user-mode-stack-trace-database”，分析dump"><a href="#打开“Create-user-mode-stack-trace-database”，分析dump" class="headerlink" title="打开“Create user mode stack trace database”，分析dump"></a>打开“Create user mode stack trace database”，分析dump</h3><p>可以用gflags打开“Create user mode stack trace database”，如下所示，这样就会记录下来每个对象创建的call stack，可以就可以很容易的查到泄漏对象是怎么创建出来的了。<br><img src="/images/gflags_stack.png"></p>
+<h4 id="使用Windbg的-heap-l命令。"><a href="#使用Windbg的-heap-l命令。" class="headerlink" title="使用Windbg的!heap -l命令。"></a>使用Windbg的<code>!heap -l</code>命令。</h4><ol>
+<li>收集dump，用Windbg打开，然后运行命令<code>.logopen d:\leak.txt</code>打开log。  </li>
+<li>运行<code>!heap -l</code>命令，会把所有泄漏的对象列出来，附带创建的call stack。可以很容易的写个程序来分析这个输出，合并重复的对象，计算总大小。  </li>
+</ol>
+<h4 id="使用Windbg的-heap-p-a-lt-address-gt-命令"><a href="#使用Windbg的-heap-p-a-lt-address-gt-命令" class="headerlink" title="使用Windbg的!heap -p -a &lt;address&gt;命令"></a>使用Windbg的<code>!heap -p -a &lt;address&gt;</code>命令</h4><p>按照上面提到的非托管（C++）内存泄漏分析方法来分析dump，最后找到可以的对象时可以直接运行<code>!heap -p -a &lt;address&gt;</code>命令来看到这个地址的对象的创建call stack。</p>
+<h4 id="使用UMDH"><a href="#使用UMDH" class="headerlink" title="使用UMDH"></a>使用UMDH</h4><p><a href="https://msdn.microsoft.com/en-us/library/ff558947%28v=vs.85%29.aspx" target="_blank" rel="noopener">UMDH</a>是Windows Debugging Tools里的，和Windbg在同一个目录里，可以用UMDH收集多个内存的log，然后比较，找出泄漏的对象。</p>
+<h2 id="托管（C-）内存泄漏检测"><a href="#托管（C-）内存泄漏检测" class="headerlink" title="托管（C#）内存泄漏检测"></a>托管（C#）内存泄漏检测</h2><p>Visual Studio 2013加入了<a href="https://msdn.microsoft.com/en-us/library/dn342825.aspx" target="_blank" rel="noopener">调试托管内存</a>的功能，在打开dump文件后可以选择”Debug Managed Memory”，可以看到托管对象的大小，数目，root等信息。</p>
+<p><img src="https://i-msdn.sec.s-msft.com/dynimg/IC720150.png" alt="Debug Managed Memory"></p>
+<p><img src="https://i-msdn.sec.s-msft.com/dynimg/IC750722.png" alt="Managed Object List"></p>
+<p>也可打开多个dump通过选择“Select baseline”进行内存比较，可以看到内存的变化。</p>
+<p><img src="https://i-msdn.sec.s-msft.com/dynimg/IC720152.png" alt="Compare Managed Memory"></p>
+<h2 id="GDI句柄监测"><a href="#GDI句柄监测" class="headerlink" title="GDI句柄监测"></a>GDI句柄监测</h2><p><a href="http://www.nirsoft.net/utils/gdi_handles.html" target="_blank" rel="noopener">GDIView</a>是一个免费的小工具，可以监测GDI使用情况。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/CSharp/">CSharp</a><a href="/tags/Debug/">Debug</a><a href="/tags/CPP/">CPP</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	<div class="share-jiathis">
+	  
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_googleplus"></a>
+	<a class="jiathis_button_douban"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1656049415"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+1886896" charset="utf-8"></script>      
+
+	 </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2015/06/21/how-to-get-the-call-stack-from-code/" title="怎么从代码中拿到栈回溯信息（call stack trace）">
+  <strong>上一篇：</strong><br/>
+  <span>
+  怎么从代码中拿到栈回溯信息（call stack trace）</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2015/06/17/customize-your-debugger-for-cpp-object/"  title="用Natvis定制C++对象在Visual Studio调试时如何显示">
+ <strong>下一篇：</strong><br/> 
+ <span>用Natvis定制C++对象在Visual Studio调试时如何显示
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2015/06/21/how-to-attack-the-memory-leak-issue/" data-title="调试内存泄漏问题的一些经验" data-url="http://fresky.github.io/2015/06/21/how-to-attack-the-memory-leak-issue/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、内存泄漏的Dump分析"><span class="toc-number">1.</span> <span class="toc-text">一、内存泄漏的Dump分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#非托管（C-）内存泄漏分析"><span class="toc-number">1.1.</span> <span class="toc-text">非托管（C++）内存泄漏分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#托管（C-）内存泄漏分析"><span class="toc-number">1.2.</span> <span class="toc-text">托管（C#）内存泄漏分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GDI句柄超过限制"><span class="toc-number">1.3.</span> <span class="toc-text">GDI句柄超过限制</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、内存泄漏的实时调试"><span class="toc-number">2.</span> <span class="toc-text">二、内存泄漏的实时调试</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#非托管内存泄漏检测"><span class="toc-number">2.1.</span> <span class="toc-text">非托管内存泄漏检测</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#使用VLD来检测内存泄漏。"><span class="toc-number">2.1.1.</span> <span class="toc-text">使用VLD来检测内存泄漏。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#打开“Create-user-mode-stack-trace-database”，分析dump"><span class="toc-number">2.1.2.</span> <span class="toc-text">打开“Create user mode stack trace database”，分析dump</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#使用Windbg的-heap-l命令。"><span class="toc-number">2.1.2.1.</span> <span class="toc-text">使用Windbg的!heap -l命令。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用Windbg的-heap-p-a-lt-address-gt-命令"><span class="toc-number">2.1.2.2.</span> <span class="toc-text">使用Windbg的!heap -p -a &lt;address&gt;命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#使用UMDH"><span class="toc-number">2.1.2.3.</span> <span class="toc-text">使用UMDH</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#托管（C-）内存泄漏检测"><span class="toc-number">2.2.</span> <span class="toc-text">托管（C#）内存泄漏检测</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GDI句柄监测"><span class="toc-number">2.3.</span> <span class="toc-text">GDI句柄监测</span></a></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <br/>
+<div class="widget-wrap">
+  <p class="asidetitle">Total Posts: 397</p>
+</div>
+
+
+  </br>
+
+  <div class="widget-wrap">
+    <p class="asidetitle">Recent Posts</p>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            * <a href="/2019/10/25/visual-vocabulary/">来自金融时报的可视化辞典</a>
+          </li>
+        
+          <li>
+            * <a href="/2019/05/29/code-search-with-opengrok/">用opengrok搭建代码搜索引擎</a>
+          </li>
+        
+          <li>
+            * <a href="/2019/02/18/package-net-core-in-one-single-exe/">打包.NET Core的程序到一个单独的可执行文件</a>
+          </li>
+        
+          <li>
+            * <a href="/2018/10/10/how-to-choose-brand-color/">如何给自己的品牌选择颜色</a>
+          </li>
+        
+          <li>
+            * <a href="/2018/09/30/how-many-lines-of-code/">看看这些软件有多少行代码</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/CSharp/" title="CSharp">CSharp<sup>133</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>91</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Other/" title="Other">Other<sup>60</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/CPP/" title="CPP">CPP<sup>50</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Resource/" title="Resource">Resource<sup>35</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Debug/" title="Debug">Debug<sup>33</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Github/" title="Github">Github<sup>11</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Development/" title="Development">Development<sup>8</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Design/" title="Design">Design<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Regex/" title="Regex">Regex<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Opensource/" title="Opensource">Opensource<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Installer/" title="Installer">Installer<sup>2</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="stackoverflow">
+	<p class="asidetitle">Stack Overflow</p>
+	<a href="http://stackoverflow.com/users/304115/fresky">
+			<img src="http://stackoverflow.com/users/flair/304115.png" width="100%" height="100%" alt="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers" title="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers">
+	</a>
+</div>
+
+
+  
+<div class="github-card">
+<p class="asidetitle">Github Card</p>
+<div class="github-card" data-github="fresky" data-width="220" data-height="119" data-theme="medium">
+<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
+</div>
+  </div>
+
+
+
+  
+
+<div class="doubanshow">
+<p class="asidetitle">Douban Show</p>
+<div>
+<script type="text/javascript" src="http://www.douban.com/service/badge/fresky/?show=collection&amp;n=12&amp;columns=3&amp;hidelogo=yes&amp;hideself=yes&amp;cat=book" ></script>
+</div>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1656049415" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/fresky" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/304115" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		
+		
+		<a href="https://www.linkedin.com/in/daweix" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/fresky" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		
+		<a href="mailto:dawei.xu@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
+		
+		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"fresky"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47027591-1', 'auto');  
+ga('send', 'pageview');
+</script>
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc461a6c03d4676862a12df80e9304bfd' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000250782'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000250782' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

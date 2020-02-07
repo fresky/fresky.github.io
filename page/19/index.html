@@ -84,15 +84,17 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/11/why-you-can-not-see-your-wpf-app-icon/" title="WPF应用的图标" itemprop="url">
+    <a href="/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/" title="如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方" itemprop="url">
   
-    <h1 itemprop="name">WPF应用的图标</h1>
+    <h1 itemprop="name">如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</h1>
     
      
-           <p itemprop="description" >WPF应用的图标设置在 project右键-&amp;gt;property-&amp;gt;application-&amp;gt;Icon。但是要注意的是当你用Visual Studio的F5(debug)起的时候看不到图标，用Control—F5没问题。当然直接去点击build出来的exe也没有问</p>
+           <p itemprop="description" >这个问题visual studio - In VS, make print-on-breakpoint use the console - Stack Overflow说明了怎么做。我结合之前这篇文章做了个小例子，放在github上。几个截图：
+
+定制debug显示信息。&amp;nbs</p>
         
     
-    <time datetime="2012-07-10T16:00:00.000Z" itemprop="datePublished">Jul 11 2012</time>
+    <time datetime="2012-07-12T16:00:00.000Z" itemprop="datePublished">Jul 13 2012</time>
   </a>
 </section>
 
@@ -104,15 +106,15 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/" title="使用windbg通过vtable找到优化后的this指针" itemprop="url">
+    <a href="/2012/07/11/why-you-can-not-see-your-wpf-app-icon/" title="WPF应用的图标" itemprop="url">
   
-    <h1 itemprop="name">使用windbg通过vtable找到优化后的this指针</h1>
+    <h1 itemprop="name">WPF应用的图标</h1>
     
      
-           <p itemprop="description" >如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。1. kbn# ChildEBP? RetAddr? Args to Child00 1d61fad0 7c90d21a 7c8023f1 00000000 </p>
+           <p itemprop="description" >WPF应用的图标设置在 project右键-&amp;gt;property-&amp;gt;application-&amp;gt;Icon。但是要注意的是当你用Visual Studio的F5(debug)起的时候看不到图标，用Control—F5没问题。当然直接去点击build出来的exe也没有问</p>
         
     
-    <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
+    <time datetime="2012-07-10T16:00:00.000Z" itemprop="datePublished">Jul 11 2012</time>
   </a>
 </section>
 
@@ -164,16 +166,15 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/06/how-to-record-startup-time-in-csharp/" title="记录C#程序的运行时间" itemprop="url">
+    <a href="/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/" title="使用windbg通过vtable找到优化后的this指针" itemprop="url">
   
-    <h1 itemprop="name">记录C#程序的运行时间</h1>
+    <h1 itemprop="name">使用windbg通过vtable找到优化后的this指针</h1>
     
      
-           <p itemprop="description" >从.net - Does a C# app track how long its been running? - Stack Overflow看到的，很方便的。System.Diagnostics.Process 有个属性记录的应用的开始时间。
-12System.Diagnost</p>
+           <p itemprop="description" >如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。1. kbn# ChildEBP? RetAddr? Args to Child00 1d61fad0 7c90d21a 7c8023f1 00000000 </p>
         
     
-    <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
+    <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
   </a>
 </section>
 
@@ -205,15 +206,16 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/05/where-do-i-start-learn-windows-8/" title="从哪里开始学习Windows 8？（zz）" itemprop="url">
+    <a href="/2012/07/06/how-to-record-startup-time-in-csharp/" title="记录C#程序的运行时间" itemprop="url">
   
-    <h1 itemprop="name">从哪里开始学习Windows 8？（zz）</h1>
+    <h1 itemprop="name">记录C#程序的运行时间</h1>
     
      
-           <p itemprop="description" >Where do I start to learn Windows 8? | Robert MacLean</p>
+           <p itemprop="description" >从.net - Does a C# app track how long its been running? - Stack Overflow看到的，很方便的。System.Diagnostics.Process 有个属性记录的应用的开始时间。
+12System.Diagnost</p>
         
     
-    <time datetime="2012-07-04T16:00:00.000Z" itemprop="datePublished">Jul 5 2012</time>
+    <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
   </a>
 </section>
 
@@ -231,6 +233,26 @@
     
      
            <p itemprop="description" >Visual studio 2012RC中自带了一个Microsoft Fakes框架，可以用来mock .NET的任何方法，包括非virtual和static的方法。（Moq只能mock virutal的方法），从下面的链接可以找到更多的信息。Isolating Unit Te</p>
+        
+    
+    <time datetime="2012-07-04T16:00:00.000Z" itemprop="datePublished">Jul 5 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2012/07/05/where-do-i-start-learn-windows-8/" title="从哪里开始学习Windows 8？（zz）" itemprop="url">
+  
+    <h1 itemprop="name">从哪里开始学习Windows 8？（zz）</h1>
+    
+     
+           <p itemprop="description" >Where do I start to learn Windows 8? | Robert MacLean</p>
         
     
     <time datetime="2012-07-04T16:00:00.000Z" itemprop="datePublished">Jul 5 2012</time>
@@ -427,26 +449,6 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2011/01/11/length-limit-of-http-url/" title="http的url长度限制" itemprop="url">
-  
-    <h1 itemprop="name">http的url长度限制</h1>
-    
-     
-           <p itemprop="description" >http的url长度是有限制的，WWW FAQs: What is the maximum length of a URL?所以不能用get的方式时在url里面放太多的东西，举个简单的例子。如果一个asp.net的页面中使用了treeview，并且treeview的enablev</p>
-        
-    
-    <time datetime="2011-01-10T16:00:00.000Z" itemprop="datePublished">Jan 11 2011</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2011/01/11/GetEnvironmentVariable-issue-in-csharp/" title="C# GetEnvironmentVariable 问题" itemprop="url">
   
     <h1 itemprop="name">C# GetEnvironmentVariable 问题</h1>
@@ -502,7 +504,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 397</p>
+  <p class="asidetitle">Total Posts: 398</p>
 </div>
 
 
@@ -512,6 +514,10 @@
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2020/02/07/soft-skill-questions/">技术面试中关于软能力的问题</a>
+          </li>
         
           <li>
             * <a href="/2019/10/25/visual-vocabulary/">来自金融时报的可视化辞典</a>
@@ -527,10 +533,6 @@
         
           <li>
             * <a href="/2018/10/10/how-to-choose-brand-color/">如何给自己的品牌选择颜色</a>
-          </li>
-        
-          <li>
-            * <a href="/2018/09/30/how-many-lines-of-code/">看看这些软件有多少行代码</a>
           </li>
         
       </ul>
@@ -553,7 +555,7 @@
 			
 		
 			
-				<li><a href="/tags/Other/" title="Other">Other<sup>60</sup></a></li>
+				<li><a href="/tags/Other/" title="Other">Other<sup>61</sup></a></li>
 			
 		
 			
@@ -695,7 +697,7 @@
 		
 
 		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2020 
 		
 		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
 		

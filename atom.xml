@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fresky.github.io/"/>
-  <updated>2019-12-20T08:29:07.315Z</updated>
+  <updated>2020-02-07T07:08:15.045Z</updated>
   <id>http://fresky.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>技术面试中关于软能力的问题</title>
+    <link href="http://fresky.github.io/2020/02/07/soft-skill-questions/"/>
+    <id>http://fresky.github.io/2020/02/07/soft-skill-questions/</id>
+    <published>2020-02-07T06:55:26.000Z</published>
+    <updated>2020-02-07T07:08:15.045Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://deanhume.com/my-favourite-soft-skills-interview-questions" target="_blank" rel="noopener">My Favourite Soft Skills Interview Questions</a>中列举了几个作者常用的古纳元软能力Soft Skill的面试问题，可以参考参考：</p><blockquote><p>Why are you leaving your old workplace?<br>为什么离开上一家公司？  </p></blockquote><blockquote><p>Why are you interested in working here?<br>为什么对我们公司感兴趣？</p></blockquote><blockquote><p>How would your colleagues describe you if I asked them to tell me about you?<br>你的同事会怎么评价你？<br>What criticisms or strengths might they mention?<br>他们会提及你的哪些缺点和强项？</p></blockquote><blockquote><p>Do you have any goals that you would like to achieve in the next few years?<br>你对未来几年有什么目标吗？</p></blockquote><blockquote><p>What made you want to be an [insert role here]?<br>你为什么想做（职位）？</p></blockquote><blockquote><p>What was the last book that you read?<br>你阅读的上一本书是什么？</p></blockquote><blockquote><p>Do you have any personal projects?<br>你有自己的项目吗？</p></blockquote><blockquote><p>What frustrates you at work?<br>工作中什么会让你觉得沮丧？</p></blockquote><blockquote><p>Tell me about a time when you had a difficult working relationship with someone at work - how did you handle it?<br>能举一个和同事在工作中合作不愉快的例子吗？你是怎么处理的？</p></blockquote><blockquote><p>When do you consider a piece of work to be finished?<br>你对完成一项工作的要求是什么？</p></blockquote><blockquote><p>What do you think of TDD?<br>你觉得测试驱动开发怎么样？<br>Do you like it - why or why not?<br>喜欢吗？为什么？</p></blockquote><blockquote><p>What’s the worst technical mistake that you’ve made? Or maybe the “best” outage you’ve ever been part of?<br>你做过的最坏的技术错误是什么？最好的呢？</p></blockquote><blockquote><p>What do you think is the best way to collaborate on a project?<br>你举得项目合作中最好的方式是什么？</p></blockquote><blockquote><p>Imagine that you are in the middle of a development cycle and there is a major change in the functionality of a feature that you have been working on. How do you respond? What questions do you ask?<br>假设你在开发过程中遇到一个重大的功能改变需求，你会怎么做？你会问什么问题？</p></blockquote><blockquote><p>What do you do when someone in your team strongly disagrees with you?How do you ensure your opinion is heard?<br>如果团队中有人非常不同意你的观点，你会怎么做？你怎么保证你的观点会被别人听到？<br>How do you ensure you hear others opinions?<br>你怎么保证你的听到别人的观点</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://deanhume.com/my-favourite-soft-skills-interview-questions&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;My Favourite Soft Skills Inter
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
   
   <entry>
     <title>来自金融时报的可视化辞典</title>
@@ -523,9 +546,9 @@
     </summary>
     
     
-      <category term="Javascript" scheme="http://fresky.github.io/tags/Javascript/"/>
-    
       <category term="Web" scheme="http://fresky.github.io/tags/Web/"/>
+    
+      <category term="Javascript" scheme="http://fresky.github.io/tags/Javascript/"/>
     
   </entry>
   
@@ -3980,29 +4003,6 @@
   </entry>
   
   <entry>
-    <title>听听Matt Rogish说怎么面试程序员</title>
-    <link href="http://fresky.github.io/2013/07/12/how-to-interview-programmer-by-matt-rogish/"/>
-    <id>http://fresky.github.io/2013/07/12/how-to-interview-programmer-by-matt-rogish/</id>
-    <published>2013-07-11T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.269Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p>Google的人力运营高级副总裁Laszlo Bock在一次<a href="http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-deal.html?_r=0" target="_blank" rel="noopener">采访</a>中说Google发现在面试程序员时问智力题完全是浪费时间，Matt Rogish在他的这篇博客<a href="http://mattrogish.com/blog/2013/06/26/how-to-interview-programmers/" target="_blank" rel="noopener">How to Interview Programmers - Rogish Reading Writing</a>中有感而发，介绍了他认为正确的面试程序员的方法。</p>  <ul>   <li>先决条件      <ul>       <li>在你雇佣第一个员工之前          <ol>           <li>想好你的企业文化 </li>            <li>让你团队中的每个人都面试应聘者 </li>            <li>确保你的团队中每个人都知道如何面试，制定面试计划和清单。              <ul>               <li>每个人都写下来他要问什么问题，然后大家坐在一起过一下这些问题 </li>                <li>你要从应聘者身上发现什么素质？ </li>                <li>你通过什么手段来发现？ </li>             </ul>           </li>            <li>同一个问题不要问两次 </li>            <li>举办一些模拟面试来提高面试技巧 </li>            <li>让你的程序员先做做面试题，这样让他们能够在面试时得心应手 </li>         </ol>       </li>        <li>在面试过程中          <ol>           <li>保持开放和诚实（比如不要问应聘者你希望的最低薪水是多少，你应该是第一个说要提供多少薪水股份的人。你应该有一个定义好的技术阶梯来描述你的公司中程序员的职业规划） </li>            <li>面试要因人而异，根据应聘者的背景进行剪裁 </li>            <li>不要诱导证人（比如不要问你喜欢TDD还是简单粗暴直接开始） </li>            <li>问<a href="http://www.strategicdirectionsconference.com/sites/default/files/Abbreviated%20Topgrading%20Interview%20Guide.pdf" target="_blank" rel="noopener">topgrading</a>风格的问题 </li>            <li>保持好的形象（应聘者也在面试你） </li>            <li>午饭订一个好馆子 </li>         </ol>       </li>        <li>面试之后          <ol>           <li>每个人都要给出意见，要还是不要。更重要的是，要给出理由 </li>            <li>如果你准备给offer，尽快 </li>            <li>如果你不准备给offer，也尽快 </li>         </ol>       </li>     </ul>   </li>    <li>现场面试前 </li>    <ul>     <li>初始电话面试（30-45分钟），主要是问一些基本问题，过滤掉你明显不会招的人。说明你的企业文化，让你的应聘者了解你的企业现状。 </li>      <li>第二轮电话面试（1-2小时），主要是确认应聘者会不会编程：）</li>   </ul>    <li>现场面试</li>    <ul>     <li>飞头等舱等。。。如果应聘者够牛，应该会同时拿多个offer，如果你在面试的一开始就招待好他会更容易雇到他</li>      <li>一天的日程</li>      <ol>       <li>参观办公室，看看休息区的高级咖啡机</li>        <li>介绍今天的流程</li>        <li>一些从工作中提取的或者和工作相关编程的题目（难度递增）</li>        <ul>         <li>题目不能太难（三周也搞不定），也不能太简单（靠记忆就能答出来）。开卷，能用google和stackoverflow</li>          <li>在一开始就问问应聘者熟悉什么开发环境，帮他弄一个顺手的机器。或者让他带自己的笔记本</li>          <li>最好有个题库。可以参考<a href="http://rubyquiz.strd6.com/" target="_blank" rel="noopener">RubyQuiz</a> 或者 <a href="http://www.codequizzes.com/" target="_blank" rel="noopener">CodeQuizzes</a>。</li>          <li>目的是考察应聘者能解决一个真是世界的问题</li>       </ul>        <li>午饭，邀请团队所有人都参加，问一些开放式的问题</li>        <li>结对编程</li>        <ul>         <li>如果签了保密协议，可以是公司的真实代码</li>          <li>如果没签，就找个你在用的开源软件，然后一起价格新功能</li>       </ul>        <li>送回酒店（不是机场，都累了一天了），如果预算允许的话，让人呆整个周末</li>     </ol>      <li>最好定一个月的试用合约，然后决定要不要给offer。</li>   </ul> </ul><p></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;Google的人力运营高级副总裁Laszlo Bock在一次&lt;a href=&quot;http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-d
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>推荐一个markdown编辑器-MarkdownPad</title>
     <link href="http://fresky.github.io/2013/07/12/markdown-editor-markdownpad/"/>
     <id>http://fresky.github.io/2013/07/12/markdown-editor-markdownpad/</id>
@@ -4022,6 +4022,29 @@
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>听听Matt Rogish说怎么面试程序员</title>
+    <link href="http://fresky.github.io/2013/07/12/how-to-interview-programmer-by-matt-rogish/"/>
+    <id>http://fresky.github.io/2013/07/12/how-to-interview-programmer-by-matt-rogish/</id>
+    <published>2013-07-11T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.269Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p>Google的人力运营高级副总裁Laszlo Bock在一次<a href="http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-deal.html?_r=0" target="_blank" rel="noopener">采访</a>中说Google发现在面试程序员时问智力题完全是浪费时间，Matt Rogish在他的这篇博客<a href="http://mattrogish.com/blog/2013/06/26/how-to-interview-programmers/" target="_blank" rel="noopener">How to Interview Programmers - Rogish Reading Writing</a>中有感而发，介绍了他认为正确的面试程序员的方法。</p>  <ul>   <li>先决条件      <ul>       <li>在你雇佣第一个员工之前          <ol>           <li>想好你的企业文化 </li>            <li>让你团队中的每个人都面试应聘者 </li>            <li>确保你的团队中每个人都知道如何面试，制定面试计划和清单。              <ul>               <li>每个人都写下来他要问什么问题，然后大家坐在一起过一下这些问题 </li>                <li>你要从应聘者身上发现什么素质？ </li>                <li>你通过什么手段来发现？ </li>             </ul>           </li>            <li>同一个问题不要问两次 </li>            <li>举办一些模拟面试来提高面试技巧 </li>            <li>让你的程序员先做做面试题，这样让他们能够在面试时得心应手 </li>         </ol>       </li>        <li>在面试过程中          <ol>           <li>保持开放和诚实（比如不要问应聘者你希望的最低薪水是多少，你应该是第一个说要提供多少薪水股份的人。你应该有一个定义好的技术阶梯来描述你的公司中程序员的职业规划） </li>            <li>面试要因人而异，根据应聘者的背景进行剪裁 </li>            <li>不要诱导证人（比如不要问你喜欢TDD还是简单粗暴直接开始） </li>            <li>问<a href="http://www.strategicdirectionsconference.com/sites/default/files/Abbreviated%20Topgrading%20Interview%20Guide.pdf" target="_blank" rel="noopener">topgrading</a>风格的问题 </li>            <li>保持好的形象（应聘者也在面试你） </li>            <li>午饭订一个好馆子 </li>         </ol>       </li>        <li>面试之后          <ol>           <li>每个人都要给出意见，要还是不要。更重要的是，要给出理由 </li>            <li>如果你准备给offer，尽快 </li>            <li>如果你不准备给offer，也尽快 </li>         </ol>       </li>     </ul>   </li>    <li>现场面试前 </li>    <ul>     <li>初始电话面试（30-45分钟），主要是问一些基本问题，过滤掉你明显不会招的人。说明你的企业文化，让你的应聘者了解你的企业现状。 </li>      <li>第二轮电话面试（1-2小时），主要是确认应聘者会不会编程：）</li>   </ul>    <li>现场面试</li>    <ul>     <li>飞头等舱等。。。如果应聘者够牛，应该会同时拿多个offer，如果你在面试的一开始就招待好他会更容易雇到他</li>      <li>一天的日程</li>      <ol>       <li>参观办公室，看看休息区的高级咖啡机</li>        <li>介绍今天的流程</li>        <li>一些从工作中提取的或者和工作相关编程的题目（难度递增）</li>        <ul>         <li>题目不能太难（三周也搞不定），也不能太简单（靠记忆就能答出来）。开卷，能用google和stackoverflow</li>          <li>在一开始就问问应聘者熟悉什么开发环境，帮他弄一个顺手的机器。或者让他带自己的笔记本</li>          <li>最好有个题库。可以参考<a href="http://rubyquiz.strd6.com/" target="_blank" rel="noopener">RubyQuiz</a> 或者 <a href="http://www.codequizzes.com/" target="_blank" rel="noopener">CodeQuizzes</a>。</li>          <li>目的是考察应聘者能解决一个真是世界的问题</li>       </ul>        <li>午饭，邀请团队所有人都参加，问一些开放式的问题</li>        <li>结对编程</li>        <ul>         <li>如果签了保密协议，可以是公司的真实代码</li>          <li>如果没签，就找个你在用的开源软件，然后一起价格新功能</li>       </ul>        <li>送回酒店（不是机场，都累了一天了），如果预算允许的话，让人呆整个周末</li>     </ol>      <li>最好定一个月的试用合约，然后决定要不要给offer。</li>   </ul> </ul><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;Google的人力运营高级副总裁Laszlo Bock在一次&lt;a href=&quot;http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-d
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -4098,25 +4121,25 @@
   </entry>
   
   <entry>
-    <title>一个可视化的retrospective网站</title>
-    <link href="http://fresky.github.io/2013/07/08/visual-website-for-retrospective/"/>
-    <id>http://fresky.github.io/2013/07/08/visual-website-for-retrospective/</id>
+    <title>TPL中的task并不是thread</title>
+    <link href="http://fresky.github.io/2013/07/08/tasks-are-not-threads/"/>
+    <id>http://fresky.github.io/2013/07/08/tasks-are-not-threads/</id>
     <published>2013-07-07T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.268Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://ideaboardz.com/" target="_blank" rel="noopener">IdeaBoardz - Brainstorm, Retrospect, Collaborate</a>是一个可视化的retrospective，brainstorm的网站，比较简单易用，可以导出pdf和excel。可以试试。</p><p>下面的贴图来自网站首页。</p><p><img src="http://ideaboardz.com/images/screenshot.png" alt="screen-shot" width="716" height="530"></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://blogs.msdn.com/b/benwilli/archive/2013/04/24/tasks-are-not-threads.aspx" target="_blank" rel="noopener">Tasks are not Threads - The Brain Dump</a>用了一个非常简单直观的例子说明了task和thread并不是一回事（尽管你调用Task.Run一般会在线程池上启一个线程帮你做些事情）。</p>  <p>假设有个UI，我们有2个按钮，开始和结束。代码如下：</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">async</span> <span class="keyword">void</span> <span class="title">bttnStart_Click</span>(<span class="params"><span class="keyword">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    MessageBox.Show(<span class="string">"Looking for the time"</span>);</span><br><span class="line">    DateTime now = <span class="keyword">await</span> GetCurrentTimeAsync();</span><br><span class="line">    MessageBox.Show(<span class="string">"It is now"</span> + now.ToString());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">bttnEnd_Click</span>(<span class="params"><span class="keyword">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (_tsc != <span class="literal">null</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        _tsc.SetResult(DateTime.Now);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TaskCompletionSource&lt;DateTime&gt; _tsc;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> Task&lt;DateTime&gt; <span class="title">GetCurrentTimeAsync</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    _tsc = <span class="keyword">new</span> TaskCompletionSource&lt;DateTime&gt;();</span><br><span class="line">    <span class="keyword">return</span> _tsc.Task;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>从上面的代码我们可以看到，这个task的开始于用户点击“开始”按钮，介绍于用户点击“结束”按钮。task其实在等用户的操作，同样的，task也可以在等网络，内存或者任何别的东西，不一定是线程。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://ideaboardz.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IdeaBoardz - Brainstorm, Retrospect, Collaborate&lt;/a&gt;是一个可视化的retrospective，
+        &lt;p&gt;&lt;a href=&quot;http://blogs.msdn.com/b/benwilli/archive/2013/04/24/tasks-are-not-threads.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tasks are not Thr
       
     
     </summary>
     
     
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -4144,48 +4167,25 @@
   </entry>
   
   <entry>
-    <title>TPL中的task并不是thread</title>
-    <link href="http://fresky.github.io/2013/07/08/tasks-are-not-threads/"/>
-    <id>http://fresky.github.io/2013/07/08/tasks-are-not-threads/</id>
+    <title>一个可视化的retrospective网站</title>
+    <link href="http://fresky.github.io/2013/07/08/visual-website-for-retrospective/"/>
+    <id>http://fresky.github.io/2013/07/08/visual-website-for-retrospective/</id>
     <published>2013-07-07T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.268Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://blogs.msdn.com/b/benwilli/archive/2013/04/24/tasks-are-not-threads.aspx" target="_blank" rel="noopener">Tasks are not Threads - The Brain Dump</a>用了一个非常简单直观的例子说明了task和thread并不是一回事（尽管你调用Task.Run一般会在线程池上启一个线程帮你做些事情）。</p>  <p>假设有个UI，我们有2个按钮，开始和结束。代码如下：</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">async</span> <span class="keyword">void</span> <span class="title">bttnStart_Click</span>(<span class="params"><span class="keyword">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    MessageBox.Show(<span class="string">"Looking for the time"</span>);</span><br><span class="line">    DateTime now = <span class="keyword">await</span> GetCurrentTimeAsync();</span><br><span class="line">    MessageBox.Show(<span class="string">"It is now"</span> + now.ToString());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">bttnEnd_Click</span>(<span class="params"><span class="keyword">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (_tsc != <span class="literal">null</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        _tsc.SetResult(DateTime.Now);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TaskCompletionSource&lt;DateTime&gt; _tsc;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> Task&lt;DateTime&gt; <span class="title">GetCurrentTimeAsync</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    _tsc = <span class="keyword">new</span> TaskCompletionSource&lt;DateTime&gt;();</span><br><span class="line">    <span class="keyword">return</span> _tsc.Task;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>从上面的代码我们可以看到，这个task的开始于用户点击“开始”按钮，介绍于用户点击“结束”按钮。task其实在等用户的操作，同样的，task也可以在等网络，内存或者任何别的东西，不一定是线程。</p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://ideaboardz.com/" target="_blank" rel="noopener">IdeaBoardz - Brainstorm, Retrospect, Collaborate</a>是一个可视化的retrospective，brainstorm的网站，比较简单易用，可以导出pdf和excel。可以试试。</p><p>下面的贴图来自网站首页。</p><p><img src="http://ideaboardz.com/images/screenshot.png" alt="screen-shot" width="716" height="530"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://blogs.msdn.com/b/benwilli/archive/2013/04/24/tasks-are-not-threads.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tasks are not Thr
+        &lt;p&gt;&lt;a href=&quot;http://ideaboardz.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IdeaBoardz - Brainstorm, Retrospect, Collaborate&lt;/a&gt;是一个可视化的retrospective，
       
     
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>15个影响项目进度的路障</title>
-    <link href="http://fresky.github.io/2013/07/07/15-workplace-barriers-better-code/"/>
-    <id>http://fresky.github.io/2013/07/07/15-workplace-barriers-better-code/</id>
-    <published>2013-07-06T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.267Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://www.infoworld.com/d/application-development/15-workplace-barriers-better-code-220975" target="_blank" rel="noopener">15 workplace barriers to better code | Application Development - InfoWorld</a>列出了15个影响项目进度的路障：</p><br><ol><br><li>会议</li><br><li>回复所有的邮件</li><br><li>试图测量生产力</li><br><li>&ldquo;首席女主角&rdquo;程序员（经常抱怨之前写下这些代码的人是傻子）</li><br><li>&rdquo;等会儿再改正&ldquo;的想法（技术债务）</li><br><li>不懂技术的老板</li><br><li>程序员老板</li><br><li>能说会道的程序员（people skill强过programming skill）</li><br><li>自私的程序员</li><br><li>贫乏的文档</li><br><li>过分热衷文档</li><br><li>容易分散注意力的环境</li><br><li><span class="web-item">组织文化的适应性</span></li><br><li><span class="web-item">坚持过时的技术</span></li><br><li><span class="web-item">热衷最新的技术</span></li><br></ol><br><p>其实很多都是一个度的问题，过多还是过少都是走火入魔：）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://www.infoworld.com/d/application-development/15-workplace-barriers-better-code-220975&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;15 
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -4213,25 +4213,25 @@
   </entry>
   
   <entry>
-    <title>如何开源你的库</title>
-    <link href="http://fresky.github.io/2013/07/06/how-to-opensource-your-code/"/>
-    <id>http://fresky.github.io/2013/07/06/how-to-opensource-your-code/</id>
-    <published>2013-07-05T16:00:00.000Z</published>
+    <title>15个影响项目进度的路障</title>
+    <link href="http://fresky.github.io/2013/07/07/15-workplace-barriers-better-code/"/>
+    <id>http://fresky.github.io/2013/07/07/15-workplace-barriers-better-code/</id>
+    <published>2013-07-06T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.267Z</updated>
     
-    <content type="html"><![CDATA[<p></p><p>我之前的博客中介绍过两篇如何做好开源软件的文章，<a href="/2013/06/21/how-to-spread-your-code/">如何传播你的代码</a>，<a href="/2013/01/05/how-to-start-open-source-project/">怎么做一个开源项目</a>。</p><p></p><p></p><p>今天又看到一篇不错的文章，<a href="http://williamdurand.fr/2013/07/04/on-open-sourcing-libraries/" target="_blank" rel="noopener">On Open Sourcing Libraries | William DURAND</a>。</p><p></p><p></p><p>摘要如下：</p><p></p><p></p><p><strong><em>你的项目：</em></strong></p><p></p><ol><br><li>必须有一个README文档，包含名字，描述，还有<strong>使用方法</strong>，<strong>安装说明</strong>，<strong>如何参与</strong>，<strong>测试</strong>和<strong>License</strong>。</li><br><li>必须有一个可见的license文件。</li><br><li>必须经过测试。</li><br><li>必须和你的社区习惯保持一致</li><br></ol><br><p><em><strong>你：</strong></em></p><br><ol><br><li>需要反馈。</li><br><li>必须友好，热情。</li><br><li>应该让别人加入。</li><br></ol>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://www.infoworld.com/d/application-development/15-workplace-barriers-better-code-220975" target="_blank" rel="noopener">15 workplace barriers to better code | Application Development - InfoWorld</a>列出了15个影响项目进度的路障：</p><br><ol><br><li>会议</li><br><li>回复所有的邮件</li><br><li>试图测量生产力</li><br><li>&ldquo;首席女主角&rdquo;程序员（经常抱怨之前写下这些代码的人是傻子）</li><br><li>&rdquo;等会儿再改正&ldquo;的想法（技术债务）</li><br><li>不懂技术的老板</li><br><li>程序员老板</li><br><li>能说会道的程序员（people skill强过programming skill）</li><br><li>自私的程序员</li><br><li>贫乏的文档</li><br><li>过分热衷文档</li><br><li>容易分散注意力的环境</li><br><li><span class="web-item">组织文化的适应性</span></li><br><li><span class="web-item">坚持过时的技术</span></li><br><li><span class="web-item">热衷最新的技术</span></li><br></ol><br><p>其实很多都是一个度的问题，过多还是过少都是走火入魔：）</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;我之前的博客中介绍过两篇如何做好开源软件的文章，&lt;a href=&quot;/2013/06/21/how-to-spread-your-code/&quot;&gt;如何传播你的代码&lt;/a&gt;，&lt;a href=&quot;/2013/01/05/how-to-start-open-source-
+        &lt;p&gt;&lt;a href=&quot;https://www.infoworld.com/d/application-development/15-workplace-barriers-better-code-220975&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;15 
       
     
     </summary>
     
     
-      <category term="Opensource" scheme="http://fresky.github.io/tags/Opensource/"/>
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -4261,28 +4261,25 @@
   </entry>
   
   <entry>
-    <title>google API的.NET库</title>
-    <link href="http://fresky.github.io/2013/07/04/dot-net-library-of-google-api/"/>
-    <id>http://fresky.github.io/2013/07/04/dot-net-library-of-google-api/</id>
-    <published>2013-07-03T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.266Z</updated>
+    <title>如何开源你的库</title>
+    <link href="http://fresky.github.io/2013/07/06/how-to-opensource-your-code/"/>
+    <id>http://fresky.github.io/2013/07/06/how-to-opensource-your-code/</id>
+    <published>2013-07-05T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.267Z</updated>
     
-    <content type="html"><![CDATA[<p></p><p>Goolge发布了一个新的google API .NET库，是一个Portable Class Library，所以无论是.NET，WinTRy，Windows Phone或者Silverlight都能用。</p><p></p><p></p><p><a href="http://www.infoq.com/news/2013/07/Google-API-PCL" target="_blank" rel="noopener">Portable Class Libraries for Google APIs</a></p><p></p><blockquote><br><ul><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#APIs_Discovery_Service" target="_blank" rel="noopener">APIs Discovery Service</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Ad_Exchange_Buyer_API" target="_blank" rel="noopener">Ad Exchange Buyer API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Ad_Exchange_Seller_API" target="_blank" rel="noopener">Ad Exchange Seller API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#AdSense_Host_API" target="_blank" rel="noopener">AdSense Host API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#AdSense_Management_API" target="_blank" rel="noopener">AdSense Management API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Admin_Reports_API" target="_blank" rel="noopener">Admin Reports API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#BigQuery_API" target="_blank" rel="noopener">BigQuery API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Blogger_API" target="_blank" rel="noopener">Blogger API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Books_API" target="_blank" rel="noopener">Books API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Calendar_API" target="_blank" rel="noopener">Calendar API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Cloud_SQL_Administration_API" target="_blank" rel="noopener">Cloud SQL Administration API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Cloud_Storage_API" target="_blank" rel="noopener">Cloud Storage API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Compute_Engine_API" target="_blank" rel="noopener">Compute Engine API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#CustomSearch_API" target="_blank" rel="noopener">CustomSearch API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#DFA_Reporting_API" target="_blank" rel="noopener">DFA Reporting API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Drive_API" target="_blank" rel="noopener">Drive API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Enterprise_Apps_Reseller_API" target="_blank" rel="noopener">Enterprise Apps Reseller API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Enterprise_Audit_API" target="_blank" rel="noopener">Enterprise Audit API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Enterprise_License_Manager_API" target="_blank" rel="noopener">Enterprise License Manager API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Freebase_API" target="_blank" rel="noopener">Freebase API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Fusion_Tables_API" target="_blank" rel="noopener">Fusion Tables API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Affiliate_Network_API" target="_blank" rel="noopener">Google Affiliate Network API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Analytics_API" target="_blank" rel="noopener">Google Analytics API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Civic_Information_API" target="_blank" rel="noopener">Google Civic Information API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Cloud_Datastore_API" target="_blank" rel="noopener">Google Cloud Datastore API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Fonts_Developer_API" target="_blank" rel="noopener">Google Fonts Developer API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Latitude_API" target="_blank" rel="noopener">Google Latitude API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Maps_Coordinate_API" target="_blank" rel="noopener">Google Maps Coordinate API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Mirror_API" target="_blank" rel="noopener">Google Mirror API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_OAuth2_API" target="_blank" rel="noopener">Google OAuth2 API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Play_Android_Developer_API" target="_blank" rel="noopener">Google Play Android Developer API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Site_Verification_API" target="_blank" rel="noopener">Google Site Verification API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google+_API" target="_blank" rel="noopener">Google+ API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Groups_Migration_API" target="_blank" rel="noopener">Groups Migration API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Groups_Settings_API" target="_blank" rel="noopener">Groups Settings API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Orkut_API" target="_blank" rel="noopener">Orkut API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Page_Speed_Online_API" target="_blank" rel="noopener">Page Speed Online API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Prediction_API" target="_blank" rel="noopener">Prediction API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Search_API_For_Shopping" target="_blank" rel="noopener">Search API For Shopping</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#TaskQueue_API" target="_blank" rel="noopener">TaskQueue API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Tasks_API" target="_blank" rel="noopener">Tasks API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Translate_API" target="_blank" rel="noopener">Translate API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#URL_Shortener_API" target="_blank" rel="noopener">URL Shortener API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#YouTube_Analytics_API" target="_blank" rel="noopener">YouTube Analytics API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#YouTube_Data_API" target="_blank" rel="noopener">YouTube Data API</a></li><br></ul><br></blockquote>]]></content>
+    <content type="html"><![CDATA[<p></p><p>我之前的博客中介绍过两篇如何做好开源软件的文章，<a href="/2013/06/21/how-to-spread-your-code/">如何传播你的代码</a>，<a href="/2013/01/05/how-to-start-open-source-project/">怎么做一个开源项目</a>。</p><p></p><p></p><p>今天又看到一篇不错的文章，<a href="http://williamdurand.fr/2013/07/04/on-open-sourcing-libraries/" target="_blank" rel="noopener">On Open Sourcing Libraries | William DURAND</a>。</p><p></p><p></p><p>摘要如下：</p><p></p><p></p><p><strong><em>你的项目：</em></strong></p><p></p><ol><br><li>必须有一个README文档，包含名字，描述，还有<strong>使用方法</strong>，<strong>安装说明</strong>，<strong>如何参与</strong>，<strong>测试</strong>和<strong>License</strong>。</li><br><li>必须有一个可见的license文件。</li><br><li>必须经过测试。</li><br><li>必须和你的社区习惯保持一致</li><br></ol><br><p><em><strong>你：</strong></em></p><br><ol><br><li>需要反馈。</li><br><li>必须友好，热情。</li><br><li>应该让别人加入。</li><br></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;Goolge发布了一个新的google API .NET库，是一个Portable Class Library，所以无论是.NET，WinTRy，Windows Phone或者Silverlight都能用。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a hr
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;我之前的博客中介绍过两篇如何做好开源软件的文章，&lt;a href=&quot;/2013/06/21/how-to-spread-your-code/&quot;&gt;如何传播你的代码&lt;/a&gt;，&lt;a href=&quot;/2013/01/05/how-to-start-open-source-
       
     
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+      <category term="Opensource" scheme="http://fresky.github.io/tags/Opensource/"/>
     
   </entry>
   
@@ -4304,6 +4301,32 @@
     
     </summary>
     
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>google API的.NET库</title>
+    <link href="http://fresky.github.io/2013/07/04/dot-net-library-of-google-api/"/>
+    <id>http://fresky.github.io/2013/07/04/dot-net-library-of-google-api/</id>
+    <published>2013-07-03T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.266Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p>Goolge发布了一个新的google API .NET库，是一个Portable Class Library，所以无论是.NET，WinTRy，Windows Phone或者Silverlight都能用。</p><p></p><p></p><p><a href="http://www.infoq.com/news/2013/07/Google-API-PCL" target="_blank" rel="noopener">Portable Class Libraries for Google APIs</a></p><p></p><blockquote><br><ul><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#APIs_Discovery_Service" target="_blank" rel="noopener">APIs Discovery Service</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Ad_Exchange_Buyer_API" target="_blank" rel="noopener">Ad Exchange Buyer API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Ad_Exchange_Seller_API" target="_blank" rel="noopener">Ad Exchange Seller API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#AdSense_Host_API" target="_blank" rel="noopener">AdSense Host API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#AdSense_Management_API" target="_blank" rel="noopener">AdSense Management API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Admin_Reports_API" target="_blank" rel="noopener">Admin Reports API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#BigQuery_API" target="_blank" rel="noopener">BigQuery API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Blogger_API" target="_blank" rel="noopener">Blogger API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Books_API" target="_blank" rel="noopener">Books API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Calendar_API" target="_blank" rel="noopener">Calendar API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Cloud_SQL_Administration_API" target="_blank" rel="noopener">Cloud SQL Administration API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Cloud_Storage_API" target="_blank" rel="noopener">Cloud Storage API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Compute_Engine_API" target="_blank" rel="noopener">Compute Engine API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#CustomSearch_API" target="_blank" rel="noopener">CustomSearch API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#DFA_Reporting_API" target="_blank" rel="noopener">DFA Reporting API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Drive_API" target="_blank" rel="noopener">Drive API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Enterprise_Apps_Reseller_API" target="_blank" rel="noopener">Enterprise Apps Reseller API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Enterprise_Audit_API" target="_blank" rel="noopener">Enterprise Audit API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Enterprise_License_Manager_API" target="_blank" rel="noopener">Enterprise License Manager API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Freebase_API" target="_blank" rel="noopener">Freebase API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Fusion_Tables_API" target="_blank" rel="noopener">Fusion Tables API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Affiliate_Network_API" target="_blank" rel="noopener">Google Affiliate Network API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Analytics_API" target="_blank" rel="noopener">Google Analytics API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Civic_Information_API" target="_blank" rel="noopener">Google Civic Information API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Cloud_Datastore_API" target="_blank" rel="noopener">Google Cloud Datastore API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Fonts_Developer_API" target="_blank" rel="noopener">Google Fonts Developer API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Latitude_API" target="_blank" rel="noopener">Google Latitude API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Maps_Coordinate_API" target="_blank" rel="noopener">Google Maps Coordinate API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Mirror_API" target="_blank" rel="noopener">Google Mirror API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_OAuth2_API" target="_blank" rel="noopener">Google OAuth2 API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Play_Android_Developer_API" target="_blank" rel="noopener">Google Play Android Developer API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google_Site_Verification_API" target="_blank" rel="noopener">Google Site Verification API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Google+_API" target="_blank" rel="noopener">Google+ API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Groups_Migration_API" target="_blank" rel="noopener">Groups Migration API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Groups_Settings_API" target="_blank" rel="noopener">Groups Settings API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Orkut_API" target="_blank" rel="noopener">Orkut API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Page_Speed_Online_API" target="_blank" rel="noopener">Page Speed Online API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Prediction_API" target="_blank" rel="noopener">Prediction API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Search_API_For_Shopping" target="_blank" rel="noopener">Search API For Shopping</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#TaskQueue_API" target="_blank" rel="noopener">TaskQueue API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Tasks_API" target="_blank" rel="noopener">Tasks API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#Translate_API" target="_blank" rel="noopener">Translate API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#URL_Shortener_API" target="_blank" rel="noopener">URL Shortener API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#YouTube_Analytics_API" target="_blank" rel="noopener">YouTube Analytics API</a></li><br><li><a href="http://code.google.com/p/google-api-dotnet-client/wiki/APIs#YouTube_Data_API" target="_blank" rel="noopener">YouTube Data API</a></li><br></ul><br></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;Goolge发布了一个新的google API .NET库，是一个Portable Class Library，所以无论是.NET，WinTRy，Windows Phone或者Silverlight都能用。&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a hr
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
@@ -4356,29 +4379,6 @@
   </entry>
   
   <entry>
-    <title>Windows的应用管理工具 PortableApps，Chocolatey和Ninite</title>
-    <link href="http://fresky.github.io/2013/06/28/windows-application-management-tools/"/>
-    <id>http://fresky.github.io/2013/06/28/windows-application-management-tools/</id>
-    <published>2013-06-27T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.265Z</updated>
-    
-    <content type="html"><![CDATA[<p>以前为了让我的firefox变成portable的，我使用了<a href="http://portableapps.com/" target="_blank" rel="noopener">PortableApps</a>，它不只是做软件的绿色版，而且也是一个软件的管理平台，可以通过它来管理软件的更新，挺方便的。</p><br><p>前段时间试用ScriptCS（参见我的博客<a href="/2013/05/16/use-csharp-as-script-language/">把C#当作脚本语言来用</a>），又使用了<a href="http://chocolatey.org/" target="_blank" rel="noopener">Chocolatey</a>，它是一个类似<a href="http://nuget.org/" target="_blank" rel="noopener">NuGet</a>的包管理工具，可以理解NuGet管理你的项目级别的包，但是Chocolatey管理Windows系统级别的包。类似<a href="http://ninite.com/" target="_blank" rel="noopener">Ninite</a>，它是另外一个很方便的应用管理工具。</p><br><p>有了这些软件的帮助，不必每回装软件或者更新软件都跑到软件的官网，寻找下载地址了。可以节省很多时间。如果还没用过，可以试试。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;以前为了让我的firefox变成portable的，我使用了&lt;a href=&quot;http://portableapps.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PortableApps&lt;/a&gt;，它不只是做软件的绿色版，而且也是一个软件的管理平
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>如何定制Windows系统右键菜单</title>
     <link href="http://fresky.github.io/2013/06/28/how-to-customize-windows-context-menu/"/>
     <id>http://fresky.github.io/2013/06/28/how-to-customize-windows-context-menu/</id>
@@ -4400,6 +4400,29 @@
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows的应用管理工具 PortableApps，Chocolatey和Ninite</title>
+    <link href="http://fresky.github.io/2013/06/28/windows-application-management-tools/"/>
+    <id>http://fresky.github.io/2013/06/28/windows-application-management-tools/</id>
+    <published>2013-06-27T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>以前为了让我的firefox变成portable的，我使用了<a href="http://portableapps.com/" target="_blank" rel="noopener">PortableApps</a>，它不只是做软件的绿色版，而且也是一个软件的管理平台，可以通过它来管理软件的更新，挺方便的。</p><br><p>前段时间试用ScriptCS（参见我的博客<a href="/2013/05/16/use-csharp-as-script-language/">把C#当作脚本语言来用</a>），又使用了<a href="http://chocolatey.org/" target="_blank" rel="noopener">Chocolatey</a>，它是一个类似<a href="http://nuget.org/" target="_blank" rel="noopener">NuGet</a>的包管理工具，可以理解NuGet管理你的项目级别的包，但是Chocolatey管理Windows系统级别的包。类似<a href="http://ninite.com/" target="_blank" rel="noopener">Ninite</a>，它是另外一个很方便的应用管理工具。</p><br><p>有了这些软件的帮助，不必每回装软件或者更新软件都跑到软件的官网，寻找下载地址了。可以节省很多时间。如果还没用过，可以试试。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;以前为了让我的firefox变成portable的，我使用了&lt;a href=&quot;http://portableapps.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PortableApps&lt;/a&gt;，它不只是做软件的绿色版，而且也是一个软件的管理平
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -4429,29 +4452,6 @@
   </entry>
   
   <entry>
-    <title>遇到sql server的问题时如何排查</title>
-    <link href="http://fresky.github.io/2013/06/27/how-to-troubleshot-sql-server/"/>
-    <id>http://fresky.github.io/2013/06/27/how-to-troubleshot-sql-server/</id>
-    <published>2013-06-26T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.265Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p><a href="http://www.i-programmer.info/programming/database/6028-the-first-things-i-look-at-on-a-sql-server-part-1.html" target="_blank" rel="noopener">The First Things I Look At On A SQL Server</a>和<a href="http://www.i-programmer.info/programming/database/6028-the-first-things-i-look-at-on-a-sql-server-part-1.html?start=1" target="_blank" rel="noopener">Page2</a>介绍了遇到sql server的问题时如何排查问题，<a href="http://www.i-programmer.info/images/stories/Core/Database/InitialChecks/dba_InitialChecks_part1%20%281%29.sql.html" target="_blank">Display Code</a>列出了sql代码。</p><p>包括如下10个检查：</p><ol><li>时间</li><li>sqlsever的版本</li><li>server instance的属性信息</li><li>操作系统信息</li><li>一些配置</li><li>做常见的waits</li><li>signal waits-CPU压力</li><li>sys.databases</li><li>database的CPU使用情况</li><li>database的内存使用情况</li></ol><p></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.i-programmer.info/programming/database/6028-the-first-things-i-look-at-on-a-sql-server-part-1.html&quot; target=&quot;_b
-      
-    
-    </summary>
-    
-    
-      <category term="Database" scheme="http://fresky.github.io/tags/Database/"/>
-    
-  </entry>
-  
-  <entry>
     <title>另一个有趣的Captcha 网站</title>
     <link href="http://fresky.github.io/2013/06/27/intresting-captcha-website/"/>
     <id>http://fresky.github.io/2013/06/27/intresting-captcha-website/</id>
@@ -4471,6 +4471,29 @@
     
     
       <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>遇到sql server的问题时如何排查</title>
+    <link href="http://fresky.github.io/2013/06/27/how-to-troubleshot-sql-server/"/>
+    <id>http://fresky.github.io/2013/06/27/how-to-troubleshot-sql-server/</id>
+    <published>2013-06-26T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.265Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p><a href="http://www.i-programmer.info/programming/database/6028-the-first-things-i-look-at-on-a-sql-server-part-1.html" target="_blank" rel="noopener">The First Things I Look At On A SQL Server</a>和<a href="http://www.i-programmer.info/programming/database/6028-the-first-things-i-look-at-on-a-sql-server-part-1.html?start=1" target="_blank" rel="noopener">Page2</a>介绍了遇到sql server的问题时如何排查问题，<a href="http://www.i-programmer.info/images/stories/Core/Database/InitialChecks/dba_InitialChecks_part1%20%281%29.sql.html" target="_blank">Display Code</a>列出了sql代码。</p><p>包括如下10个检查：</p><ol><li>时间</li><li>sqlsever的版本</li><li>server instance的属性信息</li><li>操作系统信息</li><li>一些配置</li><li>做常见的waits</li><li>signal waits-CPU压力</li><li>sys.databases</li><li>database的CPU使用情况</li><li>database的内存使用情况</li></ol><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.i-programmer.info/programming/database/6028-the-first-things-i-look-at-on-a-sql-server-part-1.html&quot; target=&quot;_b
+      
+    
+    </summary>
+    
+    
+      <category term="Database" scheme="http://fresky.github.io/tags/Database/"/>
     
   </entry>
   
@@ -4710,31 +4733,6 @@
   </entry>
   
   <entry>
-    <title>GitLab: 开源免费的git管理工具</title>
-    <link href="http://fresky.github.io/2013/06/08/gitlab-opensource-github-clone/"/>
-    <id>http://fresky.github.io/2013/06/08/gitlab-opensource-github-clone/</id>
-    <published>2013-06-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.261Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://gitlab.org/" target="_blank" rel="noopener">GITLAB: Self Hosted Git Management Application</a>提供了像GitHub类似的功能，而且是开源和免费的。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://gitlab.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GITLAB: Self Hosted Git Management Application&lt;/a&gt;提供了像GitHub类似的功能，而且是开源和免费的。&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="Github" scheme="http://fresky.github.io/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#的一个小函数来计算一个运算使用的时间和内存</title>
     <link href="http://fresky.github.io/2013/06/08/time-counter-and-memory-counter-in-csharp/"/>
     <id>http://fresky.github.io/2013/06/08/time-counter-and-memory-counter-in-csharp/</id>
@@ -4756,6 +4754,31 @@
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitLab: 开源免费的git管理工具</title>
+    <link href="http://fresky.github.io/2013/06/08/gitlab-opensource-github-clone/"/>
+    <id>http://fresky.github.io/2013/06/08/gitlab-opensource-github-clone/</id>
+    <published>2013-06-07T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.261Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://gitlab.org/" target="_blank" rel="noopener">GITLAB: Self Hosted Git Management Application</a>提供了像GitHub类似的功能，而且是开源和免费的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://gitlab.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GITLAB: Self Hosted Git Management Application&lt;/a&gt;提供了像GitHub类似的功能，而且是开源和免费的。&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="Github" scheme="http://fresky.github.io/tags/Github/"/>
     
   </entry>
   
@@ -5134,29 +5157,6 @@
   </entry>
   
   <entry>
-    <title>颜色在市场推广中的学问</title>
-    <link href="http://fresky.github.io/2013/05/07/how-color-affect-marketing/"/>
-    <id>http://fresky.github.io/2013/05/07/how-color-affect-marketing/</id>
-    <published>2013-05-06T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.256Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://blog.bufferapp.com/the-science-of-colors-in-marketing-why-is-facebook-blue" target="_blank" rel="noopener">Why Facebook is blue: The science of colors in marketing - The Buffer Blog</a>介绍了颜色对用户的影响，写的非常棒。</p><p>开头说的例子是为什么facebook是蓝色的呢？</p><p>因为Mark Zuckerberg是红绿色盲……</p><p>附一个图吧，Logo设计中的颜色心理学。<br><img src="https://blog.bufferapp.com/wp-content/uploads/2013/04/color-guide.png" alt="Psychology Of Color In Logo Design"></p><p>An infographic by the team at <a href="http://thelogocompany.net/blog/infographics/psychology-color-logo-design/" target="_blank" rel="noopener">The Logo Company</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://blog.bufferapp.com/the-science-of-colors-in-marketing-why-is-facebook-blue&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Why Facebook i
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>关于google的Jeff Dean的一些笑话</title>
     <link href="http://fresky.github.io/2013/05/07/jokes-about-jeff-dean-in-google/"/>
     <id>http://fresky.github.io/2013/05/07/jokes-about-jeff-dean-in-google/</id>
@@ -5170,6 +5170,29 @@
       
       
         &lt;p&gt;&lt;a href=&quot;http://www.businessinsider.com/astounding-facts-about-googles-most-badass-engineer-jeff-dean-2012-1?op=1#ixzz2SOSn2fL7&quot; target=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>颜色在市场推广中的学问</title>
+    <link href="http://fresky.github.io/2013/05/07/how-color-affect-marketing/"/>
+    <id>http://fresky.github.io/2013/05/07/how-color-affect-marketing/</id>
+    <published>2013-05-06T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.256Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blog.bufferapp.com/the-science-of-colors-in-marketing-why-is-facebook-blue" target="_blank" rel="noopener">Why Facebook is blue: The science of colors in marketing - The Buffer Blog</a>介绍了颜色对用户的影响，写的非常棒。</p><p>开头说的例子是为什么facebook是蓝色的呢？</p><p>因为Mark Zuckerberg是红绿色盲……</p><p>附一个图吧，Logo设计中的颜色心理学。<br><img src="https://blog.bufferapp.com/wp-content/uploads/2013/04/color-guide.png" alt="Psychology Of Color In Logo Design"></p><p>An infographic by the team at <a href="http://thelogocompany.net/blog/infographics/psychology-color-logo-design/" target="_blank" rel="noopener">The Logo Company</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://blog.bufferapp.com/the-science-of-colors-in-marketing-why-is-facebook-blue&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Why Facebook i
       
     
     </summary>
@@ -5741,29 +5764,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>一个免费轻量的Mathematica替代Mathics</title>
-    <link href="http://fresky.github.io/2013/02/17/mathics-lightweight-alternative-to-mathematica/"/>
-    <id>http://fresky.github.io/2013/02/17/mathics-lightweight-alternative-to-mathematica/</id>
-    <published>2013-02-16T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.250Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.mathics.org/index.html" target="_blank" rel="noopener">Mathics - A free, light-weight alternative to Mathematica</a>是一个免费轻量的Mathematica替代Mathics<br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.mathics.org/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mathics - A free, light-weight alternative to Mathematica&lt;/a&gt;是
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>为啥只有IPv4和IPv6，没有IPv5呢？</title>
     <link href="http://fresky.github.io/2013/02/17/where-is-ipv5/"/>
     <id>http://fresky.github.io/2013/02/17/where-is-ipv5/</id>
@@ -5783,6 +5783,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个免费轻量的Mathematica替代Mathics</title>
+    <link href="http://fresky.github.io/2013/02/17/mathics-lightweight-alternative-to-mathematica/"/>
+    <id>http://fresky.github.io/2013/02/17/mathics-lightweight-alternative-to-mathematica/</id>
+    <published>2013-02-16T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.250Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.mathics.org/index.html" target="_blank" rel="noopener">Mathics - A free, light-weight alternative to Mathematica</a>是一个免费轻量的Mathematica替代Mathics<br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.mathics.org/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mathics - A free, light-weight alternative to Mathematica&lt;/a&gt;是
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -5808,29 +5831,6 @@ w\:* {behavior:url(#default#VML);}
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C#中静态构造函数导致的一个deadlock</title>
-    <link href="http://fresky.github.io/2013/02/05/deadlock-caused-by-csharp-static-constructor/"/>
-    <id>http://fresky.github.io/2013/02/05/deadlock-caused-by-csharp-static-constructor/</id>
-    <published>2013-02-04T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.249Z</updated>
-    
-    <content type="html"><![CDATA[<p id="site-description">Eric Lipper的这篇<a href="http://ericlippert.com/2013/01/31/the-no-lock-deadlock/" target="_blank">博客</a>举了一个C#中静态构造函数导致的deadlock的例子，很有意思。</p><br><p>代码如下：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">C</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="title">C</span>(<span class="params"></span>) </span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="comment">// Let's run the initialization on another thread!</span></span><br><span class="line">    <span class="keyword">var</span> thread = <span class="keyword">new</span> System.Threading.Thread(Initialize);</span><br><span class="line">    thread.Start();</span><br><span class="line">    thread.Join();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Initialize</span>(<span class="params"></span>)</span> &#123; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span> &#123; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>原因很简单，静态构造函数需要在第一次用到这个类静态方法或者实例之前调用结束，就是说C（）在等Initialize（），但是Initialize（）必须在C()结束后才能被调到。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p id=&quot;site-description&quot;&gt;Eric Lipper的这篇&lt;a href=&quot;http://ericlippert.com/2013/01/31/the-no-lock-deadlock/&quot; target=&quot;_blank&quot;&gt;博客&lt;/a&gt;举了一个C#中静态构造函数
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -5885,6 +5885,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>C#中静态构造函数导致的一个deadlock</title>
+    <link href="http://fresky.github.io/2013/02/05/deadlock-caused-by-csharp-static-constructor/"/>
+    <id>http://fresky.github.io/2013/02/05/deadlock-caused-by-csharp-static-constructor/</id>
+    <published>2013-02-04T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.249Z</updated>
+    
+    <content type="html"><![CDATA[<p id="site-description">Eric Lipper的这篇<a href="http://ericlippert.com/2013/01/31/the-no-lock-deadlock/" target="_blank">博客</a>举了一个C#中静态构造函数导致的deadlock的例子，很有意思。</p><br><p>代码如下：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">C</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="title">C</span>(<span class="params"></span>) </span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="comment">// Let's run the initialization on another thread!</span></span><br><span class="line">    <span class="keyword">var</span> thread = <span class="keyword">new</span> System.Threading.Thread(Initialize);</span><br><span class="line">    thread.Start();</span><br><span class="line">    thread.Join();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Initialize</span>(<span class="params"></span>)</span> &#123; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span> &#123; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>原因很简单，静态构造函数需要在第一次用到这个类静态方法或者实例之前调用结束，就是说C（）在等Initialize（），但是Initialize（）必须在C()结束后才能被调到。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p id=&quot;site-description&quot;&gt;Eric Lipper的这篇&lt;a href=&quot;http://ericlippert.com/2013/01/31/the-no-lock-deadlock/&quot; target=&quot;_blank&quot;&gt;博客&lt;/a&gt;举了一个C#中静态构造函数
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>一行语句让你的浏览器变成记事本</title>
     <link href="http://fresky.github.io/2013/01/31/one-line-browser-notepad/"/>
     <id>http://fresky.github.io/2013/01/31/one-line-browser-notepad/</id>
@@ -5931,27 +5954,28 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>一个C++的unit库</title>
-    <link href="http://fresky.github.io/2013/01/21/unit-library-for-cpp/"/>
-    <id>http://fresky.github.io/2013/01/21/unit-library-for-cpp/</id>
+    <title>web开发者的checklist</title>
+    <link href="http://fresky.github.io/2013/01/21/web-developer-checklist/"/>
+    <id>http://fresky.github.io/2013/01/21/web-developer-checklist/</id>
     <published>2013-01-20T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.248Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://calumgrant.net/units/index.html" target="_blank" rel="noopener">C++ Units</a>是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，比如把一个length加到了一个area上。<br></p>]]></content>
+    <content type="html"><![CDATA[<p>转一个<a href="http://webdevchecklist.com/" target="_blank" rel="noopener">Web Developer Checklist</a><br></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://calumgrant.net/units/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++ Units&lt;/a&gt;是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，
+        &lt;p&gt;转一个&lt;a href=&quot;http://webdevchecklist.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Web Developer Checklist&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
+
       
     
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -5979,28 +6003,27 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>web开发者的checklist</title>
-    <link href="http://fresky.github.io/2013/01/21/web-developer-checklist/"/>
-    <id>http://fresky.github.io/2013/01/21/web-developer-checklist/</id>
+    <title>一个C++的unit库</title>
+    <link href="http://fresky.github.io/2013/01/21/unit-library-for-cpp/"/>
+    <id>http://fresky.github.io/2013/01/21/unit-library-for-cpp/</id>
     <published>2013-01-20T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.248Z</updated>
     
-    <content type="html"><![CDATA[<p>转一个<a href="http://webdevchecklist.com/" target="_blank" rel="noopener">Web Developer Checklist</a><br></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://calumgrant.net/units/index.html" target="_blank" rel="noopener">C++ Units</a>是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，比如把一个length加到了一个area上。<br></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;转一个&lt;a href=&quot;http://webdevchecklist.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Web Developer Checklist&lt;/a&gt;&lt;br&gt;&lt;/p&gt;
-
+        &lt;p&gt;&lt;a href=&quot;http://calumgrant.net/units/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++ Units&lt;/a&gt;是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，
       
     
     </summary>
     
     
-      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -6120,6 +6143,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>Windows下C++的同步机制的演变</title>
+    <link href="http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/"/>
+    <id>http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/</id>
+    <published>2012-12-27T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.246Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://msdn.microsoft.com/en-us/magazine/jj721588.aspx" target="_blank" rel="noopener">Windows with C++ - The Evolution of Synchronization in Windows and C++</a>介绍了如下概念：<br>critical section<br>mutex<br>event<br>slim reader/writer lock<br>condition variable<br>C++11的mutex和condition_variable<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/magazine/jj721588.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows with C++ - The Evolution of Synch
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>怎么回答哪个更快的问题</title>
     <link href="http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/"/>
     <id>http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/</id>
@@ -6166,29 +6212,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>Windows下C++的同步机制的演变</title>
-    <link href="http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/"/>
-    <id>http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/</id>
-    <published>2012-12-27T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.246Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://msdn.microsoft.com/en-us/magazine/jj721588.aspx" target="_blank" rel="noopener">Windows with C++ - The Evolution of Synchronization in Windows and C++</a>介绍了如下概念：<br>critical section<br>mutex<br>event<br>slim reader/writer lock<br>condition variable<br>C++11的mutex和condition_variable<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/magazine/jj721588.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows with C++ - The Evolution of Synch
-      
-    
-    </summary>
-    
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#的内存模型和并发情况下受到的影响</title>
     <link href="http://fresky.github.io/2012/12/26/csharp-memory-model/"/>
     <id>http://fresky.github.io/2012/12/26/csharp-memory-model/</id>
@@ -6208,29 +6231,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>玩大数据需要知道的12个工具</title>
-    <link href="http://fresky.github.io/2012/12/25/12-tools-about-big-data/"/>
-    <id>http://fresky.github.io/2012/12/25/12-tools-about-big-data/</id>
-    <published>2012-12-24T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.245Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/" target="_blank" rel="noopener">A programmer’s guide to big data: 12 tools to know — Data | GigaOM</a><br>包括：<br>1. BitDeli<br>2. Continuuity<br>3. Flurry<br>4. Google Prediction API<br>5. Infochimps<br>6. Keen IO<br>7. Kontagent<br>8. Mortar Data<br>9. Placed Analytics<br>10. Precog<br>11. Spring for Apache Hadoop<br>12. StatsMix<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;A programmer’s guide to
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -6281,6 +6281,29 @@ w\:* {behavior:url(#default#VML);}
       <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
       <category term="Python" scheme="http://fresky.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>玩大数据需要知道的12个工具</title>
+    <link href="http://fresky.github.io/2012/12/25/12-tools-about-big-data/"/>
+    <id>http://fresky.github.io/2012/12/25/12-tools-about-big-data/</id>
+    <published>2012-12-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.245Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/" target="_blank" rel="noopener">A programmer’s guide to big data: 12 tools to know — Data | GigaOM</a><br>包括：<br>1. BitDeli<br>2. Continuuity<br>3. Flurry<br>4. Google Prediction API<br>5. Infochimps<br>6. Keen IO<br>7. Kontagent<br>8. Mortar Data<br>9. Placed Analytics<br>10. Precog<br>11. Spring for Apache Hadoop<br>12. StatsMix<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;A programmer’s guide to
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -6586,29 +6609,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>C++怎么寻找重载函数</title>
-    <link href="http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/"/>
-    <id>http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/</id>
-    <published>2012-12-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.240Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://accu.org/index.php/journals/268" target="_blank" rel="noopener">ACCU :: Overload Resolution - Selecting the Function</a>这篇文章详细介绍了C++中寻找重载函数的方法。下面给个小例子吧，C++的重载有时候会违背你的直觉。</p>  <p>考虑如下代码：</p>  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OverLoadBase</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">DoSomething</span><span class="params">()</span> </span>&#123;<span class="keyword">return</span> <span class="number">0</span>;&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OverLoadSub</span> :</span> <span class="keyword">public</span> OverLoadBase</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">DoSomething</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;<span class="keyword">return</span> <span class="number">1</span>;&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">TestOverLoadSub</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    OverLoadSub b;</span><br><span class="line">    b.DoSomething(); <span class="comment">//这样写会编译出错</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>错误消息如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In function &apos;void TestOverLoadSub()&apos;:</span><br><span class="line">Line 17: error: no matching function for call to &apos;OverLoadSub::DoSomething()&apos;</span><br><span class="line">compilation terminated due to -Wfatal-errors.</span><br></pre></td></tr></table></figure><p>如果换成这样：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b.OverLoadBase::DoSomething();</span><br></pre></td></tr></table></figure><p>就没有问题了。或者把子类中的DoSomething（）去掉也没有问题。</p><p>为什么会这样呢？因为在上面那个例子中，两个DoSomething不是重载。上面的那篇文章里一开头就说“Declaring two or more items with the same name in a scope is called <em>overloading</em>”，只有在一个scope中才算重载。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://accu.org/index.php/journals/268&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ACCU :: Overload Resolution - Selecting the Function&lt;/a&gt;这
-      
-    
-    </summary>
-    
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>从上而下和从下而上的编程语言</title>
     <link href="http://fresky.github.io/2012/12/10/top-down-bottom-up-in-programming-languages/"/>
     <id>http://fresky.github.io/2012/12/10/top-down-bottom-up-in-programming-languages/</id>
@@ -6628,6 +6628,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++怎么寻找重载函数</title>
+    <link href="http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/"/>
+    <id>http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/</id>
+    <published>2012-12-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.240Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://accu.org/index.php/journals/268" target="_blank" rel="noopener">ACCU :: Overload Resolution - Selecting the Function</a>这篇文章详细介绍了C++中寻找重载函数的方法。下面给个小例子吧，C++的重载有时候会违背你的直觉。</p>  <p>考虑如下代码：</p>  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OverLoadBase</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">DoSomething</span><span class="params">()</span> </span>&#123;<span class="keyword">return</span> <span class="number">0</span>;&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OverLoadSub</span> :</span> <span class="keyword">public</span> OverLoadBase</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">DoSomething</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;<span class="keyword">return</span> <span class="number">1</span>;&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">TestOverLoadSub</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    OverLoadSub b;</span><br><span class="line">    b.DoSomething(); <span class="comment">//这样写会编译出错</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>错误消息如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In function &apos;void TestOverLoadSub()&apos;:</span><br><span class="line">Line 17: error: no matching function for call to &apos;OverLoadSub::DoSomething()&apos;</span><br><span class="line">compilation terminated due to -Wfatal-errors.</span><br></pre></td></tr></table></figure><p>如果换成这样：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b.OverLoadBase::DoSomething();</span><br></pre></td></tr></table></figure><p>就没有问题了。或者把子类中的DoSomething（）去掉也没有问题。</p><p>为什么会这样呢？因为在上面那个例子中，两个DoSomething不是重载。上面的那篇文章里一开头就说“Declaring two or more items with the same name in a scope is called <em>overloading</em>”，只有在一个scope中才算重载。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://accu.org/index.php/journals/268&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ACCU :: Overload Resolution - Selecting the Function&lt;/a&gt;这
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -6657,29 +6680,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>Windows调试工具箱</title>
-    <link href="http://fresky.github.io/2012/12/08/windows-debugging-tools/"/>
-    <id>http://fresky.github.io/2012/12/08/windows-debugging-tools/</id>
-    <published>2012-12-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.240Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://blogs.msdn.com/b/debuggingtoolbox/archive/2012/10/04/tools-for-your-debugging-toolbox.aspx" target="_blank" rel="noopener">Tools for Your Debugging Toolbox</a>是windows下的调试工具大集合，包含下面这些工具的简介和下载地址。<br><blockquote>-        Performance Monitor - PAL<br><br>-        Process Monitor<br><br>-        Process Explorer<br><br>-        MPSReport<br><br>-        SPSReport<br><br>-        SPDisposeCheck<br><br>-        Dependency Walker<br><br>-        SQL Nexus<br><br>-        LogParser<br><br>-        Indihiang<br><br>-        PowerShell<br><br>-        Application Verifier<br><br>-        Logger/LogViewer<br><br>-        XPerf – Windows Performance Analyzer<br><br>-        PerfView – Low Level Profiler for .NET applications<br><br>-        DebugDiag – Debug Diagnostic<br><br>-        ProcDump – Process Dump<br><br>-        WinDbg – Windows Debugging Tools<br><br>-        WinDbg Scripts – Automate the Debugging<br><br>-        Netmon – Microsoft Network Monitor<br><br>-        Fiddler – HTTP Debugger Proxy<br><br>-        NP .NET Profiler - Lightweight profiler designed to assist in troubleshooting issues such as slow performance, memory related issues, and first chance exceptions in .NET applications</blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://blogs.msdn.com/b/debuggingtoolbox/archive/2012/10/04/tools-for-your-debugging-toolbox.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener
-      
-    
-    </summary>
-    
-    
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
-  </entry>
-  
-  <entry>
     <title>推荐一个免费的.NET代码分析工具Nitriq</title>
     <link href="http://fresky.github.io/2012/12/08/free-csharp-code-analysis-tool-nitriq/"/>
     <id>http://fresky.github.io/2012/12/08/free-csharp-code-analysis-tool-nitriq/</id>
@@ -6701,6 +6701,29 @@ w\:* {behavior:url(#default#VML);}
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows调试工具箱</title>
+    <link href="http://fresky.github.io/2012/12/08/windows-debugging-tools/"/>
+    <id>http://fresky.github.io/2012/12/08/windows-debugging-tools/</id>
+    <published>2012-12-07T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.240Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blogs.msdn.com/b/debuggingtoolbox/archive/2012/10/04/tools-for-your-debugging-toolbox.aspx" target="_blank" rel="noopener">Tools for Your Debugging Toolbox</a>是windows下的调试工具大集合，包含下面这些工具的简介和下载地址。<br><blockquote>-        Performance Monitor - PAL<br><br>-        Process Monitor<br><br>-        Process Explorer<br><br>-        MPSReport<br><br>-        SPSReport<br><br>-        SPDisposeCheck<br><br>-        Dependency Walker<br><br>-        SQL Nexus<br><br>-        LogParser<br><br>-        Indihiang<br><br>-        PowerShell<br><br>-        Application Verifier<br><br>-        Logger/LogViewer<br><br>-        XPerf – Windows Performance Analyzer<br><br>-        PerfView – Low Level Profiler for .NET applications<br><br>-        DebugDiag – Debug Diagnostic<br><br>-        ProcDump – Process Dump<br><br>-        WinDbg – Windows Debugging Tools<br><br>-        WinDbg Scripts – Automate the Debugging<br><br>-        Netmon – Microsoft Network Monitor<br><br>-        Fiddler – HTTP Debugger Proxy<br><br>-        NP .NET Profiler - Lightweight profiler designed to assist in troubleshooting issues such as slow performance, memory related issues, and first chance exceptions in .NET applications</blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://blogs.msdn.com/b/debuggingtoolbox/archive/2012/10/04/tools-for-your-debugging-toolbox.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener
+      
+    
+    </summary>
+    
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -6985,29 +7008,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>Visual Studio中打开编译器中有虚函数的类的析构函数不是虚函数的警告——/we4265</title>
-    <link href="http://fresky.github.io/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/"/>
-    <id>http://fresky.github.io/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/</id>
-    <published>2012-11-24T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.236Z</updated>
-    
-    <content type="html"><![CDATA[<p>C++中一个类如果有虚函数，那么它的析构函数应该也是虚的，否则会出现很多问题。<br>其实visual studi中有一个专门的warning是给这个的，<a href="http://msdn.microsoft.com/en-us/library/wzxffy8c%28v=vs.110%29.aspx" target="_blank" rel="noopener">Compiler Warning (level 3) C4265</a>：’class’ : class has virtual functions, but destructor is not virtual<br>但是这个warning默认是关闭的，这里可以看所有默认关系的warning：<a href="http://msdn.microsoft.com/en-us/library/23k5d385(v=vs.110).aspx" target="_blank" rel="noopener">Compiler Warnings That Are Off by Default</a><br>我们可以指定编译器选项 /we4265 把特定的warning打开，具体见<a href="http://msdn.microsoft.com/en-us/library/thxezb7y(v=vs.110).aspx" target="_blank" rel="noopener">/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warning Level)</a>。<br><blockquote></blockquote><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;C++中一个类如果有虚函数，那么它的析构函数应该也是虚的，否则会出现很多问题。&lt;br&gt;其实visual studi中有一个专门的warning是给这个的，&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/wzxffy8c%28
-      
-    
-    </summary>
-    
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C++编译器什么时候为我们自动生成拷贝构造函数？</title>
     <link href="http://fresky.github.io/2012/11/25/when-cpp-compiler-generate-copy-constructors-for-us/"/>
     <id>http://fresky.github.io/2012/11/25/when-cpp-compiler-generate-copy-constructors-for-us/</id>
@@ -7021,6 +7021,29 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;StackOverflow上有个一个有趣的问题，&lt;a href=&quot;http://stackoverflow.com/questions/13374984/c-copy-by-value-to-function-params-produce-two-objects-in-vs
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Visual Studio中打开编译器中有虚函数的类的析构函数不是虚函数的警告——/we4265</title>
+    <link href="http://fresky.github.io/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/"/>
+    <id>http://fresky.github.io/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/</id>
+    <published>2012-11-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.236Z</updated>
+    
+    <content type="html"><![CDATA[<p>C++中一个类如果有虚函数，那么它的析构函数应该也是虚的，否则会出现很多问题。<br>其实visual studi中有一个专门的warning是给这个的，<a href="http://msdn.microsoft.com/en-us/library/wzxffy8c%28v=vs.110%29.aspx" target="_blank" rel="noopener">Compiler Warning (level 3) C4265</a>：’class’ : class has virtual functions, but destructor is not virtual<br>但是这个warning默认是关闭的，这里可以看所有默认关系的warning：<a href="http://msdn.microsoft.com/en-us/library/23k5d385(v=vs.110).aspx" target="_blank" rel="noopener">Compiler Warnings That Are Off by Default</a><br>我们可以指定编译器选项 /we4265 把特定的warning打开，具体见<a href="http://msdn.microsoft.com/en-us/library/thxezb7y(v=vs.110).aspx" target="_blank" rel="noopener">/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warning Level)</a>。<br><blockquote></blockquote><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;C++中一个类如果有虚函数，那么它的析构函数应该也是虚的，否则会出现很多问题。&lt;br&gt;其实visual studi中有一个专门的warning是给这个的，&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/wzxffy8c%28
       
     
     </summary>
@@ -7051,29 +7074,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用PBKDF2 或BCrypt 来存储密码</title>
-    <link href="http://fresky.github.io/2012/11/22/using-pbkdf2-orbcrypt-to-store-password/"/>
-    <id>http://fresky.github.io/2012/11/22/using-pbkdf2-orbcrypt-to-store-password/</id>
-    <published>2012-11-21T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.236Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://blog.8thlight.com/adam-gooch/2012/11/04/taking-password-storage-up-a-notch.html" target="_blank" rel="noopener">Taking Password Storage Up A Notch | 8th Light</a>中介绍了只是用Hash加盐的做法是不够安全的，应该用<a href="http://www.ietf.org/rfc/rfc2898.txt" target="_blank" rel="noopener">PBKDF2</a> 或 <a href="http://www.openbsd.org/papers/bcrypt-paper.pdf" target="_blank" rel="noopener">BCrypt</a>来做密码存储算法。PBKDF2用在了 iOS, Android, 和LastPass。BCrypt用于OpenBSD。<a href="http://msdn.microsoft.com/en-us/library/system.security.cryptography.rfc2898derivebytes.aspx" target="_blank" rel="noopener">Rfc2898DeriveBytes</a>是C#的一个实现。<br><blockquote><br></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://blog.8thlight.com/adam-gooch/2012/11/04/taking-password-storage-up-a-notch.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Taking Pa
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -7124,20 +7124,19 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>通过位操作简洁的写KB，MB，GB</title>
-    <link href="http://fresky.github.io/2012/11/19/use-bit-operator-for-memory-allocation/"/>
-    <id>http://fresky.github.io/2012/11/19/use-bit-operator-for-memory-allocation/</id>
-    <published>2012-11-18T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.235Z</updated>
+    <title>用PBKDF2 或BCrypt 来存储密码</title>
+    <link href="http://fresky.github.io/2012/11/22/using-pbkdf2-orbcrypt-to-store-password/"/>
+    <id>http://fresky.github.io/2012/11/22/using-pbkdf2-orbcrypt-to-store-password/</id>
+    <published>2012-11-21T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.236Z</updated>
     
-    <content type="html"><![CDATA[<p>1 &lt;&lt; 10 = KB, 1 &lt;&lt; 20 = MB, 1 &lt;&lt; 30 = GB … 所以如果想开一个2KB的buffer，可以写2&lt;&lt;10，比较简洁。<br></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://blog.8thlight.com/adam-gooch/2012/11/04/taking-password-storage-up-a-notch.html" target="_blank" rel="noopener">Taking Password Storage Up A Notch | 8th Light</a>中介绍了只是用Hash加盐的做法是不够安全的，应该用<a href="http://www.ietf.org/rfc/rfc2898.txt" target="_blank" rel="noopener">PBKDF2</a> 或 <a href="http://www.openbsd.org/papers/bcrypt-paper.pdf" target="_blank" rel="noopener">BCrypt</a>来做密码存储算法。PBKDF2用在了 iOS, Android, 和LastPass。BCrypt用于OpenBSD。<a href="http://msdn.microsoft.com/en-us/library/system.security.cryptography.rfc2898derivebytes.aspx" target="_blank" rel="noopener">Rfc2898DeriveBytes</a>是C#的一个实现。<br><blockquote><br></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;1 &amp;lt;&amp;lt; 10 = KB, 1 &amp;lt;&amp;lt; 20 = MB, 1 &amp;lt;&amp;lt; 30 = GB … 所以如果想开一个2KB的buffer，可以写2&amp;lt;&amp;lt;10，比较简洁。&lt;br&gt;&lt;/p&gt;
-
+        &lt;p&gt;&lt;a href=&quot;http://blog.8thlight.com/adam-gooch/2012/11/04/taking-password-storage-up-a-notch.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Taking Pa
       
     
     </summary>
@@ -7168,6 +7167,30 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Regex" scheme="http://fresky.github.io/tags/Regex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过位操作简洁的写KB，MB，GB</title>
+    <link href="http://fresky.github.io/2012/11/19/use-bit-operator-for-memory-allocation/"/>
+    <id>http://fresky.github.io/2012/11/19/use-bit-operator-for-memory-allocation/</id>
+    <published>2012-11-18T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.235Z</updated>
+    
+    <content type="html"><![CDATA[<p>1 &lt;&lt; 10 = KB, 1 &lt;&lt; 20 = MB, 1 &lt;&lt; 30 = GB … 所以如果想开一个2KB的buffer，可以写2&lt;&lt;10，比较简洁。<br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1 &amp;lt;&amp;lt; 10 = KB, 1 &amp;lt;&amp;lt; 20 = MB, 1 &amp;lt;&amp;lt; 30 = GB … 所以如果想开一个2KB的buffer，可以写2&amp;lt;&amp;lt;10，比较简洁。&lt;br&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -7425,29 +7448,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>看看stackoverflow上面这些欢乐的注释吧</title>
-    <link href="http://fresky.github.io/2012/10/17/funny-comments/"/>
-    <id>http://fresky.github.io/2012/10/17/funny-comments/</id>
-    <published>2012-10-16T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.232Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered" target="_blank" rel="noopener">polls - What is the best comment in source code you have ever encountered? - Stack Overflow</a><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered&quot; target=&quot;_blank&quot; rel
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>推荐一个firefox插件，可以在douban电影里显示imdb评分</title>
     <link href="http://fresky.github.io/2012/10/17/firefox-plugin-display-imdb-in-douban/"/>
     <id>http://fresky.github.io/2012/10/17/firefox-plugin-display-imdb-in-douban/</id>
@@ -7467,6 +7467,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>看看stackoverflow上面这些欢乐的注释吧</title>
+    <link href="http://fresky.github.io/2012/10/17/funny-comments/"/>
+    <id>http://fresky.github.io/2012/10/17/funny-comments/</id>
+    <published>2012-10-16T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.232Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered" target="_blank" rel="noopener">polls - What is the best comment in source code you have ever encountered? - Stack Overflow</a><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered&quot; target=&quot;_blank&quot; rel
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -7517,29 +7540,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>飞信登录不了，错误码10032002 的解决办法</title>
-    <link href="http://fresky.github.io/2012/10/10/fix-fetion-login-issue/"/>
-    <id>http://fresky.github.io/2012/10/10/fix-fetion-login-issue/</id>
-    <published>2012-10-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.231Z</updated>
-    
-    <content type="html"><![CDATA[<pre class="reply-text mb10" id="content-954086387" data-accusearea="aContent">在登录界面的下面，打开“网络设置”按钮，在“网络联接”中选择“更多设置”，“登录协议”中选择“http协议”，“确定”就行了。 </pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;pre class=&quot;reply-text mb10&quot; id=&quot;content-954086387&quot; data-accusearea=&quot;aContent&quot;&gt;在登录界面的下面，打开“网络设置”按钮，在“网络联接”中选择“更多设置”，“登录协议”中选择“http协议”，“确定”就行
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>软件开发10个致命错误（转自Construx）</title>
     <link href="http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/"/>
     <id>http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/</id>
@@ -7563,6 +7563,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>飞信登录不了，错误码10032002 的解决办法</title>
+    <link href="http://fresky.github.io/2012/10/10/fix-fetion-login-issue/"/>
+    <id>http://fresky.github.io/2012/10/10/fix-fetion-login-issue/</id>
+    <published>2012-10-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.231Z</updated>
+    
+    <content type="html"><![CDATA[<pre class="reply-text mb10" id="content-954086387" data-accusearea="aContent">在登录界面的下面，打开“网络设置”按钮，在“网络联接”中选择“更多设置”，“登录协议”中选择“http协议”，“确定”就行了。 </pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;pre class=&quot;reply-text mb10&quot; id=&quot;content-954086387&quot; data-accusearea=&quot;aContent&quot;&gt;在登录界面的下面，打开“网络设置”按钮，在“网络联接”中选择“更多设置”，“登录协议”中选择“http协议”，“确定”就行
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
     <title>用windows7自带的Problem Steps Recorder制作错误报告</title>
     <link href="http://fresky.github.io/2012/10/10/report-bugs-with-problem-steps-recorder-in-win7/"/>
     <id>http://fresky.github.io/2012/10/10/report-bugs-with-problem-steps-recorder-in-win7/</id>
@@ -7582,6 +7605,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>.NET assembly结构</title>
+    <link href="http://fresky.github.io/2012/10/09/dot-net-assembly-structure/"/>
+    <id>http://fresky.github.io/2012/10/09/dot-net-assembly-structure/</id>
+    <published>2012-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.231Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blog.vuscode.com/malovicn/archive/2007/12/24/net-foundations-net-assembly-structure.aspx" target="_blank" rel="noopener">.NET assembly structure</a>这篇文章讲述的很清楚。正在看CLR via C#这本书，随后会把看书的心得总结总结写出来。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://blog.vuscode.com/malovicn/archive/2007/12/24/net-foundations-net-assembly-structure.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -7635,25 +7681,27 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>.NET assembly结构</title>
-    <link href="http://fresky.github.io/2012/10/09/dot-net-assembly-structure/"/>
-    <id>http://fresky.github.io/2012/10/09/dot-net-assembly-structure/</id>
-    <published>2012-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.231Z</updated>
+    <title>Visual studio 可视化调试扩展。</title>
+    <link href="http://fresky.github.io/2012/10/08/debug-canvas-visual-studio-extension/"/>
+    <id>http://fresky.github.io/2012/10/08/debug-canvas-visual-studio-extension/</id>
+    <published>2012-10-07T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.230Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://blog.vuscode.com/malovicn/archive/2007/12/24/net-foundations-net-assembly-structure.aspx" target="_blank" rel="noopener">.NET assembly structure</a>这篇文章讲述的很清楚。正在看CLR via C#这本书，随后会把看书的心得总结总结写出来。</p>]]></content>
+    <content type="html"><![CDATA[<p>看了看<a href="http://msdn.microsoft.com/en-us/devlabs/debuggercanvas" target="_blank" rel="noopener">Debugger Canvas</a>的介绍视频，挺酷的，但是暂时还没有2012的版本，登出了2012的，我也试试。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://blog.vuscode.com/malovicn/archive/2007/12/24/net-foundations-net-assembly-structure.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+        &lt;p&gt;看了看&lt;a href=&quot;http://msdn.microsoft.com/en-us/devlabs/debuggercanvas&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Debugger Canvas&lt;/a&gt;的介绍视频，挺酷的，但是暂时还没有20
       
     
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -7678,31 +7726,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Visual studio 可视化调试扩展。</title>
-    <link href="http://fresky.github.io/2012/10/08/debug-canvas-visual-studio-extension/"/>
-    <id>http://fresky.github.io/2012/10/08/debug-canvas-visual-studio-extension/</id>
-    <published>2012-10-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.230Z</updated>
-    
-    <content type="html"><![CDATA[<p>看了看<a href="http://msdn.microsoft.com/en-us/devlabs/debuggercanvas" target="_blank" rel="noopener">Debugger Canvas</a>的介绍视频，挺酷的，但是暂时还没有2012的版本，登出了2012的，我也试试。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;看了看&lt;a href=&quot;http://msdn.microsoft.com/en-us/devlabs/debuggercanvas&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Debugger Canvas&lt;/a&gt;的介绍视频，挺酷的，但是暂时还没有20
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -7800,6 +7823,31 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>在浏览器中运行C#</title>
+    <link href="http://fresky.github.io/2012/09/10/run-csharp-in-browser/"/>
+    <id>http://fresky.github.io/2012/09/10/run-csharp-in-browser/</id>
+    <published>2012-09-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.228Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://tirania.org/blog/archive/2012/Sep-06.html" target="_blank" rel="noopener">2012 Update: Running C# on the Browser - Miguel de Icaza</a>， 这篇文章介绍了怎么把C#代码编译成javascript。<br><br><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://tirania.org/blog/archive/2012/Sep-06.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2012 Update: Running C# on the Browser - Miguel
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
+    
+  </entry>
+  
+  <entry>
     <title>BuildZipper——给c#项目添加postbuildevent，每次build完把build结果做个zip放在solution目录。</title>
     <link href="http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/"/>
     <id>http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/</id>
@@ -7846,31 +7894,6 @@ w\:* {behavior:url(#default#VML);}
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在浏览器中运行C#</title>
-    <link href="http://fresky.github.io/2012/09/10/run-csharp-in-browser/"/>
-    <id>http://fresky.github.io/2012/09/10/run-csharp-in-browser/</id>
-    <published>2012-09-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.228Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://tirania.org/blog/archive/2012/Sep-06.html" target="_blank" rel="noopener">2012 Update: Running C# on the Browser - Miguel de Icaza</a>， 这篇文章介绍了怎么把C#代码编译成javascript。<br><br><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://tirania.org/blog/archive/2012/Sep-06.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2012 Update: Running C# on the Browser - Miguel
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
   </entry>
   
@@ -8200,30 +8223,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>定义Enum的开始和结束，这样就能循环Enum了</title>
-    <link href="http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/"/>
-    <id>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</id>
-    <published>2012-07-16T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.224Z</updated>
-    
-    <content type="html"><![CDATA[<p>示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> ProgrammingLanguage</span><br><span class="line">   &#123;</span><br><span class="line">       Language_First = <span class="number">0</span>,</span><br><span class="line">       CPP = <span class="number">1</span>,</span><br><span class="line">       CSharp = <span class="number">2</span>,</span><br><span class="line">       Java =<span class="number">3</span>,</span><br><span class="line">       Language_Last = <span class="number">4</span>,</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">   &#123;</span><br><span class="line">       <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>       &#123;</span><br><span class="line">          <span class="keyword">for</span> (ProgrammingLanguage i = ProgrammingLanguage.Language_First + <span class="number">1</span>; i &lt; ProgrammingLanguage.Language_Last; i++)</span><br><span class="line">           &#123;</span><br><span class="line">               Console.WriteLine(i);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。&lt;/p&gt;
-&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>禁用C#的树的单个节点</title>
     <link href="http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/"/>
     <id>http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/</id>
@@ -8271,6 +8270,30 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>定义Enum的开始和结束，这样就能循环Enum了</title>
+    <link href="http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/"/>
+    <id>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</id>
+    <published>2012-07-16T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.224Z</updated>
+    
+    <content type="html"><![CDATA[<p>示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> ProgrammingLanguage</span><br><span class="line">   &#123;</span><br><span class="line">       Language_First = <span class="number">0</span>,</span><br><span class="line">       CPP = <span class="number">1</span>,</span><br><span class="line">       CSharp = <span class="number">2</span>,</span><br><span class="line">       Java =<span class="number">3</span>,</span><br><span class="line">       Language_Last = <span class="number">4</span>,</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">   &#123;</span><br><span class="line">       <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>       &#123;</span><br><span class="line">          <span class="keyword">for</span> (ProgrammingLanguage i = ProgrammingLanguage.Language_First + <span class="number">1</span>; i &lt; ProgrammingLanguage.Language_Last; i++)</span><br><span class="line">           &#123;</span><br><span class="line">               Console.WriteLine(i);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。&lt;/p&gt;
+&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>定制自己的Visual Studio的Debugger Visualizer</title>
     <link href="http://fresky.github.io/2012/07/16/customize-your-own-debugger-visualizer-in-csharp/"/>
     <id>http://fresky.github.io/2012/07/16/customize-your-own-debugger-visualizer-in-csharp/</id>
@@ -8286,31 +8309,6 @@ w\:* {behavior:url(#default#VML);}
         &lt;p&gt;又加了一个debugger visualizer的例子。&lt;/p&gt;
 &lt;img src=&quot;/images/debugvisualizer.png&quot;&gt;
 &lt;p&gt;更新了代码，见&lt;a href=&quot;https://github.com/fresky/DebuggerAttribute&quot; 
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</title>
-    <link href="http://fresky.github.io/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/"/>
-    <id>http://fresky.github.io/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/</id>
-    <published>2012-07-12T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.223Z</updated>
-    
-    <content type="html"><![CDATA[<p>这个问题<a href="http://stackoverflow.com/questions/7756250/in-vs-make-print-on-breakpoint-use-the-console" target="_blank" rel="noopener">visual studio - In VS, make print-on-breakpoint use the console - Stack Overflow</a>说明了怎么做。<br>我结合之前这篇<a href="http://www.cnblogs.com/fresky/articles/2133378.html" target="_blank" rel="noopener">文章</a>做了个小例子，放在<a href="https://github.com/fresky/DebuggerAttribute" target="_blank" rel="noopener">github</a>上。<br>几个截图：<br></p><ol><li>定制debug显示信息。<br>&nbsp;</li></ol><img src="/images/debugcustomization.png"><ol start="2"><li><p>隐藏函数调用。<br></p><img src="/images/debughidefunction.png"></li><li><p>输出 “print-on-breakpoint”消息在output上。<br></p></li></ol><img src="/images/debugprintonbreakpoint.png">]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;这个问题&lt;a href=&quot;http://stackoverflow.com/questions/7756250/in-vs-make-print-on-breakpoint-use-the-console&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;vi
       
     
     </summary>
@@ -8346,6 +8344,31 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</title>
+    <link href="http://fresky.github.io/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/"/>
+    <id>http://fresky.github.io/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/</id>
+    <published>2012-07-12T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.223Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个问题<a href="http://stackoverflow.com/questions/7756250/in-vs-make-print-on-breakpoint-use-the-console" target="_blank" rel="noopener">visual studio - In VS, make print-on-breakpoint use the console - Stack Overflow</a>说明了怎么做。<br>我结合之前这篇<a href="http://www.cnblogs.com/fresky/articles/2133378.html" target="_blank" rel="noopener">文章</a>做了个小例子，放在<a href="https://github.com/fresky/DebuggerAttribute" target="_blank" rel="noopener">github</a>上。<br>几个截图：<br></p><ol><li>定制debug显示信息。<br>&nbsp;</li></ol><img src="/images/debugcustomization.png"><ol start="2"><li><p>隐藏函数调用。<br></p><img src="/images/debughidefunction.png"></li><li><p>输出 “print-on-breakpoint”消息在output上。<br></p></li></ol><img src="/images/debugprintonbreakpoint.png">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这个问题&lt;a href=&quot;http://stackoverflow.com/questions/7756250/in-vs-make-print-on-breakpoint-use-the-console&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;vi
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+  </entry>
+  
+  <entry>
     <title>WPF应用的图标</title>
     <link href="http://fresky.github.io/2012/07/11/why-you-can-not-see-your-wpf-app-icon/"/>
     <id>http://fresky.github.io/2012/07/11/why-you-can-not-see-your-wpf-app-icon/</id>
@@ -8365,29 +8388,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>使用windbg通过vtable找到优化后的this指针</title>
-    <link href="http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/"/>
-    <id>http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/</id>
-    <published>2012-07-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.222Z</updated>
-    
-    <content type="html"><![CDATA[<p>如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。<br><br>1. <strong>kbn</strong><br># ChildEBP? RetAddr? Args to Child<br>00 1d61fad0 7c90d21a 7c8023f1 00000000 1d61fb04 ntdll!KiFastSystemCallRet<br>01 1d61fad4 7c8023f1 00000000 1d61fb04 1a314e78 ntdll!NtDelayExecution+0xc<br>02 1d61fb2c 7c802455 00000042 00000000 1d61fb6c kernel32!SleepEx+0x61<br>03 <span style="color: #ff0000;">1d61fb3c </span><span style="color: #3366ff;">(ChildEBPaftercall</span>) 4c08f466 00000042 6496c8a2 1a3128f0 kernel32!Sleep+0xf<br>04 1d61fb6c 5c2656d4 616c06bc 1d61fbbc 1d61fe74 DllName!NameSpaceName::ClassName::OnProcess+0x106 [source1.cpp @ 5908]<br>05 <span style="color: #ff0000;">1d61fbb0 </span>(<span style="color: #3366ff;">ChildEBPbeforecall</span>) 77520c9a 1a312b0c 1d61fd78 0ef5bd18<br>Dll2Name!Class2Name::Process+0xb4 [source2.cpp @ 104]<br>06 1d61fbc8 77587f67 4c0e4df0 1a312b0c 1d61fcfc ole32!CallFrame::Invoke+0x54<br><br>2. <strong>dpp </strong>(<span style="color: #3366ff;">ChildEBPaftercall</span>) (<span style="color: #3366ff;">ChildEBPbeforecall</span>) ，来找到vtable </p><p></p><p></p><p>0:022&gt; dpp 1d61fb3c 1d61fbb0<br>1d61fb3c 1d61fb6c 1d61fbb0 &lt;Unloaded_API.DLL&gt;+0x1d61fb7f<br>1d61fb40 4c08f466 d908ec83<br>1d61fb44 00000042<br>1d61fb48 6496c8a2 1e6041d6 &lt;Unloaded_API.DLL&gt;+0x1e6041a5<br>1d61fb4c <span style="color: #ff0000;">1a3128f0 </span><span style="color: #3366ff;">(init this pointer address</span>) <span style="color: #ff0000;">4c1a3e24 </span>(<span style="color: #3366ff;">vtable address</span>) DllName!ATL::CComObject::`vftable’<br><br>3. <strong>dds </strong>(<span style="color: #3366ff;">vtable address</span>)<strong>-4</strong>，来找到RTTI </p><p></p><p></p><p>0:022&gt; dds 4c1a3e24 -4<br><span style="color: #000000;">4c1a3e20 </span><span style="color: #ff0000;">4c1b99e0 </span>(<span style="color: #3366ff;">RTTI address</span>) DllName!ATL::CComObject::`RTTI Complete Object Locator’<br><br>4. <strong>dds </strong>(<span style="color: #3366ff;">RTTI address</span>)，来找到偏移量，是第二个 </p><p></p><p></p><p>0:022&gt; dds 4c1b99e0<br>4c1b99e0 00000000<br>4c1b99e4 <span style="color: #ff0000;">00000000 </span>(<span style="color: #3366ff;">offset</span>)<br>4c1b99e8 00000000<br><br>5. <strong>dt ModuleName <span style="color: #3366ff;">(init this pointer address</span>) - (<span style="color: #3366ff;">offset</span>)</strong> ，查看this指针，搞定：）<br>dt DllName!NameSpaceName::ClassName 1a3128f0-0 </p><p></p><div></div>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。&lt;br&gt;&lt;br&gt;1. &lt;strong&gt;kbn&lt;/strong&gt;&lt;br&gt;# ChildEBP? RetAddr? Args to Child&lt;br&gt;00 
-      
-    
-    </summary>
-    
-    
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -8440,25 +8440,25 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>记录C#程序的运行时间</title>
-    <link href="http://fresky.github.io/2012/07/06/how-to-record-startup-time-in-csharp/"/>
-    <id>http://fresky.github.io/2012/07/06/how-to-record-startup-time-in-csharp/</id>
-    <published>2012-07-05T16:00:00.000Z</published>
+    <title>使用windbg通过vtable找到优化后的this指针</title>
+    <link href="http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/"/>
+    <id>http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/</id>
+    <published>2012-07-09T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.222Z</updated>
     
-    <content type="html"><![CDATA[<p>从<a href="http://stackoverflow.com/questions/11318175/does-a-c-sharp-app-track-how-long-its-been-running?newsletter=1&amp;nlcode=55866%7cc739" target="_blank" rel="noopener">.net - Does a C# app track how long its been running? - Stack Overflow</a>看到的，很方便的。<br><code>System.Diagnostics.Process</code> 有个属性记录的应用的开始时间。<br></p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.Diagnostics.Process current = System.Diagnostics.Process.GetCurrentProcess();</span><br><span class="line">DateTime startedTime = current.StartTime;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。<br><br>1. <strong>kbn</strong><br># ChildEBP? RetAddr? Args to Child<br>00 1d61fad0 7c90d21a 7c8023f1 00000000 1d61fb04 ntdll!KiFastSystemCallRet<br>01 1d61fad4 7c8023f1 00000000 1d61fb04 1a314e78 ntdll!NtDelayExecution+0xc<br>02 1d61fb2c 7c802455 00000042 00000000 1d61fb6c kernel32!SleepEx+0x61<br>03 <span style="color: #ff0000;">1d61fb3c </span><span style="color: #3366ff;">(ChildEBPaftercall</span>) 4c08f466 00000042 6496c8a2 1a3128f0 kernel32!Sleep+0xf<br>04 1d61fb6c 5c2656d4 616c06bc 1d61fbbc 1d61fe74 DllName!NameSpaceName::ClassName::OnProcess+0x106 [source1.cpp @ 5908]<br>05 <span style="color: #ff0000;">1d61fbb0 </span>(<span style="color: #3366ff;">ChildEBPbeforecall</span>) 77520c9a 1a312b0c 1d61fd78 0ef5bd18<br>Dll2Name!Class2Name::Process+0xb4 [source2.cpp @ 104]<br>06 1d61fbc8 77587f67 4c0e4df0 1a312b0c 1d61fcfc ole32!CallFrame::Invoke+0x54<br><br>2. <strong>dpp </strong>(<span style="color: #3366ff;">ChildEBPaftercall</span>) (<span style="color: #3366ff;">ChildEBPbeforecall</span>) ，来找到vtable </p><p></p><p></p><p>0:022&gt; dpp 1d61fb3c 1d61fbb0<br>1d61fb3c 1d61fb6c 1d61fbb0 &lt;Unloaded_API.DLL&gt;+0x1d61fb7f<br>1d61fb40 4c08f466 d908ec83<br>1d61fb44 00000042<br>1d61fb48 6496c8a2 1e6041d6 &lt;Unloaded_API.DLL&gt;+0x1e6041a5<br>1d61fb4c <span style="color: #ff0000;">1a3128f0 </span><span style="color: #3366ff;">(init this pointer address</span>) <span style="color: #ff0000;">4c1a3e24 </span>(<span style="color: #3366ff;">vtable address</span>) DllName!ATL::CComObject::`vftable’<br><br>3. <strong>dds </strong>(<span style="color: #3366ff;">vtable address</span>)<strong>-4</strong>，来找到RTTI </p><p></p><p></p><p>0:022&gt; dds 4c1a3e24 -4<br><span style="color: #000000;">4c1a3e20 </span><span style="color: #ff0000;">4c1b99e0 </span>(<span style="color: #3366ff;">RTTI address</span>) DllName!ATL::CComObject::`RTTI Complete Object Locator’<br><br>4. <strong>dds </strong>(<span style="color: #3366ff;">RTTI address</span>)，来找到偏移量，是第二个 </p><p></p><p></p><p>0:022&gt; dds 4c1b99e0<br>4c1b99e0 00000000<br>4c1b99e4 <span style="color: #ff0000;">00000000 </span>(<span style="color: #3366ff;">offset</span>)<br>4c1b99e8 00000000<br><br>5. <strong>dt ModuleName <span style="color: #3366ff;">(init this pointer address</span>) - (<span style="color: #3366ff;">offset</span>)</strong> ，查看this指针，搞定：）<br>dt DllName!NameSpaceName::ClassName 1a3128f0-0 </p><p></p><div></div>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;从&lt;a href=&quot;http://stackoverflow.com/questions/11318175/does-a-c-sharp-app-track-how-long-its-been-running?newsletter=1&amp;amp;nlcode=55866%7c
+        &lt;p&gt;如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。&lt;br&gt;&lt;br&gt;1. &lt;strong&gt;kbn&lt;/strong&gt;&lt;br&gt;# ChildEBP? RetAddr? Args to Child&lt;br&gt;00 
       
     
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -8486,25 +8486,25 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>从哪里开始学习Windows 8？（zz）</title>
-    <link href="http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/"/>
-    <id>http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/</id>
-    <published>2012-07-04T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.221Z</updated>
+    <title>记录C#程序的运行时间</title>
+    <link href="http://fresky.github.io/2012/07/06/how-to-record-startup-time-in-csharp/"/>
+    <id>http://fresky.github.io/2012/07/06/how-to-record-startup-time-in-csharp/</id>
+    <published>2012-07-05T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.222Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://www.sadev.co.za/content/where-do-i-start-learn-windows-8" target="_blank" rel="noopener">Where do I start to learn Windows 8? | Robert MacLean</a><br><blockquote></blockquote></p>]]></content>
+    <content type="html"><![CDATA[<p>从<a href="http://stackoverflow.com/questions/11318175/does-a-c-sharp-app-track-how-long-its-been-running?newsletter=1&amp;nlcode=55866%7cc739" target="_blank" rel="noopener">.net - Does a C# app track how long its been running? - Stack Overflow</a>看到的，很方便的。<br><code>System.Diagnostics.Process</code> 有个属性记录的应用的开始时间。<br></p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">System.Diagnostics.Process current = System.Diagnostics.Process.GetCurrentProcess();</span><br><span class="line">DateTime startedTime = current.StartTime;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://www.sadev.co.za/content/where-do-i-start-learn-windows-8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Where do I start to learn Window
+        &lt;p&gt;从&lt;a href=&quot;http://stackoverflow.com/questions/11318175/does-a-c-sharp-app-track-how-long-its-been-running?newsletter=1&amp;amp;nlcode=55866%7c
       
     
     </summary>
     
     
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -8530,6 +8530,29 @@ w\:* {behavior:url(#default#VML);}
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从哪里开始学习Windows 8？（zz）</title>
+    <link href="http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/"/>
+    <id>http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/</id>
+    <published>2012-07-04T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.221Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.sadev.co.za/content/where-do-i-start-learn-windows-8" target="_blank" rel="noopener">Where do I start to learn Windows 8? | Robert MacLean</a><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.sadev.co.za/content/where-do-i-start-learn-windows-8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Where do I start to learn Window
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -8746,29 +8769,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>http的url长度限制</title>
-    <link href="http://fresky.github.io/2011/01/11/length-limit-of-http-url/"/>
-    <id>http://fresky.github.io/2011/01/11/length-limit-of-http-url/</id>
-    <published>2011-01-10T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.219Z</updated>
-    
-    <content type="html"><![CDATA[<p>http的url长度是有限制的，<a href="http://www.boutell.com/newfaq/misc/urllength.html" target="_blank" rel="noopener">WWW FAQs: What is the maximum length of a URL?</a><br>所以不能用get的方式时在url里面放太多的东西，举个简单的例子。<br>如果一个asp.net的页面中使用了treeview，并且treeview的enableviewstate是true（默认情况）。但是如果你不小心在form中设置成了get时，你会发现只添加6、7个节点就会出错（IE，不同浏览器的长度限制不一样），页面不能访问，因为如果用get，viewstate会放到http的url中，会超出url的最长限制。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;http的url长度是有限制的，&lt;a href=&quot;http://www.boutell.com/newfaq/misc/urllength.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;WWW FAQs: What is the maximum 
-      
-    
-    </summary>
-    
-    
-      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C# GetEnvironmentVariable 问题</title>
     <link href="http://fresky.github.io/2011/01/11/GetEnvironmentVariable-issue-in-csharp/"/>
     <id>http://fresky.github.io/2011/01/11/GetEnvironmentVariable-issue-in-csharp/</id>
@@ -8811,6 +8811,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>http的url长度限制</title>
+    <link href="http://fresky.github.io/2011/01/11/length-limit-of-http-url/"/>
+    <id>http://fresky.github.io/2011/01/11/length-limit-of-http-url/</id>
+    <published>2011-01-10T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.219Z</updated>
+    
+    <content type="html"><![CDATA[<p>http的url长度是有限制的，<a href="http://www.boutell.com/newfaq/misc/urllength.html" target="_blank" rel="noopener">WWW FAQs: What is the maximum length of a URL?</a><br>所以不能用get的方式时在url里面放太多的东西，举个简单的例子。<br>如果一个asp.net的页面中使用了treeview，并且treeview的enableviewstate是true（默认情况）。但是如果你不小心在form中设置成了get时，你会发现只添加6、7个节点就会出错（IE，不同浏览器的长度限制不一样），页面不能访问，因为如果用get，viewstate会放到http的url中，会超出url的最长限制。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;http的url长度是有限制的，&lt;a href=&quot;http://www.boutell.com/newfaq/misc/urllength.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;WWW FAQs: What is the maximum 
+      
+    
+    </summary>
+    
+    
+      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
   </entry>
   
@@ -9074,29 +9097,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>法意蜜月之旅总结</title>
-    <link href="http://fresky.github.io/2010/10/09/europe-travel-summary/"/>
-    <id>http://fresky.github.io/2010/10/09/europe-travel-summary/</id>
-    <published>2010-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.214Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.blogabond.com/Promo/GetABlogMap.aspx" target="_blank" rel="noopener"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25491" border="0" alt width="450" height="300"></a></p><br><p>到达迪拜机场了，6月4日开始的蜜月之旅今天就结束了。先总结一下行程：<br>6，4 北京-迪拜-巴黎<br>6，5 凡尔赛宫<br>6，6 卢浮宫，奥赛博物馆，卢森堡公园<br>6，7 圣心教堂，凯旋门，香榭丽大街，艾菲尔铁塔<br>6，8 巴黎圣母院，老佛爷，晚上火车去阿维尼翁<br>6，9 薰衣草，红土小镇，石头城，泉水小镇<br>6，10 教皇宫，断桥<br>6，11 上午火车去尼斯，下午eve小镇，晚上尼斯海岸线<br>6，12 上午摩纳哥皇宫，赌场，下午火车去威尼斯<br>6，13 威尼斯玻璃岛，彩色岛<br>6，14 威尼斯主岛圣马可广场，教堂，总督府，叹息桥，大运河，下午火车去佛罗伦萨<br>6，15 百花大教堂，乌菲兹美术馆，老桥，菲拉格慕博物馆，晚上火车去锡耶纳<br>6，16 锡耶纳市政广场，集市，教堂，老城乱逛，晚上火车回佛罗伦萨<br>6，17 the mall逛街，下午米开朗奇罗广场，圣明托教堂，晚上火车去罗马<br>6，18 梵蒂冈博物馆，圣彼得大教堂，圣天使堡<br>6，19 斗兽场，古罗马广场，图拉真市场，卡托比利广场，卡托比利博物馆<br>6，20  圣乔瓦尼教堂，圣玛丽奥教堂，解放广场，巴贝里尼广场，人骨教堂，许愿池，万神庙，纳沃纳广场<br>6，21 波波洛广场，周边教堂，西班牙广场逛街，晚上罗马-迪拜<br>6，22 迪拜-北京 <br><br><br><br></p><br><p class="blogpress_location">Location:<a href="http://maps.google.com/maps?q=%E8%BF%AA%E6%8B%9C&amp;z=10" target="_blank" rel="noopener">迪拜</a></p><br><p><br><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.blogabond.com/Promo/GetABlogMap.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img id=&quot;imgBlogabondLogo&quot; style=&quot;position: abso
-      
-    
-    </summary>
-    
-    
-      <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
     <title>gvim编辑xml更新</title>
     <link href="http://fresky.github.io/2010/10/09/edit-xml-in-gvim/"/>
     <id>http://fresky.github.io/2010/10/09/edit-xml-in-gvim/</id>
@@ -9116,6 +9116,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>法意蜜月之旅总结</title>
+    <link href="http://fresky.github.io/2010/10/09/europe-travel-summary/"/>
+    <id>http://fresky.github.io/2010/10/09/europe-travel-summary/</id>
+    <published>2010-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.214Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.blogabond.com/Promo/GetABlogMap.aspx" target="_blank" rel="noopener"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25491" border="0" alt width="450" height="300"></a></p><br><p>到达迪拜机场了，6月4日开始的蜜月之旅今天就结束了。先总结一下行程：<br>6，4 北京-迪拜-巴黎<br>6，5 凡尔赛宫<br>6，6 卢浮宫，奥赛博物馆，卢森堡公园<br>6，7 圣心教堂，凯旋门，香榭丽大街，艾菲尔铁塔<br>6，8 巴黎圣母院，老佛爷，晚上火车去阿维尼翁<br>6，9 薰衣草，红土小镇，石头城，泉水小镇<br>6，10 教皇宫，断桥<br>6，11 上午火车去尼斯，下午eve小镇，晚上尼斯海岸线<br>6，12 上午摩纳哥皇宫，赌场，下午火车去威尼斯<br>6，13 威尼斯玻璃岛，彩色岛<br>6，14 威尼斯主岛圣马可广场，教堂，总督府，叹息桥，大运河，下午火车去佛罗伦萨<br>6，15 百花大教堂，乌菲兹美术馆，老桥，菲拉格慕博物馆，晚上火车去锡耶纳<br>6，16 锡耶纳市政广场，集市，教堂，老城乱逛，晚上火车回佛罗伦萨<br>6，17 the mall逛街，下午米开朗奇罗广场，圣明托教堂，晚上火车去罗马<br>6，18 梵蒂冈博物馆，圣彼得大教堂，圣天使堡<br>6，19 斗兽场，古罗马广场，图拉真市场，卡托比利广场，卡托比利博物馆<br>6，20  圣乔瓦尼教堂，圣玛丽奥教堂，解放广场，巴贝里尼广场，人骨教堂，许愿池，万神庙，纳沃纳广场<br>6，21 波波洛广场，周边教堂，西班牙广场逛街，晚上罗马-迪拜<br>6，22 迪拜-北京 <br><br><br><br></p><br><p class="blogpress_location">Location:<a href="http://maps.google.com/maps?q=%E8%BF%AA%E6%8B%9C&amp;z=10" target="_blank" rel="noopener">迪拜</a></p><br><p><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.blogabond.com/Promo/GetABlogMap.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img id=&quot;imgBlogabondLogo&quot; style=&quot;position: abso
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
     
   </entry>
   
@@ -9166,29 +9189,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>2009年底泰国游总结</title>
-    <link href="http://fresky.github.io/2010/10/09/thailand-travel/"/>
-    <id>http://fresky.github.io/2010/10/09/thailand-travel/</id>
-    <published>2010-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.215Z</updated>
-    
-    <content type="html"><![CDATA[<p>圣诞到元旦这段时间和老婆去泰国玩了一趟，下面做个简单的总结，给以后要去玩的同学们一个参考。</p><br><p><strong>机票篇：</strong></p><br><blockquote>订机票应该还是越早越好，而且避开高峰期能订到便宜的机票，我们动手有点晚，而且赶上圣诞到元旦这个假期，相对来说机票不算便宜。订机票前推荐到水木新开的flyers版学习学习，那里有很多大牛&hellip;&hellip;<br><br><p>北京到曼谷的机票是从携程上订的，当时看了很多网站，还是携程最便宜，怕太晚定不到，就定了斯里兰卡航空的，其实过了2天就有泰航的更便宜的了，而且泰航还是星空联盟的。泰国国内的航班基本就是到各个航空公司的官网上订的了，找时间合适，价格便宜的。</p><br>北京-曼谷：斯里兰卡航空<br><br><p>曼谷-清迈：Nok air</p><br>清迈-普吉：亚航<br><br><p>普吉-曼谷：曼谷航空</p><br>曼谷-北京：斯里兰卡航空<br><br><p>Tips：</p><br>1. 不是很确定国际往返是不是一定比单程便宜，如果不是的话，可以不买往返票，比如我们的行程，最后一天普吉飞曼谷纯属浪费时间和金钱，直接普吉飞北京就好了。<br><br><p>2. 曼谷航空只要有boarding pass 就能进休息室，免费的饮料点心，但是注意，飞机上的饭巨难吃，所以上飞机前得多吃点。</p><br>3. 曼谷有2个机场，别走错了，国际航班一般在新机场BKK，国内的廉航比如Nok air在老机场DMK。<br><br><p>4. BKK有免费的无线网络，可以找工作人员要用用户名和密码，提供护照即可。</p><br>5. 机场如果看到有免费的电话卡就领，我领了几张，卡里有5bht，打回国内只要1bht/min，通话质量也不错，而且在7-11可以买充值卡，最小面值50bht，我觉得还行，7-11泰国到处都是。<br></blockquote><br><p><strong>酒店篇：</strong></p><br><blockquote>酒店全部是在agoda上订的，也有很多订酒店的网站，可以比较一下，觉得这个网站上的价格还算合适，每个地方都是只定了1天，因为不知道酒店住的舒服与否，如果不合适可以再调换。但是注意，在agoda上拿到的价格在酒店可能拿不到，解决办法就是找个网吧再从网上订：）<br><br><p>这次订酒店我办了件傻事，在普吉的订的日期写错了，晚了1个月&hellip;&hellip;差点没地方住，还整的没了心情，再加上第二天一早6点就要出海，就没去看沙滩的Countdown to New Year 2010。</p><br>曼谷我们第一天住在考山路，有机场大巴直接到这里，可以看看考山路夜晚的繁荣景象，而且第二天逛大皇宫之类的也比较近，第二天搬到了市中心附近，便于老婆逛街，靠近轻轨BTS，交通也不错，后人可以参考：）<br><br><p>清迈比较小，随便住吧，我们租了个摩托车，去哪里都挺方便的，呵呵，第一次开摩托车。其实开摩托车不太安全，如果要开的话，一定要小心。</p><br>普吉我们住在最热闹的巴东海滩，但是我和老婆都不喜欢这里，全是酒吧，车水马龙，太闹了，后来去卡塔和卡隆海滩玩的时候觉得那里不错，比较安静，人也相对来说少一些。<br><br><p>Tips：</p><br>1. 订酒店要上酒店网站，或者打电话问酒店有没有机场免费接送，如果有的话一定要用，可以省很多事，而且省钱：）<br><br><p>2. 酒店一定不要把贵重物品放在房间里，我们有惨痛的教训，放在包里的一些人民币不见了&hellip;&hellip;</p><br>3. 酒店通常会有travel agent，可以问问，不过泰国满大街都是travel agent，价钱好像都差不多。<br></blockquote><br><p><strong>消费篇：</strong></p><br><blockquote>泰国的ATM基本都支持银联，所以不用换泰国泰铢，到时候自己去银联上取钱就行了。如果能办张全球取款不收手续费的平安银行的借记卡当然好，北京好像没有平安银行，我们出发前办了张华夏银行的借记卡，每天全球第一比免收手续费，每天取一次，也够用了。<br><br><p>先写这么多吧，以后想起什么来再补上：）</p><br><br></blockquote><br><p><br> <br><br></p><p><br><a href="http://www.blogabond.com/Promo/GetABlogMap.aspx" target="_blank" rel="noopener"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25489" border="0" alt width="450" height="300"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;圣诞到元旦这段时间和老婆去泰国玩了一趟，下面做个简单的总结，给以后要去玩的同学们一个参考。&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;机票篇：&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;blockquote&gt;订机票应该还是越早越好，而且避开高峰期能订到便宜的机票，我们动手有点晚，而且赶上
-      
-    
-    </summary>
-    
-    
-      <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ASP .NET readonly texbox 后台不能读取问题的解决办法</title>
     <link href="http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/"/>
     <id>http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/</id>
@@ -9208,6 +9208,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2009年底泰国游总结</title>
+    <link href="http://fresky.github.io/2010/10/09/thailand-travel/"/>
+    <id>http://fresky.github.io/2010/10/09/thailand-travel/</id>
+    <published>2010-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.215Z</updated>
+    
+    <content type="html"><![CDATA[<p>圣诞到元旦这段时间和老婆去泰国玩了一趟，下面做个简单的总结，给以后要去玩的同学们一个参考。</p><br><p><strong>机票篇：</strong></p><br><blockquote>订机票应该还是越早越好，而且避开高峰期能订到便宜的机票，我们动手有点晚，而且赶上圣诞到元旦这个假期，相对来说机票不算便宜。订机票前推荐到水木新开的flyers版学习学习，那里有很多大牛&hellip;&hellip;<br><br><p>北京到曼谷的机票是从携程上订的，当时看了很多网站，还是携程最便宜，怕太晚定不到，就定了斯里兰卡航空的，其实过了2天就有泰航的更便宜的了，而且泰航还是星空联盟的。泰国国内的航班基本就是到各个航空公司的官网上订的了，找时间合适，价格便宜的。</p><br>北京-曼谷：斯里兰卡航空<br><br><p>曼谷-清迈：Nok air</p><br>清迈-普吉：亚航<br><br><p>普吉-曼谷：曼谷航空</p><br>曼谷-北京：斯里兰卡航空<br><br><p>Tips：</p><br>1. 不是很确定国际往返是不是一定比单程便宜，如果不是的话，可以不买往返票，比如我们的行程，最后一天普吉飞曼谷纯属浪费时间和金钱，直接普吉飞北京就好了。<br><br><p>2. 曼谷航空只要有boarding pass 就能进休息室，免费的饮料点心，但是注意，飞机上的饭巨难吃，所以上飞机前得多吃点。</p><br>3. 曼谷有2个机场，别走错了，国际航班一般在新机场BKK，国内的廉航比如Nok air在老机场DMK。<br><br><p>4. BKK有免费的无线网络，可以找工作人员要用用户名和密码，提供护照即可。</p><br>5. 机场如果看到有免费的电话卡就领，我领了几张，卡里有5bht，打回国内只要1bht/min，通话质量也不错，而且在7-11可以买充值卡，最小面值50bht，我觉得还行，7-11泰国到处都是。<br></blockquote><br><p><strong>酒店篇：</strong></p><br><blockquote>酒店全部是在agoda上订的，也有很多订酒店的网站，可以比较一下，觉得这个网站上的价格还算合适，每个地方都是只定了1天，因为不知道酒店住的舒服与否，如果不合适可以再调换。但是注意，在agoda上拿到的价格在酒店可能拿不到，解决办法就是找个网吧再从网上订：）<br><br><p>这次订酒店我办了件傻事，在普吉的订的日期写错了，晚了1个月&hellip;&hellip;差点没地方住，还整的没了心情，再加上第二天一早6点就要出海，就没去看沙滩的Countdown to New Year 2010。</p><br>曼谷我们第一天住在考山路，有机场大巴直接到这里，可以看看考山路夜晚的繁荣景象，而且第二天逛大皇宫之类的也比较近，第二天搬到了市中心附近，便于老婆逛街，靠近轻轨BTS，交通也不错，后人可以参考：）<br><br><p>清迈比较小，随便住吧，我们租了个摩托车，去哪里都挺方便的，呵呵，第一次开摩托车。其实开摩托车不太安全，如果要开的话，一定要小心。</p><br>普吉我们住在最热闹的巴东海滩，但是我和老婆都不喜欢这里，全是酒吧，车水马龙，太闹了，后来去卡塔和卡隆海滩玩的时候觉得那里不错，比较安静，人也相对来说少一些。<br><br><p>Tips：</p><br>1. 订酒店要上酒店网站，或者打电话问酒店有没有机场免费接送，如果有的话一定要用，可以省很多事，而且省钱：）<br><br><p>2. 酒店一定不要把贵重物品放在房间里，我们有惨痛的教训，放在包里的一些人民币不见了&hellip;&hellip;</p><br>3. 酒店通常会有travel agent，可以问问，不过泰国满大街都是travel agent，价钱好像都差不多。<br></blockquote><br><p><strong>消费篇：</strong></p><br><blockquote>泰国的ATM基本都支持银联，所以不用换泰国泰铢，到时候自己去银联上取钱就行了。如果能办张全球取款不收手续费的平安银行的借记卡当然好，北京好像没有平安银行，我们出发前办了张华夏银行的借记卡，每天全球第一比免收手续费，每天取一次，也够用了。<br><br><p>先写这么多吧，以后想起什么来再补上：）</p><br><br></blockquote><br><p><br> <br><br></p><p><br><a href="http://www.blogabond.com/Promo/GetABlogMap.aspx" target="_blank" rel="noopener"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25489" border="0" alt width="450" height="300"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;圣诞到元旦这段时间和老婆去泰国玩了一趟，下面做个简单的总结，给以后要去玩的同学们一个参考。&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;机票篇：&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;blockquote&gt;订机票应该还是越早越好，而且避开高峰期能订到便宜的机票，我们动手有点晚，而且赶上
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
     
   </entry>
   

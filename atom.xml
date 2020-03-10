@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fresky.github.io/"/>
-  <updated>2020-03-10T11:52:59.914Z</updated>
+  <updated>2020-03-10T11:58:54.023Z</updated>
   <id>http://fresky.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://fresky.github.io/2020/03/10/common-branching-models/"/>
     <id>http://fresky.github.io/2020/03/10/common-branching-models/</id>
     <published>2020-03-10T05:54:45.000Z</published>
-    <updated>2020-03-10T11:52:59.914Z</updated>
+    <updated>2020-03-10T11:58:54.023Z</updated>
     
-    <content type="html"><![CDATA[<p>怎么做代码分支管理是每一个项目需要面临的问题，我认为代码分支管理是由产品发布模型决定的，在满足产品发布模型的同时要尽量减少开发、测试和部署的工作量。这篇文章简单介绍一下常见的几种代码分支模型，希望能给大家怎么选择适合自己的代码分支模型带来一些帮助。</p><h1 id="Git-Flow"><a href="#Git-Flow" class="headerlink" title="Git Flow"></a>Git Flow</h1><p><strong>Git Flow</strong>是在2010年的这篇文章<a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="noopener">A successful Git branching model - GitFlow</a>中提出来了，之后被广泛采用，它的模型如下所示。</p><img src="/images/gitglow.png"><p><strong>Git Flow</strong>有如下要点：</p><ol><li>主分支有两个：<strong>master</strong>是部署分支，所有已经发布的版本都在这里。<strong>develop</strong>是开发分支。</li><li>有三种支持分支：<strong>feature</strong>用来做功能开发，<strong>release</strong>用来准备下一个要发布的版本，<strong>hotfix</strong>用来在已经发布的版本上打补丁。</li><li>对于测试来说，必须在<strong>release</strong>分支和<strong>hotfix</strong>分支做严格的发布前的测试。</li><li>在<strong>master</strong>分支上几乎不会有冲突。</li></ol><p>Git Flow要求所有支持分支（<strong>feature</strong>，<strong>release</strong>和<strong>hotfix</strong>）都需要把代码merge回<strong>master</strong>。这也是这个分支主要要避免的风险。</p><p>Git Flow的分支模型非常清晰，可以很容易的支持各种产品发布策略，但是并不是说所有的项目都应该直接照搬这个模型，因为这么多分支本身就会带来管理上的复杂性。对我来说，这个模型更像是一个基础的代码分支模型，它帮助我们思考每一种分支存在的意义，从而帮助我们找到适用于我们自己的产品发布策略的分支模型。下面我们分别来看看这些分支存在的意义。</p><h2 id="Hotfix分支"><a href="#Hotfix分支" class="headerlink" title="Hotfix分支"></a>Hotfix分支</h2><p>在讨论<strong>hotfix</strong>分支之前，我想先讨论几个概念。第一个是<strong>产品支持阶段</strong>，我认为<strong>产品支持阶段</strong>=<strong>产品退休日期</strong>-<strong>产品发布日期</strong>。第二个概念是<strong>可能的hotfix阶段</strong>，我认为<strong>可能的hotfix阶段</strong>=<strong>产品支持阶段</strong>-<strong>hotfix开发测试时间</strong>。只有在<strong>可能的hotfix阶段</strong>大于0的时候，才需要存在<strong>hotfix</strong>分支，而需要多少个<strong>hotfix</strong>分支取决在<strong>可能的hotfix阶段</strong>我们有多少个已经发布的，而且正在支持的版本。</p><p>举个例子，如果我的产品是持续发布的，比如发布周期是1天两次，那么这个<strong>产品支持阶段</strong>就是半天，而我们大部分hotfix开发测试的时间也得差不多半天了吧，所以对于这种持续发布的产品，<strong>hotfix</strong>就不需要了。</p><h2 id="Release分支"><a href="#Release分支" class="headerlink" title="Release分支"></a>Release分支</h2><p>对于<strong>release</strong>分支，也有几个概念。第一个是<strong>版本稳定时间</strong>，比如我们要上线一个版本，需要做一系列的测试才有足够的信心认为这个版本已经足够稳定可以发布了，这个时间就是<strong>版本稳定时间</strong>，他基本上就是在上线之前我们需要的手动测试或者自动化测试要花费的时间。第二个概念是<strong>代码冻结日期</strong>，<strong>代码冻结日期</strong>=<strong>产品发布日期</strong>-<strong>版本稳定时间</strong>。只有在<strong>版本稳定时间</strong>比较长的情况下才需要<strong>release</strong>分支，因为<strong>release</strong>分支存在的意义就是让我们可以在这个<strong>release</strong>分支冻结代码，然后在这个分支上做发布前的测试。</p><p>举个例子，如果我们的产品有覆盖率非常全的自动化测试，而且这个自动化测试只需要5分钟就能跑完。那么我们的<strong>版本稳定时间</strong>就是5分钟，那么我们就不需要有<strong>代码冻结日期</strong>，也不需要有<strong>release</strong>分支，因为我们只需要5分钟的时间就知道这个产品能不能发布了。</p><h1 id="GitHub-Flow"><a href="#GitHub-Flow" class="headerlink" title="GitHub Flow"></a>GitHub Flow</h1><p>从上面的分析我们可以看到，如果一个产品是持续发布的，其实就没有<strong>hotfix</strong>和<strong>release</strong>分支存在的意义了，同时，因为是持续发布，所以<strong>develop</strong>分支和<strong>master</strong>分支差别不大，那么也就没有必要维护这连哥哥主分支了，这其实就是我们下面要说的<strong>GitHub Flow</strong>。</p><p><strong>GitHub Flow</strong>最早是在2011年的这篇文章<a href="http://scottchacon.com/2011/08/31/github-flow.html" target="_blank" rel="noopener">GitHub Flow</a>中提出来的，如下图所示。</p><img src="/images/githubflow1.png"><p><strong>GitHub Flow</strong>有如下要点：</p><ol><li><strong>master</strong>是部署分支</li><li>所有针对下一个发布的开发都在<strong>feature</strong>分支</li><li><strong>feature</strong>分支经过测试之后merge回<strong>master</strong>分支，然后发布</li><li>如果发布之后发现有bug，回滚到<strong>master</strong>分支的上一个发布版本</li></ol><p>这个分支模型在<strong>feature</strong>分支merge回<strong>master</strong>分支时会有潜在的冲突，这就要求每次在<strong>feature</strong>分支开始做发布前的测试的时候先从<strong>master</strong>分支拉代码，并且在这个<strong>feature</strong>分支完成发布前的测试工作时，其他<strong>feature</strong>分支不能开始发布前的测试工作（因为不然的话这个测试是无效的，因为随后<strong>master</strong>分支会有新的代码需要拉下来）。</p><p>另外这个分支模型有一个缺点就是<strong>master</strong>分支上不是都是真正可发布的，因为包含了一些发布过后发现有问题然后回滚到上一个发布的情况。所以之后<strong>GitHub Flow</strong>做了一次修正，可以参见现在的<a href="https://guides.github.com/introduction/flow/" target="_blank" rel="noopener">GitHub Flow</a>，如下图所示。</p><img src="/images/githubflow2.png"><p>它和2011年那篇文章的区别在于，发布直接发生在<strong>feature</strong>分支上，等这个发布没有问题才会merge回<strong>master</strong>分支。这样<strong>master</strong>上就全部是真正可以发布的版本了。但是这个分支模型的另一个风险是有可能从一个<strong>feature</strong>分支发布了一个版本之后忘记merge回<strong>master</strong>分支了。</p><p>可以看到这种<strong>GitHub Flow</strong>分支模型和<strong>Git Flow</strong>相比特别简单，非常适合持续发布的产品。全部的开发都通过<strong>feature</strong>分支来做，下面我们来看看<strong>feature</strong>分支。</p><h2 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h2><p>在Martin Fowler的<a href="https://www.martinfowler.com/bliki/FeatureBranch.html" target="_blank" rel="noopener">Feature Branch</a>里讨论过对<strong>feature</strong>分支的看法，最大的问题在于如果多个<strong>feature</strong>分支长期并存，可能会带来之后merge时有很多conflict要处理，而且如果<strong>feature</strong>分支不经常merge到主分支，其实是和持续集成违背的。</p><p>在我看来，<strong>feature</strong>分支只有在一种情况下才是必须存在的，那就是这个功能的<strong>开发时间比下次产品发布的时间还要长</strong>。这个对于持续发布的产品来说当然是成立的，比如使用<strong>GitHub Flow</strong>的GitHub，每天发布几次，所以使用<strong>feature</strong>分支是合适的，而且他们的<strong>feature</strong>分支也不会存在太长时间，所以merge时的冲突也不是很严重。还有一种常见的情况是开源软件的开发，每个开发人员并不能保证功能开发的进度，比如可能每周才工作几个小时，这种情况下就适合使用<strong>feature</strong>分支了。</p><h1 id="Trunk-Based-Development"><a href="#Trunk-Based-Development" class="headerlink" title="Trunk Based Development"></a>Trunk Based Development</h1><p>下面介绍另外一种分支模型<strong>基于主干的开发<a href="https://trunkbaseddevelopment.com/" target="_blank" rel="noopener">Trunk Based Development</a></strong>，如下图所示。</p><img src="/images/trunkbaseddevelopment.png"><p><strong>Trunk Based Development</strong>的要点是：</p><ol><li>团队只提交代码到<strong>Trunk</strong>（也就是<strong>master</strong>）。</li><li><strong>Trunk</strong>（也就是<strong>master</strong>）并不是一直可以发布的。</li></ol><h2 id="主干发布"><a href="#主干发布" class="headerlink" title="主干发布"></a>主干发布</h2><p><strong>Trunk Based Development</strong>有两种发布策略，一种是<strong><a href="https://trunkbaseddevelopment.com/release-from-trunk/" target="_blank" rel="noopener">主干发布（release from trunk）</a></strong>，直接基于主干上的代码进行测试，然后通过测试后发布。这种发布策略通常适用于发布周期很短的产品。如下图所示。</p><img src="/images/trunkbaseddevelopment_releasefromtrunk.png"><p>如果发布之后发现bug，可能直接从<strong>Trunk</strong>发布一个新的版本。如果产品有固定的发布周期现在还没到，也可以这个时候从上次发布的那个点做一个<strong>hotfix</strong>分支，然后在这个分支上部署hotfix，如下图所示。</p><img src="/images/trunkbaseddevelopment_releasefromtrunk_hotfix.png"><p>需要注意一点的是<strong>Trunk Based Development</strong>遵循<strong>upstream first policy</strong>，就是说必须在<strong>master</strong>分支上重现这个bug，然后在<strong>master</strong>分支上fix这个bug，测试过之后再把这个fix通过cherry-pick到<strong>hotfix</strong>分支。这样有如下的好处：</p><ol><li>保证所有的bug fix都在trunk里</li><li>因为一直在最新的代码（而不是当时发布的代码）上做修改，降低了引入regression的可能性。</li></ol><h2 id="release分支发布"><a href="#release分支发布" class="headerlink" title="release分支发布"></a>release分支发布</h2><p><strong>Trunk Based Development</strong>的第二种发布方式是<strong>release分支发布</strong>，如下图所示。</p><img src="/images/trunkbaseddevelopment_branchforrelease.png"><p>这种发布模式就是在需要<strong>代码冻结（code freeze）</strong>的时候拉出来一个<strong>release</strong>分支，然后测试这个分支，如果遇到bug，也像上面说的一样遵循<strong>upstream first policy</strong>，就是说必须在<strong>master</strong>分支上重现这个bug，然后在<strong>master</strong>分支上fix这个bug，测试过之后再把这个fix通过cherry-pick到<strong>release</strong>分支。等产品发布之后如果遇到bug，就把这个<strong>release</strong>分支当成<strong>hotfix</strong>分支来发布hotfix，和上面一样了。</p><h2 id="关于cherry-pick"><a href="#关于cherry-pick" class="headerlink" title="关于cherry-pick"></a>关于cherry-pick</h2><p>有很多关于cherry-pick的讨论，比如<a href="https://devblogs.microsoft.com/oldnewthing/20180323-01/?p=98325" target="_blank" rel="noopener">Stop cherry-picking, start merging</a>这里有一系列的讨论，有兴趣的可以看看。</p><p>上面我简单介绍了一下这3种常见的分支模型，分别是<strong>Git Flow</strong>， <strong>GitHub Flow</strong>和<strong>Trunk Based Development</strong>。其实就像我之前说的，更重要是理解产品发布的策略，基于团队本身开发和测试的能力来选择一种分支策略。</p><p>总的来说，分支策略越简单团队的额外开销会越少，从而团队的效率会越高。如何达成简单的分支策略，很大一部分取决于产品的<strong>发布周期</strong>和<strong>版本稳定时间</strong>，归根到底取决于在发布一个产品之前我们需要花多长时间来测试。所以在我看来，提高团队的自动化测试能力，是最根本的。</p>]]></content>
+    <content type="html"><![CDATA[<p>怎么做代码分支管理是每一个项目需要面临的问题，我认为代码分支管理是由产品发布模型决定的，在满足产品发布模型的同时要尽量减少开发、测试和部署的工作量。这篇文章简单介绍一下常见的几种代码分支模型，希望能给大家怎么选择适合自己的代码分支模型带来一些帮助。</p><h1 id="Git-Flow"><a href="#Git-Flow" class="headerlink" title="Git Flow"></a>Git Flow</h1><p><strong>Git Flow</strong>是在2010年的这篇文章<a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="noopener">A successful Git branching model - GitFlow</a>中提出来了，之后被广泛采用，它的模型如下所示。</p><img src="/images/gitflow.png"><p><strong>Git Flow</strong>有如下要点：</p><ol><li>主分支有两个：<strong>master</strong>是部署分支，所有已经发布的版本都在这里。<strong>develop</strong>是开发分支。</li><li>有三种支持分支：<strong>feature</strong>用来做功能开发，<strong>release</strong>用来准备下一个要发布的版本，<strong>hotfix</strong>用来在已经发布的版本上打补丁。</li><li>对于测试来说，必须在<strong>release</strong>分支和<strong>hotfix</strong>分支做严格的发布前的测试。</li><li>在<strong>master</strong>分支上几乎不会有冲突。</li></ol><p>Git Flow要求所有支持分支（<strong>feature</strong>，<strong>release</strong>和<strong>hotfix</strong>）都需要把代码merge回<strong>master</strong>。这也是这个分支主要要避免的风险。</p><p>Git Flow的分支模型非常清晰，可以很容易的支持各种产品发布策略，但是并不是说所有的项目都应该直接照搬这个模型，因为这么多分支本身就会带来管理上的复杂性。对我来说，这个模型更像是一个基础的代码分支模型，它帮助我们思考每一种分支存在的意义，从而帮助我们找到适用于我们自己的产品发布策略的分支模型。下面我们分别来看看这些分支存在的意义。</p><h2 id="Hotfix分支"><a href="#Hotfix分支" class="headerlink" title="Hotfix分支"></a>Hotfix分支</h2><p>在讨论<strong>hotfix</strong>分支之前，我想先讨论几个概念。第一个是<strong>产品支持阶段</strong>，我认为<strong>产品支持阶段</strong>=<strong>产品退休日期</strong>-<strong>产品发布日期</strong>。第二个概念是<strong>可能的hotfix阶段</strong>，我认为<strong>可能的hotfix阶段</strong>=<strong>产品支持阶段</strong>-<strong>hotfix开发测试时间</strong>。只有在<strong>可能的hotfix阶段</strong>大于0的时候，才需要存在<strong>hotfix</strong>分支，而需要多少个<strong>hotfix</strong>分支取决在<strong>可能的hotfix阶段</strong>我们有多少个已经发布的，而且正在支持的版本。</p><p>举个例子，如果我的产品是持续发布的，比如发布周期是1天两次，那么这个<strong>产品支持阶段</strong>就是半天，而我们大部分hotfix开发测试的时间也得差不多半天了吧，所以对于这种持续发布的产品，<strong>hotfix</strong>就不需要了。</p><h2 id="Release分支"><a href="#Release分支" class="headerlink" title="Release分支"></a>Release分支</h2><p>对于<strong>release</strong>分支，也有几个概念。第一个是<strong>版本稳定时间</strong>，比如我们要上线一个版本，需要做一系列的测试才有足够的信心认为这个版本已经足够稳定可以发布了，这个时间就是<strong>版本稳定时间</strong>，他基本上就是在上线之前我们需要的手动测试或者自动化测试要花费的时间。第二个概念是<strong>代码冻结日期</strong>，<strong>代码冻结日期</strong>=<strong>产品发布日期</strong>-<strong>版本稳定时间</strong>。只有在<strong>版本稳定时间</strong>比较长的情况下才需要<strong>release</strong>分支，因为<strong>release</strong>分支存在的意义就是让我们可以在这个<strong>release</strong>分支冻结代码，然后在这个分支上做发布前的测试。</p><p>举个例子，如果我们的产品有覆盖率非常全的自动化测试，而且这个自动化测试只需要5分钟就能跑完。那么我们的<strong>版本稳定时间</strong>就是5分钟，那么我们就不需要有<strong>代码冻结日期</strong>，也不需要有<strong>release</strong>分支，因为我们只需要5分钟的时间就知道这个产品能不能发布了。</p><h1 id="GitHub-Flow"><a href="#GitHub-Flow" class="headerlink" title="GitHub Flow"></a>GitHub Flow</h1><p>从上面的分析我们可以看到，如果一个产品是持续发布的，其实就没有<strong>hotfix</strong>和<strong>release</strong>分支存在的意义了，同时，因为是持续发布，所以<strong>develop</strong>分支和<strong>master</strong>分支差别不大，那么也就没有必要维护这连哥哥主分支了，这其实就是我们下面要说的<strong>GitHub Flow</strong>。</p><p><strong>GitHub Flow</strong>最早是在2011年的这篇文章<a href="http://scottchacon.com/2011/08/31/github-flow.html" target="_blank" rel="noopener">GitHub Flow</a>中提出来的，如下图所示。</p><img src="/images/githubflow1.png"><p><strong>GitHub Flow</strong>有如下要点：</p><ol><li><strong>master</strong>是部署分支</li><li>所有针对下一个发布的开发都在<strong>feature</strong>分支</li><li><strong>feature</strong>分支经过测试之后merge回<strong>master</strong>分支，然后发布</li><li>如果发布之后发现有bug，回滚到<strong>master</strong>分支的上一个发布版本</li></ol><p>这个分支模型在<strong>feature</strong>分支merge回<strong>master</strong>分支时会有潜在的冲突，这就要求每次在<strong>feature</strong>分支开始做发布前的测试的时候先从<strong>master</strong>分支拉代码，并且在这个<strong>feature</strong>分支完成发布前的测试工作时，其他<strong>feature</strong>分支不能开始发布前的测试工作（因为不然的话这个测试是无效的，因为随后<strong>master</strong>分支会有新的代码需要拉下来）。</p><p>另外这个分支模型有一个缺点就是<strong>master</strong>分支上不是都是真正可发布的，因为包含了一些发布过后发现有问题然后回滚到上一个发布的情况。所以之后<strong>GitHub Flow</strong>做了一次修正，可以参见现在的<a href="https://guides.github.com/introduction/flow/" target="_blank" rel="noopener">GitHub Flow</a>，如下图所示。</p><img src="/images/githubflow2.png"><p>它和2011年那篇文章的区别在于，发布直接发生在<strong>feature</strong>分支上，等这个发布没有问题才会merge回<strong>master</strong>分支。这样<strong>master</strong>上就全部是真正可以发布的版本了。但是这个分支模型的另一个风险是有可能从一个<strong>feature</strong>分支发布了一个版本之后忘记merge回<strong>master</strong>分支了。</p><p>可以看到这种<strong>GitHub Flow</strong>分支模型和<strong>Git Flow</strong>相比特别简单，非常适合持续发布的产品。全部的开发都通过<strong>feature</strong>分支来做，下面我们来看看<strong>feature</strong>分支。</p><h2 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h2><p>在Martin Fowler的<a href="https://www.martinfowler.com/bliki/FeatureBranch.html" target="_blank" rel="noopener">Feature Branch</a>里讨论过对<strong>feature</strong>分支的看法，最大的问题在于如果多个<strong>feature</strong>分支长期并存，可能会带来之后merge时有很多conflict要处理，而且如果<strong>feature</strong>分支不经常merge到主分支，其实是和持续集成违背的。</p><p>在我看来，<strong>feature</strong>分支只有在一种情况下才是必须存在的，那就是这个功能的<strong>开发时间比下次产品发布的时间还要长</strong>。这个对于持续发布的产品来说当然是成立的，比如使用<strong>GitHub Flow</strong>的GitHub，每天发布几次，所以使用<strong>feature</strong>分支是合适的，而且他们的<strong>feature</strong>分支也不会存在太长时间，所以merge时的冲突也不是很严重。还有一种常见的情况是开源软件的开发，每个开发人员并不能保证功能开发的进度，比如可能每周才工作几个小时，这种情况下就适合使用<strong>feature</strong>分支了。</p><h1 id="Trunk-Based-Development"><a href="#Trunk-Based-Development" class="headerlink" title="Trunk Based Development"></a>Trunk Based Development</h1><p>下面介绍另外一种分支模型<strong>基于主干的开发<a href="https://trunkbaseddevelopment.com/" target="_blank" rel="noopener">Trunk Based Development</a></strong>，如下图所示。</p><img src="/images/trunkbaseddevelopment.png"><p><strong>Trunk Based Development</strong>的要点是：</p><ol><li>团队只提交代码到<strong>Trunk</strong>（也就是<strong>master</strong>）。</li><li><strong>Trunk</strong>（也就是<strong>master</strong>）并不是一直可以发布的。</li></ol><h2 id="主干发布"><a href="#主干发布" class="headerlink" title="主干发布"></a>主干发布</h2><p><strong>Trunk Based Development</strong>有两种发布策略，一种是<strong><a href="https://trunkbaseddevelopment.com/release-from-trunk/" target="_blank" rel="noopener">主干发布（release from trunk）</a></strong>，直接基于主干上的代码进行测试，然后通过测试后发布。这种发布策略通常适用于发布周期很短的产品。如下图所示。</p><img src="/images/trunkbaseddevelopment_releasefromtrunk.png"><p>如果发布之后发现bug，可能直接从<strong>Trunk</strong>发布一个新的版本。如果产品有固定的发布周期现在还没到，也可以这个时候从上次发布的那个点做一个<strong>hotfix</strong>分支，然后在这个分支上部署hotfix，如下图所示。</p><img src="/images/trunkbaseddevelopment_releasefromtrunk_hotfix.png"><p>需要注意一点的是<strong>Trunk Based Development</strong>遵循<strong>upstream first policy</strong>，就是说必须在<strong>master</strong>分支上重现这个bug，然后在<strong>master</strong>分支上fix这个bug，测试过之后再把这个fix通过cherry-pick到<strong>hotfix</strong>分支。这样有如下的好处：</p><ol><li>保证所有的bug fix都在trunk里</li><li>因为一直在最新的代码（而不是当时发布的代码）上做修改，降低了引入regression的可能性。</li></ol><h2 id="release分支发布"><a href="#release分支发布" class="headerlink" title="release分支发布"></a>release分支发布</h2><p><strong>Trunk Based Development</strong>的第二种发布方式是<strong>release分支发布</strong>，如下图所示。</p><img src="/images/trunkbaseddevelopment_branchforrelease.png"><p>这种发布模式就是在需要<strong>代码冻结（code freeze）</strong>的时候拉出来一个<strong>release</strong>分支，然后测试这个分支，如果遇到bug，也像上面说的一样遵循<strong>upstream first policy</strong>，就是说必须在<strong>master</strong>分支上重现这个bug，然后在<strong>master</strong>分支上fix这个bug，测试过之后再把这个fix通过cherry-pick到<strong>release</strong>分支。等产品发布之后如果遇到bug，就把这个<strong>release</strong>分支当成<strong>hotfix</strong>分支来发布hotfix，和上面一样了。</p><h2 id="关于cherry-pick"><a href="#关于cherry-pick" class="headerlink" title="关于cherry-pick"></a>关于cherry-pick</h2><p>有很多关于cherry-pick的讨论，比如<a href="https://devblogs.microsoft.com/oldnewthing/20180323-01/?p=98325" target="_blank" rel="noopener">Stop cherry-picking, start merging</a>这里有一系列的讨论，有兴趣的可以看看。</p><h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>上面我简单介绍了一下这3种常见的分支模型，分别是<strong>Git Flow</strong>， <strong>GitHub Flow</strong>和<strong>Trunk Based Development</strong>。其实就像我之前说的，更重要是理解产品发布的策略，基于团队本身开发和测试的能力来选择一种分支策略。</p><p>总的来说，分支策略越简单团队的额外开销会越少，从而团队的效率会越高。如何达成简单的分支策略，很大一部分取决于产品的<strong>发布周期</strong>和<strong>版本稳定时间</strong>，归根到底取决于在发布一个产品之前我们需要花多长时间来测试。所以在我看来，提高团队的自动化测试能力，是最根本的。</p>]]></content>
     
     <summary type="html">
     
@@ -566,9 +566,9 @@
     </summary>
     
     
-      <category term="Web" scheme="http://fresky.github.io/tags/Web/"/>
-    
       <category term="Javascript" scheme="http://fresky.github.io/tags/Javascript/"/>
+    
+      <category term="Web" scheme="http://fresky.github.io/tags/Web/"/>
     
   </entry>
   
@@ -3881,29 +3881,6 @@
   </entry>
   
   <entry>
-    <title>遇到奇怪的C#/C/C++或者Java的bug可以去问问Coverity</title>
-    <link href="http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/"/>
-    <id>http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/</id>
-    <published>2013-07-17T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.271Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.coverity.com/" target="_blank" rel="noopener">Coverity</a>7月16号在博客<a href="https://communities.coverity.com/blogs/development-testing-blog/" target="_blank" rel="noopener">Ask The Bug Guys</a>中说以后遇到奇怪的C#/C/C++或者Java的bug可以给<a href="mailto:TheBugGuys@coverity.com" target="_blank" rel="noopener">TheBugGuys@coverity.com</a>发邮件。然后这些问题就会到一些大牛手上：</p><ul><li>&nbsp;&nbsp;&nbsp; Eric Lippert, our Godfather of C# code</li><li>&nbsp;&nbsp;&nbsp; Jon Jarboe, our C/C++ guru</li><li>&nbsp;&nbsp;&nbsp; Tim Alper, our resident Java authority</li></ul><p>之后他们会把其中一些有趣的问题放到他们一个新的系列博客Ask The Bug Guys上。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.coverity.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Coverity&lt;/a&gt;7月16号在博客&lt;a href=&quot;https://communities.coverity.com/blogs/dev
-      
-    
-    </summary>
-    
-    
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
     <title>用ChooseALicense帮自己选一个开源license，然后用AddALicense给自己的github自动加上license文件</title>
     <link href="http://fresky.github.io/2013/07/18/choosealicense-addalicense-github-license/"/>
     <id>http://fresky.github.io/2013/07/18/choosealicense-addalicense-github-license/</id>
@@ -3925,6 +3902,29 @@
       <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
       <category term="Github" scheme="http://fresky.github.io/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>遇到奇怪的C#/C/C++或者Java的bug可以去问问Coverity</title>
+    <link href="http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/"/>
+    <id>http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/</id>
+    <published>2013-07-17T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.271Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.coverity.com/" target="_blank" rel="noopener">Coverity</a>7月16号在博客<a href="https://communities.coverity.com/blogs/development-testing-blog/" target="_blank" rel="noopener">Ask The Bug Guys</a>中说以后遇到奇怪的C#/C/C++或者Java的bug可以给<a href="mailto:TheBugGuys@coverity.com" target="_blank" rel="noopener">TheBugGuys@coverity.com</a>发邮件。然后这些问题就会到一些大牛手上：</p><ul><li>&nbsp;&nbsp;&nbsp; Eric Lippert, our Godfather of C# code</li><li>&nbsp;&nbsp;&nbsp; Jon Jarboe, our C/C++ guru</li><li>&nbsp;&nbsp;&nbsp; Tim Alper, our resident Java authority</li></ul><p>之后他们会把其中一些有趣的问题放到他们一个新的系列博客Ask The Bug Guys上。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.coverity.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Coverity&lt;/a&gt;7月16号在博客&lt;a href=&quot;https://communities.coverity.com/blogs/dev
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -4093,6 +4093,31 @@
   </entry>
   
   <entry>
+    <title>C#中5种timer的比较</title>
+    <link href="http://fresky.github.io/2013/07/09/compare-of-5-timers-in-csharp/"/>
+    <id>http://fresky.github.io/2013/07/09/compare-of-5-timers-in-csharp/</id>
+    <published>2013-07-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.268Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p>C#中有5个timer，它们的主要区别如下：</p><p></p><p><ol></ol></p><p><li>System.Threading.Timer&nbsp; 在线程池启动一个后台任务。我前段时间写过一个关于timer的垃圾回收的需要注意一下，参见<a href="/2013/06/20/where-is-my-timer-csharp-gc/">谁动了我的timer？</a>。</li></p><p><li>System.Windows.Forms.Timer&nbsp; 告诉windows把一个计时器和调用它的线程(UI线程)关联起来，通过往UI线程的消息队列里放一个WM_TIMER的消息来实现，所以它的callback一定是在UI线程调用的，不存在多线程调用的问题。</li></p><p><li>System.Windows.Threading.DispatcherTimer 用在WPF和Silverlight中，对应于System.Windows.Forms.Timer。</li></p><p><li>Windows.UI.Xaml.Dispatchertimer 用在windows store app中，对应于System.Windows.Forms.Timer。</li></p><p><li>System.Timers.Timer 包装了一下System.Threading.Timer，使它有了和System.Windows.Forms.Timer类似的接口，而且也能在visual studio的toolbox designer里找到。它也是在线程池中执行，但是如果你是在visual studio的designer中使用它，visual studio会自动把它所在的control设为这个timer的SynchronizingObject，这样就会保证callback会在UI线程调用了。Jeffrey Richter不建议使用它，建议直接用System.Threading.Timer。这个timer也有个坑，参见<a href="/2011/06/23/dot-net-2-timer-elapsed-event-will-catch-all-exception-for-you/">.NET 2.0的Timer elapsed event 会自动catch住所有的exception</a>。</li><br></p><p></p><p><a href="http://msdn.microsoft.com/en-us/magazine/cc164015.aspx" target="_blank" rel="noopener">Comparing the Timer Classes in the .NET Framework Class Library</a>也比较了3中timer（System.Threading.Timer ，System.Windows.Forms.Timer和System.Timers.Timer），并且画了个如下的表格。</p><p></p><table style="width: 686px;" border="0" cellspacing="0" cellpadding="0"><colgroup><col style="mso-width-source: userset; mso-width-alt: 9216; width: 189pt;" width="252"> <col style="mso-width-source: userset; mso-width-alt: 6290; width: 129pt;" width="172"> <col style="mso-width-source: userset; mso-width-alt: 4717; width: 97pt;" width="129"> <col style="mso-width-source: userset; mso-width-alt: 4864; width: 100pt;" width="133"> </colgroup><br><tbody><br><tr style="height: 15.0pt;"><br><td id="th113923680000" class="xl65" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: #cce8cf; font-weight: bold; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6; background: #5B9BD5; mso-pattern: #5B9BD5 none;" width="252" height="20">&nbsp;</td><br><td id="th113923680001" class="xl65" style="width: 129pt; font-size: 11.0pt; color: #cce8cf; font-weight: bold; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #5B9BD5; mso-pattern: #5B9BD5 none;" width="172">System.Windows.Forms</td><br><td id="th113923680002" class="xl65" style="width: 97pt; font-size: 11.0pt; color: #cce8cf; font-weight: bold; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #5B9BD5; mso-pattern: #5B9BD5 none;" width="129">System.Timers</td><br><td id="th113923680003" class="xl65" style="width: 100pt; font-size: 11.0pt; color: #cce8cf; font-weight: bold; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #5B9BD5; mso-pattern: #5B9BD5 none;" width="133">System.Threading</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="252" height="20">Timer   event runs on what thread?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="172">UI thread</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="129">UI or worker thread</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="133">Worker thread</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6;" width="252" height="20">Instances are thread safe?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="172">No</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="129">Yes</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="133">No</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="252" height="20">Familiar/intuitive   object model?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="172">Yes</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="129">Yes</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="133">No</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6;" width="252" height="20">Requires Windows Forms?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="172">Yes</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="129">No</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="133">No</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="252" height="20">Metronome-quality   beat?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="172">No</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="129">Yes<em></em></td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="133">Yes</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6;" width="252" height="20">Timer event supports state object?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="172">No</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="129">No</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="133">Yes</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="252" height="20">Initial   timer event can be scheduled?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="172">No</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="129">No</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="133">Yes</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6;" width="252" height="20">Class supports inheritance?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="172">Yes</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="129">Yes</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="133">No</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 515pt;" colspan="4" width="686" height="20">* Depending on the availability of system resources   (for example, worker threads)</td><br></tr><br></tbody><br></table><br><table style="width: 1px; height: 1px;" border="0" cellspacing="0" cellpadding="0"><br><tbody><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 495pt;" colspan="4" width="660" height="20">&nbsp;</td><br></tr><br></tbody><br></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;C#中有5个timer，它们的主要区别如下：&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ol&gt;&lt;/ol&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;System.Threading.Timer&amp;nbsp; 在线程池启动一个后台任务。我前段时间写过一个关于timer的垃圾回收的需要注意一下，参
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>推荐一个网站——聚合了微软的文件的Knowledge Base下载地址</title>
     <link href="http://fresky.github.io/2013/07/09/where-to-download-different-versions-of-microsoft-files/"/>
     <id>http://fresky.github.io/2013/07/09/where-to-download-different-versions-of-microsoft-files/</id>
@@ -4116,21 +4141,19 @@
   </entry>
   
   <entry>
-    <title>C#中5种timer的比较</title>
-    <link href="http://fresky.github.io/2013/07/09/compare-of-5-timers-in-csharp/"/>
-    <id>http://fresky.github.io/2013/07/09/compare-of-5-timers-in-csharp/</id>
-    <published>2013-07-08T16:00:00.000Z</published>
+    <title>TPL中的task并不是thread</title>
+    <link href="http://fresky.github.io/2013/07/08/tasks-are-not-threads/"/>
+    <id>http://fresky.github.io/2013/07/08/tasks-are-not-threads/</id>
+    <published>2013-07-07T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.268Z</updated>
     
-    <content type="html"><![CDATA[<p></p><p>C#中有5个timer，它们的主要区别如下：</p><p></p><p><ol></ol></p><p><li>System.Threading.Timer&nbsp; 在线程池启动一个后台任务。我前段时间写过一个关于timer的垃圾回收的需要注意一下，参见<a href="/2013/06/20/where-is-my-timer-csharp-gc/">谁动了我的timer？</a>。</li></p><p><li>System.Windows.Forms.Timer&nbsp; 告诉windows把一个计时器和调用它的线程(UI线程)关联起来，通过往UI线程的消息队列里放一个WM_TIMER的消息来实现，所以它的callback一定是在UI线程调用的，不存在多线程调用的问题。</li></p><p><li>System.Windows.Threading.DispatcherTimer 用在WPF和Silverlight中，对应于System.Windows.Forms.Timer。</li></p><p><li>Windows.UI.Xaml.Dispatchertimer 用在windows store app中，对应于System.Windows.Forms.Timer。</li></p><p><li>System.Timers.Timer 包装了一下System.Threading.Timer，使它有了和System.Windows.Forms.Timer类似的接口，而且也能在visual studio的toolbox designer里找到。它也是在线程池中执行，但是如果你是在visual studio的designer中使用它，visual studio会自动把它所在的control设为这个timer的SynchronizingObject，这样就会保证callback会在UI线程调用了。Jeffrey Richter不建议使用它，建议直接用System.Threading.Timer。这个timer也有个坑，参见<a href="/2011/06/23/dot-net-2-timer-elapsed-event-will-catch-all-exception-for-you/">.NET 2.0的Timer elapsed event 会自动catch住所有的exception</a>。</li><br></p><p></p><p><a href="http://msdn.microsoft.com/en-us/magazine/cc164015.aspx" target="_blank" rel="noopener">Comparing the Timer Classes in the .NET Framework Class Library</a>也比较了3中timer（System.Threading.Timer ，System.Windows.Forms.Timer和System.Timers.Timer），并且画了个如下的表格。</p><p></p><table style="width: 686px;" border="0" cellspacing="0" cellpadding="0"><colgroup><col style="mso-width-source: userset; mso-width-alt: 9216; width: 189pt;" width="252"> <col style="mso-width-source: userset; mso-width-alt: 6290; width: 129pt;" width="172"> <col style="mso-width-source: userset; mso-width-alt: 4717; width: 97pt;" width="129"> <col style="mso-width-source: userset; mso-width-alt: 4864; width: 100pt;" width="133"> </colgroup><br><tbody><br><tr style="height: 15.0pt;"><br><td id="th113923680000" class="xl65" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: #cce8cf; font-weight: bold; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6; background: #5B9BD5; mso-pattern: #5B9BD5 none;" width="252" height="20">&nbsp;</td><br><td id="th113923680001" class="xl65" style="width: 129pt; font-size: 11.0pt; color: #cce8cf; font-weight: bold; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #5B9BD5; mso-pattern: #5B9BD5 none;" width="172">System.Windows.Forms</td><br><td id="th113923680002" class="xl65" style="width: 97pt; font-size: 11.0pt; color: #cce8cf; font-weight: bold; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #5B9BD5; mso-pattern: #5B9BD5 none;" width="129">System.Timers</td><br><td id="th113923680003" class="xl65" style="width: 100pt; font-size: 11.0pt; color: #cce8cf; font-weight: bold; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #5B9BD5; mso-pattern: #5B9BD5 none;" width="133">System.Threading</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="252" height="20">Timer   event runs on what thread?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="172">UI thread</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="129">UI or worker thread</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="133">Worker thread</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6;" width="252" height="20">Instances are thread safe?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="172">No</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="129">Yes</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="133">No</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="252" height="20">Familiar/intuitive   object model?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="172">Yes</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="129">Yes</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="133">No</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6;" width="252" height="20">Requires Windows Forms?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="172">Yes</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="129">No</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="133">No</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="252" height="20">Metronome-quality   beat?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="172">No</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="129">Yes<em></em></td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="133">Yes</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6;" width="252" height="20">Timer event supports state object?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="172">No</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="129">No</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="133">Yes</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="252" height="20">Initial   timer event can be scheduled?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="172">No</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="129">No</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none; background: #DDEBF7; mso-pattern: #DDEBF7 none;" width="133">Yes</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 189pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: .5pt solid #9BC2E6;" width="252" height="20">Class supports inheritance?</td><br><td class="xl66" style="width: 129pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="172">Yes</td><br><td class="xl66" style="width: 97pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: none; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="129">Yes</td><br><td class="xl66" style="width: 100pt; font-size: 11.0pt; color: black; font-weight: 400; text-decoration: none; text-underline-style: none; text-line-through: none; font-family: Calibri; border-top: .5pt solid #9BC2E6; border-right: .5pt solid #9BC2E6; border-bottom: .5pt solid #9BC2E6; border-left: none;" width="133">No</td><br></tr><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 515pt;" colspan="4" width="686" height="20">* Depending on the availability of system resources   (for example, worker threads)</td><br></tr><br></tbody><br></table><br><table style="width: 1px; height: 1px;" border="0" cellspacing="0" cellpadding="0"><br><tbody><br><tr style="height: 15.0pt;"><br><td class="xl66" style="height: 15.0pt; width: 495pt;" colspan="4" width="660" height="20">&nbsp;</td><br></tr><br></tbody><br></table>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://blogs.msdn.com/b/benwilli/archive/2013/04/24/tasks-are-not-threads.aspx" target="_blank" rel="noopener">Tasks are not Threads - The Brain Dump</a>用了一个非常简单直观的例子说明了task和thread并不是一回事（尽管你调用Task.Run一般会在线程池上启一个线程帮你做些事情）。</p>  <p>假设有个UI，我们有2个按钮，开始和结束。代码如下：</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">async</span> <span class="keyword">void</span> <span class="title">bttnStart_Click</span>(<span class="params"><span class="keyword">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    MessageBox.Show(<span class="string">"Looking for the time"</span>);</span><br><span class="line">    DateTime now = <span class="keyword">await</span> GetCurrentTimeAsync();</span><br><span class="line">    MessageBox.Show(<span class="string">"It is now"</span> + now.ToString());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">bttnEnd_Click</span>(<span class="params"><span class="keyword">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (_tsc != <span class="literal">null</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        _tsc.SetResult(DateTime.Now);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TaskCompletionSource&lt;DateTime&gt; _tsc;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> Task&lt;DateTime&gt; <span class="title">GetCurrentTimeAsync</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    _tsc = <span class="keyword">new</span> TaskCompletionSource&lt;DateTime&gt;();</span><br><span class="line">    <span class="keyword">return</span> _tsc.Task;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>从上面的代码我们可以看到，这个task的开始于用户点击“开始”按钮，介绍于用户点击“结束”按钮。task其实在等用户的操作，同样的，task也可以在等网络，内存或者任何别的东西，不一定是线程。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;C#中有5个timer，它们的主要区别如下：&lt;/p&gt;&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;&lt;ol&gt;&lt;/ol&gt;&lt;/p&gt;
-&lt;p&gt;&lt;li&gt;System.Threading.Timer&amp;nbsp; 在线程池启动一个后台任务。我前段时间写过一个关于timer的垃圾回收的需要注意一下，参
+        &lt;p&gt;&lt;a href=&quot;http://blogs.msdn.com/b/benwilli/archive/2013/04/24/tasks-are-not-threads.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tasks are not Thr
       
     
     </summary>
@@ -4164,29 +4187,6 @@
   </entry>
   
   <entry>
-    <title>TPL中的task并不是thread</title>
-    <link href="http://fresky.github.io/2013/07/08/tasks-are-not-threads/"/>
-    <id>http://fresky.github.io/2013/07/08/tasks-are-not-threads/</id>
-    <published>2013-07-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.268Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://blogs.msdn.com/b/benwilli/archive/2013/04/24/tasks-are-not-threads.aspx" target="_blank" rel="noopener">Tasks are not Threads - The Brain Dump</a>用了一个非常简单直观的例子说明了task和thread并不是一回事（尽管你调用Task.Run一般会在线程池上启一个线程帮你做些事情）。</p>  <p>假设有个UI，我们有2个按钮，开始和结束。代码如下：</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">async</span> <span class="keyword">void</span> <span class="title">bttnStart_Click</span>(<span class="params"><span class="keyword">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    MessageBox.Show(<span class="string">"Looking for the time"</span>);</span><br><span class="line">    DateTime now = <span class="keyword">await</span> GetCurrentTimeAsync();</span><br><span class="line">    MessageBox.Show(<span class="string">"It is now"</span> + now.ToString());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">bttnEnd_Click</span>(<span class="params"><span class="keyword">object</span> sender, RoutedEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (_tsc != <span class="literal">null</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        _tsc.SetResult(DateTime.Now);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">TaskCompletionSource&lt;DateTime&gt; _tsc;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> Task&lt;DateTime&gt; <span class="title">GetCurrentTimeAsync</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    _tsc = <span class="keyword">new</span> TaskCompletionSource&lt;DateTime&gt;();</span><br><span class="line">    <span class="keyword">return</span> _tsc.Task;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>从上面的代码我们可以看到，这个task的开始于用户点击“开始”按钮，介绍于用户点击“结束”按钮。task其实在等用户的操作，同样的，task也可以在等网络，内存或者任何别的东西，不一定是线程。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://blogs.msdn.com/b/benwilli/archive/2013/04/24/tasks-are-not-threads.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Tasks are not Thr
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>一个可视化的retrospective网站</title>
     <link href="http://fresky.github.io/2013/07/08/visual-website-for-retrospective/"/>
     <id>http://fresky.github.io/2013/07/08/visual-website-for-retrospective/</id>
@@ -4206,29 +4206,6 @@
     
     
       <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>14种程序员性格</title>
-    <link href="http://fresky.github.io/2013/07/07/14-characters-of-coder/"/>
-    <id>http://fresky.github.io/2013/07/07/14-characters-of-coder/</id>
-    <published>2013-07-06T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.267Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p><a href="http://www.infoworld.com/d/application-development/the-14-characters-you-meet-coder-218142" target="_blank" rel="noopener">The 14 characters you meet as a coder | Application Development - InfoWorld</a>列举了14中常见的程序员性格：</p><p></p><ol><br><li>首席女歌手&ldquo;程序员（自己最牛）</li><br><li>摇滚明星</li><br><li>不情愿的程序员</li><br><li>神圣的牧师</li><br><li>流程大拿</li><br><li>危险边缘的冠军（神秘的琐事的专家）</li><br><li>潮人黑客</li><br><li>宇航员架构师（热衷复杂的架构）</li><br><li>不安全的传道者</li><br><li>代码诗人（追求代码的极致美学，热衷设计模式）</li><br><li>云的狂热者</li><br><li>传统主义者</li><br><li>专业的传统主义者</li><br><li>所有权牧师（不是微软、IBM等大公司写的东西就都是垃圾）</li><br></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.infoworld.com/d/application-development/the-14-characters-you-meet-coder-218142&quot; target=&quot;_blank&quot; rel=&quot;noopener
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -4256,25 +4233,25 @@
   </entry>
   
   <entry>
-    <title>如何开源你的库</title>
-    <link href="http://fresky.github.io/2013/07/06/how-to-opensource-your-code/"/>
-    <id>http://fresky.github.io/2013/07/06/how-to-opensource-your-code/</id>
-    <published>2013-07-05T16:00:00.000Z</published>
+    <title>14种程序员性格</title>
+    <link href="http://fresky.github.io/2013/07/07/14-characters-of-coder/"/>
+    <id>http://fresky.github.io/2013/07/07/14-characters-of-coder/</id>
+    <published>2013-07-06T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.267Z</updated>
     
-    <content type="html"><![CDATA[<p></p><p>我之前的博客中介绍过两篇如何做好开源软件的文章，<a href="/2013/06/21/how-to-spread-your-code/">如何传播你的代码</a>，<a href="/2013/01/05/how-to-start-open-source-project/">怎么做一个开源项目</a>。</p><p></p><p></p><p>今天又看到一篇不错的文章，<a href="http://williamdurand.fr/2013/07/04/on-open-sourcing-libraries/" target="_blank" rel="noopener">On Open Sourcing Libraries | William DURAND</a>。</p><p></p><p></p><p>摘要如下：</p><p></p><p></p><p><strong><em>你的项目：</em></strong></p><p></p><ol><br><li>必须有一个README文档，包含名字，描述，还有<strong>使用方法</strong>，<strong>安装说明</strong>，<strong>如何参与</strong>，<strong>测试</strong>和<strong>License</strong>。</li><br><li>必须有一个可见的license文件。</li><br><li>必须经过测试。</li><br><li>必须和你的社区习惯保持一致</li><br></ol><br><p><em><strong>你：</strong></em></p><br><ol><br><li>需要反馈。</li><br><li>必须友好，热情。</li><br><li>应该让别人加入。</li><br></ol>]]></content>
+    <content type="html"><![CDATA[<p></p><p><a href="http://www.infoworld.com/d/application-development/the-14-characters-you-meet-coder-218142" target="_blank" rel="noopener">The 14 characters you meet as a coder | Application Development - InfoWorld</a>列举了14中常见的程序员性格：</p><p></p><ol><br><li>首席女歌手&ldquo;程序员（自己最牛）</li><br><li>摇滚明星</li><br><li>不情愿的程序员</li><br><li>神圣的牧师</li><br><li>流程大拿</li><br><li>危险边缘的冠军（神秘的琐事的专家）</li><br><li>潮人黑客</li><br><li>宇航员架构师（热衷复杂的架构）</li><br><li>不安全的传道者</li><br><li>代码诗人（追求代码的极致美学，热衷设计模式）</li><br><li>云的狂热者</li><br><li>传统主义者</li><br><li>专业的传统主义者</li><br><li>所有权牧师（不是微软、IBM等大公司写的东西就都是垃圾）</li><br></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;我之前的博客中介绍过两篇如何做好开源软件的文章，&lt;a href=&quot;/2013/06/21/how-to-spread-your-code/&quot;&gt;如何传播你的代码&lt;/a&gt;，&lt;a href=&quot;/2013/01/05/how-to-start-open-source-
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.infoworld.com/d/application-development/the-14-characters-you-meet-coder-218142&quot; target=&quot;_blank&quot; rel=&quot;noopener
       
     
     </summary>
     
     
-      <category term="Opensource" scheme="http://fresky.github.io/tags/Opensource/"/>
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -4298,6 +4275,29 @@
     
     
       <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
+    
+      <category term="Opensource" scheme="http://fresky.github.io/tags/Opensource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何开源你的库</title>
+    <link href="http://fresky.github.io/2013/07/06/how-to-opensource-your-code/"/>
+    <id>http://fresky.github.io/2013/07/06/how-to-opensource-your-code/</id>
+    <published>2013-07-05T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.267Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p>我之前的博客中介绍过两篇如何做好开源软件的文章，<a href="/2013/06/21/how-to-spread-your-code/">如何传播你的代码</a>，<a href="/2013/01/05/how-to-start-open-source-project/">怎么做一个开源项目</a>。</p><p></p><p></p><p>今天又看到一篇不错的文章，<a href="http://williamdurand.fr/2013/07/04/on-open-sourcing-libraries/" target="_blank" rel="noopener">On Open Sourcing Libraries | William DURAND</a>。</p><p></p><p></p><p>摘要如下：</p><p></p><p></p><p><strong><em>你的项目：</em></strong></p><p></p><ol><br><li>必须有一个README文档，包含名字，描述，还有<strong>使用方法</strong>，<strong>安装说明</strong>，<strong>如何参与</strong>，<strong>测试</strong>和<strong>License</strong>。</li><br><li>必须有一个可见的license文件。</li><br><li>必须经过测试。</li><br><li>必须和你的社区习惯保持一致</li><br></ol><br><p><em><strong>你：</strong></em></p><br><ol><br><li>需要反馈。</li><br><li>必须友好，热情。</li><br><li>应该让别人加入。</li><br></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;我之前的博客中介绍过两篇如何做好开源软件的文章，&lt;a href=&quot;/2013/06/21/how-to-spread-your-code/&quot;&gt;如何传播你的代码&lt;/a&gt;，&lt;a href=&quot;/2013/01/05/how-to-start-open-source-
+      
+    
+    </summary>
+    
     
       <category term="Opensource" scheme="http://fresky.github.io/tags/Opensource/"/>
     
@@ -4518,29 +4518,6 @@
   </entry>
   
   <entry>
-    <title>如何传播你的代码</title>
-    <link href="http://fresky.github.io/2013/06/21/how-to-spread-your-code/"/>
-    <id>http://fresky.github.io/2013/06/21/how-to-spread-your-code/</id>
-    <published>2013-06-20T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.264Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p><a href="https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/" target="_blank" rel="noopener">How to Spread The Word About Your Code ✩ Mozilla Hacks &ndash; the Web developer blog</a>讲述了当你开发了一个小工具之后如何传播。下面列一下文章最后给出的checklist。</p><ol><li>把你的精力集中在你的项目的主页和readme上。</li><li>检查你的项目名字没有和别人撞车，并且和你的工作非常相关。</li><li>把你的工作提交给和你最密切的圈子来发现你的项目的问题。</li><li>做一个截屏录像或者写篇博客来介绍你的项目。</li><li>想一个完美的&ldquo;【项目名】是<strong><em>&rdquo;的句子来描述你的项目是什么。</em></strong></li><li>用你的&ldquo;【项目名】是&rdquo;的句子来作为你的主页的标题。</li><li>给你的项目所在领域的有影响力的人，博客，播客，邮件列表发一个简短的有礼貌的说明。</li><li>发布到社交网络和书签站点，注意确保你的标题很清楚的描述了你的项目。</li><li>把你的&ldquo;【项目名】是***&rdquo;的句子用在你的邮件和有影响力的人等联系。</li><li>别人对你的项目的评论，用乐观正面的方式来看待，找出好的一面。</li></ol><p></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to Spread T
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Honeywords项目——检查密码是否被破解的一种简单方法</title>
     <link href="http://fresky.github.io/2013/06/21/honeywords-simple-way-to-avoid-password-cracking/"/>
     <id>http://fresky.github.io/2013/06/21/honeywords-simple-way-to-avoid-password-cracking/</id>
@@ -4564,19 +4541,19 @@
   </entry>
   
   <entry>
-    <title>创业从 手动 开始</title>
-    <link href="http://fresky.github.io/2013/06/20/startup-from-manual/"/>
-    <id>http://fresky.github.io/2013/06/20/startup-from-manual/</id>
-    <published>2013-06-19T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.263Z</updated>
+    <title>如何传播你的代码</title>
+    <link href="http://fresky.github.io/2013/06/21/how-to-spread-your-code/"/>
+    <id>http://fresky.github.io/2013/06/21/how-to-spread-your-code/</id>
+    <published>2013-06-20T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.264Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://yipit.com" target="_blank" rel="noopener">Yipit</a>的创始人Vinicius Vacanti在博客<a href="http://viniciusvacanti.com/2013/05/07/the-manual-first-startup/" target="_blank" rel="noopener">The Manual-First Startup</a>中提到他们的公司一开始是全凭人工的，没有实现自动化，一直到9月的时候才开始有爬虫来自动化这个流程。但是凭借好的创意和人工带来的准确性在成立3个月的时候就融到了130万美金。</p><p>Vinicius列出的&ldquo;手动开始&rdquo;的几个优势：</p><ol><li>最快的展示给用户。</li><li>遇到问题很容易改变解决方案。</li><li>当手动了一段时间之后会更好的理解哪些是应该用技术来自动化的。</li><li>能真正的惊艳你的潜在用户。</li><li>客户不知道你的产品背后是怎么运作的，客户只关心你的产品有没有用。</li><li>你的产品会好使，因为如果用技术的话可能会遇到技术难题。</li><li>帮助你把注意力集中在问题上，而不是解决方案上。</li></ol><p>&nbsp;</p><p>&nbsp;</p>]]></content>
+    <content type="html"><![CDATA[<p></p><p><a href="https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/" target="_blank" rel="noopener">How to Spread The Word About Your Code ✩ Mozilla Hacks &ndash; the Web developer blog</a>讲述了当你开发了一个小工具之后如何传播。下面列一下文章最后给出的checklist。</p><ol><li>把你的精力集中在你的项目的主页和readme上。</li><li>检查你的项目名字没有和别人撞车，并且和你的工作非常相关。</li><li>把你的工作提交给和你最密切的圈子来发现你的项目的问题。</li><li>做一个截屏录像或者写篇博客来介绍你的项目。</li><li>想一个完美的&ldquo;【项目名】是<strong><em>&rdquo;的句子来描述你的项目是什么。</em></strong></li><li>用你的&ldquo;【项目名】是&rdquo;的句子来作为你的主页的标题。</li><li>给你的项目所在领域的有影响力的人，博客，播客，邮件列表发一个简短的有礼貌的说明。</li><li>发布到社交网络和书签站点，注意确保你的标题很清楚的描述了你的项目。</li><li>把你的&ldquo;【项目名】是***&rdquo;的句子用在你的邮件和有影响力的人等联系。</li><li>别人对你的项目的评论，用乐观正面的方式来看待，找出好的一面。</li></ol><p></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://yipit.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Yipit&lt;/a&gt;的创始人Vinicius Vacanti在博客&lt;a href=&quot;http://viniciusvacanti.com/2013/05/07/
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to Spread T
       
     
     </summary>
@@ -4600,6 +4577,29 @@
       
       
         &lt;p&gt;&lt;a href=&quot;https://www.kennethnorton.com/essays/how-to-work-with-software-engineers.html#ftnt1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to work 
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>创业从 手动 开始</title>
+    <link href="http://fresky.github.io/2013/06/20/startup-from-manual/"/>
+    <id>http://fresky.github.io/2013/06/20/startup-from-manual/</id>
+    <published>2013-06-19T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.263Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://yipit.com" target="_blank" rel="noopener">Yipit</a>的创始人Vinicius Vacanti在博客<a href="http://viniciusvacanti.com/2013/05/07/the-manual-first-startup/" target="_blank" rel="noopener">The Manual-First Startup</a>中提到他们的公司一开始是全凭人工的，没有实现自动化，一直到9月的时候才开始有爬虫来自动化这个流程。但是凭借好的创意和人工带来的准确性在成立3个月的时候就融到了130万美金。</p><p>Vinicius列出的&ldquo;手动开始&rdquo;的几个优势：</p><ol><li>最快的展示给用户。</li><li>遇到问题很容易改变解决方案。</li><li>当手动了一段时间之后会更好的理解哪些是应该用技术来自动化的。</li><li>能真正的惊艳你的潜在用户。</li><li>客户不知道你的产品背后是怎么运作的，客户只关心你的产品有没有用。</li><li>你的产品会好使，因为如果用技术的话可能会遇到技术难题。</li><li>帮助你把注意力集中在问题上，而不是解决方案上。</li></ol><p>&nbsp;</p><p>&nbsp;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://yipit.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Yipit&lt;/a&gt;的创始人Vinicius Vacanti在博客&lt;a href=&quot;http://viniciusvacanti.com/2013/05/07/
       
     
     </summary>
@@ -4991,29 +4991,6 @@
   </entry>
   
   <entry>
-    <title>理解程序语言语法的merge工具semanticmerge</title>
-    <link href="http://fresky.github.io/2013/05/21/semanticmerge-understand-programming-syntax/"/>
-    <id>http://fresky.github.io/2013/05/21/semanticmerge-understand-programming-syntax/</id>
-    <published>2013-05-20T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.258Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.semanticmerge.com/" target="_blank" rel="noopener">Semantic Merge</a> 是一个能理解程序语言语法的merge工具，现在支持C#和VB，随后会支持C, C++, Objective-C, JavaScript…</p>  <p>它能和Git, Subversion, Perforce, ClearCase, Team Foundation Server, Mercurial的版本控制工具一起使用，你可以<a href="http://www.semanticmerge.com/documents/SemanticMerge-TFS.pdf" target="_blank" rel="noopener">这里</a>找到怎么集成到TFS上。</p>  <p>它不是一个免费的软件，但是现在可以免费申请beta的license。（到2013年8月过期）</p>  <p>&#160;</p>  <p>下面是我用他的diff功能做的一个小例子。安装后你可以在安装目录找到更多的使用示例。</p>  <p>用beyond compare比较一下两个文件，只修改了enum的位置和重命名。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/21180547-11d4772467f34efcb38ded84cab10b42.jpg" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="clip_image001" border="0" alt="clip_image001" src="http://images.cnitblog.com/blog/163228/201305/21180549-e031a6f65c834070a9dc061e710ba977.jpg" width="744" height="525"></a></p>  <p>用semanticmerge返回的diff结果，1个移动，2个重命名。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/21180549-4bcadb8674e8488b95e072840bf17527.jpg" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="clip_image002" border="0" alt="clip_image002" src="http://images.cnitblog.com/blog/163228/201305/21180550-0a99cb2303994211a7a5eb3fef64c9b5.jpg" width="485" height="646"></a></p>  <p>它自带的diff工具可以很清楚的看出来那里修改了。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/21180550-c5192771005d4990b3172c6d3fa88247.jpg" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="clip_image003" border="0" alt="clip_image003" src="http://images.cnitblog.com/blog/163228/201305/21180551-db752e021f4e4fd9ba8dff93709f98df.jpg" width="579" height="508"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.semanticmerge.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Semantic Merge&lt;/a&gt; 是一个能理解程序语言语法的merge工具，现在支持C#和VB，随后会支持C, C++, Obj
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>大数据的例子：Google Books Ngram</title>
     <link href="http://fresky.github.io/2013/05/21/google-book-ngram-example-of-big-data/"/>
     <id>http://fresky.github.io/2013/05/21/google-book-ngram-example-of-big-data/</id>
@@ -5033,6 +5010,29 @@
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>理解程序语言语法的merge工具semanticmerge</title>
+    <link href="http://fresky.github.io/2013/05/21/semanticmerge-understand-programming-syntax/"/>
+    <id>http://fresky.github.io/2013/05/21/semanticmerge-understand-programming-syntax/</id>
+    <published>2013-05-20T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.258Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.semanticmerge.com/" target="_blank" rel="noopener">Semantic Merge</a> 是一个能理解程序语言语法的merge工具，现在支持C#和VB，随后会支持C, C++, Objective-C, JavaScript…</p>  <p>它能和Git, Subversion, Perforce, ClearCase, Team Foundation Server, Mercurial的版本控制工具一起使用，你可以<a href="http://www.semanticmerge.com/documents/SemanticMerge-TFS.pdf" target="_blank" rel="noopener">这里</a>找到怎么集成到TFS上。</p>  <p>它不是一个免费的软件，但是现在可以免费申请beta的license。（到2013年8月过期）</p>  <p>&#160;</p>  <p>下面是我用他的diff功能做的一个小例子。安装后你可以在安装目录找到更多的使用示例。</p>  <p>用beyond compare比较一下两个文件，只修改了enum的位置和重命名。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/21180547-11d4772467f34efcb38ded84cab10b42.jpg" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="clip_image001" border="0" alt="clip_image001" src="http://images.cnitblog.com/blog/163228/201305/21180549-e031a6f65c834070a9dc061e710ba977.jpg" width="744" height="525"></a></p>  <p>用semanticmerge返回的diff结果，1个移动，2个重命名。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/21180549-4bcadb8674e8488b95e072840bf17527.jpg" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="clip_image002" border="0" alt="clip_image002" src="http://images.cnitblog.com/blog/163228/201305/21180550-0a99cb2303994211a7a5eb3fef64c9b5.jpg" width="485" height="646"></a></p>  <p>它自带的diff工具可以很清楚的看出来那里修改了。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/21180550-c5192771005d4990b3172c6d3fa88247.jpg" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="clip_image003" border="0" alt="clip_image003" src="http://images.cnitblog.com/blog/163228/201305/21180551-db752e021f4e4fd9ba8dff93709f98df.jpg" width="579" height="508"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.semanticmerge.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Semantic Merge&lt;/a&gt; 是一个能理解程序语言语法的merge工具，现在支持C#和VB，随后会支持C, C++, Obj
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -5177,29 +5177,6 @@
   </entry>
   
   <entry>
-    <title>颜色在市场推广中的学问</title>
-    <link href="http://fresky.github.io/2013/05/07/how-color-affect-marketing/"/>
-    <id>http://fresky.github.io/2013/05/07/how-color-affect-marketing/</id>
-    <published>2013-05-06T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.256Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://blog.bufferapp.com/the-science-of-colors-in-marketing-why-is-facebook-blue" target="_blank" rel="noopener">Why Facebook is blue: The science of colors in marketing - The Buffer Blog</a>介绍了颜色对用户的影响，写的非常棒。</p><p>开头说的例子是为什么facebook是蓝色的呢？</p><p>因为Mark Zuckerberg是红绿色盲……</p><p>附一个图吧，Logo设计中的颜色心理学。<br><img src="https://blog.bufferapp.com/wp-content/uploads/2013/04/color-guide.png" alt="Psychology Of Color In Logo Design"></p><p>An infographic by the team at <a href="http://thelogocompany.net/blog/infographics/psychology-color-logo-design/" target="_blank" rel="noopener">The Logo Company</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://blog.bufferapp.com/the-science-of-colors-in-marketing-why-is-facebook-blue&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Why Facebook i
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>关于google的Jeff Dean的一些笑话</title>
     <link href="http://fresky.github.io/2013/05/07/jokes-about-jeff-dean-in-google/"/>
     <id>http://fresky.github.io/2013/05/07/jokes-about-jeff-dean-in-google/</id>
@@ -5213,6 +5190,29 @@
       
       
         &lt;p&gt;&lt;a href=&quot;http://www.businessinsider.com/astounding-facts-about-googles-most-badass-engineer-jeff-dean-2012-1?op=1#ixzz2SOSn2fL7&quot; target=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>颜色在市场推广中的学问</title>
+    <link href="http://fresky.github.io/2013/05/07/how-color-affect-marketing/"/>
+    <id>http://fresky.github.io/2013/05/07/how-color-affect-marketing/</id>
+    <published>2013-05-06T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.256Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blog.bufferapp.com/the-science-of-colors-in-marketing-why-is-facebook-blue" target="_blank" rel="noopener">Why Facebook is blue: The science of colors in marketing - The Buffer Blog</a>介绍了颜色对用户的影响，写的非常棒。</p><p>开头说的例子是为什么facebook是蓝色的呢？</p><p>因为Mark Zuckerberg是红绿色盲……</p><p>附一个图吧，Logo设计中的颜色心理学。<br><img src="https://blog.bufferapp.com/wp-content/uploads/2013/04/color-guide.png" alt="Psychology Of Color In Logo Design"></p><p>An infographic by the team at <a href="http://thelogocompany.net/blog/infographics/psychology-color-logo-design/" target="_blank" rel="noopener">The Logo Company</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://blog.bufferapp.com/the-science-of-colors-in-marketing-why-is-facebook-blue&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Why Facebook i
       
     
     </summary>
@@ -5269,29 +5269,6 @@
   </entry>
   
   <entry>
-    <title>每个程序员都需要知道的数字（续）</title>
-    <link href="http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/"/>
-    <id>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/</id>
-    <published>2013-04-30T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.255Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p><a href="http://highscalability.com/numbers-everyone-should-know" target="_blank" rel="noopener">High Scalability - High Scalability - Numbers Everyone Should Know</a>列举了另外一些数字：</p>  <h3>写很昂贵</h3>  <ul>   <li>写是transactional的</li>    <li>disk access意味着disk seek</li>    <li>经验法则：disk seek需要10毫秒</li>    <li>算一算：1s/10ms = 100 seeks/s，每秒最多100次disk seek</li>    <li>和数据的大小的形状有关系，批量处理。</li> </ul>  <h3>读很便宜</h3>  <ul>   <li>都不需要transaction</li>    <li>数据从磁盘中读取一次，很容易就被缓存</li>    <li>所有后续的读取都是从内存来的</li>    <li>经验法则：内存中读取1m的数据需要250微秒</li>    <li>算一算：1s/250usec=4g/sec，美妙最多读4g的数据。对于1m的数据，每秒可以取4000次</li> </ul>  <h3>一些数字</h3>  <ul>   <li>L1缓存寻址需要0.5纳秒</li>    <li>branch mipredict需要5纳秒</li>    <li>L2缓存需要7纳秒</li>    <li>mutex lock/unlock需要100纳秒</li>    <li>内存寻址需要100纳秒</li>    <li>压缩1k的数据需要10000纳秒</li>    <li>通过1gbps的网络发送2k的数据需要20000纳秒</li>    <li>内存中读取连续的1m数据需要250000纳秒</li>    <li>round trip within same datacenter需要500000纳秒</li>    <li>硬盘须知需要10000000纳秒</li>    <li>从网络上读1m的连续数据需要10000000纳秒</li>    <li>从磁盘上都1m的连续数据需要30000000纳秒</li> </ul>  <p>&#160;</p>  <h3>小结</h3>  <ul>   <li>写比读昂贵40倍</li>    <li>全局共享的数据很昂贵。这是分布式系统的瓶颈。</li>    <li>系统设计时就要考虑写操作的可扩展性。</li>    <li>优化以减少写竞争。</li>    <li>让写操作尽可能地并行。</li> </ul><p></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://highscalability.com/numbers-everyone-should-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;High Scalability - High Scalabili
-      
-    
-    </summary>
-    
-    
-      <category term="Algorithm" scheme="http://fresky.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
     <title>每个程序员都应该知道的14个数字（关于算法运行时间的）</title>
     <link href="http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know/"/>
     <id>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know/</id>
@@ -5305,6 +5282,29 @@
       
       
         &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.infoarena.ro/blog/numbers-everyone-should-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;14 numbers every developer shou
+      
+    
+    </summary>
+    
+    
+      <category term="Algorithm" scheme="http://fresky.github.io/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每个程序员都需要知道的数字（续）</title>
+    <link href="http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/"/>
+    <id>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/</id>
+    <published>2013-04-30T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.255Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p><a href="http://highscalability.com/numbers-everyone-should-know" target="_blank" rel="noopener">High Scalability - High Scalability - Numbers Everyone Should Know</a>列举了另外一些数字：</p>  <h3>写很昂贵</h3>  <ul>   <li>写是transactional的</li>    <li>disk access意味着disk seek</li>    <li>经验法则：disk seek需要10毫秒</li>    <li>算一算：1s/10ms = 100 seeks/s，每秒最多100次disk seek</li>    <li>和数据的大小的形状有关系，批量处理。</li> </ul>  <h3>读很便宜</h3>  <ul>   <li>都不需要transaction</li>    <li>数据从磁盘中读取一次，很容易就被缓存</li>    <li>所有后续的读取都是从内存来的</li>    <li>经验法则：内存中读取1m的数据需要250微秒</li>    <li>算一算：1s/250usec=4g/sec，美妙最多读4g的数据。对于1m的数据，每秒可以取4000次</li> </ul>  <h3>一些数字</h3>  <ul>   <li>L1缓存寻址需要0.5纳秒</li>    <li>branch mipredict需要5纳秒</li>    <li>L2缓存需要7纳秒</li>    <li>mutex lock/unlock需要100纳秒</li>    <li>内存寻址需要100纳秒</li>    <li>压缩1k的数据需要10000纳秒</li>    <li>通过1gbps的网络发送2k的数据需要20000纳秒</li>    <li>内存中读取连续的1m数据需要250000纳秒</li>    <li>round trip within same datacenter需要500000纳秒</li>    <li>硬盘须知需要10000000纳秒</li>    <li>从网络上读1m的连续数据需要10000000纳秒</li>    <li>从磁盘上都1m的连续数据需要30000000纳秒</li> </ul>  <p>&#160;</p>  <h3>小结</h3>  <ul>   <li>写比读昂贵40倍</li>    <li>全局共享的数据很昂贵。这是分布式系统的瓶颈。</li>    <li>系统设计时就要考虑写操作的可扩展性。</li>    <li>优化以减少写竞争。</li>    <li>让写操作尽可能地并行。</li> </ul><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://highscalability.com/numbers-everyone-should-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;High Scalability - High Scalabili
       
     
     </summary>
@@ -5384,29 +5384,6 @@
   </entry>
   
   <entry>
-    <title>SneakPeekit – 打印 iOS 及不同分辨率浏览器线框图</title>
-    <link href="http://fresky.github.io/2013/04/23/sneakpeekit/"/>
-    <id>http://fresky.github.io/2013/04/23/sneakpeekit/</id>
-    <published>2013-04-22T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.254Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.appinn.com/sneakpeekit/" target="_blank" rel="noopener">SneakPeekit &ndash; 打印 iOS 及不同分辨率浏览器线框图 - 小众软件</a>介绍了一个有用的网站，做iOS设计的可以看看。：）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.appinn.com/sneakpeekit/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SneakPeekit &amp;ndash; 打印 iOS 及不同分辨率浏览器线框图 - 小众软件&lt;/a&gt;介绍了一个有用的网站，
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>另眼看代码-通过tag cloud</title>
     <link href="http://fresky.github.io/2013/04/23/tag-cloud-for-code/"/>
     <id>http://fresky.github.io/2013/04/23/tag-cloud-for-code/</id>
@@ -5420,6 +5397,29 @@
       
       
         &lt;p&gt;今天在一个培训中Kevlin Henney展示了一张图片&lt;a href=&quot;http://philcalcado.com/2009/04/29/tag-clouds-see-how-noisy-your-code-is/&quot; target=&quot;_blank&quot; rel=&quot;noope
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SneakPeekit – 打印 iOS 及不同分辨率浏览器线框图</title>
+    <link href="http://fresky.github.io/2013/04/23/sneakpeekit/"/>
+    <id>http://fresky.github.io/2013/04/23/sneakpeekit/</id>
+    <published>2013-04-22T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.254Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.appinn.com/sneakpeekit/" target="_blank" rel="noopener">SneakPeekit &ndash; 打印 iOS 及不同分辨率浏览器线框图 - 小众软件</a>介绍了一个有用的网站，做iOS设计的可以看看。：）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.appinn.com/sneakpeekit/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SneakPeekit &amp;ndash; 打印 iOS 及不同分辨率浏览器线框图 - 小众软件&lt;/a&gt;介绍了一个有用的网站，
       
     
     </summary>
@@ -5784,29 +5784,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>为啥只有IPv4和IPv6，没有IPv5呢？</title>
-    <link href="http://fresky.github.io/2013/02/17/where-is-ipv5/"/>
-    <id>http://fresky.github.io/2013/02/17/where-is-ipv5/</id>
-    <published>2013-02-16T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.250Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://programmers.stackexchange.com/questions/185380/ipv4-to-ipv6-where-is-ipv5?newsletter=1&amp;nlcode=55865%7cc70a" target="_blank" rel="noopener">terminology - IPv4 to IPv6. where is IPv5?</a>解释了这个问题，因为IPv5给了Internet Stream Protocol。<br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://programmers.stackexchange.com/questions/185380/ipv4-to-ipv6-where-is-ipv5?newsletter=1&amp;amp;nlcode=55865%7cc70a&quot; target=&quot;_
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>一个免费轻量的Mathematica替代Mathics</title>
     <link href="http://fresky.github.io/2013/02/17/mathics-lightweight-alternative-to-mathematica/"/>
     <id>http://fresky.github.io/2013/02/17/mathics-lightweight-alternative-to-mathematica/</id>
@@ -5826,6 +5803,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>为啥只有IPv4和IPv6，没有IPv5呢？</title>
+    <link href="http://fresky.github.io/2013/02/17/where-is-ipv5/"/>
+    <id>http://fresky.github.io/2013/02/17/where-is-ipv5/</id>
+    <published>2013-02-16T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.250Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://programmers.stackexchange.com/questions/185380/ipv4-to-ipv6-where-is-ipv5?newsletter=1&amp;nlcode=55865%7cc70a" target="_blank" rel="noopener">terminology - IPv4 to IPv6. where is IPv5?</a>解释了这个问题，因为IPv5给了Internet Stream Protocol。<br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://programmers.stackexchange.com/questions/185380/ipv4-to-ipv6-where-is-ipv5?newsletter=1&amp;amp;nlcode=55865%7cc70a&quot; target=&quot;_
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -5851,6 +5851,31 @@ w\:* {behavior:url(#default#VML);}
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在线C++编译器</title>
+    <link href="http://fresky.github.io/2013/02/05/online-cpp-compiler/"/>
+    <id>http://fresky.github.io/2013/02/05/online-cpp-compiler/</id>
+    <published>2013-02-04T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.250Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://isocpp.org/blog/2013/01/online-c-compilers" target="_blank">在线C++编译器</a>列举了如下网站：</p><br><ul><br><ul><br><li><a href="http://liveworkspace.org/" target="_blank" rel="noopener">LiveWorkspace</a>&nbsp;(Clang 3.2, GCC 4.6.3 - 4.7.2)</li><br><li><a href="http://gcc.godbolt.org/" target="_blank" rel="noopener">gcc.godbolt.org</a>&nbsp;(Clang 3.0, GCC 4.5.3 - 4.8.0 prerelease, Intel ICC 13.0.1)</li><br><li><a href="http://rise4fun.com/vcpp" target="_blank" rel="noopener">Rise4Fun</a>&nbsp;(Microsoft VC++ 2012 and November 2012 CTP)</li><br><li><a href="http://stacked-crooked.com/" target="_blank" rel="noopener">Stacked-Crooked</a>&nbsp;(GCC 4.7)</li><br><li><a href="http://ideone.com/" target="_blank" rel="noopener">ideone.com</a><span>&nbsp;(GCC 4.3.4 and 4.5.1)</span></li><br><li><a href="http://comeaucomputing.com/tryitout/" target="_blank" rel="noopener">Comeau Test Drive</a>&nbsp;(EDG 4.3.3)</li><br></ul><br></ul><br><p>&nbsp;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://isocpp.org/blog/2013/01/online-c-compilers&quot; target=&quot;_blank&quot;&gt;在线C++编译器&lt;/a&gt;列举了如下网站：&lt;/p&gt;&lt;br&gt;&lt;ul&gt;&lt;br&gt;&lt;ul&gt;&lt;br&gt;&lt;li&gt;&lt;a href=&quot;http
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -5899,31 +5924,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>在线C++编译器</title>
-    <link href="http://fresky.github.io/2013/02/05/online-cpp-compiler/"/>
-    <id>http://fresky.github.io/2013/02/05/online-cpp-compiler/</id>
-    <published>2013-02-04T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.250Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://isocpp.org/blog/2013/01/online-c-compilers" target="_blank">在线C++编译器</a>列举了如下网站：</p><br><ul><br><ul><br><li><a href="http://liveworkspace.org/" target="_blank" rel="noopener">LiveWorkspace</a>&nbsp;(Clang 3.2, GCC 4.6.3 - 4.7.2)</li><br><li><a href="http://gcc.godbolt.org/" target="_blank" rel="noopener">gcc.godbolt.org</a>&nbsp;(Clang 3.0, GCC 4.5.3 - 4.8.0 prerelease, Intel ICC 13.0.1)</li><br><li><a href="http://rise4fun.com/vcpp" target="_blank" rel="noopener">Rise4Fun</a>&nbsp;(Microsoft VC++ 2012 and November 2012 CTP)</li><br><li><a href="http://stacked-crooked.com/" target="_blank" rel="noopener">Stacked-Crooked</a>&nbsp;(GCC 4.7)</li><br><li><a href="http://ideone.com/" target="_blank" rel="noopener">ideone.com</a><span>&nbsp;(GCC 4.3.4 and 4.5.1)</span></li><br><li><a href="http://comeaucomputing.com/tryitout/" target="_blank" rel="noopener">Comeau Test Drive</a>&nbsp;(EDG 4.3.3)</li><br></ul><br></ul><br><p>&nbsp;</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://isocpp.org/blog/2013/01/online-c-compilers&quot; target=&quot;_blank&quot;&gt;在线C++编译器&lt;/a&gt;列举了如下网站：&lt;/p&gt;&lt;br&gt;&lt;ul&gt;&lt;br&gt;&lt;ul&gt;&lt;br&gt;&lt;li&gt;&lt;a href=&quot;http
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -5997,6 +5997,31 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>一个C++的unit库</title>
+    <link href="http://fresky.github.io/2013/01/21/unit-library-for-cpp/"/>
+    <id>http://fresky.github.io/2013/01/21/unit-library-for-cpp/</id>
+    <published>2013-01-20T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.248Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://calumgrant.net/units/index.html" target="_blank" rel="noopener">C++ Units</a>是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，比如把一个length加到了一个area上。<br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://calumgrant.net/units/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++ Units&lt;/a&gt;是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>web开发者的checklist</title>
     <link href="http://fresky.github.io/2013/01/21/web-developer-checklist/"/>
     <id>http://fresky.github.io/2013/01/21/web-developer-checklist/</id>
@@ -6019,31 +6044,6 @@ w\:* {behavior:url(#default#VML);}
       <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
       <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个C++的unit库</title>
-    <link href="http://fresky.github.io/2013/01/21/unit-library-for-cpp/"/>
-    <id>http://fresky.github.io/2013/01/21/unit-library-for-cpp/</id>
-    <published>2013-01-20T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.248Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://calumgrant.net/units/index.html" target="_blank" rel="noopener">C++ Units</a>是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，比如把一个length加到了一个area上。<br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://calumgrant.net/units/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++ Units&lt;/a&gt;是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -6186,29 +6186,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>什么情况下要替换C++自带的new和delete</title>
-    <link href="http://fresky.github.io/2012/12/28/when-to-replace-default-new-and-delete-in-cpp/"/>
-    <id>http://fresky.github.io/2012/12/28/when-to-replace-default-new-and-delete-in-cpp/</id>
-    <published>2012-12-27T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.246Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/7149461/why-would-one-replace-default-new-and-delete-operators" target="_blank" rel="noopener">c++ - Why would one replace default new and delete operators? - Stack Overflow</a><br><br><ol><li>用来检测用户错误，比如（1）new的时候可以记录所有new出来的地址，然后用户忘记delete时帮用户delete（2）new出地址时前后放一些记号，防止overrun和underrun</li><li>用来提高效率</li><li>用来收集统计数据，比如（1）地址分布，生存期分布，分配顺序，内存使用在时间上的变化（2）统计一个类生成了多少个对象，或者限制</li><li>补偿内存对齐</li><li>把相关的对象地址放在一起</li><li>实现非常规的行为，比如delete后设为0</li></ol><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/7149461/why-would-one-replace-default-new-and-delete-operators&quot; target=&quot;_blank&quot; rel=&quot;noopener
-      
-    
-    </summary>
-    
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>怎么回答哪个更快的问题</title>
     <link href="http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/"/>
     <id>http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/</id>
@@ -6232,6 +6209,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>什么情况下要替换C++自带的new和delete</title>
+    <link href="http://fresky.github.io/2012/12/28/when-to-replace-default-new-and-delete-in-cpp/"/>
+    <id>http://fresky.github.io/2012/12/28/when-to-replace-default-new-and-delete-in-cpp/</id>
+    <published>2012-12-27T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.246Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/7149461/why-would-one-replace-default-new-and-delete-operators" target="_blank" rel="noopener">c++ - Why would one replace default new and delete operators? - Stack Overflow</a><br><br><ol><li>用来检测用户错误，比如（1）new的时候可以记录所有new出来的地址，然后用户忘记delete时帮用户delete（2）new出地址时前后放一些记号，防止overrun和underrun</li><li>用来提高效率</li><li>用来收集统计数据，比如（1）地址分布，生存期分布，分配顺序，内存使用在时间上的变化（2）统计一个类生成了多少个对象，或者限制</li><li>补偿内存对齐</li><li>把相关的对象地址放在一起</li><li>实现非常规的行为，比如delete后设为0</li></ol><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/7149461/why-would-one-replace-default-new-and-delete-operators&quot; target=&quot;_blank&quot; rel=&quot;noopener
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C#的内存模型和并发情况下受到的影响</title>
     <link href="http://fresky.github.io/2012/12/26/csharp-memory-model/"/>
     <id>http://fresky.github.io/2012/12/26/csharp-memory-model/</id>
@@ -6251,6 +6251,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>玩大数据需要知道的12个工具</title>
+    <link href="http://fresky.github.io/2012/12/25/12-tools-about-big-data/"/>
+    <id>http://fresky.github.io/2012/12/25/12-tools-about-big-data/</id>
+    <published>2012-12-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.245Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/" target="_blank" rel="noopener">A programmer’s guide to big data: 12 tools to know — Data | GigaOM</a><br>包括：<br>1. BitDeli<br>2. Continuuity<br>3. Flurry<br>4. Google Prediction API<br>5. Infochimps<br>6. Keen IO<br>7. Kontagent<br>8. Mortar Data<br>9. Placed Analytics<br>10. Precog<br>11. Spring for Apache Hadoop<br>12. StatsMix<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;A programmer’s guide to
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -6305,29 +6328,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>玩大数据需要知道的12个工具</title>
-    <link href="http://fresky.github.io/2012/12/25/12-tools-about-big-data/"/>
-    <id>http://fresky.github.io/2012/12/25/12-tools-about-big-data/</id>
-    <published>2012-12-24T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.245Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/" target="_blank" rel="noopener">A programmer’s guide to big data: 12 tools to know — Data | GigaOM</a><br>包括：<br>1. BitDeli<br>2. Continuuity<br>3. Flurry<br>4. Google Prediction API<br>5. Infochimps<br>6. Keen IO<br>7. Kontagent<br>8. Mortar Data<br>9. Placed Analytics<br>10. Precog<br>11. Spring for Apache Hadoop<br>12. StatsMix<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;A programmer’s guide to
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#用extern alias解决两个assembly中相同的类型全名</title>
     <link href="http://fresky.github.io/2012/12/24/extern-alias-to-solve-same-type-name-in-2-assemblies-in-csharp/"/>
     <id>http://fresky.github.io/2012/12/24/extern-alias-to-solve-same-type-name-in-2-assemblies-in-csharp/</id>
@@ -6341,29 +6341,6 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;如果你使用到的第三方库中有2个assembly中出现了完全一样的类型，C#中可以用&lt;a href=&quot;http://http://msdn.microsoft.com/en-us/library/ms173212(v=vs.110).aspx&quot; target=&quot;_blank&quot;
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C#中如何正确的实现IDisposable接口</title>
-    <link href="http://fresky.github.io/2012/12/23/how-to-implement-idisposable-interface-correctly-in-csharp/"/>
-    <id>http://fresky.github.io/2012/12/23/how-to-implement-idisposable-interface-correctly-in-csharp/</id>
-    <published>2012-12-22T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.244Z</updated>
-    
-    <content type="html"><![CDATA[<p>Stackoverflow上的这个<a href="http://stackoverflow.com/a/538238/304115" target="_blank" rel="noopener">回答</a>是我见过的讲的最清楚的怎么正确实现<span style="color: #000000;">IDisposable</span>接口，我简单挑重点翻译翻译吧。：）</p><br><h3>&nbsp;</h3><br><p>Disposed的出现就是要解决一个问题，那就是释放非托管的资源。.NET的垃圾回收不知道怎么去释放非托管的资源。</p><br><p>所以，如果你的对象中有非托管的资源，你就需要提供一个函数给外面的人来释放它。我们有一个标准的名字：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Dispose</span>(<span class="params"></span>)</span></span><br></pre></td></tr></table></figure><p>在C#中有个接口，只包含了这个函数，所以如果你的类需要释放非托管资源，就需要实现这个接口，实现了这个借口，意味着你承诺在Dispose方法中释放非托管资源。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public interface IDisposable</span><br><span class="line">&#123;</span><br><span class="line">    void Dispose();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>下面是个释放非托管资源的例子。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这其实就搞定了：）但是你可以做的更好。</p><br><h3>&nbsp;</h3><br><p>如果你的对象中有托管的资源，而且很大，比如有个250m的bitmap。当然C#的垃圾回收会把它释放掉，但是更好的是我们能在不需要的时候就把它释放掉而不必等到垃圾回收。怎么做呢？我们已经有了一个方法来释放非托管的资源，好办，我们把在Dispose中把托管的资源也释放掉就好了，这样我们的Dispose干两件事情：</p><br><ol><br><li>释放非托管资源，因为必须</li><br><li>释放托管资源，因为这样好：）</li><br></ol><br><p>新的Dispose函数长这个样子：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too</span><br><span class="line">   if (this.databaseConnection != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.databaseConnection.Dispose();</span><br><span class="line">      this.databaseConnection = null;</span><br><span class="line">   &#125;</span><br><span class="line">   if (this.frameBufferImage != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.frameBufferImage.Dispose();</span><br><span class="line">      this.frameBufferImage = null;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>看起来搞定了，但是，我们可以做的更好！</p><br><h3>&nbsp;</h3><br><p>如果我们的使用者没有调用Dispose怎么办呢？我们就会有资源泄露了！（当然只有非托管的资源泄露，因为托管的C#的垃圾回收会帮我们搞定它）</p><br><p>嗯，我们把这个Dispose放到Finalize里面，这样我的对象被销毁的时候，它就能自动调到，不错，代码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">~MyObject()</span><br><span class="line">&#123;</span><br><span class="line">    //we&apos;re being finalized (i.e. destroyed), call Dispose in case the user forgot to</span><br><span class="line">    Dispose(); //&lt;--Warning: subtle bug! Keep reading!</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>但是，我们可能会引入一个bug。因为C#地垃圾回收是在后台运行，我们不知道它会先回收哪个对象，所以我们的对象中包含的托管资源可能已经被回收掉了，就会发生：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too</span><br><span class="line">   if (this.databaseConnection != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.databaseConnection.Dispose(); &lt;-- crash, GC already destroyed it</span><br><span class="line">      this.databaseConnection = null;</span><br><span class="line">   &#125;</span><br><span class="line">   if (this.frameBufferImage != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.frameBufferImage.Dispose(); &lt;-- crash, GC already destroyed it</span><br><span class="line">      this.frameBufferImage = null;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>所以我们需要一种办法让在Finalize中调到的Dispose函数不去释放托管的资源，留给垃圾回收来做，我们习惯用这样的函数来实现：</p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean disposing)</span><br></pre></td></tr></table></figure><br><br><p>这个参数名字disposing有点不太好，我们改个名字吧：） </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean freeManagedObjectsAlso)</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too, but only if i&apos;m being called from Dispose</span><br><span class="line">   //(If i&apos;m being called from Finalize then the objects might not exist</span><br><span class="line">   //anymore</span><br><span class="line">   if (freeManagedObjectsAlso)  </span><br><span class="line">   &#123;    </span><br><span class="line">      if (this.databaseConnection != null)</span><br><span class="line">      &#123;</span><br><span class="line">         this.databaseConnection.Dispose();</span><br><span class="line">         this.databaseConnection = null;</span><br><span class="line">      &#125;</span><br><span class="line">      if (this.frameBufferImage != null)</span><br><span class="line">      &#123;</span><br><span class="line">         this.frameBufferImage.Dispose();</span><br><span class="line">         this.frameBufferImage = null;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>所以我们先前写的Dispose函数变成了这样：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(true); //i am calling you from Dispose, it&apos;s safe</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public ~MyObject()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(false); //i am *not* calling you from Dispose, it&apos;s *not* safe</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>提醒一下，如果我们的类的父类也是IDisposable的，我们需要调用父类的Dispose函数。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   try</span><br><span class="line">   &#123;</span><br><span class="line">      Dispose(true); //true: safe to free managed resources</span><br><span class="line">   &#125;</span><br><span class="line">   finally</span><br><span class="line">   &#123;</span><br><span class="line">      base.Dispose();</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>看起来搞定了，但是我们可以做的更好！</p><br><h3>&nbsp;</h3><br><p>如果我们的客户代码调用了Dispose，那意味着托管和非托管的资源都被释放掉了，但是随后C#的垃圾回收还会再次调用Dispose。不仅仅是浪费，而且如果万一我们没有在Dispose非托管资源时把它设成null，就是说它还指着东西，那就会被再释放一次，这可不是好玩的。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean iAmBeingCalledFromDisposeAndNotFinalize)</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle); &lt;--double destroy </span><br><span class="line">   //...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>修改这个问题的方法就是，如果已经调用过Dispose了，就不要再调Finalize了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(true); //i am calling you from Dispose, it&apos;s safe</span><br><span class="line">   GC.SuppressFinalize(this); //Hey, GC: don&apos;t bother calling finalize later</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>好了，万事大吉：）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Stackoverflow上的这个&lt;a href=&quot;http://stackoverflow.com/a/538238/304115&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;回答&lt;/a&gt;是我见过的讲的最清楚的怎么正确实现&lt;span style=&quot;co
       
     
     </summary>
@@ -6393,6 +6370,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#中如何正确的实现IDisposable接口</title>
+    <link href="http://fresky.github.io/2012/12/23/how-to-implement-idisposable-interface-correctly-in-csharp/"/>
+    <id>http://fresky.github.io/2012/12/23/how-to-implement-idisposable-interface-correctly-in-csharp/</id>
+    <published>2012-12-22T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.244Z</updated>
+    
+    <content type="html"><![CDATA[<p>Stackoverflow上的这个<a href="http://stackoverflow.com/a/538238/304115" target="_blank" rel="noopener">回答</a>是我见过的讲的最清楚的怎么正确实现<span style="color: #000000;">IDisposable</span>接口，我简单挑重点翻译翻译吧。：）</p><br><h3>&nbsp;</h3><br><p>Disposed的出现就是要解决一个问题，那就是释放非托管的资源。.NET的垃圾回收不知道怎么去释放非托管的资源。</p><br><p>所以，如果你的对象中有非托管的资源，你就需要提供一个函数给外面的人来释放它。我们有一个标准的名字：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Dispose</span>(<span class="params"></span>)</span></span><br></pre></td></tr></table></figure><p>在C#中有个接口，只包含了这个函数，所以如果你的类需要释放非托管资源，就需要实现这个接口，实现了这个借口，意味着你承诺在Dispose方法中释放非托管资源。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public interface IDisposable</span><br><span class="line">&#123;</span><br><span class="line">    void Dispose();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>下面是个释放非托管资源的例子。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这其实就搞定了：）但是你可以做的更好。</p><br><h3>&nbsp;</h3><br><p>如果你的对象中有托管的资源，而且很大，比如有个250m的bitmap。当然C#的垃圾回收会把它释放掉，但是更好的是我们能在不需要的时候就把它释放掉而不必等到垃圾回收。怎么做呢？我们已经有了一个方法来释放非托管的资源，好办，我们把在Dispose中把托管的资源也释放掉就好了，这样我们的Dispose干两件事情：</p><br><ol><br><li>释放非托管资源，因为必须</li><br><li>释放托管资源，因为这样好：）</li><br></ol><br><p>新的Dispose函数长这个样子：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too</span><br><span class="line">   if (this.databaseConnection != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.databaseConnection.Dispose();</span><br><span class="line">      this.databaseConnection = null;</span><br><span class="line">   &#125;</span><br><span class="line">   if (this.frameBufferImage != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.frameBufferImage.Dispose();</span><br><span class="line">      this.frameBufferImage = null;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>看起来搞定了，但是，我们可以做的更好！</p><br><h3>&nbsp;</h3><br><p>如果我们的使用者没有调用Dispose怎么办呢？我们就会有资源泄露了！（当然只有非托管的资源泄露，因为托管的C#的垃圾回收会帮我们搞定它）</p><br><p>嗯，我们把这个Dispose放到Finalize里面，这样我的对象被销毁的时候，它就能自动调到，不错，代码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">~MyObject()</span><br><span class="line">&#123;</span><br><span class="line">    //we&apos;re being finalized (i.e. destroyed), call Dispose in case the user forgot to</span><br><span class="line">    Dispose(); //&lt;--Warning: subtle bug! Keep reading!</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>但是，我们可能会引入一个bug。因为C#地垃圾回收是在后台运行，我们不知道它会先回收哪个对象，所以我们的对象中包含的托管资源可能已经被回收掉了，就会发生：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too</span><br><span class="line">   if (this.databaseConnection != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.databaseConnection.Dispose(); &lt;-- crash, GC already destroyed it</span><br><span class="line">      this.databaseConnection = null;</span><br><span class="line">   &#125;</span><br><span class="line">   if (this.frameBufferImage != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.frameBufferImage.Dispose(); &lt;-- crash, GC already destroyed it</span><br><span class="line">      this.frameBufferImage = null;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>所以我们需要一种办法让在Finalize中调到的Dispose函数不去释放托管的资源，留给垃圾回收来做，我们习惯用这样的函数来实现：</p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean disposing)</span><br></pre></td></tr></table></figure><br><br><p>这个参数名字disposing有点不太好，我们改个名字吧：） </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean freeManagedObjectsAlso)</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too, but only if i&apos;m being called from Dispose</span><br><span class="line">   //(If i&apos;m being called from Finalize then the objects might not exist</span><br><span class="line">   //anymore</span><br><span class="line">   if (freeManagedObjectsAlso)  </span><br><span class="line">   &#123;    </span><br><span class="line">      if (this.databaseConnection != null)</span><br><span class="line">      &#123;</span><br><span class="line">         this.databaseConnection.Dispose();</span><br><span class="line">         this.databaseConnection = null;</span><br><span class="line">      &#125;</span><br><span class="line">      if (this.frameBufferImage != null)</span><br><span class="line">      &#123;</span><br><span class="line">         this.frameBufferImage.Dispose();</span><br><span class="line">         this.frameBufferImage = null;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>所以我们先前写的Dispose函数变成了这样：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(true); //i am calling you from Dispose, it&apos;s safe</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public ~MyObject()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(false); //i am *not* calling you from Dispose, it&apos;s *not* safe</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>提醒一下，如果我们的类的父类也是IDisposable的，我们需要调用父类的Dispose函数。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   try</span><br><span class="line">   &#123;</span><br><span class="line">      Dispose(true); //true: safe to free managed resources</span><br><span class="line">   &#125;</span><br><span class="line">   finally</span><br><span class="line">   &#123;</span><br><span class="line">      base.Dispose();</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>看起来搞定了，但是我们可以做的更好！</p><br><h3>&nbsp;</h3><br><p>如果我们的客户代码调用了Dispose，那意味着托管和非托管的资源都被释放掉了，但是随后C#的垃圾回收还会再次调用Dispose。不仅仅是浪费，而且如果万一我们没有在Dispose非托管资源时把它设成null，就是说它还指着东西，那就会被再释放一次，这可不是好玩的。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean iAmBeingCalledFromDisposeAndNotFinalize)</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle); &lt;--double destroy </span><br><span class="line">   //...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>修改这个问题的方法就是，如果已经调用过Dispose了，就不要再调Finalize了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(true); //i am calling you from Dispose, it&apos;s safe</span><br><span class="line">   GC.SuppressFinalize(this); //Hey, GC: don&apos;t bother calling finalize later</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>好了，万事大吉：）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Stackoverflow上的这个&lt;a href=&quot;http://stackoverflow.com/a/538238/304115&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;回答&lt;/a&gt;是我见过的讲的最清楚的怎么正确实现&lt;span style=&quot;co
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -6606,6 +6606,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>C++怎么寻找重载函数</title>
+    <link href="http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/"/>
+    <id>http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/</id>
+    <published>2012-12-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.240Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://accu.org/index.php/journals/268" target="_blank" rel="noopener">ACCU :: Overload Resolution - Selecting the Function</a>这篇文章详细介绍了C++中寻找重载函数的方法。下面给个小例子吧，C++的重载有时候会违背你的直觉。</p>  <p>考虑如下代码：</p>  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OverLoadBase</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">DoSomething</span><span class="params">()</span> </span>&#123;<span class="keyword">return</span> <span class="number">0</span>;&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OverLoadSub</span> :</span> <span class="keyword">public</span> OverLoadBase</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">DoSomething</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;<span class="keyword">return</span> <span class="number">1</span>;&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">TestOverLoadSub</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    OverLoadSub b;</span><br><span class="line">    b.DoSomething(); <span class="comment">//这样写会编译出错</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>错误消息如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In function &apos;void TestOverLoadSub()&apos;:</span><br><span class="line">Line 17: error: no matching function for call to &apos;OverLoadSub::DoSomething()&apos;</span><br><span class="line">compilation terminated due to -Wfatal-errors.</span><br></pre></td></tr></table></figure><p>如果换成这样：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b.OverLoadBase::DoSomething();</span><br></pre></td></tr></table></figure><p>就没有问题了。或者把子类中的DoSomething（）去掉也没有问题。</p><p>为什么会这样呢？因为在上面那个例子中，两个DoSomething不是重载。上面的那篇文章里一开头就说“Declaring two or more items with the same name in a scope is called <em>overloading</em>”，只有在一个scope中才算重载。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://accu.org/index.php/journals/268&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ACCU :: Overload Resolution - Selecting the Function&lt;/a&gt;这
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Nokia Meego的故事（转载）</title>
     <link href="http://fresky.github.io/2012/12/10/the-story-of-nokia-meego/"/>
     <id>http://fresky.github.io/2012/12/10/the-story-of-nokia-meego/</id>
@@ -6648,29 +6671,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++怎么寻找重载函数</title>
-    <link href="http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/"/>
-    <id>http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/</id>
-    <published>2012-12-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.240Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://accu.org/index.php/journals/268" target="_blank" rel="noopener">ACCU :: Overload Resolution - Selecting the Function</a>这篇文章详细介绍了C++中寻找重载函数的方法。下面给个小例子吧，C++的重载有时候会违背你的直觉。</p>  <p>考虑如下代码：</p>  <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OverLoadBase</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">DoSomething</span><span class="params">()</span> </span>&#123;<span class="keyword">return</span> <span class="number">0</span>;&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">OverLoadSub</span> :</span> <span class="keyword">public</span> OverLoadBase</span><br><span class="line">&#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">DoSomething</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;<span class="keyword">return</span> <span class="number">1</span>;&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">TestOverLoadSub</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    OverLoadSub b;</span><br><span class="line">    b.DoSomething(); <span class="comment">//这样写会编译出错</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>错误消息如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In function &apos;void TestOverLoadSub()&apos;:</span><br><span class="line">Line 17: error: no matching function for call to &apos;OverLoadSub::DoSomething()&apos;</span><br><span class="line">compilation terminated due to -Wfatal-errors.</span><br></pre></td></tr></table></figure><p>如果换成这样：</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b.OverLoadBase::DoSomething();</span><br></pre></td></tr></table></figure><p>就没有问题了。或者把子类中的DoSomething（）去掉也没有问题。</p><p>为什么会这样呢？因为在上面那个例子中，两个DoSomething不是重载。上面的那篇文章里一开头就说“Declaring two or more items with the same name in a scope is called <em>overloading</em>”，只有在一个scope中才算重载。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://accu.org/index.php/journals/268&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;ACCU :: Overload Resolution - Selecting the Function&lt;/a&gt;这
-      
-    
-    </summary>
-    
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -6794,6 +6794,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>有时间了要研究一下Stack Exchange的开源项目</title>
+    <link href="http://fresky.github.io/2012/12/04/stackexchange-open-source-projects/"/>
+    <id>http://fresky.github.io/2012/12/04/stackexchange-open-source-projects/</id>
+    <published>2012-12-03T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.239Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-projects/" target="_blank" rel="noopener">Stack Exchange Open Source Projects « Blog – Stack Exchange</a><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-projects/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Stack Exchange Open S
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
     <title>.NET自动exploratory测试工具Pex</title>
     <link href="http://fresky.github.io/2012/12/04/csharp-exploratory-testing-tool-pex/"/>
     <id>http://fresky.github.io/2012/12/04/csharp-exploratory-testing-tool-pex/</id>
@@ -6815,29 +6838,6 @@ w\:* {behavior:url(#default#VML);}
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>有时间了要研究一下Stack Exchange的开源项目</title>
-    <link href="http://fresky.github.io/2012/12/04/stackexchange-open-source-projects/"/>
-    <id>http://fresky.github.io/2012/12/04/stackexchange-open-source-projects/</id>
-    <published>2012-12-03T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.239Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-projects/" target="_blank" rel="noopener">Stack Exchange Open Source Projects « Blog – Stack Exchange</a><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-projects/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Stack Exchange Open S
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7028,6 +7028,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>Visual Studio中打开编译器中有虚函数的类的析构函数不是虚函数的警告——/we4265</title>
+    <link href="http://fresky.github.io/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/"/>
+    <id>http://fresky.github.io/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/</id>
+    <published>2012-11-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.236Z</updated>
+    
+    <content type="html"><![CDATA[<p>C++中一个类如果有虚函数，那么它的析构函数应该也是虚的，否则会出现很多问题。<br>其实visual studi中有一个专门的warning是给这个的，<a href="http://msdn.microsoft.com/en-us/library/wzxffy8c%28v=vs.110%29.aspx" target="_blank" rel="noopener">Compiler Warning (level 3) C4265</a>：’class’ : class has virtual functions, but destructor is not virtual<br>但是这个warning默认是关闭的，这里可以看所有默认关系的warning：<a href="http://msdn.microsoft.com/en-us/library/23k5d385(v=vs.110).aspx" target="_blank" rel="noopener">Compiler Warnings That Are Off by Default</a><br>我们可以指定编译器选项 /we4265 把特定的warning打开，具体见<a href="http://msdn.microsoft.com/en-us/library/thxezb7y(v=vs.110).aspx" target="_blank" rel="noopener">/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warning Level)</a>。<br><blockquote></blockquote><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;C++中一个类如果有虚函数，那么它的析构函数应该也是虚的，否则会出现很多问题。&lt;br&gt;其实visual studi中有一个专门的warning是给这个的，&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/wzxffy8c%28
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C++编译器什么时候为我们自动生成拷贝构造函数？</title>
     <link href="http://fresky.github.io/2012/11/25/when-cpp-compiler-generate-copy-constructors-for-us/"/>
     <id>http://fresky.github.io/2012/11/25/when-cpp-compiler-generate-copy-constructors-for-us/</id>
@@ -7051,25 +7074,26 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>Visual Studio中打开编译器中有虚函数的类的析构函数不是虚函数的警告——/we4265</title>
-    <link href="http://fresky.github.io/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/"/>
-    <id>http://fresky.github.io/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/</id>
-    <published>2012-11-24T16:00:00.000Z</published>
+    <title>Prezi——一个超cool的presentation网站</title>
+    <link href="http://fresky.github.io/2012/11/22/prezi-cool-presentation-website/"/>
+    <id>http://fresky.github.io/2012/11/22/prezi-cool-presentation-website/</id>
+    <published>2012-11-21T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.236Z</updated>
     
-    <content type="html"><![CDATA[<p>C++中一个类如果有虚函数，那么它的析构函数应该也是虚的，否则会出现很多问题。<br>其实visual studi中有一个专门的warning是给这个的，<a href="http://msdn.microsoft.com/en-us/library/wzxffy8c%28v=vs.110%29.aspx" target="_blank" rel="noopener">Compiler Warning (level 3) C4265</a>：’class’ : class has virtual functions, but destructor is not virtual<br>但是这个warning默认是关闭的，这里可以看所有默认关系的warning：<a href="http://msdn.microsoft.com/en-us/library/23k5d385(v=vs.110).aspx" target="_blank" rel="noopener">Compiler Warnings That Are Off by Default</a><br>我们可以指定编译器选项 /we4265 把特定的warning打开，具体见<a href="http://msdn.microsoft.com/en-us/library/thxezb7y(v=vs.110).aspx" target="_blank" rel="noopener">/w, /Wn, /WX, /Wall, /wln, /wdn, /wen, /won (Warning Level)</a>。<br><blockquote></blockquote><br><blockquote></blockquote></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://prezi.com/index/" target="_blank" rel="noopener">Prezi - Ideas matter.</a><br><blockquote></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;C++中一个类如果有虚函数，那么它的析构函数应该也是虚的，否则会出现很多问题。&lt;br&gt;其实visual studi中有一个专门的warning是给这个的，&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/wzxffy8c%28
+        &lt;p&gt;&lt;a href=&quot;http://prezi.com/index/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Prezi - Ideas matter.&lt;/a&gt;&lt;br&gt;&lt;blockquote&gt;&lt;/blockquote&gt;&lt;/p&gt;
+
       
     
     </summary>
     
     
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7116,30 +7140,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Prezi——一个超cool的presentation网站</title>
-    <link href="http://fresky.github.io/2012/11/22/prezi-cool-presentation-website/"/>
-    <id>http://fresky.github.io/2012/11/22/prezi-cool-presentation-website/</id>
-    <published>2012-11-21T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.236Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://prezi.com/index/" target="_blank" rel="noopener">Prezi - Ideas matter.</a><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://prezi.com/index/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Prezi - Ideas matter.&lt;/a&gt;&lt;br&gt;&lt;blockquote&gt;&lt;/blockquote&gt;&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7468,29 +7468,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>看看stackoverflow上面这些欢乐的注释吧</title>
-    <link href="http://fresky.github.io/2012/10/17/funny-comments/"/>
-    <id>http://fresky.github.io/2012/10/17/funny-comments/</id>
-    <published>2012-10-16T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.232Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered" target="_blank" rel="noopener">polls - What is the best comment in source code you have ever encountered? - Stack Overflow</a><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered&quot; target=&quot;_blank&quot; rel
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>推荐一个firefox插件，可以在douban电影里显示imdb评分</title>
     <link href="http://fresky.github.io/2012/10/17/firefox-plugin-display-imdb-in-douban/"/>
     <id>http://fresky.github.io/2012/10/17/firefox-plugin-display-imdb-in-douban/</id>
@@ -7510,6 +7487,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>看看stackoverflow上面这些欢乐的注释吧</title>
+    <link href="http://fresky.github.io/2012/10/17/funny-comments/"/>
+    <id>http://fresky.github.io/2012/10/17/funny-comments/</id>
+    <published>2012-10-16T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.232Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered" target="_blank" rel="noopener">polls - What is the best comment in source code you have ever encountered? - Stack Overflow</a><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/184618/what-is-the-best-comment-in-source-code-you-have-ever-encountered&quot; target=&quot;_blank&quot; rel
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -7550,6 +7550,29 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;&lt;a href=&quot;http://www.mlibby.com/grading-code/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Grading Code&lt;/a&gt;这篇文章说在legacy code（遗留代码）中做开发时估计要根据现有代码的状况来做个调
+      
+    
+    </summary>
+    
+    
+      <category term="Development" scheme="http://fresky.github.io/tags/Development/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件开发10个致命错误（转自Construx）</title>
+    <link href="http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/"/>
+    <id>http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/</id>
+    <published>2012-10-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.231Z</updated>
+    
+    <content type="html"><![CDATA[<p>（转自<a href="http://www.construx.com/" target="_blank">Construx</a>，可以从<a href="http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）" target="_blank" rel="noopener">http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）</a><br><ol><li>混淆估计和目标的区别</li><li>过度乐观的时间表</li><li>不切实际的期望</li><li>一厢情愿</li><li>克扣质量保证</li><li>过度多任务</li><li>功能蔓延</li><li>吵闹拥挤的办公室</li><li>压力下放弃规划</li><li>风险管理不够<br></li></ol><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;（转自&lt;a href=&quot;http://www.construx.com/&quot; target=&quot;_blank&quot;&gt;Construx&lt;/a&gt;，可以从&lt;a href=&quot;http://info.construx.com/rs/construx/images/Poster_Tombsto
       
     
     </summary>
@@ -7606,25 +7629,26 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>软件开发10个致命错误（转自Construx）</title>
-    <link href="http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/"/>
-    <id>http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/</id>
-    <published>2012-10-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.231Z</updated>
+    <title>c#中判断一个process是32bit还是64bit</title>
+    <link href="http://fresky.github.io/2012/10/09/check-process-is-64bit-in-csharp/"/>
+    <id>http://fresky.github.io/2012/10/09/check-process-is-64bit-in-csharp/</id>
+    <published>2012-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.230Z</updated>
     
-    <content type="html"><![CDATA[<p>（转自<a href="http://www.construx.com/" target="_blank">Construx</a>，可以从<a href="http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）" target="_blank" rel="noopener">http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）</a><br><ol><li>混淆估计和目标的区别</li><li>过度乐观的时间表</li><li>不切实际的期望</li><li>一厢情愿</li><li>克扣质量保证</li><li>过度多任务</li><li>功能蔓延</li><li>吵闹拥挤的办公室</li><li>压力下放弃规划</li><li>风险管理不够<br></li></ol><br></p>]]></content>
+    <content type="html"><![CDATA[<p>下面的代码能判断一个process是32bit还是64bit.</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">class</span> <span class="title">ProcessDetector</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">IsWin64</span>(<span class="params">Process process</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (Environment.Is64BitOperatingSystem)</span><br><span class="line">            &#123;</span><br><span class="line">                IntPtr processHandle;</span><br><span class="line">                <span class="keyword">bool</span> retVal;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">try</span></span><br><span class="line">                &#123;</span><br><span class="line">                    processHandle = Process.GetProcessById(process.Id).Handle;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">catch</span></span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>; </span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> Win32API.IsWow64Process(processHandle, <span class="keyword">out</span> retVal) &amp;&amp; retVal;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">Win32API</span></span><br><span class="line">    &#123;</span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"kernel32.dll"</span>, SetLastError = true, CallingConvention = CallingConvention.Winapi)</span>]</span><br><span class="line">        [<span class="meta">return: MarshalAs(UnmanagedType.Bool)</span>]</span><br><span class="line">        <span class="function"><span class="keyword">internal</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">bool</span> <span class="title">IsWow64Process</span>(<span class="params">[In] IntPtr process, [Out] <span class="keyword">out</span> <span class="keyword">bool</span> wow64Process</span>)</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;（转自&lt;a href=&quot;http://www.construx.com/&quot; target=&quot;_blank&quot;&gt;Construx&lt;/a&gt;，可以从&lt;a href=&quot;http://info.construx.com/rs/construx/images/Poster_Tombsto
+        &lt;p&gt;下面的代码能判断一个process是32bit还是64bit.&lt;/p&gt;
+&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;s
       
     
     </summary>
     
     
-      <category term="Development" scheme="http://fresky.github.io/tags/Development/"/>
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -7677,26 +7701,26 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>c#中判断一个process是32bit还是64bit</title>
-    <link href="http://fresky.github.io/2012/10/09/check-process-is-64bit-in-csharp/"/>
-    <id>http://fresky.github.io/2012/10/09/check-process-is-64bit-in-csharp/</id>
-    <published>2012-10-08T16:00:00.000Z</published>
+    <title>IntelliTrace Collector for Visual Studio 2012</title>
+    <link href="http://fresky.github.io/2012/10/08/intellitrace-collector-for-visual-studio-2012/"/>
+    <id>http://fresky.github.io/2012/10/08/intellitrace-collector-for-visual-studio-2012/</id>
+    <published>2012-10-07T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.230Z</updated>
     
-    <content type="html"><![CDATA[<p>下面的代码能判断一个process是32bit还是64bit.</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">class</span> <span class="title">ProcessDetector</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">IsWin64</span>(<span class="params">Process process</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (Environment.Is64BitOperatingSystem)</span><br><span class="line">            &#123;</span><br><span class="line">                IntPtr processHandle;</span><br><span class="line">                <span class="keyword">bool</span> retVal;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">try</span></span><br><span class="line">                &#123;</span><br><span class="line">                    processHandle = Process.GetProcessById(process.Id).Handle;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">catch</span></span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>; </span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> Win32API.IsWow64Process(processHandle, <span class="keyword">out</span> retVal) &amp;&amp; retVal;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">Win32API</span></span><br><span class="line">    &#123;</span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"kernel32.dll"</span>, SetLastError = true, CallingConvention = CallingConvention.Winapi)</span>]</span><br><span class="line">        [<span class="meta">return: MarshalAs(UnmanagedType.Bool)</span>]</span><br><span class="line">        <span class="function"><span class="keyword">internal</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">bool</span> <span class="title">IsWow64Process</span>(<span class="params">[In] IntPtr process, [Out] <span class="keyword">out</span> <span class="keyword">bool</span> wow64Process</span>)</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>可以在production环境下手机IIS下的应用的intellitrace，用来debug。暂时没有需求，不过还是记在这里备用吧。</p><p><a href="http://www.microsoft.com/en-us/download/details.aspx?id=30665&quot;" target="_blank" rel="noopener">Download: IntelliTrace Collector for Visual Studio 2012 - Microsoft Download Center - Download Details</a></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;下面的代码能判断一个process是32bit还是64bit.&lt;/p&gt;
-&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;s
+        &lt;p&gt;可以在production环境下手机IIS下的应用的intellitrace，用来debug。暂时没有需求，不过还是记在这里备用吧。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.microsoft.com/en-us/download/details.aspx?i
       
     
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7722,30 +7746,6 @@ w\:* {behavior:url(#default#VML);}
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>IntelliTrace Collector for Visual Studio 2012</title>
-    <link href="http://fresky.github.io/2012/10/08/intellitrace-collector-for-visual-studio-2012/"/>
-    <id>http://fresky.github.io/2012/10/08/intellitrace-collector-for-visual-studio-2012/</id>
-    <published>2012-10-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.230Z</updated>
-    
-    <content type="html"><![CDATA[<p>可以在production环境下手机IIS下的应用的intellitrace，用来debug。暂时没有需求，不过还是记在这里备用吧。</p><p><a href="http://www.microsoft.com/en-us/download/details.aspx?id=30665&quot;" target="_blank" rel="noopener">Download: IntelliTrace Collector for Visual Studio 2012 - Microsoft Download Center - Download Details</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;可以在production环境下手机IIS下的应用的intellitrace，用来debug。暂时没有需求，不过还是记在这里备用吧。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.microsoft.com/en-us/download/details.aspx?i
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7843,31 +7843,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>BuildZipper——给c#项目添加postbuildevent，每次build完把build结果做个zip放在solution目录。</title>
-    <link href="http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/"/>
-    <id>http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/</id>
-    <published>2012-09-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.228Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近几次发布项目到github上，都手动把最后build的结果做个zip，传上去，供直接下载binary用。觉得很费事，就写了个小程序，BuildZipper。<br>源代码在<a href="https://github.com/fresky/BuildZipper" target="_blank" rel="noopener">github</a>上，运行文件<a href="https://github.com/fresky/BuildZipper/blob/master/BuildZipper.zip" target="_blank" rel="noopener">这里</a>下载。<br>用了<a href="http://dotnetzip.codeplex.com/" target="_blank" rel="noopener">DotNetZip Library</a>来做zip，用了C#的<a href="http://msdn.microsoft.com/en-us/library/microsoft.build.evaluation.project.aspx" target="_blank" rel="noopener">Project</a>来操作project文件。<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;最近几次发布项目到github上，都手动把最后build的结果做个zip，传上去，供直接下载binary用。觉得很费事，就写了个小程序，BuildZipper。&lt;br&gt;源代码在&lt;a href=&quot;https://github.com/fresky/BuildZipper&quot; t
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>在浏览器中运行C#</title>
     <link href="http://fresky.github.io/2012/09/10/run-csharp-in-browser/"/>
     <id>http://fresky.github.io/2012/09/10/run-csharp-in-browser/</id>
@@ -7889,6 +7864,31 @@ w\:* {behavior:url(#default#VML);}
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>BuildZipper——给c#项目添加postbuildevent，每次build完把build结果做个zip放在solution目录。</title>
+    <link href="http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/"/>
+    <id>http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/</id>
+    <published>2012-09-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.228Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近几次发布项目到github上，都手动把最后build的结果做个zip，传上去，供直接下载binary用。觉得很费事，就写了个小程序，BuildZipper。<br>源代码在<a href="https://github.com/fresky/BuildZipper" target="_blank" rel="noopener">github</a>上，运行文件<a href="https://github.com/fresky/BuildZipper/blob/master/BuildZipper.zip" target="_blank" rel="noopener">这里</a>下载。<br>用了<a href="http://dotnetzip.codeplex.com/" target="_blank" rel="noopener">DotNetZip Library</a>来做zip，用了C#的<a href="http://msdn.microsoft.com/en-us/library/microsoft.build.evaluation.project.aspx" target="_blank" rel="noopener">Project</a>来操作project文件。<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近几次发布项目到github上，都手动把最后build的结果做个zip，传上去，供直接下载binary用。觉得很费事，就写了个小程序，BuildZipper。&lt;br&gt;源代码在&lt;a href=&quot;https://github.com/fresky/BuildZipper&quot; t
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -8244,29 +8244,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>在bat中执行sql命令（for sql server）</title>
-    <link href="http://fresky.github.io/2012/07/17/run-sql-command-in-bat-file/"/>
-    <id>http://fresky.github.io/2012/07/17/run-sql-command-in-bat-file/</id>
-    <published>2012-07-16T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.224Z</updated>
-    
-    <content type="html"><![CDATA[<p>用<a href="http://msdn.microsoft.com/en-us/library/ms162773.aspx" target="_blank" rel="noopener">sqlcmd Utility</a>可以在bat中执行sql sever命令，很方便。<br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;用&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms162773.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sqlcmd Utility&lt;/a&gt;可以在bat中执行sql sever命令，很方
-      
-    
-    </summary>
-    
-    
-      <category term="Database" scheme="http://fresky.github.io/tags/Database/"/>
-    
-  </entry>
-  
-  <entry>
     <title>定义Enum的开始和结束，这样就能循环Enum了</title>
     <link href="http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/"/>
     <id>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</id>
@@ -8310,6 +8287,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在bat中执行sql命令（for sql server）</title>
+    <link href="http://fresky.github.io/2012/07/17/run-sql-command-in-bat-file/"/>
+    <id>http://fresky.github.io/2012/07/17/run-sql-command-in-bat-file/</id>
+    <published>2012-07-16T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.224Z</updated>
+    
+    <content type="html"><![CDATA[<p>用<a href="http://msdn.microsoft.com/en-us/library/ms162773.aspx" target="_blank" rel="noopener">sqlcmd Utility</a>可以在bat中执行sql sever命令，很方便。<br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;用&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms162773.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;sqlcmd Utility&lt;/a&gt;可以在bat中执行sql sever命令，很方
+      
+    
+    </summary>
+    
+    
+      <category term="Database" scheme="http://fresky.github.io/tags/Database/"/>
     
   </entry>
   
@@ -8435,31 +8435,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>Mozilla Thimble，在线html，javascript编辑器</title>
-    <link href="http://fresky.github.io/2012/07/10/mozilla-thimble-online-html-editor/"/>
-    <id>http://fresky.github.io/2012/07/10/mozilla-thimble-online-html-editor/</id>
-    <published>2012-07-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.222Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天看了一下，<a href="https://thimble.webmaker.org/en-US/" target="_blank" rel="noopener">Mozilla Thimble</a>，很不错，推荐试试：）<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;今天看了一下，&lt;a href=&quot;https://thimble.webmaker.org/en-US/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mozilla Thimble&lt;/a&gt;，很不错，推荐试试：）&lt;br&gt;&lt;blockquote&gt;&lt;/block
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
-    
-  </entry>
-  
-  <entry>
     <title>使用windbg通过vtable找到优化后的this指针</title>
     <link href="http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/"/>
     <id>http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/</id>
@@ -8483,25 +8458,27 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>oxcdcdcdcd是什么？</title>
-    <link href="http://fresky.github.io/2012/07/06/what-is-oxcdcdcdcd/"/>
-    <id>http://fresky.github.io/2012/07/06/what-is-oxcdcdcdcd/</id>
-    <published>2012-07-05T16:00:00.000Z</published>
+    <title>Mozilla Thimble，在线html，javascript编辑器</title>
+    <link href="http://fresky.github.io/2012/07/10/mozilla-thimble-online-html-editor/"/>
+    <id>http://fresky.github.io/2012/07/10/mozilla-thimble-online-html-editor/</id>
+    <published>2012-07-09T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.222Z</updated>
     
-    <content type="html"><![CDATA[<p>今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）<br>从网上总结了一下地址的信息，最主要的是：<br><table><tbody><tr><td>0xCDCDCDCD</td><td>堆上分配的地址，但是没有初始化<br></td></tr></tbody></table></p><tr><td>0xDDDDDDDD</td><td>堆上释放的地址。</td></tr><tr><td>0xFDFDFDFD</td><td>堆内存的边界<br></td></tr><p><tr><td>0xCCCCCCCC</td><td>栈上分配的内存，但是没有初始化</td></tr><br>更多的内容可以看看下面2篇文章。<br><a href="http://www.nobugs.org/developer/win32/debug_crt_heap.html" target="_blank" rel="noopener">Win32 Debug CRT Heap Internals</a><br><blockquote></blockquote><a href="http://www.highprogrammer.com/alan/windev/visualstudio.html" target="_blank" rel="noopener">Microsoft Visual C++ Tips and Tricks</a><br><blockquote></blockquote></p>]]></content>
+    <content type="html"><![CDATA[<p>今天看了一下，<a href="https://thimble.webmaker.org/en-US/" target="_blank" rel="noopener">Mozilla Thimble</a>，很不错，推荐试试：）<br><blockquote></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）&lt;br&gt;从网上总结了一下地址的信息，最主要的是：&lt;br&gt;&lt;table&gt;&lt;tbody
+        &lt;p&gt;今天看了一下，&lt;a href=&quot;https://thimble.webmaker.org/en-US/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mozilla Thimble&lt;/a&gt;，很不错，推荐试试：）&lt;br&gt;&lt;blockquote&gt;&lt;/block
       
     
     </summary>
     
     
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
   </entry>
   
@@ -8529,25 +8506,25 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>从哪里开始学习Windows 8？（zz）</title>
-    <link href="http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/"/>
-    <id>http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/</id>
-    <published>2012-07-04T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.221Z</updated>
+    <title>oxcdcdcdcd是什么？</title>
+    <link href="http://fresky.github.io/2012/07/06/what-is-oxcdcdcdcd/"/>
+    <id>http://fresky.github.io/2012/07/06/what-is-oxcdcdcdcd/</id>
+    <published>2012-07-05T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.222Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://www.sadev.co.za/content/where-do-i-start-learn-windows-8" target="_blank" rel="noopener">Where do I start to learn Windows 8? | Robert MacLean</a><br><blockquote></blockquote></p>]]></content>
+    <content type="html"><![CDATA[<p>今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）<br>从网上总结了一下地址的信息，最主要的是：<br><table><tbody><tr><td>0xCDCDCDCD</td><td>堆上分配的地址，但是没有初始化<br></td></tr></tbody></table></p><tr><td>0xDDDDDDDD</td><td>堆上释放的地址。</td></tr><tr><td>0xFDFDFDFD</td><td>堆内存的边界<br></td></tr><p><tr><td>0xCCCCCCCC</td><td>栈上分配的内存，但是没有初始化</td></tr><br>更多的内容可以看看下面2篇文章。<br><a href="http://www.nobugs.org/developer/win32/debug_crt_heap.html" target="_blank" rel="noopener">Win32 Debug CRT Heap Internals</a><br><blockquote></blockquote><a href="http://www.highprogrammer.com/alan/windev/visualstudio.html" target="_blank" rel="noopener">Microsoft Visual C++ Tips and Tricks</a><br><blockquote></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://www.sadev.co.za/content/where-do-i-start-learn-windows-8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Where do I start to learn Window
+        &lt;p&gt;今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）&lt;br&gt;从网上总结了一下地址的信息，最主要的是：&lt;br&gt;&lt;table&gt;&lt;tbody
       
     
     </summary>
     
     
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -8573,6 +8550,29 @@ w\:* {behavior:url(#default#VML);}
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从哪里开始学习Windows 8？（zz）</title>
+    <link href="http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/"/>
+    <id>http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/</id>
+    <published>2012-07-04T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.221Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.sadev.co.za/content/where-do-i-start-learn-windows-8" target="_blank" rel="noopener">Where do I start to learn Windows 8? | Robert MacLean</a><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.sadev.co.za/content/where-do-i-start-learn-windows-8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Where do I start to learn Window
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -8789,6 +8789,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>C# GetEnvironmentVariable 问题</title>
+    <link href="http://fresky.github.io/2011/01/11/GetEnvironmentVariable-issue-in-csharp/"/>
+    <id>http://fresky.github.io/2011/01/11/GetEnvironmentVariable-issue-in-csharp/</id>
+    <published>2011-01-10T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.218Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天遇到了一个奇怪的问题，有2个程序，一个是ClickOnce应用，一个是普通的C#可执行程序，都用到了一个系统环境变量，System environment variable，Machine级别的，程序中都是用的 Environment.GetEnvironmentVariable(env)。当这个环境变量被修改后，发现ClickOnce应用不能运行了，debug看到得到的环境变量不对，还是旧的，重启ClickOnce应用还是不行。但是C#的程序重启之后运行很正常。<br><br>然后就看了看MSDN关于Environment.GetEnvironmentVariable的<a href="http://msdn.microsoft.com/en-us/library/y6k3c7b0.aspx" target="_blank" rel="noopener">描述</a>。并且自己做了一些测试，基本搞清楚了原因。<br><br>Environment.GetEnvironmentVariable(env)等同于Environment.GetEnvironmentVariable(env, EnvironmentVariableTarget.Process)，取得时Process的环境变量。另外还有2个函数，分别是Environment.GetEnvironmentVariable(env, EnvironmentVariableTarget.Machine)，Environment.GetEnvironmentVariable(env, EnvironmentVariableTarget.User)，分别是取System的环境变量和User的环境变量。<br><br>Process的环境变量是指当Process起来的时候，把Machne（System）和User的环境变量加起来，存了个拷贝，放在了Process的信息里面。这个可以用<a href="http://technet.microsoft.com/en-us/sysinternals/bb896653" target="_blank" rel="noopener">Process Explorer</a>很清楚地看出来，双击Process，在Environment的tab里面可以看到所有的环境变量。<br><br>好的，搞清楚了背景知识，现在我们来看看为什么会出现本文一开始说的那个问题。<br><br>对于一个普通的C#程序。<br>如果我们要取的变量是System Variables，首先调用Environment.GetEnvironmentVariable(env, EnvironmentVariableTarget.Machine)和Environment.GetEnvironmentVariable(env)可以得到一样的值。如果这个时候修改了System Variable的值，再调用可以发现Environment.GetEnvironmentVariable(env, EnvironmentVariableTarget.Machine)已经是新的值了，但是Environment.GetEnvironmentVariable(env)还是修改前的值。因为Process中保存的是一份拷贝，还是原来的值。重启这个程序就能变得一样。<br><br>但是对于ClickOnce应用，变得有点复杂：）<br>因为ClickOnce是通过dfsvc.exe运行的，这个是ClickOnce的引擎，它负责检查更新，下载等。每当有ClickOnce的应用启动时，都需要通过它。它会自动关掉进程如果15分钟没有使用。参考<a href="http://windowsclient.net/blogs/faqs/archive/2004/06/11/what-is-the-dfsvc-exe-process-that-starts-when-i-use-clickonce.aspx" target="_blank" rel="noopener">What is the dfsvc.exe process that starts when I use “ClickOnce”? - Windows Forms FAQs</a><br>所以如果第一次运行ClickOnce程序，dfsvc.exe会拿到一份环境变量的拷贝，然后ClickOnce应用是这个process启动的，所以用的就是它的环境变量拷贝。等关掉ClickOnce应用，这个dfsvc.exe还不会退出（要等15分钟）。再重启ClickOnce还是同样的dfsvc.exe启动的，所以用的还是之前的环境变量拷贝。这就是为什么ClickOnce程序运行不正确。如果kill掉dfsvc.exe，再重启ClickOnce应用就一切正常了。<br><br>所以在写代码的时候要注意，如果有程序在运行过程中，System Variables被修改了，使用Environment.GetEnvironmentVariable(env)有可能得不到正确的值。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天遇到了一个奇怪的问题，有2个程序，一个是ClickOnce应用，一个是普通的C#可执行程序，都用到了一个系统环境变量，System environment variable，Machine级别的，程序中都是用的 Environment.GetEnvironmentVar
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>环境变量的注册表位置</title>
     <link href="http://fresky.github.io/2011/01/11/where-system-environment-variables-stored-in-registry/"/>
     <id>http://fresky.github.io/2011/01/11/where-system-environment-variables-stored-in-registry/</id>
@@ -8831,29 +8854,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C# GetEnvironmentVariable 问题</title>
-    <link href="http://fresky.github.io/2011/01/11/GetEnvironmentVariable-issue-in-csharp/"/>
-    <id>http://fresky.github.io/2011/01/11/GetEnvironmentVariable-issue-in-csharp/</id>
-    <published>2011-01-10T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.218Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天遇到了一个奇怪的问题，有2个程序，一个是ClickOnce应用，一个是普通的C#可执行程序，都用到了一个系统环境变量，System environment variable，Machine级别的，程序中都是用的 Environment.GetEnvironmentVariable(env)。当这个环境变量被修改后，发现ClickOnce应用不能运行了，debug看到得到的环境变量不对，还是旧的，重启ClickOnce应用还是不行。但是C#的程序重启之后运行很正常。<br><br>然后就看了看MSDN关于Environment.GetEnvironmentVariable的<a href="http://msdn.microsoft.com/en-us/library/y6k3c7b0.aspx" target="_blank" rel="noopener">描述</a>。并且自己做了一些测试，基本搞清楚了原因。<br><br>Environment.GetEnvironmentVariable(env)等同于Environment.GetEnvironmentVariable(env, EnvironmentVariableTarget.Process)，取得时Process的环境变量。另外还有2个函数，分别是Environment.GetEnvironmentVariable(env, EnvironmentVariableTarget.Machine)，Environment.GetEnvironmentVariable(env, EnvironmentVariableTarget.User)，分别是取System的环境变量和User的环境变量。<br><br>Process的环境变量是指当Process起来的时候，把Machne（System）和User的环境变量加起来，存了个拷贝，放在了Process的信息里面。这个可以用<a href="http://technet.microsoft.com/en-us/sysinternals/bb896653" target="_blank" rel="noopener">Process Explorer</a>很清楚地看出来，双击Process，在Environment的tab里面可以看到所有的环境变量。<br><br>好的，搞清楚了背景知识，现在我们来看看为什么会出现本文一开始说的那个问题。<br><br>对于一个普通的C#程序。<br>如果我们要取的变量是System Variables，首先调用Environment.GetEnvironmentVariable(env, EnvironmentVariableTarget.Machine)和Environment.GetEnvironmentVariable(env)可以得到一样的值。如果这个时候修改了System Variable的值，再调用可以发现Environment.GetEnvironmentVariable(env, EnvironmentVariableTarget.Machine)已经是新的值了，但是Environment.GetEnvironmentVariable(env)还是修改前的值。因为Process中保存的是一份拷贝，还是原来的值。重启这个程序就能变得一样。<br><br>但是对于ClickOnce应用，变得有点复杂：）<br>因为ClickOnce是通过dfsvc.exe运行的，这个是ClickOnce的引擎，它负责检查更新，下载等。每当有ClickOnce的应用启动时，都需要通过它。它会自动关掉进程如果15分钟没有使用。参考<a href="http://windowsclient.net/blogs/faqs/archive/2004/06/11/what-is-the-dfsvc-exe-process-that-starts-when-i-use-clickonce.aspx" target="_blank" rel="noopener">What is the dfsvc.exe process that starts when I use “ClickOnce”? - Windows Forms FAQs</a><br>所以如果第一次运行ClickOnce程序，dfsvc.exe会拿到一份环境变量的拷贝，然后ClickOnce应用是这个process启动的，所以用的就是它的环境变量拷贝。等关掉ClickOnce应用，这个dfsvc.exe还不会退出（要等15分钟）。再重启ClickOnce还是同样的dfsvc.exe启动的，所以用的还是之前的环境变量拷贝。这就是为什么ClickOnce程序运行不正确。如果kill掉dfsvc.exe，再重启ClickOnce应用就一切正常了。<br><br>所以在写代码的时候要注意，如果有程序在运行过程中，System Variables被修改了，使用Environment.GetEnvironmentVariable(env)有可能得不到正确的值。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;今天遇到了一个奇怪的问题，有2个程序，一个是ClickOnce应用，一个是普通的C#可执行程序，都用到了一个系统环境变量，System environment variable，Machine级别的，程序中都是用的 Environment.GetEnvironmentVar
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -8928,29 +8928,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法</title>
-    <link href="http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/"/>
-    <id>http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/</id>
-    <published>2010-11-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.217Z</updated>
-    
-    <content type="html"><![CDATA[<p>前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。<br>详细请看<a href="https://support.mozilla.com/en-US/questions/763190#answer-115496" target="_blank" rel="noopener">Some parts of GMAIL no longer work after a recent update</a> 和<a href="http://kb.mozillazine.org/Dom.storage.enabled" target="_blank" rel="noopener"> Dom.storage.enabled - MozillaZine Knowledge Base</a> 。<br><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。&lt;br&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>定制C# combobox的下拉框</title>
     <link href="http://fresky.github.io/2010/11/08/customize-csharp-dropdown-list/"/>
     <id>http://fresky.github.io/2010/11/08/customize-csharp-dropdown-list/</id>
@@ -8974,6 +8951,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法</title>
+    <link href="http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/"/>
+    <id>http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/</id>
+    <published>2010-11-07T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.217Z</updated>
+    
+    <content type="html"><![CDATA[<p>前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。<br>详细请看<a href="https://support.mozilla.com/en-US/questions/763190#answer-115496" target="_blank" rel="noopener">Some parts of GMAIL no longer work after a recent update</a> 和<a href="http://kb.mozillazine.org/Dom.storage.enabled" target="_blank" rel="noopener"> Dom.storage.enabled - MozillaZine Knowledge Base</a> 。<br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。&lt;br&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -9117,29 +9117,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>法意蜜月之旅总结</title>
-    <link href="http://fresky.github.io/2010/10/09/europe-travel-summary/"/>
-    <id>http://fresky.github.io/2010/10/09/europe-travel-summary/</id>
-    <published>2010-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.214Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.blogabond.com/Promo/GetABlogMap.aspx" target="_blank" rel="noopener"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25491" border="0" alt width="450" height="300"></a></p><br><p>到达迪拜机场了，6月4日开始的蜜月之旅今天就结束了。先总结一下行程：<br>6，4 北京-迪拜-巴黎<br>6，5 凡尔赛宫<br>6，6 卢浮宫，奥赛博物馆，卢森堡公园<br>6，7 圣心教堂，凯旋门，香榭丽大街，艾菲尔铁塔<br>6，8 巴黎圣母院，老佛爷，晚上火车去阿维尼翁<br>6，9 薰衣草，红土小镇，石头城，泉水小镇<br>6，10 教皇宫，断桥<br>6，11 上午火车去尼斯，下午eve小镇，晚上尼斯海岸线<br>6，12 上午摩纳哥皇宫，赌场，下午火车去威尼斯<br>6，13 威尼斯玻璃岛，彩色岛<br>6，14 威尼斯主岛圣马可广场，教堂，总督府，叹息桥，大运河，下午火车去佛罗伦萨<br>6，15 百花大教堂，乌菲兹美术馆，老桥，菲拉格慕博物馆，晚上火车去锡耶纳<br>6，16 锡耶纳市政广场，集市，教堂，老城乱逛，晚上火车回佛罗伦萨<br>6，17 the mall逛街，下午米开朗奇罗广场，圣明托教堂，晚上火车去罗马<br>6，18 梵蒂冈博物馆，圣彼得大教堂，圣天使堡<br>6，19 斗兽场，古罗马广场，图拉真市场，卡托比利广场，卡托比利博物馆<br>6，20  圣乔瓦尼教堂，圣玛丽奥教堂，解放广场，巴贝里尼广场，人骨教堂，许愿池，万神庙，纳沃纳广场<br>6，21 波波洛广场，周边教堂，西班牙广场逛街，晚上罗马-迪拜<br>6，22 迪拜-北京 <br><br><br><br></p><br><p class="blogpress_location">Location:<a href="http://maps.google.com/maps?q=%E8%BF%AA%E6%8B%9C&amp;z=10" target="_blank" rel="noopener">迪拜</a></p><br><p><br><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.blogabond.com/Promo/GetABlogMap.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img id=&quot;imgBlogabondLogo&quot; style=&quot;position: abso
-      
-    
-    </summary>
-    
-    
-      <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
     <title>gvim编辑xml更新</title>
     <link href="http://fresky.github.io/2010/10/09/edit-xml-in-gvim/"/>
     <id>http://fresky.github.io/2010/10/09/edit-xml-in-gvim/</id>
@@ -9176,6 +9153,29 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;最近开始使用gvim，觉得很不错，可以大大的提高文本输入的效率，有兴趣的可以试试：）&lt;br&gt;如果开始使用的话，可以看看这篇文章&lt;a href=&quot;http://www.appinn.com/gvim-ahk-tip/&quot; target=&quot;_blank&quot; rel=&quot;noopene
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>法意蜜月之旅总结</title>
+    <link href="http://fresky.github.io/2010/10/09/europe-travel-summary/"/>
+    <id>http://fresky.github.io/2010/10/09/europe-travel-summary/</id>
+    <published>2010-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.214Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.blogabond.com/Promo/GetABlogMap.aspx" target="_blank" rel="noopener"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25491" border="0" alt width="450" height="300"></a></p><br><p>到达迪拜机场了，6月4日开始的蜜月之旅今天就结束了。先总结一下行程：<br>6，4 北京-迪拜-巴黎<br>6，5 凡尔赛宫<br>6，6 卢浮宫，奥赛博物馆，卢森堡公园<br>6，7 圣心教堂，凯旋门，香榭丽大街，艾菲尔铁塔<br>6，8 巴黎圣母院，老佛爷，晚上火车去阿维尼翁<br>6，9 薰衣草，红土小镇，石头城，泉水小镇<br>6，10 教皇宫，断桥<br>6，11 上午火车去尼斯，下午eve小镇，晚上尼斯海岸线<br>6，12 上午摩纳哥皇宫，赌场，下午火车去威尼斯<br>6，13 威尼斯玻璃岛，彩色岛<br>6，14 威尼斯主岛圣马可广场，教堂，总督府，叹息桥，大运河，下午火车去佛罗伦萨<br>6，15 百花大教堂，乌菲兹美术馆，老桥，菲拉格慕博物馆，晚上火车去锡耶纳<br>6，16 锡耶纳市政广场，集市，教堂，老城乱逛，晚上火车回佛罗伦萨<br>6，17 the mall逛街，下午米开朗奇罗广场，圣明托教堂，晚上火车去罗马<br>6，18 梵蒂冈博物馆，圣彼得大教堂，圣天使堡<br>6，19 斗兽场，古罗马广场，图拉真市场，卡托比利广场，卡托比利博物馆<br>6，20  圣乔瓦尼教堂，圣玛丽奥教堂，解放广场，巴贝里尼广场，人骨教堂，许愿池，万神庙，纳沃纳广场<br>6，21 波波洛广场，周边教堂，西班牙广场逛街，晚上罗马-迪拜<br>6，22 迪拜-北京 <br><br><br><br></p><br><p class="blogpress_location">Location:<a href="http://maps.google.com/maps?q=%E8%BF%AA%E6%8B%9C&amp;z=10" target="_blank" rel="noopener">迪拜</a></p><br><p><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.blogabond.com/Promo/GetABlogMap.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img id=&quot;imgBlogabondLogo&quot; style=&quot;position: abso
       
     
     </summary>

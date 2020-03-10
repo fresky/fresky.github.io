@@ -84,12 +84,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2011/01/11/length-limit-of-http-url/" title="http的url长度限制" itemprop="url">
+    <a href="/2011/01/11/where-system-environment-variables-stored-in-registry/" title="环境变量的注册表位置" itemprop="url">
   
-    <h1 itemprop="name">http的url长度限制</h1>
+    <h1 itemprop="name">环境变量的注册表位置</h1>
     
      
-           <p itemprop="description" >http的url长度是有限制的，WWW FAQs: What is the maximum length of a URL?所以不能用get的方式时在url里面放太多的东西，举个简单的例子。如果一个asp.net的页面中使用了treeview，并且treeview的enablev</p>
+           <p itemprop="description" >另外说一下环境变量在注册表中存放的位置：system environment variables: (machine)HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environmentus</p>
         
     
     <time datetime="2011-01-10T16:00:00.000Z" itemprop="datePublished">Jan 11 2011</time>
@@ -104,12 +104,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2011/01/11/GetEnvironmentVariable-issue-in-csharp/" title="C# GetEnvironmentVariable 问题" itemprop="url">
+    <a href="/2011/01/11/length-limit-of-http-url/" title="http的url长度限制" itemprop="url">
   
-    <h1 itemprop="name">C# GetEnvironmentVariable 问题</h1>
+    <h1 itemprop="name">http的url长度限制</h1>
     
      
-           <p itemprop="description" >今天遇到了一个奇怪的问题，有2个程序，一个是ClickOnce应用，一个是普通的C#可执行程序，都用到了一个系统环境变量，System environment variable，Machine级别的，程序中都是用的 Environment.GetEnvironmentVariab</p>
+           <p itemprop="description" >http的url长度是有限制的，WWW FAQs: What is the maximum length of a URL?所以不能用get的方式时在url里面放太多的东西，举个简单的例子。如果一个asp.net的页面中使用了treeview，并且treeview的enablev</p>
         
     
     <time datetime="2011-01-10T16:00:00.000Z" itemprop="datePublished">Jan 11 2011</time>
@@ -185,12 +185,17 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/" title="firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法" itemprop="url">
+    <a href="/2010/11/08/customize-csharp-dropdown-list/" title="定制C# combobox的下拉框" itemprop="url">
   
-    <h1 itemprop="name">firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法</h1>
+    <h1 itemprop="name">定制C# combobox的下拉框</h1>
     
      
-           <p itemprop="description" >前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。详细请看Som</p>
+           <p itemprop="description" >今天做了个小东西，需要定制combobox的下拉框，打开下拉框时如下图。
+
+
+选择一个后，如下图。
+
+实现的方法是需要把combobox的DrawoMode设置成OwnerDrawVariable，然后处理DrawItem事件，详见ComboBox.DrawItem Event </p>
         
     
     <time datetime="2010-11-07T16:00:00.000Z" itemprop="datePublished">Nov 8 2010</time>
@@ -205,17 +210,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2010/11/08/customize-csharp-dropdown-list/" title="定制C# combobox的下拉框" itemprop="url">
+    <a href="/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/" title="firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法" itemprop="url">
   
-    <h1 itemprop="name">定制C# combobox的下拉框</h1>
+    <h1 itemprop="name">firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法</h1>
     
      
-           <p itemprop="description" >今天做了个小东西，需要定制combobox的下拉框，打开下拉框时如下图。
-
-
-选择一个后，如下图。
-
-实现的方法是需要把combobox的DrawoMode设置成OwnerDrawVariable，然后处理DrawItem事件，详见ComboBox.DrawItem Event </p>
+           <p itemprop="description" >前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。详细请看Som</p>
         
     
     <time datetime="2010-11-07T16:00:00.000Z" itemprop="datePublished">Nov 8 2010</time>
@@ -351,26 +351,6 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2010/10/09/europe-travel-summary/" title="法意蜜月之旅总结" itemprop="url">
-  
-    <h1 itemprop="name">法意蜜月之旅总结</h1>
-    
-     
-           <p itemprop="description" >到达迪拜机场了，6月4日开始的蜜月之旅今天就结束了。先总结一下行程：6，4 北京-迪拜-巴黎6，5 凡尔赛宫6，6 卢浮宫，奥赛博物馆，卢森堡公园6，7 圣心教堂，凯旋门，香榭丽大街，艾菲尔铁塔6，8 巴黎圣母院，老佛爷，晚上火车去阿维尼翁6，9 薰衣草，红土小镇，石头城，泉水小</p>
-        
-    
-    <time datetime="2010-10-08T16:00:00.000Z" itemprop="datePublished">Oct 9 2010</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2010/10/09/edit-xml-in-gvim/" title="gvim编辑xml更新" itemprop="url">
   
     <h1 itemprop="name">gvim编辑xml更新</h1>
@@ -397,6 +377,26 @@
     
      
            <p itemprop="description" >最近开始使用gvim，觉得很不错，可以大大的提高文本输入的效率，有兴趣的可以试试：）如果开始使用的话，可以看看这篇文章 用 gVim 编辑任意窗口的文字[AHK] - 小众软件 用gvim来编辑任意窗口的文字。 这篇文章 Use gvim as an external edito</p>
+        
+    
+    <time datetime="2010-10-08T16:00:00.000Z" itemprop="datePublished">Oct 9 2010</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2010/10/09/europe-travel-summary/" title="法意蜜月之旅总结" itemprop="url">
+  
+    <h1 itemprop="name">法意蜜月之旅总结</h1>
+    
+     
+           <p itemprop="description" >到达迪拜机场了，6月4日开始的蜜月之旅今天就结束了。先总结一下行程：6，4 北京-迪拜-巴黎6，5 凡尔赛宫6，6 卢浮宫，奥赛博物馆，卢森堡公园6，7 圣心教堂，凯旋门，香榭丽大街，艾菲尔铁塔6，8 巴黎圣母院，老佛爷，晚上火车去阿维尼翁6，9 薰衣草，红土小镇，石头城，泉水小</p>
         
     
     <time datetime="2010-10-08T16:00:00.000Z" itemprop="datePublished">Oct 9 2010</time>

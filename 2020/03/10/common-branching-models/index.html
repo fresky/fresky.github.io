@@ -19,18 +19,18 @@
 <meta property="og:site_name" content="Dawei XU">
 <meta property="og:description" content="这篇文章介绍一下常用的代码分支模型，包括Git Flow，GitHub Flow和Trunk Based Devlopment。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://fresky.github.io/images/gitglow.png">
+<meta property="og:image" content="http://fresky.github.io/images/gitflow.png">
 <meta property="og:image" content="http://fresky.github.io/images/githubflow1.png">
 <meta property="og:image" content="http://fresky.github.io/images/githubflow2.png">
 <meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment.png">
 <meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_releasefromtrunk.png">
 <meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_releasefromtrunk_hotfix.png">
 <meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_branchforrelease.png">
-<meta property="og:updated_time" content="2020-03-10T11:52:59.914Z">
+<meta property="og:updated_time" content="2020-03-10T11:58:54.023Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常见的代码分支模型和比较">
 <meta name="twitter:description" content="这篇文章介绍一下常用的代码分支模型，包括Git Flow，GitHub Flow和Trunk Based Devlopment。">
-<meta name="twitter:image" content="http://fresky.github.io/images/gitglow.png">
+<meta name="twitter:image" content="http://fresky.github.io/images/gitflow.png">
 
     
     <link rel="alternative" href="/atom.xml" title="Dawei XU" type="application/atom+xml">
@@ -114,13 +114,13 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-Flow"><span class="toc-number">1.</span> <span class="toc-text">Git Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hotfix分支"><span class="toc-number">1.1.</span> <span class="toc-text">Hotfix分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Release分支"><span class="toc-number">1.2.</span> <span class="toc-text">Release分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub-Flow"><span class="toc-number">2.</span> <span class="toc-text">GitHub Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Feature分支"><span class="toc-number">2.1.</span> <span class="toc-text">Feature分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Trunk-Based-Development"><span class="toc-number">3.</span> <span class="toc-text">Trunk Based Development</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主干发布"><span class="toc-number">3.1.</span> <span class="toc-text">主干发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#release分支发布"><span class="toc-number">3.2.</span> <span class="toc-text">release分支发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于cherry-pick"><span class="toc-number">3.3.</span> <span class="toc-text">关于cherry-pick</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-Flow"><span class="toc-number">1.</span> <span class="toc-text">Git Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hotfix分支"><span class="toc-number">1.1.</span> <span class="toc-text">Hotfix分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Release分支"><span class="toc-number">1.2.</span> <span class="toc-text">Release分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub-Flow"><span class="toc-number">2.</span> <span class="toc-text">GitHub Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Feature分支"><span class="toc-number">2.1.</span> <span class="toc-text">Feature分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Trunk-Based-Development"><span class="toc-number">3.</span> <span class="toc-text">Trunk Based Development</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主干发布"><span class="toc-number">3.1.</span> <span class="toc-text">主干发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#release分支发布"><span class="toc-number">3.2.</span> <span class="toc-text">release分支发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于cherry-pick"><span class="toc-number">3.3.</span> <span class="toc-text">关于cherry-pick</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#后记"><span class="toc-number">4.</span> <span class="toc-text">后记</span></a></li></ol>
 		
 		</div>
 		
 		<p>怎么做代码分支管理是每一个项目需要面临的问题，我认为代码分支管理是由产品发布模型决定的，在满足产品发布模型的同时要尽量减少开发、测试和部署的工作量。这篇文章简单介绍一下常见的几种代码分支模型，希望能给大家怎么选择适合自己的代码分支模型带来一些帮助。</p>
 <h1 id="Git-Flow"><a href="#Git-Flow" class="headerlink" title="Git Flow"></a>Git Flow</h1><p><strong>Git Flow</strong>是在2010年的这篇文章<a href="https://nvie.com/posts/a-successful-git-branching-model/" target="_blank" rel="noopener">A successful Git branching model - GitFlow</a>中提出来了，之后被广泛采用，它的模型如下所示。</p>
-<img src="/images/gitglow.png">
+<img src="/images/gitflow.png">
 <p><strong>Git Flow</strong>有如下要点：</p>
 <ol>
 <li>主分支有两个：<strong>master</strong>是部署分支，所有已经发布的版本都在这里。<strong>develop</strong>是开发分支。</li>
@@ -171,7 +171,7 @@
 <img src="/images/trunkbaseddevelopment_branchforrelease.png">
 <p>这种发布模式就是在需要<strong>代码冻结（code freeze）</strong>的时候拉出来一个<strong>release</strong>分支，然后测试这个分支，如果遇到bug，也像上面说的一样遵循<strong>upstream first policy</strong>，就是说必须在<strong>master</strong>分支上重现这个bug，然后在<strong>master</strong>分支上fix这个bug，测试过之后再把这个fix通过cherry-pick到<strong>release</strong>分支。等产品发布之后如果遇到bug，就把这个<strong>release</strong>分支当成<strong>hotfix</strong>分支来发布hotfix，和上面一样了。</p>
 <h2 id="关于cherry-pick"><a href="#关于cherry-pick" class="headerlink" title="关于cherry-pick"></a>关于cherry-pick</h2><p>有很多关于cherry-pick的讨论，比如<a href="https://devblogs.microsoft.com/oldnewthing/20180323-01/?p=98325" target="_blank" rel="noopener">Stop cherry-picking, start merging</a>这里有一系列的讨论，有兴趣的可以看看。</p>
-<p>上面我简单介绍了一下这3种常见的分支模型，分别是<strong>Git Flow</strong>， <strong>GitHub Flow</strong>和<strong>Trunk Based Development</strong>。其实就像我之前说的，更重要是理解产品发布的策略，基于团队本身开发和测试的能力来选择一种分支策略。</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>上面我简单介绍了一下这3种常见的分支模型，分别是<strong>Git Flow</strong>， <strong>GitHub Flow</strong>和<strong>Trunk Based Development</strong>。其实就像我之前说的，更重要是理解产品发布的策略，基于团队本身开发和测试的能力来选择一种分支策略。</p>
 <p>总的来说，分支策略越简单团队的额外开销会越少，从而团队的效率会越高。如何达成简单的分支策略，很大一部分取决于产品的<strong>发布周期</strong>和<strong>版本稳定时间</strong>，归根到底取决于在发布一个产品之前我们需要花多长时间来测试。所以在我看来，提高团队的自动化测试能力，是最根本的。</p>
   
 	</div>
@@ -249,7 +249,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-Flow"><span class="toc-number">1.</span> <span class="toc-text">Git Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hotfix分支"><span class="toc-number">1.1.</span> <span class="toc-text">Hotfix分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Release分支"><span class="toc-number">1.2.</span> <span class="toc-text">Release分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub-Flow"><span class="toc-number">2.</span> <span class="toc-text">GitHub Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Feature分支"><span class="toc-number">2.1.</span> <span class="toc-text">Feature分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Trunk-Based-Development"><span class="toc-number">3.</span> <span class="toc-text">Trunk Based Development</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主干发布"><span class="toc-number">3.1.</span> <span class="toc-text">主干发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#release分支发布"><span class="toc-number">3.2.</span> <span class="toc-text">release分支发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于cherry-pick"><span class="toc-number">3.3.</span> <span class="toc-text">关于cherry-pick</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-Flow"><span class="toc-number">1.</span> <span class="toc-text">Git Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hotfix分支"><span class="toc-number">1.1.</span> <span class="toc-text">Hotfix分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Release分支"><span class="toc-number">1.2.</span> <span class="toc-text">Release分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub-Flow"><span class="toc-number">2.</span> <span class="toc-text">GitHub Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Feature分支"><span class="toc-number">2.1.</span> <span class="toc-text">Feature分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Trunk-Based-Development"><span class="toc-number">3.</span> <span class="toc-text">Trunk Based Development</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#主干发布"><span class="toc-number">3.1.</span> <span class="toc-text">主干发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#release分支发布"><span class="toc-number">3.2.</span> <span class="toc-text">release分支发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#关于cherry-pick"><span class="toc-number">3.3.</span> <span class="toc-text">关于cherry-pick</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#后记"><span class="toc-number">4.</span> <span class="toc-text">后记</span></a></li></ol>
  
   </div>
 

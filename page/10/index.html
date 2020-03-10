@@ -84,17 +84,18 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/07/08/tasks-are-not-threads/" title="TPL中的task并不是thread" itemprop="url">
+    <a href="/2013/07/09/compare-of-5-timers-in-csharp/" title="C#中5种timer的比较" itemprop="url">
   
-    <h1 itemprop="name">TPL中的task并不是thread</h1>
+    <h1 itemprop="name">C#中5种timer的比较</h1>
     
      
-           <p itemprop="description" >Tasks are not Threads - The Brain Dump用了一个非常简单直观的例子说明了task和thread并不是一回事（尽管你调用Task.Run一般会在线程池上启一个线程帮你做些事情）。  假设有个UI，我们有2个按钮，开始和结束。代码如下：  
+           <p itemprop="description" >C#中有5个timer，它们的主要区别如下：
 
-12</p>
+System.Threading.Timer&amp;nbsp; 在线程池启动一个后台任务。我前段时间写过一个关于timer的垃圾回收的需要注意一下，参见谁动了我的timer？。
+System.Windows.Forms.Timer&amp;nbs</p>
         
     
-    <time datetime="2013-07-07T16:00:00.000Z" itemprop="datePublished">Jul 8 2013</time>
+    <time datetime="2013-07-08T16:00:00.000Z" itemprop="datePublished">Jul 9 2013</time>
   </a>
 </section>
 
@@ -112,6 +113,28 @@
     
      
            <p itemprop="description" >Box Tech Blog &amp;raquo; Effective learning through code workshops介绍了Box如何用code workshop而不是code review的形式来改善代码质量。code review有2个显著的缺点：reviewer现场</p>
+        
+    
+    <time datetime="2013-07-07T16:00:00.000Z" itemprop="datePublished">Jul 8 2013</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2013/07/08/tasks-are-not-threads/" title="TPL中的task并不是thread" itemprop="url">
+  
+    <h1 itemprop="name">TPL中的task并不是thread</h1>
+    
+     
+           <p itemprop="description" >Tasks are not Threads - The Brain Dump用了一个非常简单直观的例子说明了task和thread并不是一回事（尽管你调用Task.Run一般会在线程池上启一个线程帮你做些事情）。  假设有个UI，我们有2个按钮，开始和结束。代码如下：  
+
+12</p>
         
     
     <time datetime="2013-07-07T16:00:00.000Z" itemprop="datePublished">Jul 8 2013</time>
@@ -187,13 +210,16 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/07/06/tldrlegal-opensource-license-search-engine/" title="tl;drLegal ——开源软件license的搜索引擎" itemprop="url">
+    <a href="/2013/07/06/how-to-opensource-your-code/" title="如何开源你的库" itemprop="url">
   
-    <h1 itemprop="name">tl;drLegal ——开源软件license的搜索引擎</h1>
+    <h1 itemprop="name">如何开源你的库</h1>
     
      
-           <p itemprop="description" >TLDRLegal - Open Source Licenses Explained in Plain English可以很方便查询各个开源license的总结（能做什么，不能做什么），还能比较不同的license，非常方便。
-对于经常需要检查开源软件能不能用在自己的项目中的人来</p>
+           <p itemprop="description" >我之前的博客中介绍过两篇如何做好开源软件的文章，如何传播你的代码，怎么做一个开源项目。
+今天又看到一篇不错的文章，On Open Sourcing Libraries | William DURAND。
+摘要如下：
+你的项目：
+必须有一个README文档，包含名字，描述，还有使用</p>
         
     
     <time datetime="2013-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2013</time>
@@ -208,16 +234,13 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/07/06/how-to-opensource-your-code/" title="如何开源你的库" itemprop="url">
+    <a href="/2013/07/06/tldrlegal-opensource-license-search-engine/" title="tl;drLegal ——开源软件license的搜索引擎" itemprop="url">
   
-    <h1 itemprop="name">如何开源你的库</h1>
+    <h1 itemprop="name">tl;drLegal ——开源软件license的搜索引擎</h1>
     
      
-           <p itemprop="description" >我之前的博客中介绍过两篇如何做好开源软件的文章，如何传播你的代码，怎么做一个开源项目。
-今天又看到一篇不错的文章，On Open Sourcing Libraries | William DURAND。
-摘要如下：
-你的项目：
-必须有一个README文档，包含名字，描述，还有使用</p>
+           <p itemprop="description" >TLDRLegal - Open Source Licenses Explained in Plain English可以很方便查询各个开源license的总结（能做什么，不能做什么），还能比较不同的license，非常方便。
+对于经常需要检查开源软件能不能用在自己的项目中的人来</p>
         
     
     <time datetime="2013-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2013</time>
@@ -376,26 +399,6 @@ Portable Class Libraries for Google </p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/06/27/intresting-captcha-website/" title="另一个有趣的Captcha 网站" itemprop="url">
-  
-    <h1 itemprop="name">另一个有趣的Captcha 网站</h1>
-    
-     
-           <p itemprop="description" >今天在一个网站注册时又发现了一个有趣的Captcha形式。给你一个翻转的图片，然后让你拽下面的slide bar让它回到正常的位置，很有趣。下面是提供这个Captcha的网站。minteye &amp;ndash; slide-to-fit CAPTCHA &amp;amp; Advertise</p>
-        
-    
-    <time datetime="2013-06-26T16:00:00.000Z" itemprop="datePublished">Jun 27 2013</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2013/06/27/how-to-troubleshot-sql-server/" title="遇到sql server的问题时如何排查" itemprop="url">
   
     <h1 itemprop="name">遇到sql server的问题时如何排查</h1>
@@ -416,15 +419,15 @@ Portable Class Libraries for Google </p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/06/21/honeywords-simple-way-to-avoid-password-cracking/" title="Honeywords项目——检查密码是否被破解的一种简单方法" itemprop="url">
+    <a href="/2013/06/27/intresting-captcha-website/" title="另一个有趣的Captcha 网站" itemprop="url">
   
-    <h1 itemprop="name">Honeywords项目——检查密码是否被破解的一种简单方法</h1>
+    <h1 itemprop="name">另一个有趣的Captcha 网站</h1>
     
      
-           <p itemprop="description" >Honeywords项目使用一种简单的方法来改进hash后的密码的安全性&amp;mdash;&amp;mdash;为每个账户维护一个额外的honeywords（假密码）。如果有黑客拿到了密码的文件，然后试图用brute froce的方式破解密码的话，黑客不知道他找到的是真正的密码还是honey</p>
+           <p itemprop="description" >今天在一个网站注册时又发现了一个有趣的Captcha形式。给你一个翻转的图片，然后让你拽下面的slide bar让它回到正常的位置，很有趣。下面是提供这个Captcha的网站。minteye &amp;ndash; slide-to-fit CAPTCHA &amp;amp; Advertise</p>
         
     
-    <time datetime="2013-06-20T16:00:00.000Z" itemprop="datePublished">Jun 21 2013</time>
+    <time datetime="2013-06-26T16:00:00.000Z" itemprop="datePublished">Jun 27 2013</time>
   </a>
 </section>
 
@@ -456,15 +459,15 @@ Portable Class Libraries for Google </p>
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/06/20/10-secrets-of-how-to-work-with-programmer/" title="Ken Norton和软件工程师打交道的10个秘诀" itemprop="url">
+    <a href="/2013/06/21/honeywords-simple-way-to-avoid-password-cracking/" title="Honeywords项目——检查密码是否被破解的一种简单方法" itemprop="url">
   
-    <h1 itemprop="name">Ken Norton和软件工程师打交道的10个秘诀</h1>
+    <h1 itemprop="name">Honeywords项目——检查密码是否被破解的一种简单方法</h1>
     
      
-           <p itemprop="description" >How to work with software engineers - by Ken NortonDeflect praiseAbsorb blameSweat the detailsInvolve them earlyStreamline processAlways tel</p>
+           <p itemprop="description" >Honeywords项目使用一种简单的方法来改进hash后的密码的安全性&amp;mdash;&amp;mdash;为每个账户维护一个额外的honeywords（假密码）。如果有黑客拿到了密码的文件，然后试图用brute froce的方式破解密码的话，黑客不知道他找到的是真正的密码还是honey</p>
         
     
-    <time datetime="2013-06-19T16:00:00.000Z" itemprop="datePublished">Jun 20 2013</time>
+    <time datetime="2013-06-20T16:00:00.000Z" itemprop="datePublished">Jun 21 2013</time>
   </a>
 </section>
 
@@ -511,7 +514,7 @@ Portable Class Libraries for Google </p>
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 398</p>
+  <p class="asidetitle">Total Posts: 399</p>
 </div>
 
 
@@ -521,6 +524,10 @@ Portable Class Libraries for Google </p>
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2020/03/10/common-branching-models/">常见的代码分支模型和比较</a>
+          </li>
         
           <li>
             * <a href="/2020/02/07/soft-skill-questions/">技术面试中关于软能力的问题</a>
@@ -536,10 +543,6 @@ Portable Class Libraries for Google </p>
         
           <li>
             * <a href="/2019/02/18/package-net-core-in-one-single-exe/">打包.NET Core的程序到一个单独的可执行文件</a>
-          </li>
-        
-          <li>
-            * <a href="/2018/10/10/how-to-choose-brand-color/">如何给自己的品牌选择颜色</a>
           </li>
         
       </ul>
@@ -590,7 +593,7 @@ Portable Class Libraries for Google </p>
 			
 		
 			
-				<li><a href="/tags/Development/" title="Development">Development<sup>8</sup></a></li>
+				<li><a href="/tags/Development/" title="Development">Development<sup>9</sup></a></li>
 			
 		
 			

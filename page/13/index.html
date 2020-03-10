@@ -84,6 +84,28 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2013/03/15/what-is-the-value-of-uninitialized-pointer-in-cpp/" title="没有初始化的指针会是个什么值呢？" itemprop="url">
+  
+    <h1 itemprop="name">没有初始化的指针会是个什么值呢？</h1>
+    
+     
+           <p itemprop="description" >在C++的构造函数中我们应该把所有成员变量都初始化，如果我们忘记了初始化一个成员指针，会发生什么呢？  假设有如下代码：  
+
+1234567891011121314151617181920212223class my&amp;#123;public:    my()&amp;#123;&amp;#12</p>
+        
+    
+    <time datetime="2013-03-14T16:00:00.000Z" itemprop="datePublished">Mar 15 2013</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2013/03/08/what-is-structured-exception-handling/" title="SEH（Structured Exception Handling）详细解释" itemprop="url">
   
     <h1 itemprop="name">SEH（Structured Exception Handling）详细解释</h1>
@@ -370,12 +392,14 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/02/05/online-cpp-compiler/" title="在线C++编译器" itemprop="url">
+    <a href="/2013/02/05/deadlock-caused-by-csharp-static-constructor/" title="C#中静态构造函数导致的一个deadlock" itemprop="url">
   
-    <h1 itemprop="name">在线C++编译器</h1>
+    <h1 itemprop="name">C#中静态构造函数导致的一个deadlock</h1>
     
      
-           <p itemprop="description" >在线C++编译器列举了如下网站：LiveWorkspace&amp;nbsp;(Clang 3.2, GCC 4.6.3 - 4.7.2)gcc.godbolt.org&amp;nbsp;(Clang 3.0, GCC 4.5.3 - 4.8.0 prerelease, Intel ICC 13</p>
+           <p itemprop="description" >Eric Lipper的这篇博客举了一个C#中静态构造函数导致的deadlock的例子，很有意思。代码如下：
+
+123456789101112class C&amp;#123;  static C()   &amp;#123;    // Let&#39;s run the initialization</p>
         
     
     <time datetime="2013-02-04T16:00:00.000Z" itemprop="datePublished">Feb 5 2013</time>
@@ -390,14 +414,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/02/05/deadlock-caused-by-csharp-static-constructor/" title="C#中静态构造函数导致的一个deadlock" itemprop="url">
+    <a href="/2013/02/05/online-cpp-compiler/" title="在线C++编译器" itemprop="url">
   
-    <h1 itemprop="name">C#中静态构造函数导致的一个deadlock</h1>
+    <h1 itemprop="name">在线C++编译器</h1>
     
      
-           <p itemprop="description" >Eric Lipper的这篇博客举了一个C#中静态构造函数导致的deadlock的例子，很有意思。代码如下：
-
-123456789101112class C&amp;#123;  static C()   &amp;#123;    // Let&#39;s run the initialization</p>
+           <p itemprop="description" >在线C++编译器列举了如下网站：LiveWorkspace&amp;nbsp;(Clang 3.2, GCC 4.6.3 - 4.7.2)gcc.godbolt.org&amp;nbsp;(Clang 3.0, GCC 4.5.3 - 4.8.0 prerelease, Intel ICC 13</p>
         
     
     <time datetime="2013-02-04T16:00:00.000Z" itemprop="datePublished">Feb 5 2013</time>
@@ -452,26 +474,6 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/01/21/web-developer-checklist/" title="web开发者的checklist" itemprop="url">
-  
-    <h1 itemprop="name">web开发者的checklist</h1>
-    
-     
-           <p itemprop="description" >转一个Web Developer Checklist</p>
-        
-    
-    <time datetime="2013-01-20T16:00:00.000Z" itemprop="datePublished">Jan 21 2013</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2013/01/21/get-system-info-with-windows-management-instrumentation-in-csharp/" title="C#中如何用Windows Management Instrumentation (WMI)得到系统信息" itemprop="url">
   
     <h1 itemprop="name">C#中如何用Windows Management Instrumentation (WMI)得到系统信息</h1>
@@ -507,7 +509,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 398</p>
+  <p class="asidetitle">Total Posts: 399</p>
 </div>
 
 
@@ -517,6 +519,10 @@
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2020/03/10/common-branching-models/">常见的代码分支模型和比较</a>
+          </li>
         
           <li>
             * <a href="/2020/02/07/soft-skill-questions/">技术面试中关于软能力的问题</a>
@@ -532,10 +538,6 @@
         
           <li>
             * <a href="/2019/02/18/package-net-core-in-one-single-exe/">打包.NET Core的程序到一个单独的可执行文件</a>
-          </li>
-        
-          <li>
-            * <a href="/2018/10/10/how-to-choose-brand-color/">如何给自己的品牌选择颜色</a>
           </li>
         
       </ul>
@@ -586,7 +588,7 @@
 			
 		
 			
-				<li><a href="/tags/Development/" title="Development">Development<sup>8</sup></a></li>
+				<li><a href="/tags/Development/" title="Development">Development<sup>9</sup></a></li>
 			
 		
 			

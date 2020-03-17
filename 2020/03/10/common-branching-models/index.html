@@ -26,7 +26,7 @@
 <meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_releasefromtrunk.png">
 <meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_releasefromtrunk_hotfix.png">
 <meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_branchforrelease.png">
-<meta property="og:updated_time" content="2020-03-10T11:58:54.023Z">
+<meta property="og:updated_time" content="2020-03-10T12:02:38.641Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常见的代码分支模型和比较">
 <meta name="twitter:description" content="这篇文章介绍一下常用的代码分支模型，包括Git Flow，GitHub Flow和Trunk Based Devlopment。">
@@ -172,7 +172,7 @@
 <p>这种发布模式就是在需要<strong>代码冻结（code freeze）</strong>的时候拉出来一个<strong>release</strong>分支，然后测试这个分支，如果遇到bug，也像上面说的一样遵循<strong>upstream first policy</strong>，就是说必须在<strong>master</strong>分支上重现这个bug，然后在<strong>master</strong>分支上fix这个bug，测试过之后再把这个fix通过cherry-pick到<strong>release</strong>分支。等产品发布之后如果遇到bug，就把这个<strong>release</strong>分支当成<strong>hotfix</strong>分支来发布hotfix，和上面一样了。</p>
 <h2 id="关于cherry-pick"><a href="#关于cherry-pick" class="headerlink" title="关于cherry-pick"></a>关于cherry-pick</h2><p>有很多关于cherry-pick的讨论，比如<a href="https://devblogs.microsoft.com/oldnewthing/20180323-01/?p=98325" target="_blank" rel="noopener">Stop cherry-picking, start merging</a>这里有一系列的讨论，有兴趣的可以看看。</p>
 <h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>上面我简单介绍了一下这3种常见的分支模型，分别是<strong>Git Flow</strong>， <strong>GitHub Flow</strong>和<strong>Trunk Based Development</strong>。其实就像我之前说的，更重要是理解产品发布的策略，基于团队本身开发和测试的能力来选择一种分支策略。</p>
-<p>总的来说，分支策略越简单团队的额外开销会越少，从而团队的效率会越高。如何达成简单的分支策略，很大一部分取决于产品的<strong>发布周期</strong>和<strong>版本稳定时间</strong>，归根到底取决于在发布一个产品之前我们需要花多长时间来测试。所以在我看来，提高团队的自动化测试能力，是最根本的。</p>
+<p>总的来说，分支策略越简单团队的额外开销会越少，从而团队的效率会越高。如何达成简单的分支策略，很大一部分取决于产品的<strong>发布周期</strong>和<strong>版本稳定时间</strong>，归根到底取决于在发布一个产品之前我们需要花多长时间来测试。所以在我看来，<strong>提高团队的自动化测试能力是最根本的</strong>。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -226,6 +226,14 @@
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2020/03/16/one-on-one-talk/" title="如何做老板和员工的一对一的沟通">
+  <strong>上一篇：</strong><br/>
+  <span>
+  如何做老板和员工的一对一的沟通</span>
+</a>
+</div>
+
 
 <div class="next">
 <a href="/2020/02/07/soft-skill-questions/"  title="技术面试中关于软能力的问题">
@@ -263,7 +271,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 399</p>
+  <p class="asidetitle">Total Posts: 400</p>
 </div>
 
 
@@ -273,6 +281,10 @@
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2020/03/16/one-on-one-talk/">如何做老板和员工的一对一的沟通</a>
+          </li>
         
           <li>
             * <a href="/2020/03/10/common-branching-models/">常见的代码分支模型和比较</a>
@@ -288,10 +300,6 @@
         
           <li>
             * <a href="/2019/05/29/code-search-with-opengrok/">用opengrok搭建代码搜索引擎</a>
-          </li>
-        
-          <li>
-            * <a href="/2019/02/18/package-net-core-in-one-single-exe/">打包.NET Core的程序到一个单独的可执行文件</a>
           </li>
         
       </ul>

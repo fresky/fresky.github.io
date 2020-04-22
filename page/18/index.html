@@ -84,6 +84,27 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2012/09/28/remove-xml-declaration-and-xml-namespace-in-c#-xml-serializer/" title="C# XMLSerialize 去掉xml声明和xml namespace" itemprop="url">
+  
+    <h1 itemprop="name">C# XMLSerialize 去掉xml声明和xml namespace</h1>
+    
+     
+           <p itemprop="description" >下面的代码可以在C# XMLSerialize 时去掉xml声明和xml namespace。
+123456789101112private static void OutputXml(string xmlFilePath, ObjectToSerialize  objectTo</p>
+        
+    
+    <time datetime="2012-09-27T16:00:00.000Z" itemprop="datePublished">Sep 28 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2012/09/10/run-csharp-in-browser/" title="在浏览器中运行C#" itemprop="url">
   
     <h1 itemprop="name">在浏览器中运行C#</h1>
@@ -104,12 +125,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/09/10/buildzipper-zip-build-result-for-csharp-project/" title="BuildZipper——给c#项目添加postbuildevent，每次build完把build结果做个zip放在solution目录。" itemprop="url">
+    <a href="/2012/09/10/freeverything-simple-disk-cleanup-tool-based-on-everything/" title="FreeEverything-基于everything的一个简易磁盘清理工具" itemprop="url">
   
-    <h1 itemprop="name">BuildZipper——给c#项目添加postbuildevent，每次build完把build结果做个zip放在solution目录。</h1>
+    <h1 itemprop="name">FreeEverything-基于everything的一个简易磁盘清理工具</h1>
     
      
-           <p itemprop="description" >最近几次发布项目到github上，都手动把最后build的结果做个zip，传上去，供直接下载binary用。觉得很费事，就写了个小程序，BuildZipper。源代码在github上，运行文件这里下载。用了DotNetZip Library来做zip，用了C#的Project来操</p>
+           <p itemprop="description" >用Visual Studiode attach to process调试时，无论你有没有设置symbol path，Visual Studio都会把下载的symbol乱放，特别是会放到solution下面，导致文件夹很乱，所以写了一个小工具来删除这些symbol文件夹。同时也能删</p>
         
     
     <time datetime="2012-09-09T16:00:00.000Z" itemprop="datePublished">Sep 10 2012</time>
@@ -124,12 +145,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/09/10/freeverything-simple-disk-cleanup-tool-based-on-everything/" title="FreeEverything-基于everything的一个简易磁盘清理工具" itemprop="url">
+    <a href="/2012/09/10/buildzipper-zip-build-result-for-csharp-project/" title="BuildZipper——给c#项目添加postbuildevent，每次build完把build结果做个zip放在solution目录。" itemprop="url">
   
-    <h1 itemprop="name">FreeEverything-基于everything的一个简易磁盘清理工具</h1>
+    <h1 itemprop="name">BuildZipper——给c#项目添加postbuildevent，每次build完把build结果做个zip放在solution目录。</h1>
     
      
-           <p itemprop="description" >用Visual Studiode attach to process调试时，无论你有没有设置symbol path，Visual Studio都会把下载的symbol乱放，特别是会放到solution下面，导致文件夹很乱，所以写了一个小工具来删除这些symbol文件夹。同时也能删</p>
+           <p itemprop="description" >最近几次发布项目到github上，都手动把最后build的结果做个zip，传上去，供直接下载binary用。觉得很费事，就写了个小程序，BuildZipper。源代码在github上，运行文件这里下载。用了DotNetZip Library来做zip，用了C#的Project来操</p>
         
     
     <time datetime="2012-09-09T16:00:00.000Z" itemprop="datePublished">Sep 10 2012</time>
@@ -412,12 +433,13 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/run-sql-command-in-bat-file/" title="在bat中执行sql命令（for sql server）" itemprop="url">
+    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
   
-    <h1 itemprop="name">在bat中执行sql命令（for sql server）</h1>
+    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
     
      
-           <p itemprop="description" >用sqlcmd Utility可以在bat中执行sql sever命令，很方便。</p>
+           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
+123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -453,34 +475,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/not-everything-derives-from-object-in-csharp/" title="C#的cast问题" itemprop="url">
+    <a href="/2012/07/17/run-sql-command-in-bat-file/" title="在bat中执行sql命令（for sql server）" itemprop="url">
   
-    <h1 itemprop="name">C#的cast问题</h1>
+    <h1 itemprop="name">在bat中执行sql命令（for sql server）</h1>
     
      
-           <p itemprop="description" >这篇Not everything derives from object - Fabulous Adventures In Coding - Site Home - MSDN Blogs文章讲了为什么在C#里面
-12345var enumerable = from bool b </p>
-        
-    
-    <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
-  
-    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
-    
-     
-           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
-123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
+           <p itemprop="description" >用sqlcmd Utility可以在bat中执行sql sever命令，很方便。</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -494,7 +494,7 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 
 
   <nav id="page-nav" class="clearfix unexpand">
-    <a class="extend prev" rel="prev" href="/page/17/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="page-number" href="/page/17/">17</a><span class="page-number current">18</span><a class="page-number" href="/page/19/">19</a><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" href="/page/19/">Next<span></span></a>
+    <a class="extend prev" rel="prev" href="/page/17/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/16/">16</a><a class="page-number" href="/page/17/">17</a><span class="page-number current">18</span><a class="page-number" href="/page/19/">19</a><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/19/">Next<span></span></a>
   </nav>
 
 </div>
@@ -510,7 +510,7 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 400</p>
+  <p class="asidetitle">Total Posts: 401</p>
 </div>
 
 
@@ -520,6 +520,10 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2020/04/19/microservices-challenges/">微服务带来的好处和挑战</a>
+          </li>
         
           <li>
             * <a href="/2020/03/16/one-on-one-talk/">如何做老板和员工的一对一的沟通</a>
@@ -535,10 +539,6 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
         
           <li>
             * <a href="/2019/10/25/visual-vocabulary/">来自金融时报的可视化辞典</a>
-          </li>
-        
-          <li>
-            * <a href="/2019/05/29/code-search-with-opengrok/">用opengrok搭建代码搜索引擎</a>
           </li>
         
       </ul>
@@ -601,11 +601,11 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 			
 		
 			
-				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
+				<li><a href="/tags/Design/" title="Design">Design<sup>5</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Design/" title="Design">Design<sup>4</sup></a></li>
+				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
 			
 		
 			

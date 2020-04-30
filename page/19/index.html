@@ -84,13 +84,13 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/not-everything-derives-from-object-in-csharp/" title="C#的cast问题" itemprop="url">
+    <a href="/2012/07/17/disable-single-tree-node-in-csharp/" title="禁用C#的树的单个节点" itemprop="url">
   
-    <h1 itemprop="name">C#的cast问题</h1>
+    <h1 itemprop="name">禁用C#的树的单个节点</h1>
     
      
-           <p itemprop="description" >这篇Not everything derives from object - Fabulous Adventures In Coding - Site Home - MSDN Blogs文章讲了为什么在C#里面
-12345var enumerable = from bool b </p>
+           <p itemprop="description" >C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。
+1234private void Tree_BeforeSelect(object sender, Tre</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -111,6 +111,27 @@
     
      
            <p itemprop="description" >用sqlcmd Utility可以在bat中执行sql sever命令，很方便。</p>
+        
+    
+    <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2012/07/17/not-everything-derives-from-object-in-csharp/" title="C#的cast问题" itemprop="url">
+  
+    <h1 itemprop="name">C#的cast问题</h1>
+    
+     
+           <p itemprop="description" >这篇Not everything derives from object - Fabulous Adventures In Coding - Site Home - MSDN Blogs文章讲了为什么在C#里面
+12345var enumerable = from bool b </p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -209,26 +230,6 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/" title="使用windbg通过vtable找到优化后的this指针" itemprop="url">
-  
-    <h1 itemprop="name">使用windbg通过vtable找到优化后的this指针</h1>
-    
-     
-           <p itemprop="description" >如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。1. kbn# ChildEBP? RetAddr? Args to Child00 1d61fad0 7c90d21a 7c8023f1 00000000 </p>
-        
-    
-    <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2012/07/10/mozilla-thimble-online-html-editor/" title="Mozilla Thimble，在线html，javascript编辑器" itemprop="url">
   
     <h1 itemprop="name">Mozilla Thimble，在线html，javascript编辑器</h1>
@@ -255,6 +256,26 @@
     
      
            <p itemprop="description" >如果在C++中使用Macro，要注意：1. parameter要加括号： #define ADD(x,y) ((x)+(y))2. result要加括号： #define ADD(x,y) ((x)+(y))3. 多行要加花括号： #define INCREASE(a, b) {</p>
+        
+    
+    <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/" title="使用windbg通过vtable找到优化后的this指针" itemprop="url">
+  
+    <h1 itemprop="name">使用windbg通过vtable找到优化后的this指针</h1>
+    
+     
+           <p itemprop="description" >如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。1. kbn# ChildEBP? RetAddr? Args to Child00 1d61fad0 7c90d21a 7c8023f1 00000000 </p>
         
     
     <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
@@ -310,12 +331,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/05/microsoft-fakes-framework/" title="Microsoft Fakes框架" itemprop="url">
+    <a href="/2012/07/05/where-do-i-start-learn-windows-8/" title="从哪里开始学习Windows 8？（zz）" itemprop="url">
   
-    <h1 itemprop="name">Microsoft Fakes框架</h1>
+    <h1 itemprop="name">从哪里开始学习Windows 8？（zz）</h1>
     
      
-           <p itemprop="description" >Visual studio 2012RC中自带了一个Microsoft Fakes框架，可以用来mock .NET的任何方法，包括非virtual和static的方法。（Moq只能mock virutal的方法），从下面的链接可以找到更多的信息。Isolating Unit Te</p>
+           <p itemprop="description" >Where do I start to learn Windows 8? | Robert MacLean</p>
         
     
     <time datetime="2012-07-04T16:00:00.000Z" itemprop="datePublished">Jul 5 2012</time>
@@ -330,12 +351,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/05/where-do-i-start-learn-windows-8/" title="从哪里开始学习Windows 8？（zz）" itemprop="url">
+    <a href="/2012/07/05/microsoft-fakes-framework/" title="Microsoft Fakes框架" itemprop="url">
   
-    <h1 itemprop="name">从哪里开始学习Windows 8？（zz）</h1>
+    <h1 itemprop="name">Microsoft Fakes框架</h1>
     
      
-           <p itemprop="description" >Where do I start to learn Windows 8? | Robert MacLean</p>
+           <p itemprop="description" >Visual studio 2012RC中自带了一个Microsoft Fakes框架，可以用来mock .NET的任何方法，包括非virtual和static的方法。（Moq只能mock virutal的方法），从下面的链接可以找到更多的信息。Isolating Unit Te</p>
         
     
     <time datetime="2012-07-04T16:00:00.000Z" itemprop="datePublished">Jul 5 2012</time>
@@ -469,26 +490,6 @@
 
 
 
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2011/06/23/dot-net-2-timer-elapsed-event-will-catch-all-exception-for-you/" title=".NET 2.0的Timer elapsed event 会自动catch住所有的exception" itemprop="url">
-  
-    <h1 itemprop="name">.NET 2.0的Timer elapsed event 会自动catch住所有的exception</h1>
-    
-     
-           <p itemprop="description" >今天调试一个Access Violation的问题，用VS attach到程序上，打开所有的exception，结果无意中抓到了一个NullRefereceException，从一个Timer.Elapsed的event handler中抛了出来，很奇怪我没有try catch，</p>
-        
-    
-    <time datetime="2011-06-22T16:00:00.000Z" itemprop="datePublished">Jun 23 2011</time>
-  </a>
-</section>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix unexpand">
     <a class="extend prev" rel="prev" href="/page/18/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/20/">Next<span></span></a>
@@ -507,7 +508,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 402</p>
+  <p class="asidetitle">Total Posts: 403</p>
 </div>
 
 
@@ -517,6 +518,10 @@
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2020/04/30/what-does-engineering-director-do/">技术负责人都需要做什么</a>
+          </li>
         
           <li>
             * <a href="/2020/04/29/from-engineer-to-manager/">从码农到老板</a>
@@ -532,10 +537,6 @@
         
           <li>
             * <a href="/2020/03/10/common-branching-models/">常见的代码分支模型和比较</a>
-          </li>
-        
-          <li>
-            * <a href="/2020/02/07/soft-skill-questions/">技术面试中关于软能力的问题</a>
           </li>
         
       </ul>
@@ -626,7 +627,7 @@
 			
 		
 			
-				<li><a href="/tags/Installer/" title="Installer">Installer<sup>2</sup></a></li>
+				<li><a href="/tags/Manage/" title="Manage">Manage<sup>3</sup></a></li>
 			
 		
 		</ul>

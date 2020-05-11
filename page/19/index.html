@@ -105,6 +105,27 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
+  
+    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
+    
+     
+           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
+123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
+        
+    
+    <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2012/07/17/run-sql-command-in-bat-file/" title="在bat中执行sql命令（for sql server）" itemprop="url">
   
     <h1 itemprop="name">在bat中执行sql命令（for sql server）</h1>
@@ -168,14 +189,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/" title="如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方" itemprop="url">
+    <a href="/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/" title="C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别" itemprop="url">
   
-    <h1 itemprop="name">如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</h1>
+    <h1 itemprop="name">C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别</h1>
     
      
-           <p itemprop="description" >这个问题visual studio - In VS, make print-on-breakpoint use the console - Stack Overflow说明了怎么做。我结合之前这篇文章做了个小例子，放在github上。几个截图：
-
-定制debug显示信息。&amp;nbs</p>
+           <p itemprop="description" >这里c# - #if DEBUG vs. Conditional(“DEBUG”) - Stack Overflow解释了两者的区别。摘要如下：#if DEBUG: 发生在编译时，release编译出的IL不包含if中的代码[Conditional(“DEBUG”)]: 发生在运</p>
         
     
     <time datetime="2012-07-12T16:00:00.000Z" itemprop="datePublished">Jul 13 2012</time>
@@ -190,12 +209,14 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/" title="C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别" itemprop="url">
+    <a href="/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/" title="如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方" itemprop="url">
   
-    <h1 itemprop="name">C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别</h1>
+    <h1 itemprop="name">如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</h1>
     
      
-           <p itemprop="description" >这里c# - #if DEBUG vs. Conditional(“DEBUG”) - Stack Overflow解释了两者的区别。摘要如下：#if DEBUG: 发生在编译时，release编译出的IL不包含if中的代码[Conditional(“DEBUG”)]: 发生在运</p>
+           <p itemprop="description" >这个问题visual studio - In VS, make print-on-breakpoint use the console - Stack Overflow说明了怎么做。我结合之前这篇文章做了个小例子，放在github上。几个截图：
+
+定制debug显示信息。&amp;nbs</p>
         
     
     <time datetime="2012-07-12T16:00:00.000Z" itemprop="datePublished">Jul 13 2012</time>
@@ -468,28 +489,6 @@
 
 
 
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2011/06/24/difference-between-push-back-and-resize-in-cpp/" title="C++的vector::push_back()和vector::resize()比较" itemprop="url">
-  
-    <h1 itemprop="name">C++的vector::push_back()和vector::resize()比较</h1>
-    
-     
-           <p itemprop="description" >今天看别的code写着下面几行来往vector里面添加一个元素。
-1234vector&amp;lt;Type&amp;gt; v;long size = (long)v.size();v.resize(size+1);v[size] = newValue;
-觉得挺奇怪，就去查了查resize(</p>
-        
-    
-    <time datetime="2011-06-23T16:00:00.000Z" itemprop="datePublished">Jun 24 2011</time>
-  </a>
-</section>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix unexpand">
     <a class="extend prev" rel="prev" href="/page/18/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/20/">Next<span></span></a>
@@ -508,7 +507,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 403</p>
+  <p class="asidetitle">Total Posts: 404</p>
 </div>
 
 
@@ -518,6 +517,10 @@
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2020/05/05/remote-work/">远程办公的一些建议</a>
+          </li>
         
           <li>
             * <a href="/2020/04/30/what-does-engineering-director-do/">技术负责人都需要做什么</a>
@@ -533,10 +536,6 @@
         
           <li>
             * <a href="/2020/03/16/one-on-one-talk/">如何做老板和员工的一对一的沟通</a>
-          </li>
-        
-          <li>
-            * <a href="/2020/03/10/common-branching-models/">常见的代码分支模型和比较</a>
           </li>
         
       </ul>
@@ -555,7 +554,7 @@
 			
 		
 			
-				<li><a href="/tags/Tool/" title="Tool">Tool<sup>91</sup></a></li>
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>92</sup></a></li>
 			
 		
 			
@@ -611,6 +610,10 @@
 			
 		
 			
+				<li><a href="/tags/Manage/" title="Manage">Manage<sup>4</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
 			
 		
@@ -624,10 +627,6 @@
 		
 			
 				<li><a href="/tags/Opensource/" title="Opensource">Opensource<sup>3</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Manage/" title="Manage">Manage<sup>3</sup></a></li>
 			
 		
 		</ul>

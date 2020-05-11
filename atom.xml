@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fresky.github.io/"/>
-  <updated>2020-04-30T10:00:20.509Z</updated>
+  <updated>2020-05-11T05:43:01.695Z</updated>
   <id>http://fresky.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>远程办公的一些建议</title>
+    <link href="http://fresky.github.io/2020/05/05/remote-work/"/>
+    <id>http://fresky.github.io/2020/05/05/remote-work/</id>
+    <published>2020-05-05T04:19:19.000Z</published>
+    <updated>2020-05-11T05:43:01.695Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="环境相关"><a href="#环境相关" class="headerlink" title="环境相关"></a>环境相关</h1><ul><li>充足睡眠，多喝水，吃健康食品</li><li>建立你的办公空间，合适的桌子，椅子，显示器等</li><li>如果需要的话，准备耳机麦克风摄像头</li><li>找到什么会让自己分心并且制定计划解决，比如划分独立的工作空间</li><li>做一些有仪式感的事情，比如在开工之前穿上正式一点的衣服</li></ul><h1 id="时间管理相关"><a href="#时间管理相关" class="headerlink" title="时间管理相关"></a>时间管理相关</h1><ul><li>制定（灵活的）工作时间和日程表，因为在家办公可以更灵活，比如晚上工作一段时间，下午和孩子玩</li><li>制定任务清单，划分小的里程碑，确保每天上午都能至少完成一个</li><li>避免多任务</li><li>定时运动，比如番茄工作法，每工作30分钟休息一下</li><li>流出专门时间吃饭，做家庭事务，比如做饭打扫卫生之类的</li></ul><h1 id="沟通相关"><a href="#沟通相关" class="headerlink" title="沟通相关"></a>沟通相关</h1><ul><li>让别人知道自己在做什么，什么进展，比如每天的站会</li><li>工作时间让别人可以找到你</li><li>寻求别人对你工作的反馈</li><li>过度沟通</li></ul><h1 id="开会相关"><a href="#开会相关" class="headerlink" title="开会相关"></a>开会相关</h1><ul><li>问别人问题后等待几秒钟，别人可能需要打开麦克风</li><li>很多人参加的会议中关掉自己的麦克风</li><li>给别人做演讲时事先打开好你要展示的网页，幻灯片等</li><li>在会议结束之前趁所有人都在做总结和任务项</li><li>如果你是会议的主持人需要制定大家的发言顺序避免多个人同时说话（面对面时我们通常可以用身体语言来达到这个目的，但是电话会议需要你说出来）</li><li>在会议中避免同时问多个人问题（和上面相关）</li><li>如果你是会议的主持人，如果有人发言被打断后你要记下来，等其他人说完后你要确保他没有被漏掉</li><li>如果大家都允许的话把会议录下来，在发会议总结的时候把视频地址附上</li><li>准时，和与会人员达成共识，避免迟到，如果不能参加至少提前一天通知会议发起人</li><li>发言准确简洁，电话会议更容易超时</li><li>重要信息需要得到别人的确认</li><li>询问别人的意见，电话会议你看不到别人的身体语言告诉你他有问题</li><li>会议之前发出日程表，让大家都知道这个会议的目的是什么</li><li>会议之前和别人分享幻灯片，在演讲的时候告诉别人你在那一页</li><li>及时发出会议纪要</li><li>区别需要大家一起讨论的（同步的）和可以会前分别准备的（异步的）</li><li>制定时间限制</li><li>避免紧挨着的会议，最好订会议的时候结束在还剩5分钟到整点或者半点</li><li>可以在会议中留一些时间讨论非工作的事情</li><li>在会议中使用文字作为另一个沟通工具，比如告诉别人你有问题，或者说你同意</li></ul><h1 id="团队管理相关"><a href="#团队管理相关" class="headerlink" title="团队管理相关"></a>团队管理相关</h1><ul><li>制作一个远程办公的教程，可以从微软的这个幻灯片<a href="https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2020/04/Work-from-home-guide.pptx" target="_blank" rel="noopener">Microsoft Work-from-Home Guide (customer version)</a>开始</li><li>建立团队的信任，“你怎么保证人们都在工作？”是一个和远程办公没关系的问题</li><li>确保团队在做正确的事，保持大家目标一致</li><li>肯定别人的工作</li><li>通过每天站会，一对一会议等方式保持大家互相联系</li><li>把决定（和原因）写下来，让所有人看得到</li><li>考虑组织在线团建活动</li><li>建立一个闲聊的管道</li></ul><h1 id="工具相关"><a href="#工具相关" class="headerlink" title="工具相关"></a>工具相关</h1><ul><li>确保你的手机上至少有一种沟通工具，当电脑出问题时可以救急</li><li>使用在线交流(聊天，开会）的工具<ul><li>Skype</li><li>Teams</li><li>Slack</li><li>Zoom</li></ul></li><li>使用在线协同工作工具<ul><li>Office 365</li><li>Google Docs  </li><li>Visual Studio或者Visual Studio Code的Live Share功能来多人协作编程调试</li><li>InVision做UX设计</li><li>CodePen等在线代码编辑器</li></ul></li><li>项目管理工具<ul><li>Trello, Jira, Azure DevOps等</li></ul></li></ul><h1 id="参考阅读"><a href="#参考阅读" class="headerlink" title="参考阅读"></a>参考阅读</h1><p>本文参考了下面这些文章： </p><p><a href="https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2020/04/Work-from-home-guide.pptx" target="_blank" rel="noopener">Microsoft Work-from-Home Guide (customer version)</a><br><a href="https://medium.com/swlh/how-to-create-a-work-from-home-schedule-83d6b6097cb5" target="_blank" rel="noopener">Tips for Creating a Work From Home Schedule</a><br><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/03/18/making-the-switch-to-remote-work-5-things-weve-learned/" target="_blank" rel="noopener">2 weeks in: what we’ve learned about remote work </a><br><a href="https://www.hanselman.com/blog/30TipsForSuccessfulCommunicationAsARemoteWorker.aspx" target="_blank" rel="noopener">30 Tips for Successful Communication as a Remote Worker</a><br><a href="https://www.hanselman.com/blog/BeingARemoteWorkerSucksLongLiveTheRemoteWorker.aspx" target="_blank" rel="noopener">Being a Remote Worker Sucks - Long Live the Remote Worker</a><br><a href="https://www.hanselman.com/blog/LoveInATimeOfCoronaVirusTipsTricksAndBestPracticesForWorkingRemotely.aspx" target="_blank" rel="noopener">Love in a time of Corona Virus - Tips, Tricks and Best Practices for Working Remotely</a><br><a href="https://www.thoughtworks.com/insights/blog/building-team-camaraderie-when-remote-working" target="_blank" rel="noopener">Building team camaraderie when remote working</a><br><a href="https://www.jrothman.com/mpd/2020/04/optimize-for-respectful-remote-meetings" target="_blank" rel="noopener">Optimize for Respectful Remote Meetings</a><br><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/17/key-findings-remote-work-lessons-colleagues-china/" target="_blank" rel="noopener">Key findings about remote work: lessons from our colleagues in China </a><br><a href="https://stephenhaunts.com/2020/04/16/a-guide-to-successful-remote-working-and-working-from-home/" target="_blank" rel="noopener">A Guide to Successful Remote Working and Working from Home</a><br><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/16/5-tips-working-from-home-children/" target="_blank" rel="noopener">5 tips for working from home with children</a><br><a href="https://devblogs.microsoft.com/visualstudio/for-all-things-remote-development/" target="_blank" rel="noopener">A guide to remote development with Live Share<br>Filisha Shah</a><br><a href="https://www.thoughtworks.com/insights/blog/dont-stop-collaborating-just-because-youre-remote" target="_blank" rel="noopener">Don’t stop collaborating just because you’re remote</a><br><a href="https://www.danclarke.com/2020-wfh" target="_blank" rel="noopener">Working From Home - Tips and Tricks</a><br><a href="https://blog.trello.com/tools-for-remote-work-success-infographic" target="_blank" rel="noopener">When To Use Which Tools For Remote Work Success</a><br><a href="https://www.telerik.com/blogs/tips-time-management-working-from-home" target="_blank" rel="noopener">Tips for Time Management and Working from Home</a><br><a href="https://blog.trello.com/leaders-offer-encouragement-support-on-remote-teams" target="_blank" rel="noopener">5 Ways Leaders Can Offer Encouragement And Emotional Support On A Remote Team</a><br><a href="https://blog.trello.com/work-from-home-guides" target="_blank" rel="noopener">Working From Home? 12 Guides To Help Navigate The Remote Life</a><br><a href="https://stackoverflow.blog/2020/03/12/working-from-home-tips-from-our-experienced-remote-employees/" target="_blank" rel="noopener">Working from home tips from our experienced remote employees</a><br><a href="https://blog.postman.com/tips-for-working-from-home/" target="_blank" rel="noopener">Postman’s Top 10 Tips for Working from Home</a><br><a href="https://haacked.com/archive/2020/03/03/how-to-work-from-home/" target="_blank" rel="noopener">How To Work From Home</a><br><a href="https://haacked.com/archive/2020/03/05/how-to-lead-from-home/" target="_blank" rel="noopener">How to Lead From Home</a><br><a href="https://about.gitlab.com/blog/2019/12/30/mastering-the-all-remote-environment/" target="_blank" rel="noopener">Mastering the all-remote environment: My top 5 challenges and solutions</a><br><a href="https://opensource.com/article/20/3/open-source-working-home" target="_blank" rel="noopener">Top 10 open source tools for working from home</a><br><a href="https://martinfowler.com/articles/effective-video-calls.html" target="_blank" rel="noopener">How to do effective video calls</a><br><a href="https://www.telerik.com/blogs/5-tips-for-staying-productive-during-covid-19" target="_blank" rel="noopener">5 Tips for Staying Productive During COVID-19</a><br><a href="https://blog.trello.com/long-distance-leadership" target="_blank" rel="noopener">Long-Distance Leadership: How To Effectively Manage A Team From Afar</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;环境相关&quot;&gt;&lt;a href=&quot;#环境相关&quot; class=&quot;headerlink&quot; title=&quot;环境相关&quot;&gt;&lt;/a&gt;环境相关&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;充足睡眠，多喝水，吃健康食品&lt;/li&gt;
+&lt;li&gt;建立你的办公空间，合适的桌子，椅子，显示器等&lt;/li&gt;
+&lt;li&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="Manage" scheme="http://fresky.github.io/tags/Manage/"/>
+    
+  </entry>
   
   <entry>
     <title>技术负责人都需要做什么</title>
@@ -684,9 +712,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="Web" scheme="http://fresky.github.io/tags/Web/"/>
     
@@ -708,9 +736,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
@@ -735,9 +763,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -783,9 +811,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -1134,9 +1162,9 @@
     </summary>
     
     
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -1181,9 +1209,9 @@
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -1286,9 +1314,9 @@
     </summary>
     
     
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -1331,9 +1359,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
@@ -1380,9 +1408,9 @@
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -1404,9 +1432,9 @@
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -1426,9 +1454,9 @@
     </summary>
     
     
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -1448,9 +1476,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -2354,9 +2382,9 @@
     </summary>
     
     
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -2396,9 +2424,9 @@
     </summary>
     
     
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -2624,9 +2652,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -2754,9 +2782,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -2776,9 +2804,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -2906,9 +2934,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -2970,9 +2998,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -3776,9 +3804,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
     
@@ -3803,9 +3831,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -3974,29 +4002,6 @@
   </entry>
   
   <entry>
-    <title>遇到奇怪的C#/C/C++或者Java的bug可以去问问Coverity</title>
-    <link href="http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/"/>
-    <id>http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/</id>
-    <published>2013-07-17T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.271Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.coverity.com/" target="_blank" rel="noopener">Coverity</a>7月16号在博客<a href="https://communities.coverity.com/blogs/development-testing-blog/" target="_blank" rel="noopener">Ask The Bug Guys</a>中说以后遇到奇怪的C#/C/C++或者Java的bug可以给<a href="mailto:TheBugGuys@coverity.com" target="_blank" rel="noopener">TheBugGuys@coverity.com</a>发邮件。然后这些问题就会到一些大牛手上：</p><ul><li>&nbsp;&nbsp;&nbsp; Eric Lippert, our Godfather of C# code</li><li>&nbsp;&nbsp;&nbsp; Jon Jarboe, our C/C++ guru</li><li>&nbsp;&nbsp;&nbsp; Tim Alper, our resident Java authority</li></ul><p>之后他们会把其中一些有趣的问题放到他们一个新的系列博客Ask The Bug Guys上。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.coverity.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Coverity&lt;/a&gt;7月16号在博客&lt;a href=&quot;https://communities.coverity.com/blogs/dev
-      
-    
-    </summary>
-    
-    
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
     <title>用ChooseALicense帮自己选一个开源license，然后用AddALicense给自己的github自动加上license文件</title>
     <link href="http://fresky.github.io/2013/07/18/choosealicense-addalicense-github-license/"/>
     <id>http://fresky.github.io/2013/07/18/choosealicense-addalicense-github-license/</id>
@@ -4018,6 +4023,29 @@
       <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
       <category term="Github" scheme="http://fresky.github.io/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>遇到奇怪的C#/C/C++或者Java的bug可以去问问Coverity</title>
+    <link href="http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/"/>
+    <id>http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/</id>
+    <published>2013-07-17T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.271Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.coverity.com/" target="_blank" rel="noopener">Coverity</a>7月16号在博客<a href="https://communities.coverity.com/blogs/development-testing-blog/" target="_blank" rel="noopener">Ask The Bug Guys</a>中说以后遇到奇怪的C#/C/C++或者Java的bug可以给<a href="mailto:TheBugGuys@coverity.com" target="_blank" rel="noopener">TheBugGuys@coverity.com</a>发邮件。然后这些问题就会到一些大牛手上：</p><ul><li>&nbsp;&nbsp;&nbsp; Eric Lippert, our Godfather of C# code</li><li>&nbsp;&nbsp;&nbsp; Jon Jarboe, our C/C++ guru</li><li>&nbsp;&nbsp;&nbsp; Tim Alper, our resident Java authority</li></ul><p>之后他们会把其中一些有趣的问题放到他们一个新的系列博客Ask The Bug Guys上。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.coverity.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Coverity&lt;/a&gt;7月16号在博客&lt;a href=&quot;https://communities.coverity.com/blogs/dev
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -4093,29 +4121,6 @@
   </entry>
   
   <entry>
-    <title>推荐一个markdown编辑器-MarkdownPad</title>
-    <link href="http://fresky.github.io/2013/07/12/markdown-editor-markdownpad/"/>
-    <id>http://fresky.github.io/2013/07/12/markdown-editor-markdownpad/</id>
-    <published>2013-07-11T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.269Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p><a href="http://markdownpad.com/" target="_blank" rel="noopener">MarkdownPad - The Markdown Editor for Windows</a>是一个很不错的windows下的markdown的编辑器，对于我这种总是记不住各种语法的人来说，非常方便。</p><p>免费的版本已经很不错了。如果升级到pro可以支持GitHub Flavored Markdown。</p><blockquote><img src="http://markdownpad.com/img/markdownpad2.png" alt width="941" height="674"><br></blockquote><p></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://markdownpad.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MarkdownPad - The Markdown Editor for Windows&lt;/a&gt;是一个很不错的windows下的
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>微软提供的API的各个版本之间的区别</title>
     <link href="http://fresky.github.io/2013/07/12/api-difference-of-microsoft-apis/"/>
     <id>http://fresky.github.io/2013/07/12/api-difference-of-microsoft-apis/</id>
@@ -4158,6 +4163,29 @@
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>推荐一个markdown编辑器-MarkdownPad</title>
+    <link href="http://fresky.github.io/2013/07/12/markdown-editor-markdownpad/"/>
+    <id>http://fresky.github.io/2013/07/12/markdown-editor-markdownpad/</id>
+    <published>2013-07-11T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.269Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p><a href="http://markdownpad.com/" target="_blank" rel="noopener">MarkdownPad - The Markdown Editor for Windows</a>是一个很不错的windows下的markdown的编辑器，对于我这种总是记不住各种语法的人来说，非常方便。</p><p>免费的版本已经很不错了。如果升级到pro可以支持GitHub Flavored Markdown。</p><blockquote><img src="http://markdownpad.com/img/markdownpad2.png" alt width="941" height="674"><br></blockquote><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://markdownpad.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;MarkdownPad - The Markdown Editor for Windows&lt;/a&gt;是一个很不错的windows下的
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -4349,29 +4377,6 @@
   </entry>
   
   <entry>
-    <title>如何开源你的库</title>
-    <link href="http://fresky.github.io/2013/07/06/how-to-opensource-your-code/"/>
-    <id>http://fresky.github.io/2013/07/06/how-to-opensource-your-code/</id>
-    <published>2013-07-05T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.267Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p>我之前的博客中介绍过两篇如何做好开源软件的文章，<a href="/2013/06/21/how-to-spread-your-code/">如何传播你的代码</a>，<a href="/2013/01/05/how-to-start-open-source-project/">怎么做一个开源项目</a>。</p><p></p><p></p><p>今天又看到一篇不错的文章，<a href="http://williamdurand.fr/2013/07/04/on-open-sourcing-libraries/" target="_blank" rel="noopener">On Open Sourcing Libraries | William DURAND</a>。</p><p></p><p></p><p>摘要如下：</p><p></p><p></p><p><strong><em>你的项目：</em></strong></p><p></p><ol><br><li>必须有一个README文档，包含名字，描述，还有<strong>使用方法</strong>，<strong>安装说明</strong>，<strong>如何参与</strong>，<strong>测试</strong>和<strong>License</strong>。</li><br><li>必须有一个可见的license文件。</li><br><li>必须经过测试。</li><br><li>必须和你的社区习惯保持一致</li><br></ol><br><p><em><strong>你：</strong></em></p><br><ol><br><li>需要反馈。</li><br><li>必须友好，热情。</li><br><li>应该让别人加入。</li><br></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;我之前的博客中介绍过两篇如何做好开源软件的文章，&lt;a href=&quot;/2013/06/21/how-to-spread-your-code/&quot;&gt;如何传播你的代码&lt;/a&gt;，&lt;a href=&quot;/2013/01/05/how-to-start-open-source-
-      
-    
-    </summary>
-    
-    
-      <category term="Opensource" scheme="http://fresky.github.io/tags/Opensource/"/>
-    
-  </entry>
-  
-  <entry>
     <title>tl;drLegal ——开源软件license的搜索引擎</title>
     <link href="http://fresky.github.io/2013/07/06/tldrlegal-opensource-license-search-engine/"/>
     <id>http://fresky.github.io/2013/07/06/tldrlegal-opensource-license-search-engine/</id>
@@ -4397,6 +4402,29 @@
   </entry>
   
   <entry>
+    <title>如何开源你的库</title>
+    <link href="http://fresky.github.io/2013/07/06/how-to-opensource-your-code/"/>
+    <id>http://fresky.github.io/2013/07/06/how-to-opensource-your-code/</id>
+    <published>2013-07-05T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.267Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p>我之前的博客中介绍过两篇如何做好开源软件的文章，<a href="/2013/06/21/how-to-spread-your-code/">如何传播你的代码</a>，<a href="/2013/01/05/how-to-start-open-source-project/">怎么做一个开源项目</a>。</p><p></p><p></p><p>今天又看到一篇不错的文章，<a href="http://williamdurand.fr/2013/07/04/on-open-sourcing-libraries/" target="_blank" rel="noopener">On Open Sourcing Libraries | William DURAND</a>。</p><p></p><p></p><p>摘要如下：</p><p></p><p></p><p><strong><em>你的项目：</em></strong></p><p></p><ol><br><li>必须有一个README文档，包含名字，描述，还有<strong>使用方法</strong>，<strong>安装说明</strong>，<strong>如何参与</strong>，<strong>测试</strong>和<strong>License</strong>。</li><br><li>必须有一个可见的license文件。</li><br><li>必须经过测试。</li><br><li>必须和你的社区习惯保持一致</li><br></ol><br><p><em><strong>你：</strong></em></p><br><ol><br><li>需要反馈。</li><br><li>必须友好，热情。</li><br><li>应该让别人加入。</li><br></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;我之前的博客中介绍过两篇如何做好开源软件的文章，&lt;a href=&quot;/2013/06/21/how-to-spread-your-code/&quot;&gt;如何传播你的代码&lt;/a&gt;，&lt;a href=&quot;/2013/01/05/how-to-start-open-source-
+      
+    
+    </summary>
+    
+    
+      <category term="Opensource" scheme="http://fresky.github.io/tags/Opensource/"/>
+    
+  </entry>
+  
+  <entry>
     <title>google API的.NET库</title>
     <link href="http://fresky.github.io/2013/07/04/dot-net-library-of-google-api/"/>
     <id>http://fresky.github.io/2013/07/04/dot-net-library-of-google-api/</id>
@@ -4416,9 +4444,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -4492,6 +4520,29 @@
   </entry>
   
   <entry>
+    <title>Windows的应用管理工具 PortableApps，Chocolatey和Ninite</title>
+    <link href="http://fresky.github.io/2013/06/28/windows-application-management-tools/"/>
+    <id>http://fresky.github.io/2013/06/28/windows-application-management-tools/</id>
+    <published>2013-06-27T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>以前为了让我的firefox变成portable的，我使用了<a href="http://portableapps.com/" target="_blank" rel="noopener">PortableApps</a>，它不只是做软件的绿色版，而且也是一个软件的管理平台，可以通过它来管理软件的更新，挺方便的。</p><br><p>前段时间试用ScriptCS（参见我的博客<a href="/2013/05/16/use-csharp-as-script-language/">把C#当作脚本语言来用</a>），又使用了<a href="http://chocolatey.org/" target="_blank" rel="noopener">Chocolatey</a>，它是一个类似<a href="http://nuget.org/" target="_blank" rel="noopener">NuGet</a>的包管理工具，可以理解NuGet管理你的项目级别的包，但是Chocolatey管理Windows系统级别的包。类似<a href="http://ninite.com/" target="_blank" rel="noopener">Ninite</a>，它是另外一个很方便的应用管理工具。</p><br><p>有了这些软件的帮助，不必每回装软件或者更新软件都跑到软件的官网，寻找下载地址了。可以节省很多时间。如果还没用过，可以试试。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;以前为了让我的firefox变成portable的，我使用了&lt;a href=&quot;http://portableapps.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PortableApps&lt;/a&gt;，它不只是做软件的绿色版，而且也是一个软件的管理平
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何定制Windows系统右键菜单</title>
     <link href="http://fresky.github.io/2013/06/28/how-to-customize-windows-context-menu/"/>
     <id>http://fresky.github.io/2013/06/28/how-to-customize-windows-context-menu/</id>
@@ -4513,29 +4564,6 @@
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows的应用管理工具 PortableApps，Chocolatey和Ninite</title>
-    <link href="http://fresky.github.io/2013/06/28/windows-application-management-tools/"/>
-    <id>http://fresky.github.io/2013/06/28/windows-application-management-tools/</id>
-    <published>2013-06-27T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.265Z</updated>
-    
-    <content type="html"><![CDATA[<p>以前为了让我的firefox变成portable的，我使用了<a href="http://portableapps.com/" target="_blank" rel="noopener">PortableApps</a>，它不只是做软件的绿色版，而且也是一个软件的管理平台，可以通过它来管理软件的更新，挺方便的。</p><br><p>前段时间试用ScriptCS（参见我的博客<a href="/2013/05/16/use-csharp-as-script-language/">把C#当作脚本语言来用</a>），又使用了<a href="http://chocolatey.org/" target="_blank" rel="noopener">Chocolatey</a>，它是一个类似<a href="http://nuget.org/" target="_blank" rel="noopener">NuGet</a>的包管理工具，可以理解NuGet管理你的项目级别的包，但是Chocolatey管理Windows系统级别的包。类似<a href="http://ninite.com/" target="_blank" rel="noopener">Ninite</a>，它是另外一个很方便的应用管理工具。</p><br><p>有了这些软件的帮助，不必每回装软件或者更新软件都跑到软件的官网，寻找下载地址了。可以节省很多时间。如果还没用过，可以试试。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;以前为了让我的firefox变成portable的，我使用了&lt;a href=&quot;http://portableapps.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PortableApps&lt;/a&gt;，它不只是做软件的绿色版，而且也是一个软件的管理平
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -4657,6 +4685,29 @@
   </entry>
   
   <entry>
+    <title>Ken Norton和软件工程师打交道的10个秘诀</title>
+    <link href="http://fresky.github.io/2013/06/20/10-secrets-of-how-to-work-with-programmer/"/>
+    <id>http://fresky.github.io/2013/06/20/10-secrets-of-how-to-work-with-programmer/</id>
+    <published>2013-06-19T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.263Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://www.kennethnorton.com/essays/how-to-work-with-software-engineers.html#ftnt1" target="_blank" rel="noopener">How to work with software engineers - by Ken Norton</a></p><ol><li><em>Deflect</em> praise</li><li><em>Absorb</em> blame</li><li><em>Sweat</em> the details</li><li>Involve them <em>early</em></li><li><em>Streamline</em> process</li><li><em>Always</em> tell the reasons</li><li>Never commit <em>without</em> them</li><li><em>Respect</em> their time</li><li>Be <em>specific</em></li><li><em>Trust</em> them</li></ol><p>And finally…<em>Always</em> bring the donuts</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://www.kennethnorton.com/essays/how-to-work-with-software-engineers.html#ftnt1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to work 
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
     <title>谁动了我的timer？C#的垃圾回收和调试</title>
     <link href="http://fresky.github.io/2013/06/20/where-is-my-timer-csharp-gc/"/>
     <id>http://fresky.github.io/2013/06/20/where-is-my-timer-csharp-gc/</id>
@@ -4678,29 +4729,6 @@
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ken Norton和软件工程师打交道的10个秘诀</title>
-    <link href="http://fresky.github.io/2013/06/20/10-secrets-of-how-to-work-with-programmer/"/>
-    <id>http://fresky.github.io/2013/06/20/10-secrets-of-how-to-work-with-programmer/</id>
-    <published>2013-06-19T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.263Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://www.kennethnorton.com/essays/how-to-work-with-software-engineers.html#ftnt1" target="_blank" rel="noopener">How to work with software engineers - by Ken Norton</a></p><ol><li><em>Deflect</em> praise</li><li><em>Absorb</em> blame</li><li><em>Sweat</em> the details</li><li>Involve them <em>early</em></li><li><em>Streamline</em> process</li><li><em>Always</em> tell the reasons</li><li>Never commit <em>without</em> them</li><li><em>Respect</em> their time</li><li>Be <em>specific</em></li><li><em>Trust</em> them</li></ol><p>And finally…<em>Always</em> bring the donuts</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://www.kennethnorton.com/essays/how-to-work-with-software-engineers.html#ftnt1&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to work 
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -4769,32 +4797,9 @@
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
-  </entry>
-  
-  <entry>
-    <title>网站设计中常见的几个错误</title>
-    <link href="http://fresky.github.io/2013/06/14/common-mistakes-of-website/"/>
-    <id>http://fresky.github.io/2013/06/14/common-mistakes-of-website/</id>
-    <published>2013-06-13T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.262Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p>Scott Hanselman在他的博客<a href="http://www.hanselman.com/blog/StopDoingInternetWrong.aspx" target="_blank" rel="noopener">Stop Doing Internet Wrong</a>上列举了几个网站设计中常见的错误。</p>  <ol>   <li>自动重定向到mobile页面。现在手机都这么先进，不如让用户选他是想看mobile页面还是正常页面。 </li>    <li>在浏览器中让用户打开app。 </li>    <li>巨大的广告。 </li>    <li>Label没有和checkbox关联，用户只能点那个小小的checkbox。其实如下的简单的html就能把label和checkbox关联起来。 （Scott在原文中有个typo，应该是小写的n）</li>    <p></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Which fruit would you like for lunch?<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"fruit"</span> <span class="attr">id</span>=<span class="string">"banana"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"banana"</span>&gt;</span>Banana<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"fruit"</span> <span class="attr">id</span>=<span class="string">"None"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"none"</span>&gt;</span>None<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>  <li>链接不好使。</li>  <li>点国旗来选择语言。其实在http的request里面有accept-language，可以用这个。</li>  <li>让用户输入邮编和省份。其实有很多<a href="http://stackoverflow.com/a/492978/304115" target="_blank" rel="noopener">美国邮编API</a>可以做这件事。我也查了查，有很多web service提供中国的邮编查询，比如<a href="http://webservice.webxml.com.cn/WebServices/ChinaZipSearchWebService.asmx" target="_blank" rel="noopener">这个</a>。</li>  <li>通过设置高度和宽度来把一个巨大的图片放在页面上。（其实用户还是得下载它）你可以用<a href="http://pnggauntlet.com/" target="_blank" rel="noopener">PNGGauntlet</a>或者<a href="http://advsys.net/ken/utils.htm" target="_blank" rel="noopener">PNGOUT</a>来压缩你的png。</li><p>  <li>应该通过重定向等技术让用户更容易访问你的网站。比如<a href="http://www.example.com" target="_blank" rel="noopener">www.example.com</a>和example.com，或者/和/default.html.</li><br></p></ol><p></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;Scott Hanselman在他的博客&lt;a href=&quot;http://www.hanselman.com/blog/StopDoingInternetWrong.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Stop Doing 
-      
-    
-    </summary>
-    
-    
-      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -4818,6 +4823,29 @@
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站设计中常见的几个错误</title>
+    <link href="http://fresky.github.io/2013/06/14/common-mistakes-of-website/"/>
+    <id>http://fresky.github.io/2013/06/14/common-mistakes-of-website/</id>
+    <published>2013-06-13T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.262Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p>Scott Hanselman在他的博客<a href="http://www.hanselman.com/blog/StopDoingInternetWrong.aspx" target="_blank" rel="noopener">Stop Doing Internet Wrong</a>上列举了几个网站设计中常见的错误。</p>  <ol>   <li>自动重定向到mobile页面。现在手机都这么先进，不如让用户选他是想看mobile页面还是正常页面。 </li>    <li>在浏览器中让用户打开app。 </li>    <li>巨大的广告。 </li>    <li>Label没有和checkbox关联，用户只能点那个小小的checkbox。其实如下的简单的html就能把label和checkbox关联起来。 （Scott在原文中有个typo，应该是小写的n）</li>    <p></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>Which fruit would you like for lunch?<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"fruit"</span> <span class="attr">id</span>=<span class="string">"banana"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"banana"</span>&gt;</span>Banana<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"fruit"</span> <span class="attr">id</span>=<span class="string">"None"</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"none"</span>&gt;</span>None<span class="tag">&lt;/<span class="name">label</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br></pre></td></tr></table></figure>  <li>链接不好使。</li>  <li>点国旗来选择语言。其实在http的request里面有accept-language，可以用这个。</li>  <li>让用户输入邮编和省份。其实有很多<a href="http://stackoverflow.com/a/492978/304115" target="_blank" rel="noopener">美国邮编API</a>可以做这件事。我也查了查，有很多web service提供中国的邮编查询，比如<a href="http://webservice.webxml.com.cn/WebServices/ChinaZipSearchWebService.asmx" target="_blank" rel="noopener">这个</a>。</li>  <li>通过设置高度和宽度来把一个巨大的图片放在页面上。（其实用户还是得下载它）你可以用<a href="http://pnggauntlet.com/" target="_blank" rel="noopener">PNGGauntlet</a>或者<a href="http://advsys.net/ken/utils.htm" target="_blank" rel="noopener">PNGOUT</a>来压缩你的png。</li><p>  <li>应该通过重定向等技术让用户更容易访问你的网站。比如<a href="http://www.example.com" target="_blank" rel="noopener">www.example.com</a>和example.com，或者/和/default.html.</li><br></p></ol><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;Scott Hanselman在他的博客&lt;a href=&quot;http://www.hanselman.com/blog/StopDoingInternetWrong.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Stop Doing 
+      
+    
+    </summary>
+    
+    
+      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
   </entry>
   
@@ -4896,29 +4924,6 @@
   </entry>
   
   <entry>
-    <title>常见的算法的时间和空间复杂度</title>
-    <link href="http://fresky.github.io/2013/06/07/complexity-for-common-algorithms/"/>
-    <id>http://fresky.github.io/2013/06/07/complexity-for-common-algorithms/</id>
-    <published>2013-06-06T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.260Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p><a href="http://bigocheatsheet.com/" target="_blank" rel="noopener">Big-O Algorithm Complexity Cheat Sheet</a> 列出了常见的算法的时间和空间复杂度，非常直观。</p>  <p>转载到了这里，大家可以看看。</p>  <p>&#160;</p>  <table id="legend" class="table table-bordered table-striped" border="1"><tbody>     <tr>       <td><code class="green">Good</code></td>        <td><code class="yellow">Fair</code></td>        <td><code class="red">Poor</code></td>     </tr>   </tbody></table>  <h2 id="searching">Searching</h2>  <table class="table table-bordered table-striped" border="1"><thead>     <tr>       <th>Algorithm</th>        <th>Data Structure</th>        <th colspan="2">Time Complexity</th>        <th colspan="3">Space Complexity</th>     </tr>      <tr>       <th></th>        <th></th>        <th>Average</th>        <th>Worst</th>        <th>Worst</th>     </tr>   </thead><tbody>     <tr>       <td><a href="http://en.wikipedia.org/wiki/Depth-first_search" target="_blank" rel="noopener">Depth First Search (DFS)</a></td>        <td>Graph of |V| vertices and |E| edges</td>        <td><code>-</code></td>        <td><code class="green">O(|E| + |V|)</code></td>        <td><code class="green">O(|V|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Breadth-first_search" target="_blank" rel="noopener">Breadth First Search (BFS)</a></td>        <td>Graph of |V| vertices and |E| edges</td>        <td><code>-</code></td>        <td><code class="green">O(|E| + |V|)</code></td>        <td><code class="green">O(|V|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank" rel="noopener">Binary search</a></td>        <td>Sorted array of n elements</td>        <td><code class="green">O(log(n))</code> </td>        <td><code class="green">O(log(n))</code> </td>        <td><code class="green">O(1)</code> </td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Brute-force_search" target="_blank" rel="noopener">Linear (Brute Force)</a></td>        <td>Array</td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Dijkstra's_algorithm" target="_blank" rel="noopener">Shortest path by Dijkstra,            <br>using a Min-heap as priority queue</a></td>        <td>Graph with |V| vertices and |E| edges</td>        <td><code class="yellow">O((|V| + |E|) log |V|)</code></td>        <td><code class="yellow">O((|V| + |E|) log |V|)</code></td>        <td><code class="yellow">O(|V|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Dijkstra's_algorithm" target="_blank" rel="noopener">Shortest path by Dijkstra,            <br>using an unsorted array as priority queue</a></td>        <td>Graph with |V| vertices and |E| edges</td>        <td><code class="yellow">O(|V|^2)</code></td>        <td><code class="yellow">O(|V|^2)</code></td>        <td><code class="yellow">O(|V|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm" target="_blank" rel="noopener">Shortest path by Bellman-Ford</a></td>        <td>Graph with |V| vertices and |E| edges</td>        <td><code class="yellow">O(|V||E|)</code></td>        <td><code class="yellow">O(|V||E|)</code></td>        <td><code class="yellow">O(|V|)</code></td>     </tr>   </tbody></table>  <h2 id="sorting">Sorting</h2>  <table class="table table-bordered table-striped" border="1" table="table"><thead>     <tr>       <th>Algorithm</th>        <th>Data Structure</th>        <th colspan="3">Time Complexity</th>        <th colspan="3">Worst Case Auxiliary Space Complexity</th>     </tr>      <tr>       <th></th>        <th></th>        <th>Best</th>        <th>Average</th>        <th>Worst</th>        <th>Worst</th>     </tr>   </thead><tbody>     <tr>       <td><a href="http://en.wikipedia.org/wiki/Quicksort" target="_blank" rel="noopener">Quicksort</a></td>        <td>Array</td>        <td><code class="yellow">O(n log(n))</code></td>        <td><code class="green">O(n log(n))</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Merge_sort" target="_blank" rel="noopener">Mergesort</a></td>        <td>Array</td>        <td><code class="yellow">O(n log(n))</code></td>        <td><code class="green">O(n log(n))</code></td>        <td><code class="green">O(n log(n))</code></td>        <td><code class="red">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Heapsort" target="_blank" rel="noopener">Heapsort</a></td>        <td>Array</td>        <td><code class="yellow">O(n log(n))</code></td>        <td><code class="green">O(n log(n))</code></td>        <td><code class="green">O(n log(n))</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Bubble_sort" target="_blank" rel="noopener">Bubble Sort</a></td>        <td>Array</td>        <td><code class="green">O(n)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Insertion_sort" target="_blank" rel="noopener">Insertion Sort</a></td>        <td>Array</td>        <td><code class="green">O(n)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Selection_sort" target="_blank" rel="noopener">Select Sort</a></td>        <td>Array</td>        <td><code class="red">O(n^2)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a title="Only for integers with range k" href="http://en.wikipedia.org/wiki/Bucket_sort" rel="noopener" target="_blank">Bucket Sort</a></td>        <td>Array</td>        <td><code class="green">O(n+k)</code></td>        <td><code class="green">O(n+k)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="yellow">O(nk)</code></td>     </tr>      <tr>       <td><a title="Constant number of digits &#39;k&#39;" href="http://en.wikipedia.org/wiki/Radix_sort" rel="noopener" target="_blank">Radix Sort</a></td>        <td>Array</td>        <td><code class="green">O(nk)</code></td>        <td><code class="green">O(nk)</code></td>        <td><code class="green">O(nk)</code></td>        <td><code class="yellow">O(n+k)</code></td>     </tr>   </tbody></table>  <h2 id="data-structures">Data Structures</h2>  <table class="table table-bordered table-striped" border="1"><thead>     <tr>       <th>Data Structure</th>        <th colspan="8">Time Complexity</th>        <th>Space Complexity</th>     </tr>      <tr>       <th></th>        <th colspan="4">Average</th>        <th colspan="4">Worst</th>        <th>Worst</th>     </tr>      <tr>       <th></th>        <th>Indexing</th>        <th>Search</th>        <th>Insertion</th>        <th>Deletion</th>        <th>Indexing</th>        <th>Search</th>        <th>Insertion</th>        <th>Deletion</th>        <th></th>     </tr>   </thead><tbody>     <tr>       <td><a href="http://en.wikipedia.org/wiki/Array_data_structure" target="_blank" rel="noopener">Basic Array</a></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code>-</code></td>        <td><code>-</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code>-</code></td>        <td><code>-</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Dynamic_array" target="_blank" rel="noopener">Dynamic Array</a></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Singly_linked_list#Singly_linked_lists" target="_blank" rel="noopener">Singly-Linked List</a></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Doubly_linked_list" target="_blank" rel="noopener">Doubly-Linked List</a></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Skip_list" target="_blank" rel="noopener">Skip List</a></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n log(n))</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Hash_table" target="_blank" rel="noopener">Hash Table</a></td>        <td><code>-</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code>-</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Binary_search_tree" target="_blank" rel="noopener">Binary Search Tree</a></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="https://en.wikipedia.org/wiki/Cartesian_tree" target="_blank" rel="noopener">Cartresian Tree</a></td>        <td><code>-</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code>-</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/B_tree" target="_blank" rel="noopener">B-Tree</a></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Red-black_tree" target="_blank" rel="noopener">Red-Black Tree</a></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="https://en.wikipedia.org/wiki/Splay_tree" target="_blank" rel="noopener">Splay Tree</a></td>        <td><code>-</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code>-</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/AVL_tree" target="_blank" rel="noopener">AVL Tree</a></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>   </tbody></table>  <h2 id="heaps">Heaps</h2>  <table class="table table-bordered table-striped" border="1"><thead>     <tr>       <th>Heaps</th>        <th colspan="7">Time Complexity</th>     </tr>      <tr>       <th></th>        <th>Heapify</th>        <th>Find Max</th>        <th>Extract Max</th>        <th>Increase Key</th>        <th>Insert</th>        <th>Delete</th>        <th>Merge</th>        <th></th>     </tr>   </thead><tbody>     <tr>       <td><a href="http://en.wikipedia.org/wiki/Linked_list" target="_blank" rel="noopener">Linked List (sorted)</a></td>        <td><code>-</code></td> <!-- heapify -->        <td><code class="green">O(1)</code></td> <!-- Find max -->        <td><code class="green">O(1)</code></td> <!-- Extract max -->        <td><code class="red">O(n)</code></td> <!-- Increase -->        <td><code class="red">O(n)</code></td> <!-- insert -->        <td><code class="green">O(1)</code></td> <!-- delete -->        <td><code class="red">O(m+n)</code></td> <!-- merge --></tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Linked_list" target="_blank" rel="noopener">Linked List (unsorted)</a></td>        <td><code>-</code></td> <!-- heapify -->        <td><code class="red">O(n)</code></td> <!-- Find max -->        <td><code class="red">O(n)</code></td> <!-- Extract max -->        <td><code class="green">O(1)</code></td> <!-- Increase -->        <td><code class="green">O(1)</code></td> <!-- insert -->        <td><code class="green">O(1)</code></td> <!-- delete -->        <td><code class="green">O(1)</code></td> <!-- merge --></tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Binary_heap" target="_blank" rel="noopener">Binary Heap</a></td>        <td><code class="yellow">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="red">O(m+n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Binomial_heap" target="_blank" rel="noopener">Binomial Heap</a></td>        <td><code>-</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Fibonacci_heap" target="_blank" rel="noopener">Fibonacci Heap</a></td>        <td><code>-</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow" title="Amortized" rel="tooltip">O(log(n))<em></em></code></td>        <td><code class="green" title="Amortized" rel="tooltip">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow" title="Amortized" rel="tooltip">O(log(n))<em></em></code></td>        <td><code class="green">O(1)</code></td>     </tr>   </tbody></table>  <h2 id="graphs">Graphs</h2>  <table class="table table-bordered table-striped" border="1"><tbody>     <tr>       <th>Node / Edge Management</th>        <th>Storage</th>        <th>Add Vertex</th>        <th>Add Edge</th>        <th>Remove Vertex</th>        <th>Remove Edge</th>        <th>Query</th>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Adjacency_list" target="_blank" rel="noopener">Adjacency list</a></td>        <td><code class="yellow">O(|V|+|E|)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow">O(|V| + |E|)</code></td>        <td><code class="yellow">O(|E|)</code></td>        <td><code class="yellow">O(|V|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Incidence_list" target="_blank" rel="noopener">Incidence list</a></td>        <td><code class="yellow">O(|V|+|E|)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow">O(|E|)</code></td>        <td><code class="yellow">O(|E|)</code></td>        <td><code class="yellow">O(|E|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Adjacency_matrix" target="_blank" rel="noopener">Adjacency matrix</a></td>        <td><code class="red">O(|V|^2)</code></td>        <td><code class="red">O(|V|^2)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(|V|^2)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Incidence_matrix" target="_blank" rel="noopener">Incidence matrix</a></td>        <td><code class="red">O(|V| ⋅ |E|)</code></td>        <td><code class="red">O(|V| ⋅ |E|)</code></td>        <td><code class="red">O(|V| ⋅ |E|)</code></td>        <td><code class="red">O(|V| ⋅ |E|)</code></td>        <td><code class="red">O(|V| ⋅ |E|)</code></td>        <td><code class="yellow">O(|E|)</code></td>     </tr>   </tbody></table>  <h2 id="growth">Notation for asymptotic growth</h2>  <table class="table table-bordered table-striped" border="1"><tbody>     <tr>       <th>letter</th>        <th>bound</th>        <th>growth</th>     </tr>      <tr>       <td>(theta) Θ</td>        <td>upper and lower, tight<a href="#footnote-1"><sup>[1]</sup></a></td>        <td>equal<a href="#footnote-1"><sup>[2]</sup></a></td>     </tr>      <tr>       <td>(big-oh) O</td>        <td>upper, tightness unknown</td>        <td>less than or equal<a href="#footnote-1"><sup>[3]</sup></a></td>     </tr>      <tr>       <td>(small-oh) o</td>        <td>upper, not tight</td>        <td>less than</td>     </tr>      <tr>       <td>(big omega) Ω</td>        <td>lower, tightness unknown</td>        <td>greater than or equal</td>     </tr>      <tr>       <td>(small omega) ω</td>        <td>lower, not tight</td>        <td>greater than</td>     </tr>   </tbody></table>  <p id="footnote-1">[1] Big O is the upper bound, while Omega is the lower bound. Theta requires both Big O and Omega, so that’s why it’s referred to as a tight bound (it must be both the upper and lower bound). For example, an algorithm taking Omega(n log n) takes at least n log n time but has no upper limit. An algorithm taking Theta(n log n) is far preferential since it takes AT LEAST n log n (Omega n log n) and NO MORE THAN n log n (Big O n log n).<sup><a href="http://stackoverflow.com/a/464081/412916" target="_blank" rel="noopener">SO</a></sup></p>  <p id="footnote-2">[2] f(x)=Θ(g(n)) means f (the running time of the algorithm) grows exactly like g when n (input size) gets larger. In other words, the growth rate of f(x) is asymptotically proportional to g(n).</p>  <p id="footnote-1">[3] Same thing. Here the growth rate is no faster than g(n). big-oh is the most useful because represents the worst-case behavior.</p> In short, if algorithm is <strong> then its performance is </strong>   <table class="table table-bordered table-striped" border="1"><tbody>     <tr>       <th>algorithm</th>        <th>performance</th>     </tr>      <tr>       <td>o(n)</td>        <td>&lt; n</td>     </tr>      <tr>       <td>O(n)</td>        <td>≤ n</td>     </tr>      <tr>       <td>Θ(n)</td>        <td>= n</td>     </tr>      <tr>       <td>Ω(n)</td>        <td>≥ n</td>     </tr>      <tr>       <td>ω(n)</td>        <td>&gt; n</td>     </tr>   </tbody></table>  <div id="middle-ad"><script type="text/javascript">&lt;!–<br>google_ad_client = “ca-pub-8154832549041429”;<br>/</em> BigO Middle */<br>google_ad_slot = “4018097420”;<br>google_ad_width = 728;<br>google_ad_height = 90;<br>//–&gt;<br></script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"><br></script></div>  <h2 id="chart">Big-O Complexity Chart</h2> <img title="Big O Complexity Graph" alt="Big O Complexity Graph" src="http://bigocheatsheet.com/img/big-o-complexity.png">   <div id="contribute-container">   <h2>Contribute</h2>   <a href="https://github.com/ericdrowell/BigOCheatSheet/blob/master/Tables.html" target="_blank" rel="noopener">Edit these tables!</a>     <br>    <br>    <p>Authors:</p>    <ol>     <li><a href="https://github.com/ericdrowell" target="_blank" rel="noopener">Eric Rowell</a> </li>      <li><a href="https://github.com/qpleple" target="_blank" rel="noopener">Quentin Pleple</a> </li>      <li><a href="https://github.com/ndizazzo" target="_blank" rel="noopener">Nick Dizazzo</a> </li>      <li><a href="https://github.com/vault" target="_blank" rel="noopener">Michael Abed</a> </li>      <li><a href="https://github.com/agfor" target="_blank" rel="noopener">Adam Forsyth</a> </li>      <li><a href="https://github.com/jay754" target="_blank" rel="noopener">Jay Engineer</a> </li>      <li><a href="https://github.com/jdavis" target="_blank" rel="noopener">Josh Davis</a> </li>      <li><a href="https://github.com/makosblade" target="_blank" rel="noopener">makosblade</a> </li>      <li><a href="https://github.com/j4n0" target="_blank" rel="noopener">Alejandro Ramirez</a> </li>      <li><a href="https://github.com/jfriedly" target="_blank" rel="noopener">Joel Friedly</a> </li>      <li><a href="https://github.com/sharpobject" target="_blank" rel="noopener">Robert Burke</a> </li>      <li><a href="https://github.com/wiz3kid" target="_blank" rel="noopener">David Dorfman</a> </li>      <li><a href="https://github.com/elefevre" target="_blank" rel="noopener">Eric Lefevre-Ardant</a> </li>      <li><a href="https://github.com/thomasahle" target="_blank" rel="noopener">Thomas Dybdahl Ahle</a> </li>   </ol> </div><p></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://bigocheatsheet.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Big-O Algorithm Complexity Cheat Sheet&lt;/a&gt; 列出了常见的算法的时间和空间复杂度，非
-      
-    
-    </summary>
-    
-    
-      <category term="Algorithm" scheme="http://fresky.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#的强迫执行域Constrained Execution Regions(CERs)</title>
     <link href="http://fresky.github.io/2013/06/07/constrained-execution-regions-in-csharp/"/>
     <id>http://fresky.github.io/2013/06/07/constrained-execution-regions-in-csharp/</id>
@@ -4940,6 +4945,29 @@
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常见的算法的时间和空间复杂度</title>
+    <link href="http://fresky.github.io/2013/06/07/complexity-for-common-algorithms/"/>
+    <id>http://fresky.github.io/2013/06/07/complexity-for-common-algorithms/</id>
+    <published>2013-06-06T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.260Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p><a href="http://bigocheatsheet.com/" target="_blank" rel="noopener">Big-O Algorithm Complexity Cheat Sheet</a> 列出了常见的算法的时间和空间复杂度，非常直观。</p>  <p>转载到了这里，大家可以看看。</p>  <p>&#160;</p>  <table id="legend" class="table table-bordered table-striped" border="1"><tbody>     <tr>       <td><code class="green">Good</code></td>        <td><code class="yellow">Fair</code></td>        <td><code class="red">Poor</code></td>     </tr>   </tbody></table>  <h2 id="searching">Searching</h2>  <table class="table table-bordered table-striped" border="1"><thead>     <tr>       <th>Algorithm</th>        <th>Data Structure</th>        <th colspan="2">Time Complexity</th>        <th colspan="3">Space Complexity</th>     </tr>      <tr>       <th></th>        <th></th>        <th>Average</th>        <th>Worst</th>        <th>Worst</th>     </tr>   </thead><tbody>     <tr>       <td><a href="http://en.wikipedia.org/wiki/Depth-first_search" target="_blank" rel="noopener">Depth First Search (DFS)</a></td>        <td>Graph of |V| vertices and |E| edges</td>        <td><code>-</code></td>        <td><code class="green">O(|E| + |V|)</code></td>        <td><code class="green">O(|V|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Breadth-first_search" target="_blank" rel="noopener">Breadth First Search (BFS)</a></td>        <td>Graph of |V| vertices and |E| edges</td>        <td><code>-</code></td>        <td><code class="green">O(|E| + |V|)</code></td>        <td><code class="green">O(|V|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Binary_search_algorithm" target="_blank" rel="noopener">Binary search</a></td>        <td>Sorted array of n elements</td>        <td><code class="green">O(log(n))</code> </td>        <td><code class="green">O(log(n))</code> </td>        <td><code class="green">O(1)</code> </td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Brute-force_search" target="_blank" rel="noopener">Linear (Brute Force)</a></td>        <td>Array</td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Dijkstra's_algorithm" target="_blank" rel="noopener">Shortest path by Dijkstra,            <br>using a Min-heap as priority queue</a></td>        <td>Graph with |V| vertices and |E| edges</td>        <td><code class="yellow">O((|V| + |E|) log |V|)</code></td>        <td><code class="yellow">O((|V| + |E|) log |V|)</code></td>        <td><code class="yellow">O(|V|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Dijkstra's_algorithm" target="_blank" rel="noopener">Shortest path by Dijkstra,            <br>using an unsorted array as priority queue</a></td>        <td>Graph with |V| vertices and |E| edges</td>        <td><code class="yellow">O(|V|^2)</code></td>        <td><code class="yellow">O(|V|^2)</code></td>        <td><code class="yellow">O(|V|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Bellman%E2%80%93Ford_algorithm" target="_blank" rel="noopener">Shortest path by Bellman-Ford</a></td>        <td>Graph with |V| vertices and |E| edges</td>        <td><code class="yellow">O(|V||E|)</code></td>        <td><code class="yellow">O(|V||E|)</code></td>        <td><code class="yellow">O(|V|)</code></td>     </tr>   </tbody></table>  <h2 id="sorting">Sorting</h2>  <table class="table table-bordered table-striped" border="1" table="table"><thead>     <tr>       <th>Algorithm</th>        <th>Data Structure</th>        <th colspan="3">Time Complexity</th>        <th colspan="3">Worst Case Auxiliary Space Complexity</th>     </tr>      <tr>       <th></th>        <th></th>        <th>Best</th>        <th>Average</th>        <th>Worst</th>        <th>Worst</th>     </tr>   </thead><tbody>     <tr>       <td><a href="http://en.wikipedia.org/wiki/Quicksort" target="_blank" rel="noopener">Quicksort</a></td>        <td>Array</td>        <td><code class="yellow">O(n log(n))</code></td>        <td><code class="green">O(n log(n))</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Merge_sort" target="_blank" rel="noopener">Mergesort</a></td>        <td>Array</td>        <td><code class="yellow">O(n log(n))</code></td>        <td><code class="green">O(n log(n))</code></td>        <td><code class="green">O(n log(n))</code></td>        <td><code class="red">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Heapsort" target="_blank" rel="noopener">Heapsort</a></td>        <td>Array</td>        <td><code class="yellow">O(n log(n))</code></td>        <td><code class="green">O(n log(n))</code></td>        <td><code class="green">O(n log(n))</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Bubble_sort" target="_blank" rel="noopener">Bubble Sort</a></td>        <td>Array</td>        <td><code class="green">O(n)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Insertion_sort" target="_blank" rel="noopener">Insertion Sort</a></td>        <td>Array</td>        <td><code class="green">O(n)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Selection_sort" target="_blank" rel="noopener">Select Sort</a></td>        <td>Array</td>        <td><code class="red">O(n^2)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a title="Only for integers with range k" href="http://en.wikipedia.org/wiki/Bucket_sort" rel="noopener" target="_blank">Bucket Sort</a></td>        <td>Array</td>        <td><code class="green">O(n+k)</code></td>        <td><code class="green">O(n+k)</code></td>        <td><code class="red">O(n^2)</code></td>        <td><code class="yellow">O(nk)</code></td>     </tr>      <tr>       <td><a title="Constant number of digits &#39;k&#39;" href="http://en.wikipedia.org/wiki/Radix_sort" rel="noopener" target="_blank">Radix Sort</a></td>        <td>Array</td>        <td><code class="green">O(nk)</code></td>        <td><code class="green">O(nk)</code></td>        <td><code class="green">O(nk)</code></td>        <td><code class="yellow">O(n+k)</code></td>     </tr>   </tbody></table>  <h2 id="data-structures">Data Structures</h2>  <table class="table table-bordered table-striped" border="1"><thead>     <tr>       <th>Data Structure</th>        <th colspan="8">Time Complexity</th>        <th>Space Complexity</th>     </tr>      <tr>       <th></th>        <th colspan="4">Average</th>        <th colspan="4">Worst</th>        <th>Worst</th>     </tr>      <tr>       <th></th>        <th>Indexing</th>        <th>Search</th>        <th>Insertion</th>        <th>Deletion</th>        <th>Indexing</th>        <th>Search</th>        <th>Insertion</th>        <th>Deletion</th>        <th></th>     </tr>   </thead><tbody>     <tr>       <td><a href="http://en.wikipedia.org/wiki/Array_data_structure" target="_blank" rel="noopener">Basic Array</a></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code>-</code></td>        <td><code>-</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code>-</code></td>        <td><code>-</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Dynamic_array" target="_blank" rel="noopener">Dynamic Array</a></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Singly_linked_list#Singly_linked_lists" target="_blank" rel="noopener">Singly-Linked List</a></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Doubly_linked_list" target="_blank" rel="noopener">Doubly-Linked List</a></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Skip_list" target="_blank" rel="noopener">Skip List</a></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n log(n))</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Hash_table" target="_blank" rel="noopener">Hash Table</a></td>        <td><code>-</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code>-</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Binary_search_tree" target="_blank" rel="noopener">Binary Search Tree</a></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="https://en.wikipedia.org/wiki/Cartesian_tree" target="_blank" rel="noopener">Cartresian Tree</a></td>        <td><code>-</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code>-</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="red">O(n)</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/B_tree" target="_blank" rel="noopener">B-Tree</a></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Red-black_tree" target="_blank" rel="noopener">Red-Black Tree</a></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="https://en.wikipedia.org/wiki/Splay_tree" target="_blank" rel="noopener">Splay Tree</a></td>        <td><code>-</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code>-</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/AVL_tree" target="_blank" rel="noopener">AVL Tree</a></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="green">O(log(n))</code></td>        <td><code class="yellow">O(n)</code></td>     </tr>   </tbody></table>  <h2 id="heaps">Heaps</h2>  <table class="table table-bordered table-striped" border="1"><thead>     <tr>       <th>Heaps</th>        <th colspan="7">Time Complexity</th>     </tr>      <tr>       <th></th>        <th>Heapify</th>        <th>Find Max</th>        <th>Extract Max</th>        <th>Increase Key</th>        <th>Insert</th>        <th>Delete</th>        <th>Merge</th>        <th></th>     </tr>   </thead><tbody>     <tr>       <td><a href="http://en.wikipedia.org/wiki/Linked_list" target="_blank" rel="noopener">Linked List (sorted)</a></td>        <td><code>-</code></td> <!-- heapify -->        <td><code class="green">O(1)</code></td> <!-- Find max -->        <td><code class="green">O(1)</code></td> <!-- Extract max -->        <td><code class="red">O(n)</code></td> <!-- Increase -->        <td><code class="red">O(n)</code></td> <!-- insert -->        <td><code class="green">O(1)</code></td> <!-- delete -->        <td><code class="red">O(m+n)</code></td> <!-- merge --></tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Linked_list" target="_blank" rel="noopener">Linked List (unsorted)</a></td>        <td><code>-</code></td> <!-- heapify -->        <td><code class="red">O(n)</code></td> <!-- Find max -->        <td><code class="red">O(n)</code></td> <!-- Extract max -->        <td><code class="green">O(1)</code></td> <!-- Increase -->        <td><code class="green">O(1)</code></td> <!-- insert -->        <td><code class="green">O(1)</code></td> <!-- delete -->        <td><code class="green">O(1)</code></td> <!-- merge --></tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Binary_heap" target="_blank" rel="noopener">Binary Heap</a></td>        <td><code class="yellow">O(n)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="red">O(m+n)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Binomial_heap" target="_blank" rel="noopener">Binomial Heap</a></td>        <td><code>-</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>        <td><code class="yellow">O(log(n))</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Fibonacci_heap" target="_blank" rel="noopener">Fibonacci Heap</a></td>        <td><code>-</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow" title="Amortized" rel="tooltip">O(log(n))<em></em></code></td>        <td><code class="green" title="Amortized" rel="tooltip">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow" title="Amortized" rel="tooltip">O(log(n))<em></em></code></td>        <td><code class="green">O(1)</code></td>     </tr>   </tbody></table>  <h2 id="graphs">Graphs</h2>  <table class="table table-bordered table-striped" border="1"><tbody>     <tr>       <th>Node / Edge Management</th>        <th>Storage</th>        <th>Add Vertex</th>        <th>Add Edge</th>        <th>Remove Vertex</th>        <th>Remove Edge</th>        <th>Query</th>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Adjacency_list" target="_blank" rel="noopener">Adjacency list</a></td>        <td><code class="yellow">O(|V|+|E|)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow">O(|V| + |E|)</code></td>        <td><code class="yellow">O(|E|)</code></td>        <td><code class="yellow">O(|V|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Incidence_list" target="_blank" rel="noopener">Incidence list</a></td>        <td><code class="yellow">O(|V|+|E|)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="yellow">O(|E|)</code></td>        <td><code class="yellow">O(|E|)</code></td>        <td><code class="yellow">O(|E|)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Adjacency_matrix" target="_blank" rel="noopener">Adjacency matrix</a></td>        <td><code class="red">O(|V|^2)</code></td>        <td><code class="red">O(|V|^2)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="red">O(|V|^2)</code></td>        <td><code class="green">O(1)</code></td>        <td><code class="green">O(1)</code></td>     </tr>      <tr>       <td><a href="http://en.wikipedia.org/wiki/Incidence_matrix" target="_blank" rel="noopener">Incidence matrix</a></td>        <td><code class="red">O(|V| ⋅ |E|)</code></td>        <td><code class="red">O(|V| ⋅ |E|)</code></td>        <td><code class="red">O(|V| ⋅ |E|)</code></td>        <td><code class="red">O(|V| ⋅ |E|)</code></td>        <td><code class="red">O(|V| ⋅ |E|)</code></td>        <td><code class="yellow">O(|E|)</code></td>     </tr>   </tbody></table>  <h2 id="growth">Notation for asymptotic growth</h2>  <table class="table table-bordered table-striped" border="1"><tbody>     <tr>       <th>letter</th>        <th>bound</th>        <th>growth</th>     </tr>      <tr>       <td>(theta) Θ</td>        <td>upper and lower, tight<a href="#footnote-1"><sup>[1]</sup></a></td>        <td>equal<a href="#footnote-1"><sup>[2]</sup></a></td>     </tr>      <tr>       <td>(big-oh) O</td>        <td>upper, tightness unknown</td>        <td>less than or equal<a href="#footnote-1"><sup>[3]</sup></a></td>     </tr>      <tr>       <td>(small-oh) o</td>        <td>upper, not tight</td>        <td>less than</td>     </tr>      <tr>       <td>(big omega) Ω</td>        <td>lower, tightness unknown</td>        <td>greater than or equal</td>     </tr>      <tr>       <td>(small omega) ω</td>        <td>lower, not tight</td>        <td>greater than</td>     </tr>   </tbody></table>  <p id="footnote-1">[1] Big O is the upper bound, while Omega is the lower bound. Theta requires both Big O and Omega, so that’s why it’s referred to as a tight bound (it must be both the upper and lower bound). For example, an algorithm taking Omega(n log n) takes at least n log n time but has no upper limit. An algorithm taking Theta(n log n) is far preferential since it takes AT LEAST n log n (Omega n log n) and NO MORE THAN n log n (Big O n log n).<sup><a href="http://stackoverflow.com/a/464081/412916" target="_blank" rel="noopener">SO</a></sup></p>  <p id="footnote-2">[2] f(x)=Θ(g(n)) means f (the running time of the algorithm) grows exactly like g when n (input size) gets larger. In other words, the growth rate of f(x) is asymptotically proportional to g(n).</p>  <p id="footnote-1">[3] Same thing. Here the growth rate is no faster than g(n). big-oh is the most useful because represents the worst-case behavior.</p> In short, if algorithm is <strong> then its performance is </strong>   <table class="table table-bordered table-striped" border="1"><tbody>     <tr>       <th>algorithm</th>        <th>performance</th>     </tr>      <tr>       <td>o(n)</td>        <td>&lt; n</td>     </tr>      <tr>       <td>O(n)</td>        <td>≤ n</td>     </tr>      <tr>       <td>Θ(n)</td>        <td>= n</td>     </tr>      <tr>       <td>Ω(n)</td>        <td>≥ n</td>     </tr>      <tr>       <td>ω(n)</td>        <td>&gt; n</td>     </tr>   </tbody></table>  <div id="middle-ad"><script type="text/javascript">&lt;!–<br>google_ad_client = “ca-pub-8154832549041429”;<br>/</em> BigO Middle */<br>google_ad_slot = “4018097420”;<br>google_ad_width = 728;<br>google_ad_height = 90;<br>//–&gt;<br></script><script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"><br></script></div>  <h2 id="chart">Big-O Complexity Chart</h2> <img title="Big O Complexity Graph" alt="Big O Complexity Graph" src="http://bigocheatsheet.com/img/big-o-complexity.png">   <div id="contribute-container">   <h2>Contribute</h2>   <a href="https://github.com/ericdrowell/BigOCheatSheet/blob/master/Tables.html" target="_blank" rel="noopener">Edit these tables!</a>     <br>    <br>    <p>Authors:</p>    <ol>     <li><a href="https://github.com/ericdrowell" target="_blank" rel="noopener">Eric Rowell</a> </li>      <li><a href="https://github.com/qpleple" target="_blank" rel="noopener">Quentin Pleple</a> </li>      <li><a href="https://github.com/ndizazzo" target="_blank" rel="noopener">Nick Dizazzo</a> </li>      <li><a href="https://github.com/vault" target="_blank" rel="noopener">Michael Abed</a> </li>      <li><a href="https://github.com/agfor" target="_blank" rel="noopener">Adam Forsyth</a> </li>      <li><a href="https://github.com/jay754" target="_blank" rel="noopener">Jay Engineer</a> </li>      <li><a href="https://github.com/jdavis" target="_blank" rel="noopener">Josh Davis</a> </li>      <li><a href="https://github.com/makosblade" target="_blank" rel="noopener">makosblade</a> </li>      <li><a href="https://github.com/j4n0" target="_blank" rel="noopener">Alejandro Ramirez</a> </li>      <li><a href="https://github.com/jfriedly" target="_blank" rel="noopener">Joel Friedly</a> </li>      <li><a href="https://github.com/sharpobject" target="_blank" rel="noopener">Robert Burke</a> </li>      <li><a href="https://github.com/wiz3kid" target="_blank" rel="noopener">David Dorfman</a> </li>      <li><a href="https://github.com/elefevre" target="_blank" rel="noopener">Eric Lefevre-Ardant</a> </li>      <li><a href="https://github.com/thomasahle" target="_blank" rel="noopener">Thomas Dybdahl Ahle</a> </li>   </ol> </div><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://bigocheatsheet.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Big-O Algorithm Complexity Cheat Sheet&lt;/a&gt; 列出了常见的算法的时间和空间复杂度，非
+      
+    
+    </summary>
+    
+    
+      <category term="Algorithm" scheme="http://fresky.github.io/tags/Algorithm/"/>
     
   </entry>
   
@@ -4992,29 +5020,6 @@
   </entry>
   
   <entry>
-    <title>一个很cool的展示编程语言相互影响关系的网状图</title>
-    <link href="http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/"/>
-    <id>http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/</id>
-    <published>2013-05-27T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.259Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://visual.ly/network-graph-programming-languages-influence?view=true" target="_blank" rel="noopener">Network Graph of Programming Languages Influence | Visual.ly</a>是一个交互的网络图，可以显示各种编程语言之间的互相影响，很cool。</p>  <p>下图是一个截图。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/28172719-9254a3504ad44228b1b61dc02b08d2dc.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201305/28172722-4c185cb38847461cb39b0b61b015f9c7.png" width="578" height="418"></a></p>  <p>点击语言的节点，可以看见更多的信息。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/28172724-73b12effe9344988869d6710c97e3c6a.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201305/28172725-7b205fff30cc4309aa8b2647deca1f5d.png" width="600" height="270"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://visual.ly/network-graph-programming-languages-influence?view=true&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Network Graph of Progra
-      
-    
-    </summary>
-    
-    
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
     <title>大数据还是小数据</title>
     <link href="http://fresky.github.io/2013/05/28/big-data-or-small-data/"/>
     <id>http://fresky.github.io/2013/05/28/big-data-or-small-data/</id>
@@ -5034,6 +5039,29 @@
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个很cool的展示编程语言相互影响关系的网状图</title>
+    <link href="http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/"/>
+    <id>http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/</id>
+    <published>2013-05-27T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.259Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://visual.ly/network-graph-programming-languages-influence?view=true" target="_blank" rel="noopener">Network Graph of Programming Languages Influence | Visual.ly</a>是一个交互的网络图，可以显示各种编程语言之间的互相影响，很cool。</p>  <p>下图是一个截图。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/28172719-9254a3504ad44228b1b61dc02b08d2dc.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201305/28172722-4c185cb38847461cb39b0b61b015f9c7.png" width="578" height="418"></a></p>  <p>点击语言的节点，可以看见更多的信息。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/28172724-73b12effe9344988869d6710c97e3c6a.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201305/28172725-7b205fff30cc4309aa8b2647deca1f5d.png" width="600" height="270"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://visual.ly/network-graph-programming-languages-influence?view=true&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Network Graph of Progra
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -5084,29 +5112,6 @@
   </entry>
   
   <entry>
-    <title>如何在TFS中配置别的diff/merge的工具</title>
-    <link href="http://fresky.github.io/2013/05/21/how-to-config-diff-merge-tool-in-tfs/"/>
-    <id>http://fresky.github.io/2013/05/21/how-to-config-diff-merge-tool-in-tfs/</id>
-    <published>2013-05-20T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.258Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p><a href="http://blogs.msdn.com/b/jmanning/archive/2006/02/20/diff-merge-configuration-in-team-foundation-common-command-and-argument-values.aspx" target="_blank" rel="noopener">diff/merge configuration in Team Foundation - common Command and Argument values - James Manning’s blog - Site Home - MSDN Blogs</a>列举了TFS中diff/merge的参数是什么意思，如下：</p><blockquote><ul><li>%1 = Original file (in diff, the pre-changes file, in merge, the “server” or “theirs” file, the file that is the base file after “their” changes were applied) </li><li>%2 = Modified file (in diff, the post-changes file, in merge the “yours” file - the base file with “your” changes applied) </li><li>%3 = Base file (in the 3-way merge operation, the file which both “theirs” and “yours” are derived from - the common ancestor.&nbsp; This doesn’t mean it’s the version the changes were based from, since this may be a cherry-pick merge) </li><li>%4 = Merged file (The output file for the merge operation - the filename that the merge tool should write to) </li><li>%5 = Diff options (any additional command-line options you want to pass to your diff tool - this comes into play only when using “tf diff /options” from the command-line) </li><li>%6 = Original file label (The label for the %1 file) </li><li>%7 = Modified file label (The label for the %2 file) </li><li>%8 = Base file label (The label for the %3 file) </li><li>%9 = Merged file label (The label for the %4 file)</li></ul><p>并且列出了如何配置如下的第三方diff/merge工具。</p><p><strong><span style="text-decoration: underline;">Compare tools</span></strong></p><table border="1"><tbody><tr><th>Product</th> <th>Command</th> <th>Arguments</th></tr><tr><td>TFS default</td><td>diffmerge.exe</td><td>%1 %2 %6 %7 %5 /ignorespace</td></tr><tr><td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/tools/tools/windiff.asp" target="_blank" rel="noopener">WinDiff</a></td><td>windiff.exe</td><td>%1 %2</td></tr><tr><td><a href="http://www.softinterface.com/MD/MD.htm" target="_blank" rel="noopener">DiffDoc (for Word files)</a></td><td>DiffDoc.exe</td><td>/M%1 /S%2</td></tr><tr><td><a href="http://winmerge.sourceforge.net/" target="_blank" rel="noopener">WinMerge</a></td><td>winmerge.exe</td><td>/ub /dl %6 /dr %7 %1 %2</td></tr><tr><td><a href="http://www.scootersoftware.com/" target="_blank" rel="noopener">Beyond Compare</a></td><td>bc2.exe</td><td>%1 %2 /title1=%6 /title2=%7</td></tr><tr><td><a href="http://kdiff3.sourceforge.net/" target="_blank" rel="noopener">KDiff3</a></td><td>kdiff3.exe</td><td>%1 –fname %6 %2 –fname %7</td></tr><tr><td><a href="http://www.araxis.com/merge/command_line.html" target="_blank" rel="noopener">Araxis</a></td><td>compare.exe</td><td>/wait /2 /title1:%6 /title2:%7 %1 %2</td></tr><tr><td><a href="http://www.grigsoft.com/wincmp.htm" target="_blank" rel="noopener">Compare It!</a></td><td>Wincmp3.exe</td><td>%1 /=%6 %2 /=%7</td></tr><tr><td><a href="http://www.sourcegear.com/diffmerge/downloads.html" target="_blank" rel="noopener">SourceGear DiffMerge</a></td><td>DiffMerge.exe</td><td>/title1=%6 /title2=%7 %1 %2</td></tr><tr><td><a href="http://www.scootersoftware.com/beta3/" target="_blank" rel="noopener">Beyond Compare 3</a></td><td>BComp.exe</td><td>%1 %2 /title1=%6 /title2=%7</td></tr><tr><td><a href="http://tortoisesvn.tigris.org/TortoiseMerge.html" target="_blank" rel="noopener">TortoiseMerge</a></td><td>TortoiseMerge.exe</td><td>/base:%1 /mine:%2 /basename:%6 /minename:%7</td></tr><tr><td><a href="http://www.slickedit.com/" target="_blank" rel="noopener">Visual SlickEdit</a></td><td>win\vsdiff.exe</td><td>%1 %2</td></tr></tbody></table><p><strong><span style="text-decoration: underline;">Merge tools</span></strong></p><table style="width: 570px; height: 186px;" border="1"><tbody><tr><th>Product</th> <th>Command</th> <th>Arguments</th></tr><tr><td>TFS default</td><td>diffmerge.exe</td><td>/merge %1 %2 %3 %4 %6 %7</td></tr><tr><td><a href="http://kdiff3.sourceforge.net/" target="_blank" rel="noopener">KDiff3</a></td><td>kdiff3.exe</td><td>%3 –fname %8 %2 –fname %7 %1 –fname %6 -o %4</td></tr><tr><td><a href="http://msdn.microsoft.com/ssafe/" target="_blank" rel="noopener">Visual SourceSafe</a></td><td>ssexp.exe</td><td>/merge %1 %2 %3 %4 %6 %7</td></tr><tr><td><a href="http://www.araxis.com/" target="_blank" rel="noopener">Araxis</a></td><td>compare.exe</td><td>/wait /swap /a3 /3 /title1:%6 /title2:%7 /title3:%8 %1 %2 %3 %4</td></tr><tr><td><a href="http://www.scootersoftware.com/" target="_blank" rel="noopener">Beyond Compare (2-way merge)</a></td><td>bc2.exe</td><td>%1 %2 /savetarget=%4 /title1=%6 /title2=%7</td></tr><tr><td><a href="http://winmerge.sourceforge.net/" target="_blank" rel="noopener">WinMerge (2-way merge)</a></td><td>winmerge.exe</td><td>/ub /dl %6 /dr %7 %1 %2 %4</td></tr><tr><td><a href="http://www.guiffy.com/" target="_blank" rel="noopener">Guiffy</a></td><td>guiffy.exe</td><td>-s -h1%6 -h2%7 -hm%9 %1 %2 %3 %4</td></tr><tr><td><a href="http://www.elliecomputing.com/Home/default.asp" target="_blank" rel="noopener">Ellie Computing</a></td><td>guimerge.exe</td><td>–mode=merge3 %3 %1 %2 –to=%4 –title0=%8 –title1=%6 –title2=%7 –to-title=%9</td></tr><tr><td><a href="http://www.sourcegear.com/diffmerge/downloads.html" target="_blank" rel="noopener">SourceGear DiffMerge</a></td><td>DiffMerge.exe</td><td>/title1=%6 /title2=%8 /title3=%7 /result=%4 %1 %3 %2</td></tr><tr><td><a href="http://www.scootersoftware.com/beta3/" target="_blank" rel="noopener">Beyond Compare 3</a></td><td>BComp.exe</td><td>%1 %2 %3 %4 /title1=%6 /title2=%7 /title3=%8 /title4=%9</td></tr><tr><td><a href="http://tortoisesvn.tigris.org/TortoiseMerge.html" target="_blank" rel="noopener">TortoiseMerge</a></td><td>TortoiseMerge.exe</td><td>/base:%3 /mine:%2 /theirs:%1 /basename:%8 /minename:%7 /theirsname:%6 /merged:%4 /mergedname:%9</td></tr><tr><td><a href="http://www.slickedit.com/" target="_blank" rel="noopener">Visual SlickEdit</a></td><td>win\vsmerge.exe</td><td>%3 %1 %2 %4</td></tr></tbody></table></blockquote><p></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://blogs.msdn.com/b/jmanning/archive/2006/02/20/diff-merge-configuration-in-team-foundation-common-command-and-argume
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>大数据的例子：Google Books Ngram</title>
     <link href="http://fresky.github.io/2013/05/21/google-book-ngram-example-of-big-data/"/>
     <id>http://fresky.github.io/2013/05/21/google-book-ngram-example-of-big-data/</id>
@@ -5126,6 +5131,29 @@
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何在TFS中配置别的diff/merge的工具</title>
+    <link href="http://fresky.github.io/2013/05/21/how-to-config-diff-merge-tool-in-tfs/"/>
+    <id>http://fresky.github.io/2013/05/21/how-to-config-diff-merge-tool-in-tfs/</id>
+    <published>2013-05-20T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.258Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p><a href="http://blogs.msdn.com/b/jmanning/archive/2006/02/20/diff-merge-configuration-in-team-foundation-common-command-and-argument-values.aspx" target="_blank" rel="noopener">diff/merge configuration in Team Foundation - common Command and Argument values - James Manning’s blog - Site Home - MSDN Blogs</a>列举了TFS中diff/merge的参数是什么意思，如下：</p><blockquote><ul><li>%1 = Original file (in diff, the pre-changes file, in merge, the “server” or “theirs” file, the file that is the base file after “their” changes were applied) </li><li>%2 = Modified file (in diff, the post-changes file, in merge the “yours” file - the base file with “your” changes applied) </li><li>%3 = Base file (in the 3-way merge operation, the file which both “theirs” and “yours” are derived from - the common ancestor.&nbsp; This doesn’t mean it’s the version the changes were based from, since this may be a cherry-pick merge) </li><li>%4 = Merged file (The output file for the merge operation - the filename that the merge tool should write to) </li><li>%5 = Diff options (any additional command-line options you want to pass to your diff tool - this comes into play only when using “tf diff /options” from the command-line) </li><li>%6 = Original file label (The label for the %1 file) </li><li>%7 = Modified file label (The label for the %2 file) </li><li>%8 = Base file label (The label for the %3 file) </li><li>%9 = Merged file label (The label for the %4 file)</li></ul><p>并且列出了如何配置如下的第三方diff/merge工具。</p><p><strong><span style="text-decoration: underline;">Compare tools</span></strong></p><table border="1"><tbody><tr><th>Product</th> <th>Command</th> <th>Arguments</th></tr><tr><td>TFS default</td><td>diffmerge.exe</td><td>%1 %2 %6 %7 %5 /ignorespace</td></tr><tr><td><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/tools/tools/windiff.asp" target="_blank" rel="noopener">WinDiff</a></td><td>windiff.exe</td><td>%1 %2</td></tr><tr><td><a href="http://www.softinterface.com/MD/MD.htm" target="_blank" rel="noopener">DiffDoc (for Word files)</a></td><td>DiffDoc.exe</td><td>/M%1 /S%2</td></tr><tr><td><a href="http://winmerge.sourceforge.net/" target="_blank" rel="noopener">WinMerge</a></td><td>winmerge.exe</td><td>/ub /dl %6 /dr %7 %1 %2</td></tr><tr><td><a href="http://www.scootersoftware.com/" target="_blank" rel="noopener">Beyond Compare</a></td><td>bc2.exe</td><td>%1 %2 /title1=%6 /title2=%7</td></tr><tr><td><a href="http://kdiff3.sourceforge.net/" target="_blank" rel="noopener">KDiff3</a></td><td>kdiff3.exe</td><td>%1 –fname %6 %2 –fname %7</td></tr><tr><td><a href="http://www.araxis.com/merge/command_line.html" target="_blank" rel="noopener">Araxis</a></td><td>compare.exe</td><td>/wait /2 /title1:%6 /title2:%7 %1 %2</td></tr><tr><td><a href="http://www.grigsoft.com/wincmp.htm" target="_blank" rel="noopener">Compare It!</a></td><td>Wincmp3.exe</td><td>%1 /=%6 %2 /=%7</td></tr><tr><td><a href="http://www.sourcegear.com/diffmerge/downloads.html" target="_blank" rel="noopener">SourceGear DiffMerge</a></td><td>DiffMerge.exe</td><td>/title1=%6 /title2=%7 %1 %2</td></tr><tr><td><a href="http://www.scootersoftware.com/beta3/" target="_blank" rel="noopener">Beyond Compare 3</a></td><td>BComp.exe</td><td>%1 %2 /title1=%6 /title2=%7</td></tr><tr><td><a href="http://tortoisesvn.tigris.org/TortoiseMerge.html" target="_blank" rel="noopener">TortoiseMerge</a></td><td>TortoiseMerge.exe</td><td>/base:%1 /mine:%2 /basename:%6 /minename:%7</td></tr><tr><td><a href="http://www.slickedit.com/" target="_blank" rel="noopener">Visual SlickEdit</a></td><td>win\vsdiff.exe</td><td>%1 %2</td></tr></tbody></table><p><strong><span style="text-decoration: underline;">Merge tools</span></strong></p><table style="width: 570px; height: 186px;" border="1"><tbody><tr><th>Product</th> <th>Command</th> <th>Arguments</th></tr><tr><td>TFS default</td><td>diffmerge.exe</td><td>/merge %1 %2 %3 %4 %6 %7</td></tr><tr><td><a href="http://kdiff3.sourceforge.net/" target="_blank" rel="noopener">KDiff3</a></td><td>kdiff3.exe</td><td>%3 –fname %8 %2 –fname %7 %1 –fname %6 -o %4</td></tr><tr><td><a href="http://msdn.microsoft.com/ssafe/" target="_blank" rel="noopener">Visual SourceSafe</a></td><td>ssexp.exe</td><td>/merge %1 %2 %3 %4 %6 %7</td></tr><tr><td><a href="http://www.araxis.com/" target="_blank" rel="noopener">Araxis</a></td><td>compare.exe</td><td>/wait /swap /a3 /3 /title1:%6 /title2:%7 /title3:%8 %1 %2 %3 %4</td></tr><tr><td><a href="http://www.scootersoftware.com/" target="_blank" rel="noopener">Beyond Compare (2-way merge)</a></td><td>bc2.exe</td><td>%1 %2 /savetarget=%4 /title1=%6 /title2=%7</td></tr><tr><td><a href="http://winmerge.sourceforge.net/" target="_blank" rel="noopener">WinMerge (2-way merge)</a></td><td>winmerge.exe</td><td>/ub /dl %6 /dr %7 %1 %2 %4</td></tr><tr><td><a href="http://www.guiffy.com/" target="_blank" rel="noopener">Guiffy</a></td><td>guiffy.exe</td><td>-s -h1%6 -h2%7 -hm%9 %1 %2 %3 %4</td></tr><tr><td><a href="http://www.elliecomputing.com/Home/default.asp" target="_blank" rel="noopener">Ellie Computing</a></td><td>guimerge.exe</td><td>–mode=merge3 %3 %1 %2 –to=%4 –title0=%8 –title1=%6 –title2=%7 –to-title=%9</td></tr><tr><td><a href="http://www.sourcegear.com/diffmerge/downloads.html" target="_blank" rel="noopener">SourceGear DiffMerge</a></td><td>DiffMerge.exe</td><td>/title1=%6 /title2=%8 /title3=%7 /result=%4 %1 %3 %2</td></tr><tr><td><a href="http://www.scootersoftware.com/beta3/" target="_blank" rel="noopener">Beyond Compare 3</a></td><td>BComp.exe</td><td>%1 %2 %3 %4 /title1=%6 /title2=%7 /title3=%8 /title4=%9</td></tr><tr><td><a href="http://tortoisesvn.tigris.org/TortoiseMerge.html" target="_blank" rel="noopener">TortoiseMerge</a></td><td>TortoiseMerge.exe</td><td>/base:%3 /mine:%2 /theirs:%1 /basename:%8 /minename:%7 /theirsname:%6 /merged:%4 /mergedname:%9</td></tr><tr><td><a href="http://www.slickedit.com/" target="_blank" rel="noopener">Visual SlickEdit</a></td><td>win\vsmerge.exe</td><td>%3 %1 %2 %4</td></tr></tbody></table></blockquote><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://blogs.msdn.com/b/jmanning/archive/2006/02/20/diff-merge-configuration-in-team-foundation-common-command-and-argume
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -5362,29 +5390,6 @@
   </entry>
   
   <entry>
-    <title>每个程序员都需要知道的数字（续）</title>
-    <link href="http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/"/>
-    <id>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/</id>
-    <published>2013-04-30T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.255Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p><a href="http://highscalability.com/numbers-everyone-should-know" target="_blank" rel="noopener">High Scalability - High Scalability - Numbers Everyone Should Know</a>列举了另外一些数字：</p>  <h3>写很昂贵</h3>  <ul>   <li>写是transactional的</li>    <li>disk access意味着disk seek</li>    <li>经验法则：disk seek需要10毫秒</li>    <li>算一算：1s/10ms = 100 seeks/s，每秒最多100次disk seek</li>    <li>和数据的大小的形状有关系，批量处理。</li> </ul>  <h3>读很便宜</h3>  <ul>   <li>都不需要transaction</li>    <li>数据从磁盘中读取一次，很容易就被缓存</li>    <li>所有后续的读取都是从内存来的</li>    <li>经验法则：内存中读取1m的数据需要250微秒</li>    <li>算一算：1s/250usec=4g/sec，美妙最多读4g的数据。对于1m的数据，每秒可以取4000次</li> </ul>  <h3>一些数字</h3>  <ul>   <li>L1缓存寻址需要0.5纳秒</li>    <li>branch mipredict需要5纳秒</li>    <li>L2缓存需要7纳秒</li>    <li>mutex lock/unlock需要100纳秒</li>    <li>内存寻址需要100纳秒</li>    <li>压缩1k的数据需要10000纳秒</li>    <li>通过1gbps的网络发送2k的数据需要20000纳秒</li>    <li>内存中读取连续的1m数据需要250000纳秒</li>    <li>round trip within same datacenter需要500000纳秒</li>    <li>硬盘须知需要10000000纳秒</li>    <li>从网络上读1m的连续数据需要10000000纳秒</li>    <li>从磁盘上都1m的连续数据需要30000000纳秒</li> </ul>  <p>&#160;</p>  <h3>小结</h3>  <ul>   <li>写比读昂贵40倍</li>    <li>全局共享的数据很昂贵。这是分布式系统的瓶颈。</li>    <li>系统设计时就要考虑写操作的可扩展性。</li>    <li>优化以减少写竞争。</li>    <li>让写操作尽可能地并行。</li> </ul><p></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://highscalability.com/numbers-everyone-should-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;High Scalability - High Scalabili
-      
-    
-    </summary>
-    
-    
-      <category term="Algorithm" scheme="http://fresky.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
     <title>每个程序员都应该知道的14个数字（关于算法运行时间的）</title>
     <link href="http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know/"/>
     <id>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know/</id>
@@ -5398,6 +5403,29 @@
       
       
         &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.infoarena.ro/blog/numbers-everyone-should-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;14 numbers every developer shou
+      
+    
+    </summary>
+    
+    
+      <category term="Algorithm" scheme="http://fresky.github.io/tags/Algorithm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>每个程序员都需要知道的数字（续）</title>
+    <link href="http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/"/>
+    <id>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/</id>
+    <published>2013-04-30T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.255Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p><a href="http://highscalability.com/numbers-everyone-should-know" target="_blank" rel="noopener">High Scalability - High Scalability - Numbers Everyone Should Know</a>列举了另外一些数字：</p>  <h3>写很昂贵</h3>  <ul>   <li>写是transactional的</li>    <li>disk access意味着disk seek</li>    <li>经验法则：disk seek需要10毫秒</li>    <li>算一算：1s/10ms = 100 seeks/s，每秒最多100次disk seek</li>    <li>和数据的大小的形状有关系，批量处理。</li> </ul>  <h3>读很便宜</h3>  <ul>   <li>都不需要transaction</li>    <li>数据从磁盘中读取一次，很容易就被缓存</li>    <li>所有后续的读取都是从内存来的</li>    <li>经验法则：内存中读取1m的数据需要250微秒</li>    <li>算一算：1s/250usec=4g/sec，美妙最多读4g的数据。对于1m的数据，每秒可以取4000次</li> </ul>  <h3>一些数字</h3>  <ul>   <li>L1缓存寻址需要0.5纳秒</li>    <li>branch mipredict需要5纳秒</li>    <li>L2缓存需要7纳秒</li>    <li>mutex lock/unlock需要100纳秒</li>    <li>内存寻址需要100纳秒</li>    <li>压缩1k的数据需要10000纳秒</li>    <li>通过1gbps的网络发送2k的数据需要20000纳秒</li>    <li>内存中读取连续的1m数据需要250000纳秒</li>    <li>round trip within same datacenter需要500000纳秒</li>    <li>硬盘须知需要10000000纳秒</li>    <li>从网络上读1m的连续数据需要10000000纳秒</li>    <li>从磁盘上都1m的连续数据需要30000000纳秒</li> </ul>  <p>&#160;</p>  <h3>小结</h3>  <ul>   <li>写比读昂贵40倍</li>    <li>全局共享的数据很昂贵。这是分布式系统的瓶颈。</li>    <li>系统设计时就要考虑写操作的可扩展性。</li>    <li>优化以减少写竞争。</li>    <li>让写操作尽可能地并行。</li> </ul><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://highscalability.com/numbers-everyone-should-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;High Scalability - High Scalabili
       
     
     </summary>
@@ -5808,29 +5836,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>C#的static constructor抛了异常会怎么处理？</title>
-    <link href="http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/"/>
-    <id>http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/</id>
-    <published>2013-02-18T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.251Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/4737875/exception-in-static-constructor/4737910#4737910" target="_blank" rel="noopener">stackoverflow</a>上举了这个例子说明在C#中，如果static constructor只会被调用一次，即使抛了异常，也不会重试调用。如果抛了异常，那么在这个appdomain里面，这个类就不能用了。</p>  <p>示例代码：</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> <span class="keyword">class</span> <span class="title">Bang</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="title">Bang</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">"In static constructor"</span>);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"Bang!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Foo</span>(<span class="params"></span>)</span> &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Test</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">try</span></span><br><span class="line">            &#123;</span><br><span class="line">                Bang.Foo();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">catch</span> (Exception e)</span><br><span class="line">            &#123;</span><br><span class="line">                Console.WriteLine(e.GetType().Name);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>输出如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">In static constructor</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4737875/exception-in-static-constructor/4737910#4737910&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;stack
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#的继承类中static constructor的调用问题</title>
     <link href="http://fresky.github.io/2013/02/19/static-constructor-surprise-in-csharp/"/>
     <id>http://fresky.github.io/2013/02/19/static-constructor-surprise-in-csharp/</id>
@@ -5844,6 +5849,29 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;Eric Lippert写了一系列的关于static constructor的文章，&lt;a href=&quot;http://ericlippert.com/2013/02/06/static-constructors-part-one/?utm_source=rss&amp;amp;utm
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#的static constructor抛了异常会怎么处理？</title>
+    <link href="http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/"/>
+    <id>http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/</id>
+    <published>2013-02-18T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.251Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/4737875/exception-in-static-constructor/4737910#4737910" target="_blank" rel="noopener">stackoverflow</a>上举了这个例子说明在C#中，如果static constructor只会被调用一次，即使抛了异常，也不会重试调用。如果抛了异常，那么在这个appdomain里面，这个类就不能用了。</p>  <p>示例代码：</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> <span class="keyword">class</span> <span class="title">Bang</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="title">Bang</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">"In static constructor"</span>);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"Bang!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Foo</span>(<span class="params"></span>)</span> &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Test</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">try</span></span><br><span class="line">            &#123;</span><br><span class="line">                Bang.Foo();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">catch</span> (Exception e)</span><br><span class="line">            &#123;</span><br><span class="line">                Console.WriteLine(e.GetType().Name);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>输出如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">In static constructor</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4737875/exception-in-static-constructor/4737910#4737910&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;stack
       
     
     </summary>
@@ -6090,6 +6118,31 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>一个C++的unit库</title>
+    <link href="http://fresky.github.io/2013/01/21/unit-library-for-cpp/"/>
+    <id>http://fresky.github.io/2013/01/21/unit-library-for-cpp/</id>
+    <published>2013-01-20T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.248Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://calumgrant.net/units/index.html" target="_blank" rel="noopener">C++ Units</a>是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，比如把一个length加到了一个area上。<br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://calumgrant.net/units/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++ Units&lt;/a&gt;是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
     <title>web开发者的checklist</title>
     <link href="http://fresky.github.io/2013/01/21/web-developer-checklist/"/>
     <id>http://fresky.github.io/2013/01/21/web-developer-checklist/</id>
@@ -6112,31 +6165,6 @@ w\:* {behavior:url(#default#VML);}
       <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
       <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一个C++的unit库</title>
-    <link href="http://fresky.github.io/2013/01/21/unit-library-for-cpp/"/>
-    <id>http://fresky.github.io/2013/01/21/unit-library-for-cpp/</id>
-    <published>2013-01-20T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.248Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://calumgrant.net/units/index.html" target="_blank" rel="noopener">C++ Units</a>是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，比如把一个length加到了一个area上。<br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://calumgrant.net/units/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++ Units&lt;/a&gt;是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -6256,29 +6284,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>Windows下C++的同步机制的演变</title>
-    <link href="http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/"/>
-    <id>http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/</id>
-    <published>2012-12-27T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.246Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://msdn.microsoft.com/en-us/magazine/jj721588.aspx" target="_blank" rel="noopener">Windows with C++ - The Evolution of Synchronization in Windows and C++</a>介绍了如下概念：<br>critical section<br>mutex<br>event<br>slim reader/writer lock<br>condition variable<br>C++11的mutex和condition_variable<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/magazine/jj721588.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows with C++ - The Evolution of Synch
-      
-    
-    </summary>
-    
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>怎么回答哪个更快的问题</title>
     <link href="http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/"/>
     <id>http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/</id>
@@ -6298,6 +6303,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows下C++的同步机制的演变</title>
+    <link href="http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/"/>
+    <id>http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/</id>
+    <published>2012-12-27T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.246Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://msdn.microsoft.com/en-us/magazine/jj721588.aspx" target="_blank" rel="noopener">Windows with C++ - The Evolution of Synchronization in Windows and C++</a>介绍了如下概念：<br>critical section<br>mutex<br>event<br>slim reader/writer lock<br>condition variable<br>C++11的mutex和condition_variable<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/magazine/jj721588.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows with C++ - The Evolution of Synch
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -6373,6 +6401,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>玩大数据需要知道的12个工具</title>
+    <link href="http://fresky.github.io/2012/12/25/12-tools-about-big-data/"/>
+    <id>http://fresky.github.io/2012/12/25/12-tools-about-big-data/</id>
+    <published>2012-12-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.245Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/" target="_blank" rel="noopener">A programmer’s guide to big data: 12 tools to know — Data | GigaOM</a><br>包括：<br>1. BitDeli<br>2. Continuuity<br>3. Flurry<br>4. Google Prediction API<br>5. Infochimps<br>6. Keen IO<br>7. Kontagent<br>8. Mortar Data<br>9. Placed Analytics<br>10. Precog<br>11. Spring for Apache Hadoop<br>12. StatsMix<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;A programmer’s guide to
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
     <title>用python替代javascript？</title>
     <link href="http://fresky.github.io/2012/12/25/python-replace-javascript/"/>
     <id>http://fresky.github.io/2012/12/25/python-replace-javascript/</id>
@@ -6398,29 +6449,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>玩大数据需要知道的12个工具</title>
-    <link href="http://fresky.github.io/2012/12/25/12-tools-about-big-data/"/>
-    <id>http://fresky.github.io/2012/12/25/12-tools-about-big-data/</id>
-    <published>2012-12-24T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.245Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/" target="_blank" rel="noopener">A programmer’s guide to big data: 12 tools to know — Data | GigaOM</a><br>包括：<br>1. BitDeli<br>2. Continuuity<br>3. Flurry<br>4. Google Prediction API<br>5. Infochimps<br>6. Keen IO<br>7. Kontagent<br>8. Mortar Data<br>9. Placed Analytics<br>10. Precog<br>11. Spring for Apache Hadoop<br>12. StatsMix<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://gigaom.com/data/a-programmers-guide-to-big-data-12-tools-to-know/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;A programmer’s guide to
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#用extern alias解决两个assembly中相同的类型全名</title>
     <link href="http://fresky.github.io/2012/12/24/extern-alias-to-solve-same-type-name-in-2-assemblies-in-csharp/"/>
     <id>http://fresky.github.io/2012/12/24/extern-alias-to-solve-same-type-name-in-2-assemblies-in-csharp/</id>
@@ -6434,29 +6462,6 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;如果你使用到的第三方库中有2个assembly中出现了完全一样的类型，C#中可以用&lt;a href=&quot;http://http://msdn.microsoft.com/en-us/library/ms173212(v=vs.110).aspx&quot; target=&quot;_blank&quot;
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C#中如何正确的实现IDisposable接口</title>
-    <link href="http://fresky.github.io/2012/12/23/how-to-implement-idisposable-interface-correctly-in-csharp/"/>
-    <id>http://fresky.github.io/2012/12/23/how-to-implement-idisposable-interface-correctly-in-csharp/</id>
-    <published>2012-12-22T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.244Z</updated>
-    
-    <content type="html"><![CDATA[<p>Stackoverflow上的这个<a href="http://stackoverflow.com/a/538238/304115" target="_blank" rel="noopener">回答</a>是我见过的讲的最清楚的怎么正确实现<span style="color: #000000;">IDisposable</span>接口，我简单挑重点翻译翻译吧。：）</p><br><h3>&nbsp;</h3><br><p>Disposed的出现就是要解决一个问题，那就是释放非托管的资源。.NET的垃圾回收不知道怎么去释放非托管的资源。</p><br><p>所以，如果你的对象中有非托管的资源，你就需要提供一个函数给外面的人来释放它。我们有一个标准的名字：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Dispose</span>(<span class="params"></span>)</span></span><br></pre></td></tr></table></figure><p>在C#中有个接口，只包含了这个函数，所以如果你的类需要释放非托管资源，就需要实现这个接口，实现了这个借口，意味着你承诺在Dispose方法中释放非托管资源。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public interface IDisposable</span><br><span class="line">&#123;</span><br><span class="line">    void Dispose();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>下面是个释放非托管资源的例子。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这其实就搞定了：）但是你可以做的更好。</p><br><h3>&nbsp;</h3><br><p>如果你的对象中有托管的资源，而且很大，比如有个250m的bitmap。当然C#的垃圾回收会把它释放掉，但是更好的是我们能在不需要的时候就把它释放掉而不必等到垃圾回收。怎么做呢？我们已经有了一个方法来释放非托管的资源，好办，我们把在Dispose中把托管的资源也释放掉就好了，这样我们的Dispose干两件事情：</p><br><ol><br><li>释放非托管资源，因为必须</li><br><li>释放托管资源，因为这样好：）</li><br></ol><br><p>新的Dispose函数长这个样子：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too</span><br><span class="line">   if (this.databaseConnection != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.databaseConnection.Dispose();</span><br><span class="line">      this.databaseConnection = null;</span><br><span class="line">   &#125;</span><br><span class="line">   if (this.frameBufferImage != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.frameBufferImage.Dispose();</span><br><span class="line">      this.frameBufferImage = null;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>看起来搞定了，但是，我们可以做的更好！</p><br><h3>&nbsp;</h3><br><p>如果我们的使用者没有调用Dispose怎么办呢？我们就会有资源泄露了！（当然只有非托管的资源泄露，因为托管的C#的垃圾回收会帮我们搞定它）</p><br><p>嗯，我们把这个Dispose放到Finalize里面，这样我的对象被销毁的时候，它就能自动调到，不错，代码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">~MyObject()</span><br><span class="line">&#123;</span><br><span class="line">    //we&apos;re being finalized (i.e. destroyed), call Dispose in case the user forgot to</span><br><span class="line">    Dispose(); //&lt;--Warning: subtle bug! Keep reading!</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>但是，我们可能会引入一个bug。因为C#地垃圾回收是在后台运行，我们不知道它会先回收哪个对象，所以我们的对象中包含的托管资源可能已经被回收掉了，就会发生：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too</span><br><span class="line">   if (this.databaseConnection != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.databaseConnection.Dispose(); &lt;-- crash, GC already destroyed it</span><br><span class="line">      this.databaseConnection = null;</span><br><span class="line">   &#125;</span><br><span class="line">   if (this.frameBufferImage != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.frameBufferImage.Dispose(); &lt;-- crash, GC already destroyed it</span><br><span class="line">      this.frameBufferImage = null;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>所以我们需要一种办法让在Finalize中调到的Dispose函数不去释放托管的资源，留给垃圾回收来做，我们习惯用这样的函数来实现：</p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean disposing)</span><br></pre></td></tr></table></figure><br><br><p>这个参数名字disposing有点不太好，我们改个名字吧：） </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean freeManagedObjectsAlso)</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too, but only if i&apos;m being called from Dispose</span><br><span class="line">   //(If i&apos;m being called from Finalize then the objects might not exist</span><br><span class="line">   //anymore</span><br><span class="line">   if (freeManagedObjectsAlso)  </span><br><span class="line">   &#123;    </span><br><span class="line">      if (this.databaseConnection != null)</span><br><span class="line">      &#123;</span><br><span class="line">         this.databaseConnection.Dispose();</span><br><span class="line">         this.databaseConnection = null;</span><br><span class="line">      &#125;</span><br><span class="line">      if (this.frameBufferImage != null)</span><br><span class="line">      &#123;</span><br><span class="line">         this.frameBufferImage.Dispose();</span><br><span class="line">         this.frameBufferImage = null;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>所以我们先前写的Dispose函数变成了这样：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(true); //i am calling you from Dispose, it&apos;s safe</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public ~MyObject()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(false); //i am *not* calling you from Dispose, it&apos;s *not* safe</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>提醒一下，如果我们的类的父类也是IDisposable的，我们需要调用父类的Dispose函数。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   try</span><br><span class="line">   &#123;</span><br><span class="line">      Dispose(true); //true: safe to free managed resources</span><br><span class="line">   &#125;</span><br><span class="line">   finally</span><br><span class="line">   &#123;</span><br><span class="line">      base.Dispose();</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>看起来搞定了，但是我们可以做的更好！</p><br><h3>&nbsp;</h3><br><p>如果我们的客户代码调用了Dispose，那意味着托管和非托管的资源都被释放掉了，但是随后C#的垃圾回收还会再次调用Dispose。不仅仅是浪费，而且如果万一我们没有在Dispose非托管资源时把它设成null，就是说它还指着东西，那就会被再释放一次，这可不是好玩的。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean iAmBeingCalledFromDisposeAndNotFinalize)</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle); &lt;--double destroy </span><br><span class="line">   //...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>修改这个问题的方法就是，如果已经调用过Dispose了，就不要再调Finalize了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(true); //i am calling you from Dispose, it&apos;s safe</span><br><span class="line">   GC.SuppressFinalize(this); //Hey, GC: don&apos;t bother calling finalize later</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>好了，万事大吉：）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Stackoverflow上的这个&lt;a href=&quot;http://stackoverflow.com/a/538238/304115&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;回答&lt;/a&gt;是我见过的讲的最清楚的怎么正确实现&lt;span style=&quot;co
       
     
     </summary>
@@ -6486,6 +6491,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#中如何正确的实现IDisposable接口</title>
+    <link href="http://fresky.github.io/2012/12/23/how-to-implement-idisposable-interface-correctly-in-csharp/"/>
+    <id>http://fresky.github.io/2012/12/23/how-to-implement-idisposable-interface-correctly-in-csharp/</id>
+    <published>2012-12-22T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.244Z</updated>
+    
+    <content type="html"><![CDATA[<p>Stackoverflow上的这个<a href="http://stackoverflow.com/a/538238/304115" target="_blank" rel="noopener">回答</a>是我见过的讲的最清楚的怎么正确实现<span style="color: #000000;">IDisposable</span>接口，我简单挑重点翻译翻译吧。：）</p><br><h3>&nbsp;</h3><br><p>Disposed的出现就是要解决一个问题，那就是释放非托管的资源。.NET的垃圾回收不知道怎么去释放非托管的资源。</p><br><p>所以，如果你的对象中有非托管的资源，你就需要提供一个函数给外面的人来释放它。我们有一个标准的名字：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Dispose</span>(<span class="params"></span>)</span></span><br></pre></td></tr></table></figure><p>在C#中有个接口，只包含了这个函数，所以如果你的类需要释放非托管资源，就需要实现这个接口，实现了这个借口，意味着你承诺在Dispose方法中释放非托管资源。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public interface IDisposable</span><br><span class="line">&#123;</span><br><span class="line">    void Dispose();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>下面是个释放非托管资源的例子。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这其实就搞定了：）但是你可以做的更好。</p><br><h3>&nbsp;</h3><br><p>如果你的对象中有托管的资源，而且很大，比如有个250m的bitmap。当然C#的垃圾回收会把它释放掉，但是更好的是我们能在不需要的时候就把它释放掉而不必等到垃圾回收。怎么做呢？我们已经有了一个方法来释放非托管的资源，好办，我们把在Dispose中把托管的资源也释放掉就好了，这样我们的Dispose干两件事情：</p><br><ol><br><li>释放非托管资源，因为必须</li><br><li>释放托管资源，因为这样好：）</li><br></ol><br><p>新的Dispose函数长这个样子：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too</span><br><span class="line">   if (this.databaseConnection != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.databaseConnection.Dispose();</span><br><span class="line">      this.databaseConnection = null;</span><br><span class="line">   &#125;</span><br><span class="line">   if (this.frameBufferImage != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.frameBufferImage.Dispose();</span><br><span class="line">      this.frameBufferImage = null;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>看起来搞定了，但是，我们可以做的更好！</p><br><h3>&nbsp;</h3><br><p>如果我们的使用者没有调用Dispose怎么办呢？我们就会有资源泄露了！（当然只有非托管的资源泄露，因为托管的C#的垃圾回收会帮我们搞定它）</p><br><p>嗯，我们把这个Dispose放到Finalize里面，这样我的对象被销毁的时候，它就能自动调到，不错，代码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">~MyObject()</span><br><span class="line">&#123;</span><br><span class="line">    //we&apos;re being finalized (i.e. destroyed), call Dispose in case the user forgot to</span><br><span class="line">    Dispose(); //&lt;--Warning: subtle bug! Keep reading!</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>但是，我们可能会引入一个bug。因为C#地垃圾回收是在后台运行，我们不知道它会先回收哪个对象，所以我们的对象中包含的托管资源可能已经被回收掉了，就会发生：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too</span><br><span class="line">   if (this.databaseConnection != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.databaseConnection.Dispose(); &lt;-- crash, GC already destroyed it</span><br><span class="line">      this.databaseConnection = null;</span><br><span class="line">   &#125;</span><br><span class="line">   if (this.frameBufferImage != null)</span><br><span class="line">   &#123;</span><br><span class="line">      this.frameBufferImage.Dispose(); &lt;-- crash, GC already destroyed it</span><br><span class="line">      this.frameBufferImage = null;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>所以我们需要一种办法让在Finalize中调到的Dispose函数不去释放托管的资源，留给垃圾回收来做，我们习惯用这样的函数来实现：</p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean disposing)</span><br></pre></td></tr></table></figure><br><br><p>这个参数名字disposing有点不太好，我们改个名字吧：） </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean freeManagedObjectsAlso)</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle);</span><br><span class="line"></span><br><span class="line">   //Free managed resources too, but only if i&apos;m being called from Dispose</span><br><span class="line">   //(If i&apos;m being called from Finalize then the objects might not exist</span><br><span class="line">   //anymore</span><br><span class="line">   if (freeManagedObjectsAlso)  </span><br><span class="line">   &#123;    </span><br><span class="line">      if (this.databaseConnection != null)</span><br><span class="line">      &#123;</span><br><span class="line">         this.databaseConnection.Dispose();</span><br><span class="line">         this.databaseConnection = null;</span><br><span class="line">      &#125;</span><br><span class="line">      if (this.frameBufferImage != null)</span><br><span class="line">      &#123;</span><br><span class="line">         this.frameBufferImage.Dispose();</span><br><span class="line">         this.frameBufferImage = null;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>所以我们先前写的Dispose函数变成了这样：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(true); //i am calling you from Dispose, it&apos;s safe</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public ~MyObject()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(false); //i am *not* calling you from Dispose, it&apos;s *not* safe</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>提醒一下，如果我们的类的父类也是IDisposable的，我们需要调用父类的Dispose函数。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   try</span><br><span class="line">   &#123;</span><br><span class="line">      Dispose(true); //true: safe to free managed resources</span><br><span class="line">   &#125;</span><br><span class="line">   finally</span><br><span class="line">   &#123;</span><br><span class="line">      base.Dispose();</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>看起来搞定了，但是我们可以做的更好！</p><br><h3>&nbsp;</h3><br><p>如果我们的客户代码调用了Dispose，那意味着托管和非托管的资源都被释放掉了，但是随后C#的垃圾回收还会再次调用Dispose。不仅仅是浪费，而且如果万一我们没有在Dispose非托管资源时把它设成null，就是说它还指着东西，那就会被再释放一次，这可不是好玩的。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">protected void Dispose(Boolean iAmBeingCalledFromDisposeAndNotFinalize)</span><br><span class="line">&#123;</span><br><span class="line">   //Free unmanaged resources</span><br><span class="line">   Win32.DestroyHandle(this.gdiCursorBitmapStreamFileHandle); &lt;--double destroy </span><br><span class="line">   //...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>修改这个问题的方法就是，如果已经调用过Dispose了，就不要再调Finalize了。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public void Dispose()</span><br><span class="line">&#123;</span><br><span class="line">   Dispose(true); //i am calling you from Dispose, it&apos;s safe</span><br><span class="line">   GC.SuppressFinalize(this); //Hey, GC: don&apos;t bother calling finalize later</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>好了，万事大吉：）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Stackoverflow上的这个&lt;a href=&quot;http://stackoverflow.com/a/538238/304115&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;回答&lt;/a&gt;是我见过的讲的最清楚的怎么正确实现&lt;span style=&quot;co
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -6554,9 +6582,9 @@ w\:* {behavior:url(#default#VML);}
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -6811,9 +6839,9 @@ w\:* {behavior:url(#default#VML);}
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -6910,29 +6938,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>C++中怎么阻止一个类被继承</title>
-    <link href="http://fresky.github.io/2012/12/04/how-to-prevent-class-being-base-class-in-cpp/"/>
-    <id>http://fresky.github.io/2012/12/04/how-to-prevent-class-being-base-class-in-cpp/</id>
-    <published>2012-12-03T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.238Z</updated>
-    
-    <content type="html"><![CDATA[<p>C#中可以用sealed关键字，但是，C++中怎么阻止一个类被继承呢？</p>  <p>方法就是把这个类的构造函数声明成private的，这样就不能被继承了。当然更好的办法是用非技术的手段了：）</p>  <p>方法1： 构造函数private，提供一个Factory方法，缺点就是使用者必须用这个factory方法，不能直接使用这个类。</p><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NoDerive</span> &#123;</span></span><br><span class="line">    NoDerive()&#123;&#125;;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">static</span> NoDerive <span class="title">GetNoDerive</span><span class="params">()</span></span>&#123; <span class="keyword">return</span> NoDerive();&#125;;</span><br><span class="line">    ~NoDerive()&#123;&#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><br><br><p>方法2： 构造函数public，但是虚拟继承自一个private构造函数，没有方法1的缺点，但是看着有点hack。</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NoDerive</span>;</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NoDeriveBase</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">friend</span> <span class="class"><span class="keyword">class</span> <span class="title">NoDerive</span>;</span></span><br><span class="line">    NoDeriveBase()&#123;&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NoDerive</span>:</span><span class="keyword">private</span> <span class="keyword">virtual</span> NoDeriveBase &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    NoDerive()&#123;&#125;;</span><br><span class="line">    ~NoDerive()&#123;&#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;C#中可以用sealed关键字，但是，C++中怎么阻止一个类被继承呢？&lt;/p&gt;  &lt;p&gt;方法就是把这个类的构造函数声明成private的，这样就不能被继承了。当然更好的办法是用非技术的手段了：）&lt;/p&gt;  &lt;p&gt;方法1： 构造函数private，提供一个Factory方法，
-      
-    
-    </summary>
-    
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>.NET自动exploratory测试工具Pex</title>
     <link href="http://fresky.github.io/2012/12/04/csharp-exploratory-testing-tool-pex/"/>
     <id>http://fresky.github.io/2012/12/04/csharp-exploratory-testing-tool-pex/</id>
@@ -6954,6 +6959,29 @@ w\:* {behavior:url(#default#VML);}
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++中怎么阻止一个类被继承</title>
+    <link href="http://fresky.github.io/2012/12/04/how-to-prevent-class-being-base-class-in-cpp/"/>
+    <id>http://fresky.github.io/2012/12/04/how-to-prevent-class-being-base-class-in-cpp/</id>
+    <published>2012-12-03T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.238Z</updated>
+    
+    <content type="html"><![CDATA[<p>C#中可以用sealed关键字，但是，C++中怎么阻止一个类被继承呢？</p>  <p>方法就是把这个类的构造函数声明成private的，这样就不能被继承了。当然更好的办法是用非技术的手段了：）</p>  <p>方法1： 构造函数private，提供一个Factory方法，缺点就是使用者必须用这个factory方法，不能直接使用这个类。</p><br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NoDerive</span> &#123;</span></span><br><span class="line">    NoDerive()&#123;&#125;;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">static</span> NoDerive <span class="title">GetNoDerive</span><span class="params">()</span></span>&#123; <span class="keyword">return</span> NoDerive();&#125;;</span><br><span class="line">    ~NoDerive()&#123;&#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><br><br><p>方法2： 构造函数public，但是虚拟继承自一个private构造函数，没有方法1的缺点，但是看着有点hack。</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NoDerive</span>;</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NoDeriveBase</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">friend</span> <span class="class"><span class="keyword">class</span> <span class="title">NoDerive</span>;</span></span><br><span class="line">    NoDeriveBase()&#123;&#125;;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">NoDerive</span>:</span><span class="keyword">private</span> <span class="keyword">virtual</span> NoDeriveBase &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    NoDerive()&#123;&#125;;</span><br><span class="line">    ~NoDerive()&#123;&#125;;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;C#中可以用sealed关键字，但是，C++中怎么阻止一个类被继承呢？&lt;/p&gt;  &lt;p&gt;方法就是把这个类的构造函数声明成private的，这样就不能被继承了。当然更好的办法是用非技术的手段了：）&lt;/p&gt;  &lt;p&gt;方法1： 构造函数private，提供一个Factory方法，
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -7515,29 +7543,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>用Visual Studio做profiling</title>
-    <link href="http://fresky.github.io/2012/10/19/profiling-with-visual-studio/"/>
-    <id>http://fresky.github.io/2012/10/19/profiling-with-visual-studio/</id>
-    <published>2012-10-18T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.233Z</updated>
-    
-    <content type="html"><![CDATA[<p>步骤可以参见：<a href="http://msdn.microsoft.com/en-us/library/ms182372.aspx" target="_blank" rel="noopener">Beginners Guide to Performance Profiling</a><br>刚才试了一下，挺好用的。而且能attach到process上去，很方便就能找到性能瓶颈，C#和C++都行。<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;步骤可以参见：&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms182372.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Beginners Guide to Performance Prof
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>关于scrum的一些有趣的讨论</title>
     <link href="http://fresky.github.io/2012/10/19/discussion-about-scrum/"/>
     <id>http://fresky.github.io/2012/10/19/discussion-about-scrum/</id>
@@ -7557,6 +7562,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Agile" scheme="http://fresky.github.io/tags/Agile/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用Visual Studio做profiling</title>
+    <link href="http://fresky.github.io/2012/10/19/profiling-with-visual-studio/"/>
+    <id>http://fresky.github.io/2012/10/19/profiling-with-visual-studio/</id>
+    <published>2012-10-18T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.233Z</updated>
+    
+    <content type="html"><![CDATA[<p>步骤可以参见：<a href="http://msdn.microsoft.com/en-us/library/ms182372.aspx" target="_blank" rel="noopener">Beginners Guide to Performance Profiling</a><br>刚才试了一下，挺好用的。而且能attach到process上去，很方便就能找到性能瓶颈，C#和C++都行。<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;步骤可以参见：&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms182372.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Beginners Guide to Performance Prof
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7653,25 +7681,25 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>飞信登录不了，错误码10032002 的解决办法</title>
-    <link href="http://fresky.github.io/2012/10/10/fix-fetion-login-issue/"/>
-    <id>http://fresky.github.io/2012/10/10/fix-fetion-login-issue/</id>
+    <title>软件开发10个致命错误（转自Construx）</title>
+    <link href="http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/"/>
+    <id>http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/</id>
     <published>2012-10-09T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.231Z</updated>
     
-    <content type="html"><![CDATA[<pre class="reply-text mb10" id="content-954086387" data-accusearea="aContent">在登录界面的下面，打开“网络设置”按钮，在“网络联接”中选择“更多设置”，“登录协议”中选择“http协议”，“确定”就行了。 </pre>]]></content>
+    <content type="html"><![CDATA[<p>（转自<a href="http://www.construx.com/" target="_blank">Construx</a>，可以从<a href="http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）" target="_blank" rel="noopener">http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）</a><br><ol><li>混淆估计和目标的区别</li><li>过度乐观的时间表</li><li>不切实际的期望</li><li>一厢情愿</li><li>克扣质量保证</li><li>过度多任务</li><li>功能蔓延</li><li>吵闹拥挤的办公室</li><li>压力下放弃规划</li><li>风险管理不够<br></li></ol><br></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;pre class=&quot;reply-text mb10&quot; id=&quot;content-954086387&quot; data-accusearea=&quot;aContent&quot;&gt;在登录界面的下面，打开“网络设置”按钮，在“网络联接”中选择“更多设置”，“登录协议”中选择“http协议”，“确定”就行
+        &lt;p&gt;（转自&lt;a href=&quot;http://www.construx.com/&quot; target=&quot;_blank&quot;&gt;Construx&lt;/a&gt;，可以从&lt;a href=&quot;http://info.construx.com/rs/construx/images/Poster_Tombsto
       
     
     </summary>
     
     
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+      <category term="Development" scheme="http://fresky.github.io/tags/Development/"/>
     
   </entry>
   
@@ -7699,25 +7727,25 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>软件开发10个致命错误（转自Construx）</title>
-    <link href="http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/"/>
-    <id>http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/</id>
+    <title>飞信登录不了，错误码10032002 的解决办法</title>
+    <link href="http://fresky.github.io/2012/10/10/fix-fetion-login-issue/"/>
+    <id>http://fresky.github.io/2012/10/10/fix-fetion-login-issue/</id>
     <published>2012-10-09T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.231Z</updated>
     
-    <content type="html"><![CDATA[<p>（转自<a href="http://www.construx.com/" target="_blank">Construx</a>，可以从<a href="http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）" target="_blank" rel="noopener">http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）</a><br><ol><li>混淆估计和目标的区别</li><li>过度乐观的时间表</li><li>不切实际的期望</li><li>一厢情愿</li><li>克扣质量保证</li><li>过度多任务</li><li>功能蔓延</li><li>吵闹拥挤的办公室</li><li>压力下放弃规划</li><li>风险管理不够<br></li></ol><br></p>]]></content>
+    <content type="html"><![CDATA[<pre class="reply-text mb10" id="content-954086387" data-accusearea="aContent">在登录界面的下面，打开“网络设置”按钮，在“网络联接”中选择“更多设置”，“登录协议”中选择“http协议”，“确定”就行了。 </pre>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;（转自&lt;a href=&quot;http://www.construx.com/&quot; target=&quot;_blank&quot;&gt;Construx&lt;/a&gt;，可以从&lt;a href=&quot;http://info.construx.com/rs/construx/images/Poster_Tombsto
+        &lt;pre class=&quot;reply-text mb10&quot; id=&quot;content-954086387&quot; data-accusearea=&quot;aContent&quot;&gt;在登录界面的下面，打开“网络设置”按钮，在“网络联接”中选择“更多设置”，“登录协议”中选择“http协议”，“确定”就行
       
     
     </summary>
     
     
-      <category term="Development" scheme="http://fresky.github.io/tags/Development/"/>
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -7979,9 +8007,9 @@ w\:* {behavior:url(#default#VML);}
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -8004,9 +8032,9 @@ w\:* {behavior:url(#default#VML);}
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -8313,30 +8341,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>定义Enum的开始和结束，这样就能循环Enum了</title>
-    <link href="http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/"/>
-    <id>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</id>
-    <published>2012-07-16T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.224Z</updated>
-    
-    <content type="html"><![CDATA[<p>示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> ProgrammingLanguage</span><br><span class="line">   &#123;</span><br><span class="line">       Language_First = <span class="number">0</span>,</span><br><span class="line">       CPP = <span class="number">1</span>,</span><br><span class="line">       CSharp = <span class="number">2</span>,</span><br><span class="line">       Java =<span class="number">3</span>,</span><br><span class="line">       Language_Last = <span class="number">4</span>,</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">   &#123;</span><br><span class="line">       <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>       &#123;</span><br><span class="line">          <span class="keyword">for</span> (ProgrammingLanguage i = ProgrammingLanguage.Language_First + <span class="number">1</span>; i &lt; ProgrammingLanguage.Language_Last; i++)</span><br><span class="line">           &#123;</span><br><span class="line">               Console.WriteLine(i);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。&lt;/p&gt;
-&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>禁用C#的树的单个节点</title>
     <link href="http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/"/>
     <id>http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/</id>
@@ -8351,6 +8355,30 @@ w\:* {behavior:url(#default#VML);}
       
         &lt;p&gt;C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。&lt;/p&gt;
 &lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;t
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>定义Enum的开始和结束，这样就能循环Enum了</title>
+    <link href="http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/"/>
+    <id>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</id>
+    <published>2012-07-16T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.224Z</updated>
+    
+    <content type="html"><![CDATA[<p>示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> ProgrammingLanguage</span><br><span class="line">   &#123;</span><br><span class="line">       Language_First = <span class="number">0</span>,</span><br><span class="line">       CPP = <span class="number">1</span>,</span><br><span class="line">       CSharp = <span class="number">2</span>,</span><br><span class="line">       Java =<span class="number">3</span>,</span><br><span class="line">       Language_Last = <span class="number">4</span>,</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">   &#123;</span><br><span class="line">       <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>       &#123;</span><br><span class="line">          <span class="keyword">for</span> (ProgrammingLanguage i = ProgrammingLanguage.Language_First + <span class="number">1</span>; i &lt; ProgrammingLanguage.Language_Last; i++)</span><br><span class="line">           &#123;</span><br><span class="line">               Console.WriteLine(i);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。&lt;/p&gt;
+&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
       
     
     </summary>
@@ -8434,6 +8462,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别</title>
+    <link href="http://fresky.github.io/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/"/>
+    <id>http://fresky.github.io/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/</id>
+    <published>2012-07-12T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.223Z</updated>
+    
+    <content type="html"><![CDATA[<p>这里<a href="http://stackoverflow.com/questions/3788605/if-debug-vs-conditionaldebug" target="_blank" rel="noopener">c# - #if DEBUG vs. Conditional(“DEBUG”) - Stack Overflow</a>解释了两者的区别。摘要如下：<br>#if DEBUG: 发生在编译时，release编译出的IL不包含if中的代码<br>[Conditional(“DEBUG”)]: 发生在运行时，releae编译出的IL包含代码，但是不会被执行。<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这里&lt;a href=&quot;http://stackoverflow.com/questions/3788605/if-debug-vs-conditionaldebug&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;c# - #if DEBUG vs. Con
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</title>
     <link href="http://fresky.github.io/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/"/>
     <id>http://fresky.github.io/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/</id>
@@ -8455,29 +8506,6 @@ w\:* {behavior:url(#default#VML);}
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别</title>
-    <link href="http://fresky.github.io/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/"/>
-    <id>http://fresky.github.io/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/</id>
-    <published>2012-07-12T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.223Z</updated>
-    
-    <content type="html"><![CDATA[<p>这里<a href="http://stackoverflow.com/questions/3788605/if-debug-vs-conditionaldebug" target="_blank" rel="noopener">c# - #if DEBUG vs. Conditional(“DEBUG”) - Stack Overflow</a>解释了两者的区别。摘要如下：<br>#if DEBUG: 发生在编译时，release编译出的IL不包含if中的代码<br>[Conditional(“DEBUG”)]: 发生在运行时，releae编译出的IL包含代码，但是不会被执行。<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;这里&lt;a href=&quot;http://stackoverflow.com/questions/3788605/if-debug-vs-conditionaldebug&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;c# - #if DEBUG vs. Con
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -9210,29 +9238,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>gvim编辑xml更新</title>
-    <link href="http://fresky.github.io/2010/10/09/edit-xml-in-gvim/"/>
-    <id>http://fresky.github.io/2010/10/09/edit-xml-in-gvim/</id>
-    <published>2010-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.213Z</updated>
-    
-    <content type="html"><![CDATA[<p>上次写的那个gvim编辑xml的方式有点不太好，没有把xml的层级关系列出来，今天找了找，比较完美的解决了gvim编辑和查看xml的问题。<br><br>查看xml，需要用到<a href="http://code.google.com/p/xmllint/" target="_blank" rel="noopener">xmllint</a>，这个是windows版本的，需要放到path里面，其实就是在gvim里能找到就行。然后再gvim的配置中加上这个<br>let mapleader = “,”<br>map &lt;silent&gt; &lt;leader&gt;px : %!xmllint % –format&lt;cr&gt;<br>这样在打开xml后，键盘输入,px，就能得到xml的pretty xml效果。<br><br>对于编辑，需要<a href="http://www.vim.org/scripts/script.php?script_id=301" target="_blank" rel="noopener">xmledit - A filetype plugin to help edit XML, HTML, and SGML documents</a> ，用这个覆盖掉原来gvim自带的xml.vim，在编辑xml文件时就能省很多事了，照抄文档里说。It allows you to jump to the beginning or end of the tag block your cursor is in. ‘%’ will jump between ‘&lt;’ and ‘&gt;’ within the tag your cursor is in. When in insert mode and you finish a tag (pressing ‘&gt;’) the tag will be completed. If you press ‘&gt;’ twice it will complete the tag and place the cursor in the middle of the tags on it’s own line. </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;上次写的那个gvim编辑xml的方式有点不太好，没有把xml的层级关系列出来，今天找了找，比较完美的解决了gvim编辑和查看xml的问题。&lt;br&gt;&lt;br&gt;查看xml，需要用到&lt;a href=&quot;http://code.google.com/p/xmllint/&quot; target
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>法意蜜月之旅签证、交通、酒店篇</title>
     <link href="http://fresky.github.io/2010/10/09/europe-travel-visa-traffic-hotel/"/>
     <id>http://fresky.github.io/2010/10/09/europe-travel-visa-traffic-hotel/</id>
@@ -9252,29 +9257,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ASP .NET readonly texbox 后台不能读取问题的解决办法</title>
-    <link href="http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/"/>
-    <id>http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/</id>
-    <published>2010-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.215Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近在做一些ASP .NET和silverlight的项目，把遇到的一些问题记在这里吧：）<br><br>如果需要有一个textbox只能接受特定格式的东西，一个做法是把这个textbox做成readonly的，然后通过别的方式，比如javascript动态的生成需要填充的东西，放进这个textbox里面。但是在ASP的程序中postback到后台后会发现拿不到这个textbox的值，原因在msdn里做了如下解释。<br><br></p><blockquote><p>The Text value of a TextBox control with the ReadOnly property set to true<br>is sent to the server when a postback occurs, but the server does no<br>processing for a read-only text box. This prevents a malicious user from<br>changing a Text value that is read-only. The value of the Text property is preserved in the view state between postbacks unless modified by server-side code.</p></blockquote><p>一个简单的解决办法是，在code behand中设置read only 属性，示例代码如下：<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textboxReadonly.Attributes.Add(<span class="string">"readonly"</span>, <span class="string">"readonly"</span>);</span><br></pre></td></tr></table></figure></p><p>这样的话就可以了。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;最近在做一些ASP .NET和silverlight的项目，把遇到的一些问题记在这里吧：）&lt;br&gt;&lt;br&gt;如果需要有一个textbox只能接受特定格式的东西，一个做法是把这个textbox做成readonly的，然后通过别的方式，比如javascript动态的生成需要填充的
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -9325,6 +9307,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>ASP .NET readonly texbox 后台不能读取问题的解决办法</title>
+    <link href="http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/"/>
+    <id>http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/</id>
+    <published>2010-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.215Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在做一些ASP .NET和silverlight的项目，把遇到的一些问题记在这里吧：）<br><br>如果需要有一个textbox只能接受特定格式的东西，一个做法是把这个textbox做成readonly的，然后通过别的方式，比如javascript动态的生成需要填充的东西，放进这个textbox里面。但是在ASP的程序中postback到后台后会发现拿不到这个textbox的值，原因在msdn里做了如下解释。<br><br></p><blockquote><p>The Text value of a TextBox control with the ReadOnly property set to true<br>is sent to the server when a postback occurs, but the server does no<br>processing for a read-only text box. This prevents a malicious user from<br>changing a Text value that is read-only. The value of the Text property is preserved in the view state between postbacks unless modified by server-side code.</p></blockquote><p>一个简单的解决办法是，在code behand中设置read only 属性，示例代码如下：<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textboxReadonly.Attributes.Add(<span class="string">"readonly"</span>, <span class="string">"readonly"</span>);</span><br></pre></td></tr></table></figure></p><p>这样的话就可以了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近在做一些ASP .NET和silverlight的项目，把遇到的一些问题记在这里吧：）&lt;br&gt;&lt;br&gt;如果需要有一个textbox只能接受特定格式的东西，一个做法是把这个textbox做成readonly的，然后通过别的方式，比如javascript动态的生成需要填充的
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2009年底泰国游总结</title>
     <link href="http://fresky.github.io/2010/10/09/thailand-travel/"/>
     <id>http://fresky.github.io/2010/10/09/thailand-travel/</id>
@@ -9344,6 +9349,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>gvim编辑xml更新</title>
+    <link href="http://fresky.github.io/2010/10/09/edit-xml-in-gvim/"/>
+    <id>http://fresky.github.io/2010/10/09/edit-xml-in-gvim/</id>
+    <published>2010-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.213Z</updated>
+    
+    <content type="html"><![CDATA[<p>上次写的那个gvim编辑xml的方式有点不太好，没有把xml的层级关系列出来，今天找了找，比较完美的解决了gvim编辑和查看xml的问题。<br><br>查看xml，需要用到<a href="http://code.google.com/p/xmllint/" target="_blank" rel="noopener">xmllint</a>，这个是windows版本的，需要放到path里面，其实就是在gvim里能找到就行。然后再gvim的配置中加上这个<br>let mapleader = “,”<br>map &lt;silent&gt; &lt;leader&gt;px : %!xmllint % –format&lt;cr&gt;<br>这样在打开xml后，键盘输入,px，就能得到xml的pretty xml效果。<br><br>对于编辑，需要<a href="http://www.vim.org/scripts/script.php?script_id=301" target="_blank" rel="noopener">xmledit - A filetype plugin to help edit XML, HTML, and SGML documents</a> ，用这个覆盖掉原来gvim自带的xml.vim，在编辑xml文件时就能省很多事了，照抄文档里说。It allows you to jump to the beginning or end of the tag block your cursor is in. ‘%’ will jump between ‘&lt;’ and ‘&gt;’ within the tag your cursor is in. When in insert mode and you finish a tag (pressing ‘&gt;’) the tag will be completed. If you press ‘&gt;’ twice it will complete the tag and place the cursor in the middle of the tags on it’s own line. </p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;上次写的那个gvim编辑xml的方式有点不太好，没有把xml的层级关系列出来，今天找了找，比较完美的解决了gvim编辑和查看xml的问题。&lt;br&gt;&lt;br&gt;查看xml，需要用到&lt;a href=&quot;http://code.google.com/p/xmllint/&quot; target
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fresky.github.io/"/>
-  <updated>2020-05-11T05:43:01.695Z</updated>
+  <updated>2020-05-11T05:46:17.218Z</updated>
   <id>http://fresky.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://fresky.github.io/2020/05/05/remote-work/"/>
     <id>http://fresky.github.io/2020/05/05/remote-work/</id>
     <published>2020-05-05T04:19:19.000Z</published>
-    <updated>2020-05-11T05:43:01.695Z</updated>
+    <updated>2020-05-11T05:46:17.218Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="环境相关"><a href="#环境相关" class="headerlink" title="环境相关"></a>环境相关</h1><ul><li>充足睡眠，多喝水，吃健康食品</li><li>建立你的办公空间，合适的桌子，椅子，显示器等</li><li>如果需要的话，准备耳机麦克风摄像头</li><li>找到什么会让自己分心并且制定计划解决，比如划分独立的工作空间</li><li>做一些有仪式感的事情，比如在开工之前穿上正式一点的衣服</li></ul><h1 id="时间管理相关"><a href="#时间管理相关" class="headerlink" title="时间管理相关"></a>时间管理相关</h1><ul><li>制定（灵活的）工作时间和日程表，因为在家办公可以更灵活，比如晚上工作一段时间，下午和孩子玩</li><li>制定任务清单，划分小的里程碑，确保每天上午都能至少完成一个</li><li>避免多任务</li><li>定时运动，比如番茄工作法，每工作30分钟休息一下</li><li>流出专门时间吃饭，做家庭事务，比如做饭打扫卫生之类的</li></ul><h1 id="沟通相关"><a href="#沟通相关" class="headerlink" title="沟通相关"></a>沟通相关</h1><ul><li>让别人知道自己在做什么，什么进展，比如每天的站会</li><li>工作时间让别人可以找到你</li><li>寻求别人对你工作的反馈</li><li>过度沟通</li></ul><h1 id="开会相关"><a href="#开会相关" class="headerlink" title="开会相关"></a>开会相关</h1><ul><li>问别人问题后等待几秒钟，别人可能需要打开麦克风</li><li>很多人参加的会议中关掉自己的麦克风</li><li>给别人做演讲时事先打开好你要展示的网页，幻灯片等</li><li>在会议结束之前趁所有人都在做总结和任务项</li><li>如果你是会议的主持人需要制定大家的发言顺序避免多个人同时说话（面对面时我们通常可以用身体语言来达到这个目的，但是电话会议需要你说出来）</li><li>在会议中避免同时问多个人问题（和上面相关）</li><li>如果你是会议的主持人，如果有人发言被打断后你要记下来，等其他人说完后你要确保他没有被漏掉</li><li>如果大家都允许的话把会议录下来，在发会议总结的时候把视频地址附上</li><li>准时，和与会人员达成共识，避免迟到，如果不能参加至少提前一天通知会议发起人</li><li>发言准确简洁，电话会议更容易超时</li><li>重要信息需要得到别人的确认</li><li>询问别人的意见，电话会议你看不到别人的身体语言告诉你他有问题</li><li>会议之前发出日程表，让大家都知道这个会议的目的是什么</li><li>会议之前和别人分享幻灯片，在演讲的时候告诉别人你在那一页</li><li>及时发出会议纪要</li><li>区别需要大家一起讨论的（同步的）和可以会前分别准备的（异步的）</li><li>制定时间限制</li><li>避免紧挨着的会议，最好订会议的时候结束在还剩5分钟到整点或者半点</li><li>可以在会议中留一些时间讨论非工作的事情</li><li>在会议中使用文字作为另一个沟通工具，比如告诉别人你有问题，或者说你同意</li></ul><h1 id="团队管理相关"><a href="#团队管理相关" class="headerlink" title="团队管理相关"></a>团队管理相关</h1><ul><li>制作一个远程办公的教程，可以从微软的这个幻灯片<a href="https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2020/04/Work-from-home-guide.pptx" target="_blank" rel="noopener">Microsoft Work-from-Home Guide (customer version)</a>开始</li><li>建立团队的信任，“你怎么保证人们都在工作？”是一个和远程办公没关系的问题</li><li>确保团队在做正确的事，保持大家目标一致</li><li>肯定别人的工作</li><li>通过每天站会，一对一会议等方式保持大家互相联系</li><li>把决定（和原因）写下来，让所有人看得到</li><li>考虑组织在线团建活动</li><li>建立一个闲聊的管道</li></ul><h1 id="工具相关"><a href="#工具相关" class="headerlink" title="工具相关"></a>工具相关</h1><ul><li>确保你的手机上至少有一种沟通工具，当电脑出问题时可以救急</li><li>使用在线交流(聊天，开会）的工具<ul><li>Skype</li><li>Teams</li><li>Slack</li><li>Zoom</li></ul></li><li>使用在线协同工作工具<ul><li>Office 365</li><li>Google Docs  </li><li>Visual Studio或者Visual Studio Code的Live Share功能来多人协作编程调试</li><li>InVision做UX设计</li><li>CodePen等在线代码编辑器</li></ul></li><li>项目管理工具<ul><li>Trello, Jira, Azure DevOps等</li></ul></li></ul><h1 id="参考阅读"><a href="#参考阅读" class="headerlink" title="参考阅读"></a>参考阅读</h1><p>本文参考了下面这些文章： </p><p><a href="https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2020/04/Work-from-home-guide.pptx" target="_blank" rel="noopener">Microsoft Work-from-Home Guide (customer version)</a><br><a href="https://medium.com/swlh/how-to-create-a-work-from-home-schedule-83d6b6097cb5" target="_blank" rel="noopener">Tips for Creating a Work From Home Schedule</a><br><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/03/18/making-the-switch-to-remote-work-5-things-weve-learned/" target="_blank" rel="noopener">2 weeks in: what we’ve learned about remote work </a><br><a href="https://www.hanselman.com/blog/30TipsForSuccessfulCommunicationAsARemoteWorker.aspx" target="_blank" rel="noopener">30 Tips for Successful Communication as a Remote Worker</a><br><a href="https://www.hanselman.com/blog/BeingARemoteWorkerSucksLongLiveTheRemoteWorker.aspx" target="_blank" rel="noopener">Being a Remote Worker Sucks - Long Live the Remote Worker</a><br><a href="https://www.hanselman.com/blog/LoveInATimeOfCoronaVirusTipsTricksAndBestPracticesForWorkingRemotely.aspx" target="_blank" rel="noopener">Love in a time of Corona Virus - Tips, Tricks and Best Practices for Working Remotely</a><br><a href="https://www.thoughtworks.com/insights/blog/building-team-camaraderie-when-remote-working" target="_blank" rel="noopener">Building team camaraderie when remote working</a><br><a href="https://www.jrothman.com/mpd/2020/04/optimize-for-respectful-remote-meetings" target="_blank" rel="noopener">Optimize for Respectful Remote Meetings</a><br><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/17/key-findings-remote-work-lessons-colleagues-china/" target="_blank" rel="noopener">Key findings about remote work: lessons from our colleagues in China </a><br><a href="https://stephenhaunts.com/2020/04/16/a-guide-to-successful-remote-working-and-working-from-home/" target="_blank" rel="noopener">A Guide to Successful Remote Working and Working from Home</a><br><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/16/5-tips-working-from-home-children/" target="_blank" rel="noopener">5 tips for working from home with children</a><br><a href="https://devblogs.microsoft.com/visualstudio/for-all-things-remote-development/" target="_blank" rel="noopener">A guide to remote development with Live Share<br>Filisha Shah</a><br><a href="https://www.thoughtworks.com/insights/blog/dont-stop-collaborating-just-because-youre-remote" target="_blank" rel="noopener">Don’t stop collaborating just because you’re remote</a><br><a href="https://www.danclarke.com/2020-wfh" target="_blank" rel="noopener">Working From Home - Tips and Tricks</a><br><a href="https://blog.trello.com/tools-for-remote-work-success-infographic" target="_blank" rel="noopener">When To Use Which Tools For Remote Work Success</a><br><a href="https://www.telerik.com/blogs/tips-time-management-working-from-home" target="_blank" rel="noopener">Tips for Time Management and Working from Home</a><br><a href="https://blog.trello.com/leaders-offer-encouragement-support-on-remote-teams" target="_blank" rel="noopener">5 Ways Leaders Can Offer Encouragement And Emotional Support On A Remote Team</a><br><a href="https://blog.trello.com/work-from-home-guides" target="_blank" rel="noopener">Working From Home? 12 Guides To Help Navigate The Remote Life</a><br><a href="https://stackoverflow.blog/2020/03/12/working-from-home-tips-from-our-experienced-remote-employees/" target="_blank" rel="noopener">Working from home tips from our experienced remote employees</a><br><a href="https://blog.postman.com/tips-for-working-from-home/" target="_blank" rel="noopener">Postman’s Top 10 Tips for Working from Home</a><br><a href="https://haacked.com/archive/2020/03/03/how-to-work-from-home/" target="_blank" rel="noopener">How To Work From Home</a><br><a href="https://haacked.com/archive/2020/03/05/how-to-lead-from-home/" target="_blank" rel="noopener">How to Lead From Home</a><br><a href="https://about.gitlab.com/blog/2019/12/30/mastering-the-all-remote-environment/" target="_blank" rel="noopener">Mastering the all-remote environment: My top 5 challenges and solutions</a><br><a href="https://opensource.com/article/20/3/open-source-working-home" target="_blank" rel="noopener">Top 10 open source tools for working from home</a><br><a href="https://martinfowler.com/articles/effective-video-calls.html" target="_blank" rel="noopener">How to do effective video calls</a><br><a href="https://www.telerik.com/blogs/5-tips-for-staying-productive-during-covid-19" target="_blank" rel="noopener">5 Tips for Staying Productive During COVID-19</a><br><a href="https://blog.trello.com/long-distance-leadership" target="_blank" rel="noopener">Long-Distance Leadership: How To Effectively Manage A Team From Afar</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="环境相关"><a href="#环境相关" class="headerlink" title="环境相关"></a>环境相关</h1><ul><li>充足睡眠，多喝水，吃健康食品</li><li>建立你的办公空间，合适的桌子，椅子，显示器等</li><li>如果需要的话，准备耳机麦克风摄像头</li><li>找到什么会让自己分心并且制定计划解决，比如划分独立的工作空间</li><li>做一些有仪式感的事情，比如在开工之前穿上正式一点的衣服</li></ul><h1 id="时间管理相关"><a href="#时间管理相关" class="headerlink" title="时间管理相关"></a>时间管理相关</h1><ul><li>制定（灵活的）工作时间和日程表，因为在家办公可以更灵活，比如晚上工作一段时间，下午和孩子玩</li><li>制定任务清单，划分小的里程碑，确保每天上午都能至少完成一个</li><li>避免多任务</li><li>定时运动，比如番茄工作法，每工作30分钟休息一下</li><li>流出专门时间吃饭，做家庭事务，比如做饭打扫卫生之类的</li></ul><h1 id="沟通相关"><a href="#沟通相关" class="headerlink" title="沟通相关"></a>沟通相关</h1><ul><li>让别人知道自己在做什么，什么进展，比如每天的站会</li><li>工作时间让别人可以找到你</li><li>寻求别人对你工作的反馈</li><li>过度沟通</li></ul><h1 id="开会相关"><a href="#开会相关" class="headerlink" title="开会相关"></a>开会相关</h1><ul><li>问别人问题后等待几秒钟，别人可能需要打开麦克风</li><li>很多人参加的会议中关掉自己的麦克风</li><li>给别人做演讲时事先打开好你要展示的网页，幻灯片等</li><li>在会议结束之前趁所有人都在做总结和任务项</li><li>如果你是会议的主持人需要制定大家的发言顺序避免多个人同时说话（面对面时我们通常可以用身体语言来达到这个目的，但是电话会议需要你说出来）</li><li>在会议中避免同时问多个人问题（和上面相关）</li><li>如果你是会议的主持人，如果有人发言被打断后你要记下来，等其他人说完后你要确保他没有被漏掉</li><li>如果大家都允许的话把会议录下来，在发会议总结的时候把视频地址附上</li><li>准时，和与会人员达成共识，避免迟到，如果不能参加至少提前一天通知会议发起人</li><li>发言准确简洁，电话会议更容易超时</li><li>重要信息需要得到别人的确认</li><li>询问别人的意见，电话会议你看不到别人的身体语言告诉你他有问题</li><li>会议之前发出日程表，让大家都知道这个会议的目的是什么</li><li>会议之前和别人分享幻灯片，在演讲的时候告诉别人你在那一页</li><li>及时发出会议纪要</li><li>区别需要大家一起讨论的（同步的）和可以会前分别准备的（异步的）</li><li>制定时间限制</li><li>避免紧挨着的会议，最好订会议的时候结束在还剩5分钟到整点或者半点</li><li>可以在会议中留一些时间讨论非工作的事情</li><li>在会议中使用文字作为另一个沟通工具，比如告诉别人你有问题，或者说你同意</li></ul><h1 id="团队管理相关"><a href="#团队管理相关" class="headerlink" title="团队管理相关"></a>团队管理相关</h1><ul><li>制作一个远程办公的教程，可以从微软的这个幻灯片<a href="https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2020/04/Work-from-home-guide.pptx" target="_blank" rel="noopener">Microsoft Work-from-Home Guide (customer version)</a>开始</li><li>建立团队的信任，“你怎么保证人们都在工作？”是一个和远程办公没关系的问题</li><li>确保团队在做正确的事，保持大家目标一致</li><li>肯定别人的工作</li><li>通过每天站会，一对一会议等方式保持大家互相联系</li><li>把决定（和原因）写下来，让所有人看得到</li><li>考虑组织在线团建活动</li><li>建立一个闲聊的管道</li></ul><h1 id="工具相关"><a href="#工具相关" class="headerlink" title="工具相关"></a>工具相关</h1><ul><li>确保你的手机上至少有一种沟通工具，当电脑出问题时可以救急</li><li>使用在线交流(聊天，开会）的工具<ul><li>Skype</li><li>Teams</li><li>Slack</li><li>Zoom</li></ul></li><li>使用在线协同工作工具<ul><li>Office 365</li><li>Google Docs  </li><li>Visual Studio或者Visual Studio Code的Live Share功能来多人协作编程调试</li><li>InVision做UX设计</li><li>CodePen等在线代码编辑器</li></ul></li><li>项目管理工具<ul><li>Trello, Jira, Azure DevOps等</li></ul></li></ul><h1 id="参考阅读"><a href="#参考阅读" class="headerlink" title="参考阅读"></a>参考阅读</h1><p>本文参考了下面这些文章： </p><p><a href="https://www.microsoft.com/en-us/microsoft-365/blog/wp-content/uploads/sites/2/2020/04/Work-from-home-guide.pptx" target="_blank" rel="noopener">Microsoft Work-from-Home Guide (customer version)</a><br><a href="https://medium.com/swlh/how-to-create-a-work-from-home-schedule-83d6b6097cb5" target="_blank" rel="noopener">Tips for Creating a Work From Home Schedule</a><br><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/03/18/making-the-switch-to-remote-work-5-things-weve-learned/" target="_blank" rel="noopener">2 weeks in: what we’ve learned about remote work </a><br><a href="https://www.hanselman.com/blog/30TipsForSuccessfulCommunicationAsARemoteWorker.aspx" target="_blank" rel="noopener">30 Tips for Successful Communication as a Remote Worker</a><br><a href="https://www.hanselman.com/blog/BeingARemoteWorkerSucksLongLiveTheRemoteWorker.aspx" target="_blank" rel="noopener">Being a Remote Worker Sucks - Long Live the Remote Worker</a><br><a href="https://www.hanselman.com/blog/LoveInATimeOfCoronaVirusTipsTricksAndBestPracticesForWorkingRemotely.aspx" target="_blank" rel="noopener">Love in a time of Corona Virus - Tips, Tricks and Best Practices for Working Remotely</a><br><a href="https://www.thoughtworks.com/insights/blog/building-team-camaraderie-when-remote-working" target="_blank" rel="noopener">Building team camaraderie when remote working</a><br><a href="https://www.jrothman.com/mpd/2020/04/optimize-for-respectful-remote-meetings" target="_blank" rel="noopener">Optimize for Respectful Remote Meetings</a><br><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/17/key-findings-remote-work-lessons-colleagues-china/" target="_blank" rel="noopener">Key findings about remote work: lessons from our colleagues in China </a><br><a href="https://stephenhaunts.com/2020/04/16/a-guide-to-successful-remote-working-and-working-from-home/" target="_blank" rel="noopener">A Guide to Successful Remote Working and Working from Home</a><br><a href="https://www.microsoft.com/en-us/microsoft-365/blog/2020/04/16/5-tips-working-from-home-children/" target="_blank" rel="noopener">5 tips for working from home with children</a><br><a href="https://devblogs.microsoft.com/visualstudio/for-all-things-remote-development/" target="_blank" rel="noopener">A guide to remote development with Live Share</a><br><a href="https://www.thoughtworks.com/insights/blog/dont-stop-collaborating-just-because-youre-remote" target="_blank" rel="noopener">Don’t stop collaborating just because you’re remote</a><br><a href="https://www.danclarke.com/2020-wfh" target="_blank" rel="noopener">Working From Home - Tips and Tricks</a><br><a href="https://blog.trello.com/tools-for-remote-work-success-infographic" target="_blank" rel="noopener">When To Use Which Tools For Remote Work Success</a><br><a href="https://www.telerik.com/blogs/tips-time-management-working-from-home" target="_blank" rel="noopener">Tips for Time Management and Working from Home</a><br><a href="https://blog.trello.com/leaders-offer-encouragement-support-on-remote-teams" target="_blank" rel="noopener">5 Ways Leaders Can Offer Encouragement And Emotional Support On A Remote Team</a><br><a href="https://blog.trello.com/work-from-home-guides" target="_blank" rel="noopener">Working From Home? 12 Guides To Help Navigate The Remote Life</a><br><a href="https://stackoverflow.blog/2020/03/12/working-from-home-tips-from-our-experienced-remote-employees/" target="_blank" rel="noopener">Working from home tips from our experienced remote employees</a><br><a href="https://blog.postman.com/tips-for-working-from-home/" target="_blank" rel="noopener">Postman’s Top 10 Tips for Working from Home</a><br><a href="https://haacked.com/archive/2020/03/03/how-to-work-from-home/" target="_blank" rel="noopener">How To Work From Home</a><br><a href="https://haacked.com/archive/2020/03/05/how-to-lead-from-home/" target="_blank" rel="noopener">How to Lead From Home</a><br><a href="https://about.gitlab.com/blog/2019/12/30/mastering-the-all-remote-environment/" target="_blank" rel="noopener">Mastering the all-remote environment: My top 5 challenges and solutions</a><br><a href="https://opensource.com/article/20/3/open-source-working-home" target="_blank" rel="noopener">Top 10 open source tools for working from home</a><br><a href="https://martinfowler.com/articles/effective-video-calls.html" target="_blank" rel="noopener">How to do effective video calls</a><br><a href="https://www.telerik.com/blogs/5-tips-for-staying-productive-during-covid-19" target="_blank" rel="noopener">5 Tips for Staying Productive During COVID-19</a><br><a href="https://blog.trello.com/long-distance-leadership" target="_blank" rel="noopener">Long-Distance Leadership: How To Effectively Manage A Team From Afar</a></p>]]></content>
     
     <summary type="html">
     
@@ -712,9 +712,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Web" scheme="http://fresky.github.io/tags/Web/"/>
     
@@ -736,9 +736,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
@@ -763,9 +763,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -811,9 +811,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -1162,9 +1162,9 @@
     </summary>
     
     
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -1209,9 +1209,9 @@
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -1314,9 +1314,9 @@
     </summary>
     
     
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -1359,9 +1359,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
@@ -1408,9 +1408,9 @@
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -1432,9 +1432,9 @@
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -1454,9 +1454,9 @@
     </summary>
     
     
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -1476,9 +1476,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -2382,9 +2382,9 @@
     </summary>
     
     
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -2424,9 +2424,9 @@
     </summary>
     
     
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -2652,9 +2652,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -2782,9 +2782,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -2804,9 +2804,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -2934,9 +2934,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -2998,9 +2998,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -3804,9 +3804,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
     
@@ -3831,9 +3831,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -4002,6 +4002,29 @@
   </entry>
   
   <entry>
+    <title>遇到奇怪的C#/C/C++或者Java的bug可以去问问Coverity</title>
+    <link href="http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/"/>
+    <id>http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/</id>
+    <published>2013-07-17T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.271Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.coverity.com/" target="_blank" rel="noopener">Coverity</a>7月16号在博客<a href="https://communities.coverity.com/blogs/development-testing-blog/" target="_blank" rel="noopener">Ask The Bug Guys</a>中说以后遇到奇怪的C#/C/C++或者Java的bug可以给<a href="mailto:TheBugGuys@coverity.com" target="_blank" rel="noopener">TheBugGuys@coverity.com</a>发邮件。然后这些问题就会到一些大牛手上：</p><ul><li>&nbsp;&nbsp;&nbsp; Eric Lippert, our Godfather of C# code</li><li>&nbsp;&nbsp;&nbsp; Jon Jarboe, our C/C++ guru</li><li>&nbsp;&nbsp;&nbsp; Tim Alper, our resident Java authority</li></ul><p>之后他们会把其中一些有趣的问题放到他们一个新的系列博客Ask The Bug Guys上。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.coverity.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Coverity&lt;/a&gt;7月16号在博客&lt;a href=&quot;https://communities.coverity.com/blogs/dev
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
+    
+  </entry>
+  
+  <entry>
     <title>用ChooseALicense帮自己选一个开源license，然后用AddALicense给自己的github自动加上license文件</title>
     <link href="http://fresky.github.io/2013/07/18/choosealicense-addalicense-github-license/"/>
     <id>http://fresky.github.io/2013/07/18/choosealicense-addalicense-github-license/</id>
@@ -4023,29 +4046,6 @@
       <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
       <category term="Github" scheme="http://fresky.github.io/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>遇到奇怪的C#/C/C++或者Java的bug可以去问问Coverity</title>
-    <link href="http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/"/>
-    <id>http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/</id>
-    <published>2013-07-17T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.271Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.coverity.com/" target="_blank" rel="noopener">Coverity</a>7月16号在博客<a href="https://communities.coverity.com/blogs/development-testing-blog/" target="_blank" rel="noopener">Ask The Bug Guys</a>中说以后遇到奇怪的C#/C/C++或者Java的bug可以给<a href="mailto:TheBugGuys@coverity.com" target="_blank" rel="noopener">TheBugGuys@coverity.com</a>发邮件。然后这些问题就会到一些大牛手上：</p><ul><li>&nbsp;&nbsp;&nbsp; Eric Lippert, our Godfather of C# code</li><li>&nbsp;&nbsp;&nbsp; Jon Jarboe, our C/C++ guru</li><li>&nbsp;&nbsp;&nbsp; Tim Alper, our resident Java authority</li></ul><p>之后他们会把其中一些有趣的问题放到他们一个新的系列博客Ask The Bug Guys上。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.coverity.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Coverity&lt;/a&gt;7月16号在博客&lt;a href=&quot;https://communities.coverity.com/blogs/dev
-      
-    
-    </summary>
-    
-    
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -4262,29 +4262,6 @@
   </entry>
   
   <entry>
-    <title>一个可视化的retrospective网站</title>
-    <link href="http://fresky.github.io/2013/07/08/visual-website-for-retrospective/"/>
-    <id>http://fresky.github.io/2013/07/08/visual-website-for-retrospective/</id>
-    <published>2013-07-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.268Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://ideaboardz.com/" target="_blank" rel="noopener">IdeaBoardz - Brainstorm, Retrospect, Collaborate</a>是一个可视化的retrospective，brainstorm的网站，比较简单易用，可以导出pdf和excel。可以试试。</p><p>下面的贴图来自网站首页。</p><p><img src="http://ideaboardz.com/images/screenshot.png" alt="screen-shot" width="716" height="530"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://ideaboardz.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IdeaBoardz - Brainstorm, Retrospect, Collaborate&lt;/a&gt;是一个可视化的retrospective，
-      
-    
-    </summary>
-    
-    
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
     <title>用code workshop取代code review</title>
     <link href="http://fresky.github.io/2013/07/08/code-workshop-instead-of-code-review/"/>
     <id>http://fresky.github.io/2013/07/08/code-workshop-instead-of-code-review/</id>
@@ -4327,6 +4304,29 @@
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个可视化的retrospective网站</title>
+    <link href="http://fresky.github.io/2013/07/08/visual-website-for-retrospective/"/>
+    <id>http://fresky.github.io/2013/07/08/visual-website-for-retrospective/</id>
+    <published>2013-07-07T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.268Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://ideaboardz.com/" target="_blank" rel="noopener">IdeaBoardz - Brainstorm, Retrospect, Collaborate</a>是一个可视化的retrospective，brainstorm的网站，比较简单易用，可以导出pdf和excel。可以试试。</p><p>下面的贴图来自网站首页。</p><p><img src="http://ideaboardz.com/images/screenshot.png" alt="screen-shot" width="716" height="530"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://ideaboardz.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IdeaBoardz - Brainstorm, Retrospect, Collaborate&lt;/a&gt;是一个可视化的retrospective，
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -4377,6 +4377,29 @@
   </entry>
   
   <entry>
+    <title>如何开源你的库</title>
+    <link href="http://fresky.github.io/2013/07/06/how-to-opensource-your-code/"/>
+    <id>http://fresky.github.io/2013/07/06/how-to-opensource-your-code/</id>
+    <published>2013-07-05T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.267Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p>我之前的博客中介绍过两篇如何做好开源软件的文章，<a href="/2013/06/21/how-to-spread-your-code/">如何传播你的代码</a>，<a href="/2013/01/05/how-to-start-open-source-project/">怎么做一个开源项目</a>。</p><p></p><p></p><p>今天又看到一篇不错的文章，<a href="http://williamdurand.fr/2013/07/04/on-open-sourcing-libraries/" target="_blank" rel="noopener">On Open Sourcing Libraries | William DURAND</a>。</p><p></p><p></p><p>摘要如下：</p><p></p><p></p><p><strong><em>你的项目：</em></strong></p><p></p><ol><br><li>必须有一个README文档，包含名字，描述，还有<strong>使用方法</strong>，<strong>安装说明</strong>，<strong>如何参与</strong>，<strong>测试</strong>和<strong>License</strong>。</li><br><li>必须有一个可见的license文件。</li><br><li>必须经过测试。</li><br><li>必须和你的社区习惯保持一致</li><br></ol><br><p><em><strong>你：</strong></em></p><br><ol><br><li>需要反馈。</li><br><li>必须友好，热情。</li><br><li>应该让别人加入。</li><br></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;我之前的博客中介绍过两篇如何做好开源软件的文章，&lt;a href=&quot;/2013/06/21/how-to-spread-your-code/&quot;&gt;如何传播你的代码&lt;/a&gt;，&lt;a href=&quot;/2013/01/05/how-to-start-open-source-
+      
+    
+    </summary>
+    
+    
+      <category term="Opensource" scheme="http://fresky.github.io/tags/Opensource/"/>
+    
+  </entry>
+  
+  <entry>
     <title>tl;drLegal ——开源软件license的搜索引擎</title>
     <link href="http://fresky.github.io/2013/07/06/tldrlegal-opensource-license-search-engine/"/>
     <id>http://fresky.github.io/2013/07/06/tldrlegal-opensource-license-search-engine/</id>
@@ -4402,29 +4425,6 @@
   </entry>
   
   <entry>
-    <title>如何开源你的库</title>
-    <link href="http://fresky.github.io/2013/07/06/how-to-opensource-your-code/"/>
-    <id>http://fresky.github.io/2013/07/06/how-to-opensource-your-code/</id>
-    <published>2013-07-05T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.267Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p>我之前的博客中介绍过两篇如何做好开源软件的文章，<a href="/2013/06/21/how-to-spread-your-code/">如何传播你的代码</a>，<a href="/2013/01/05/how-to-start-open-source-project/">怎么做一个开源项目</a>。</p><p></p><p></p><p>今天又看到一篇不错的文章，<a href="http://williamdurand.fr/2013/07/04/on-open-sourcing-libraries/" target="_blank" rel="noopener">On Open Sourcing Libraries | William DURAND</a>。</p><p></p><p></p><p>摘要如下：</p><p></p><p></p><p><strong><em>你的项目：</em></strong></p><p></p><ol><br><li>必须有一个README文档，包含名字，描述，还有<strong>使用方法</strong>，<strong>安装说明</strong>，<strong>如何参与</strong>，<strong>测试</strong>和<strong>License</strong>。</li><br><li>必须有一个可见的license文件。</li><br><li>必须经过测试。</li><br><li>必须和你的社区习惯保持一致</li><br></ol><br><p><em><strong>你：</strong></em></p><br><ol><br><li>需要反馈。</li><br><li>必须友好，热情。</li><br><li>应该让别人加入。</li><br></ol>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;我之前的博客中介绍过两篇如何做好开源软件的文章，&lt;a href=&quot;/2013/06/21/how-to-spread-your-code/&quot;&gt;如何传播你的代码&lt;/a&gt;，&lt;a href=&quot;/2013/01/05/how-to-start-open-source-
-      
-    
-    </summary>
-    
-    
-      <category term="Opensource" scheme="http://fresky.github.io/tags/Opensource/"/>
-    
-  </entry>
-  
-  <entry>
     <title>google API的.NET库</title>
     <link href="http://fresky.github.io/2013/07/04/dot-net-library-of-google-api/"/>
     <id>http://fresky.github.io/2013/07/04/dot-net-library-of-google-api/</id>
@@ -4444,9 +4444,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -4520,29 +4520,6 @@
   </entry>
   
   <entry>
-    <title>Windows的应用管理工具 PortableApps，Chocolatey和Ninite</title>
-    <link href="http://fresky.github.io/2013/06/28/windows-application-management-tools/"/>
-    <id>http://fresky.github.io/2013/06/28/windows-application-management-tools/</id>
-    <published>2013-06-27T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.265Z</updated>
-    
-    <content type="html"><![CDATA[<p>以前为了让我的firefox变成portable的，我使用了<a href="http://portableapps.com/" target="_blank" rel="noopener">PortableApps</a>，它不只是做软件的绿色版，而且也是一个软件的管理平台，可以通过它来管理软件的更新，挺方便的。</p><br><p>前段时间试用ScriptCS（参见我的博客<a href="/2013/05/16/use-csharp-as-script-language/">把C#当作脚本语言来用</a>），又使用了<a href="http://chocolatey.org/" target="_blank" rel="noopener">Chocolatey</a>，它是一个类似<a href="http://nuget.org/" target="_blank" rel="noopener">NuGet</a>的包管理工具，可以理解NuGet管理你的项目级别的包，但是Chocolatey管理Windows系统级别的包。类似<a href="http://ninite.com/" target="_blank" rel="noopener">Ninite</a>，它是另外一个很方便的应用管理工具。</p><br><p>有了这些软件的帮助，不必每回装软件或者更新软件都跑到软件的官网，寻找下载地址了。可以节省很多时间。如果还没用过，可以试试。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;以前为了让我的firefox变成portable的，我使用了&lt;a href=&quot;http://portableapps.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PortableApps&lt;/a&gt;，它不只是做软件的绿色版，而且也是一个软件的管理平
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>如何定制Windows系统右键菜单</title>
     <link href="http://fresky.github.io/2013/06/28/how-to-customize-windows-context-menu/"/>
     <id>http://fresky.github.io/2013/06/28/how-to-customize-windows-context-menu/</id>
@@ -4568,25 +4545,25 @@
   </entry>
   
   <entry>
-    <title>另一个有趣的Captcha 网站</title>
-    <link href="http://fresky.github.io/2013/06/27/intresting-captcha-website/"/>
-    <id>http://fresky.github.io/2013/06/27/intresting-captcha-website/</id>
-    <published>2013-06-26T16:00:00.000Z</published>
+    <title>Windows的应用管理工具 PortableApps，Chocolatey和Ninite</title>
+    <link href="http://fresky.github.io/2013/06/28/windows-application-management-tools/"/>
+    <id>http://fresky.github.io/2013/06/28/windows-application-management-tools/</id>
+    <published>2013-06-27T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.265Z</updated>
     
-    <content type="html"><![CDATA[<p>今天在一个网站注册时又发现了一个有趣的Captcha形式。给你一个翻转的图片，然后让你拽下面的slide bar让它回到正常的位置，很有趣。下面是提供这个Captcha的网站。</p><p><a href="http://www.minteye.com/" target="_blank" rel="noopener">minteye &ndash; slide-to-fit CAPTCHA &amp; Advertisement Solutions</a></p>]]></content>
+    <content type="html"><![CDATA[<p>以前为了让我的firefox变成portable的，我使用了<a href="http://portableapps.com/" target="_blank" rel="noopener">PortableApps</a>，它不只是做软件的绿色版，而且也是一个软件的管理平台，可以通过它来管理软件的更新，挺方便的。</p><br><p>前段时间试用ScriptCS（参见我的博客<a href="/2013/05/16/use-csharp-as-script-language/">把C#当作脚本语言来用</a>），又使用了<a href="http://chocolatey.org/" target="_blank" rel="noopener">Chocolatey</a>，它是一个类似<a href="http://nuget.org/" target="_blank" rel="noopener">NuGet</a>的包管理工具，可以理解NuGet管理你的项目级别的包，但是Chocolatey管理Windows系统级别的包。类似<a href="http://ninite.com/" target="_blank" rel="noopener">Ninite</a>，它是另外一个很方便的应用管理工具。</p><br><p>有了这些软件的帮助，不必每回装软件或者更新软件都跑到软件的官网，寻找下载地址了。可以节省很多时间。如果还没用过，可以试试。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;今天在一个网站注册时又发现了一个有趣的Captcha形式。给你一个翻转的图片，然后让你拽下面的slide bar让它回到正常的位置，很有趣。下面是提供这个Captcha的网站。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.minteye.com/&quot; target=&quot;
+        &lt;p&gt;以前为了让我的firefox变成portable的，我使用了&lt;a href=&quot;http://portableapps.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PortableApps&lt;/a&gt;，它不只是做软件的绿色版，而且也是一个软件的管理平
       
     
     </summary>
     
     
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -4639,6 +4616,52 @@
   </entry>
   
   <entry>
+    <title>另一个有趣的Captcha 网站</title>
+    <link href="http://fresky.github.io/2013/06/27/intresting-captcha-website/"/>
+    <id>http://fresky.github.io/2013/06/27/intresting-captcha-website/</id>
+    <published>2013-06-26T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在一个网站注册时又发现了一个有趣的Captcha形式。给你一个翻转的图片，然后让你拽下面的slide bar让它回到正常的位置，很有趣。下面是提供这个Captcha的网站。</p><p><a href="http://www.minteye.com/" target="_blank" rel="noopener">minteye &ndash; slide-to-fit CAPTCHA &amp; Advertisement Solutions</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天在一个网站注册时又发现了一个有趣的Captcha形式。给你一个翻转的图片，然后让你拽下面的slide bar让它回到正常的位置，很有趣。下面是提供这个Captcha的网站。&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.minteye.com/&quot; target=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何传播你的代码</title>
+    <link href="http://fresky.github.io/2013/06/21/how-to-spread-your-code/"/>
+    <id>http://fresky.github.io/2013/06/21/how-to-spread-your-code/</id>
+    <published>2013-06-20T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.264Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p><a href="https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/" target="_blank" rel="noopener">How to Spread The Word About Your Code ✩ Mozilla Hacks &ndash; the Web developer blog</a>讲述了当你开发了一个小工具之后如何传播。下面列一下文章最后给出的checklist。</p><ol><li>把你的精力集中在你的项目的主页和readme上。</li><li>检查你的项目名字没有和别人撞车，并且和你的工作非常相关。</li><li>把你的工作提交给和你最密切的圈子来发现你的项目的问题。</li><li>做一个截屏录像或者写篇博客来介绍你的项目。</li><li>想一个完美的&ldquo;【项目名】是<strong><em>&rdquo;的句子来描述你的项目是什么。</em></strong></li><li>用你的&ldquo;【项目名】是&rdquo;的句子来作为你的主页的标题。</li><li>给你的项目所在领域的有影响力的人，博客，播客，邮件列表发一个简短的有礼貌的说明。</li><li>发布到社交网络和书签站点，注意确保你的标题很清楚的描述了你的项目。</li><li>把你的&ldquo;【项目名】是***&rdquo;的句子用在你的邮件和有影响力的人等联系。</li><li>别人对你的项目的评论，用乐观正面的方式来看待，找出好的一面。</li></ol><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to Spread T
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Honeywords项目——检查密码是否被破解的一种简单方法</title>
     <link href="http://fresky.github.io/2013/06/21/honeywords-simple-way-to-avoid-password-cracking/"/>
     <id>http://fresky.github.io/2013/06/21/honeywords-simple-way-to-avoid-password-cracking/</id>
@@ -4662,19 +4685,19 @@
   </entry>
   
   <entry>
-    <title>如何传播你的代码</title>
-    <link href="http://fresky.github.io/2013/06/21/how-to-spread-your-code/"/>
-    <id>http://fresky.github.io/2013/06/21/how-to-spread-your-code/</id>
-    <published>2013-06-20T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.264Z</updated>
+    <title>创业从 手动 开始</title>
+    <link href="http://fresky.github.io/2013/06/20/startup-from-manual/"/>
+    <id>http://fresky.github.io/2013/06/20/startup-from-manual/</id>
+    <published>2013-06-19T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.263Z</updated>
     
-    <content type="html"><![CDATA[<p></p><p><a href="https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/" target="_blank" rel="noopener">How to Spread The Word About Your Code ✩ Mozilla Hacks &ndash; the Web developer blog</a>讲述了当你开发了一个小工具之后如何传播。下面列一下文章最后给出的checklist。</p><ol><li>把你的精力集中在你的项目的主页和readme上。</li><li>检查你的项目名字没有和别人撞车，并且和你的工作非常相关。</li><li>把你的工作提交给和你最密切的圈子来发现你的项目的问题。</li><li>做一个截屏录像或者写篇博客来介绍你的项目。</li><li>想一个完美的&ldquo;【项目名】是<strong><em>&rdquo;的句子来描述你的项目是什么。</em></strong></li><li>用你的&ldquo;【项目名】是&rdquo;的句子来作为你的主页的标题。</li><li>给你的项目所在领域的有影响力的人，博客，播客，邮件列表发一个简短的有礼貌的说明。</li><li>发布到社交网络和书签站点，注意确保你的标题很清楚的描述了你的项目。</li><li>把你的&ldquo;【项目名】是***&rdquo;的句子用在你的邮件和有影响力的人等联系。</li><li>别人对你的项目的评论，用乐观正面的方式来看待，找出好的一面。</li></ol><p></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://yipit.com" target="_blank" rel="noopener">Yipit</a>的创始人Vinicius Vacanti在博客<a href="http://viniciusvacanti.com/2013/05/07/the-manual-first-startup/" target="_blank" rel="noopener">The Manual-First Startup</a>中提到他们的公司一开始是全凭人工的，没有实现自动化，一直到9月的时候才开始有爬虫来自动化这个流程。但是凭借好的创意和人工带来的准确性在成立3个月的时候就融到了130万美金。</p><p>Vinicius列出的&ldquo;手动开始&rdquo;的几个优势：</p><ol><li>最快的展示给用户。</li><li>遇到问题很容易改变解决方案。</li><li>当手动了一段时间之后会更好的理解哪些是应该用技术来自动化的。</li><li>能真正的惊艳你的潜在用户。</li><li>客户不知道你的产品背后是怎么运作的，客户只关心你的产品有没有用。</li><li>你的产品会好使，因为如果用技术的话可能会遇到技术难题。</li><li>帮助你把注意力集中在问题上，而不是解决方案上。</li></ol><p>&nbsp;</p><p>&nbsp;</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to Spread T
+        &lt;p&gt;&lt;a href=&quot;http://yipit.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Yipit&lt;/a&gt;的创始人Vinicius Vacanti在博客&lt;a href=&quot;http://viniciusvacanti.com/2013/05/07/
       
     
     </summary>
@@ -4733,29 +4756,6 @@
   </entry>
   
   <entry>
-    <title>创业从 手动 开始</title>
-    <link href="http://fresky.github.io/2013/06/20/startup-from-manual/"/>
-    <id>http://fresky.github.io/2013/06/20/startup-from-manual/</id>
-    <published>2013-06-19T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.263Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://yipit.com" target="_blank" rel="noopener">Yipit</a>的创始人Vinicius Vacanti在博客<a href="http://viniciusvacanti.com/2013/05/07/the-manual-first-startup/" target="_blank" rel="noopener">The Manual-First Startup</a>中提到他们的公司一开始是全凭人工的，没有实现自动化，一直到9月的时候才开始有爬虫来自动化这个流程。但是凭借好的创意和人工带来的准确性在成立3个月的时候就融到了130万美金。</p><p>Vinicius列出的&ldquo;手动开始&rdquo;的几个优势：</p><ol><li>最快的展示给用户。</li><li>遇到问题很容易改变解决方案。</li><li>当手动了一段时间之后会更好的理解哪些是应该用技术来自动化的。</li><li>能真正的惊艳你的潜在用户。</li><li>客户不知道你的产品背后是怎么运作的，客户只关心你的产品有没有用。</li><li>你的产品会好使，因为如果用技术的话可能会遇到技术难题。</li><li>帮助你把注意力集中在问题上，而不是解决方案上。</li></ol><p>&nbsp;</p><p>&nbsp;</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://yipit.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Yipit&lt;/a&gt;的创始人Vinicius Vacanti在博客&lt;a href=&quot;http://viniciusvacanti.com/2013/05/07/
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>使用Linux的命令行工具做简单的文本分析</title>
     <link href="http://fresky.github.io/2013/06/18/how-to-analyze-text-file-with-linux-command-line-tools/"/>
     <id>http://fresky.github.io/2013/06/18/how-to-analyze-text-file-with-linux-command-line-tools/</id>
@@ -4797,9 +4797,9 @@
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -5020,29 +5020,6 @@
   </entry>
   
   <entry>
-    <title>大数据还是小数据</title>
-    <link href="http://fresky.github.io/2013/05/28/big-data-or-small-data/"/>
-    <id>http://fresky.github.io/2013/05/28/big-data-or-small-data/</id>
-    <published>2013-05-27T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.259Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近读了<a href="http://book.douban.com/subject/20429677/" target="_blank" rel="noopener">大数据时代</a>一书，对大数据做了一个很好的介绍。同时看到了一篇很有意思的文章<a href="http://qz.com/81661/most-data-isnt-big-and-businesses-are-wasting-money-pretending-it-is/" target="_blank" rel="noopener">Most data isn&rsquo;t &ldquo;big,&rdquo; and businesses are wasting money pretending it is</a></p><p>这篇文章说的是绝大部分的数据都不是&ldquo;大&rdquo;数据，如果公司假装它是&ldquo;大&rdquo;数据来处理的话，反而会给公司带来很多坏处，里面有很多有趣的链接，感兴趣的可以看看。</p><p>其中一篇是说什么是小数据（<a href="http://blog.okfn.org/2013/04/26/what-do-we-mean-by-small-data/" target="_blank" rel="noopener">What Do We Mean By Small Data | Open Knowledge Foundation Blog</a>），&ldquo;小数据是指你能很方便的用一台机器（比如一个高端的笔记本或者服务器）来存储和处理的数据&rdquo;。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;最近读了&lt;a href=&quot;http://book.douban.com/subject/20429677/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;大数据时代&lt;/a&gt;一书，对大数据做了一个很好的介绍。同时看到了一篇很有意思的文章&lt;a href=&quot;ht
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>一个很cool的展示编程语言相互影响关系的网状图</title>
     <link href="http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/"/>
     <id>http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/</id>
@@ -5062,6 +5039,29 @@
     
     
       <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大数据还是小数据</title>
+    <link href="http://fresky.github.io/2013/05/28/big-data-or-small-data/"/>
+    <id>http://fresky.github.io/2013/05/28/big-data-or-small-data/</id>
+    <published>2013-05-27T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.259Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近读了<a href="http://book.douban.com/subject/20429677/" target="_blank" rel="noopener">大数据时代</a>一书，对大数据做了一个很好的介绍。同时看到了一篇很有意思的文章<a href="http://qz.com/81661/most-data-isnt-big-and-businesses-are-wasting-money-pretending-it-is/" target="_blank" rel="noopener">Most data isn&rsquo;t &ldquo;big,&rdquo; and businesses are wasting money pretending it is</a></p><p>这篇文章说的是绝大部分的数据都不是&ldquo;大&rdquo;数据，如果公司假装它是&ldquo;大&rdquo;数据来处理的话，反而会给公司带来很多坏处，里面有很多有趣的链接，感兴趣的可以看看。</p><p>其中一篇是说什么是小数据（<a href="http://blog.okfn.org/2013/04/26/what-do-we-mean-by-small-data/" target="_blank" rel="noopener">What Do We Mean By Small Data | Open Knowledge Foundation Blog</a>），&ldquo;小数据是指你能很方便的用一台机器（比如一个高端的笔记本或者服务器）来存储和处理的数据&rdquo;。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近读了&lt;a href=&quot;http://book.douban.com/subject/20429677/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;大数据时代&lt;/a&gt;一书，对大数据做了一个很好的介绍。同时看到了一篇很有意思的文章&lt;a href=&quot;ht
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -5298,29 +5298,6 @@
   </entry>
   
   <entry>
-    <title>关于google的Jeff Dean的一些笑话</title>
-    <link href="http://fresky.github.io/2013/05/07/jokes-about-jeff-dean-in-google/"/>
-    <id>http://fresky.github.io/2013/05/07/jokes-about-jeff-dean-in-google/</id>
-    <published>2013-05-06T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.257Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.businessinsider.com/astounding-facts-about-googles-most-badass-engineer-jeff-dean-2012-1?op=1#ixzz2SOSn2fL7" target="_blank" rel="noopener">Astounding ‘Facts’ About Google’s Most Badass Engineer, Jeff Dean - Business Insider</a>讲了一些关于google的天才程序员Jeff Dean的一些笑话。很有意思。</p><ol><li>编译器不警告Jeff Dean，Jeff Dean警告编译器。</li><li>Jeff Dean在提交代码之前会编译自己的代码，但是这么做仅仅是为了检查编译器和链接器有没有bug。</li><li>Jeff Dean穿裤子一次只穿一条腿，但是如果他有更过的腿，你会看见他用O（logn）的方式来穿。</li><li>Richard Stallman听说Jeff Dean的自传只会在kindle上出现，他就去买了一个kindle。</li><li>Jeff Dean直接写2进制。然后他写成源代码的形式作为给其他程序员看的文档。</li><li>Jeff Dean在被google面试时被问到P=NP是不是对的，他说当P=0或者N=1的时候是对的。接着，还没等面试官笑完，他就在白板上写出了google的私钥。</li><li>x86-64的规范标记一些没有被说明的指令为私有的，但是其实是给Jeff Dean用的。</li><li>当Jeff Dean做人体工学的评估时，他是为了保护自己的键盘。</li><li>所有的指针都指向了Jeff Dean。</li><li>当Jeff Dean在2000年更新usb 2.0的键盘时，他写代码的速度提高了40倍。</li></ol><p>&nbsp;</p><p>&nbsp;</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.businessinsider.com/astounding-facts-about-googles-most-badass-engineer-jeff-dean-2012-1?op=1#ixzz2SOSn2fL7&quot; target=&quot;
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>颜色在市场推广中的学问</title>
     <link href="http://fresky.github.io/2013/05/07/how-color-affect-marketing/"/>
     <id>http://fresky.github.io/2013/05/07/how-color-affect-marketing/</id>
@@ -5334,6 +5311,29 @@
       
       
         &lt;p&gt;&lt;a href=&quot;http://blog.bufferapp.com/the-science-of-colors-in-marketing-why-is-facebook-blue&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Why Facebook i
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于google的Jeff Dean的一些笑话</title>
+    <link href="http://fresky.github.io/2013/05/07/jokes-about-jeff-dean-in-google/"/>
+    <id>http://fresky.github.io/2013/05/07/jokes-about-jeff-dean-in-google/</id>
+    <published>2013-05-06T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.257Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.businessinsider.com/astounding-facts-about-googles-most-badass-engineer-jeff-dean-2012-1?op=1#ixzz2SOSn2fL7" target="_blank" rel="noopener">Astounding ‘Facts’ About Google’s Most Badass Engineer, Jeff Dean - Business Insider</a>讲了一些关于google的天才程序员Jeff Dean的一些笑话。很有意思。</p><ol><li>编译器不警告Jeff Dean，Jeff Dean警告编译器。</li><li>Jeff Dean在提交代码之前会编译自己的代码，但是这么做仅仅是为了检查编译器和链接器有没有bug。</li><li>Jeff Dean穿裤子一次只穿一条腿，但是如果他有更过的腿，你会看见他用O（logn）的方式来穿。</li><li>Richard Stallman听说Jeff Dean的自传只会在kindle上出现，他就去买了一个kindle。</li><li>Jeff Dean直接写2进制。然后他写成源代码的形式作为给其他程序员看的文档。</li><li>Jeff Dean在被google面试时被问到P=NP是不是对的，他说当P=0或者N=1的时候是对的。接着，还没等面试官笑完，他就在白板上写出了google的私钥。</li><li>x86-64的规范标记一些没有被说明的指令为私有的，但是其实是给Jeff Dean用的。</li><li>当Jeff Dean做人体工学的评估时，他是为了保护自己的键盘。</li><li>所有的指针都指向了Jeff Dean。</li><li>当Jeff Dean在2000年更新usb 2.0的键盘时，他写代码的速度提高了40倍。</li></ol><p>&nbsp;</p><p>&nbsp;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.businessinsider.com/astounding-facts-about-googles-most-badass-engineer-jeff-dean-2012-1?op=1#ixzz2SOSn2fL7&quot; target=&quot;
       
     
     </summary>
@@ -5390,29 +5390,6 @@
   </entry>
   
   <entry>
-    <title>每个程序员都应该知道的14个数字（关于算法运行时间的）</title>
-    <link href="http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know/"/>
-    <id>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know/</id>
-    <published>2013-04-30T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.256Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p><a href="http://www.infoarena.ro/blog/numbers-everyone-should-know" target="_blank" rel="noopener">14 numbers every developer should know</a>列举了14个数字，可以作为大家设计算法时的一个参考。下表列出了秒数量级下各种算法复杂度能接受的输入个数。</p><p></p><table style="width: 1002px; height: 801px;" border="1" cellpadding="0"><br><tbody><br><tr><br><td width="176"><br><p><strong>maximum n</strong></p><br></td><br><td width="143"><br><p><strong>complexity</strong></p><br></td><br><td width="363"><br><p><strong>algorithms</strong></p><br></td><br><td width="476"><br><p><strong>data structures</strong></p><br></td><br></tr><br><tr><br><td width="176"><br><p>1,000,000,000 and higher</p><br></td><br><td width="143"><br><p>log n, sqrt n</p><br></td><br><td width="363"><br><p>binary search, ternary search, fast exponentiation, euclid algorithm</p><br></td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>10,000,000</p><br></td><br><td width="143"><br><p>n, n log log n, n log* n</p><br></td><br><td width="363"><br><p>set intersection, Eratosthenes sieve, radix sort, KMP, topological sort, Euler tour, strongly connected components, 2sat</p><br></td><br><td width="476"><br><p>disjoint sets, tries, hash_map, <a href="http://www.infoarena.ro/blog/rolling-hash" target="_blank" rel="noopener">rolling hash</a> deque</p><br></td><br></tr><br><tr><br><td width="176"><br><p>1,000,000</p><br></td><br><td width="143"><br><p>n log n</p><br></td><br><td width="363"><br><p>sorting, divide and conquer, sweep line, Kruskal, Dijkstra</p><br></td><br><td width="476"><br><p>segment trees, range trees, heaps, treaps, binary indexed trees, suffix arrays</p><br></td><br></tr><br><tr><br><td width="176"><br><p>100,000</p><br></td><br><td width="143"><br><p>n log<sup>2</sup> n</p><br></td><br><td width="363"><br><p>divide and conquer</p><br></td><br><td width="476"><br><p>2d range trees</p><br></td><br></tr><br><tr><br><td width="176"><br><p>50,000</p><br></td><br><td width="143"><br><p>n<sup>1.585</sup>, n sqrt n</p><br></td><br><td width="363"><br><p>Karatsuba, <a href="http://www.infoarena.ro/blog/square-root-trick" target="_blank" rel="noopener">square root trick</a></p><br></td><br><td width="476"><br><p>two level tree</p><br></td><br></tr><br><tr><br><td width="176"><br><p>1000 - 10,000</p><br></td><br><td width="143"><br><p>n<sup>2</sup></p><br></td><br><td width="363"><br><p>largest empty rectangle, Dijkstra, Prim (on dense graphs)</p><br></td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>300-500</p><br></td><br><td width="143"><br><p>n<sup>3</sup></p><br></td><br><td width="363"><br><p>all pairs shortest paths, largest sum submatrix, naive matrix multiplication, matrix chain multiplication, gaussian elimination, network flow</p><br></td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>30-50</p><br></td><br><td width="143"><br><p>n<sup>4</sup>, n<sup>5</sup>, n<sup>6</sup></p><br></td><br><td width="363">&nbsp;</td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>25 - 40</p><br></td><br><td width="143"><br><p>3<sup>n/2</sup>, 2<sup>n/2</sup></p><br></td><br><td width="363"><br><p><a href="http://www.infoarena.ro/blog/meet-in-the-middle" target="_blank" rel="noopener">meet in the middle</a></p><br></td><br><td width="476"><br><p>hash tables (for set intersection)</p><br></td><br></tr><br><tr><br><td width="176"><br><p>15 - 24</p><br></td><br><td width="143"><br><p>2<sup>n</sup></p><br></td><br><td width="363"><br><p>subset enumeration, brute force, dynamic programming with exponential states</p><br></td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>15 - 20</p><br></td><br><td width="143"><br><p>n<sup>2</sup> 2<sup>n</sup></p><br></td><br><td width="363"><br><p>dynamic programming with exponential states</p><br></td><br><td width="476"><br><p>bitsets, hash_map</p><br></td><br></tr><br><tr><br><td width="176"><br><p>13-17</p><br></td><br><td width="143"><br><p>3<sup>n</sup></p><br></td><br><td width="363"><br><p>dynamic programming with exponential states</p><br></td><br><td width="476"><br><p>hash_map (to store the states)</p><br></td><br></tr><br><tr><br><td width="176"><br><p>11</p><br></td><br><td width="143"><br><p>n!</p><br></td><br><td width="363"><br><p>brute force, backtracking, next_permutation</p><br></td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>8</p><br></td><br><td width="143"><br><p>n<sup>n</sup></p><br></td><br><td width="363"><br><p>brute force, cartesian product</p><br></td><br><td width="476">&nbsp;</td><br></tr><br></tbody><br></table>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.infoarena.ro/blog/numbers-everyone-should-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;14 numbers every developer shou
-      
-    
-    </summary>
-    
-    
-      <category term="Algorithm" scheme="http://fresky.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
     <title>每个程序员都需要知道的数字（续）</title>
     <link href="http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/"/>
     <id>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/</id>
@@ -5436,25 +5413,25 @@
   </entry>
   
   <entry>
-    <title>C#的预处理指令</title>
-    <link href="http://fresky.github.io/2013/04/25/preprocessor-directives-in-csharp/"/>
-    <id>http://fresky.github.io/2013/04/25/preprocessor-directives-in-csharp/</id>
-    <published>2013-04-24T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.255Z</updated>
+    <title>每个程序员都应该知道的14个数字（关于算法运行时间的）</title>
+    <link href="http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know/"/>
+    <id>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know/</id>
+    <published>2013-04-30T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.256Z</updated>
     
-    <content type="html"><![CDATA[<p></p><p><a href="http://www.codeguru.com/csharp/.net/using-preprocessor-directives-in-c.htm" target="_blank" rel="noopener">Using Preprocessor Directives in C#</a>介绍了C#中的预处理指令，包含：</p><ol><li>#define和#undef</li><li>#if，#else，#elif和#endif</li><li>#warning和#error</li><li>#region和#endregion</li><li>#line</li><li>#pragma warning和#pragma checksum</li></ol><p></p>]]></content>
+    <content type="html"><![CDATA[<p></p><p><a href="http://www.infoarena.ro/blog/numbers-everyone-should-know" target="_blank" rel="noopener">14 numbers every developer should know</a>列举了14个数字，可以作为大家设计算法时的一个参考。下表列出了秒数量级下各种算法复杂度能接受的输入个数。</p><p></p><table style="width: 1002px; height: 801px;" border="1" cellpadding="0"><br><tbody><br><tr><br><td width="176"><br><p><strong>maximum n</strong></p><br></td><br><td width="143"><br><p><strong>complexity</strong></p><br></td><br><td width="363"><br><p><strong>algorithms</strong></p><br></td><br><td width="476"><br><p><strong>data structures</strong></p><br></td><br></tr><br><tr><br><td width="176"><br><p>1,000,000,000 and higher</p><br></td><br><td width="143"><br><p>log n, sqrt n</p><br></td><br><td width="363"><br><p>binary search, ternary search, fast exponentiation, euclid algorithm</p><br></td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>10,000,000</p><br></td><br><td width="143"><br><p>n, n log log n, n log* n</p><br></td><br><td width="363"><br><p>set intersection, Eratosthenes sieve, radix sort, KMP, topological sort, Euler tour, strongly connected components, 2sat</p><br></td><br><td width="476"><br><p>disjoint sets, tries, hash_map, <a href="http://www.infoarena.ro/blog/rolling-hash" target="_blank" rel="noopener">rolling hash</a> deque</p><br></td><br></tr><br><tr><br><td width="176"><br><p>1,000,000</p><br></td><br><td width="143"><br><p>n log n</p><br></td><br><td width="363"><br><p>sorting, divide and conquer, sweep line, Kruskal, Dijkstra</p><br></td><br><td width="476"><br><p>segment trees, range trees, heaps, treaps, binary indexed trees, suffix arrays</p><br></td><br></tr><br><tr><br><td width="176"><br><p>100,000</p><br></td><br><td width="143"><br><p>n log<sup>2</sup> n</p><br></td><br><td width="363"><br><p>divide and conquer</p><br></td><br><td width="476"><br><p>2d range trees</p><br></td><br></tr><br><tr><br><td width="176"><br><p>50,000</p><br></td><br><td width="143"><br><p>n<sup>1.585</sup>, n sqrt n</p><br></td><br><td width="363"><br><p>Karatsuba, <a href="http://www.infoarena.ro/blog/square-root-trick" target="_blank" rel="noopener">square root trick</a></p><br></td><br><td width="476"><br><p>two level tree</p><br></td><br></tr><br><tr><br><td width="176"><br><p>1000 - 10,000</p><br></td><br><td width="143"><br><p>n<sup>2</sup></p><br></td><br><td width="363"><br><p>largest empty rectangle, Dijkstra, Prim (on dense graphs)</p><br></td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>300-500</p><br></td><br><td width="143"><br><p>n<sup>3</sup></p><br></td><br><td width="363"><br><p>all pairs shortest paths, largest sum submatrix, naive matrix multiplication, matrix chain multiplication, gaussian elimination, network flow</p><br></td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>30-50</p><br></td><br><td width="143"><br><p>n<sup>4</sup>, n<sup>5</sup>, n<sup>6</sup></p><br></td><br><td width="363">&nbsp;</td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>25 - 40</p><br></td><br><td width="143"><br><p>3<sup>n/2</sup>, 2<sup>n/2</sup></p><br></td><br><td width="363"><br><p><a href="http://www.infoarena.ro/blog/meet-in-the-middle" target="_blank" rel="noopener">meet in the middle</a></p><br></td><br><td width="476"><br><p>hash tables (for set intersection)</p><br></td><br></tr><br><tr><br><td width="176"><br><p>15 - 24</p><br></td><br><td width="143"><br><p>2<sup>n</sup></p><br></td><br><td width="363"><br><p>subset enumeration, brute force, dynamic programming with exponential states</p><br></td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>15 - 20</p><br></td><br><td width="143"><br><p>n<sup>2</sup> 2<sup>n</sup></p><br></td><br><td width="363"><br><p>dynamic programming with exponential states</p><br></td><br><td width="476"><br><p>bitsets, hash_map</p><br></td><br></tr><br><tr><br><td width="176"><br><p>13-17</p><br></td><br><td width="143"><br><p>3<sup>n</sup></p><br></td><br><td width="363"><br><p>dynamic programming with exponential states</p><br></td><br><td width="476"><br><p>hash_map (to store the states)</p><br></td><br></tr><br><tr><br><td width="176"><br><p>11</p><br></td><br><td width="143"><br><p>n!</p><br></td><br><td width="363"><br><p>brute force, backtracking, next_permutation</p><br></td><br><td width="476">&nbsp;</td><br></tr><br><tr><br><td width="176"><br><p>8</p><br></td><br><td width="143"><br><p>n<sup>n</sup></p><br></td><br><td width="363"><br><p>brute force, cartesian product</p><br></td><br><td width="476">&nbsp;</td><br></tr><br></tbody><br></table>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.codeguru.com/csharp/.net/using-preprocessor-directives-in-c.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Using Preproce
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.infoarena.ro/blog/numbers-everyone-should-know&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;14 numbers every developer shou
       
     
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+      <category term="Algorithm" scheme="http://fresky.github.io/tags/Algorithm/"/>
     
   </entry>
   
@@ -5478,6 +5455,29 @@
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#的预处理指令</title>
+    <link href="http://fresky.github.io/2013/04/25/preprocessor-directives-in-csharp/"/>
+    <id>http://fresky.github.io/2013/04/25/preprocessor-directives-in-csharp/</id>
+    <published>2013-04-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.255Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p><a href="http://www.codeguru.com/csharp/.net/using-preprocessor-directives-in-c.htm" target="_blank" rel="noopener">Using Preprocessor Directives in C#</a>介绍了C#中的预处理指令，包含：</p><ol><li>#define和#undef</li><li>#if，#else，#elif和#endif</li><li>#warning和#error</li><li>#region和#endregion</li><li>#line</li><li>#pragma warning和#pragma checksum</li></ol><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.codeguru.com/csharp/.net/using-preprocessor-directives-in-c.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Using Preproce
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -5836,29 +5836,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>C#的继承类中static constructor的调用问题</title>
-    <link href="http://fresky.github.io/2013/02/19/static-constructor-surprise-in-csharp/"/>
-    <id>http://fresky.github.io/2013/02/19/static-constructor-surprise-in-csharp/</id>
-    <published>2013-02-18T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.251Z</updated>
-    
-    <content type="html"><![CDATA[<p>Eric Lippert写了一系列的关于static constructor的文章，<a href="http://ericlippert.com/2013/02/06/static-constructors-part-one/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-one" target="_blank" rel="noopener">1</a>，<a href="http://ericlippert.com/2013/02/11/static-constructors-part-two/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-two" target="_blank" rel="noopener">2</a>，<a href="http://ericlippert.com/2013/02/14/static-constructors-part-three/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-three" target="_blank" rel="noopener">3</a>，<a href="http://ericlippert.com/2013/02/18/static-constructors-part-four/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-four" target="_blank" rel="noopener">4</a>，可以读读对static constructor有更好的理解。</p>  <p>转一个其中的例子吧，假设有如下代码。</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">class</span> <span class="title">B</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="title">B</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"B cctor"</span>); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">B</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"B ctor"</span>); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">M</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"B.M"</span>); &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title">D</span> : <span class="title">B</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="title">D</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"D cctor"</span>); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">D</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"D ctor"</span>); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">N</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"D.N"</span>); &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title">P</span> </span><br><span class="line">&#123;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    System.Console.WriteLine(<span class="string">"Main"</span>);</span><br><span class="line">    <span class="keyword">new</span> D();</span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>如果main函数是这样的，</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>) </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  D.M();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>哪个static constructor会被调到呢？</p><p>答案是只有B的会被调到。</p><p>如果main函数是这样的，</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>) </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  D.N();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>哪个static constructor会被调到呢？</p><p>答案是只有D的会被调到。</p><p>是不是有点意外：）</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Eric Lippert写了一系列的关于static constructor的文章，&lt;a href=&quot;http://ericlippert.com/2013/02/06/static-constructors-part-one/?utm_source=rss&amp;amp;utm
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#的static constructor抛了异常会怎么处理？</title>
     <link href="http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/"/>
     <id>http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/</id>
@@ -5872,6 +5849,29 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4737875/exception-in-static-constructor/4737910#4737910&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;stack
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#的继承类中static constructor的调用问题</title>
+    <link href="http://fresky.github.io/2013/02/19/static-constructor-surprise-in-csharp/"/>
+    <id>http://fresky.github.io/2013/02/19/static-constructor-surprise-in-csharp/</id>
+    <published>2013-02-18T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.251Z</updated>
+    
+    <content type="html"><![CDATA[<p>Eric Lippert写了一系列的关于static constructor的文章，<a href="http://ericlippert.com/2013/02/06/static-constructors-part-one/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-one" target="_blank" rel="noopener">1</a>，<a href="http://ericlippert.com/2013/02/11/static-constructors-part-two/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-two" target="_blank" rel="noopener">2</a>，<a href="http://ericlippert.com/2013/02/14/static-constructors-part-three/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-three" target="_blank" rel="noopener">3</a>，<a href="http://ericlippert.com/2013/02/18/static-constructors-part-four/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=static-constructors-part-four" target="_blank" rel="noopener">4</a>，可以读读对static constructor有更好的理解。</p>  <p>转一个其中的例子吧，假设有如下代码。</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">class</span> <span class="title">B</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="title">B</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"B cctor"</span>); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">B</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"B ctor"</span>); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">M</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"B.M"</span>); &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title">D</span> : <span class="title">B</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="title">D</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"D cctor"</span>); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="title">D</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"D ctor"</span>); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">N</span>(<span class="params"></span>)</span> &#123; Console.WriteLine(<span class="string">"D.N"</span>); &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title">P</span> </span><br><span class="line">&#123;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    System.Console.WriteLine(<span class="string">"Main"</span>);</span><br><span class="line">    <span class="keyword">new</span> D();</span><br><span class="line">  &#125;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>如果main函数是这样的，</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>) </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  D.M();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>哪个static constructor会被调到呢？</p><p>答案是只有B的会被调到。</p><p>如果main函数是这样的，</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>) </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  D.N();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>哪个static constructor会被调到呢？</p><p>答案是只有D的会被调到。</p><p>是不是有点意外：）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Eric Lippert写了一系列的关于static constructor的文章，&lt;a href=&quot;http://ericlippert.com/2013/02/06/static-constructors-part-one/?utm_source=rss&amp;amp;utm
       
     
     </summary>
@@ -6284,29 +6284,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>怎么回答哪个更快的问题</title>
-    <link href="http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/"/>
-    <id>http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/</id>
-    <published>2012-12-27T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.246Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://ericlippert.com/2012/12/17/performance-rant/" target="_blank" rel="noopener">Which is faster? | Fabulous Adventures In Coding</a><br>1. 为什么问？你该自己测试一下<br>2. 真的需要知道吗？等你遇到performance问题时再考虑<br>3. 这真的是瓶颈吗？<br>4. 哪个快哪个慢重要吗？<br>5. 更快是什么意思？启动速度还是运行速度？最坏情况下还是正常情况下？<br>6. 你看到big picture了吗？除了速度还有很多别的东西，比如内存。<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://ericlippert.com/2012/12/17/performance-rant/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Which is faster? | Fabulous Adventures In Co
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Windows下C++的同步机制的演变</title>
     <link href="http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/"/>
     <id>http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/</id>
@@ -6353,6 +6330,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>怎么回答哪个更快的问题</title>
+    <link href="http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/"/>
+    <id>http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/</id>
+    <published>2012-12-27T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.246Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://ericlippert.com/2012/12/17/performance-rant/" target="_blank" rel="noopener">Which is faster? | Fabulous Adventures In Coding</a><br>1. 为什么问？你该自己测试一下<br>2. 真的需要知道吗？等你遇到performance问题时再考虑<br>3. 这真的是瓶颈吗？<br>4. 哪个快哪个慢重要吗？<br>5. 更快是什么意思？启动速度还是运行速度？最坏情况下还是正常情况下？<br>6. 你看到big picture了吗？除了速度还有很多别的东西，比如内存。<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://ericlippert.com/2012/12/17/performance-rant/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Which is faster? | Fabulous Adventures In Co
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C#的内存模型和并发情况下受到的影响</title>
     <link href="http://fresky.github.io/2012/12/26/csharp-memory-model/"/>
     <id>http://fresky.github.io/2012/12/26/csharp-memory-model/</id>
@@ -6372,31 +6372,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CoffeeScript, Ruby 和 C++的复杂度比较</title>
-    <link href="http://fresky.github.io/2012/12/25/cpp-ruby-coffeescript-language-complexity/"/>
-    <id>http://fresky.github.io/2012/12/25/cpp-ruby-coffeescript-language-complexity/</id>
-    <published>2012-12-24T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.245Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://cpprocks.com/cpp-ruby-coffeescript-language-complexity/#!prettyPhoto" target="_blank" rel="noopener">C++, Ruby, CoffeeScript: a visual comparison of language complexity</a>用concept的种类和个数来比较了一下三种语言的复杂度。<br><img style="max-width: 800px;" src="http://www.cpprocks.com/wp-content/uploads/coffeescript-ruby-cpp-comparison.png"><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://cpprocks.com/cpp-ruby-coffeescript-language-complexity/#!prettyPhoto&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++, Ruby, CoffeeScr
-      
-    
-    </summary>
-    
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
-      <category term="Ruby" scheme="http://fresky.github.io/tags/Ruby/"/>
     
   </entry>
   
@@ -6445,6 +6420,31 @@ w\:* {behavior:url(#default#VML);}
       <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
       <category term="Python" scheme="http://fresky.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CoffeeScript, Ruby 和 C++的复杂度比较</title>
+    <link href="http://fresky.github.io/2012/12/25/cpp-ruby-coffeescript-language-complexity/"/>
+    <id>http://fresky.github.io/2012/12/25/cpp-ruby-coffeescript-language-complexity/</id>
+    <published>2012-12-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.245Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://cpprocks.com/cpp-ruby-coffeescript-language-complexity/#!prettyPhoto" target="_blank" rel="noopener">C++, Ruby, CoffeeScript: a visual comparison of language complexity</a>用concept的种类和个数来比较了一下三种语言的复杂度。<br><img style="max-width: 800px;" src="http://www.cpprocks.com/wp-content/uploads/coffeescript-ruby-cpp-comparison.png"><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://cpprocks.com/cpp-ruby-coffeescript-language-complexity/#!prettyPhoto&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++, Ruby, CoffeeScr
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+      <category term="Ruby" scheme="http://fresky.github.io/tags/Ruby/"/>
     
   </entry>
   
@@ -6582,9 +6582,9 @@ w\:* {behavior:url(#default#VML);}
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -6727,29 +6727,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>Nokia Meego的故事（转载）</title>
-    <link href="http://fresky.github.io/2012/12/10/the-story-of-nokia-meego/"/>
-    <id>http://fresky.github.io/2012/12/10/the-story-of-nokia-meego/</id>
-    <published>2012-12-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.240Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://taskumuro.com/artikkelit/the-story-of-nokia-meego" target="_blank" rel="noopener">The story of Nokia MeeGo</a>讲述了Nokia Meego的故事，很长，但是很有趣，有兴趣的可以看看。<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://taskumuro.com/artikkelit/the-story-of-nokia-meego&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The story of Nokia MeeGo&lt;/a&gt;讲述了Nokia Me
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C++怎么寻找重载函数</title>
     <link href="http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/"/>
     <id>http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/</id>
@@ -6769,6 +6746,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Nokia Meego的故事（转载）</title>
+    <link href="http://fresky.github.io/2012/12/10/the-story-of-nokia-meego/"/>
+    <id>http://fresky.github.io/2012/12/10/the-story-of-nokia-meego/</id>
+    <published>2012-12-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.240Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://taskumuro.com/artikkelit/the-story-of-nokia-meego" target="_blank" rel="noopener">The story of Nokia MeeGo</a>讲述了Nokia Meego的故事，很长，但是很有趣，有兴趣的可以看看。<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://taskumuro.com/artikkelit/the-story-of-nokia-meego&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;The story of Nokia MeeGo&lt;/a&gt;讲述了Nokia Me
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -6821,31 +6821,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>推荐一个免费的.NET代码分析工具Nitriq</title>
-    <link href="http://fresky.github.io/2012/12/08/free-csharp-code-analysis-tool-nitriq/"/>
-    <id>http://fresky.github.io/2012/12/08/free-csharp-code-analysis-tool-nitriq/</id>
-    <published>2012-12-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.239Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote></blockquote><a href="http://www.nitriq.com/" target="_blank" rel="noopener">Nitriq Code Analysis for .Net</a>是一个免费的.NET代码分析工具，有两个版本，一个UI版，适合开发人员使用，一个命令行版，适合自动编译系统使用。我试了以下，还是很方便的，内建了很多规则，如果违反了很清楚的就能看出来。使用LINQ语句查询分析结果，可以很容易的自定义规则。下面贴一个官网的图吧。<br><img style="max-width: 800px;" src="http://www.nitriq.com/content/images/largeScreenShot.png"><br><blockquote></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;&lt;/blockquote&gt;&lt;a href=&quot;http://www.nitriq.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Nitriq Code Analysis for .Net&lt;/a&gt;是一个免费的.NET代码分析工具，有
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Windows调试工具箱</title>
     <link href="http://fresky.github.io/2012/12/08/windows-debugging-tools/"/>
     <id>http://fresky.github.io/2012/12/08/windows-debugging-tools/</id>
@@ -6865,6 +6840,31 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>推荐一个免费的.NET代码分析工具Nitriq</title>
+    <link href="http://fresky.github.io/2012/12/08/free-csharp-code-analysis-tool-nitriq/"/>
+    <id>http://fresky.github.io/2012/12/08/free-csharp-code-analysis-tool-nitriq/</id>
+    <published>2012-12-07T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.239Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote></blockquote><a href="http://www.nitriq.com/" target="_blank" rel="noopener">Nitriq Code Analysis for .Net</a>是一个免费的.NET代码分析工具，有两个版本，一个UI版，适合开发人员使用，一个命令行版，适合自动编译系统使用。我试了以下，还是很方便的，内建了很多规则，如果违反了很清楚的就能看出来。使用LINQ语句查询分析结果，可以很容易的自定义规则。下面贴一个官网的图吧。<br><img style="max-width: 800px;" src="http://www.nitriq.com/content/images/largeScreenShot.png"><br><blockquote></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;&lt;/blockquote&gt;&lt;a href=&quot;http://www.nitriq.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Nitriq Code Analysis for .Net&lt;/a&gt;是一个免费的.NET代码分析工具，有
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -6915,29 +6915,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>有时间了要研究一下Stack Exchange的开源项目</title>
-    <link href="http://fresky.github.io/2012/12/04/stackexchange-open-source-projects/"/>
-    <id>http://fresky.github.io/2012/12/04/stackexchange-open-source-projects/</id>
-    <published>2012-12-03T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.239Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-projects/" target="_blank" rel="noopener">Stack Exchange Open Source Projects « Blog – Stack Exchange</a><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-projects/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Stack Exchange Open S
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>.NET自动exploratory测试工具Pex</title>
     <link href="http://fresky.github.io/2012/12/04/csharp-exploratory-testing-tool-pex/"/>
     <id>http://fresky.github.io/2012/12/04/csharp-exploratory-testing-tool-pex/</id>
@@ -6959,6 +6936,29 @@ w\:* {behavior:url(#default#VML);}
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有时间了要研究一下Stack Exchange的开源项目</title>
+    <link href="http://fresky.github.io/2012/12/04/stackexchange-open-source-projects/"/>
+    <id>http://fresky.github.io/2012/12/04/stackexchange-open-source-projects/</id>
+    <published>2012-12-03T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.239Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-projects/" target="_blank" rel="noopener">Stack Exchange Open Source Projects « Blog – Stack Exchange</a><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://blog.stackoverflow.com/2012/02/stack-exchange-open-source-projects/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Stack Exchange Open S
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7195,29 +7195,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>有空应该看看Rx是怎么玩的</title>
-    <link href="http://fresky.github.io/2012/11/22/rx-is-open-source/"/>
-    <id>http://fresky.github.io/2012/11/22/rx-is-open-source/</id>
-    <published>2012-11-21T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.236Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.hanselman.com/blog/ReactiveExtensionsRxIsNowOpenSource.aspx" target="_blank" rel="noopener">Reactive Extensions (Rx) is now Open Source - Scott Hanselman</a><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.hanselman.com/blog/ReactiveExtensionsRxIsNowOpenSource.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Reactive Extensions (Rx) 
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>（C#）IdleMonitor 实现监测用户是否离开应用程序</title>
     <link href="http://fresky.github.io/2012/11/22/idlemonitor-monitor-user-away-application-in-csharp/"/>
     <id>http://fresky.github.io/2012/11/22/idlemonitor-monitor-user-away-application-in-csharp/</id>
@@ -7261,6 +7238,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>有空应该看看Rx是怎么玩的</title>
+    <link href="http://fresky.github.io/2012/11/22/rx-is-open-source/"/>
+    <id>http://fresky.github.io/2012/11/22/rx-is-open-source/</id>
+    <published>2012-11-21T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.236Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.hanselman.com/blog/ReactiveExtensionsRxIsNowOpenSource.aspx" target="_blank" rel="noopener">Reactive Extensions (Rx) is now Open Source - Scott Hanselman</a><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.hanselman.com/blog/ReactiveExtensionsRxIsNowOpenSource.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Reactive Extensions (Rx) 
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -7428,29 +7428,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>用开源的OSQA在Windows上搭建Q&amp;A网站</title>
-    <link href="http://fresky.github.io/2012/10/25/setup-osqa-in-windows/"/>
-    <id>http://fresky.github.io/2012/10/25/setup-osqa-in-windows/</id>
-    <published>2012-10-24T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.234Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天想在Windows上搭建一个Q&amp;A网站，用的是开源的<a href="http://www.osqa.net/" target="_blank" rel="noopener">OSQA</a>，通过<a href="http://www.helicontech.com/articles/installing-osqa-on-windows-in-production/" target="_blank" rel="noopener">Installing OSQA on Windows in production | Helicon Tech Blog</a>安装在IIS上，非常简单。<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;今天想在Windows上搭建一个Q&amp;amp;A网站，用的是开源的&lt;a href=&quot;http://www.osqa.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OSQA&lt;/a&gt;，通过&lt;a href=&quot;http://www.helicontech.
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#的overload检查总是发生在编译时吗？</title>
     <link href="http://fresky.github.io/2012/10/25/csharp-overload-checking-not-always-performed-at-compiler-time/"/>
     <id>http://fresky.github.io/2012/10/25/csharp-overload-checking-not-always-performed-at-compiler-time/</id>
@@ -7474,19 +7451,19 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>一个超cool的单反在线模拟网站</title>
-    <link href="http://fresky.github.io/2012/10/24/cool-slr-simulation-website/"/>
-    <id>http://fresky.github.io/2012/10/24/cool-slr-simulation-website/</id>
-    <published>2012-10-23T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.233Z</updated>
+    <title>用开源的OSQA在Windows上搭建Q&amp;A网站</title>
+    <link href="http://fresky.github.io/2012/10/25/setup-osqa-in-windows/"/>
+    <id>http://fresky.github.io/2012/10/25/setup-osqa-in-windows/</id>
+    <published>2012-10-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.234Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://camerasim.com/camera-simulator/" target="_blank" rel="noopener">CameraSim simulates a digital SLR camera - SLR Photography Demystified</a><br><blockquote></blockquote></p>]]></content>
+    <content type="html"><![CDATA[<p>今天想在Windows上搭建一个Q&amp;A网站，用的是开源的<a href="http://www.osqa.net/" target="_blank" rel="noopener">OSQA</a>，通过<a href="http://www.helicontech.com/articles/installing-osqa-on-windows-in-production/" target="_blank" rel="noopener">Installing OSQA on Windows in production | Helicon Tech Blog</a>安装在IIS上，非常简单。<br><blockquote></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://camerasim.com/camera-simulator/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CameraSim simulates a digital SLR camera - SLR Photograph
+        &lt;p&gt;今天想在Windows上搭建一个Q&amp;amp;A网站，用的是开源的&lt;a href=&quot;http://www.osqa.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OSQA&lt;/a&gt;，通过&lt;a href=&quot;http://www.helicontech.
       
     
     </summary>
@@ -7516,6 +7493,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个超cool的单反在线模拟网站</title>
+    <link href="http://fresky.github.io/2012/10/24/cool-slr-simulation-website/"/>
+    <id>http://fresky.github.io/2012/10/24/cool-slr-simulation-website/</id>
+    <published>2012-10-23T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.233Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://camerasim.com/camera-simulator/" target="_blank" rel="noopener">CameraSim simulates a digital SLR camera - SLR Photography Demystified</a><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://camerasim.com/camera-simulator/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CameraSim simulates a digital SLR camera - SLR Photograph
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7704,29 +7704,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>用windows7自带的Problem Steps Recorder制作错误报告</title>
-    <link href="http://fresky.github.io/2012/10/10/report-bugs-with-problem-steps-recorder-in-win7/"/>
-    <id>http://fresky.github.io/2012/10/10/report-bugs-with-problem-steps-recorder-in-win7/</id>
-    <published>2012-10-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.231Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.hanselman.com/blog/HelpYourUsersRecordAndReportBugsWithTheProblemStepsRecorder.aspx" target="_blank" rel="noopener">Help your users record and report bugs with the Problem Steps Recorder - Scott Hanselman</a><br>Windows7和8自带的，开始，敲 PSR，就行了，然后开始录制，每次用户点击就做个抓屏，最后生成一个.mht文件，挺方便的。<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.hanselman.com/blog/HelpYourUsersRecordAndReportBugsWithTheProblemStepsRecorder.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;H
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>飞信登录不了，错误码10032002 的解决办法</title>
     <link href="http://fresky.github.io/2012/10/10/fix-fetion-login-issue/"/>
     <id>http://fresky.github.io/2012/10/10/fix-fetion-login-issue/</id>
@@ -7746,6 +7723,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用windows7自带的Problem Steps Recorder制作错误报告</title>
+    <link href="http://fresky.github.io/2012/10/10/report-bugs-with-problem-steps-recorder-in-win7/"/>
+    <id>http://fresky.github.io/2012/10/10/report-bugs-with-problem-steps-recorder-in-win7/</id>
+    <published>2012-10-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.231Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.hanselman.com/blog/HelpYourUsersRecordAndReportBugsWithTheProblemStepsRecorder.aspx" target="_blank" rel="noopener">Help your users record and report bugs with the Problem Steps Recorder - Scott Hanselman</a><br>Windows7和8自带的，开始，敲 PSR，就行了，然后开始录制，每次用户点击就做个抓屏，最后生成一个.mht文件，挺方便的。<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.hanselman.com/blog/HelpYourUsersRecordAndReportBugsWithTheProblemStepsRecorder.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;H
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7964,27 +7964,27 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>在浏览器中运行C#</title>
-    <link href="http://fresky.github.io/2012/09/10/run-csharp-in-browser/"/>
-    <id>http://fresky.github.io/2012/09/10/run-csharp-in-browser/</id>
+    <title>BuildZipper——给c#项目添加postbuildevent，每次build完把build结果做个zip放在solution目录。</title>
+    <link href="http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/"/>
+    <id>http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/</id>
     <published>2012-09-09T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.228Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://tirania.org/blog/archive/2012/Sep-06.html" target="_blank" rel="noopener">2012 Update: Running C# on the Browser - Miguel de Icaza</a>， 这篇文章介绍了怎么把C#代码编译成javascript。<br><br><br><blockquote></blockquote></p>]]></content>
+    <content type="html"><![CDATA[<p>最近几次发布项目到github上，都手动把最后build的结果做个zip，传上去，供直接下载binary用。觉得很费事，就写了个小程序，BuildZipper。<br>源代码在<a href="https://github.com/fresky/BuildZipper" target="_blank" rel="noopener">github</a>上，运行文件<a href="https://github.com/fresky/BuildZipper/blob/master/BuildZipper.zip" target="_blank" rel="noopener">这里</a>下载。<br>用了<a href="http://dotnetzip.codeplex.com/" target="_blank" rel="noopener">DotNetZip Library</a>来做zip，用了C#的<a href="http://msdn.microsoft.com/en-us/library/microsoft.build.evaluation.project.aspx" target="_blank" rel="noopener">Project</a>来操作project文件。<br><blockquote></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://tirania.org/blog/archive/2012/Sep-06.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2012 Update: Running C# on the Browser - Miguel
+        &lt;p&gt;最近几次发布项目到github上，都手动把最后build的结果做个zip，传上去，供直接下载binary用。觉得很费事，就写了个小程序，BuildZipper。&lt;br&gt;源代码在&lt;a href=&quot;https://github.com/fresky/BuildZipper&quot; t
       
     
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
-      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -8007,26 +8007,26 @@ w\:* {behavior:url(#default#VML);}
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
   <entry>
-    <title>BuildZipper——给c#项目添加postbuildevent，每次build完把build结果做个zip放在solution目录。</title>
-    <link href="http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/"/>
-    <id>http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/</id>
+    <title>在浏览器中运行C#</title>
+    <link href="http://fresky.github.io/2012/09/10/run-csharp-in-browser/"/>
+    <id>http://fresky.github.io/2012/09/10/run-csharp-in-browser/</id>
     <published>2012-09-09T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.228Z</updated>
     
-    <content type="html"><![CDATA[<p>最近几次发布项目到github上，都手动把最后build的结果做个zip，传上去，供直接下载binary用。觉得很费事，就写了个小程序，BuildZipper。<br>源代码在<a href="https://github.com/fresky/BuildZipper" target="_blank" rel="noopener">github</a>上，运行文件<a href="https://github.com/fresky/BuildZipper/blob/master/BuildZipper.zip" target="_blank" rel="noopener">这里</a>下载。<br>用了<a href="http://dotnetzip.codeplex.com/" target="_blank" rel="noopener">DotNetZip Library</a>来做zip，用了C#的<a href="http://msdn.microsoft.com/en-us/library/microsoft.build.evaluation.project.aspx" target="_blank" rel="noopener">Project</a>来操作project文件。<br><blockquote></blockquote></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://tirania.org/blog/archive/2012/Sep-06.html" target="_blank" rel="noopener">2012 Update: Running C# on the Browser - Miguel de Icaza</a>， 这篇文章介绍了怎么把C#代码编译成javascript。<br><br><br><blockquote></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;最近几次发布项目到github上，都手动把最后build的结果做个zip，传上去，供直接下载binary用。觉得很费事，就写了个小程序，BuildZipper。&lt;br&gt;源代码在&lt;a href=&quot;https://github.com/fresky/BuildZipper&quot; t
+        &lt;p&gt;&lt;a href=&quot;http://tirania.org/blog/archive/2012/Sep-06.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2012 Update: Running C# on the Browser - Miguel
       
     
     </summary>
@@ -8034,7 +8034,7 @@ w\:* {behavior:url(#default#VML);}
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
   </entry>
   
@@ -8177,29 +8177,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>把excel搬到任何地方：）</title>
-    <link href="http://fresky.github.io/2012/08/09/bring-excel-everywhere/"/>
-    <id>http://fresky.github.io/2012/08/09/bring-excel-everywhere/</id>
-    <published>2012-08-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.226Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://blogs.office.com/b/microsoft-excel/archive/2012/08/02/the-excel-button-bringing-excel-everywhere.aspx" target="_blank" rel="noopener">Excel Blog - The Excel Button - Bringing Excel Everywhere</a>，太cool了：）<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://blogs.office.com/b/microsoft-excel/archive/2012/08/02/the-excel-button-bringing-excel-everywhere.aspx&quot; target=&quot;_blank&quot; re
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>resharper的convert if to switch太好用了</title>
     <link href="http://fresky.github.io/2012/08/09/convert-if-to-switch-with-resharper/"/>
     <id>http://fresky.github.io/2012/08/09/convert-if-to-switch-with-resharper/</id>
@@ -8243,6 +8220,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>把excel搬到任何地方：）</title>
+    <link href="http://fresky.github.io/2012/08/09/bring-excel-everywhere/"/>
+    <id>http://fresky.github.io/2012/08/09/bring-excel-everywhere/</id>
+    <published>2012-08-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.226Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://blogs.office.com/b/microsoft-excel/archive/2012/08/02/the-excel-button-bringing-excel-everywhere.aspx" target="_blank" rel="noopener">Excel Blog - The Excel Button - Bringing Excel Everywhere</a>，太cool了：）<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://blogs.office.com/b/microsoft-excel/archive/2012/08/02/the-excel-button-bringing-excel-everywhere.aspx&quot; target=&quot;_blank&quot; re
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -8341,6 +8341,30 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>定义Enum的开始和结束，这样就能循环Enum了</title>
+    <link href="http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/"/>
+    <id>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</id>
+    <published>2012-07-16T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.224Z</updated>
+    
+    <content type="html"><![CDATA[<p>示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> ProgrammingLanguage</span><br><span class="line">   &#123;</span><br><span class="line">       Language_First = <span class="number">0</span>,</span><br><span class="line">       CPP = <span class="number">1</span>,</span><br><span class="line">       CSharp = <span class="number">2</span>,</span><br><span class="line">       Java =<span class="number">3</span>,</span><br><span class="line">       Language_Last = <span class="number">4</span>,</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">   &#123;</span><br><span class="line">       <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>       &#123;</span><br><span class="line">          <span class="keyword">for</span> (ProgrammingLanguage i = ProgrammingLanguage.Language_First + <span class="number">1</span>; i &lt; ProgrammingLanguage.Language_Last; i++)</span><br><span class="line">           &#123;</span><br><span class="line">               Console.WriteLine(i);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。&lt;/p&gt;
+&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>禁用C#的树的单个节点</title>
     <link href="http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/"/>
     <id>http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/</id>
@@ -8365,20 +8389,19 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>定义Enum的开始和结束，这样就能循环Enum了</title>
-    <link href="http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/"/>
-    <id>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</id>
+    <title>C#的cast问题</title>
+    <link href="http://fresky.github.io/2012/07/17/not-everything-derives-from-object-in-csharp/"/>
+    <id>http://fresky.github.io/2012/07/17/not-everything-derives-from-object-in-csharp/</id>
     <published>2012-07-16T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.224Z</updated>
     
-    <content type="html"><![CDATA[<p>示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> ProgrammingLanguage</span><br><span class="line">   &#123;</span><br><span class="line">       Language_First = <span class="number">0</span>,</span><br><span class="line">       CPP = <span class="number">1</span>,</span><br><span class="line">       CSharp = <span class="number">2</span>,</span><br><span class="line">       Java =<span class="number">3</span>,</span><br><span class="line">       Language_Last = <span class="number">4</span>,</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">   &#123;</span><br><span class="line">       <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>       &#123;</span><br><span class="line">          <span class="keyword">for</span> (ProgrammingLanguage i = ProgrammingLanguage.Language_First + <span class="number">1</span>; i &lt; ProgrammingLanguage.Language_Last; i++)</span><br><span class="line">           &#123;</span><br><span class="line">               Console.WriteLine(i);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>这篇<a href="http://blogs.msdn.com/b/ericlippert/archive/2009/08/06/not-everything-derives-from-object.aspx" target="_blank" rel="noopener">Not everything derives from object - Fabulous Adventures In Coding - Site Home - MSDN Blogs</a>文章讲了为什么在C#里面</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> enumerable = <span class="keyword">from</span> <span class="keyword">bool</span> b <span class="keyword">in</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123;<span class="number">1</span>, <span class="number">2</span>&#125; <span class="keyword">select</span> b;</span><br><span class="line"><span class="keyword">foreach</span> (<span class="keyword">var</span> element <span class="keyword">in</span> enumerable)</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(element);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个可以编译通过，但是运行会抛exception。<br><br><blockquote></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。&lt;/p&gt;
-&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
+        &lt;p&gt;这篇&lt;a href=&quot;http://blogs.msdn.com/b/ericlippert/archive/2009/08/06/not-everything-derives-from-object.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;
       
     
     </summary>
@@ -8408,29 +8431,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Database" scheme="http://fresky.github.io/tags/Database/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C#的cast问题</title>
-    <link href="http://fresky.github.io/2012/07/17/not-everything-derives-from-object-in-csharp/"/>
-    <id>http://fresky.github.io/2012/07/17/not-everything-derives-from-object-in-csharp/</id>
-    <published>2012-07-16T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.224Z</updated>
-    
-    <content type="html"><![CDATA[<p>这篇<a href="http://blogs.msdn.com/b/ericlippert/archive/2009/08/06/not-everything-derives-from-object.aspx" target="_blank" rel="noopener">Not everything derives from object - Fabulous Adventures In Coding - Site Home - MSDN Blogs</a>文章讲了为什么在C#里面</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> enumerable = <span class="keyword">from</span> <span class="keyword">bool</span> b <span class="keyword">in</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123;<span class="number">1</span>, <span class="number">2</span>&#125; <span class="keyword">select</span> b;</span><br><span class="line"><span class="keyword">foreach</span> (<span class="keyword">var</span> element <span class="keyword">in</span> enumerable)</span><br><span class="line">&#123;</span><br><span class="line">    Console.WriteLine(element);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个可以编译通过，但是运行会抛exception。<br><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;这篇&lt;a href=&quot;http://blogs.msdn.com/b/ericlippert/archive/2009/08/06/not-everything-derives-from-object.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -8533,27 +8533,25 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>Mozilla Thimble，在线html，javascript编辑器</title>
-    <link href="http://fresky.github.io/2012/07/10/mozilla-thimble-online-html-editor/"/>
-    <id>http://fresky.github.io/2012/07/10/mozilla-thimble-online-html-editor/</id>
+    <title>使用windbg通过vtable找到优化后的this指针</title>
+    <link href="http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/"/>
+    <id>http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/</id>
     <published>2012-07-09T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.222Z</updated>
     
-    <content type="html"><![CDATA[<p>今天看了一下，<a href="https://thimble.webmaker.org/en-US/" target="_blank" rel="noopener">Mozilla Thimble</a>，很不错，推荐试试：）<br><blockquote></blockquote></p>]]></content>
+    <content type="html"><![CDATA[<p>如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。<br><br>1. <strong>kbn</strong><br># ChildEBP? RetAddr? Args to Child<br>00 1d61fad0 7c90d21a 7c8023f1 00000000 1d61fb04 ntdll!KiFastSystemCallRet<br>01 1d61fad4 7c8023f1 00000000 1d61fb04 1a314e78 ntdll!NtDelayExecution+0xc<br>02 1d61fb2c 7c802455 00000042 00000000 1d61fb6c kernel32!SleepEx+0x61<br>03 <span style="color: #ff0000;">1d61fb3c </span><span style="color: #3366ff;">(ChildEBPaftercall</span>) 4c08f466 00000042 6496c8a2 1a3128f0 kernel32!Sleep+0xf<br>04 1d61fb6c 5c2656d4 616c06bc 1d61fbbc 1d61fe74 DllName!NameSpaceName::ClassName::OnProcess+0x106 [source1.cpp @ 5908]<br>05 <span style="color: #ff0000;">1d61fbb0 </span>(<span style="color: #3366ff;">ChildEBPbeforecall</span>) 77520c9a 1a312b0c 1d61fd78 0ef5bd18<br>Dll2Name!Class2Name::Process+0xb4 [source2.cpp @ 104]<br>06 1d61fbc8 77587f67 4c0e4df0 1a312b0c 1d61fcfc ole32!CallFrame::Invoke+0x54<br><br>2. <strong>dpp </strong>(<span style="color: #3366ff;">ChildEBPaftercall</span>) (<span style="color: #3366ff;">ChildEBPbeforecall</span>) ，来找到vtable </p><p></p><p></p><p>0:022&gt; dpp 1d61fb3c 1d61fbb0<br>1d61fb3c 1d61fb6c 1d61fbb0 &lt;Unloaded_API.DLL&gt;+0x1d61fb7f<br>1d61fb40 4c08f466 d908ec83<br>1d61fb44 00000042<br>1d61fb48 6496c8a2 1e6041d6 &lt;Unloaded_API.DLL&gt;+0x1e6041a5<br>1d61fb4c <span style="color: #ff0000;">1a3128f0 </span><span style="color: #3366ff;">(init this pointer address</span>) <span style="color: #ff0000;">4c1a3e24 </span>(<span style="color: #3366ff;">vtable address</span>) DllName!ATL::CComObject::`vftable’<br><br>3. <strong>dds </strong>(<span style="color: #3366ff;">vtable address</span>)<strong>-4</strong>，来找到RTTI </p><p></p><p></p><p>0:022&gt; dds 4c1a3e24 -4<br><span style="color: #000000;">4c1a3e20 </span><span style="color: #ff0000;">4c1b99e0 </span>(<span style="color: #3366ff;">RTTI address</span>) DllName!ATL::CComObject::`RTTI Complete Object Locator’<br><br>4. <strong>dds </strong>(<span style="color: #3366ff;">RTTI address</span>)，来找到偏移量，是第二个 </p><p></p><p></p><p>0:022&gt; dds 4c1b99e0<br>4c1b99e0 00000000<br>4c1b99e4 <span style="color: #ff0000;">00000000 </span>(<span style="color: #3366ff;">offset</span>)<br>4c1b99e8 00000000<br><br>5. <strong>dt ModuleName <span style="color: #3366ff;">(init this pointer address</span>) - (<span style="color: #3366ff;">offset</span>)</strong> ，查看this指针，搞定：）<br>dt DllName!NameSpaceName::ClassName 1a3128f0-0 </p><p></p><div></div>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;今天看了一下，&lt;a href=&quot;https://thimble.webmaker.org/en-US/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mozilla Thimble&lt;/a&gt;，很不错，推荐试试：）&lt;br&gt;&lt;blockquote&gt;&lt;/block
+        &lt;p&gt;如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。&lt;br&gt;&lt;br&gt;1. &lt;strong&gt;kbn&lt;/strong&gt;&lt;br&gt;# ChildEBP? RetAddr? Args to Child&lt;br&gt;00 
       
     
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
+      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
     
   </entry>
   
@@ -8581,25 +8579,27 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>使用windbg通过vtable找到优化后的this指针</title>
-    <link href="http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/"/>
-    <id>http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/</id>
+    <title>Mozilla Thimble，在线html，javascript编辑器</title>
+    <link href="http://fresky.github.io/2012/07/10/mozilla-thimble-online-html-editor/"/>
+    <id>http://fresky.github.io/2012/07/10/mozilla-thimble-online-html-editor/</id>
     <published>2012-07-09T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.222Z</updated>
     
-    <content type="html"><![CDATA[<p>如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。<br><br>1. <strong>kbn</strong><br># ChildEBP? RetAddr? Args to Child<br>00 1d61fad0 7c90d21a 7c8023f1 00000000 1d61fb04 ntdll!KiFastSystemCallRet<br>01 1d61fad4 7c8023f1 00000000 1d61fb04 1a314e78 ntdll!NtDelayExecution+0xc<br>02 1d61fb2c 7c802455 00000042 00000000 1d61fb6c kernel32!SleepEx+0x61<br>03 <span style="color: #ff0000;">1d61fb3c </span><span style="color: #3366ff;">(ChildEBPaftercall</span>) 4c08f466 00000042 6496c8a2 1a3128f0 kernel32!Sleep+0xf<br>04 1d61fb6c 5c2656d4 616c06bc 1d61fbbc 1d61fe74 DllName!NameSpaceName::ClassName::OnProcess+0x106 [source1.cpp @ 5908]<br>05 <span style="color: #ff0000;">1d61fbb0 </span>(<span style="color: #3366ff;">ChildEBPbeforecall</span>) 77520c9a 1a312b0c 1d61fd78 0ef5bd18<br>Dll2Name!Class2Name::Process+0xb4 [source2.cpp @ 104]<br>06 1d61fbc8 77587f67 4c0e4df0 1a312b0c 1d61fcfc ole32!CallFrame::Invoke+0x54<br><br>2. <strong>dpp </strong>(<span style="color: #3366ff;">ChildEBPaftercall</span>) (<span style="color: #3366ff;">ChildEBPbeforecall</span>) ，来找到vtable </p><p></p><p></p><p>0:022&gt; dpp 1d61fb3c 1d61fbb0<br>1d61fb3c 1d61fb6c 1d61fbb0 &lt;Unloaded_API.DLL&gt;+0x1d61fb7f<br>1d61fb40 4c08f466 d908ec83<br>1d61fb44 00000042<br>1d61fb48 6496c8a2 1e6041d6 &lt;Unloaded_API.DLL&gt;+0x1e6041a5<br>1d61fb4c <span style="color: #ff0000;">1a3128f0 </span><span style="color: #3366ff;">(init this pointer address</span>) <span style="color: #ff0000;">4c1a3e24 </span>(<span style="color: #3366ff;">vtable address</span>) DllName!ATL::CComObject::`vftable’<br><br>3. <strong>dds </strong>(<span style="color: #3366ff;">vtable address</span>)<strong>-4</strong>，来找到RTTI </p><p></p><p></p><p>0:022&gt; dds 4c1a3e24 -4<br><span style="color: #000000;">4c1a3e20 </span><span style="color: #ff0000;">4c1b99e0 </span>(<span style="color: #3366ff;">RTTI address</span>) DllName!ATL::CComObject::`RTTI Complete Object Locator’<br><br>4. <strong>dds </strong>(<span style="color: #3366ff;">RTTI address</span>)，来找到偏移量，是第二个 </p><p></p><p></p><p>0:022&gt; dds 4c1b99e0<br>4c1b99e0 00000000<br>4c1b99e4 <span style="color: #ff0000;">00000000 </span>(<span style="color: #3366ff;">offset</span>)<br>4c1b99e8 00000000<br><br>5. <strong>dt ModuleName <span style="color: #3366ff;">(init this pointer address</span>) - (<span style="color: #3366ff;">offset</span>)</strong> ，查看this指针，搞定：）<br>dt DllName!NameSpaceName::ClassName 1a3128f0-0 </p><p></p><div></div>]]></content>
+    <content type="html"><![CDATA[<p>今天看了一下，<a href="https://thimble.webmaker.org/en-US/" target="_blank" rel="noopener">Mozilla Thimble</a>，很不错，推荐试试：）<br><blockquote></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。&lt;br&gt;&lt;br&gt;1. &lt;strong&gt;kbn&lt;/strong&gt;&lt;br&gt;# ChildEBP? RetAddr? Args to Child&lt;br&gt;00 
+        &lt;p&gt;今天看了一下，&lt;a href=&quot;https://thimble.webmaker.org/en-US/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Mozilla Thimble&lt;/a&gt;，很不错，推荐试试：）&lt;br&gt;&lt;blockquote&gt;&lt;/block
       
     
     </summary>
     
     
-      <category term="Debug" scheme="http://fresky.github.io/tags/Debug/"/>
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
   </entry>
   
@@ -8650,29 +8650,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>从哪里开始学习Windows 8？（zz）</title>
-    <link href="http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/"/>
-    <id>http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/</id>
-    <published>2012-07-04T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.221Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.sadev.co.za/content/where-do-i-start-learn-windows-8" target="_blank" rel="noopener">Where do I start to learn Windows 8? | Robert MacLean</a><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.sadev.co.za/content/where-do-i-start-learn-windows-8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Where do I start to learn Window
-      
-    
-    </summary>
-    
-    
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Microsoft Fakes框架</title>
     <link href="http://fresky.github.io/2012/07/05/microsoft-fakes-framework/"/>
     <id>http://fresky.github.io/2012/07/05/microsoft-fakes-framework/</id>
@@ -8694,6 +8671,29 @@ w\:* {behavior:url(#default#VML);}
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
       <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>从哪里开始学习Windows 8？（zz）</title>
+    <link href="http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/"/>
+    <id>http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/</id>
+    <published>2012-07-04T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.221Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.sadev.co.za/content/where-do-i-start-learn-windows-8" target="_blank" rel="noopener">Where do I start to learn Windows 8? | Robert MacLean</a><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.sadev.co.za/content/where-do-i-start-learn-windows-8&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Where do I start to learn Window
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -8864,29 +8864,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>iphone原来只能有11屏的应用</title>
-    <link href="http://fresky.github.io/2011/01/16/you-can-only-have-11-screen-apps-in-ipone1/"/>
-    <id>http://fresky.github.io/2011/01/16/you-can-only-have-11-screen-apps-in-ipone1/</id>
-    <published>2011-01-15T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.219Z</updated>
-    
-    <content type="html"><![CDATA[<p>我最近发现怎么新装的app都不能在iphone上面显示出来了，还以为同步出了啥问题，我这个是08年买的一代，好多应用现在不能装上。今天才发现原来是iphone只能显示11屏，我用了categories，把一些应用分类装了一下，才看到原来的那些已经装上的apps。<br><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;我最近发现怎么新装的app都不能在iphone上面显示出来了，还以为同步出了啥问题，我这个是08年买的一代，好多应用现在不能装上。今天才发现原来是iphone只能显示11屏，我用了categories，把一些应用分类装了一下，才看到原来的那些已经装上的apps。&lt;br&gt;&lt;b
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>windows xp unlock 很慢</title>
     <link href="http://fresky.github.io/2011/01/16/windows-xp-take-too-long-to-unlock/"/>
     <id>http://fresky.github.io/2011/01/16/windows-xp-take-too-long-to-unlock/</id>
@@ -8900,6 +8877,29 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;前段时间遇到了一个问题，就是我的XP每次锁屏后解锁都特别的慢，需要等几分钟才能进来，很苦恼。&lt;br&gt;&lt;br&gt;后来终于找到了元凶，是因为我装了&lt;a href=&quot;http://www.netopia.com/software/products/tb2/&quot; target=&quot;_bl
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>iphone原来只能有11屏的应用</title>
+    <link href="http://fresky.github.io/2011/01/16/you-can-only-have-11-screen-apps-in-ipone1/"/>
+    <id>http://fresky.github.io/2011/01/16/you-can-only-have-11-screen-apps-in-ipone1/</id>
+    <published>2011-01-15T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.219Z</updated>
+    
+    <content type="html"><![CDATA[<p>我最近发现怎么新装的app都不能在iphone上面显示出来了，还以为同步出了啥问题，我这个是08年买的一代，好多应用现在不能装上。今天才发现原来是iphone只能显示11屏，我用了categories，把一些应用分类装了一下，才看到原来的那些已经装上的apps。<br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;我最近发现怎么新装的app都不能在iphone上面显示出来了，还以为同步出了啥问题，我这个是08年买的一代，好多应用现在不能装上。今天才发现原来是iphone只能显示11屏，我用了categories，把一些应用分类装了一下，才看到原来的那些已经装上的apps。&lt;br&gt;&lt;b
       
     
     </summary>
@@ -9049,6 +9049,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法</title>
+    <link href="http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/"/>
+    <id>http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/</id>
+    <published>2010-11-07T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.217Z</updated>
+    
+    <content type="html"><![CDATA[<p>前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。<br>详细请看<a href="https://support.mozilla.com/en-US/questions/763190#answer-115496" target="_blank" rel="noopener">Some parts of GMAIL no longer work after a recent update</a> 和<a href="http://kb.mozillazine.org/Dom.storage.enabled" target="_blank" rel="noopener"> Dom.storage.enabled - MozillaZine Knowledge Base</a> 。<br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。&lt;br&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
     <title>定制C# combobox的下拉框</title>
     <link href="http://fresky.github.io/2010/11/08/customize-csharp-dropdown-list/"/>
     <id>http://fresky.github.io/2010/11/08/customize-csharp-dropdown-list/</id>
@@ -9072,29 +9095,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法</title>
-    <link href="http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/"/>
-    <id>http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/</id>
-    <published>2010-11-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.217Z</updated>
-    
-    <content type="html"><![CDATA[<p>前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。<br>详细请看<a href="https://support.mozilla.com/en-US/questions/763190#answer-115496" target="_blank" rel="noopener">Some parts of GMAIL no longer work after a recent update</a> 和<a href="http://kb.mozillazine.org/Dom.storage.enabled" target="_blank" rel="noopener"> Dom.storage.enabled - MozillaZine Knowledge Base</a> 。<br><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。&lt;br&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -9238,19 +9238,42 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>法意蜜月之旅签证、交通、酒店篇</title>
-    <link href="http://fresky.github.io/2010/10/09/europe-travel-visa-traffic-hotel/"/>
-    <id>http://fresky.github.io/2010/10/09/europe-travel-visa-traffic-hotel/</id>
+    <title>gvim编辑xml更新</title>
+    <link href="http://fresky.github.io/2010/10/09/edit-xml-in-gvim/"/>
+    <id>http://fresky.github.io/2010/10/09/edit-xml-in-gvim/</id>
     <published>2010-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.214Z</updated>
+    <updated>2019-12-20T08:29:07.213Z</updated>
     
-    <content type="html"><![CDATA[<p>最近开始使用gvim，觉得很不错，可以大大的提高文本输入的效率，有兴趣的可以试试：）<br>如果开始使用的话，可以看看这篇文章<a href="http://www.appinn.com/gvim-ahk-tip/" target="_blank" rel="noopener"> 用 gVim 编辑任意窗口的文字[AHK] - 小众软件</a> 用gvim来编辑任意窗口的文字。 这篇文章<a href="http://vim.wikia.com/wiki/Use_gvim_as_an_external_editor_for_Windows_apps" target="_blank" rel="noopener"> Use gvim as an external editor for Windows apps - Vim Tips Wiki</a> 是gvim网站上提供的方法，我没有试。如果是firefox用户的话，可以考虑这个addon<a href="https://addons.mozilla.org/en-US/firefox/addon/4125/" target="_blank" rel="noopener"> It’s All Text! :: Add-ons for Firefox </a>。<br><br>这篇blog使用scribefire<a href="http://www.scribefire.com/" target="_blank" rel="noopener"> Scribefire: Fire up your blogging</a> 写的，在firefox里面可以用 blog this page 快速的插入超链接，试用试用，所以这篇blog里面就会有很多超链接了：）<br><br>言归正传，现在说说上次旅游的签证办理，我们是从意大利大使馆办理的申根签证，对申根国都有效，理论上是你去哪个国家就该在哪个国家办理，如果多个国家的话，选择首次入申根的国家，或者呆的时间最长的国家办理。其实好像也没啥关系，就是在法国入关的时候问了一句，是不是还要去意大利。<br><br>意大利使馆办签证比法国容易很多，我们是某个周四到意大利签证中心（我咨询的情况是现在个人旅游签证必须经过意大利签证中心处理） <a href="http://www.italyvac.cn/chineese/index1.aspx" target="_blank" rel="noopener">意大利北京</a> 提交材料，然后预约的第二天周五上午面试，面试不到5分钟，然后下周二早上就能拿到签证了。很高效，我有个同事办法国的签证，直到出发前一天下午才出来，真够慢的。而且意大利如果2年之内有过申根签证，可以免面试，直到意大利签证中心提交材料就可以了。如果想签法国的话，需要去中智，看这里<a href="https://cn.tlscontact.com/cn2fr/login.php?l=zh_CN" target="_blank" rel="noopener">欢迎访问 -  TLScontact visas center - 中国, 法国 。</a><br><br>至于签证材料，照着意大利签证中心网页上的要求准备就可以了。公司准假信网上有很多模板，很多公司自己也有模板。行程单自己根据攻略写写也不是啥难事，还算是出游的一个准备。机票找个机票代理都能免费打印一份，就说办签证用的就行，他们都知道，但是如果去携程或者一起飞打印的话是收费的。酒店到booking上预定，看好取消条件，签证完了就取消，也没啥损失。银行的存款证明我有的是拿存折到银行打印，盖个章，中国银行免费。有的直接在网银上列明细，自己打印，也没有人说什么。保险可以到穷游或者别的网站上买，印象中一般大使馆门口都有很多卖保险的。</p><p>办好签证，就可以放心大胆的预定机票，火车票和酒店了。<br><br>我们当时是4月底就找了一个特价票，然后让代理预留着，没有付款，等签证下来才付款的。我当时主要在这个网站上看票，<a href="http://www.kayak.com/" target="_blank" rel="noopener">KAYAK - Compare Hundreds of Travel Sites At Once</a>，因为可以查开口程的，了解大概行情后，然后找代理，发现机票代理还是便宜，因为他们有优惠券可以用。我们最后定的阿联酋的，在迪拜转机。<br><br>我那个时候还比较忙，酒店预定的不是很充分，而且看tripadvisor很容易让人看晕，想找个物美价廉的很难啊。就只预定了法国的，意大利的都没订，想着到了法国再说。导致我们在佛罗伦萨遇到了点小麻烦，以后出去玩还是准备做的充分些好。出去玩最好能带个能上网的东西，小的上网本就很不错，能及时查查攻略，订订酒店啥的。我们没有小本，就用我的iphone了，尽管比较慢，但是还不错，后来的酒店预定都靠它了。如果用iphone的话，booking, hrs, hostelworld, tripadvisor,各个酒店联盟比如spg，雅高啊，都有专门的app，很方便的。<br><br>我们在欧洲境内的行程全部靠火车，因为当时火山灰还有余威，而且觉得做火车看风景挺好的。法国境内的可以通过<a href="http://www.tgv-europe.com/en/" target="_blank" rel="noopener">Welcome to TGV-EUROPE.COM</a> 预定，只要早，就会有便宜的票，另外如果有idtgv的火车，就更便宜的了，它是电子票，提前打印就行，但是需要欧洲或美国的信用卡。意大利的用tgv网站预定也可以，但是可以到意铁官网<a href="http://www.ferroviedellostato.it/homepage_en.html" target="_blank" rel="noopener">Ferrovie  dello Stato - Homepage</a>，提前7天有15%的折扣，提前15天有30%的折扣。所以长途的最好提前订好，短途的可以到了火车站再买，很方便，而且可以时间上更有弹性。我们这次做了法国tgv，eurostart，也做了意大利的R车，坐火车还是很不错的。<br><br>先写这么多吧，一句话，如果打算自己出去玩，一定要早做准备：）</p>]]></content>
+    <content type="html"><![CDATA[<p>上次写的那个gvim编辑xml的方式有点不太好，没有把xml的层级关系列出来，今天找了找，比较完美的解决了gvim编辑和查看xml的问题。<br><br>查看xml，需要用到<a href="http://code.google.com/p/xmllint/" target="_blank" rel="noopener">xmllint</a>，这个是windows版本的，需要放到path里面，其实就是在gvim里能找到就行。然后再gvim的配置中加上这个<br>let mapleader = “,”<br>map &lt;silent&gt; &lt;leader&gt;px : %!xmllint % –format&lt;cr&gt;<br>这样在打开xml后，键盘输入,px，就能得到xml的pretty xml效果。<br><br>对于编辑，需要<a href="http://www.vim.org/scripts/script.php?script_id=301" target="_blank" rel="noopener">xmledit - A filetype plugin to help edit XML, HTML, and SGML documents</a> ，用这个覆盖掉原来gvim自带的xml.vim，在编辑xml文件时就能省很多事了，照抄文档里说。It allows you to jump to the beginning or end of the tag block your cursor is in. ‘%’ will jump between ‘&lt;’ and ‘&gt;’ within the tag your cursor is in. When in insert mode and you finish a tag (pressing ‘&gt;’) the tag will be completed. If you press ‘&gt;’ twice it will complete the tag and place the cursor in the middle of the tags on it’s own line. </p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;最近开始使用gvim，觉得很不错，可以大大的提高文本输入的效率，有兴趣的可以试试：）&lt;br&gt;如果开始使用的话，可以看看这篇文章&lt;a href=&quot;http://www.appinn.com/gvim-ahk-tip/&quot; target=&quot;_blank&quot; rel=&quot;noopene
+        &lt;p&gt;上次写的那个gvim编辑xml的方式有点不太好，没有把xml的层级关系列出来，今天找了找，比较完美的解决了gvim编辑和查看xml的问题。&lt;br&gt;&lt;br&gt;查看xml，需要用到&lt;a href=&quot;http://code.google.com/p/xmllint/&quot; target
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>法意蜜月之旅总结</title>
+    <link href="http://fresky.github.io/2010/10/09/europe-travel-summary/"/>
+    <id>http://fresky.github.io/2010/10/09/europe-travel-summary/</id>
+    <published>2010-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.214Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://www.blogabond.com/Promo/GetABlogMap.aspx" target="_blank" rel="noopener"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25491" border="0" alt width="450" height="300"></a></p><br><p>到达迪拜机场了，6月4日开始的蜜月之旅今天就结束了。先总结一下行程：<br>6，4 北京-迪拜-巴黎<br>6，5 凡尔赛宫<br>6，6 卢浮宫，奥赛博物馆，卢森堡公园<br>6，7 圣心教堂，凯旋门，香榭丽大街，艾菲尔铁塔<br>6，8 巴黎圣母院，老佛爷，晚上火车去阿维尼翁<br>6，9 薰衣草，红土小镇，石头城，泉水小镇<br>6，10 教皇宫，断桥<br>6，11 上午火车去尼斯，下午eve小镇，晚上尼斯海岸线<br>6，12 上午摩纳哥皇宫，赌场，下午火车去威尼斯<br>6，13 威尼斯玻璃岛，彩色岛<br>6，14 威尼斯主岛圣马可广场，教堂，总督府，叹息桥，大运河，下午火车去佛罗伦萨<br>6，15 百花大教堂，乌菲兹美术馆，老桥，菲拉格慕博物馆，晚上火车去锡耶纳<br>6，16 锡耶纳市政广场，集市，教堂，老城乱逛，晚上火车回佛罗伦萨<br>6，17 the mall逛街，下午米开朗奇罗广场，圣明托教堂，晚上火车去罗马<br>6，18 梵蒂冈博物馆，圣彼得大教堂，圣天使堡<br>6，19 斗兽场，古罗马广场，图拉真市场，卡托比利广场，卡托比利博物馆<br>6，20  圣乔瓦尼教堂，圣玛丽奥教堂，解放广场，巴贝里尼广场，人骨教堂，许愿池，万神庙，纳沃纳广场<br>6，21 波波洛广场，周边教堂，西班牙广场逛街，晚上罗马-迪拜<br>6，22 迪拜-北京 <br><br><br><br></p><br><p class="blogpress_location">Location:<a href="http://maps.google.com/maps?q=%E8%BF%AA%E6%8B%9C&amp;z=10" target="_blank" rel="noopener">迪拜</a></p><br><p><br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://www.blogabond.com/Promo/GetABlogMap.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img id=&quot;imgBlogabondLogo&quot; style=&quot;position: abso
       
     
     </summary>
@@ -9284,19 +9307,19 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>法意蜜月之旅总结</title>
-    <link href="http://fresky.github.io/2010/10/09/europe-travel-summary/"/>
-    <id>http://fresky.github.io/2010/10/09/europe-travel-summary/</id>
+    <title>法意蜜月之旅签证、交通、酒店篇</title>
+    <link href="http://fresky.github.io/2010/10/09/europe-travel-visa-traffic-hotel/"/>
+    <id>http://fresky.github.io/2010/10/09/europe-travel-visa-traffic-hotel/</id>
     <published>2010-10-08T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.214Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://www.blogabond.com/Promo/GetABlogMap.aspx" target="_blank" rel="noopener"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25491" border="0" alt width="450" height="300"></a></p><br><p>到达迪拜机场了，6月4日开始的蜜月之旅今天就结束了。先总结一下行程：<br>6，4 北京-迪拜-巴黎<br>6，5 凡尔赛宫<br>6，6 卢浮宫，奥赛博物馆，卢森堡公园<br>6，7 圣心教堂，凯旋门，香榭丽大街，艾菲尔铁塔<br>6，8 巴黎圣母院，老佛爷，晚上火车去阿维尼翁<br>6，9 薰衣草，红土小镇，石头城，泉水小镇<br>6，10 教皇宫，断桥<br>6，11 上午火车去尼斯，下午eve小镇，晚上尼斯海岸线<br>6，12 上午摩纳哥皇宫，赌场，下午火车去威尼斯<br>6，13 威尼斯玻璃岛，彩色岛<br>6，14 威尼斯主岛圣马可广场，教堂，总督府，叹息桥，大运河，下午火车去佛罗伦萨<br>6，15 百花大教堂，乌菲兹美术馆，老桥，菲拉格慕博物馆，晚上火车去锡耶纳<br>6，16 锡耶纳市政广场，集市，教堂，老城乱逛，晚上火车回佛罗伦萨<br>6，17 the mall逛街，下午米开朗奇罗广场，圣明托教堂，晚上火车去罗马<br>6，18 梵蒂冈博物馆，圣彼得大教堂，圣天使堡<br>6，19 斗兽场，古罗马广场，图拉真市场，卡托比利广场，卡托比利博物馆<br>6，20  圣乔瓦尼教堂，圣玛丽奥教堂，解放广场，巴贝里尼广场，人骨教堂，许愿池，万神庙，纳沃纳广场<br>6，21 波波洛广场，周边教堂，西班牙广场逛街，晚上罗马-迪拜<br>6，22 迪拜-北京 <br><br><br><br></p><br><p class="blogpress_location">Location:<a href="http://maps.google.com/maps?q=%E8%BF%AA%E6%8B%9C&amp;z=10" target="_blank" rel="noopener">迪拜</a></p><br><p><br><br></p>]]></content>
+    <content type="html"><![CDATA[<p>最近开始使用gvim，觉得很不错，可以大大的提高文本输入的效率，有兴趣的可以试试：）<br>如果开始使用的话，可以看看这篇文章<a href="http://www.appinn.com/gvim-ahk-tip/" target="_blank" rel="noopener"> 用 gVim 编辑任意窗口的文字[AHK] - 小众软件</a> 用gvim来编辑任意窗口的文字。 这篇文章<a href="http://vim.wikia.com/wiki/Use_gvim_as_an_external_editor_for_Windows_apps" target="_blank" rel="noopener"> Use gvim as an external editor for Windows apps - Vim Tips Wiki</a> 是gvim网站上提供的方法，我没有试。如果是firefox用户的话，可以考虑这个addon<a href="https://addons.mozilla.org/en-US/firefox/addon/4125/" target="_blank" rel="noopener"> It’s All Text! :: Add-ons for Firefox </a>。<br><br>这篇blog使用scribefire<a href="http://www.scribefire.com/" target="_blank" rel="noopener"> Scribefire: Fire up your blogging</a> 写的，在firefox里面可以用 blog this page 快速的插入超链接，试用试用，所以这篇blog里面就会有很多超链接了：）<br><br>言归正传，现在说说上次旅游的签证办理，我们是从意大利大使馆办理的申根签证，对申根国都有效，理论上是你去哪个国家就该在哪个国家办理，如果多个国家的话，选择首次入申根的国家，或者呆的时间最长的国家办理。其实好像也没啥关系，就是在法国入关的时候问了一句，是不是还要去意大利。<br><br>意大利使馆办签证比法国容易很多，我们是某个周四到意大利签证中心（我咨询的情况是现在个人旅游签证必须经过意大利签证中心处理） <a href="http://www.italyvac.cn/chineese/index1.aspx" target="_blank" rel="noopener">意大利北京</a> 提交材料，然后预约的第二天周五上午面试，面试不到5分钟，然后下周二早上就能拿到签证了。很高效，我有个同事办法国的签证，直到出发前一天下午才出来，真够慢的。而且意大利如果2年之内有过申根签证，可以免面试，直到意大利签证中心提交材料就可以了。如果想签法国的话，需要去中智，看这里<a href="https://cn.tlscontact.com/cn2fr/login.php?l=zh_CN" target="_blank" rel="noopener">欢迎访问 -  TLScontact visas center - 中国, 法国 。</a><br><br>至于签证材料，照着意大利签证中心网页上的要求准备就可以了。公司准假信网上有很多模板，很多公司自己也有模板。行程单自己根据攻略写写也不是啥难事，还算是出游的一个准备。机票找个机票代理都能免费打印一份，就说办签证用的就行，他们都知道，但是如果去携程或者一起飞打印的话是收费的。酒店到booking上预定，看好取消条件，签证完了就取消，也没啥损失。银行的存款证明我有的是拿存折到银行打印，盖个章，中国银行免费。有的直接在网银上列明细，自己打印，也没有人说什么。保险可以到穷游或者别的网站上买，印象中一般大使馆门口都有很多卖保险的。</p><p>办好签证，就可以放心大胆的预定机票，火车票和酒店了。<br><br>我们当时是4月底就找了一个特价票，然后让代理预留着，没有付款，等签证下来才付款的。我当时主要在这个网站上看票，<a href="http://www.kayak.com/" target="_blank" rel="noopener">KAYAK - Compare Hundreds of Travel Sites At Once</a>，因为可以查开口程的，了解大概行情后，然后找代理，发现机票代理还是便宜，因为他们有优惠券可以用。我们最后定的阿联酋的，在迪拜转机。<br><br>我那个时候还比较忙，酒店预定的不是很充分，而且看tripadvisor很容易让人看晕，想找个物美价廉的很难啊。就只预定了法国的，意大利的都没订，想着到了法国再说。导致我们在佛罗伦萨遇到了点小麻烦，以后出去玩还是准备做的充分些好。出去玩最好能带个能上网的东西，小的上网本就很不错，能及时查查攻略，订订酒店啥的。我们没有小本，就用我的iphone了，尽管比较慢，但是还不错，后来的酒店预定都靠它了。如果用iphone的话，booking, hrs, hostelworld, tripadvisor,各个酒店联盟比如spg，雅高啊，都有专门的app，很方便的。<br><br>我们在欧洲境内的行程全部靠火车，因为当时火山灰还有余威，而且觉得做火车看风景挺好的。法国境内的可以通过<a href="http://www.tgv-europe.com/en/" target="_blank" rel="noopener">Welcome to TGV-EUROPE.COM</a> 预定，只要早，就会有便宜的票，另外如果有idtgv的火车，就更便宜的了，它是电子票，提前打印就行，但是需要欧洲或美国的信用卡。意大利的用tgv网站预定也可以，但是可以到意铁官网<a href="http://www.ferroviedellostato.it/homepage_en.html" target="_blank" rel="noopener">Ferrovie  dello Stato - Homepage</a>，提前7天有15%的折扣，提前15天有30%的折扣。所以长途的最好提前订好，短途的可以到了火车站再买，很方便，而且可以时间上更有弹性。我们这次做了法国tgv，eurostart，也做了意大利的R车，坐火车还是很不错的。<br><br>先写这么多吧，一句话，如果打算自己出去玩，一定要早做准备：）</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://www.blogabond.com/Promo/GetABlogMap.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;img id=&quot;imgBlogabondLogo&quot; style=&quot;position: abso
+        &lt;p&gt;最近开始使用gvim，觉得很不错，可以大大的提高文本输入的效率，有兴趣的可以试试：）&lt;br&gt;如果开始使用的话，可以看看这篇文章&lt;a href=&quot;http://www.appinn.com/gvim-ahk-tip/&quot; target=&quot;_blank&quot; rel=&quot;noopene
       
     
     </summary>
@@ -9349,29 +9372,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>gvim编辑xml更新</title>
-    <link href="http://fresky.github.io/2010/10/09/edit-xml-in-gvim/"/>
-    <id>http://fresky.github.io/2010/10/09/edit-xml-in-gvim/</id>
-    <published>2010-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.213Z</updated>
-    
-    <content type="html"><![CDATA[<p>上次写的那个gvim编辑xml的方式有点不太好，没有把xml的层级关系列出来，今天找了找，比较完美的解决了gvim编辑和查看xml的问题。<br><br>查看xml，需要用到<a href="http://code.google.com/p/xmllint/" target="_blank" rel="noopener">xmllint</a>，这个是windows版本的，需要放到path里面，其实就是在gvim里能找到就行。然后再gvim的配置中加上这个<br>let mapleader = “,”<br>map &lt;silent&gt; &lt;leader&gt;px : %!xmllint % –format&lt;cr&gt;<br>这样在打开xml后，键盘输入,px，就能得到xml的pretty xml效果。<br><br>对于编辑，需要<a href="http://www.vim.org/scripts/script.php?script_id=301" target="_blank" rel="noopener">xmledit - A filetype plugin to help edit XML, HTML, and SGML documents</a> ，用这个覆盖掉原来gvim自带的xml.vim，在编辑xml文件时就能省很多事了，照抄文档里说。It allows you to jump to the beginning or end of the tag block your cursor is in. ‘%’ will jump between ‘&lt;’ and ‘&gt;’ within the tag your cursor is in. When in insert mode and you finish a tag (pressing ‘&gt;’) the tag will be completed. If you press ‘&gt;’ twice it will complete the tag and place the cursor in the middle of the tags on it’s own line. </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;上次写的那个gvim编辑xml的方式有点不太好，没有把xml的层级关系列出来，今天找了找，比较完美的解决了gvim编辑和查看xml的问题。&lt;br&gt;&lt;br&gt;查看xml，需要用到&lt;a href=&quot;http://code.google.com/p/xmllint/&quot; target
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   

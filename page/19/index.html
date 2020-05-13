@@ -84,16 +84,17 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
+    <a href="/2012/07/19/deadlock-caused-by-locking-pulic-in-csharp/" title="c# lock 使用不当引起的死锁" itemprop="url">
   
-    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
+    <h1 itemprop="name">c# lock 使用不当引起的死锁</h1>
     
      
-           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
-123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
+           <p itemprop="description" >Thread Synchronization (C# and Visual Basic)中提到最好不要lock public的东西，比如：
+
+lock（this）2. lock（“string”）3. lock（typeof（int))我在github上放了个死锁的例子。</p>
         
     
-    <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
+    <time datetime="2012-07-18T16:00:00.000Z" itemprop="datePublished">Jul 19 2012</time>
   </a>
 </section>
 
@@ -112,6 +113,27 @@
      
            <p itemprop="description" >C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。
 1234private void Tree_BeforeSelect(object sender, Tre</p>
+        
+    
+    <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
+  
+    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
+    
+     
+           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
+123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -271,26 +293,6 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/10/summary-about-cpp-macro/" title="Macro 小总结" itemprop="url">
-  
-    <h1 itemprop="name">Macro 小总结</h1>
-    
-     
-           <p itemprop="description" >如果在C++中使用Macro，要注意：1. parameter要加括号： #define ADD(x,y) ((x)+(y))2. result要加括号： #define ADD(x,y) ((x)+(y))3. 多行要加花括号： #define INCREASE(a, b) {</p>
-        
-    
-    <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2012/07/10/mozilla-thimble-online-html-editor/" title="Mozilla Thimble，在线html，javascript编辑器" itemprop="url">
   
     <h1 itemprop="name">Mozilla Thimble，在线html，javascript编辑器</h1>
@@ -311,16 +313,15 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/06/how-to-record-startup-time-in-csharp/" title="记录C#程序的运行时间" itemprop="url">
+    <a href="/2012/07/10/summary-about-cpp-macro/" title="Macro 小总结" itemprop="url">
   
-    <h1 itemprop="name">记录C#程序的运行时间</h1>
+    <h1 itemprop="name">Macro 小总结</h1>
     
      
-           <p itemprop="description" >从.net - Does a C# app track how long its been running? - Stack Overflow看到的，很方便的。System.Diagnostics.Process 有个属性记录的应用的开始时间。
-12System.Diagnost</p>
+           <p itemprop="description" >如果在C++中使用Macro，要注意：1. parameter要加括号： #define ADD(x,y) ((x)+(y))2. result要加括号： #define ADD(x,y) ((x)+(y))3. 多行要加花括号： #define INCREASE(a, b) {</p>
         
     
-    <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
+    <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
   </a>
 </section>
 
@@ -338,6 +339,27 @@
     
      
            <p itemprop="description" >今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）从网上总结了一下地址的信息，最主要的是：0xCDCDCDCD堆上分配的地址，但是没有初始</p>
+        
+    
+    <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2012/07/06/how-to-record-startup-time-in-csharp/" title="记录C#程序的运行时间" itemprop="url">
+  
+    <h1 itemprop="name">记录C#程序的运行时间</h1>
+    
+     
+           <p itemprop="description" >从.net - Does a C# app track how long its been running? - Stack Overflow看到的，很方便的。System.Diagnostics.Process 有个属性记录的应用的开始时间。
+12System.Diagnost</p>
         
     
     <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
@@ -469,26 +491,6 @@
 
 
 
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2012/02/24/how-to-remote-debug-asp-dot-net-and-silverlight/" title="远程调试ASP .NET和Silverlight" itemprop="url">
-  
-    <h1 itemprop="name">远程调试ASP .NET和Silverlight</h1>
-    
-     
-           <p itemprop="description" >这几天有个网站突然出了问题，是ASP .NET + Silverlight。用下面的方法可以远程调试。ASP .NET远程调试。1. 复制  [VSInstallFolder]\Common7\IDE\Remote Debugger\x86文件夹到服务器production se</p>
-        
-    
-    <time datetime="2012-02-23T16:00:00.000Z" itemprop="datePublished">Feb 24 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix unexpand">
     <a class="extend prev" rel="prev" href="/page/18/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/20/">Next<span></span></a>
@@ -507,7 +509,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 404</p>
+  <p class="asidetitle">Total Posts: 405</p>
 </div>
 
 
@@ -517,6 +519,10 @@
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2020/05/12/estimation/">工作量估算</a>
+          </li>
         
           <li>
             * <a href="/2020/05/05/remote-work/">远程办公的一些建议</a>
@@ -532,10 +538,6 @@
         
           <li>
             * <a href="/2020/04/19/microservices-challenges/">微服务带来的好处和挑战</a>
-          </li>
-        
-          <li>
-            * <a href="/2020/03/16/one-on-one-talk/">如何做老板和员工的一对一的沟通</a>
           </li>
         
       </ul>

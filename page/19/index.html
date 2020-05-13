@@ -106,13 +106,13 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/disable-single-tree-node-in-csharp/" title="禁用C#的树的单个节点" itemprop="url">
+    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
   
-    <h1 itemprop="name">禁用C#的树的单个节点</h1>
+    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
     
      
-           <p itemprop="description" >C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。
-1234private void Tree_BeforeSelect(object sender, Tre</p>
+           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
+123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -127,13 +127,13 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
+    <a href="/2012/07/17/disable-single-tree-node-in-csharp/" title="禁用C#的树的单个节点" itemprop="url">
   
-    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
+    <h1 itemprop="name">禁用C#的树的单个节点</h1>
     
      
-           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
-123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
+           <p itemprop="description" >C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。
+1234private void Tree_BeforeSelect(object sender, Tre</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -333,12 +333,13 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/06/what-is-oxcdcdcdcd/" title="oxcdcdcdcd是什么？" itemprop="url">
+    <a href="/2012/07/06/how-to-record-startup-time-in-csharp/" title="记录C#程序的运行时间" itemprop="url">
   
-    <h1 itemprop="name">oxcdcdcdcd是什么？</h1>
+    <h1 itemprop="name">记录C#程序的运行时间</h1>
     
      
-           <p itemprop="description" >今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）从网上总结了一下地址的信息，最主要的是：0xCDCDCDCD堆上分配的地址，但是没有初始</p>
+           <p itemprop="description" >从.net - Does a C# app track how long its been running? - Stack Overflow看到的，很方便的。System.Diagnostics.Process 有个属性记录的应用的开始时间。
+12System.Diagnost</p>
         
     
     <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
@@ -353,13 +354,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/06/how-to-record-startup-time-in-csharp/" title="记录C#程序的运行时间" itemprop="url">
+    <a href="/2012/07/06/what-is-oxcdcdcdcd/" title="oxcdcdcdcd是什么？" itemprop="url">
   
-    <h1 itemprop="name">记录C#程序的运行时间</h1>
+    <h1 itemprop="name">oxcdcdcdcd是什么？</h1>
     
      
-           <p itemprop="description" >从.net - Does a C# app track how long its been running? - Stack Overflow看到的，很方便的。System.Diagnostics.Process 有个属性记录的应用的开始时间。
-12System.Diagnost</p>
+           <p itemprop="description" >今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）从网上总结了一下地址的信息，最主要的是：0xCDCDCDCD堆上分配的地址，但是没有初始</p>
         
     
     <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
@@ -608,6 +608,10 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 			
 		
 			
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
 			
 		
@@ -617,10 +621,6 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 		
 			
 				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Agile/" title="Agile">Agile<sup>3</sup></a></li>
 			
 		
 			

@@ -390,14 +390,14 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/02/19/static-constructor-surprise-in-csharp/" title="C#的继承类中static constructor的调用问题" itemprop="url">
+    <a href="/2013/02/19/exception-in-csharp-static-constructor/" title="C#的static constructor抛了异常会怎么处理？" itemprop="url">
   
-    <h1 itemprop="name">C#的继承类中static constructor的调用问题</h1>
+    <h1 itemprop="name">C#的static constructor抛了异常会怎么处理？</h1>
     
      
-           <p itemprop="description" >Eric Lippert写了一系列的关于static constructor的文章，1，2，3，4，可以读读对static constructor有更好的理解。  转一个其中的例子吧，假设有如下代码。  
+           <p itemprop="description" >stackoverflow上举了这个例子说明在C#中，如果static constructor只会被调用一次，即使抛了异常，也不会重试调用。如果抛了异常，那么在这个appdomain里面，这个类就不能用了。  示例代码：  
 
-123456789101112131415161718192021usi</p>
+12345678910111213141516171</p>
         
     
     <time datetime="2013-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2013</time>
@@ -412,14 +412,14 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/02/19/exception-in-csharp-static-constructor/" title="C#的static constructor抛了异常会怎么处理？" itemprop="url">
+    <a href="/2013/02/19/static-constructor-surprise-in-csharp/" title="C#的继承类中static constructor的调用问题" itemprop="url">
   
-    <h1 itemprop="name">C#的static constructor抛了异常会怎么处理？</h1>
+    <h1 itemprop="name">C#的继承类中static constructor的调用问题</h1>
     
      
-           <p itemprop="description" >stackoverflow上举了这个例子说明在C#中，如果static constructor只会被调用一次，即使抛了异常，也不会重试调用。如果抛了异常，那么在这个appdomain里面，这个类就不能用了。  示例代码：  
+           <p itemprop="description" >Eric Lippert写了一系列的关于static constructor的文章，1，2，3，4，可以读读对static constructor有更好的理解。  转一个其中的例子吧，假设有如下代码。  
 
-12345678910111213141516171</p>
+123456789101112131415161718192021usi</p>
         
     
     <time datetime="2013-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2013</time>
@@ -521,7 +521,7 @@
       <ul>
         
           <li>
-            * <a href="/2020/05/21/windows-update-history/">Windows更新的格式变化</a>
+            * <a href="/2020/05/21/windows-update-history/">Windows更新的设计变化</a>
           </li>
         
           <li>

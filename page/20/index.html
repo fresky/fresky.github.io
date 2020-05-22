@@ -84,6 +84,26 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2012/05/08/guid/" title="什么是GUID？" itemprop="url">
+  
+    <h1 itemprop="name">什么是GUID？</h1>
+    
+     
+           <p itemprop="description" >最近看了下面几个文章，讲了GUID的一些相关知识，解释的很清楚，有兴趣的可以看看，我把大概要点翻译整理了一下。GUID Guide, part one - Fabulous Adventures In Coding - Site Home - MSDN BlogsGUID gui</p>
+        
+    
+    <time datetime="2012-05-08T14:52:46.000Z" itemprop="datePublished">May 8 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2012/05/04/how-to-start-debugger-windbg-visual-studio-automatically/" title="自动启动 Debugger（windbg，visual studio）" itemprop="url">
   
     <h1 itemprop="name">自动启动 Debugger（windbg，visual studio）</h1>
@@ -206,12 +226,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2011/01/11/GetEnvironmentVariable-issue-in-csharp/" title="C# GetEnvironmentVariable 问题" itemprop="url">
+    <a href="/2011/01/11/where-system-environment-variables-stored-in-registry/" title="环境变量的注册表位置" itemprop="url">
   
-    <h1 itemprop="name">C# GetEnvironmentVariable 问题</h1>
+    <h1 itemprop="name">环境变量的注册表位置</h1>
     
      
-           <p itemprop="description" >今天遇到了一个奇怪的问题，有2个程序，一个是ClickOnce应用，一个是普通的C#可执行程序，都用到了一个系统环境变量，System environment variable，Machine级别的，程序中都是用的 Environment.GetEnvironmentVariab</p>
+           <p itemprop="description" >另外说一下环境变量在注册表中存放的位置：system environment variables: (machine)HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environmentus</p>
         
     
     <time datetime="2011-01-10T16:00:00.000Z" itemprop="datePublished">Jan 11 2011</time>
@@ -246,12 +266,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2011/01/11/where-system-environment-variables-stored-in-registry/" title="环境变量的注册表位置" itemprop="url">
+    <a href="/2011/01/11/GetEnvironmentVariable-issue-in-csharp/" title="C# GetEnvironmentVariable 问题" itemprop="url">
   
-    <h1 itemprop="name">环境变量的注册表位置</h1>
+    <h1 itemprop="name">C# GetEnvironmentVariable 问题</h1>
     
      
-           <p itemprop="description" >另外说一下环境变量在注册表中存放的位置：system environment variables: (machine)HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environmentus</p>
+           <p itemprop="description" >今天遇到了一个奇怪的问题，有2个程序，一个是ClickOnce应用，一个是普通的C#可执行程序，都用到了一个系统环境变量，System environment variable，Machine级别的，程序中都是用的 Environment.GetEnvironmentVariab</p>
         
     
     <time datetime="2011-01-10T16:00:00.000Z" itemprop="datePublished">Jan 11 2011</time>
@@ -327,17 +347,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2010/11/08/customize-csharp-dropdown-list/" title="定制C# combobox的下拉框" itemprop="url">
+    <a href="/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/" title="firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法" itemprop="url">
   
-    <h1 itemprop="name">定制C# combobox的下拉框</h1>
+    <h1 itemprop="name">firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法</h1>
     
      
-           <p itemprop="description" >今天做了个小东西，需要定制combobox的下拉框，打开下拉框时如下图。
-
-
-选择一个后，如下图。
-
-实现的方法是需要把combobox的DrawoMode设置成OwnerDrawVariable，然后处理DrawItem事件，详见ComboBox.DrawItem Event </p>
+           <p itemprop="description" >前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。详细请看Som</p>
         
     
     <time datetime="2010-11-07T16:00:00.000Z" itemprop="datePublished">Nov 8 2010</time>
@@ -352,12 +367,17 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/" title="firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法" itemprop="url">
+    <a href="/2010/11/08/customize-csharp-dropdown-list/" title="定制C# combobox的下拉框" itemprop="url">
   
-    <h1 itemprop="name">firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法</h1>
+    <h1 itemprop="name">定制C# combobox的下拉框</h1>
     
      
-           <p itemprop="description" >前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。详细请看Som</p>
+           <p itemprop="description" >今天做了个小东西，需要定制combobox的下拉框，打开下拉框时如下图。
+
+
+选择一个后，如下图。
+
+实现的方法是需要把combobox的DrawoMode设置成OwnerDrawVariable，然后处理DrawItem事件，详见ComboBox.DrawItem Event </p>
         
     
     <time datetime="2010-11-07T16:00:00.000Z" itemprop="datePublished">Nov 8 2010</time>
@@ -470,26 +490,6 @@
 
 
 
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2010/10/11/solve-could-not-load-file-or-assembly-in-wcf-service/" title="wcf web service遇到&quot;Could not load file or assembly App_Web...&quot;问题" itemprop="url">
-  
-    <h1 itemprop="name">wcf web service遇到&quot;Could not load file or assembly App_Web...&quot;问题</h1>
-    
-     
-           <p itemprop="description" >在IIS中部署wcf webservice，遇到”Could not load file or assembly App_Web…”问题。原因是修改了wcf webservice的方法，需要把.svc文件覆盖原来的即可解决。详见下网页。Could not load file or</p>
-        
-    
-    <time datetime="2010-10-10T16:00:00.000Z" itemprop="datePublished">Oct 11 2010</time>
-  </a>
-</section>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix unexpand">
     <a class="extend prev" rel="prev" href="/page/19/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/18/">18</a><a class="page-number" href="/page/19/">19</a><span class="page-number current">20</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/21/">Next<span></span></a>
@@ -508,7 +508,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 406</p>
+  <p class="asidetitle">Total Posts: 407</p>
 </div>
 
 
@@ -518,6 +518,10 @@
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2020/05/22/pricing-psychology/">定价心理学</a>
+          </li>
         
           <li>
             * <a href="/2020/05/21/windows-update-history/">Windows更新的设计变化</a>
@@ -533,10 +537,6 @@
         
           <li>
             * <a href="/2020/04/30/what-does-engineering-director-do/">技术负责人都需要做什么</a>
-          </li>
-        
-          <li>
-            * <a href="/2020/04/29/from-engineer-to-manager/">从码农到老板</a>
           </li>
         
       </ul>
@@ -559,7 +559,7 @@
 			
 		
 			
-				<li><a href="/tags/Other/" title="Other">Other<sup>61</sup></a></li>
+				<li><a href="/tags/Other/" title="Other">Other<sup>62</sup></a></li>
 			
 		
 			

@@ -84,6 +84,26 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2012/08/09/convert-if-to-switch-with-resharper/" title="resharper的convert if to switch太好用了" itemprop="url">
+  
+    <h1 itemprop="name">resharper的convert if to switch太好用了</h1>
+    
+     
+           <p itemprop="description" >在试着用多态，子类来解决if/else的问题时，resharper的convert if to switch太好用了。</p>
+        
+    
+    <time datetime="2012-08-08T16:00:00.000Z" itemprop="datePublished">Aug 9 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2012/08/06/how-to-data-binding-radio-button-in-wpf/" title="WPF中radiobutton 的 data binding方法" itemprop="url">
   
     <h1 itemprop="name">WPF中radiobutton 的 data binding方法</h1>
@@ -169,6 +189,27 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
+  
+    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
+    
+     
+           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
+123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
+        
+    
+    <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2012/07/17/not-everything-derives-from-object-in-csharp/" title="C#的cast问题" itemprop="url">
   
     <h1 itemprop="name">C#的cast问题</h1>
@@ -196,27 +237,6 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
     
      
            <p itemprop="description" >用sqlcmd Utility可以在bat中执行sql sever命令，很方便。</p>
-        
-    
-    <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
-  
-    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
-    
-     
-           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
-123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -336,12 +356,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/10/summary-about-cpp-macro/" title="Macro 小总结" itemprop="url">
+    <a href="/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/" title="使用windbg通过vtable找到优化后的this指针" itemprop="url">
   
-    <h1 itemprop="name">Macro 小总结</h1>
+    <h1 itemprop="name">使用windbg通过vtable找到优化后的this指针</h1>
     
      
-           <p itemprop="description" >如果在C++中使用Macro，要注意：1. parameter要加括号： #define ADD(x,y) ((x)+(y))2. result要加括号： #define ADD(x,y) ((x)+(y))3. 多行要加花括号： #define INCREASE(a, b) {</p>
+           <p itemprop="description" >如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。1. kbn# ChildEBP? RetAddr? Args to Child00 1d61fad0 7c90d21a 7c8023f1 00000000 </p>
         
     
     <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
@@ -356,12 +376,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/" title="使用windbg通过vtable找到优化后的this指针" itemprop="url">
+    <a href="/2012/07/10/summary-about-cpp-macro/" title="Macro 小总结" itemprop="url">
   
-    <h1 itemprop="name">使用windbg通过vtable找到优化后的this指针</h1>
+    <h1 itemprop="name">Macro 小总结</h1>
     
      
-           <p itemprop="description" >如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。1. kbn# ChildEBP? RetAddr? Args to Child00 1d61fad0 7c90d21a 7c8023f1 00000000 </p>
+           <p itemprop="description" >如果在C++中使用Macro，要注意：1. parameter要加括号： #define ADD(x,y) ((x)+(y))2. result要加括号： #define ADD(x,y) ((x)+(y))3. 多行要加花括号： #define INCREASE(a, b) {</p>
         
     
     <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
@@ -437,26 +457,6 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/05/microsoft-fakes-framework/" title="Microsoft Fakes框架" itemprop="url">
-  
-    <h1 itemprop="name">Microsoft Fakes框架</h1>
-    
-     
-           <p itemprop="description" >Visual studio 2012RC中自带了一个Microsoft Fakes框架，可以用来mock .NET的任何方法，包括非virtual和static的方法。（Moq只能mock virutal的方法），从下面的链接可以找到更多的信息。Isolating Unit Te</p>
-        
-    
-    <time datetime="2012-07-04T16:00:00.000Z" itemprop="datePublished">Jul 5 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2012/07/05/where-do-i-start-learn-windows-8/" title="从哪里开始学习Windows 8？（zz）" itemprop="url">
   
     <h1 itemprop="name">从哪里开始学习Windows 8？（zz）</h1>
@@ -477,15 +477,15 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/03/mutation-test/" title="Mutation test" itemprop="url">
+    <a href="/2012/07/05/microsoft-fakes-framework/" title="Microsoft Fakes框架" itemprop="url">
   
-    <h1 itemprop="name">Mutation test</h1>
+    <h1 itemprop="name">Microsoft Fakes框架</h1>
     
      
-           <p itemprop="description" >Code coverage有时候是不够的，可以试试mutation test。http://galera.ii.pw.edu.pl/~adr/CREAM/index.php 是一个开源的C#的mutation test的框架，可以试试看。</p>
+           <p itemprop="description" >Visual studio 2012RC中自带了一个Microsoft Fakes框架，可以用来mock .NET的任何方法，包括非virtual和static的方法。（Moq只能mock virutal的方法），从下面的链接可以找到更多的信息。Isolating Unit Te</p>
         
     
-    <time datetime="2012-07-02T16:00:00.000Z" itemprop="datePublished">Jul 3 2012</time>
+    <time datetime="2012-07-04T16:00:00.000Z" itemprop="datePublished">Jul 5 2012</time>
   </a>
 </section>
 
@@ -512,7 +512,7 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 408</p>
+  <p class="asidetitle">Total Posts: 409</p>
 </div>
 
 
@@ -522,6 +522,10 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2020/06/29/gcp-servcies/">常用的谷歌云Google Cloud服务</a>
+          </li>
         
           <li>
             * <a href="/2020/06/19/common-azure-paas/">10个常见的微软Azure云的PaaS服务</a>
@@ -537,10 +541,6 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
         
           <li>
             * <a href="/2020/05/12/estimation/">工作量估算</a>
-          </li>
-        
-          <li>
-            * <a href="/2020/05/05/remote-work/">远程办公的一些建议</a>
           </li>
         
       </ul>
@@ -579,11 +579,11 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 			
 		
 			
-				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
 			
 		
 			
@@ -615,11 +615,11 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 			
 		
 			
-				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
 			
 		
 			

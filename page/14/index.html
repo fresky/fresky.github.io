@@ -84,6 +84,28 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2013/02/19/exception-in-csharp-static-constructor/" title="C#的static constructor抛了异常会怎么处理？" itemprop="url">
+  
+    <h1 itemprop="name">C#的static constructor抛了异常会怎么处理？</h1>
+    
+     
+           <p itemprop="description" >stackoverflow上举了这个例子说明在C#中，如果static constructor只会被调用一次，即使抛了异常，也不会重试调用。如果抛了异常，那么在这个appdomain里面，这个类就不能用了。  示例代码：  
+
+12345678910111213141516171</p>
+        
+    
+    <time datetime="2013-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2013</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2013/02/18/10-reasons-you-fail-to-be-a-better-developer/" title="10个没有让你成为更好的developer的原因" itemprop="url">
   
     <h1 itemprop="name">10个没有让你成为更好的developer的原因</h1>
@@ -164,28 +186,6 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/02/05/deadlock-caused-by-csharp-static-constructor/" title="C#中静态构造函数导致的一个deadlock" itemprop="url">
-  
-    <h1 itemprop="name">C#中静态构造函数导致的一个deadlock</h1>
-    
-     
-           <p itemprop="description" >Eric Lipper的这篇博客举了一个C#中静态构造函数导致的deadlock的例子，很有意思。代码如下：
-
-123456789101112class C&amp;#123;  static C()   &amp;#123;    // Let&#39;s run the initialization</p>
-        
-    
-    <time datetime="2013-02-04T16:00:00.000Z" itemprop="datePublished">Feb 5 2013</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
     <a href="/2013/02/05/a-lightweight-logger-for-cpp/" title="一个C++的轻量级的logger实现" itemprop="url">
   
     <h1 itemprop="name">一个C++的轻量级的logger实现</h1>
@@ -212,6 +212,28 @@
     
      
            <p itemprop="description" >在线C++编译器列举了如下网站：LiveWorkspace&amp;nbsp;(Clang 3.2, GCC 4.6.3 - 4.7.2)gcc.godbolt.org&amp;nbsp;(Clang 3.0, GCC 4.5.3 - 4.8.0 prerelease, Intel ICC 13</p>
+        
+    
+    <time datetime="2013-02-04T16:00:00.000Z" itemprop="datePublished">Feb 5 2013</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2013/02/05/deadlock-caused-by-csharp-static-constructor/" title="C#中静态构造函数导致的一个deadlock" itemprop="url">
+  
+    <h1 itemprop="name">C#中静态构造函数导致的一个deadlock</h1>
+    
+     
+           <p itemprop="description" >Eric Lipper的这篇博客举了一个C#中静态构造函数导致的deadlock的例子，很有意思。代码如下：
+
+123456789101112class C&amp;#123;  static C()   &amp;#123;    // Let&#39;s run the initialization</p>
         
     
     <time datetime="2013-02-04T16:00:00.000Z" itemprop="datePublished">Feb 5 2013</time>
@@ -463,26 +485,6 @@
 
 
 
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/" title="Windows下C++的同步机制的演变" itemprop="url">
-  
-    <h1 itemprop="name">Windows下C++的同步机制的演变</h1>
-    
-     
-           <p itemprop="description" >Windows with C++ - The Evolution of Synchronization in Windows and C++介绍了如下概念：critical sectionmutexeventslim reader/writer lockcondition var</p>
-        
-    
-    <time datetime="2012-12-27T16:00:00.000Z" itemprop="datePublished">Dec 28 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix unexpand">
     <a class="extend prev" rel="prev" href="/page/13/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="page-number current">14</span><a class="page-number" href="/page/15/">15</a><a class="page-number" href="/page/16/">16</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/15/">Next<span></span></a>
@@ -501,7 +503,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 409</p>
+  <p class="asidetitle">Total Posts: 410</p>
 </div>
 
 
@@ -511,6 +513,10 @@
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2021/04/25/how-to-get-better-performance-review/">如何拿到好的绩效评分</a>
+          </li>
         
           <li>
             * <a href="/2020/06/29/gcp-servcies/">常用的谷歌云Google Cloud服务</a>
@@ -526,10 +532,6 @@
         
           <li>
             * <a href="/2020/05/21/windows-update-history/">Windows更新的设计变化</a>
-          </li>
-        
-          <li>
-            * <a href="/2020/05/12/estimation/">工作量估算</a>
           </li>
         
       </ul>
@@ -568,11 +570,11 @@
 			
 		
 			
-				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
 			
 		
 			
@@ -592,6 +594,10 @@
 			
 		
 			
+				<li><a href="/tags/Manage/" title="Manage">Manage<sup>5</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
 			
 		
@@ -600,15 +606,11 @@
 			
 		
 			
-				<li><a href="/tags/Manage/" title="Manage">Manage<sup>4</sup></a></li>
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
 			
 		
 			
 				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
 			
 		
 			
@@ -694,7 +696,7 @@
 		
 
 		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2020 
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2021 
 		
 		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
 		

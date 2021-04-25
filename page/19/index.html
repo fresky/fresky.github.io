@@ -104,6 +104,26 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2012/08/09/unit-test-improvement-in-visual-stuido-2012/" title="Visual Studio 2012RC unit test 改进" itemprop="url">
+  
+    <h1 itemprop="name">Visual Studio 2012RC unit test 改进</h1>
+    
+     
+           <p itemprop="description" >Visual Studio 2012 RC在unit test方面做了很多改进，具体见这里：  http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio-2012-rc-what-s-new-</p>
+        
+    
+    <time datetime="2012-08-08T16:00:00.000Z" itemprop="datePublished">Aug 9 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2012/08/06/how-to-data-binding-radio-button-in-wpf/" title="WPF中radiobutton 的 data binding方法" itemprop="url">
   
     <h1 itemprop="name">WPF中radiobutton 的 data binding方法</h1>
@@ -189,13 +209,13 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
+    <a href="/2012/07/17/disable-single-tree-node-in-csharp/" title="禁用C#的树的单个节点" itemprop="url">
   
-    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
+    <h1 itemprop="name">禁用C#的树的单个节点</h1>
     
      
-           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
-123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
+           <p itemprop="description" >C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。
+1234private void Tree_BeforeSelect(object sender, Tre</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -231,12 +251,13 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/run-sql-command-in-bat-file/" title="在bat中执行sql命令（for sql server）" itemprop="url">
+    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
   
-    <h1 itemprop="name">在bat中执行sql命令（for sql server）</h1>
+    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
     
      
-           <p itemprop="description" >用sqlcmd Utility可以在bat中执行sql sever命令，很方便。</p>
+           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
+123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -251,13 +272,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/disable-single-tree-node-in-csharp/" title="禁用C#的树的单个节点" itemprop="url">
+    <a href="/2012/07/17/run-sql-command-in-bat-file/" title="在bat中执行sql命令（for sql server）" itemprop="url">
   
-    <h1 itemprop="name">禁用C#的树的单个节点</h1>
+    <h1 itemprop="name">在bat中执行sql命令（for sql server）</h1>
     
      
-           <p itemprop="description" >C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。
-1234private void Tree_BeforeSelect(object sender, Tre</p>
+           <p itemprop="description" >用sqlcmd Utility可以在bat中执行sql sever命令，很方便。</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -294,12 +314,14 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/" title="C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别" itemprop="url">
+    <a href="/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/" title="如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方" itemprop="url">
   
-    <h1 itemprop="name">C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别</h1>
+    <h1 itemprop="name">如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</h1>
     
      
-           <p itemprop="description" >这里c# - #if DEBUG vs. Conditional(“DEBUG”) - Stack Overflow解释了两者的区别。摘要如下：#if DEBUG: 发生在编译时，release编译出的IL不包含if中的代码[Conditional(“DEBUG”)]: 发生在运</p>
+           <p itemprop="description" >这个问题visual studio - In VS, make print-on-breakpoint use the console - Stack Overflow说明了怎么做。我结合之前这篇文章做了个小例子，放在github上。几个截图：
+
+定制debug显示信息。&amp;nbs</p>
         
     
     <time datetime="2012-07-12T16:00:00.000Z" itemprop="datePublished">Jul 13 2012</time>
@@ -314,14 +336,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/" title="如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方" itemprop="url">
+    <a href="/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/" title="C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别" itemprop="url">
   
-    <h1 itemprop="name">如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</h1>
+    <h1 itemprop="name">C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别</h1>
     
      
-           <p itemprop="description" >这个问题visual studio - In VS, make print-on-breakpoint use the console - Stack Overflow说明了怎么做。我结合之前这篇文章做了个小例子，放在github上。几个截图：
-
-定制debug显示信息。&amp;nbs</p>
+           <p itemprop="description" >这里c# - #if DEBUG vs. Conditional(“DEBUG”) - Stack Overflow解释了两者的区别。摘要如下：#if DEBUG: 发生在编译时，release编译出的IL不包含if中的代码[Conditional(“DEBUG”)]: 发生在运</p>
         
     
     <time datetime="2012-07-12T16:00:00.000Z" itemprop="datePublished">Jul 13 2012</time>
@@ -356,12 +376,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/" title="使用windbg通过vtable找到优化后的this指针" itemprop="url">
+    <a href="/2012/07/10/summary-about-cpp-macro/" title="Macro 小总结" itemprop="url">
   
-    <h1 itemprop="name">使用windbg通过vtable找到优化后的this指针</h1>
+    <h1 itemprop="name">Macro 小总结</h1>
     
      
-           <p itemprop="description" >如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。1. kbn# ChildEBP? RetAddr? Args to Child00 1d61fad0 7c90d21a 7c8023f1 00000000 </p>
+           <p itemprop="description" >如果在C++中使用Macro，要注意：1. parameter要加括号： #define ADD(x,y) ((x)+(y))2. result要加括号： #define ADD(x,y) ((x)+(y))3. 多行要加花括号： #define INCREASE(a, b) {</p>
         
     
     <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
@@ -376,12 +396,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/10/summary-about-cpp-macro/" title="Macro 小总结" itemprop="url">
+    <a href="/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/" title="使用windbg通过vtable找到优化后的this指针" itemprop="url">
   
-    <h1 itemprop="name">Macro 小总结</h1>
+    <h1 itemprop="name">使用windbg通过vtable找到优化后的this指针</h1>
     
      
-           <p itemprop="description" >如果在C++中使用Macro，要注意：1. parameter要加括号： #define ADD(x,y) ((x)+(y))2. result要加括号： #define ADD(x,y) ((x)+(y))3. 多行要加花括号： #define INCREASE(a, b) {</p>
+           <p itemprop="description" >如果用windbg调试的时候遇到优化过的代码，this指针的地址是不准确的，下面介绍如何通过vtable找到this指针。1. kbn# ChildEBP? RetAddr? Args to Child00 1d61fad0 7c90d21a 7c8023f1 00000000 </p>
         
     
     <time datetime="2012-07-09T16:00:00.000Z" itemprop="datePublished">Jul 10 2012</time>
@@ -416,12 +436,13 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/06/what-is-oxcdcdcdcd/" title="oxcdcdcdcd是什么？" itemprop="url">
+    <a href="/2012/07/06/how-to-record-startup-time-in-csharp/" title="记录C#程序的运行时间" itemprop="url">
   
-    <h1 itemprop="name">oxcdcdcdcd是什么？</h1>
+    <h1 itemprop="name">记录C#程序的运行时间</h1>
     
      
-           <p itemprop="description" >今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）从网上总结了一下地址的信息，最主要的是：0xCDCDCDCD堆上分配的地址，但是没有初始</p>
+           <p itemprop="description" >从.net - Does a C# app track how long its been running? - Stack Overflow看到的，很方便的。System.Diagnostics.Process 有个属性记录的应用的开始时间。
+12System.Diagnost</p>
         
     
     <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
@@ -436,13 +457,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/06/how-to-record-startup-time-in-csharp/" title="记录C#程序的运行时间" itemprop="url">
+    <a href="/2012/07/06/what-is-oxcdcdcdcd/" title="oxcdcdcdcd是什么？" itemprop="url">
   
-    <h1 itemprop="name">记录C#程序的运行时间</h1>
+    <h1 itemprop="name">oxcdcdcdcd是什么？</h1>
     
      
-           <p itemprop="description" >从.net - Does a C# app track how long its been running? - Stack Overflow看到的，很方便的。System.Diagnostics.Process 有个属性记录的应用的开始时间。
-12System.Diagnost</p>
+           <p itemprop="description" >今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）从网上总结了一下地址的信息，最主要的是：0xCDCDCDCD堆上分配的地址，但是没有初始</p>
         
     
     <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
@@ -474,26 +494,6 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 
 
 
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2012/07/05/microsoft-fakes-framework/" title="Microsoft Fakes框架" itemprop="url">
-  
-    <h1 itemprop="name">Microsoft Fakes框架</h1>
-    
-     
-           <p itemprop="description" >Visual studio 2012RC中自带了一个Microsoft Fakes框架，可以用来mock .NET的任何方法，包括非virtual和static的方法。（Moq只能mock virutal的方法），从下面的链接可以找到更多的信息。Isolating Unit Te</p>
-        
-    
-    <time datetime="2012-07-04T16:00:00.000Z" itemprop="datePublished">Jul 5 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix unexpand">
     <a class="extend prev" rel="prev" href="/page/18/"><span></span>Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><span class="page-number current">19</span><a class="page-number" href="/page/20/">20</a><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/20/">Next<span></span></a>
@@ -512,7 +512,7 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 409</p>
+  <p class="asidetitle">Total Posts: 410</p>
 </div>
 
 
@@ -522,6 +522,10 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2021/04/25/how-to-get-better-performance-review/">如何拿到好的绩效评分</a>
+          </li>
         
           <li>
             * <a href="/2020/06/29/gcp-servcies/">常用的谷歌云Google Cloud服务</a>
@@ -537,10 +541,6 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
         
           <li>
             * <a href="/2020/05/21/windows-update-history/">Windows更新的设计变化</a>
-          </li>
-        
-          <li>
-            * <a href="/2020/05/12/estimation/">工作量估算</a>
           </li>
         
       </ul>
@@ -579,11 +579,11 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 			
 		
 			
-				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
 			
 		
 			
@@ -603,6 +603,10 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 			
 		
 			
+				<li><a href="/tags/Manage/" title="Manage">Manage<sup>5</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
 			
 		
@@ -611,15 +615,11 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 			
 		
 			
-				<li><a href="/tags/Manage/" title="Manage">Manage<sup>4</sup></a></li>
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
 			
 		
 			
 				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
 			
 		
 			
@@ -705,7 +705,7 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 		
 
 		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2020 
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2021 
 		
 		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
 		

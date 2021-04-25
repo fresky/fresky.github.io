@@ -84,6 +84,28 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2012/12/09/should-use-reference-in-cpp-exception/" title="C++应该用引用来捕捉异常" itemprop="url">
+  
+    <h1 itemprop="name">C++应该用引用来捕捉异常</h1>
+    
+     
+           <p itemprop="description" >在C++中catch异常时的参数应该用引用，主要原因还是对象，引用，指针的构造析构原理。下面用代码实例解释一下原因。  先来看我们定义了两个异常，SubException继承BaseException，有一个虚函数打印信息。  
+
+123456789101112131415161</p>
+        
+    
+    <time datetime="2012-12-08T16:00:00.000Z" itemprop="datePublished">Dec 9 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2012/12/08/windows-debugging-tools/" title="Windows调试工具箱" itemprop="url">
   
     <h1 itemprop="name">Windows调试工具箱</h1>
@@ -186,12 +208,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/12/04/stackexchange-open-source-projects/" title="有时间了要研究一下Stack Exchange的开源项目" itemprop="url">
+    <a href="/2012/12/04/how-to-prevent-class-being-base-class-in-cpp/" title="C++中怎么阻止一个类被继承" itemprop="url">
   
-    <h1 itemprop="name">有时间了要研究一下Stack Exchange的开源项目</h1>
+    <h1 itemprop="name">C++中怎么阻止一个类被继承</h1>
     
      
-           <p itemprop="description" >Stack Exchange Open Source Projects « Blog – Stack Exchange</p>
+           <p itemprop="description" >C#中可以用sealed关键字，但是，C++中怎么阻止一个类被继承呢？  方法就是把这个类的构造函数声明成private的，这样就不能被继承了。当然更好的办法是用非技术的手段了：）  方法1： 构造函数private，提供一个Factory方法，缺点就是使用者必须用这个facto</p>
         
     
     <time datetime="2012-12-03T16:00:00.000Z" itemprop="datePublished">Dec 4 2012</time>
@@ -206,12 +228,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/12/04/how-to-prevent-class-being-base-class-in-cpp/" title="C++中怎么阻止一个类被继承" itemprop="url">
+    <a href="/2012/12/04/stackexchange-open-source-projects/" title="有时间了要研究一下Stack Exchange的开源项目" itemprop="url">
   
-    <h1 itemprop="name">C++中怎么阻止一个类被继承</h1>
+    <h1 itemprop="name">有时间了要研究一下Stack Exchange的开源项目</h1>
     
      
-           <p itemprop="description" >C#中可以用sealed关键字，但是，C++中怎么阻止一个类被继承呢？  方法就是把这个类的构造函数声明成private的，这样就不能被继承了。当然更好的办法是用非技术的手段了：）  方法1： 构造函数private，提供一个Factory方法，缺点就是使用者必须用这个facto</p>
+           <p itemprop="description" >Stack Exchange Open Source Projects « Blog – Stack Exchange</p>
         
     
     <time datetime="2012-12-03T16:00:00.000Z" itemprop="datePublished">Dec 4 2012</time>
@@ -371,6 +393,26 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/" title="Visual Studio中打开编译器中有虚函数的类的析构函数不是虚函数的警告——/we4265" itemprop="url">
+  
+    <h1 itemprop="name">Visual Studio中打开编译器中有虚函数的类的析构函数不是虚函数的警告——/we4265</h1>
+    
+     
+           <p itemprop="description" >C++中一个类如果有虚函数，那么它的析构函数应该也是虚的，否则会出现很多问题。其实visual studi中有一个专门的warning是给这个的，Compiler Warning (level 3) C4265：’class’ : class has virtual functi</p>
+        
+    
+    <time datetime="2012-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2012/11/25/when-cpp-compiler-generate-copy-constructors-for-us/" title="C++编译器什么时候为我们自动生成拷贝构造函数？" itemprop="url">
   
     <h1 itemprop="name">C++编译器什么时候为我们自动生成拷贝构造函数？</h1>
@@ -393,15 +435,15 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/" title="Visual Studio中打开编译器中有虚函数的类的析构函数不是虚函数的警告——/we4265" itemprop="url">
+    <a href="/2012/11/22/rx-is-open-source/" title="有空应该看看Rx是怎么玩的" itemprop="url">
   
-    <h1 itemprop="name">Visual Studio中打开编译器中有虚函数的类的析构函数不是虚函数的警告——/we4265</h1>
+    <h1 itemprop="name">有空应该看看Rx是怎么玩的</h1>
     
      
-           <p itemprop="description" >C++中一个类如果有虚函数，那么它的析构函数应该也是虚的，否则会出现很多问题。其实visual studi中有一个专门的warning是给这个的，Compiler Warning (level 3) C4265：’class’ : class has virtual functi</p>
+           <p itemprop="description" >Reactive Extensions (Rx) is now Open Source - Scott Hanselman</p>
         
     
-    <time datetime="2012-11-24T16:00:00.000Z" itemprop="datePublished">Nov 25 2012</time>
+    <time datetime="2012-11-21T16:00:00.000Z" itemprop="datePublished">Nov 22 2012</time>
   </a>
 </section>
 
@@ -421,46 +463,6 @@
            <p itemprop="description" >写了一个C#的小程序，用来监测用户是否离开应用程序，就像MSN，QQ的离开功能一样。代码在github上。简单接介绍一下：  1. IdleMonitor abstract class  
 
 12345678910public abstract class IdleMonitor</p>
-        
-    
-    <time datetime="2012-11-21T16:00:00.000Z" itemprop="datePublished">Nov 22 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2012/11/22/prezi-cool-presentation-website/" title="Prezi——一个超cool的presentation网站" itemprop="url">
-  
-    <h1 itemprop="name">Prezi——一个超cool的presentation网站</h1>
-    
-     
-           <p itemprop="description" >Prezi - Ideas matter.</p>
-        
-    
-    <time datetime="2012-11-21T16:00:00.000Z" itemprop="datePublished">Nov 22 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2012/11/22/rx-is-open-source/" title="有空应该看看Rx是怎么玩的" itemprop="url">
-  
-    <h1 itemprop="name">有空应该看看Rx是怎么玩的</h1>
-    
-     
-           <p itemprop="description" >Reactive Extensions (Rx) is now Open Source - Scott Hanselman</p>
         
     
     <time datetime="2012-11-21T16:00:00.000Z" itemprop="datePublished">Nov 22 2012</time>
@@ -510,7 +512,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 409</p>
+  <p class="asidetitle">Total Posts: 410</p>
 </div>
 
 
@@ -520,6 +522,10 @@
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2021/04/25/how-to-get-better-performance-review/">如何拿到好的绩效评分</a>
+          </li>
         
           <li>
             * <a href="/2020/06/29/gcp-servcies/">常用的谷歌云Google Cloud服务</a>
@@ -535,10 +541,6 @@
         
           <li>
             * <a href="/2020/05/21/windows-update-history/">Windows更新的设计变化</a>
-          </li>
-        
-          <li>
-            * <a href="/2020/05/12/estimation/">工作量估算</a>
           </li>
         
       </ul>
@@ -577,11 +579,11 @@
 			
 		
 			
-				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
 			
 		
 			
@@ -601,6 +603,10 @@
 			
 		
 			
+				<li><a href="/tags/Manage/" title="Manage">Manage<sup>5</sup></a></li>
+			
+		
+			
 				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
 			
 		
@@ -609,15 +615,11 @@
 			
 		
 			
-				<li><a href="/tags/Manage/" title="Manage">Manage<sup>4</sup></a></li>
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
 			
 		
 			
 				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
 			
 		
 			
@@ -703,7 +705,7 @@
 		
 
 		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2020 
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2021 
 		
 		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
 		

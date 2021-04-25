@@ -84,12 +84,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/08/09/convert-if-to-switch-with-resharper/" title="resharper的convert if to switch太好用了" itemprop="url">
+    <a href="/2012/08/09/unit-test-improvement-in-visual-stuido-2012/" title="Visual Studio 2012RC unit test 改进" itemprop="url">
   
-    <h1 itemprop="name">resharper的convert if to switch太好用了</h1>
+    <h1 itemprop="name">Visual Studio 2012RC unit test 改进</h1>
     
      
-           <p itemprop="description" >在试着用多态，子类来解决if/else的问题时，resharper的convert if to switch太好用了。</p>
+           <p itemprop="description" >Visual Studio 2012 RC在unit test方面做了很多改进，具体见这里：  http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio-2012-rc-what-s-new-</p>
         
     
     <time datetime="2012-08-08T16:00:00.000Z" itemprop="datePublished">Aug 9 2012</time>
@@ -104,12 +104,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/08/09/unit-test-improvement-in-visual-stuido-2012/" title="Visual Studio 2012RC unit test 改进" itemprop="url">
+    <a href="/2012/08/09/convert-if-to-switch-with-resharper/" title="resharper的convert if to switch太好用了" itemprop="url">
   
-    <h1 itemprop="name">Visual Studio 2012RC unit test 改进</h1>
+    <h1 itemprop="name">resharper的convert if to switch太好用了</h1>
     
      
-           <p itemprop="description" >Visual Studio 2012 RC在unit test方面做了很多改进，具体见这里：  http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio-2012-rc-what-s-new-</p>
+           <p itemprop="description" >在试着用多态，子类来解决if/else的问题时，resharper的convert if to switch太好用了。</p>
         
     
     <time datetime="2012-08-08T16:00:00.000Z" itemprop="datePublished">Aug 9 2012</time>
@@ -251,13 +251,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
+    <a href="/2012/07/17/run-sql-command-in-bat-file/" title="在bat中执行sql命令（for sql server）" itemprop="url">
   
-    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
+    <h1 itemprop="name">在bat中执行sql命令（for sql server）</h1>
     
      
-           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
-123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
+           <p itemprop="description" >用sqlcmd Utility可以在bat中执行sql sever命令，很方便。</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -272,12 +271,13 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/17/run-sql-command-in-bat-file/" title="在bat中执行sql命令（for sql server）" itemprop="url">
+    <a href="/2012/07/17/define-first-and-last-in-enum-loop-it/" title="定义Enum的开始和结束，这样就能循环Enum了" itemprop="url">
   
-    <h1 itemprop="name">在bat中执行sql命令（for sql server）</h1>
+    <h1 itemprop="name">定义Enum的开始和结束，这样就能循环Enum了</h1>
     
      
-           <p itemprop="description" >用sqlcmd Utility可以在bat中执行sql sever命令，很方便。</p>
+           <p itemprop="description" >示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。
+123456789101112131415161718enum ProgrammingLanguage   &amp;#123;       Lang</p>
         
     
     <time datetime="2012-07-16T16:00:00.000Z" itemprop="datePublished">Jul 17 2012</time>
@@ -314,14 +314,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/" title="如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方" itemprop="url">
+    <a href="/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/" title="C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别" itemprop="url">
   
-    <h1 itemprop="name">如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</h1>
+    <h1 itemprop="name">C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别</h1>
     
      
-           <p itemprop="description" >这个问题visual studio - In VS, make print-on-breakpoint use the console - Stack Overflow说明了怎么做。我结合之前这篇文章做了个小例子，放在github上。几个截图：
-
-定制debug显示信息。&amp;nbs</p>
+           <p itemprop="description" >这里c# - #if DEBUG vs. Conditional(“DEBUG”) - Stack Overflow解释了两者的区别。摘要如下：#if DEBUG: 发生在编译时，release编译出的IL不包含if中的代码[Conditional(“DEBUG”)]: 发生在运</p>
         
     
     <time datetime="2012-07-12T16:00:00.000Z" itemprop="datePublished">Jul 13 2012</time>
@@ -336,12 +334,14 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/" title="C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别" itemprop="url">
+    <a href="/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/" title="如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方" itemprop="url">
   
-    <h1 itemprop="name">C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别</h1>
+    <h1 itemprop="name">如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</h1>
     
      
-           <p itemprop="description" >这里c# - #if DEBUG vs. Conditional(“DEBUG”) - Stack Overflow解释了两者的区别。摘要如下：#if DEBUG: 发生在编译时，release编译出的IL不包含if中的代码[Conditional(“DEBUG”)]: 发生在运</p>
+           <p itemprop="description" >这个问题visual studio - In VS, make print-on-breakpoint use the console - Stack Overflow说明了怎么做。我结合之前这篇文章做了个小例子，放在github上。几个截图：
+
+定制debug显示信息。&amp;nbs</p>
         
     
     <time datetime="2012-07-12T16:00:00.000Z" itemprop="datePublished">Jul 13 2012</time>
@@ -436,6 +436,26 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2012/07/06/what-is-oxcdcdcdcd/" title="oxcdcdcdcd是什么？" itemprop="url">
+  
+    <h1 itemprop="name">oxcdcdcdcd是什么？</h1>
+    
+     
+           <p itemprop="description" >今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）从网上总结了一下地址的信息，最主要的是：0xCDCDCDCD堆上分配的地址，但是没有初始</p>
+        
+    
+    <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2012/07/06/how-to-record-startup-time-in-csharp/" title="记录C#程序的运行时间" itemprop="url">
   
     <h1 itemprop="name">记录C#程序的运行时间</h1>
@@ -457,32 +477,12 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/07/06/what-is-oxcdcdcdcd/" title="oxcdcdcdcd是什么？" itemprop="url">
+    <a href="/2012/07/05/microsoft-fakes-framework/" title="Microsoft Fakes框架" itemprop="url">
   
-    <h1 itemprop="name">oxcdcdcdcd是什么？</h1>
+    <h1 itemprop="name">Microsoft Fakes框架</h1>
     
      
-           <p itemprop="description" >今天看到一个crash的dump，crash发生在尝试释放地址，但是从dump上可以看到地址的值是oxcdcdcdcd。从这可以知道这个地址没有被正确的初始化。还是debug编译出来的好啊：）从网上总结了一下地址的信息，最主要的是：0xCDCDCDCD堆上分配的地址，但是没有初始</p>
-        
-    
-    <time datetime="2012-07-05T16:00:00.000Z" itemprop="datePublished">Jul 6 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2012/07/05/where-do-i-start-learn-windows-8/" title="从哪里开始学习Windows 8？（zz）" itemprop="url">
-  
-    <h1 itemprop="name">从哪里开始学习Windows 8？（zz）</h1>
-    
-     
-           <p itemprop="description" >Where do I start to learn Windows 8? | Robert MacLean</p>
+           <p itemprop="description" >Visual studio 2012RC中自带了一个Microsoft Fakes框架，可以用来mock .NET的任何方法，包括非virtual和static的方法。（Moq只能mock virutal的方法），从下面的链接可以找到更多的信息。Isolating Unit Te</p>
         
     
     <time datetime="2012-07-04T16:00:00.000Z" itemprop="datePublished">Jul 5 2012</time>
@@ -579,11 +579,11 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 			
 		
 			
-				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
 			
 		
 			
@@ -615,11 +615,11 @@ lock（this）2. lock（“string”）3. lock（typeof（int))我在github上�
 			
 		
 			
-				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
 			
 		
 			

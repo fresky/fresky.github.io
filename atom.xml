@@ -4307,6 +4307,29 @@
   </entry>
   
   <entry>
+    <title>听听Matt Rogish说怎么面试程序员</title>
+    <link href="http://fresky.github.io/2013/07/12/how-to-interview-programmer-by-matt-rogish/"/>
+    <id>http://fresky.github.io/2013/07/12/how-to-interview-programmer-by-matt-rogish/</id>
+    <published>2013-07-11T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.269Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p>Google的人力运营高级副总裁Laszlo Bock在一次<a href="http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-deal.html?_r=0" target="_blank" rel="noopener">采访</a>中说Google发现在面试程序员时问智力题完全是浪费时间，Matt Rogish在他的这篇博客<a href="http://mattrogish.com/blog/2013/06/26/how-to-interview-programmers/" target="_blank" rel="noopener">How to Interview Programmers - Rogish Reading Writing</a>中有感而发，介绍了他认为正确的面试程序员的方法。</p>  <ul>   <li>先决条件      <ul>       <li>在你雇佣第一个员工之前          <ol>           <li>想好你的企业文化 </li>            <li>让你团队中的每个人都面试应聘者 </li>            <li>确保你的团队中每个人都知道如何面试，制定面试计划和清单。              <ul>               <li>每个人都写下来他要问什么问题，然后大家坐在一起过一下这些问题 </li>                <li>你要从应聘者身上发现什么素质？ </li>                <li>你通过什么手段来发现？ </li>             </ul>           </li>            <li>同一个问题不要问两次 </li>            <li>举办一些模拟面试来提高面试技巧 </li>            <li>让你的程序员先做做面试题，这样让他们能够在面试时得心应手 </li>         </ol>       </li>        <li>在面试过程中          <ol>           <li>保持开放和诚实（比如不要问应聘者你希望的最低薪水是多少，你应该是第一个说要提供多少薪水股份的人。你应该有一个定义好的技术阶梯来描述你的公司中程序员的职业规划） </li>            <li>面试要因人而异，根据应聘者的背景进行剪裁 </li>            <li>不要诱导证人（比如不要问你喜欢TDD还是简单粗暴直接开始） </li>            <li>问<a href="http://www.strategicdirectionsconference.com/sites/default/files/Abbreviated%20Topgrading%20Interview%20Guide.pdf" target="_blank" rel="noopener">topgrading</a>风格的问题 </li>            <li>保持好的形象（应聘者也在面试你） </li>            <li>午饭订一个好馆子 </li>         </ol>       </li>        <li>面试之后          <ol>           <li>每个人都要给出意见，要还是不要。更重要的是，要给出理由 </li>            <li>如果你准备给offer，尽快 </li>            <li>如果你不准备给offer，也尽快 </li>         </ol>       </li>     </ul>   </li>    <li>现场面试前 </li>    <ul>     <li>初始电话面试（30-45分钟），主要是问一些基本问题，过滤掉你明显不会招的人。说明你的企业文化，让你的应聘者了解你的企业现状。 </li>      <li>第二轮电话面试（1-2小时），主要是确认应聘者会不会编程：）</li>   </ul>    <li>现场面试</li>    <ul>     <li>飞头等舱等。。。如果应聘者够牛，应该会同时拿多个offer，如果你在面试的一开始就招待好他会更容易雇到他</li>      <li>一天的日程</li>      <ol>       <li>参观办公室，看看休息区的高级咖啡机</li>        <li>介绍今天的流程</li>        <li>一些从工作中提取的或者和工作相关编程的题目（难度递增）</li>        <ul>         <li>题目不能太难（三周也搞不定），也不能太简单（靠记忆就能答出来）。开卷，能用google和stackoverflow</li>          <li>在一开始就问问应聘者熟悉什么开发环境，帮他弄一个顺手的机器。或者让他带自己的笔记本</li>          <li>最好有个题库。可以参考<a href="http://rubyquiz.strd6.com/" target="_blank" rel="noopener">RubyQuiz</a> 或者 <a href="http://www.codequizzes.com/" target="_blank" rel="noopener">CodeQuizzes</a>。</li>          <li>目的是考察应聘者能解决一个真是世界的问题</li>       </ul>        <li>午饭，邀请团队所有人都参加，问一些开放式的问题</li>        <li>结对编程</li>        <ul>         <li>如果签了保密协议，可以是公司的真实代码</li>          <li>如果没签，就找个你在用的开源软件，然后一起价格新功能</li>       </ul>        <li>送回酒店（不是机场，都累了一天了），如果预算允许的话，让人呆整个周末</li>     </ol>      <li>最好定一个月的试用合约，然后决定要不要给offer。</li>   </ul> </ul><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;Google的人力运营高级副总裁Laszlo Bock在一次&lt;a href=&quot;http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-d
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
     <title>微软提供的API的各个版本之间的区别</title>
     <link href="http://fresky.github.io/2013/07/12/api-difference-of-microsoft-apis/"/>
     <id>http://fresky.github.io/2013/07/12/api-difference-of-microsoft-apis/</id>
@@ -4349,29 +4372,6 @@
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>听听Matt Rogish说怎么面试程序员</title>
-    <link href="http://fresky.github.io/2013/07/12/how-to-interview-programmer-by-matt-rogish/"/>
-    <id>http://fresky.github.io/2013/07/12/how-to-interview-programmer-by-matt-rogish/</id>
-    <published>2013-07-11T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.269Z</updated>
-    
-    <content type="html"><![CDATA[<p></p><p>Google的人力运营高级副总裁Laszlo Bock在一次<a href="http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-deal.html?_r=0" target="_blank" rel="noopener">采访</a>中说Google发现在面试程序员时问智力题完全是浪费时间，Matt Rogish在他的这篇博客<a href="http://mattrogish.com/blog/2013/06/26/how-to-interview-programmers/" target="_blank" rel="noopener">How to Interview Programmers - Rogish Reading Writing</a>中有感而发，介绍了他认为正确的面试程序员的方法。</p>  <ul>   <li>先决条件      <ul>       <li>在你雇佣第一个员工之前          <ol>           <li>想好你的企业文化 </li>            <li>让你团队中的每个人都面试应聘者 </li>            <li>确保你的团队中每个人都知道如何面试，制定面试计划和清单。              <ul>               <li>每个人都写下来他要问什么问题，然后大家坐在一起过一下这些问题 </li>                <li>你要从应聘者身上发现什么素质？ </li>                <li>你通过什么手段来发现？ </li>             </ul>           </li>            <li>同一个问题不要问两次 </li>            <li>举办一些模拟面试来提高面试技巧 </li>            <li>让你的程序员先做做面试题，这样让他们能够在面试时得心应手 </li>         </ol>       </li>        <li>在面试过程中          <ol>           <li>保持开放和诚实（比如不要问应聘者你希望的最低薪水是多少，你应该是第一个说要提供多少薪水股份的人。你应该有一个定义好的技术阶梯来描述你的公司中程序员的职业规划） </li>            <li>面试要因人而异，根据应聘者的背景进行剪裁 </li>            <li>不要诱导证人（比如不要问你喜欢TDD还是简单粗暴直接开始） </li>            <li>问<a href="http://www.strategicdirectionsconference.com/sites/default/files/Abbreviated%20Topgrading%20Interview%20Guide.pdf" target="_blank" rel="noopener">topgrading</a>风格的问题 </li>            <li>保持好的形象（应聘者也在面试你） </li>            <li>午饭订一个好馆子 </li>         </ol>       </li>        <li>面试之后          <ol>           <li>每个人都要给出意见，要还是不要。更重要的是，要给出理由 </li>            <li>如果你准备给offer，尽快 </li>            <li>如果你不准备给offer，也尽快 </li>         </ol>       </li>     </ul>   </li>    <li>现场面试前 </li>    <ul>     <li>初始电话面试（30-45分钟），主要是问一些基本问题，过滤掉你明显不会招的人。说明你的企业文化，让你的应聘者了解你的企业现状。 </li>      <li>第二轮电话面试（1-2小时），主要是确认应聘者会不会编程：）</li>   </ul>    <li>现场面试</li>    <ul>     <li>飞头等舱等。。。如果应聘者够牛，应该会同时拿多个offer，如果你在面试的一开始就招待好他会更容易雇到他</li>      <li>一天的日程</li>      <ol>       <li>参观办公室，看看休息区的高级咖啡机</li>        <li>介绍今天的流程</li>        <li>一些从工作中提取的或者和工作相关编程的题目（难度递增）</li>        <ul>         <li>题目不能太难（三周也搞不定），也不能太简单（靠记忆就能答出来）。开卷，能用google和stackoverflow</li>          <li>在一开始就问问应聘者熟悉什么开发环境，帮他弄一个顺手的机器。或者让他带自己的笔记本</li>          <li>最好有个题库。可以参考<a href="http://rubyquiz.strd6.com/" target="_blank" rel="noopener">RubyQuiz</a> 或者 <a href="http://www.codequizzes.com/" target="_blank" rel="noopener">CodeQuizzes</a>。</li>          <li>目的是考察应聘者能解决一个真是世界的问题</li>       </ul>        <li>午饭，邀请团队所有人都参加，问一些开放式的问题</li>        <li>结对编程</li>        <ul>         <li>如果签了保密协议，可以是公司的真实代码</li>          <li>如果没签，就找个你在用的开源软件，然后一起价格新功能</li>       </ul>        <li>送回酒店（不是机场，都累了一天了），如果预算允许的话，让人呆整个周末</li>     </ol>      <li>最好定一个月的试用合约，然后决定要不要给offer。</li>   </ul> </ul><p></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;Google的人力运营高级副总裁Laszlo Bock在一次&lt;a href=&quot;http://www.nytimes.com/2013/06/20/business/in-head-hunting-big-data-may-not-be-such-a-big-d
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -4448,29 +4448,6 @@
   </entry>
   
   <entry>
-    <title>一个可视化的retrospective网站</title>
-    <link href="http://fresky.github.io/2013/07/08/visual-website-for-retrospective/"/>
-    <id>http://fresky.github.io/2013/07/08/visual-website-for-retrospective/</id>
-    <published>2013-07-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.268Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://ideaboardz.com/" target="_blank" rel="noopener">IdeaBoardz - Brainstorm, Retrospect, Collaborate</a>是一个可视化的retrospective，brainstorm的网站，比较简单易用，可以导出pdf和excel。可以试试。</p><p>下面的贴图来自网站首页。</p><p><img src="http://ideaboardz.com/images/screenshot.png" alt="screen-shot" width="716" height="530"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://ideaboardz.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IdeaBoardz - Brainstorm, Retrospect, Collaborate&lt;/a&gt;是一个可视化的retrospective，
-      
-    
-    </summary>
-    
-    
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
     <title>TPL中的task并不是thread</title>
     <link href="http://fresky.github.io/2013/07/08/tasks-are-not-threads/"/>
     <id>http://fresky.github.io/2013/07/08/tasks-are-not-threads/</id>
@@ -4490,6 +4467,29 @@
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个可视化的retrospective网站</title>
+    <link href="http://fresky.github.io/2013/07/08/visual-website-for-retrospective/"/>
+    <id>http://fresky.github.io/2013/07/08/visual-website-for-retrospective/</id>
+    <published>2013-07-07T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.268Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://ideaboardz.com/" target="_blank" rel="noopener">IdeaBoardz - Brainstorm, Retrospect, Collaborate</a>是一个可视化的retrospective，brainstorm的网站，比较简单易用，可以导出pdf和excel。可以试试。</p><p>下面的贴图来自网站首页。</p><p><img src="http://ideaboardz.com/images/screenshot.png" alt="screen-shot" width="716" height="530"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://ideaboardz.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;IdeaBoardz - Brainstorm, Retrospect, Collaborate&lt;/a&gt;是一个可视化的retrospective，
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -4825,6 +4825,29 @@
   </entry>
   
   <entry>
+    <title>如何传播你的代码</title>
+    <link href="http://fresky.github.io/2013/06/21/how-to-spread-your-code/"/>
+    <id>http://fresky.github.io/2013/06/21/how-to-spread-your-code/</id>
+    <published>2013-06-20T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.264Z</updated>
+    
+    <content type="html"><![CDATA[<p></p><p><a href="https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/" target="_blank" rel="noopener">How to Spread The Word About Your Code ✩ Mozilla Hacks &ndash; the Web developer blog</a>讲述了当你开发了一个小工具之后如何传播。下面列一下文章最后给出的checklist。</p><ol><li>把你的精力集中在你的项目的主页和readme上。</li><li>检查你的项目名字没有和别人撞车，并且和你的工作非常相关。</li><li>把你的工作提交给和你最密切的圈子来发现你的项目的问题。</li><li>做一个截屏录像或者写篇博客来介绍你的项目。</li><li>想一个完美的&ldquo;【项目名】是<strong><em>&rdquo;的句子来描述你的项目是什么。</em></strong></li><li>用你的&ldquo;【项目名】是&rdquo;的句子来作为你的主页的标题。</li><li>给你的项目所在领域的有影响力的人，博客，播客，邮件列表发一个简短的有礼貌的说明。</li><li>发布到社交网络和书签站点，注意确保你的标题很清楚的描述了你的项目。</li><li>把你的&ldquo;【项目名】是***&rdquo;的句子用在你的邮件和有影响力的人等联系。</li><li>别人对你的项目的评论，用乐观正面的方式来看待，找出好的一面。</li></ol><p></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to Spread T
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Honeywords项目——检查密码是否被破解的一种简单方法</title>
     <link href="http://fresky.github.io/2013/06/21/honeywords-simple-way-to-avoid-password-cracking/"/>
     <id>http://fresky.github.io/2013/06/21/honeywords-simple-way-to-avoid-password-cracking/</id>
@@ -4848,25 +4871,27 @@
   </entry>
   
   <entry>
-    <title>如何传播你的代码</title>
-    <link href="http://fresky.github.io/2013/06/21/how-to-spread-your-code/"/>
-    <id>http://fresky.github.io/2013/06/21/how-to-spread-your-code/</id>
-    <published>2013-06-20T16:00:00.000Z</published>
+    <title>谁动了我的timer？C#的垃圾回收和调试</title>
+    <link href="http://fresky.github.io/2013/06/20/where-is-my-timer-csharp-gc/"/>
+    <id>http://fresky.github.io/2013/06/20/where-is-my-timer-csharp-gc/</id>
+    <published>2013-06-19T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.264Z</updated>
     
-    <content type="html"><![CDATA[<p></p><p><a href="https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/" target="_blank" rel="noopener">How to Spread The Word About Your Code ✩ Mozilla Hacks &ndash; the Web developer blog</a>讲述了当你开发了一个小工具之后如何传播。下面列一下文章最后给出的checklist。</p><ol><li>把你的精力集中在你的项目的主页和readme上。</li><li>检查你的项目名字没有和别人撞车，并且和你的工作非常相关。</li><li>把你的工作提交给和你最密切的圈子来发现你的项目的问题。</li><li>做一个截屏录像或者写篇博客来介绍你的项目。</li><li>想一个完美的&ldquo;【项目名】是<strong><em>&rdquo;的句子来描述你的项目是什么。</em></strong></li><li>用你的&ldquo;【项目名】是&rdquo;的句子来作为你的主页的标题。</li><li>给你的项目所在领域的有影响力的人，博客，播客，邮件列表发一个简短的有礼貌的说明。</li><li>发布到社交网络和书签站点，注意确保你的标题很清楚的描述了你的项目。</li><li>把你的&ldquo;【项目名】是***&rdquo;的句子用在你的邮件和有影响力的人等联系。</li><li>别人对你的项目的评论，用乐观正面的方式来看待，找出好的一面。</li></ol><p></p>]]></content>
+    <content type="html"><![CDATA[<p>先来看如下的一段代码：</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Threading;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">// Create a Timer object that knows to call our TimerCallback</span></span><br><span class="line">        <span class="comment">// method once every 1000 milliseconds.</span></span><br><span class="line">        Timer t = <span class="keyword">new</span> Timer(TimerCallback, <span class="literal">null</span>, <span class="number">0</span>, <span class="number">1000</span>);</span><br><span class="line">        <span class="comment">// Wait for the user to hit &lt;Enter&gt;</span></span><br><span class="line">        Console.ReadLine();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">TimerCallback</span>(<span class="params">Object o</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">// Display the date/time when this method got called.</span></span><br><span class="line">        Console.WriteLine(<span class="string">"In TimerCallback: "</span> + DateTime.Now);</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我们在main函数中生成了一个timer，然后这个timer会每隔一秒输出一条记录，显示当前的时间。</p><p>如果运行这个程序（release模式），我们可以得到如下的输出：</p><p><a href="http://images.cnitblog.com/blog/163228/201306/20111611-5931441e1d014546ac28b1aac12bfee7.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201306/20111611-0b9ea3a4bc834dedb860349496c14d07.png" width="535" height="153"></a></p><p>这个程序看起来是运行正常的，可是真的是没有问题的吗？</p><h3></h3><p>我们简单的修改一下TimerCallback函数，强制调用一下GC，如下所示：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">TimerCallback</span>(<span class="params">Object o</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// Display the date/time when this method got called.</span></span><br><span class="line">    Console.WriteLine(<span class="string">"In TimerCallback: "</span> + DateTime.Now);</span><br><span class="line">    <span class="comment">// Force a garbage collection to occur.</span></span><br><span class="line">    GC.Collect();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我们再次运行一下这个函数，得到了如下的输出：</p><p><a href="http://images.cnitblog.com/blog/163228/201306/20111612-7ffe48618fd14aca9a6f57ecd4548bfa.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201306/20111612-b980e353236b4d92a0b062819ae6c284.png" width="414" height="137"></a></p><p>我们可以看到，这次timer只被调用了一次！！！</p><h3></h3><p>这个时候大家应该能猜到原因了，我们的timer被垃圾回收了！！！</p><p>C#的垃圾回收采用了reference tracking的算法，大概的意思是说在执行垃圾回收时，所有的对象都默认认为是可以被回收的，然后遍历所有的roots（指向reference type的对象，包括类成员变量，静态变量，函数参数，函数局部变量），把这个root指向的对象标记成不能被回收的。</p><p>回到我们的代码，当我们强制调用GC.Collect()时，这个时候我们的timer t已经是一个没有被指向的对象了，于是垃圾回收就把t给回收了。这和C++的对象析构不太一样，C++的对象需要在出了作用域之后析构函数才会被调用到。</p><p>所以，即使我们没有显示的在这里调用GC.Collect()，但是我们不能确定什么时候CLR会调用GC，那个时候timer也就被回收了，总之，不能实现我们的意图。</p><h3>&#160;</h3><p>再来个有意思的，如果我们把上面的程序改成debug模式再运行，发现我们的timer还是能够正常工作的，就是说还是能看到每隔一秒就输出一条记录。这又是为什么呢？</p><p>因为Visual Studio为了让debug更方便在debug模式下编译时延长了局部变量的生命周期。比如说，假设你在一个局部变量最后一次被使用之后打了断点，但是这个时候你在watch窗口已经看不到那个局部变量的值了（被垃圾回收了），那是不是很抓狂。所以debug的编译器就做了这个小手脚。</p><h3>&#160;</h3><p>那如果要实现我们的初衷，就需要在Console.ReadLine之后还能保持一个对timer的引用，所以我们写了如下的代码：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// Create a Timer object that knows to call our TimerCallback</span></span><br><span class="line">    <span class="comment">// method once every 1000 milliseconds.</span></span><br><span class="line">    Timer t = <span class="keyword">new</span> Timer(TimerCallback, <span class="literal">null</span>, <span class="number">0</span>, <span class="number">1000</span>);</span><br><span class="line">    <span class="comment">// Wait for the user to hit &lt;Enter&gt;</span></span><br><span class="line">    Console.ReadLine();</span><br><span class="line"></span><br><span class="line">    t = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>很不幸，这在release下还是不行，因为编译器认为把一个对象置为null是没必要的，帮我们优化掉了！</p><p>所以正确的做法是：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// Create a Timer object that knows to call our TimerCallback</span></span><br><span class="line">    <span class="comment">// method once every 1000 milliseconds.</span></span><br><span class="line">    Timer t = <span class="keyword">new</span> Timer(TimerCallback, <span class="literal">null</span>, <span class="number">0</span>, <span class="number">1000</span>);</span><br><span class="line">    <span class="comment">// Wait for the user to hit &lt;Enter&gt;</span></span><br><span class="line">    Console.ReadLine();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// This assignment will be removed by compiler optimization</span></span><br><span class="line">    <span class="comment">//t = null;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// This will survive the GC</span></span><br><span class="line">    t.Dispose();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这样就可以了。当然，我们也可以直接用using语句：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// Create a Timer object that knows to call our TimerCallback</span></span><br><span class="line">    <span class="comment">// method once every 1000 milliseconds.</span></span><br><span class="line">    <span class="keyword">using</span> (<span class="keyword">new</span> Timer(TimerCallback, <span class="literal">null</span>, <span class="number">0</span>, <span class="number">1000</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// Wait for the user to hit &lt;Enter&gt;</span></span><br><span class="line">        Console.ReadLine();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>嗯，现在我们有了一个不会被垃圾回收掉的timer。希望对大家理解C#的垃圾回收有些帮助。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://hacks.mozilla.org/2013/05/how-to-spread-the-word-about-your-code/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;How to Spread T
+        &lt;p&gt;先来看如下的一段代码：&lt;/p&gt;  
+
+&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;
       
     
     </summary>
     
     
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -4913,31 +4938,6 @@
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>谁动了我的timer？C#的垃圾回收和调试</title>
-    <link href="http://fresky.github.io/2013/06/20/where-is-my-timer-csharp-gc/"/>
-    <id>http://fresky.github.io/2013/06/20/where-is-my-timer-csharp-gc/</id>
-    <published>2013-06-19T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.264Z</updated>
-    
-    <content type="html"><![CDATA[<p>先来看如下的一段代码：</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Threading;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">// Create a Timer object that knows to call our TimerCallback</span></span><br><span class="line">        <span class="comment">// method once every 1000 milliseconds.</span></span><br><span class="line">        Timer t = <span class="keyword">new</span> Timer(TimerCallback, <span class="literal">null</span>, <span class="number">0</span>, <span class="number">1000</span>);</span><br><span class="line">        <span class="comment">// Wait for the user to hit &lt;Enter&gt;</span></span><br><span class="line">        Console.ReadLine();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">TimerCallback</span>(<span class="params">Object o</span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="comment">// Display the date/time when this method got called.</span></span><br><span class="line">        Console.WriteLine(<span class="string">"In TimerCallback: "</span> + DateTime.Now);</span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我们在main函数中生成了一个timer，然后这个timer会每隔一秒输出一条记录，显示当前的时间。</p><p>如果运行这个程序（release模式），我们可以得到如下的输出：</p><p><a href="http://images.cnitblog.com/blog/163228/201306/20111611-5931441e1d014546ac28b1aac12bfee7.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201306/20111611-0b9ea3a4bc834dedb860349496c14d07.png" width="535" height="153"></a></p><p>这个程序看起来是运行正常的，可是真的是没有问题的吗？</p><h3></h3><p>我们简单的修改一下TimerCallback函数，强制调用一下GC，如下所示：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">TimerCallback</span>(<span class="params">Object o</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// Display the date/time when this method got called.</span></span><br><span class="line">    Console.WriteLine(<span class="string">"In TimerCallback: "</span> + DateTime.Now);</span><br><span class="line">    <span class="comment">// Force a garbage collection to occur.</span></span><br><span class="line">    GC.Collect();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>我们再次运行一下这个函数，得到了如下的输出：</p><p><a href="http://images.cnitblog.com/blog/163228/201306/20111612-7ffe48618fd14aca9a6f57ecd4548bfa.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201306/20111612-b980e353236b4d92a0b062819ae6c284.png" width="414" height="137"></a></p><p>我们可以看到，这次timer只被调用了一次！！！</p><h3></h3><p>这个时候大家应该能猜到原因了，我们的timer被垃圾回收了！！！</p><p>C#的垃圾回收采用了reference tracking的算法，大概的意思是说在执行垃圾回收时，所有的对象都默认认为是可以被回收的，然后遍历所有的roots（指向reference type的对象，包括类成员变量，静态变量，函数参数，函数局部变量），把这个root指向的对象标记成不能被回收的。</p><p>回到我们的代码，当我们强制调用GC.Collect()时，这个时候我们的timer t已经是一个没有被指向的对象了，于是垃圾回收就把t给回收了。这和C++的对象析构不太一样，C++的对象需要在出了作用域之后析构函数才会被调用到。</p><p>所以，即使我们没有显示的在这里调用GC.Collect()，但是我们不能确定什么时候CLR会调用GC，那个时候timer也就被回收了，总之，不能实现我们的意图。</p><h3>&#160;</h3><p>再来个有意思的，如果我们把上面的程序改成debug模式再运行，发现我们的timer还是能够正常工作的，就是说还是能看到每隔一秒就输出一条记录。这又是为什么呢？</p><p>因为Visual Studio为了让debug更方便在debug模式下编译时延长了局部变量的生命周期。比如说，假设你在一个局部变量最后一次被使用之后打了断点，但是这个时候你在watch窗口已经看不到那个局部变量的值了（被垃圾回收了），那是不是很抓狂。所以debug的编译器就做了这个小手脚。</p><h3>&#160;</h3><p>那如果要实现我们的初衷，就需要在Console.ReadLine之后还能保持一个对timer的引用，所以我们写了如下的代码：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// Create a Timer object that knows to call our TimerCallback</span></span><br><span class="line">    <span class="comment">// method once every 1000 milliseconds.</span></span><br><span class="line">    Timer t = <span class="keyword">new</span> Timer(TimerCallback, <span class="literal">null</span>, <span class="number">0</span>, <span class="number">1000</span>);</span><br><span class="line">    <span class="comment">// Wait for the user to hit &lt;Enter&gt;</span></span><br><span class="line">    Console.ReadLine();</span><br><span class="line"></span><br><span class="line">    t = <span class="literal">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>很不幸，这在release下还是不行，因为编译器认为把一个对象置为null是没必要的，帮我们优化掉了！</p><p>所以正确的做法是：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// Create a Timer object that knows to call our TimerCallback</span></span><br><span class="line">    <span class="comment">// method once every 1000 milliseconds.</span></span><br><span class="line">    Timer t = <span class="keyword">new</span> Timer(TimerCallback, <span class="literal">null</span>, <span class="number">0</span>, <span class="number">1000</span>);</span><br><span class="line">    <span class="comment">// Wait for the user to hit &lt;Enter&gt;</span></span><br><span class="line">    Console.ReadLine();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// This assignment will be removed by compiler optimization</span></span><br><span class="line">    <span class="comment">//t = null;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// This will survive the GC</span></span><br><span class="line">    t.Dispose();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这样就可以了。当然，我们也可以直接用using语句：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// Create a Timer object that knows to call our TimerCallback</span></span><br><span class="line">    <span class="comment">// method once every 1000 milliseconds.</span></span><br><span class="line">    <span class="keyword">using</span> (<span class="keyword">new</span> Timer(TimerCallback, <span class="literal">null</span>, <span class="number">0</span>, <span class="number">1000</span>))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// Wait for the user to hit &lt;Enter&gt;</span></span><br><span class="line">        Console.ReadLine();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>嗯，现在我们有了一个不会被垃圾回收掉的timer。希望对大家理解C#的垃圾回收有些帮助。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;先来看如下的一段代码：&lt;/p&gt;  
-
-&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -5060,31 +5060,6 @@
   </entry>
   
   <entry>
-    <title>GitLab: 开源免费的git管理工具</title>
-    <link href="http://fresky.github.io/2013/06/08/gitlab-opensource-github-clone/"/>
-    <id>http://fresky.github.io/2013/06/08/gitlab-opensource-github-clone/</id>
-    <published>2013-06-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.261Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://gitlab.org/" target="_blank" rel="noopener">GITLAB: Self Hosted Git Management Application</a>提供了像GitHub类似的功能，而且是开源和免费的。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://gitlab.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GITLAB: Self Hosted Git Management Application&lt;/a&gt;提供了像GitHub类似的功能，而且是开源和免费的。&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="Github" scheme="http://fresky.github.io/tags/Github/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#的一个小函数来计算一个运算使用的时间和内存</title>
     <link href="http://fresky.github.io/2013/06/08/time-counter-and-memory-counter-in-csharp/"/>
     <id>http://fresky.github.io/2013/06/08/time-counter-and-memory-counter-in-csharp/</id>
@@ -5106,6 +5081,31 @@
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitLab: 开源免费的git管理工具</title>
+    <link href="http://fresky.github.io/2013/06/08/gitlab-opensource-github-clone/"/>
+    <id>http://fresky.github.io/2013/06/08/gitlab-opensource-github-clone/</id>
+    <published>2013-06-07T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.261Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://gitlab.org/" target="_blank" rel="noopener">GITLAB: Self Hosted Git Management Application</a>提供了像GitHub类似的功能，而且是开源和免费的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://gitlab.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GITLAB: Self Hosted Git Management Application&lt;/a&gt;提供了像GitHub类似的功能，而且是开源和免费的。&lt;
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="Github" scheme="http://fresky.github.io/tags/Github/"/>
     
   </entry>
   
@@ -5206,29 +5206,6 @@
   </entry>
   
   <entry>
-    <title>一个很cool的展示编程语言相互影响关系的网状图</title>
-    <link href="http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/"/>
-    <id>http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/</id>
-    <published>2013-05-27T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.259Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://visual.ly/network-graph-programming-languages-influence?view=true" target="_blank" rel="noopener">Network Graph of Programming Languages Influence | Visual.ly</a>是一个交互的网络图，可以显示各种编程语言之间的互相影响，很cool。</p>  <p>下图是一个截图。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/28172719-9254a3504ad44228b1b61dc02b08d2dc.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201305/28172722-4c185cb38847461cb39b0b61b015f9c7.png" width="578" height="418"></a></p>  <p>点击语言的节点，可以看见更多的信息。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/28172724-73b12effe9344988869d6710c97e3c6a.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201305/28172725-7b205fff30cc4309aa8b2647deca1f5d.png" width="600" height="270"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://visual.ly/network-graph-programming-languages-influence?view=true&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Network Graph of Progra
-      
-    
-    </summary>
-    
-    
-      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
-    
-  </entry>
-  
-  <entry>
     <title>大数据还是小数据</title>
     <link href="http://fresky.github.io/2013/05/28/big-data-or-small-data/"/>
     <id>http://fresky.github.io/2013/05/28/big-data-or-small-data/</id>
@@ -5248,6 +5225,29 @@
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>一个很cool的展示编程语言相互影响关系的网状图</title>
+    <link href="http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/"/>
+    <id>http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/</id>
+    <published>2013-05-27T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.259Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://visual.ly/network-graph-programming-languages-influence?view=true" target="_blank" rel="noopener">Network Graph of Programming Languages Influence | Visual.ly</a>是一个交互的网络图，可以显示各种编程语言之间的互相影响，很cool。</p>  <p>下图是一个截图。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/28172719-9254a3504ad44228b1b61dc02b08d2dc.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201305/28172722-4c185cb38847461cb39b0b61b015f9c7.png" width="578" height="418"></a></p>  <p>点击语言的节点，可以看见更多的信息。</p>  <p><a href="http://images.cnitblog.com/blog/163228/201305/28172724-73b12effe9344988869d6710c97e3c6a.png" target="_blank" rel="noopener"><img style="background-image: none; border-bottom: 0px; border-left: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="http://images.cnitblog.com/blog/163228/201305/28172725-7b205fff30cc4309aa8b2647deca1f5d.png" width="600" height="270"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://visual.ly/network-graph-programming-languages-influence?view=true&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Network Graph of Progra
+      
+    
+    </summary>
+    
+    
+      <category term="Resource" scheme="http://fresky.github.io/tags/Resource/"/>
     
   </entry>
   
@@ -5622,29 +5622,6 @@
   </entry>
   
   <entry>
-    <title>用GifCam在OSQA的回答中放录屏录像</title>
-    <link href="http://fresky.github.io/2013/04/25/use-gifcam-to-upload-video-in-osqa/"/>
-    <id>http://fresky.github.io/2013/04/25/use-gifcam-to-upload-video-in-osqa/</id>
-    <published>2013-04-24T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.255Z</updated>
-    
-    <content type="html"><![CDATA[<p>OSQA只支持上传图片，所以如果想录屏给别人演示就只能用gif格式了，推荐一个很cool的录屏小工具GifCam，可以把录屏存成gif模式。</p>  <p><a href="http://blog.bahraniapps.com/?page_id=21" target="_blank" rel="noopener">GifCam | BahraniApps Blog</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;OSQA只支持上传图片，所以如果想录屏给别人演示就只能用gif格式了，推荐一个很cool的录屏小工具GifCam，可以把录屏存成gif模式。&lt;/p&gt;  &lt;p&gt;&lt;a href=&quot;http://blog.bahraniapps.com/?page_id=21&quot; target=&quot;
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#的预处理指令</title>
     <link href="http://fresky.github.io/2013/04/25/preprocessor-directives-in-csharp/"/>
     <id>http://fresky.github.io/2013/04/25/preprocessor-directives-in-csharp/</id>
@@ -5664,6 +5641,29 @@
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用GifCam在OSQA的回答中放录屏录像</title>
+    <link href="http://fresky.github.io/2013/04/25/use-gifcam-to-upload-video-in-osqa/"/>
+    <id>http://fresky.github.io/2013/04/25/use-gifcam-to-upload-video-in-osqa/</id>
+    <published>2013-04-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.255Z</updated>
+    
+    <content type="html"><![CDATA[<p>OSQA只支持上传图片，所以如果想录屏给别人演示就只能用gif格式了，推荐一个很cool的录屏小工具GifCam，可以把录屏存成gif模式。</p>  <p><a href="http://blog.bahraniapps.com/?page_id=21" target="_blank" rel="noopener">GifCam | BahraniApps Blog</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;OSQA只支持上传图片，所以如果想录屏给别人演示就只能用gif格式了，推荐一个很cool的录屏小工具GifCam，可以把录屏存成gif模式。&lt;/p&gt;  &lt;p&gt;&lt;a href=&quot;http://blog.bahraniapps.com/?page_id=21&quot; target=&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -5691,29 +5691,6 @@
   </entry>
   
   <entry>
-    <title>另眼看代码-通过tag cloud</title>
-    <link href="http://fresky.github.io/2013/04/23/tag-cloud-for-code/"/>
-    <id>http://fresky.github.io/2013/04/23/tag-cloud-for-code/</id>
-    <published>2013-04-22T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.254Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天在一个培训中Kevlin Henney展示了一张图片<a href="http://philcalcado.com/2009/04/29/tag-clouds-see-how-noisy-your-code-is/" target="_blank" rel="noopener">See How Noisy Your Code Is</a>显示了用tag cloud来看源代码，是一个很有趣的视角。如下图所示。</p>  <p><img src="http://farm4.static.flickr.com/3377/3485582094_bcc78376da.jpg"></p>  <p>&#160;</p>  <p><a href="http://sourcecodecloud.codeplex.com/" target="_blank" rel="noopener">Source Code Word Cloud Generator</a> 是一个开源的小工具可以生成这个图，适用于C#，Java，VB。它使用<a href="http://http://www.wordle.net/" target="_blank" rel="noopener">Wordle</a>这个工具。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;今天在一个培训中Kevlin Henney展示了一张图片&lt;a href=&quot;http://philcalcado.com/2009/04/29/tag-clouds-see-how-noisy-your-code-is/&quot; target=&quot;_blank&quot; rel=&quot;noope
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>SneakPeekit – 打印 iOS 及不同分辨率浏览器线框图</title>
     <link href="http://fresky.github.io/2013/04/23/sneakpeekit/"/>
     <id>http://fresky.github.io/2013/04/23/sneakpeekit/</id>
@@ -5727,6 +5704,29 @@
       
       
         &lt;p&gt;&lt;a href=&quot;http://www.appinn.com/sneakpeekit/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;SneakPeekit &amp;ndash; 打印 iOS 及不同分辨率浏览器线框图 - 小众软件&lt;/a&gt;介绍了一个有用的网站，
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>另眼看代码-通过tag cloud</title>
+    <link href="http://fresky.github.io/2013/04/23/tag-cloud-for-code/"/>
+    <id>http://fresky.github.io/2013/04/23/tag-cloud-for-code/</id>
+    <published>2013-04-22T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.254Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在一个培训中Kevlin Henney展示了一张图片<a href="http://philcalcado.com/2009/04/29/tag-clouds-see-how-noisy-your-code-is/" target="_blank" rel="noopener">See How Noisy Your Code Is</a>显示了用tag cloud来看源代码，是一个很有趣的视角。如下图所示。</p>  <p><img src="http://farm4.static.flickr.com/3377/3485582094_bcc78376da.jpg"></p>  <p>&#160;</p>  <p><a href="http://sourcecodecloud.codeplex.com/" target="_blank" rel="noopener">Source Code Word Cloud Generator</a> 是一个开源的小工具可以生成这个图，适用于C#，Java，VB。它使用<a href="http://http://www.wordle.net/" target="_blank" rel="noopener">Wordle</a>这个工具。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天在一个培训中Kevlin Henney展示了一张图片&lt;a href=&quot;http://philcalcado.com/2009/04/29/tag-clouds-see-how-noisy-your-code-is/&quot; target=&quot;_blank&quot; rel=&quot;noope
       
     
     </summary>
@@ -5811,29 +5811,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>高性能软件需要知道的一些数字（zz）</title>
-    <link href="http://fresky.github.io/2013/03/15/numbers-to-understand-high-performance-software/"/>
-    <id>http://fresky.github.io/2013/03/15/numbers-to-understand-high-performance-software/</id>
-    <published>2013-03-14T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.253Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://kellabyte.com/2013/03/10/numbers-to-understand-if-you-are-writing-high-performance-software/" target="_blank" rel="noopener">Numbers to understand if you are writing high performance software</a><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://kellabyte.com/2013/03/10/numbers-to-understand-if-you-are-writing-high-performance-software/&quot; target=&quot;_blank&quot; rel=&quot;noopen
-      
-    
-    </summary>
-    
-    
-      <category term="Algorithm" scheme="http://fresky.github.io/tags/Algorithm/"/>
-    
-  </entry>
-  
-  <entry>
     <title>没有初始化的指针会是个什么值呢？</title>
     <link href="http://fresky.github.io/2013/03/15/what-is-the-value-of-uninitialized-pointer-in-cpp/"/>
     <id>http://fresky.github.io/2013/03/15/what-is-the-value-of-uninitialized-pointer-in-cpp/</id>
@@ -5855,6 +5832,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高性能软件需要知道的一些数字（zz）</title>
+    <link href="http://fresky.github.io/2013/03/15/numbers-to-understand-high-performance-software/"/>
+    <id>http://fresky.github.io/2013/03/15/numbers-to-understand-high-performance-software/</id>
+    <published>2013-03-14T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.253Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://kellabyte.com/2013/03/10/numbers-to-understand-if-you-are-writing-high-performance-software/" target="_blank" rel="noopener">Numbers to understand if you are writing high performance software</a><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://kellabyte.com/2013/03/10/numbers-to-understand-if-you-are-writing-high-performance-software/&quot; target=&quot;_blank&quot; rel=&quot;noopen
+      
+    
+    </summary>
+    
+    
+      <category term="Algorithm" scheme="http://fresky.github.io/tags/Algorithm/"/>
     
   </entry>
   
@@ -6022,29 +6022,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>C#的static constructor抛了异常会怎么处理？</title>
-    <link href="http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/"/>
-    <id>http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/</id>
-    <published>2013-02-18T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.251Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/4737875/exception-in-static-constructor/4737910#4737910" target="_blank" rel="noopener">stackoverflow</a>上举了这个例子说明在C#中，如果static constructor只会被调用一次，即使抛了异常，也不会重试调用。如果抛了异常，那么在这个appdomain里面，这个类就不能用了。</p>  <p>示例代码：</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> <span class="keyword">class</span> <span class="title">Bang</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="title">Bang</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">"In static constructor"</span>);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"Bang!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Foo</span>(<span class="params"></span>)</span> &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Test</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">try</span></span><br><span class="line">            &#123;</span><br><span class="line">                Bang.Foo();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">catch</span> (Exception e)</span><br><span class="line">            &#123;</span><br><span class="line">                Console.WriteLine(e.GetType().Name);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>输出如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">In static constructor</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4737875/exception-in-static-constructor/4737910#4737910&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;stack
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#的继承类中static constructor的调用问题</title>
     <link href="http://fresky.github.io/2013/02/19/static-constructor-surprise-in-csharp/"/>
     <id>http://fresky.github.io/2013/02/19/static-constructor-surprise-in-csharp/</id>
@@ -6058,6 +6035,29 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;Eric Lippert写了一系列的关于static constructor的文章，&lt;a href=&quot;http://ericlippert.com/2013/02/06/static-constructors-part-one/?utm_source=rss&amp;amp;utm
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C#的static constructor抛了异常会怎么处理？</title>
+    <link href="http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/"/>
+    <id>http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/</id>
+    <published>2013-02-18T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.251Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://stackoverflow.com/questions/4737875/exception-in-static-constructor/4737910#4737910" target="_blank" rel="noopener">stackoverflow</a>上举了这个例子说明在C#中，如果static constructor只会被调用一次，即使抛了异常，也不会重试调用。如果抛了异常，那么在这个appdomain里面，这个类就不能用了。</p>  <p>示例代码：</p>  <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">sealed</span> <span class="keyword">class</span> <span class="title">Bang</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="title">Bang</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        Console.WriteLine(<span class="string">"In static constructor"</span>);</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> Exception(<span class="string">"Bang!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Foo</span>(<span class="params"></span>)</span> &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Test</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function"></span>    &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">try</span></span><br><span class="line">            &#123;</span><br><span class="line">                Bang.Foo();</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">catch</span> (Exception e)</span><br><span class="line">            &#123;</span><br><span class="line">                Console.WriteLine(e.GetType().Name);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>输出如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">In static constructor</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br><span class="line">TypeInitializationException</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4737875/exception-in-static-constructor/4737910#4737910&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;stack
       
     
     </summary>
@@ -6162,6 +6162,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>C#中静态构造函数导致的一个deadlock</title>
+    <link href="http://fresky.github.io/2013/02/05/deadlock-caused-by-csharp-static-constructor/"/>
+    <id>http://fresky.github.io/2013/02/05/deadlock-caused-by-csharp-static-constructor/</id>
+    <published>2013-02-04T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.249Z</updated>
+    
+    <content type="html"><![CDATA[<p id="site-description">Eric Lipper的这篇<a href="http://ericlippert.com/2013/01/31/the-no-lock-deadlock/" target="_blank">博客</a>举了一个C#中静态构造函数导致的deadlock的例子，很有意思。</p><br><p>代码如下：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">C</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="title">C</span>(<span class="params"></span>) </span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="comment">// Let's run the initialization on another thread!</span></span><br><span class="line">    <span class="keyword">var</span> thread = <span class="keyword">new</span> System.Threading.Thread(Initialize);</span><br><span class="line">    thread.Start();</span><br><span class="line">    thread.Join();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Initialize</span>(<span class="params"></span>)</span> &#123; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span> &#123; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>原因很简单，静态构造函数需要在第一次用到这个类静态方法或者实例之前调用结束，就是说C（）在等Initialize（），但是Initialize（）必须在C()结束后才能被调到。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p id=&quot;site-description&quot;&gt;Eric Lipper的这篇&lt;a href=&quot;http://ericlippert.com/2013/01/31/the-no-lock-deadlock/&quot; target=&quot;_blank&quot;&gt;博客&lt;/a&gt;举了一个C#中静态构造函数
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>在线C++编译器</title>
     <link href="http://fresky.github.io/2013/02/05/online-cpp-compiler/"/>
     <id>http://fresky.github.io/2013/02/05/online-cpp-compiler/</id>
@@ -6183,29 +6206,6 @@ w\:* {behavior:url(#default#VML);}
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C#中静态构造函数导致的一个deadlock</title>
-    <link href="http://fresky.github.io/2013/02/05/deadlock-caused-by-csharp-static-constructor/"/>
-    <id>http://fresky.github.io/2013/02/05/deadlock-caused-by-csharp-static-constructor/</id>
-    <published>2013-02-04T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.249Z</updated>
-    
-    <content type="html"><![CDATA[<p id="site-description">Eric Lipper的这篇<a href="http://ericlippert.com/2013/01/31/the-no-lock-deadlock/" target="_blank">博客</a>举了一个C#中静态构造函数导致的deadlock的例子，很有意思。</p><br><p>代码如下：</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">C</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="title">C</span>(<span class="params"></span>) </span></span><br><span class="line"><span class="function"></span>  &#123;</span><br><span class="line">    <span class="comment">// Let's run the initialization on another thread!</span></span><br><span class="line">    <span class="keyword">var</span> thread = <span class="keyword">new</span> System.Threading.Thread(Initialize);</span><br><span class="line">    thread.Start();</span><br><span class="line">    thread.Join();</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Initialize</span>(<span class="params"></span>)</span> &#123; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"></span>)</span> &#123; &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>原因很简单，静态构造函数需要在第一次用到这个类静态方法或者实例之前调用结束，就是说C（）在等Initialize（），但是Initialize（）必须在C()结束后才能被调到。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p id=&quot;site-description&quot;&gt;Eric Lipper的这篇&lt;a href=&quot;http://ericlippert.com/2013/01/31/the-no-lock-deadlock/&quot; target=&quot;_blank&quot;&gt;博客&lt;/a&gt;举了一个C#中静态构造函数
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -6281,27 +6281,25 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>一个C++的unit库</title>
-    <link href="http://fresky.github.io/2013/01/21/unit-library-for-cpp/"/>
-    <id>http://fresky.github.io/2013/01/21/unit-library-for-cpp/</id>
+    <title>C#中如何用Windows Management Instrumentation (WMI)得到系统信息</title>
+    <link href="http://fresky.github.io/2013/01/21/get-system-info-with-windows-management-instrumentation-in-csharp/"/>
+    <id>http://fresky.github.io/2013/01/21/get-system-info-with-windows-management-instrumentation-in-csharp/</id>
     <published>2013-01-20T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.248Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://calumgrant.net/units/index.html" target="_blank" rel="noopener">C++ Units</a>是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，比如把一个length加到了一个area上。<br></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://www.codeguru.com/csharp/.net/working-with-windows-management-instrumentation.htm" target="_blank" rel="noopener">Working with Windows Management Instrumentation</a>演示了怎么通过<span class="body">Windows Management Instrumentation (WMI)拿到系统信息，包括CPU ID，MAC ID，硬盘信息等。<br></span></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://calumgrant.net/units/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++ Units&lt;/a&gt;是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，
+        &lt;p&gt;&lt;a href=&quot;http://www.codeguru.com/csharp/.net/working-with-windows-management-instrumentation.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Working 
       
     
     </summary>
     
     
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -6332,25 +6330,27 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>C#中如何用Windows Management Instrumentation (WMI)得到系统信息</title>
-    <link href="http://fresky.github.io/2013/01/21/get-system-info-with-windows-management-instrumentation-in-csharp/"/>
-    <id>http://fresky.github.io/2013/01/21/get-system-info-with-windows-management-instrumentation-in-csharp/</id>
+    <title>一个C++的unit库</title>
+    <link href="http://fresky.github.io/2013/01/21/unit-library-for-cpp/"/>
+    <id>http://fresky.github.io/2013/01/21/unit-library-for-cpp/</id>
     <published>2013-01-20T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.248Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="http://www.codeguru.com/csharp/.net/working-with-windows-management-instrumentation.htm" target="_blank" rel="noopener">Working with Windows Management Instrumentation</a>演示了怎么通过<span class="body">Windows Management Instrumentation (WMI)拿到系统信息，包括CPU ID，MAC ID，硬盘信息等。<br></span></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://calumgrant.net/units/index.html" target="_blank" rel="noopener">C++ Units</a>是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，比如把一个length加到了一个area上。<br></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;a href=&quot;http://www.codeguru.com/csharp/.net/working-with-windows-management-instrumentation.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Working 
+        &lt;p&gt;&lt;a href=&quot;http://calumgrant.net/units/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++ Units&lt;/a&gt;是一个C++的库，提供了unit转换等一些功能，能够避免全用double导致的潜在问题，
       
     
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -6562,31 +6562,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>CoffeeScript, Ruby 和 C++的复杂度比较</title>
-    <link href="http://fresky.github.io/2012/12/25/cpp-ruby-coffeescript-language-complexity/"/>
-    <id>http://fresky.github.io/2012/12/25/cpp-ruby-coffeescript-language-complexity/</id>
-    <published>2012-12-24T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.245Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://cpprocks.com/cpp-ruby-coffeescript-language-complexity/#!prettyPhoto" target="_blank" rel="noopener">C++, Ruby, CoffeeScript: a visual comparison of language complexity</a>用concept的种类和个数来比较了一下三种语言的复杂度。<br><img style="max-width: 800px;" src="http://www.cpprocks.com/wp-content/uploads/coffeescript-ruby-cpp-comparison.png"><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://cpprocks.com/cpp-ruby-coffeescript-language-complexity/#!prettyPhoto&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++, Ruby, CoffeeScr
-      
-    
-    </summary>
-    
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
-    
-      <category term="Ruby" scheme="http://fresky.github.io/tags/Ruby/"/>
-    
-  </entry>
-  
-  <entry>
     <title>用python替代javascript？</title>
     <link href="http://fresky.github.io/2012/12/25/python-replace-javascript/"/>
     <id>http://fresky.github.io/2012/12/25/python-replace-javascript/</id>
@@ -6631,6 +6606,31 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CoffeeScript, Ruby 和 C++的复杂度比较</title>
+    <link href="http://fresky.github.io/2012/12/25/cpp-ruby-coffeescript-language-complexity/"/>
+    <id>http://fresky.github.io/2012/12/25/cpp-ruby-coffeescript-language-complexity/</id>
+    <published>2012-12-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.245Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://cpprocks.com/cpp-ruby-coffeescript-language-complexity/#!prettyPhoto" target="_blank" rel="noopener">C++, Ruby, CoffeeScript: a visual comparison of language complexity</a>用concept的种类和个数来比较了一下三种语言的复杂度。<br><img style="max-width: 800px;" src="http://www.cpprocks.com/wp-content/uploads/coffeescript-ruby-cpp-comparison.png"><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://cpprocks.com/cpp-ruby-coffeescript-language-complexity/#!prettyPhoto&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;C++, Ruby, CoffeeScr
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
+    
+      <category term="Ruby" scheme="http://fresky.github.io/tags/Ruby/"/>
     
   </entry>
   
@@ -7289,29 +7289,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>通过注册表查看 .NET Framework的版本信息</title>
-    <link href="http://fresky.github.io/2012/11/26/how-to-check-dot-net-framework-version-in-registry/"/>
-    <id>http://fresky.github.io/2012/11/26/how-to-check-dot-net-framework-version-in-registry/</id>
-    <published>2012-11-25T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.237Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://msdn.microsoft.com/en-us/kb/kbarticle.aspx?id=318785" target="_blank" rel="noopener">这里</a>详细说明了怎么通过注册表查看 .NET Framework的版本信息。<br><table class="table" cellspacing="1"><tbody><tr><td><b>.NET Framework</b></td><td><b>Service Pack Level</b></td><td><b>Registry Key Name</b></td><td><b>Value</b></td></tr><tr><td>4 - Client</td><td>Original Release</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client</td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>4.0.30319.0</b></td></tr><tr><td>4 - Full</td><td>Original Release</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>4.0.30319.0</b></td></tr><tr><td>3.5</td><td>Original Release</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>0</b></td></tr><tr><td>3.5</td><td>Service Pack 1</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td>3.0</td><td>Original Release</td><td>Follow the deployment and detection guidance in this document: <a href="http://msdn.microsoft.com/en-us/library/aa480173.aspx" target="_blank" rel="noopener">http://msdn.microsoft.com/en-us/library/aa480173.aspx</a></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>0</b></td></tr><tr><td>3.0</td><td>Service Pack 1</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td>3.0</td><td>Service Pack 2</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>2</b></td></tr><tr><td>2.0</td><td>Original Release</td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>0</b></td></tr><tr><td>2.0</td><td>Service Pack 1</td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td>2.0</td><td>Service Pack 2</td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>2</b></td></tr><tr><td>1.1</td><td>Original Release</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v1.1.4322</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v1.1.4322</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>0</b></td></tr><tr><td>1.1</td><td>Service Pack 1</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v1.1.4322</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v1.1.4322</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td>1.0 (on supported platforms except for Windows XP Media Center and Tablet PC)</td><td>Original Release</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{78705f0d-e8db-4b2d-8193-982bdda15ecd} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.0</b></td></tr><tr><td>1.0 (on supported platforms except for Windows XP Media Center and Tablet PC)</td><td>Service Pack 1</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{78705f0d-e8db-4b2d-8193-982bdda15ecd} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.1</b></td></tr><tr><td>1.0 (on supported platforms except for Windows XP Media Center and Tablet PC)</td><td>Service Pack 2</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{78705f0d-e8db-4b2d-8193-982bdda15ecd} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.2</b></td></tr><tr><td>1.0 (on supported platforms except for Windows XP Media Center and Tablet PC)</td><td>Service Pack 3</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{78705f0d-e8db-4b2d-8193-982bdda15ecd} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.3</b></td></tr><tr><td>1.0 (shipped with Windows XP Media Center 2002/2004 and Tablet PC 2004)</td><td>Service Pack 2</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{FDC11A6F-17D1-48f9-9EA3-9051954BAA24} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.2</b></td></tr><tr><td>1.0 (shipped with Windows XP Media Center 2005 and Tablet PC 2005)</td><td>Service Pack 3</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{FDC11A6F-17D1-48f9-9EA3-9051954BAA24} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.3</b></td></tr></tbody></table><br><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/kb/kbarticle.aspx?id=318785&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;详细说明了怎么通过注册表查看 .NET Framework的
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#中你可能不知道的8件事（zz）</title>
     <link href="http://fresky.github.io/2012/11/26/8-things-you-probably-didnt-know-about-csharp/"/>
     <id>http://fresky.github.io/2012/11/26/8-things-you-probably-didnt-know-about-csharp/</id>
@@ -7325,6 +7302,29 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;&lt;a href=&quot;http://damieng.com/blog/2012/10/29/8-things-you-probably-didnt-know-about-csharp&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;8 things you pr
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过注册表查看 .NET Framework的版本信息</title>
+    <link href="http://fresky.github.io/2012/11/26/how-to-check-dot-net-framework-version-in-registry/"/>
+    <id>http://fresky.github.io/2012/11/26/how-to-check-dot-net-framework-version-in-registry/</id>
+    <published>2012-11-25T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.237Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://msdn.microsoft.com/en-us/kb/kbarticle.aspx?id=318785" target="_blank" rel="noopener">这里</a>详细说明了怎么通过注册表查看 .NET Framework的版本信息。<br><table class="table" cellspacing="1"><tbody><tr><td><b>.NET Framework</b></td><td><b>Service Pack Level</b></td><td><b>Registry Key Name</b></td><td><b>Value</b></td></tr><tr><td>4 - Client</td><td>Original Release</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client</td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>4.0.30319.0</b></td></tr><tr><td>4 - Full</td><td>Original Release</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>4.0.30319.0</b></td></tr><tr><td>3.5</td><td>Original Release</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>0</b></td></tr><tr><td>3.5</td><td>Service Pack 1</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.5</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td>3.0</td><td>Original Release</td><td>Follow the deployment and detection guidance in this document: <a href="http://msdn.microsoft.com/en-us/library/aa480173.aspx" target="_blank" rel="noopener">http://msdn.microsoft.com/en-us/library/aa480173.aspx</a></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>0</b></td></tr><tr><td>3.0</td><td>Service Pack 1</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td>3.0</td><td>Service Pack 2</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v3.0</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>2</b></td></tr><tr><td>2.0</td><td>Original Release</td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>0</b></td></tr><tr><td>2.0</td><td>Service Pack 1</td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td>2.0</td><td>Service Pack 2</td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727 </td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>2</b></td></tr><tr><td>1.1</td><td>Original Release</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v1.1.4322</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v1.1.4322</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>0</b></td></tr><tr><td>1.1</td><td>Service Pack 1</td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v1.1.4322</td><td>Name: <b>Install</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td><br></td><td><br></td><td>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v1.1.4322</td><td>Name: <b>SP</b>, Type: <b>REG_DWORD</b>, Data: <b>1</b></td></tr><tr><td>1.0 (on supported platforms except for Windows XP Media Center and Tablet PC)</td><td>Original Release</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{78705f0d-e8db-4b2d-8193-982bdda15ecd} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.0</b></td></tr><tr><td>1.0 (on supported platforms except for Windows XP Media Center and Tablet PC)</td><td>Service Pack 1</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{78705f0d-e8db-4b2d-8193-982bdda15ecd} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.1</b></td></tr><tr><td>1.0 (on supported platforms except for Windows XP Media Center and Tablet PC)</td><td>Service Pack 2</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{78705f0d-e8db-4b2d-8193-982bdda15ecd} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.2</b></td></tr><tr><td>1.0 (on supported platforms except for Windows XP Media Center and Tablet PC)</td><td>Service Pack 3</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{78705f0d-e8db-4b2d-8193-982bdda15ecd} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.3</b></td></tr><tr><td>1.0 (shipped with Windows XP Media Center 2002/2004 and Tablet PC 2004)</td><td>Service Pack 2</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{FDC11A6F-17D1-48f9-9EA3-9051954BAA24} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.2</b></td></tr><tr><td>1.0 (shipped with Windows XP Media Center 2005 and Tablet PC 2005)</td><td>Service Pack 3</td><td><br><br>HKEY_LOCAL_MACHINE\Software\Microsoft\Active Setup\Installed Components{FDC11A6F-17D1-48f9-9EA3-9051954BAA24} <br><br></td><td>Name: <b>Version</b>, Type: <b>REG_SZ</b>, Data: <b>1.0.3705.3</b></td></tr></tbody></table><br><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://msdn.microsoft.com/en-us/kb/kbarticle.aspx?id=318785&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;这里&lt;/a&gt;详细说明了怎么通过注册表查看 .NET Framework的
       
     
     </summary>
@@ -7405,29 +7405,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>用PBKDF2 或BCrypt 来存储密码</title>
-    <link href="http://fresky.github.io/2012/11/22/using-pbkdf2-orbcrypt-to-store-password/"/>
-    <id>http://fresky.github.io/2012/11/22/using-pbkdf2-orbcrypt-to-store-password/</id>
-    <published>2012-11-21T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.236Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://blog.8thlight.com/adam-gooch/2012/11/04/taking-password-storage-up-a-notch.html" target="_blank" rel="noopener">Taking Password Storage Up A Notch | 8th Light</a>中介绍了只是用Hash加盐的做法是不够安全的，应该用<a href="http://www.ietf.org/rfc/rfc2898.txt" target="_blank" rel="noopener">PBKDF2</a> 或 <a href="http://www.openbsd.org/papers/bcrypt-paper.pdf" target="_blank" rel="noopener">BCrypt</a>来做密码存储算法。PBKDF2用在了 iOS, Android, 和LastPass。BCrypt用于OpenBSD。<a href="http://msdn.microsoft.com/en-us/library/system.security.cryptography.rfc2898derivebytes.aspx" target="_blank" rel="noopener">Rfc2898DeriveBytes</a>是C#的一个实现。<br><blockquote><br></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://blog.8thlight.com/adam-gooch/2012/11/04/taking-password-storage-up-a-notch.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Taking Pa
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>有空应该看看Rx是怎么玩的</title>
     <link href="http://fresky.github.io/2012/11/22/rx-is-open-source/"/>
     <id>http://fresky.github.io/2012/11/22/rx-is-open-source/</id>
@@ -7474,20 +7451,19 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>通过位操作简洁的写KB，MB，GB</title>
-    <link href="http://fresky.github.io/2012/11/19/use-bit-operator-for-memory-allocation/"/>
-    <id>http://fresky.github.io/2012/11/19/use-bit-operator-for-memory-allocation/</id>
-    <published>2012-11-18T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.235Z</updated>
+    <title>用PBKDF2 或BCrypt 来存储密码</title>
+    <link href="http://fresky.github.io/2012/11/22/using-pbkdf2-orbcrypt-to-store-password/"/>
+    <id>http://fresky.github.io/2012/11/22/using-pbkdf2-orbcrypt-to-store-password/</id>
+    <published>2012-11-21T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.236Z</updated>
     
-    <content type="html"><![CDATA[<p>1 &lt;&lt; 10 = KB, 1 &lt;&lt; 20 = MB, 1 &lt;&lt; 30 = GB … 所以如果想开一个2KB的buffer，可以写2&lt;&lt;10，比较简洁。<br></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="http://blog.8thlight.com/adam-gooch/2012/11/04/taking-password-storage-up-a-notch.html" target="_blank" rel="noopener">Taking Password Storage Up A Notch | 8th Light</a>中介绍了只是用Hash加盐的做法是不够安全的，应该用<a href="http://www.ietf.org/rfc/rfc2898.txt" target="_blank" rel="noopener">PBKDF2</a> 或 <a href="http://www.openbsd.org/papers/bcrypt-paper.pdf" target="_blank" rel="noopener">BCrypt</a>来做密码存储算法。PBKDF2用在了 iOS, Android, 和LastPass。BCrypt用于OpenBSD。<a href="http://msdn.microsoft.com/en-us/library/system.security.cryptography.rfc2898derivebytes.aspx" target="_blank" rel="noopener">Rfc2898DeriveBytes</a>是C#的一个实现。<br><blockquote><br></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;1 &amp;lt;&amp;lt; 10 = KB, 1 &amp;lt;&amp;lt; 20 = MB, 1 &amp;lt;&amp;lt; 30 = GB … 所以如果想开一个2KB的buffer，可以写2&amp;lt;&amp;lt;10，比较简洁。&lt;br&gt;&lt;/p&gt;
-
+        &lt;p&gt;&lt;a href=&quot;http://blog.8thlight.com/adam-gooch/2012/11/04/taking-password-storage-up-a-notch.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Taking Pa
       
     
     </summary>
@@ -7518,6 +7494,30 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Regex" scheme="http://fresky.github.io/tags/Regex/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>通过位操作简洁的写KB，MB，GB</title>
+    <link href="http://fresky.github.io/2012/11/19/use-bit-operator-for-memory-allocation/"/>
+    <id>http://fresky.github.io/2012/11/19/use-bit-operator-for-memory-allocation/</id>
+    <published>2012-11-18T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.235Z</updated>
+    
+    <content type="html"><![CDATA[<p>1 &lt;&lt; 10 = KB, 1 &lt;&lt; 20 = MB, 1 &lt;&lt; 30 = GB … 所以如果想开一个2KB的buffer，可以写2&lt;&lt;10，比较简洁。<br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1 &amp;lt;&amp;lt; 10 = KB, 1 &amp;lt;&amp;lt; 20 = MB, 1 &amp;lt;&amp;lt; 30 = GB … 所以如果想开一个2KB的buffer，可以写2&amp;lt;&amp;lt;10，比较简洁。&lt;br&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -7614,29 +7614,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>用开源的OSQA在Windows上搭建Q&amp;A网站</title>
-    <link href="http://fresky.github.io/2012/10/25/setup-osqa-in-windows/"/>
-    <id>http://fresky.github.io/2012/10/25/setup-osqa-in-windows/</id>
-    <published>2012-10-24T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.234Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天想在Windows上搭建一个Q&amp;A网站，用的是开源的<a href="http://www.osqa.net/" target="_blank" rel="noopener">OSQA</a>，通过<a href="http://www.helicontech.com/articles/installing-osqa-on-windows-in-production/" target="_blank" rel="noopener">Installing OSQA on Windows in production | Helicon Tech Blog</a>安装在IIS上，非常简单。<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;今天想在Windows上搭建一个Q&amp;amp;A网站，用的是开源的&lt;a href=&quot;http://www.osqa.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OSQA&lt;/a&gt;，通过&lt;a href=&quot;http://www.helicontech.
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C#的overload检查总是发生在编译时吗？</title>
     <link href="http://fresky.github.io/2012/10/25/csharp-overload-checking-not-always-performed-at-compiler-time/"/>
     <id>http://fresky.github.io/2012/10/25/csharp-overload-checking-not-always-performed-at-compiler-time/</id>
@@ -7656,6 +7633,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用开源的OSQA在Windows上搭建Q&amp;A网站</title>
+    <link href="http://fresky.github.io/2012/10/25/setup-osqa-in-windows/"/>
+    <id>http://fresky.github.io/2012/10/25/setup-osqa-in-windows/</id>
+    <published>2012-10-24T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.234Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天想在Windows上搭建一个Q&amp;A网站，用的是开源的<a href="http://www.osqa.net/" target="_blank" rel="noopener">OSQA</a>，通过<a href="http://www.helicontech.com/articles/installing-osqa-on-windows-in-production/" target="_blank" rel="noopener">Installing OSQA on Windows in production | Helicon Tech Blog</a>安装在IIS上，非常简单。<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;今天想在Windows上搭建一个Q&amp;amp;A网站，用的是开源的&lt;a href=&quot;http://www.osqa.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;OSQA&lt;/a&gt;，通过&lt;a href=&quot;http://www.helicontech.
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7729,29 +7729,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>用Visual Studio做profiling</title>
-    <link href="http://fresky.github.io/2012/10/19/profiling-with-visual-studio/"/>
-    <id>http://fresky.github.io/2012/10/19/profiling-with-visual-studio/</id>
-    <published>2012-10-18T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.233Z</updated>
-    
-    <content type="html"><![CDATA[<p>步骤可以参见：<a href="http://msdn.microsoft.com/en-us/library/ms182372.aspx" target="_blank" rel="noopener">Beginners Guide to Performance Profiling</a><br>刚才试了一下，挺好用的。而且能attach到process上去，很方便就能找到性能瓶颈，C#和C++都行。<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;步骤可以参见：&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms182372.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Beginners Guide to Performance Prof
-      
-    
-    </summary>
-    
-    
-      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
-    
-  </entry>
-  
-  <entry>
     <title>关于scrum的一些有趣的讨论</title>
     <link href="http://fresky.github.io/2012/10/19/discussion-about-scrum/"/>
     <id>http://fresky.github.io/2012/10/19/discussion-about-scrum/</id>
@@ -7775,19 +7752,19 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>推荐一个firefox插件，可以在douban电影里显示imdb评分</title>
-    <link href="http://fresky.github.io/2012/10/17/firefox-plugin-display-imdb-in-douban/"/>
-    <id>http://fresky.github.io/2012/10/17/firefox-plugin-display-imdb-in-douban/</id>
-    <published>2012-10-16T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.232Z</updated>
+    <title>用Visual Studio做profiling</title>
+    <link href="http://fresky.github.io/2012/10/19/profiling-with-visual-studio/"/>
+    <id>http://fresky.github.io/2012/10/19/profiling-with-visual-studio/</id>
+    <published>2012-10-18T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.233Z</updated>
     
-    <content type="html"><![CDATA[<p>推荐一个firefox插件，可以在douban电影里显示imdb评分。<br><a href="http://vasters.com/clemensv/2012/09/06/Are+You+Catching+Falling+Knives.aspx" target="_blank" rel="noopener">http://userscripts.org/scripts/show/103552</a><br>也有chrom版本的，<a href="https://chrome.google.com/webstore/detail/doubanimdb/nfibbjnhkbjlgjaojglmmibdjicidini" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/doubanimdb/nfibbjnhkbjlgjaojglmmibdjicidini</a><br><br><blockquote></blockquote></p>]]></content>
+    <content type="html"><![CDATA[<p>步骤可以参见：<a href="http://msdn.microsoft.com/en-us/library/ms182372.aspx" target="_blank" rel="noopener">Beginners Guide to Performance Profiling</a><br>刚才试了一下，挺好用的。而且能attach到process上去，很方便就能找到性能瓶颈，C#和C++都行。<br><blockquote></blockquote></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;推荐一个firefox插件，可以在douban电影里显示imdb评分。&lt;br&gt;&lt;a href=&quot;http://vasters.com/clemensv/2012/09/06/Are+You+Catching+Falling+Knives.aspx&quot; target=&quot;_bla
+        &lt;p&gt;步骤可以参见：&lt;a href=&quot;http://msdn.microsoft.com/en-us/library/ms182372.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Beginners Guide to Performance Prof
       
     
     </summary>
@@ -7817,6 +7794,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>推荐一个firefox插件，可以在douban电影里显示imdb评分</title>
+    <link href="http://fresky.github.io/2012/10/17/firefox-plugin-display-imdb-in-douban/"/>
+    <id>http://fresky.github.io/2012/10/17/firefox-plugin-display-imdb-in-douban/</id>
+    <published>2012-10-16T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.232Z</updated>
+    
+    <content type="html"><![CDATA[<p>推荐一个firefox插件，可以在douban电影里显示imdb评分。<br><a href="http://vasters.com/clemensv/2012/09/06/Are+You+Catching+Falling+Knives.aspx" target="_blank" rel="noopener">http://userscripts.org/scripts/show/103552</a><br>也有chrom版本的，<a href="https://chrome.google.com/webstore/detail/doubanimdb/nfibbjnhkbjlgjaojglmmibdjicidini" target="_blank" rel="noopener">https://chrome.google.com/webstore/detail/doubanimdb/nfibbjnhkbjlgjaojglmmibdjicidini</a><br><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;推荐一个firefox插件，可以在douban电影里显示imdb评分。&lt;br&gt;&lt;a href=&quot;http://vasters.com/clemensv/2012/09/06/Are+You+Catching+Falling+Knives.aspx&quot; target=&quot;_bla
+      
+    
+    </summary>
+    
+    
+      <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
   </entry>
   
@@ -7857,29 +7857,6 @@ w\:* {behavior:url(#default#VML);}
       
       
         &lt;p&gt;&lt;a href=&quot;http://www.mlibby.com/grading-code/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Grading Code&lt;/a&gt;这篇文章说在legacy code（遗留代码）中做开发时估计要根据现有代码的状况来做个调
-      
-    
-    </summary>
-    
-    
-      <category term="Development" scheme="http://fresky.github.io/tags/Development/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>软件开发10个致命错误（转自Construx）</title>
-    <link href="http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/"/>
-    <id>http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/</id>
-    <published>2012-10-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.231Z</updated>
-    
-    <content type="html"><![CDATA[<p>（转自<a href="http://www.construx.com/" target="_blank">Construx</a>，可以从<a href="http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）" target="_blank" rel="noopener">http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）</a><br><ol><li>混淆估计和目标的区别</li><li>过度乐观的时间表</li><li>不切实际的期望</li><li>一厢情愿</li><li>克扣质量保证</li><li>过度多任务</li><li>功能蔓延</li><li>吵闹拥挤的办公室</li><li>压力下放弃规划</li><li>风险管理不够<br></li></ol><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;（转自&lt;a href=&quot;http://www.construx.com/&quot; target=&quot;_blank&quot;&gt;Construx&lt;/a&gt;，可以从&lt;a href=&quot;http://info.construx.com/rs/construx/images/Poster_Tombsto
       
     
     </summary>
@@ -7936,26 +7913,25 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>c#中判断一个process是32bit还是64bit</title>
-    <link href="http://fresky.github.io/2012/10/09/check-process-is-64bit-in-csharp/"/>
-    <id>http://fresky.github.io/2012/10/09/check-process-is-64bit-in-csharp/</id>
-    <published>2012-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.230Z</updated>
+    <title>软件开发10个致命错误（转自Construx）</title>
+    <link href="http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/"/>
+    <id>http://fresky.github.io/2012/10/10/10-mistakes-in-software-development/</id>
+    <published>2012-10-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.231Z</updated>
     
-    <content type="html"><![CDATA[<p>下面的代码能判断一个process是32bit还是64bit.</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">class</span> <span class="title">ProcessDetector</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">IsWin64</span>(<span class="params">Process process</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (Environment.Is64BitOperatingSystem)</span><br><span class="line">            &#123;</span><br><span class="line">                IntPtr processHandle;</span><br><span class="line">                <span class="keyword">bool</span> retVal;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">try</span></span><br><span class="line">                &#123;</span><br><span class="line">                    processHandle = Process.GetProcessById(process.Id).Handle;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">catch</span></span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>; </span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> Win32API.IsWow64Process(processHandle, <span class="keyword">out</span> retVal) &amp;&amp; retVal;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">Win32API</span></span><br><span class="line">    &#123;</span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"kernel32.dll"</span>, SetLastError = true, CallingConvention = CallingConvention.Winapi)</span>]</span><br><span class="line">        [<span class="meta">return: MarshalAs(UnmanagedType.Bool)</span>]</span><br><span class="line">        <span class="function"><span class="keyword">internal</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">bool</span> <span class="title">IsWow64Process</span>(<span class="params">[In] IntPtr process, [Out] <span class="keyword">out</span> <span class="keyword">bool</span> wow64Process</span>)</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>（转自<a href="http://www.construx.com/" target="_blank">Construx</a>，可以从<a href="http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）" target="_blank" rel="noopener">http://info.construx.com/rs/construx/images/Poster_Tombstone.pdf下载poster）</a><br><ol><li>混淆估计和目标的区别</li><li>过度乐观的时间表</li><li>不切实际的期望</li><li>一厢情愿</li><li>克扣质量保证</li><li>过度多任务</li><li>功能蔓延</li><li>吵闹拥挤的办公室</li><li>压力下放弃规划</li><li>风险管理不够<br></li></ol><br></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;下面的代码能判断一个process是32bit还是64bit.&lt;/p&gt;
-&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;s
+        &lt;p&gt;（转自&lt;a href=&quot;http://www.construx.com/&quot; target=&quot;_blank&quot;&gt;Construx&lt;/a&gt;，可以从&lt;a href=&quot;http://info.construx.com/rs/construx/images/Poster_Tombsto
       
     
     </summary>
     
     
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+      <category term="Development" scheme="http://fresky.github.io/tags/Development/"/>
     
   </entry>
   
@@ -8004,6 +7980,30 @@ w\:* {behavior:url(#default#VML);}
       <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
       <category term="Python" scheme="http://fresky.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>c#中判断一个process是32bit还是64bit</title>
+    <link href="http://fresky.github.io/2012/10/09/check-process-is-64bit-in-csharp/"/>
+    <id>http://fresky.github.io/2012/10/09/check-process-is-64bit-in-csharp/</id>
+    <published>2012-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.230Z</updated>
+    
+    <content type="html"><![CDATA[<p>下面的代码能判断一个process是32bit还是64bit.</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">class</span> <span class="title">ProcessDetector</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">bool</span> <span class="title">IsWin64</span>(<span class="params">Process process</span>)</span></span><br><span class="line"><span class="function"></span>        &#123;</span><br><span class="line">            <span class="keyword">if</span> (Environment.Is64BitOperatingSystem)</span><br><span class="line">            &#123;</span><br><span class="line">                IntPtr processHandle;</span><br><span class="line">                <span class="keyword">bool</span> retVal;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">try</span></span><br><span class="line">                &#123;</span><br><span class="line">                    processHandle = Process.GetProcessById(process.Id).Handle;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">catch</span></span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>; </span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">return</span> Win32API.IsWow64Process(processHandle, <span class="keyword">out</span> retVal) &amp;&amp; retVal;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">internal</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title">Win32API</span></span><br><span class="line">    &#123;</span><br><span class="line">        [<span class="meta">DllImport(<span class="meta-string">"kernel32.dll"</span>, SetLastError = true, CallingConvention = CallingConvention.Winapi)</span>]</span><br><span class="line">        [<span class="meta">return: MarshalAs(UnmanagedType.Bool)</span>]</span><br><span class="line">        <span class="function"><span class="keyword">internal</span> <span class="keyword">static</span> <span class="keyword">extern</span> <span class="keyword">bool</span> <span class="title">IsWow64Process</span>(<span class="params">[In] IntPtr process, [Out] <span class="keyword">out</span> <span class="keyword">bool</span> wow64Process</span>)</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;下面的代码能判断一个process是32bit还是64bit.&lt;/p&gt;
+&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;s
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -8150,31 +8150,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>在浏览器中运行C#</title>
-    <link href="http://fresky.github.io/2012/09/10/run-csharp-in-browser/"/>
-    <id>http://fresky.github.io/2012/09/10/run-csharp-in-browser/</id>
-    <published>2012-09-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.228Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://tirania.org/blog/archive/2012/Sep-06.html" target="_blank" rel="noopener">2012 Update: Running C# on the Browser - Miguel de Icaza</a>， 这篇文章介绍了怎么把C#代码编译成javascript。<br><br><br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://tirania.org/blog/archive/2012/Sep-06.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2012 Update: Running C# on the Browser - Miguel
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
-    
-  </entry>
-  
-  <entry>
     <title>FreeEverything-基于everything的一个简易磁盘清理工具</title>
     <link href="http://fresky.github.io/2012/09/10/freeverything-simple-disk-cleanup-tool-based-on-everything/"/>
     <id>http://fresky.github.io/2012/09/10/freeverything-simple-disk-cleanup-tool-based-on-everything/</id>
@@ -8196,6 +8171,31 @@ w\:* {behavior:url(#default#VML);}
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在浏览器中运行C#</title>
+    <link href="http://fresky.github.io/2012/09/10/run-csharp-in-browser/"/>
+    <id>http://fresky.github.io/2012/09/10/run-csharp-in-browser/</id>
+    <published>2012-09-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.228Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="http://tirania.org/blog/archive/2012/Sep-06.html" target="_blank" rel="noopener">2012 Update: Running C# on the Browser - Miguel de Icaza</a>， 这篇文章介绍了怎么把C#代码编译成javascript。<br><br><br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;http://tirania.org/blog/archive/2012/Sep-06.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;2012 Update: Running C# on the Browser - Miguel
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
   </entry>
   
@@ -8363,29 +8363,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>Visual Studio 2012RC unit test 改进</title>
-    <link href="http://fresky.github.io/2012/08/09/unit-test-improvement-in-visual-stuido-2012/"/>
-    <id>http://fresky.github.io/2012/08/09/unit-test-improvement-in-visual-stuido-2012/</id>
-    <published>2012-08-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.226Z</updated>
-    
-    <content type="html"><![CDATA[<p>Visual Studio 2012 RC在unit test方面做了很多改进，具体见这里：</p>  <p><a title="http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio-2012-rc-what-s-new-in-code-coverage.aspx" href="http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio-2012-rc-what-s-new-in-code-coverage.aspx" target="_blank" rel="noopener">http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio-2012-rc-what-s-new-in-code-coverage.aspx</a></p>  <img src="/images/vs2012unittestcsharp.png"><img src="/images/vs2012unittestcpp.png">]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Visual Studio 2012 RC在unit test方面做了很多改进，具体见这里：&lt;/p&gt;  &lt;p&gt;&lt;a title=&quot;http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio
-      
-    
-    </summary>
-    
-    
-      <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
-    
-  </entry>
-  
-  <entry>
     <title>resharper的convert if to switch太好用了</title>
     <link href="http://fresky.github.io/2012/08/09/convert-if-to-switch-with-resharper/"/>
     <id>http://fresky.github.io/2012/08/09/convert-if-to-switch-with-resharper/</id>
@@ -8406,6 +8383,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Visual Studio 2012RC unit test 改进</title>
+    <link href="http://fresky.github.io/2012/08/09/unit-test-improvement-in-visual-stuido-2012/"/>
+    <id>http://fresky.github.io/2012/08/09/unit-test-improvement-in-visual-stuido-2012/</id>
+    <published>2012-08-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.226Z</updated>
+    
+    <content type="html"><![CDATA[<p>Visual Studio 2012 RC在unit test方面做了很多改进，具体见这里：</p>  <p><a title="http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio-2012-rc-what-s-new-in-code-coverage.aspx" href="http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio-2012-rc-what-s-new-in-code-coverage.aspx" target="_blank" rel="noopener">http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio-2012-rc-what-s-new-in-code-coverage.aspx</a></p>  <img src="/images/vs2012unittestcsharp.png"><img src="/images/vs2012unittestcpp.png">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Visual Studio 2012 RC在unit test方面做了很多改进，具体见这里：&lt;/p&gt;  &lt;p&gt;&lt;a title=&quot;http://blogs.msdn.com/b/visualstudioalm/archive/2012/06/19/visual-studio
+      
+    
+    </summary>
+    
+    
+      <category term="Testing" scheme="http://fresky.github.io/tags/Testing/"/>
     
   </entry>
   
@@ -8527,30 +8527,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>定义Enum的开始和结束，这样就能循环Enum了</title>
-    <link href="http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/"/>
-    <id>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</id>
-    <published>2012-07-16T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.224Z</updated>
-    
-    <content type="html"><![CDATA[<p>示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> ProgrammingLanguage</span><br><span class="line">   &#123;</span><br><span class="line">       Language_First = <span class="number">0</span>,</span><br><span class="line">       CPP = <span class="number">1</span>,</span><br><span class="line">       CSharp = <span class="number">2</span>,</span><br><span class="line">       Java =<span class="number">3</span>,</span><br><span class="line">       Language_Last = <span class="number">4</span>,</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">   &#123;</span><br><span class="line">       <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>       &#123;</span><br><span class="line">          <span class="keyword">for</span> (ProgrammingLanguage i = ProgrammingLanguage.Language_First + <span class="number">1</span>; i &lt; ProgrammingLanguage.Language_Last; i++)</span><br><span class="line">           &#123;</span><br><span class="line">               Console.WriteLine(i);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。&lt;/p&gt;
-&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>在bat中执行sql命令（for sql server）</title>
     <link href="http://fresky.github.io/2012/07/17/run-sql-command-in-bat-file/"/>
     <id>http://fresky.github.io/2012/07/17/run-sql-command-in-bat-file/</id>
@@ -8570,6 +8546,30 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Database" scheme="http://fresky.github.io/tags/Database/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>禁用C#的树的单个节点</title>
+    <link href="http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/"/>
+    <id>http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/</id>
+    <published>2012-07-16T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.224Z</updated>
+    
+    <content type="html"><![CDATA[<p>C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Tree_BeforeSelect</span>(<span class="params"><span class="keyword">object</span> sender, TreeViewCancelEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    e.Cancel = !IsTreeNodeSelectable(e.Node);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。&lt;/p&gt;
+&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;t
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   
@@ -8597,20 +8597,20 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>禁用C#的树的单个节点</title>
-    <link href="http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/"/>
-    <id>http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/</id>
+    <title>定义Enum的开始和结束，这样就能循环Enum了</title>
+    <link href="http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/"/>
+    <id>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</id>
     <published>2012-07-16T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.224Z</updated>
     
-    <content type="html"><![CDATA[<p>C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">Tree_BeforeSelect</span>(<span class="params"><span class="keyword">object</span> sender, TreeViewCancelEventArgs e</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    e.Cancel = !IsTreeNodeSelectable(e.Node);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。</p><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">enum</span> ProgrammingLanguage</span><br><span class="line">   &#123;</span><br><span class="line">       Language_First = <span class="number">0</span>,</span><br><span class="line">       CPP = <span class="number">1</span>,</span><br><span class="line">       CSharp = <span class="number">2</span>,</span><br><span class="line">       Java =<span class="number">3</span>,</span><br><span class="line">       Language_Last = <span class="number">4</span>,</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">   &#123;</span><br><span class="line">       <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function"></span>       &#123;</span><br><span class="line">          <span class="keyword">for</span> (ProgrammingLanguage i = ProgrammingLanguage.Language_First + <span class="number">1</span>; i &lt; ProgrammingLanguage.Language_Last; i++)</span><br><span class="line">           &#123;</span><br><span class="line">               Console.WriteLine(i);</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;C#的tree 控件有Enabled属性，可以用来确定整棵树能不能选。但是如果想只禁用掉某个节点，treenode上就没有Enabled这个属性了。可以用下面的方法来实现。&lt;/p&gt;
-&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;t
+        &lt;p&gt;示例，这样还有个好处就是first=0成为一个不合法的enum，这样可以避免出现忘记初始化。但是要注意enum得顺序递增才能用loop。&lt;/p&gt;
+&lt;figure class=&quot;highlight csharp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
       
     
     </summary>
@@ -8648,6 +8648,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别</title>
+    <link href="http://fresky.github.io/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/"/>
+    <id>http://fresky.github.io/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/</id>
+    <published>2012-07-12T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.223Z</updated>
+    
+    <content type="html"><![CDATA[<p>这里<a href="http://stackoverflow.com/questions/3788605/if-debug-vs-conditionaldebug" target="_blank" rel="noopener">c# - #if DEBUG vs. Conditional(“DEBUG”) - Stack Overflow</a>解释了两者的区别。摘要如下：<br>#if DEBUG: 发生在编译时，release编译出的IL不包含if中的代码<br>[Conditional(“DEBUG”)]: 发生在运行时，releae编译出的IL包含代码，但是不会被执行。<br><blockquote></blockquote></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这里&lt;a href=&quot;http://stackoverflow.com/questions/3788605/if-debug-vs-conditionaldebug&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;c# - #if DEBUG vs. Con
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
     <title>如何把 Visutal studio中的“print-on-breakpoint”消息打印在程序的任何地方</title>
     <link href="http://fresky.github.io/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/"/>
     <id>http://fresky.github.io/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/</id>
@@ -8673,29 +8696,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>C#中 #if DEBUG 和 Conditional(&quot;DEBUG&quot;)的区别</title>
-    <link href="http://fresky.github.io/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/"/>
-    <id>http://fresky.github.io/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/</id>
-    <published>2012-07-12T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.223Z</updated>
-    
-    <content type="html"><![CDATA[<p>这里<a href="http://stackoverflow.com/questions/3788605/if-debug-vs-conditionaldebug" target="_blank" rel="noopener">c# - #if DEBUG vs. Conditional(“DEBUG”) - Stack Overflow</a>解释了两者的区别。摘要如下：<br>#if DEBUG: 发生在编译时，release编译出的IL不包含if中的代码<br>[Conditional(“DEBUG”)]: 发生在运行时，releae编译出的IL包含代码，但是不会被执行。<br><blockquote></blockquote></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;这里&lt;a href=&quot;http://stackoverflow.com/questions/3788605/if-debug-vs-conditionaldebug&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;c# - #if DEBUG vs. Con
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>WPF应用的图标</title>
     <link href="http://fresky.github.io/2012/07/11/why-you-can-not-see-your-wpf-app-icon/"/>
     <id>http://fresky.github.io/2012/07/11/why-you-can-not-see-your-wpf-app-icon/</id>
@@ -8715,6 +8715,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Macro 小总结</title>
+    <link href="http://fresky.github.io/2012/07/10/summary-about-cpp-macro/"/>
+    <id>http://fresky.github.io/2012/07/10/summary-about-cpp-macro/</id>
+    <published>2012-07-09T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.223Z</updated>
+    
+    <content type="html"><![CDATA[<p>如果在C++中使用Macro，要注意：<br>1. parameter要加括号： #define ADD(x,y) ((x)+(y))<br>2. result要加括号： #define ADD(x,y) ((x)+(y))<br>3. 多行要加花括号： #define INCREASE(a, b) {++(a);++(b);}<br><br>这里有个例子：<a href="https://github.com/fresky/MacroExample" target="_blank" rel="noopener">https://github.com/fresky/MacroExample</a><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;如果在C++中使用Macro，要注意：&lt;br&gt;1. parameter要加括号： #define ADD(x,y) ((x)+(y))&lt;br&gt;2. result要加括号： #define ADD(x,y) ((x)+(y))&lt;br&gt;3. 多行要加花括号： #define I
+      
+    
+    </summary>
+    
+    
+      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -8763,29 +8786,6 @@ w\:* {behavior:url(#default#VML);}
       <category term="Tool" scheme="http://fresky.github.io/tags/Tool/"/>
     
       <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Macro 小总结</title>
-    <link href="http://fresky.github.io/2012/07/10/summary-about-cpp-macro/"/>
-    <id>http://fresky.github.io/2012/07/10/summary-about-cpp-macro/</id>
-    <published>2012-07-09T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.223Z</updated>
-    
-    <content type="html"><![CDATA[<p>如果在C++中使用Macro，要注意：<br>1. parameter要加括号： #define ADD(x,y) ((x)+(y))<br>2. result要加括号： #define ADD(x,y) ((x)+(y))<br>3. 多行要加花括号： #define INCREASE(a, b) {++(a);++(b);}<br><br>这里有个例子：<a href="https://github.com/fresky/MacroExample" target="_blank" rel="noopener">https://github.com/fresky/MacroExample</a><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;如果在C++中使用Macro，要注意：&lt;br&gt;1. parameter要加括号： #define ADD(x,y) ((x)+(y))&lt;br&gt;2. result要加括号： #define ADD(x,y) ((x)+(y))&lt;br&gt;3. 多行要加花括号： #define I
-      
-    
-    </summary>
-    
-    
-      <category term="CPP" scheme="http://fresky.github.io/tags/CPP/"/>
     
   </entry>
   
@@ -9050,29 +9050,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>windows xp unlock 很慢</title>
-    <link href="http://fresky.github.io/2011/01/16/windows-xp-take-too-long-to-unlock/"/>
-    <id>http://fresky.github.io/2011/01/16/windows-xp-take-too-long-to-unlock/</id>
-    <published>2011-01-15T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.219Z</updated>
-    
-    <content type="html"><![CDATA[<p>前段时间遇到了一个问题，就是我的XP每次锁屏后解锁都特别的慢，需要等几分钟才能进来，很苦恼。<br><br>后来终于找到了元凶，是因为我装了<a href="http://www.netopia.com/software/products/tb2/" target="_blank" rel="noopener">Timbuktu</a>，但是把Tb2 Launch服务关了，如果开了，就又能瞬间登录了。<br><br>如果装了Timbuktu，要确定把Tb2 Launch服务打开。<br><blockquote></blockquote><br><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;前段时间遇到了一个问题，就是我的XP每次锁屏后解锁都特别的慢，需要等几分钟才能进来，很苦恼。&lt;br&gt;&lt;br&gt;后来终于找到了元凶，是因为我装了&lt;a href=&quot;http://www.netopia.com/software/products/tb2/&quot; target=&quot;_bl
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
-    
-  </entry>
-  
-  <entry>
     <title>iphone原来只能有11屏的应用</title>
     <link href="http://fresky.github.io/2011/01/16/you-can-only-have-11-screen-apps-in-ipone1/"/>
     <id>http://fresky.github.io/2011/01/16/you-can-only-have-11-screen-apps-in-ipone1/</id>
@@ -9096,25 +9073,25 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>http的url长度限制</title>
-    <link href="http://fresky.github.io/2011/01/11/length-limit-of-http-url/"/>
-    <id>http://fresky.github.io/2011/01/11/length-limit-of-http-url/</id>
-    <published>2011-01-10T16:00:00.000Z</published>
+    <title>windows xp unlock 很慢</title>
+    <link href="http://fresky.github.io/2011/01/16/windows-xp-take-too-long-to-unlock/"/>
+    <id>http://fresky.github.io/2011/01/16/windows-xp-take-too-long-to-unlock/</id>
+    <published>2011-01-15T16:00:00.000Z</published>
     <updated>2019-12-20T08:29:07.219Z</updated>
     
-    <content type="html"><![CDATA[<p>http的url长度是有限制的，<a href="http://www.boutell.com/newfaq/misc/urllength.html" target="_blank" rel="noopener">WWW FAQs: What is the maximum length of a URL?</a><br>所以不能用get的方式时在url里面放太多的东西，举个简单的例子。<br>如果一个asp.net的页面中使用了treeview，并且treeview的enableviewstate是true（默认情况）。但是如果你不小心在form中设置成了get时，你会发现只添加6、7个节点就会出错（IE，不同浏览器的长度限制不一样），页面不能访问，因为如果用get，viewstate会放到http的url中，会超出url的最长限制。</p>]]></content>
+    <content type="html"><![CDATA[<p>前段时间遇到了一个问题，就是我的XP每次锁屏后解锁都特别的慢，需要等几分钟才能进来，很苦恼。<br><br>后来终于找到了元凶，是因为我装了<a href="http://www.netopia.com/software/products/tb2/" target="_blank" rel="noopener">Timbuktu</a>，但是把Tb2 Launch服务关了，如果开了，就又能瞬间登录了。<br><br>如果装了Timbuktu，要确定把Tb2 Launch服务打开。<br><blockquote></blockquote><br><br></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;http的url长度是有限制的，&lt;a href=&quot;http://www.boutell.com/newfaq/misc/urllength.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;WWW FAQs: What is the maximum 
+        &lt;p&gt;前段时间遇到了一个问题，就是我的XP每次锁屏后解锁都特别的慢，需要等几分钟才能进来，很苦恼。&lt;br&gt;&lt;br&gt;后来终于找到了元凶，是因为我装了&lt;a href=&quot;http://www.netopia.com/software/products/tb2/&quot; target=&quot;_bl
       
     
     </summary>
     
     
-      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -9161,6 +9138,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>http的url长度限制</title>
+    <link href="http://fresky.github.io/2011/01/11/length-limit-of-http-url/"/>
+    <id>http://fresky.github.io/2011/01/11/length-limit-of-http-url/</id>
+    <published>2011-01-10T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.219Z</updated>
+    
+    <content type="html"><![CDATA[<p>http的url长度是有限制的，<a href="http://www.boutell.com/newfaq/misc/urllength.html" target="_blank" rel="noopener">WWW FAQs: What is the maximum length of a URL?</a><br>所以不能用get的方式时在url里面放太多的东西，举个简单的例子。<br>如果一个asp.net的页面中使用了treeview，并且treeview的enableviewstate是true（默认情况）。但是如果你不小心在form中设置成了get时，你会发现只添加6、7个节点就会出错（IE，不同浏览器的长度限制不一样），页面不能访问，因为如果用get，viewstate会放到http的url中，会超出url的最长限制。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;http的url长度是有限制的，&lt;a href=&quot;http://www.boutell.com/newfaq/misc/urllength.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;WWW FAQs: What is the maximum 
+      
+    
+    </summary>
+    
+    
+      <category term="Html" scheme="http://fresky.github.io/tags/Html/"/>
     
   </entry>
   
@@ -9235,6 +9235,29 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
+    <title>firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法</title>
+    <link href="http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/"/>
+    <id>http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/</id>
+    <published>2010-11-07T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.217Z</updated>
+    
+    <content type="html"><![CDATA[<p>前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。<br>详细请看<a href="https://support.mozilla.com/en-US/questions/763190#answer-115496" target="_blank" rel="noopener">Some parts of GMAIL no longer work after a recent update</a> 和<a href="http://kb.mozillazine.org/Dom.storage.enabled" target="_blank" rel="noopener"> Dom.storage.enabled - MozillaZine Knowledge Base</a> 。<br><br></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。&lt;br&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
+    
+  </entry>
+  
+  <entry>
     <title>定制C# combobox的下拉框</title>
     <link href="http://fresky.github.io/2010/11/08/customize-csharp-dropdown-list/"/>
     <id>http://fresky.github.io/2010/11/08/customize-csharp-dropdown-list/</id>
@@ -9258,29 +9281,6 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>firefox 3.6.12 不能打开gmail的buzz，setting和chat 解决办法</title>
-    <link href="http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/"/>
-    <id>http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/</id>
-    <published>2010-11-07T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.217Z</updated>
-    
-    <content type="html"><![CDATA[<p>前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。<br>详细请看<a href="https://support.mozilla.com/en-US/questions/763190#answer-115496" target="_blank" rel="noopener">Some parts of GMAIL no longer work after a recent update</a> 和<a href="http://kb.mozillazine.org/Dom.storage.enabled" target="_blank" rel="noopener"> Dom.storage.enabled - MozillaZine Knowledge Base</a> 。<br><br></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;前段时间升级firefox到3.6.12后发现不能打开gmail里面的buzz，setting和chat了，今天网上搜了搜，找到了解决办法。在地址栏输入about:config进入firefox设置，找到Dom.storage.enabled，设置成true就行了。&lt;br&gt;
-      
-    
-    </summary>
-    
-    
-      <category term="Other" scheme="http://fresky.github.io/tags/Other/"/>
     
   </entry>
   
@@ -9424,52 +9424,6 @@ w\:* {behavior:url(#default#VML);}
   </entry>
   
   <entry>
-    <title>2009年底泰国游总结</title>
-    <link href="http://fresky.github.io/2010/10/09/thailand-travel/"/>
-    <id>http://fresky.github.io/2010/10/09/thailand-travel/</id>
-    <published>2010-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.215Z</updated>
-    
-    <content type="html"><![CDATA[<p>圣诞到元旦这段时间和老婆去泰国玩了一趟，下面做个简单的总结，给以后要去玩的同学们一个参考。</p><br><p><strong>机票篇：</strong></p><br><blockquote>订机票应该还是越早越好，而且避开高峰期能订到便宜的机票，我们动手有点晚，而且赶上圣诞到元旦这个假期，相对来说机票不算便宜。订机票前推荐到水木新开的flyers版学习学习，那里有很多大牛&hellip;&hellip;<br><br><p>北京到曼谷的机票是从携程上订的，当时看了很多网站，还是携程最便宜，怕太晚定不到，就定了斯里兰卡航空的，其实过了2天就有泰航的更便宜的了，而且泰航还是星空联盟的。泰国国内的航班基本就是到各个航空公司的官网上订的了，找时间合适，价格便宜的。</p><br>北京-曼谷：斯里兰卡航空<br><br><p>曼谷-清迈：Nok air</p><br>清迈-普吉：亚航<br><br><p>普吉-曼谷：曼谷航空</p><br>曼谷-北京：斯里兰卡航空<br><br><p>Tips：</p><br>1. 不是很确定国际往返是不是一定比单程便宜，如果不是的话，可以不买往返票，比如我们的行程，最后一天普吉飞曼谷纯属浪费时间和金钱，直接普吉飞北京就好了。<br><br><p>2. 曼谷航空只要有boarding pass 就能进休息室，免费的饮料点心，但是注意，飞机上的饭巨难吃，所以上飞机前得多吃点。</p><br>3. 曼谷有2个机场，别走错了，国际航班一般在新机场BKK，国内的廉航比如Nok air在老机场DMK。<br><br><p>4. BKK有免费的无线网络，可以找工作人员要用用户名和密码，提供护照即可。</p><br>5. 机场如果看到有免费的电话卡就领，我领了几张，卡里有5bht，打回国内只要1bht/min，通话质量也不错，而且在7-11可以买充值卡，最小面值50bht，我觉得还行，7-11泰国到处都是。<br></blockquote><br><p><strong>酒店篇：</strong></p><br><blockquote>酒店全部是在agoda上订的，也有很多订酒店的网站，可以比较一下，觉得这个网站上的价格还算合适，每个地方都是只定了1天，因为不知道酒店住的舒服与否，如果不合适可以再调换。但是注意，在agoda上拿到的价格在酒店可能拿不到，解决办法就是找个网吧再从网上订：）<br><br><p>这次订酒店我办了件傻事，在普吉的订的日期写错了，晚了1个月&hellip;&hellip;差点没地方住，还整的没了心情，再加上第二天一早6点就要出海，就没去看沙滩的Countdown to New Year 2010。</p><br>曼谷我们第一天住在考山路，有机场大巴直接到这里，可以看看考山路夜晚的繁荣景象，而且第二天逛大皇宫之类的也比较近，第二天搬到了市中心附近，便于老婆逛街，靠近轻轨BTS，交通也不错，后人可以参考：）<br><br><p>清迈比较小，随便住吧，我们租了个摩托车，去哪里都挺方便的，呵呵，第一次开摩托车。其实开摩托车不太安全，如果要开的话，一定要小心。</p><br>普吉我们住在最热闹的巴东海滩，但是我和老婆都不喜欢这里，全是酒吧，车水马龙，太闹了，后来去卡塔和卡隆海滩玩的时候觉得那里不错，比较安静，人也相对来说少一些。<br><br><p>Tips：</p><br>1. 订酒店要上酒店网站，或者打电话问酒店有没有机场免费接送，如果有的话一定要用，可以省很多事，而且省钱：）<br><br><p>2. 酒店一定不要把贵重物品放在房间里，我们有惨痛的教训，放在包里的一些人民币不见了&hellip;&hellip;</p><br>3. 酒店通常会有travel agent，可以问问，不过泰国满大街都是travel agent，价钱好像都差不多。<br></blockquote><br><p><strong>消费篇：</strong></p><br><blockquote>泰国的ATM基本都支持银联，所以不用换泰国泰铢，到时候自己去银联上取钱就行了。如果能办张全球取款不收手续费的平安银行的借记卡当然好，北京好像没有平安银行，我们出发前办了张华夏银行的借记卡，每天全球第一比免收手续费，每天取一次，也够用了。<br><br><p>先写这么多吧，以后想起什么来再补上：）</p><br><br></blockquote><br><p><br> <br><br></p><p><br><a href="http://www.blogabond.com/Promo/GetABlogMap.aspx" target="_blank" rel="noopener"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25489" border="0" alt width="450" height="300"></a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;圣诞到元旦这段时间和老婆去泰国玩了一趟，下面做个简单的总结，给以后要去玩的同学们一个参考。&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;机票篇：&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;blockquote&gt;订机票应该还是越早越好，而且避开高峰期能订到便宜的机票，我们动手有点晚，而且赶上
-      
-    
-    </summary>
-    
-    
-      <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>ASP .NET readonly texbox 后台不能读取问题的解决办法</title>
-    <link href="http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/"/>
-    <id>http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/</id>
-    <published>2010-10-08T16:00:00.000Z</published>
-    <updated>2019-12-20T08:29:07.215Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近在做一些ASP .NET和silverlight的项目，把遇到的一些问题记在这里吧：）<br><br>如果需要有一个textbox只能接受特定格式的东西，一个做法是把这个textbox做成readonly的，然后通过别的方式，比如javascript动态的生成需要填充的东西，放进这个textbox里面。但是在ASP的程序中postback到后台后会发现拿不到这个textbox的值，原因在msdn里做了如下解释。<br><br></p><blockquote><p>The Text value of a TextBox control with the ReadOnly property set to true<br>is sent to the server when a postback occurs, but the server does no<br>processing for a read-only text box. This prevents a malicious user from<br>changing a Text value that is read-only. The value of the Text property is preserved in the view state between postbacks unless modified by server-side code.</p></blockquote><p>一个简单的解决办法是，在code behand中设置read only 属性，示例代码如下：<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textboxReadonly.Attributes.Add(<span class="string">"readonly"</span>, <span class="string">"readonly"</span>);</span><br></pre></td></tr></table></figure></p><p>这样的话就可以了。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;最近在做一些ASP .NET和silverlight的项目，把遇到的一些问题记在这里吧：）&lt;br&gt;&lt;br&gt;如果需要有一个textbox只能接受特定格式的东西，一个做法是把这个textbox做成readonly的，然后通过别的方式，比如javascript动态的生成需要填充的
-      
-    
-    </summary>
-    
-    
-      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
-    
-  </entry>
-  
-  <entry>
     <title>silverlight中的richtextbox和rtf格式的转换</title>
     <link href="http://fresky.github.io/2010/10/09/how-to-convert-rtf-to-silverlight-rightextbox/"/>
     <id>http://fresky.github.io/2010/10/09/how-to-convert-rtf-to-silverlight-rightextbox/</id>
@@ -9489,6 +9443,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2009年底泰国游总结</title>
+    <link href="http://fresky.github.io/2010/10/09/thailand-travel/"/>
+    <id>http://fresky.github.io/2010/10/09/thailand-travel/</id>
+    <published>2010-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.215Z</updated>
+    
+    <content type="html"><![CDATA[<p>圣诞到元旦这段时间和老婆去泰国玩了一趟，下面做个简单的总结，给以后要去玩的同学们一个参考。</p><br><p><strong>机票篇：</strong></p><br><blockquote>订机票应该还是越早越好，而且避开高峰期能订到便宜的机票，我们动手有点晚，而且赶上圣诞到元旦这个假期，相对来说机票不算便宜。订机票前推荐到水木新开的flyers版学习学习，那里有很多大牛&hellip;&hellip;<br><br><p>北京到曼谷的机票是从携程上订的，当时看了很多网站，还是携程最便宜，怕太晚定不到，就定了斯里兰卡航空的，其实过了2天就有泰航的更便宜的了，而且泰航还是星空联盟的。泰国国内的航班基本就是到各个航空公司的官网上订的了，找时间合适，价格便宜的。</p><br>北京-曼谷：斯里兰卡航空<br><br><p>曼谷-清迈：Nok air</p><br>清迈-普吉：亚航<br><br><p>普吉-曼谷：曼谷航空</p><br>曼谷-北京：斯里兰卡航空<br><br><p>Tips：</p><br>1. 不是很确定国际往返是不是一定比单程便宜，如果不是的话，可以不买往返票，比如我们的行程，最后一天普吉飞曼谷纯属浪费时间和金钱，直接普吉飞北京就好了。<br><br><p>2. 曼谷航空只要有boarding pass 就能进休息室，免费的饮料点心，但是注意，飞机上的饭巨难吃，所以上飞机前得多吃点。</p><br>3. 曼谷有2个机场，别走错了，国际航班一般在新机场BKK，国内的廉航比如Nok air在老机场DMK。<br><br><p>4. BKK有免费的无线网络，可以找工作人员要用用户名和密码，提供护照即可。</p><br>5. 机场如果看到有免费的电话卡就领，我领了几张，卡里有5bht，打回国内只要1bht/min，通话质量也不错，而且在7-11可以买充值卡，最小面值50bht，我觉得还行，7-11泰国到处都是。<br></blockquote><br><p><strong>酒店篇：</strong></p><br><blockquote>酒店全部是在agoda上订的，也有很多订酒店的网站，可以比较一下，觉得这个网站上的价格还算合适，每个地方都是只定了1天，因为不知道酒店住的舒服与否，如果不合适可以再调换。但是注意，在agoda上拿到的价格在酒店可能拿不到，解决办法就是找个网吧再从网上订：）<br><br><p>这次订酒店我办了件傻事，在普吉的订的日期写错了，晚了1个月&hellip;&hellip;差点没地方住，还整的没了心情，再加上第二天一早6点就要出海，就没去看沙滩的Countdown to New Year 2010。</p><br>曼谷我们第一天住在考山路，有机场大巴直接到这里，可以看看考山路夜晚的繁荣景象，而且第二天逛大皇宫之类的也比较近，第二天搬到了市中心附近，便于老婆逛街，靠近轻轨BTS，交通也不错，后人可以参考：）<br><br><p>清迈比较小，随便住吧，我们租了个摩托车，去哪里都挺方便的，呵呵，第一次开摩托车。其实开摩托车不太安全，如果要开的话，一定要小心。</p><br>普吉我们住在最热闹的巴东海滩，但是我和老婆都不喜欢这里，全是酒吧，车水马龙，太闹了，后来去卡塔和卡隆海滩玩的时候觉得那里不错，比较安静，人也相对来说少一些。<br><br><p>Tips：</p><br>1. 订酒店要上酒店网站，或者打电话问酒店有没有机场免费接送，如果有的话一定要用，可以省很多事，而且省钱：）<br><br><p>2. 酒店一定不要把贵重物品放在房间里，我们有惨痛的教训，放在包里的一些人民币不见了&hellip;&hellip;</p><br>3. 酒店通常会有travel agent，可以问问，不过泰国满大街都是travel agent，价钱好像都差不多。<br></blockquote><br><p><strong>消费篇：</strong></p><br><blockquote>泰国的ATM基本都支持银联，所以不用换泰国泰铢，到时候自己去银联上取钱就行了。如果能办张全球取款不收手续费的平安银行的借记卡当然好，北京好像没有平安银行，我们出发前办了张华夏银行的借记卡，每天全球第一比免收手续费，每天取一次，也够用了。<br><br><p>先写这么多吧，以后想起什么来再补上：）</p><br><br></blockquote><br><p><br> <br><br></p><p><br><a href="http://www.blogabond.com/Promo/GetABlogMap.aspx" target="_blank" rel="noopener"><img id="imgBlogabondLogo" style="position: absolute; margin: 2px;" src="http://img.blogabond.com/img2/logo_25.png" border="0" alt><img src="http://www.blogabond.com/BlogMapImage.aspx?tripID=25489" border="0" alt width="450" height="300"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;圣诞到元旦这段时间和老婆去泰国玩了一趟，下面做个简单的总结，给以后要去玩的同学们一个参考。&lt;/p&gt;&lt;br&gt;&lt;p&gt;&lt;strong&gt;机票篇：&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;&lt;blockquote&gt;订机票应该还是越早越好，而且避开高峰期能订到便宜的机票，我们动手有点晚，而且赶上
+      
+    
+    </summary>
+    
+    
+      <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
     
   </entry>
   
@@ -9535,6 +9512,29 @@ w\:* {behavior:url(#default#VML);}
     
     
       <category term="Life" scheme="http://fresky.github.io/tags/Life/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ASP .NET readonly texbox 后台不能读取问题的解决办法</title>
+    <link href="http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/"/>
+    <id>http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/</id>
+    <published>2010-10-08T16:00:00.000Z</published>
+    <updated>2019-12-20T08:29:07.215Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在做一些ASP .NET和silverlight的项目，把遇到的一些问题记在这里吧：）<br><br>如果需要有一个textbox只能接受特定格式的东西，一个做法是把这个textbox做成readonly的，然后通过别的方式，比如javascript动态的生成需要填充的东西，放进这个textbox里面。但是在ASP的程序中postback到后台后会发现拿不到这个textbox的值，原因在msdn里做了如下解释。<br><br></p><blockquote><p>The Text value of a TextBox control with the ReadOnly property set to true<br>is sent to the server when a postback occurs, but the server does no<br>processing for a read-only text box. This prevents a malicious user from<br>changing a Text value that is read-only. The value of the Text property is preserved in the view state between postbacks unless modified by server-side code.</p></blockquote><p>一个简单的解决办法是，在code behand中设置read only 属性，示例代码如下：<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">textboxReadonly.Attributes.Add(<span class="string">"readonly"</span>, <span class="string">"readonly"</span>);</span><br></pre></td></tr></table></figure></p><p>这样的话就可以了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;最近在做一些ASP .NET和silverlight的项目，把遇到的一些问题记在这里吧：）&lt;br&gt;&lt;br&gt;如果需要有一个textbox只能接受特定格式的东西，一个做法是把这个textbox做成readonly的，然后通过别的方式，比如javascript动态的生成需要填充的
+      
+    
+    </summary>
+    
+    
+      <category term="CSharp" scheme="http://fresky.github.io/tags/CSharp/"/>
     
   </entry>
   

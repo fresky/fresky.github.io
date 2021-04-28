@@ -84,12 +84,34 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/12/10/the-story-of-nokia-meego/" title="Nokia Meego的故事（转载）" itemprop="url">
+    <a href="/2012/12/10/top-down-bottom-up-in-programming-languages/" title="从上而下和从下而上的编程语言" itemprop="url">
   
-    <h1 itemprop="name">Nokia Meego的故事（转载）</h1>
+    <h1 itemprop="name">从上而下和从下而上的编程语言</h1>
     
      
-           <p itemprop="description" >The story of Nokia MeeGo讲述了Nokia Meego的故事，很长，但是很有趣，有兴趣的可以看看。</p>
+           <p itemprop="description" >Top down, bottom up中引用Don’t fear the Monad，提了一个有趣的说法，编程语言分为2类：Bottom-up，从机器开始，逐步抽象，比如C#。Top-down，从数学开始，具体到机器，比如Haskell。而程序员则习惯用从何语言相反的方向进行编程</p>
+        
+    
+    <time datetime="2012-12-09T16:00:00.000Z" itemprop="datePublished">Dec 10 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2012/12/10/how-cpp-find-overload-functions/" title="C++怎么寻找重载函数" itemprop="url">
+  
+    <h1 itemprop="name">C++怎么寻找重载函数</h1>
+    
+     
+           <p itemprop="description" >ACCU :: Overload Resolution - Selecting the Function这篇文章详细介绍了C++中寻找重载函数的方法。下面给个小例子吧，C++的重载有时候会违背你的直觉。  考虑如下代码：  
+
+1234567891011121314151617c</p>
         
     
     <time datetime="2012-12-09T16:00:00.000Z" itemprop="datePublished">Dec 10 2012</time>
@@ -126,12 +148,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/12/08/windows-debugging-tools/" title="Windows调试工具箱" itemprop="url">
+    <a href="/2012/12/08/free-csharp-code-analysis-tool-nitriq/" title="推荐一个免费的.NET代码分析工具Nitriq" itemprop="url">
   
-    <h1 itemprop="name">Windows调试工具箱</h1>
+    <h1 itemprop="name">推荐一个免费的.NET代码分析工具Nitriq</h1>
     
      
-           <p itemprop="description" >Tools for Your Debugging Toolbox是windows下的调试工具大集合，包含下面这些工具的简介和下载地址。-        Performance Monitor - PAL-        Process Monitor-        Proces</p>
+           <p itemprop="description" >Nitriq Code Analysis for .Net是一个免费的.NET代码分析工具，有两个版本，一个UI版，适合开发人员使用，一个命令行版，适合自动编译系统使用。我试了以下，还是很方便的，内建了很多规则，如果违反了很清楚的就能看出来。使用LINQ语句查询分析结果，可以很容</p>
         
     
     <time datetime="2012-12-07T16:00:00.000Z" itemprop="datePublished">Dec 8 2012</time>
@@ -146,12 +168,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/12/08/free-csharp-code-analysis-tool-nitriq/" title="推荐一个免费的.NET代码分析工具Nitriq" itemprop="url">
+    <a href="/2012/12/08/windows-debugging-tools/" title="Windows调试工具箱" itemprop="url">
   
-    <h1 itemprop="name">推荐一个免费的.NET代码分析工具Nitriq</h1>
+    <h1 itemprop="name">Windows调试工具箱</h1>
     
      
-           <p itemprop="description" >Nitriq Code Analysis for .Net是一个免费的.NET代码分析工具，有两个版本，一个UI版，适合开发人员使用，一个命令行版，适合自动编译系统使用。我试了以下，还是很方便的，内建了很多规则，如果违反了很清楚的就能看出来。使用LINQ语句查询分析结果，可以很容</p>
+           <p itemprop="description" >Tools for Your Debugging Toolbox是windows下的调试工具大集合，包含下面这些工具的简介和下载地址。-        Performance Monitor - PAL-        Process Monitor-        Proces</p>
         
     
     <time datetime="2012-12-07T16:00:00.000Z" itemprop="datePublished">Dec 8 2012</time>
@@ -206,6 +228,28 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2012/12/04/csharp-exploratory-testing-tool-pex/" title=".NET自动exploratory测试工具Pex" itemprop="url">
+  
+    <h1 itemprop="name">.NET自动exploratory测试工具Pex</h1>
+    
+     
+           <p itemprop="description" >Pex还是很好用的，安装之后可以在visual studio2008和2010中直接用，也能用命令行。  我写了下面这个很简单的小程序：  
+
+123456789[PexClass]   public class Calculator   &amp;#123;      [PexMeth</p>
+        
+    
+    <time datetime="2012-12-03T16:00:00.000Z" itemprop="datePublished">Dec 4 2012</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2012/12/04/stackexchange-open-source-projects/" title="有时间了要研究一下Stack Exchange的开源项目" itemprop="url">
   
     <h1 itemprop="name">有时间了要研究一下Stack Exchange的开源项目</h1>
@@ -232,28 +276,6 @@
     
      
            <p itemprop="description" >C#中可以用sealed关键字，但是，C++中怎么阻止一个类被继承呢？  方法就是把这个类的构造函数声明成private的，这样就不能被继承了。当然更好的办法是用非技术的手段了：）  方法1： 构造函数private，提供一个Factory方法，缺点就是使用者必须用这个facto</p>
-        
-    
-    <time datetime="2012-12-03T16:00:00.000Z" itemprop="datePublished">Dec 4 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2012/12/04/csharp-exploratory-testing-tool-pex/" title=".NET自动exploratory测试工具Pex" itemprop="url">
-  
-    <h1 itemprop="name">.NET自动exploratory测试工具Pex</h1>
-    
-     
-           <p itemprop="description" >Pex还是很好用的，安装之后可以在visual studio2008和2010中直接用，也能用命令行。  我写了下面这个很简单的小程序：  
-
-123456789[PexClass]   public class Calculator   &amp;#123;      [PexMeth</p>
         
     
     <time datetime="2012-12-03T16:00:00.000Z" itemprop="datePublished">Dec 4 2012</time>
@@ -373,12 +395,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/11/26/8-things-you-probably-didnt-know-about-csharp/" title="C#中你可能不知道的8件事（zz）" itemprop="url">
+    <a href="/2012/11/26/how-to-check-dot-net-framework-version-in-registry/" title="通过注册表查看 .NET Framework的版本信息" itemprop="url">
   
-    <h1 itemprop="name">C#中你可能不知道的8件事（zz）</h1>
+    <h1 itemprop="name">通过注册表查看 .NET Framework的版本信息</h1>
     
      
-           <p itemprop="description" >8 things you probably didn’t know about C# » DamienG1. Indexers can use params2. Strings defined multiple times in your code are folded into</p>
+           <p itemprop="description" >这里详细说明了怎么通过注册表查看 .NET Framework的版本信息。.NET FrameworkService Pack LevelRegistry Key NameValue4 - ClientOriginal ReleaseHKEY_LOCAL_MACHINE\SOFT</p>
         
     
     <time datetime="2012-11-25T16:00:00.000Z" itemprop="datePublished">Nov 26 2012</time>
@@ -393,12 +415,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/11/26/how-to-check-dot-net-framework-version-in-registry/" title="通过注册表查看 .NET Framework的版本信息" itemprop="url">
+    <a href="/2012/11/26/8-things-you-probably-didnt-know-about-csharp/" title="C#中你可能不知道的8件事（zz）" itemprop="url">
   
-    <h1 itemprop="name">通过注册表查看 .NET Framework的版本信息</h1>
+    <h1 itemprop="name">C#中你可能不知道的8件事（zz）</h1>
     
      
-           <p itemprop="description" >这里详细说明了怎么通过注册表查看 .NET Framework的版本信息。.NET FrameworkService Pack LevelRegistry Key NameValue4 - ClientOriginal ReleaseHKEY_LOCAL_MACHINE\SOFT</p>
+           <p itemprop="description" >8 things you probably didn’t know about C# » DamienG1. Indexers can use params2. Strings defined multiple times in your code are folded into</p>
         
     
     <time datetime="2012-11-25T16:00:00.000Z" itemprop="datePublished">Nov 26 2012</time>
@@ -455,34 +477,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2012/11/22/rx-is-open-source/" title="有空应该看看Rx是怎么玩的" itemprop="url">
+    <a href="/2012/11/22/prezi-cool-presentation-website/" title="Prezi——一个超cool的presentation网站" itemprop="url">
   
-    <h1 itemprop="name">有空应该看看Rx是怎么玩的</h1>
+    <h1 itemprop="name">Prezi——一个超cool的presentation网站</h1>
     
      
-           <p itemprop="description" >Reactive Extensions (Rx) is now Open Source - Scott Hanselman</p>
-        
-    
-    <time datetime="2012-11-21T16:00:00.000Z" itemprop="datePublished">Nov 22 2012</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2012/11/22/idlemonitor-monitor-user-away-application-in-csharp/" title="（C#）IdleMonitor 实现监测用户是否离开应用程序" itemprop="url">
-  
-    <h1 itemprop="name">（C#）IdleMonitor 实现监测用户是否离开应用程序</h1>
-    
-     
-           <p itemprop="description" >写了一个C#的小程序，用来监测用户是否离开应用程序，就像MSN，QQ的离开功能一样。代码在github上。简单接介绍一下：  1. IdleMonitor abstract class  
-
-12345678910public abstract class IdleMonitor</p>
+           <p itemprop="description" >Prezi - Ideas matter.</p>
         
     
     <time datetime="2012-11-21T16:00:00.000Z" itemprop="datePublished">Nov 22 2012</time>
@@ -512,7 +512,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 411</p>
+  <p class="asidetitle">Total Posts: 412</p>
 </div>
 
 
@@ -522,6 +522,10 @@
     <p class="asidetitle">Recent Posts</p>
     <div class="widget">
       <ul>
+        
+          <li>
+            * <a href="/2021/04/28/how-to-get-feedback/">如何寻求别人的反馈</a>
+          </li>
         
           <li>
             * <a href="/2021/04/26/time-management-for-manager/">技术经理怎么更好的管理自己的时间</a>
@@ -537,10 +541,6 @@
         
           <li>
             * <a href="/2020/06/19/common-azure-paas/">10个常见的微软Azure云的PaaS服务</a>
-          </li>
-        
-          <li>
-            * <a href="/2020/05/22/pricing-psychology/">定价心理学</a>
           </li>
         
       </ul>
@@ -579,11 +579,11 @@
 			
 		
 			
-				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
 			
 		
 			
@@ -595,7 +595,7 @@
 			
 		
 			
-				<li><a href="/tags/Manage/" title="Manage">Manage<sup>6</sup></a></li>
+				<li><a href="/tags/Manage/" title="Manage">Manage<sup>7</sup></a></li>
 			
 		
 			
@@ -615,11 +615,11 @@
 			
 		
 			
-				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
 			
 		
 			

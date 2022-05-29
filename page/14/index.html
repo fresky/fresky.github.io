@@ -124,14 +124,14 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/02/19/static-constructor-surprise-in-csharp/" title="C#的继承类中static constructor的调用问题" itemprop="url">
+    <a href="/2013/02/19/exception-in-csharp-static-constructor/" title="C#的static constructor抛了异常会怎么处理？" itemprop="url">
   
-    <h1 itemprop="name">C#的继承类中static constructor的调用问题</h1>
+    <h1 itemprop="name">C#的static constructor抛了异常会怎么处理？</h1>
     
      
-           <p itemprop="description" >Eric Lippert写了一系列的关于static constructor的文章，1，2，3，4，可以读读对static constructor有更好的理解。  转一个其中的例子吧，假设有如下代码。  
+           <p itemprop="description" >stackoverflow上举了这个例子说明在C#中，如果static constructor只会被调用一次，即使抛了异常，也不会重试调用。如果抛了异常，那么在这个appdomain里面，这个类就不能用了。  示例代码：  
 
-123456789101112131415161718192021usi</p>
+12345678910111213141516171</p>
         
     
     <time datetime="2013-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2013</time>
@@ -146,14 +146,14 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/02/19/exception-in-csharp-static-constructor/" title="C#的static constructor抛了异常会怎么处理？" itemprop="url">
+    <a href="/2013/02/19/static-constructor-surprise-in-csharp/" title="C#的继承类中static constructor的调用问题" itemprop="url">
   
-    <h1 itemprop="name">C#的static constructor抛了异常会怎么处理？</h1>
+    <h1 itemprop="name">C#的继承类中static constructor的调用问题</h1>
     
      
-           <p itemprop="description" >stackoverflow上举了这个例子说明在C#中，如果static constructor只会被调用一次，即使抛了异常，也不会重试调用。如果抛了异常，那么在这个appdomain里面，这个类就不能用了。  示例代码：  
+           <p itemprop="description" >Eric Lippert写了一系列的关于static constructor的文章，1，2，3，4，可以读读对static constructor有更好的理解。  转一个其中的例子吧，假设有如下代码。  
 
-12345678910111213141516171</p>
+123456789101112131415161718192021usi</p>
         
     
     <time datetime="2013-02-18T16:00:00.000Z" itemprop="datePublished">Feb 19 2013</time>
@@ -248,14 +248,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/02/05/deadlock-caused-by-csharp-static-constructor/" title="C#中静态构造函数导致的一个deadlock" itemprop="url">
+    <a href="/2013/02/05/online-cpp-compiler/" title="在线C++编译器" itemprop="url">
   
-    <h1 itemprop="name">C#中静态构造函数导致的一个deadlock</h1>
+    <h1 itemprop="name">在线C++编译器</h1>
     
      
-           <p itemprop="description" >Eric Lipper的这篇博客举了一个C#中静态构造函数导致的deadlock的例子，很有意思。代码如下：
-
-123456789101112class C&amp;#123;  static C()   &amp;#123;    // Let&#39;s run the initialization</p>
+           <p itemprop="description" >在线C++编译器列举了如下网站：LiveWorkspace&amp;nbsp;(Clang 3.2, GCC 4.6.3 - 4.7.2)gcc.godbolt.org&amp;nbsp;(Clang 3.0, GCC 4.5.3 - 4.8.0 prerelease, Intel ICC 13</p>
         
     
     <time datetime="2013-02-04T16:00:00.000Z" itemprop="datePublished">Feb 5 2013</time>
@@ -270,12 +268,14 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/02/05/online-cpp-compiler/" title="在线C++编译器" itemprop="url">
+    <a href="/2013/02/05/deadlock-caused-by-csharp-static-constructor/" title="C#中静态构造函数导致的一个deadlock" itemprop="url">
   
-    <h1 itemprop="name">在线C++编译器</h1>
+    <h1 itemprop="name">C#中静态构造函数导致的一个deadlock</h1>
     
      
-           <p itemprop="description" >在线C++编译器列举了如下网站：LiveWorkspace&amp;nbsp;(Clang 3.2, GCC 4.6.3 - 4.7.2)gcc.godbolt.org&amp;nbsp;(Clang 3.0, GCC 4.5.3 - 4.8.0 prerelease, Intel ICC 13</p>
+           <p itemprop="description" >Eric Lipper的这篇博客举了一个C#中静态构造函数导致的deadlock的例子，很有意思。代码如下：
+
+123456789101112class C&amp;#123;  static C()   &amp;#123;    // Let&#39;s run the initialization</p>
         
     
     <time datetime="2013-02-04T16:00:00.000Z" itemprop="datePublished">Feb 5 2013</time>
@@ -350,12 +350,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/01/21/web-developer-checklist/" title="web开发者的checklist" itemprop="url">
+    <a href="/2013/01/21/get-system-info-with-windows-management-instrumentation-in-csharp/" title="C#中如何用Windows Management Instrumentation (WMI)得到系统信息" itemprop="url">
   
-    <h1 itemprop="name">web开发者的checklist</h1>
+    <h1 itemprop="name">C#中如何用Windows Management Instrumentation (WMI)得到系统信息</h1>
     
      
-           <p itemprop="description" >转一个Web Developer Checklist</p>
+           <p itemprop="description" >Working with Windows Management Instrumentation演示了怎么通过Windows Management Instrumentation (WMI)拿到系统信息，包括CPU ID，MAC ID，硬盘信息等。</p>
         
     
     <time datetime="2013-01-20T16:00:00.000Z" itemprop="datePublished">Jan 21 2013</time>
@@ -390,12 +390,12 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
-    <a href="/2013/01/21/get-system-info-with-windows-management-instrumentation-in-csharp/" title="C#中如何用Windows Management Instrumentation (WMI)得到系统信息" itemprop="url">
+    <a href="/2013/01/21/web-developer-checklist/" title="web开发者的checklist" itemprop="url">
   
-    <h1 itemprop="name">C#中如何用Windows Management Instrumentation (WMI)得到系统信息</h1>
+    <h1 itemprop="name">web开发者的checklist</h1>
     
      
-           <p itemprop="description" >Working with Windows Management Instrumentation演示了怎么通过Windows Management Instrumentation (WMI)拿到系统信息，包括CPU ID，MAC ID，硬盘信息等。</p>
+           <p itemprop="description" >转一个Web Developer Checklist</p>
         
     
     <time datetime="2013-01-20T16:00:00.000Z" itemprop="datePublished">Jan 21 2013</time>
@@ -629,24 +629,6 @@
 		
 		</ul>
 </div>
-
-
-  <div class="stackoverflow">
-	<p class="asidetitle">Stack Overflow</p>
-	<a href="http://stackoverflow.com/users/304115/fresky">
-			<img src="http://stackoverflow.com/users/flair/304115.png" width="100%" height="100%" alt="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers" title="profile for fresky at Stack Overflow, Q&A for professional and enthusiast programmers">
-	</a>
-</div>
-
-
-  
-<div class="github-card">
-<p class="asidetitle">Github Card</p>
-<div class="github-card" data-github="fresky" data-width="220" data-height="119" data-theme="medium">
-<script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
-</div>
-  </div>
-
 
 
 </aside>

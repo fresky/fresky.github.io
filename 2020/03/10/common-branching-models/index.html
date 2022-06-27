@@ -1,0 +1,615 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>常见的代码分支模型和比较 | Dawei XU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Dawei XU">
+    
+
+    
+    <meta name="description" content="这篇文章介绍一下常用的代码分支模型，包括Git Flow，GitHub Flow和Trunk Based Devlopment。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常见的代码分支模型和比较">
+<meta property="og:url" content="http://fresky.github.io/2020/03/10/common-branching-models/index.html">
+<meta property="og:site_name" content="Dawei XU">
+<meta property="og:description" content="这篇文章介绍一下常用的代码分支模型，包括Git Flow，GitHub Flow和Trunk Based Devlopment。">
+<meta property="og:locale">
+<meta property="og:image" content="http://fresky.github.io/images/gitflow.png">
+<meta property="og:image" content="http://fresky.github.io/images/githubflow1.png">
+<meta property="og:image" content="http://fresky.github.io/images/githubflow2.png">
+<meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment.png">
+<meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_releasefromtrunk.png">
+<meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_releasefromtrunk_hotfix.png">
+<meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_branchforrelease.png">
+<meta property="article:published_time" content="2020-03-10T05:54:45.000Z">
+<meta property="article:modified_time" content="2020-03-10T12:02:38.641Z">
+<meta property="article:author" content="Dawei XU">
+<meta property="article:tag" content="Development">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://fresky.github.io/images/gitflow.png">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Dawei XU" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Dawei XU" title="Dawei XU"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Dawei XU">Dawei XU</a></h1>
+				<h2 class="blog-motto">Flying in the free sky</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" >
+						<input type="search" id="st-search-input" placeholder="Search" />
+					</form>
+					<script type="text/javascript">
+					var Swiftype = window.Swiftype || {};
+						(function() {
+							Swiftype.key = 'kh-hxC3krCFFsasryDzy';
+							var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+							script.src = "//s.swiftypecdn.com/embed.js";
+							var entry = document.getElementsByTagName('script')[0];
+							entry.parentNode.insertBefore(script, entry);
+						}());
+					</script>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2020/03/10/common-branching-models/" title="常见的代码分支模型和比较" itemprop="url">常见的代码分支模型和比较</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dawei XU" target="_blank" itemprop="author">Dawei XU</a>
+		
+  <p class="article-time">
+    <time datetime="2020-03-10T05:54:45.000Z" itemprop="datePublished"> Published Mar 10 2020</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-Flow"><span class="toc-number">1.</span> <span class="toc-text">Git Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hotfix%E5%88%86%E6%94%AF"><span class="toc-number">1.1.</span> <span class="toc-text">Hotfix分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Release%E5%88%86%E6%94%AF"><span class="toc-number">1.2.</span> <span class="toc-text">Release分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub-Flow"><span class="toc-number">2.</span> <span class="toc-text">GitHub Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Feature%E5%88%86%E6%94%AF"><span class="toc-number">2.1.</span> <span class="toc-text">Feature分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Trunk-Based-Development"><span class="toc-number">3.</span> <span class="toc-text">Trunk Based Development</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E5%B9%B2%E5%8F%91%E5%B8%83"><span class="toc-number">3.1.</span> <span class="toc-text">主干发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#release%E5%88%86%E6%94%AF%E5%8F%91%E5%B8%83"><span class="toc-number">3.2.</span> <span class="toc-text">release分支发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Echerry-pick"><span class="toc-number">3.3.</span> <span class="toc-text">关于cherry-pick</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">4.</span> <span class="toc-text">后记</span></a></li></ol>
+		
+		</div>
+		
+		<p>怎么做代码分支管理是每一个项目需要面临的问题，我认为代码分支管理是由产品发布模型决定的，在满足产品发布模型的同时要尽量减少开发、测试和部署的工作量。这篇文章简单介绍一下常见的几种代码分支模型，希望能给大家怎么选择适合自己的代码分支模型带来一些帮助。</p>
+<h1 id="Git-Flow"><a href="#Git-Flow" class="headerlink" title="Git Flow"></a>Git Flow</h1><p><strong>Git Flow</strong>是在2010年的这篇文章<a target="_blank" rel="noopener" href="https://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model - GitFlow</a>中提出来了，之后被广泛采用，它的模型如下所示。</p>
+<img src="/images/gitflow.png">
+<p><strong>Git Flow</strong>有如下要点：</p>
+<ol>
+<li>主分支有两个：<strong>master</strong>是部署分支，所有已经发布的版本都在这里。<strong>develop</strong>是开发分支。</li>
+<li>有三种支持分支：<strong>feature</strong>用来做功能开发，<strong>release</strong>用来准备下一个要发布的版本，<strong>hotfix</strong>用来在已经发布的版本上打补丁。</li>
+<li>对于测试来说，必须在<strong>release</strong>分支和<strong>hotfix</strong>分支做严格的发布前的测试。</li>
+<li>在<strong>master</strong>分支上几乎不会有冲突。</li>
+</ol>
+<p>Git Flow要求所有支持分支（<strong>feature</strong>，<strong>release</strong>和<strong>hotfix</strong>）都需要把代码merge回<strong>master</strong>。这也是这个分支主要要避免的风险。</p>
+<p>Git Flow的分支模型非常清晰，可以很容易的支持各种产品发布策略，但是并不是说所有的项目都应该直接照搬这个模型，因为这么多分支本身就会带来管理上的复杂性。对我来说，这个模型更像是一个基础的代码分支模型，它帮助我们思考每一种分支存在的意义，从而帮助我们找到适用于我们自己的产品发布策略的分支模型。下面我们分别来看看这些分支存在的意义。</p>
+<h2 id="Hotfix分支"><a href="#Hotfix分支" class="headerlink" title="Hotfix分支"></a>Hotfix分支</h2><p>在讨论<strong>hotfix</strong>分支之前，我想先讨论几个概念。第一个是<strong>产品支持阶段</strong>，我认为<strong>产品支持阶段</strong>=<strong>产品退休日期</strong>-<strong>产品发布日期</strong>。第二个概念是<strong>可能的hotfix阶段</strong>，我认为<strong>可能的hotfix阶段</strong>=<strong>产品支持阶段</strong>-<strong>hotfix开发测试时间</strong>。只有在<strong>可能的hotfix阶段</strong>大于0的时候，才需要存在<strong>hotfix</strong>分支，而需要多少个<strong>hotfix</strong>分支取决在<strong>可能的hotfix阶段</strong>我们有多少个已经发布的，而且正在支持的版本。</p>
+<p>举个例子，如果我的产品是持续发布的，比如发布周期是1天两次，那么这个<strong>产品支持阶段</strong>就是半天，而我们大部分hotfix开发测试的时间也得差不多半天了吧，所以对于这种持续发布的产品，<strong>hotfix</strong>就不需要了。</p>
+<h2 id="Release分支"><a href="#Release分支" class="headerlink" title="Release分支"></a>Release分支</h2><p>对于<strong>release</strong>分支，也有几个概念。第一个是<strong>版本稳定时间</strong>，比如我们要上线一个版本，需要做一系列的测试才有足够的信心认为这个版本已经足够稳定可以发布了，这个时间就是<strong>版本稳定时间</strong>，他基本上就是在上线之前我们需要的手动测试或者自动化测试要花费的时间。第二个概念是<strong>代码冻结日期</strong>，<strong>代码冻结日期</strong>=<strong>产品发布日期</strong>-<strong>版本稳定时间</strong>。只有在<strong>版本稳定时间</strong>比较长的情况下才需要<strong>release</strong>分支，因为<strong>release</strong>分支存在的意义就是让我们可以在这个<strong>release</strong>分支冻结代码，然后在这个分支上做发布前的测试。</p>
+<p>举个例子，如果我们的产品有覆盖率非常全的自动化测试，而且这个自动化测试只需要5分钟就能跑完。那么我们的<strong>版本稳定时间</strong>就是5分钟，那么我们就不需要有<strong>代码冻结日期</strong>，也不需要有<strong>release</strong>分支，因为我们只需要5分钟的时间就知道这个产品能不能发布了。</p>
+<h1 id="GitHub-Flow"><a href="#GitHub-Flow" class="headerlink" title="GitHub Flow"></a>GitHub Flow</h1><p>从上面的分析我们可以看到，如果一个产品是持续发布的，其实就没有<strong>hotfix</strong>和<strong>release</strong>分支存在的意义了，同时，因为是持续发布，所以<strong>develop</strong>分支和<strong>master</strong>分支差别不大，那么也就没有必要维护这连哥哥主分支了，这其实就是我们下面要说的<strong>GitHub Flow</strong>。</p>
+<p><strong>GitHub Flow</strong>最早是在2011年的这篇文章<a target="_blank" rel="noopener" href="http://scottchacon.com/2011/08/31/github-flow.html">GitHub Flow</a>中提出来的，如下图所示。</p>
+<img src="/images/githubflow1.png">
+<p><strong>GitHub Flow</strong>有如下要点：</p>
+<ol>
+<li><strong>master</strong>是部署分支</li>
+<li>所有针对下一个发布的开发都在<strong>feature</strong>分支</li>
+<li><strong>feature</strong>分支经过测试之后merge回<strong>master</strong>分支，然后发布</li>
+<li>如果发布之后发现有bug，回滚到<strong>master</strong>分支的上一个发布版本</li>
+</ol>
+<p>这个分支模型在<strong>feature</strong>分支merge回<strong>master</strong>分支时会有潜在的冲突，这就要求每次在<strong>feature</strong>分支开始做发布前的测试的时候先从<strong>master</strong>分支拉代码，并且在这个<strong>feature</strong>分支完成发布前的测试工作时，其他<strong>feature</strong>分支不能开始发布前的测试工作（因为不然的话这个测试是无效的，因为随后<strong>master</strong>分支会有新的代码需要拉下来）。</p>
+<p>另外这个分支模型有一个缺点就是<strong>master</strong>分支上不是都是真正可发布的，因为包含了一些发布过后发现有问题然后回滚到上一个发布的情况。所以之后<strong>GitHub Flow</strong>做了一次修正，可以参见现在的<a target="_blank" rel="noopener" href="https://guides.github.com/introduction/flow/">GitHub Flow</a>，如下图所示。</p>
+<img src="/images/githubflow2.png">
+<p>它和2011年那篇文章的区别在于，发布直接发生在<strong>feature</strong>分支上，等这个发布没有问题才会merge回<strong>master</strong>分支。这样<strong>master</strong>上就全部是真正可以发布的版本了。但是这个分支模型的另一个风险是有可能从一个<strong>feature</strong>分支发布了一个版本之后忘记merge回<strong>master</strong>分支了。</p>
+<p>可以看到这种<strong>GitHub Flow</strong>分支模型和<strong>Git Flow</strong>相比特别简单，非常适合持续发布的产品。全部的开发都通过<strong>feature</strong>分支来做，下面我们来看看<strong>feature</strong>分支。</p>
+<h2 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h2><p>在Martin Fowler的<a target="_blank" rel="noopener" href="https://www.martinfowler.com/bliki/FeatureBranch.html">Feature Branch</a>里讨论过对<strong>feature</strong>分支的看法，最大的问题在于如果多个<strong>feature</strong>分支长期并存，可能会带来之后merge时有很多conflict要处理，而且如果<strong>feature</strong>分支不经常merge到主分支，其实是和持续集成违背的。</p>
+<p>在我看来，<strong>feature</strong>分支只有在一种情况下才是必须存在的，那就是这个功能的<strong>开发时间比下次产品发布的时间还要长</strong>。这个对于持续发布的产品来说当然是成立的，比如使用<strong>GitHub Flow</strong>的GitHub，每天发布几次，所以使用<strong>feature</strong>分支是合适的，而且他们的<strong>feature</strong>分支也不会存在太长时间，所以merge时的冲突也不是很严重。还有一种常见的情况是开源软件的开发，每个开发人员并不能保证功能开发的进度，比如可能每周才工作几个小时，这种情况下就适合使用<strong>feature</strong>分支了。</p>
+<h1 id="Trunk-Based-Development"><a href="#Trunk-Based-Development" class="headerlink" title="Trunk Based Development"></a>Trunk Based Development</h1><p>下面介绍另外一种分支模型<strong>基于主干的开发<a target="_blank" rel="noopener" href="https://trunkbaseddevelopment.com/">Trunk Based Development</a></strong>，如下图所示。</p>
+<img src="/images/trunkbaseddevelopment.png">
+<p><strong>Trunk Based Development</strong>的要点是：</p>
+<ol>
+<li>团队只提交代码到<strong>Trunk</strong>（也就是<strong>master</strong>）。</li>
+<li><strong>Trunk</strong>（也就是<strong>master</strong>）并不是一直可以发布的。</li>
+</ol>
+<h2 id="主干发布"><a href="#主干发布" class="headerlink" title="主干发布"></a>主干发布</h2><p><strong>Trunk Based Development</strong>有两种发布策略，一种是<strong><a target="_blank" rel="noopener" href="https://trunkbaseddevelopment.com/release-from-trunk/">主干发布（release from trunk）</a></strong>，直接基于主干上的代码进行测试，然后通过测试后发布。这种发布策略通常适用于发布周期很短的产品。如下图所示。</p>
+<img src="/images/trunkbaseddevelopment_releasefromtrunk.png">
+<p>如果发布之后发现bug，可能直接从<strong>Trunk</strong>发布一个新的版本。如果产品有固定的发布周期现在还没到，也可以这个时候从上次发布的那个点做一个<strong>hotfix</strong>分支，然后在这个分支上部署hotfix，如下图所示。</p>
+<img src="/images/trunkbaseddevelopment_releasefromtrunk_hotfix.png">
+<p>需要注意一点的是<strong>Trunk Based Development</strong>遵循<strong>upstream first policy</strong>，就是说必须在<strong>master</strong>分支上重现这个bug，然后在<strong>master</strong>分支上fix这个bug，测试过之后再把这个fix通过cherry-pick到<strong>hotfix</strong>分支。这样有如下的好处：</p>
+<ol>
+<li>保证所有的bug fix都在trunk里</li>
+<li>因为一直在最新的代码（而不是当时发布的代码）上做修改，降低了引入regression的可能性。</li>
+</ol>
+<h2 id="release分支发布"><a href="#release分支发布" class="headerlink" title="release分支发布"></a>release分支发布</h2><p><strong>Trunk Based Development</strong>的第二种发布方式是<strong>release分支发布</strong>，如下图所示。</p>
+<img src="/images/trunkbaseddevelopment_branchforrelease.png">
+<p>这种发布模式就是在需要<strong>代码冻结（code freeze）</strong>的时候拉出来一个<strong>release</strong>分支，然后测试这个分支，如果遇到bug，也像上面说的一样遵循<strong>upstream first policy</strong>，就是说必须在<strong>master</strong>分支上重现这个bug，然后在<strong>master</strong>分支上fix这个bug，测试过之后再把这个fix通过cherry-pick到<strong>release</strong>分支。等产品发布之后如果遇到bug，就把这个<strong>release</strong>分支当成<strong>hotfix</strong>分支来发布hotfix，和上面一样了。</p>
+<h2 id="关于cherry-pick"><a href="#关于cherry-pick" class="headerlink" title="关于cherry-pick"></a>关于cherry-pick</h2><p>有很多关于cherry-pick的讨论，比如<a target="_blank" rel="noopener" href="https://devblogs.microsoft.com/oldnewthing/20180323-01/?p=98325">Stop cherry-picking, start merging</a>这里有一系列的讨论，有兴趣的可以看看。</p>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>上面我简单介绍了一下这3种常见的分支模型，分别是<strong>Git Flow</strong>， <strong>GitHub Flow</strong>和<strong>Trunk Based Development</strong>。其实就像我之前说的，更重要是理解产品发布的策略，基于团队本身开发和测试的能力来选择一种分支策略。</p>
+<p>总的来说，分支策略越简单团队的额外开销会越少，从而团队的效率会越高。如何达成简单的分支策略，很大一部分取决于产品的<strong>发布周期</strong>和<strong>版本稳定时间</strong>，归根到底取决于在发布一个产品之前我们需要花多长时间来测试。所以在我看来，<strong>提高团队的自动化测试能力是最根本的</strong>。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Development/">Development</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	<div class="share-jiathis">
+	  
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_googleplus"></a>
+	<a class="jiathis_button_douban"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1656049415"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+1886896" charset="utf-8"></script>      
+
+	 </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2020/03/16/one-on-one-talk/" title="如何做老板和员工的一对一的沟通">
+  <strong>上一篇：</strong><br/>
+  <span>
+  如何做老板和员工的一对一的沟通</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2020/02/07/soft-skill-questions/"  title="技术面试中关于软能力的问题">
+ <strong>下一篇：</strong><br/> 
+ <span>技术面试中关于软能力的问题
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2020/03/10/common-branching-models/" data-title="常见的代码分支模型和比较" data-url="http://fresky.github.io/2020/03/10/common-branching-models/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-Flow"><span class="toc-number">1.</span> <span class="toc-text">Git Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hotfix%E5%88%86%E6%94%AF"><span class="toc-number">1.1.</span> <span class="toc-text">Hotfix分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Release%E5%88%86%E6%94%AF"><span class="toc-number">1.2.</span> <span class="toc-text">Release分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#GitHub-Flow"><span class="toc-number">2.</span> <span class="toc-text">GitHub Flow</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Feature%E5%88%86%E6%94%AF"><span class="toc-number">2.1.</span> <span class="toc-text">Feature分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Trunk-Based-Development"><span class="toc-number">3.</span> <span class="toc-text">Trunk Based Development</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E5%B9%B2%E5%8F%91%E5%B8%83"><span class="toc-number">3.1.</span> <span class="toc-text">主干发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#release%E5%88%86%E6%94%AF%E5%8F%91%E5%B8%83"><span class="toc-number">3.2.</span> <span class="toc-text">release分支发布</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Echerry-pick"><span class="toc-number">3.3.</span> <span class="toc-text">关于cherry-pick</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">4.</span> <span class="toc-text">后记</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <br/>
+<div class="widget-wrap">
+  <p class="asidetitle">Total Posts: 413</p>
+</div>
+
+
+  </br>
+
+  <div class="widget-wrap">
+    <p class="asidetitle">Recent Posts</p>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            * <a href="/2022/05/25/how-to-be-a-good-architect/">如何做一个好的软件架构师</a>
+          </li>
+        
+          <li>
+            * <a href="/2021/04/28/how-to-get-feedback/">如何寻求别人的反馈</a>
+          </li>
+        
+          <li>
+            * <a href="/2021/04/26/time-management-for-manager/">技术经理怎么更好的管理自己的时间</a>
+          </li>
+        
+          <li>
+            * <a href="/2021/04/25/how-to-get-better-performance-review/">如何拿到好的绩效评分</a>
+          </li>
+        
+          <li>
+            * <a href="/2020/06/29/gcp-servcies/">常用的谷歌云Google Cloud服务</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/CSharp/" title="CSharp">CSharp<sup>133</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>92</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Other/" title="Other">Other<sup>62</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/CPP/" title="CPP">CPP<sup>50</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Resource/" title="Resource">Resource<sup>35</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Debug/" title="Debug">Debug<sup>33</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Github/" title="Github">Github<sup>11</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Development/" title="Development">Development<sup>9</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Manage/" title="Manage">Manage<sup>7</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Design/" title="Design">Design<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Regex/" title="Regex">Regex<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Opensource/" title="Opensource">Opensource<sup>3</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1656049415" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/fresky" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/304115" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		
+		
+		<a href="https://www.linkedin.com/in/daweix" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/fresky" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		
+		<a href="mailto:dawei.xu@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2022 
+		
+		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"fresky"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47027591-1', 'auto');  
+ga('send', 'pageview');
+</script>
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc461a6c03d4676862a12df80e9304bfd' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000250782'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000250782' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

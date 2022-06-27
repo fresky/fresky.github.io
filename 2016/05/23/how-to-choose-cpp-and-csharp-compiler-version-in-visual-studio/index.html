@@ -1,0 +1,591 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>如何在Visual Studio中选择C++和C#的编译器版本 | Dawei XU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Dawei XU">
+    
+
+    
+    <meta name="description" content="本文介绍了Visual Studio的编译引擎MSBuild，以及如何使用Toolset来为MSBuild指定C#和C++的编译器。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何在Visual Studio中选择C++和C#的编译器版本">
+<meta property="og:url" content="http://fresky.github.io/2016/05/23/how-to-choose-cpp-and-csharp-compiler-version-in-visual-studio/index.html">
+<meta property="og:site_name" content="Dawei XU">
+<meta property="og:description" content="本文介绍了Visual Studio的编译引擎MSBuild，以及如何使用Toolset来为MSBuild指定C#和C++的编译器。">
+<meta property="og:locale">
+<meta property="article:published_time" content="2016-05-23T15:14:03.000Z">
+<meta property="article:modified_time" content="2019-12-20T08:29:07.310Z">
+<meta property="article:author" content="Dawei XU">
+<meta property="article:tag" content="Tool">
+<meta property="article:tag" content="CSharp">
+<meta property="article:tag" content="CPP">
+<meta name="twitter:card" content="summary">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Dawei XU" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Dawei XU" title="Dawei XU"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Dawei XU">Dawei XU</a></h1>
+				<h2 class="blog-motto">Flying in the free sky</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" >
+						<input type="search" id="st-search-input" placeholder="Search" />
+					</form>
+					<script type="text/javascript">
+					var Swiftype = window.Swiftype || {};
+						(function() {
+							Swiftype.key = 'kh-hxC3krCFFsasryDzy';
+							var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+							script.src = "//s.swiftypecdn.com/embed.js";
+							var entry = document.getElementsByTagName('script')[0];
+							entry.parentNode.insertBefore(script, entry);
+						}());
+					</script>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/05/23/how-to-choose-cpp-and-csharp-compiler-version-in-visual-studio/" title="如何在Visual Studio中选择C++和C#的编译器版本" itemprop="url">如何在Visual Studio中选择C++和C#的编译器版本</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dawei XU" target="_blank" itemprop="author">Dawei XU</a>
+		
+  <p class="article-time">
+    <time datetime="2016-05-23T15:14:03.000Z" itemprop="datePublished"> Published May 23 2016</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MSBuild%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">MSBuild简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8VS2015%E7%9A%84MSBuild%E6%9D%A5%E7%BC%96%E8%AF%91VS2015%E5%88%9B%E5%BB%BA%E7%9A%84%E9%A1%B9%E7%9B%AE"><span class="toc-number">2.</span> <span class="toc-text">用VS2015的MSBuild来编译VS2015创建的项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8VS2013%E7%9A%84MSBuild%E6%9D%A5%E7%BC%96%E8%AF%91VS2015%E5%88%9B%E5%BB%BA%E7%9A%84%E9%A1%B9%E7%9B%AE"><span class="toc-number">3.</span> <span class="toc-text">用VS2013的MSBuild来编译VS2015创建的项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8VS2015%E7%9A%84MSBuild%E6%9D%A5%E7%BC%96%E8%AF%91VS2015%E5%88%9B%E5%BB%BA%E7%9A%84%E9%A1%B9%E7%9B%AE%EF%BC%88%E4%BF%AE%E6%94%B9C-%E9%A1%B9%E7%9B%AE%E7%9A%84PlatformToolset%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">用VS2015的MSBuild来编译VS2015创建的项目（修改C++项目的PlatformToolset）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8VS2015%E7%9A%84MSBuild%E6%9D%A5%E7%BC%96%E8%AF%91%EF%BC%8C%E4%BD%86%E6%98%AF%E6%8C%87%E5%AE%9AVS2013%E7%9A%84C-%E5%92%8CC-%E7%9A%84%E7%BC%96%E8%AF%91%E5%99%A8"><span class="toc-number">5.</span> <span class="toc-text">用VS2015的MSBuild来编译，但是指定VS2013的C++和C#的编译器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8Visual-Studio-2015%E6%9D%A5%E7%BC%96%E8%AF%91%EF%BC%8C%E4%BD%86%E6%98%AF%E6%8C%87%E5%AE%9AVS2013%E7%9A%84C-%E5%92%8CC-%E7%9A%84%E7%BC%96%E8%AF%91%E5%99%A8"><span class="toc-number">6.</span> <span class="toc-text">用Visual Studio 2015来编译，但是指定VS2013的C++和C#的编译器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E7%9A%84ToolsVersion%E5%B1%9E%E6%80%A7"><span class="toc-number">6.1.</span> <span class="toc-text">修改项目文件的ToolsVersion属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8FMSBUILDLEGACYDEFAULTTOOLSVERSION"><span class="toc-number">6.2.</span> <span class="toc-text">设置环境变量MSBUILDLEGACYDEFAULTTOOLSVERSION</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8Visual-Studio-2015%E4%B8%AD%E6%8C%87%E5%AE%9AC-%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%88%E6%9C%AC"><span class="toc-number">7.</span> <span class="toc-text">在Visual Studio 2015中指定C#语言的版本</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-TLDR"><span class="toc-number">8.</span> <span class="toc-text">总结 TLDR</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E4%BA%8EC-%E9%A1%B9%E7%9B%AE"><span class="toc-number">8.1.</span> <span class="toc-text">对于C++项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E4%BA%8EC-%E9%A1%B9%E7%9B%AE-1"><span class="toc-number">8.2.</span> <span class="toc-text">对于C#项目</span></a></li></ol></li></ol>
+		
+		</div>
+		
+		<h1 id="MSBuild简介"><a href="#MSBuild简介" class="headerlink" title="MSBuild简介"></a>MSBuild简介</h1><p>Visual Studio的编译引擎是<a target="_blank" rel="noopener" href="https://msdn.microsoft.com/en-us/library/dd393574.aspx">MSBuild</a>，它提供了一套项目文件（<code>.csproj</code>,<code>.vbproj</code>, <code>vcxproj</code>）的XML的Schema，用来指定如何处理和编译项目。</p>
+<p>当然MSBuild不依赖于Visual Studio，完全可以在不安装Visual Studio的情况下使用MSBuild。比如可以从<a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/download/details.aspx?id=48159">Microsoft Build Tools 2015</a>下载MSBuild来编译C#。2016年3月31号微软也宣布了<a target="_blank" rel="noopener" href="https://blogs.msdn.microsoft.com/vcblog/2016/03/31/announcing-the-official-release-of-the-visual-c-build-tools-2015/">Visual C++ Build Tools 2015</a>，可以<a target="_blank" rel="noopener" href="http://go.microsoft.com/fwlink/?LinkId=691126">下载</a>来编译VC++的项目。</p>
+<p>MSBuild也是一个MIT License的开源软件，可以在Github上看到它的<a target="_blank" rel="noopener" href="https://github.com/Microsoft/msbuild">仓库</a>。</p>
+<p><a target="_blank" rel="noopener" href="https://msdn.microsoft.com/en-us/library/bb383796.aspx">MSBuild Toolset (ToolsVersion)</a>是一个任务、目标和工具的集合，指定MSBuild的行为。通常一个MSBuild的Toolset包含<code>microsoft.common.tasks</code>文件，<code>microsoft.common.targets</code>文件和编译器比如<code>csc.exe</code>，<code>cl.exe</code>和<code>link.exe</code>。</p>
+<p>在装Visual Studio时会按照对应版本的MSBuild，比如Visual Studio 2015对应的MSBuild就是v14。如果我们用Visual Studio创建C#和C++的项目，在<code>.csproj</code>和<code>.vcxproj</code>文件的第一行都指定了对应MSBuild的Toolset，如下所示。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Project DefaultTargets=&quot;Build&quot; ToolsVersion=&quot;14.0&quot; xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot;&gt;</span><br></pre></td></tr></table></figure>
+<p>在Visual Studio中编译项目时就会使用v14的MSBuild来编译。</p>
+<h1 id="用VS2015的MSBuild来编译VS2015创建的项目"><a href="#用VS2015的MSBuild来编译VS2015创建的项目" class="headerlink" title="用VS2015的MSBuild来编译VS2015创建的项目"></a>用VS2015的MSBuild来编译VS2015创建的项目</h1><p>我们也可以直接使用MSBuild来编译，我分别创建了一个空的C#和空的C++的Console应用，然后打开MSBuild Command Prompt for VS2015，用如下命令行来编译</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msbuild CompilerDemo.sln /t:rebuild</span><br></pre></td></tr></table></figure>
+<p>可以看到如下的命令行输出：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CoreCompile:</span><br><span class="line">  C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe ...</span><br><span class="line">  </span><br><span class="line">ClCompile:</span><br><span class="line">  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe ...</span><br><span class="line"></span><br><span class="line">Link:</span><br><span class="line">  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe ...  </span><br></pre></td></tr></table></figure></p>
+<p>说明在编译项目时使用了v14的MSBuild下的<code>csc.exe</code>，<code>cl.exe</code>和<code>link.exe</code>。</p>
+<h1 id="用VS2013的MSBuild来编译VS2015创建的项目"><a href="#用VS2013的MSBuild来编译VS2015创建的项目" class="headerlink" title="用VS2013的MSBuild来编译VS2015创建的项目"></a>用VS2013的MSBuild来编译VS2015创建的项目</h1><p>如果我们打开Developer Command Prompt for VS2013，用VS2013的MSBuild编译项目。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msbuild CompilerDemo.sln /t:rebuild</span><br></pre></td></tr></table></figure>
+<p>得到如下的命令行输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">CoreCompile:</span><br><span class="line">  C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe ...</span><br><span class="line">Done Building Project &quot;D:\Documents\Visual Studio 2015\Projects\CompilerDemo\CSharpCompiler\CSharpCompiler.csproj&quot; (Rebuild target(s)).</span><br><span class="line"></span><br><span class="line">C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.Cpp.Platform.targets(64,5): error MSB8020: The build tools for v140 (Platform Toolset = &#x27;v140&#x27;) cannot be found.</span><br></pre></td></tr></table></figure>
+<p>我们看到用v12的MSBuild编译C#项目时成功了，但是编译C++项目时失败了，说找不到Platform Toolset = ‘v140’。我们回头打开<code>.vcxproj</code>文件，可以看到在这个文件里指定了<code>&lt;PlatformToolset&gt;v140&lt;/PlatformToolset&gt;</code>。我们把它改成v120，再重新编译，这次发现成功了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ClCompile:</span><br><span class="line">  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe ...</span><br><span class="line">Link:</span><br><span class="line">  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe ...</span><br></pre></td></tr></table></figure>
+<h1 id="用VS2015的MSBuild来编译VS2015创建的项目（修改C-项目的PlatformToolset）"><a href="#用VS2015的MSBuild来编译VS2015创建的项目（修改C-项目的PlatformToolset）" class="headerlink" title="用VS2015的MSBuild来编译VS2015创建的项目（修改C++项目的PlatformToolset）"></a>用VS2015的MSBuild来编译VS2015创建的项目（修改C++项目的PlatformToolset）</h1><p>修改完<code>PlatformToolset</code>之后，我们再用VS2015的MSBuild编译一下，看看结果。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CoreCompile:</span><br><span class="line">  C:\Program Files (x86)\MSBuild\14.0\bin\csc.exe ...</span><br><span class="line">ClCompile:</span><br><span class="line">  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe ...</span><br><span class="line">Link:</span><br><span class="line">  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe ...</span><br></pre></td></tr></table></figure>
+<p>我们发现它使用了v14的<code>csc.exe</code>，但是使用了v12的<code>cl.exe</code>和<code>link</code>。</p>
+<h1 id="用VS2015的MSBuild来编译，但是指定VS2013的C-和C-的编译器"><a href="#用VS2015的MSBuild来编译，但是指定VS2013的C-和C-的编译器" class="headerlink" title="用VS2015的MSBuild来编译，但是指定VS2013的C++和C#的编译器"></a>用VS2015的MSBuild来编译，但是指定VS2013的C++和C#的编译器</h1><p>那有没有办法让VS2015的MSBuild也使用v12的C#的编译器（<code>csc.exe</code>）呢？我们可以参考一下<a target="_blank" rel="noopener" href="https://msdn.microsoft.com/en-us/library/bb383985.aspx">Overriding ToolsVersion Settings</a>。</p>
+<p>可以使用MSBuild的命令行参数开关：<code>/ToolsVersion</code>，简写为<code>/tv</code>。打开MSBuild Command Prompt for VS2015，用如下命令行来编译。<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msbuild CompilerDemo.sln /t:rebuild /tv:&quot;12.0&quot;</span><br></pre></td></tr></table></figure><br>我们得到了如下的命令行输出：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CoreCompile:</span><br><span class="line">  C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe ...</span><br><span class="line">ClCompile:</span><br><span class="line">  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe ...</span><br><span class="line">Link:</span><br><span class="line">  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe ...</span><br></pre></td></tr></table></figure></p>
+<p>嗯，我们终于在VS2015的MSBuild命令下，成功的使用了VS2013的C++和C#的编译器。</p>
+<h1 id="用Visual-Studio-2015来编译，但是指定VS2013的C-和C-的编译器"><a href="#用Visual-Studio-2015来编译，但是指定VS2013的C-和C-的编译器" class="headerlink" title="用Visual Studio 2015来编译，但是指定VS2013的C++和C#的编译器"></a>用Visual Studio 2015来编译，但是指定VS2013的C++和C#的编译器</h1><p>那么有没有办法来让Visual Studio 2015在编译时也用2013的编译器呢？我们没有办法来指定MSBuild的开关了。根据<a target="_blank" rel="noopener" href="https://msdn.microsoft.com/en-us/library/bb383985.aspx">Overriding ToolsVersion Settings</a>介绍的方法，需要做两件事。</p>
+<h2 id="修改项目文件的ToolsVersion属性"><a href="#修改项目文件的ToolsVersion属性" class="headerlink" title="修改项目文件的ToolsVersion属性"></a>修改项目文件的<code>ToolsVersion</code>属性</h2><p>在本文的开头提到了在项目文件的第一行写明了对应MSBuild的Toolset。我们可以修改这个属性，把项目文件的第一行改成：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Project DefaultTargets=&quot;Build&quot; ToolsVersion=&quot;12.0&quot; xmlns=&quot;http://schemas.microsoft.com/developer/msbuild/2003&quot;&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="设置环境变量MSBUILDLEGACYDEFAULTTOOLSVERSION"><a href="#设置环境变量MSBUILDLEGACYDEFAULTTOOLSVERSION" class="headerlink" title="设置环境变量MSBUILDLEGACYDEFAULTTOOLSVERSION"></a>设置环境变量<code>MSBUILDLEGACYDEFAULTTOOLSVERSION</code></h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">set MSBUILDLEGACYDEFAULTTOOLSVERSION=true</span><br></pre></td></tr></table></figure>
+<p>这样在Visual Studio 2015中编译也会使用VS2013的编译器了。而且直接在MSBuild Command Prompt for VS2015中直接使用MSBuild，不需要制定<code>/tv</code>开关，也是使用VS2013的编译器了。</p>
+<p>来验证一下，如果我们在代码中使用了C#6的新特性（VS2015支持）。<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">object</span> o = <span class="literal">null</span>;</span><br><span class="line">Console.WriteLine(o?.ToString());</span><br></pre></td></tr></table></figure></p>
+<p>那么在Visual Studio 2015中编译会报错。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Build FAILED.</span><br><span class="line"></span><br><span class="line">&quot;D:\Documents\Visual Studio 2015\Projects\CompilerDemo\CompilerDemo.sln&quot; (rebuild target) (1) -&gt;</span><br><span class="line">&quot;D:\Documents\Visual Studio 2015\Projects\CompilerDemo\CSharpCompiler\CSharpCompiler.csproj&quot; (Rebuild target) (2) -&gt;</span><br><span class="line">(CoreCompile target) -&gt; </span><br><span class="line">  Program.cs(10,33): error CS1525: Invalid expression term &#x27;.&#x27; [D:\Documents\Visual Studio 2015\Projects\CompilerDemo\CSharpCompiler\CSharpCompiler.csproj]</span><br><span class="line">  Program.cs(10,34): error CS1003: Syntax error, &#x27;:&#x27; expected [D:\Documents\Visual Studio 2015\Projects\CompilerDemo\CSharpCompiler\CSharpCompiler.csproj]</span><br><span class="line">  Program.cs(10,44): error CS1002: ; expected [D:\Documents\Visual Studio 2015\Projects\CompilerDemo\CSharpCompiler\CSharpCompiler.csproj]</span><br><span class="line">  Program.cs(10,44): error CS1525: Invalid expression term &#x27;)&#x27; [D:\Documents\Visual Studio 2015\Projects\CompilerDemo\CSharpCompiler\CSharpCompiler.csproj]</span><br><span class="line"></span><br><span class="line">    0 Warning(s)</span><br><span class="line">    4 Error(s)</span><br></pre></td></tr></table></figure>
+<h1 id="在Visual-Studio-2015中指定C-语言的版本"><a href="#在Visual-Studio-2015中指定C-语言的版本" class="headerlink" title="在Visual Studio 2015中指定C#语言的版本"></a>在Visual Studio 2015中指定C#语言的版本</h1><p>另外在Visual Studio中可以指定支持的C#语言的版本。右键项目-》属性-》编译-》高级-》语言版本。Visual Studio 2015的默认就是支持的最高版本C# 6.0，可以在这里选择不同的版本。</p>
+<h1 id="总结-TLDR"><a href="#总结-TLDR" class="headerlink" title="总结 TLDR"></a>总结 TLDR</h1><h2 id="对于C-项目"><a href="#对于C-项目" class="headerlink" title="对于C++项目"></a>对于C++项目</h2><p><strong>通过设置<code>PlatformToolset</code>来指定C++的编译器版本。</strong></p>
+<h2 id="对于C-项目-1"><a href="#对于C-项目-1" class="headerlink" title="对于C#项目"></a>对于C#项目</h2><p><strong>使用相应版本的MSBuild。</strong></p>
+<p>或者</p>
+<p><strong>使用MSBuild的命令行开关<code>/ToolsVersion</code>（<code>/tv</code>）。</strong></p>
+<p>或者</p>
+<p><strong>1. 修改项目文件的<code>ToolsVersion</code>属性。</strong><br><strong>2. 设置环境变量<code>MSBUILDLEGACYDEFAULTTOOLSVERSION</code>。</strong></p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Tool/">Tool</a><a href="/tags/CSharp/">CSharp</a><a href="/tags/CPP/">CPP</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	<div class="share-jiathis">
+	  
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_googleplus"></a>
+	<a class="jiathis_button_douban"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1656049415"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+1886896" charset="utf-8"></script>      
+
+	 </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/06/08/use-swashbuckle-to-add-swagger-api-help-for-asp-net-core/" title="用Swashbuckle给ASP.NET Core的项目自动生成Swagger的API帮助文档">
+  <strong>上一篇：</strong><br/>
+  <span>
+  用Swashbuckle给ASP.NET Core的项目自动生成Swagger的API帮助文档</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2016/05/21/use-roslynpad-as-lightweight-csharp-editor/"  title="用Roslynpad做一个轻量级的C#编辑器">
+ <strong>下一篇：</strong><br/> 
+ <span>用Roslynpad做一个轻量级的C#编辑器
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2016/05/23/how-to-choose-cpp-and-csharp-compiler-version-in-visual-studio/" data-title="如何在Visual Studio中选择C++和C#的编译器版本" data-url="http://fresky.github.io/2016/05/23/how-to-choose-cpp-and-csharp-compiler-version-in-visual-studio/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MSBuild%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">MSBuild简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8VS2015%E7%9A%84MSBuild%E6%9D%A5%E7%BC%96%E8%AF%91VS2015%E5%88%9B%E5%BB%BA%E7%9A%84%E9%A1%B9%E7%9B%AE"><span class="toc-number">2.</span> <span class="toc-text">用VS2015的MSBuild来编译VS2015创建的项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8VS2013%E7%9A%84MSBuild%E6%9D%A5%E7%BC%96%E8%AF%91VS2015%E5%88%9B%E5%BB%BA%E7%9A%84%E9%A1%B9%E7%9B%AE"><span class="toc-number">3.</span> <span class="toc-text">用VS2013的MSBuild来编译VS2015创建的项目</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8VS2015%E7%9A%84MSBuild%E6%9D%A5%E7%BC%96%E8%AF%91VS2015%E5%88%9B%E5%BB%BA%E7%9A%84%E9%A1%B9%E7%9B%AE%EF%BC%88%E4%BF%AE%E6%94%B9C-%E9%A1%B9%E7%9B%AE%E7%9A%84PlatformToolset%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">用VS2015的MSBuild来编译VS2015创建的项目（修改C++项目的PlatformToolset）</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8VS2015%E7%9A%84MSBuild%E6%9D%A5%E7%BC%96%E8%AF%91%EF%BC%8C%E4%BD%86%E6%98%AF%E6%8C%87%E5%AE%9AVS2013%E7%9A%84C-%E5%92%8CC-%E7%9A%84%E7%BC%96%E8%AF%91%E5%99%A8"><span class="toc-number">5.</span> <span class="toc-text">用VS2015的MSBuild来编译，但是指定VS2013的C++和C#的编译器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8Visual-Studio-2015%E6%9D%A5%E7%BC%96%E8%AF%91%EF%BC%8C%E4%BD%86%E6%98%AF%E6%8C%87%E5%AE%9AVS2013%E7%9A%84C-%E5%92%8CC-%E7%9A%84%E7%BC%96%E8%AF%91%E5%99%A8"><span class="toc-number">6.</span> <span class="toc-text">用Visual Studio 2015来编译，但是指定VS2013的C++和C#的编译器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E9%A1%B9%E7%9B%AE%E6%96%87%E4%BB%B6%E7%9A%84ToolsVersion%E5%B1%9E%E6%80%A7"><span class="toc-number">6.1.</span> <span class="toc-text">修改项目文件的ToolsVersion属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8FMSBUILDLEGACYDEFAULTTOOLSVERSION"><span class="toc-number">6.2.</span> <span class="toc-text">设置环境变量MSBUILDLEGACYDEFAULTTOOLSVERSION</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9C%A8Visual-Studio-2015%E4%B8%AD%E6%8C%87%E5%AE%9AC-%E8%AF%AD%E8%A8%80%E7%9A%84%E7%89%88%E6%9C%AC"><span class="toc-number">7.</span> <span class="toc-text">在Visual Studio 2015中指定C#语言的版本</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E7%BB%93-TLDR"><span class="toc-number">8.</span> <span class="toc-text">总结 TLDR</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E4%BA%8EC-%E9%A1%B9%E7%9B%AE"><span class="toc-number">8.1.</span> <span class="toc-text">对于C++项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E4%BA%8EC-%E9%A1%B9%E7%9B%AE-1"><span class="toc-number">8.2.</span> <span class="toc-text">对于C#项目</span></a></li></ol></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <br/>
+<div class="widget-wrap">
+  <p class="asidetitle">Total Posts: 413</p>
+</div>
+
+
+  </br>
+
+  <div class="widget-wrap">
+    <p class="asidetitle">Recent Posts</p>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            * <a href="/2022/05/25/how-to-be-a-good-architect/">如何做一个好的软件架构师</a>
+          </li>
+        
+          <li>
+            * <a href="/2021/04/28/how-to-get-feedback/">如何寻求别人的反馈</a>
+          </li>
+        
+          <li>
+            * <a href="/2021/04/26/time-management-for-manager/">技术经理怎么更好的管理自己的时间</a>
+          </li>
+        
+          <li>
+            * <a href="/2021/04/25/how-to-get-better-performance-review/">如何拿到好的绩效评分</a>
+          </li>
+        
+          <li>
+            * <a href="/2020/06/29/gcp-servcies/">常用的谷歌云Google Cloud服务</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/CSharp/" title="CSharp">CSharp<sup>133</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>92</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Other/" title="Other">Other<sup>62</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/CPP/" title="CPP">CPP<sup>50</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Resource/" title="Resource">Resource<sup>35</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Debug/" title="Debug">Debug<sup>33</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Github/" title="Github">Github<sup>11</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Development/" title="Development">Development<sup>9</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Manage/" title="Manage">Manage<sup>7</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Design/" title="Design">Design<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Regex/" title="Regex">Regex<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Opensource/" title="Opensource">Opensource<sup>3</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1656049415" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/fresky" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/304115" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		
+		
+		<a href="https://www.linkedin.com/in/daweix" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/fresky" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		
+		<a href="mailto:dawei.xu@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2022 
+		
+		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"fresky"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47027591-1', 'auto');  
+ga('send', 'pageview');
+</script>
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc461a6c03d4676862a12df80e9304bfd' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000250782'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000250782' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

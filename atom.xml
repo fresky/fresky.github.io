@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fresky.github.io/"/>
-  <updated>2022-05-29T02:10:16.161Z</updated>
+  <updated>2022-09-13T12:37:05.218Z</updated>
   <id>http://fresky.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何帮助不敬业（disengaged）的员工</title>
+    <link href="http://fresky.github.io/2022/09/13/help-disengaged-employees/"/>
+    <id>http://fresky.github.io/2022/09/13/help-disengaged-employees/</id>
+    <published>2022-09-13T11:34:09.000Z</published>
+    <updated>2022-09-13T12:37:05.218Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.trello.com/support-disengaged-employees">You’ve got disengaged employees—here’s why they need encouragement and support</a>讨论了如何帮助不敬业（disengaged）的员工，看了之后还是挺有启发的。把这篇文章的重要内容记录如下：</p><h1 id="员工不敬业的原因和解决方案"><a href="#员工不敬业的原因和解决方案" class="headerlink" title="员工不敬业的原因和解决方案"></a>员工不敬业的原因和解决方案</h1><table><thead><tr><th>可能原因</th><th>解决方案</th></tr></thead><tbody><tr><td>精疲力尽或者压力太大</td><td>改进任务管理，频繁检查员工情况，关注员工的心理健康</td></tr><tr><td>不清楚公司的愿景和目标</td><td>向员工解释公司愿景，并指出员工的工作对实现公司愿景的作用</td></tr><tr><td>员工的个人发展目标和公司的发展目标不匹配</td><td>和员工一起找到个人发展目标和公司发展目标匹配的地方</td></tr><tr><td>觉得自己声音没有被公司听到</td><td>保持同理心，和员工进行高效透明的一对一沟通，在公司创建开放的工作环境并且让员工足够的安全感可以畅所欲言</td></tr><tr><td>沟通不畅</td><td>和员工定期针对沟通的方法、频率和模式进行探讨</td></tr><tr><td>不清楚对自己的期待，角色定义和责任</td><td>评估员工角色和职责之间不匹配的地方，和员工讨论哪些任务他们觉得是充电，哪些是消耗</td></tr><tr><td>缺乏职业成长</td><td>制定职业发展目标和时间线并且定期检查进度，另外和员工开诚布公哪些是可以实现的，哪些是不能实现的</td></tr><tr><td>缺乏表彰</td><td>在每次开会的开始加上一个表彰的环节，创建一个专门地方来记录成绩和表扬</td></tr><tr><td>缺乏意义感和挑战感</td><td>制定有挑战性的目标来激励员工</td></tr><tr><td>缺乏自主性</td><td>和员工建立信任，找到可以放手给员工独立自主的任务</td></tr><tr><td>缺乏团队感</td><td>在团队中组织社交活动，鼓励员工之间多交流</td></tr><tr><td>缺乏透明和信任</td><td>建立开发、诚实和（心理上）安全的工作环境</td></tr><tr><td>对办公系统和工具感到困惑</td><td>分析现在有的办公系统和工具，看看哪些应该被更高效、好用的工具替代</td></tr></tbody></table><h1 id="对于经理们的一些小建议"><a href="#对于经理们的一些小建议" class="headerlink" title="对于经理们的一些小建议"></a>对于经理们的一些小建议</h1><ul><li>在安全、中立的空间和员工聊天</li><li>听</li><li>诚实、开放、透明</li><li>不要夹带私人感情</li><li>在员工身上多花时间</li><li>有耐心</li><li>帮助员工清楚的理解公司的愿景</li><li>了解员工的职业发展目标和计划</li><li>找到员工目标和公司目标匹配的方式</li><li>询问员工怎么改善他们的工作体验</li><li>观察员工是否需要更多的工作灵活性和健康改善机会来缓解压力</li><li>制定目标并且和员工一起定期检查</li><li>对员工做出承诺</li><li>给员工时间和空间来做让他们激动的工作</li><li>和员工一起走上正轨</li><li>通过他们感兴趣的活动来和他们重新建立连接</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;https://blog.trello.com/support-disengaged-employees&quot;&gt;You’ve got disengaged employees—here’s why they need encouragement and sup
+      
+    
+    </summary>
+    
+    
+      <category term="Manage" scheme="http://fresky.github.io/tags/Manage/"/>
+    
+  </entry>
   
   <entry>
     <title>如何做一个好的软件架构师</title>

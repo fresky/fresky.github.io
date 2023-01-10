@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fresky.github.io/"/>
-  <updated>2022-11-25T04:25:10.542Z</updated>
+  <updated>2023-01-10T06:41:15.925Z</updated>
   <id>http://fresky.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>好的会议</title>
+    <link href="http://fresky.github.io/2022/12/06/good-meeting/"/>
+    <id>http://fresky.github.io/2022/12/06/good-meeting/</id>
+    <published>2022-12-06T09:20:31.000Z</published>
+    <updated>2023-01-10T06:41:15.925Z</updated>
+    
+    <content type="html"><![CDATA[<p>现在我们很多人每天的工作就是开大量的会议，在<a href="https://css-tricks.com/good-meetings/">Good Meetings </a>这篇文章里作者聊了聊他觉得如何开好会议的一些想法。下面把其中的一些观点整理一下，放在下面。</p><h1 id="什么是好的会议和不好的会议"><a href="#什么是好的会议和不好的会议" class="headerlink" title="什么是好的会议和不好的会议"></a>什么是好的会议和不好的会议</h1><table><thead><tr><th>不好的会议</th><th>好的会议</th></tr></thead><tbody><tr><td>没有明确的目标和方向</td><td>有明确的目标和方向</td></tr><tr><td>感觉很混乱</td><td>有清晰的日程</td></tr><tr><td>参会人员不对</td><td>合适的参会人员（人没有太多导致交流不畅，也没有太少导致需要的人不在）</td></tr><tr><td>参会人员缺乏对彼此的尊重</td><td>会议有秩序，没有人进进出出或者交头接耳</td></tr><tr><td>每个人都觉得浪费了时间</td><td>有清晰的决定、产出和下一步的计划</td></tr></tbody></table><h1 id="会议的目的"><a href="#会议的目的" class="headerlink" title="会议的目的"></a>会议的目的</h1><p>会议的目的是让参会者知道：</p><ol><li>共同的目标是什么</li><li>需要做什么来实现目标</li><li>各项任务的负责人是谁</li><li>怎么具体的实现目标</li><li>计划和时间表</li></ol><h1 id="会议的日程"><a href="#会议的日程" class="headerlink" title="会议的日程"></a>会议的日程</h1><p>会议的日程会根据会议的种类有所变化。</p><ul><li>头脑风暴：通常不需要日程，只需要知道目标，然后记录大家的想法</li><li>周例会或者晨会：目的是信息同步，有固定的格式</li><li>跨部门会议：这种会议通常需要提前准备一个详细的日程，有了详细的日程可以更好的帮助大家在一开始统一思想，让会议更加高效。可以考虑提前发出来日程和附带的信息，也可以在会议开始的头几分钟大家一起看。</li></ul><h1 id="尴尬的会议"><a href="#尴尬的会议" class="headerlink" title="尴尬的会议"></a>尴尬的会议</h1><ul><li>参会人员互相不认识</li><li>参会人员太多</li><li>有些事情人们都不想说</li></ul><h1 id="冲突"><a href="#冲突" class="headerlink" title="冲突"></a>冲突</h1><ul><li>冲突不需要避免，有冲突说明人对自己的工作上心</li><li>避免把事情和人混在一起</li><li>管理者需要区分健康的讨论和人身攻击</li><li>建立一个冲突双方都认同的共同的目标</li><li>区分哪些是事实，哪些是情绪，也可以通过事后复盘的方式让自己想的更清楚</li><li>进入僵局后可以暂停，过段时间（比如一周后）再重新讨论，给大家时间想清楚</li></ul><h1 id="直接负责人"><a href="#直接负责人" class="headerlink" title="直接负责人"></a>直接负责人</h1><p>好的会议必须有一个<strong>直接负责人</strong>，这个人不一定是召集会议的人，也不一定是领导，而是<strong>对会议结果负责</strong>的人。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;现在我们很多人每天的工作就是开大量的会议，在&lt;a href=&quot;https://css-tricks.com/good-meetings/&quot;&gt;Good Meetings &lt;/a&gt;这篇文章里作者聊了聊他觉得如何开好会议的一些想法。下面把其中的一些观点整理一下，放在下面。&lt;/p&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="Manage" scheme="http://fresky.github.io/tags/Manage/"/>
+    
+  </entry>
   
   <entry>
     <title>向上管理中需要怎么跟老板沟通</title>

@@ -79,19 +79,11 @@
 					
 					<li>
  					
-					<form class="search" >
-						<input type="search" id="st-search-input" placeholder="Search" />
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:fresky.github.io">
 					</form>
-					<script type="text/javascript">
-					var Swiftype = window.Swiftype || {};
-						(function() {
-							Swiftype.key = 'kh-hxC3krCFFsasryDzy';
-							var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-							script.src = "//s.swiftypecdn.com/embed.js";
-							var entry = document.getElementsByTagName('script')[0];
-							entry.parentNode.insertBefore(script, entry);
-						}());
-					</script>
 					
 					</li>
 				</ul>

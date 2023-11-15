@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fresky.github.io/"/>
-  <updated>2023-02-20T08:52:06.431Z</updated>
+  <updated>2023-11-15T06:03:37.384Z</updated>
   <id>http://fresky.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>程序员的开发效率可以衡量吗？</title>
+    <link href="http://fresky.github.io/2023/11/15/developer-productivity/"/>
+    <id>http://fresky.github.io/2023/11/15/developer-productivity/</id>
+    <published>2023-11-15T05:16:51.000Z</published>
+    <updated>2023-11-15T06:03:37.384Z</updated>
+    
+    <content type="html"><![CDATA[<p>前段时间随着麦肯锡的一篇文章<a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/yes-you-can-measure-software-developer-productivity">Yes, you can measure software developer productivity</a>引起了网上一堆批评，基本是说首先太难定义合理的指标来衡量，其次就算定义了指标，根据<a href="https://en.wikipedia.org/wiki/Goodhart%27s_law">Goodhart’s law(古德哈特定律)</a> - When a measure becomes a target, it ceases to be a good measure（当一项指标成为目标时，它就不再是一个好的指标），根据这个指标衡量也会起到不好的效果。</p><p>麦肯锡的衡量方法基本由下面组成：</p><ul><li>来源于Google的<a href="https://dora.dev/">DORA (DevOps Research and Assessment)</a>的四个指标：<ul><li>Lead time - 提交改动到交付用户的时间</li><li>Deploy frequencey - 部署频率</li><li>Change fail percentage - 改动导致的失败率</li><li>Time to restore - 恢复用时</li></ul></li><li>来源于Github和微软的<a href="https://queue.acm.org/detail.cfm?id=3454124">SPACE 模型</a>：<ul><li>Satisfaction and well-being</li><li>Performance</li><li>Activity</li><li>Communication and collaboration</li><li>Efficiency and flow</li></ul></li><li>麦肯锡这次提出的Opportunity-focused Metrics：<ul><li>Inner/outer loop time spent - 内循环和外循环的时间花费</li><li>Developer Velocity Index benchmark - 程序员开发速度指数基准</li><li>Contribution analysis - 贡献分析</li><li>Talent capability score - 人才能力评分</li></ul></li></ul><p>看了一堆关于程序用开发效率的文章后，觉得这篇<a href="https://jeremymikkola.com/posts/developer_productivity.html">What makes developers productive?</a>总结的影响程序员开发效率的因素还挺靠谱的，把重点摘录如下。</p><ul><li>知道要做的东西</li><li>做更少的事情。很快完成工作很好，但是完全不用做更棒。</li><li>反馈很快的工具</li><li>程序员的知识。专精很重要，不能只有广度。</li><li>有用的基础设施</li><li>低技术债</li><li>低失败率</li><li>务实的提高生产力的实践。你鼓励程序员提高效率的实践得是非常容易的，比如假设你鼓励程序员做原型来验证，就让搭建原型很容易，假设你鼓励程序员每次代码提交都很小便于代码审查，就让提交小的代码变动很容易。</li><li>专注。减少会议和随意打断对程序员生产力的伤害，避免让程序员脑子里同时担心很多事情。</li><li>做事情做完。事情做了一半的开发效率是0，并不是一半。及时止损沉没成本很重要，但是更重要的是要尽量避免半途而废。</li></ul><p>能不能衡量开发效率放到一边，对于我们每个人来说，尽量找到方法提高自己的开发效率肯定是需要的。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;前段时间随着麦肯锡的一篇文章&lt;a href=&quot;https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/yes-you-can-measure-softw
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>开好会议的一些小技巧</title>

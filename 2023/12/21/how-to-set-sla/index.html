@@ -1,0 +1,549 @@
+
+ <!DOCTYPE HTML>
+<html >
+<head>
+  <meta charset="UTF-8">
+  
+    <title>关于Service Level Agreement (SLA)的一些建议 | Dawei XU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Dawei XU">
+    
+
+    
+    <meta name="description" content="在Some practical advice when setting SLA中聊到了一些关于设置SLA的好的建议，值得一读，我把其中的一些要点记录如下。  SLA是有法律（Legal）和财务（Finance）的考虑的，是对客户的承诺。SLA是对外的，SLO是对内的，这是SLA和SLO的主要区别。 高SLA是有成本的，要定义合适的SLA（而不是尽量追求高SLA）。通常来说，每增加一个9，运维和组织">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于Service Level Agreement (SLA)的一些建议">
+<meta property="og:url" content="http://fresky.github.io/2023/12/21/how-to-set-sla/index.html">
+<meta property="og:site_name" content="Dawei XU">
+<meta property="og:description" content="在Some practical advice when setting SLA中聊到了一些关于设置SLA的好的建议，值得一读，我把其中的一些要点记录如下。  SLA是有法律（Legal）和财务（Finance）的考虑的，是对客户的承诺。SLA是对外的，SLO是对内的，这是SLA和SLO的主要区别。 高SLA是有成本的，要定义合适的SLA（而不是尽量追求高SLA）。通常来说，每增加一个9，运维和组织">
+<meta property="og:locale">
+<meta property="article:published_time" content="2023-12-21T04:22:23.000Z">
+<meta property="article:modified_time" content="2024-01-10T01:35:29.048Z">
+<meta property="article:author" content="Dawei XU">
+<meta property="article:tag" content="DevOps">
+<meta name="twitter:card" content="summary">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Dawei XU" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Dawei XU" title="Dawei XU"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Dawei XU">Dawei XU</a></h1>
+				<h2 class="blog-motto">Flying in the free sky</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:fresky.github.io">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2023/12/21/how-to-set-sla/" title="关于Service Level Agreement (SLA)的一些建议" itemprop="url">关于Service Level Agreement (SLA)的一些建议</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Dawei XU" target="_blank" itemprop="author">Dawei XU</a>
+		
+  <p class="article-time">
+    <time datetime="2023-12-21T04:22:23.000Z" itemprop="datePublished"> Published Dec 21 2023</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			
+		
+		</div>
+		
+		<p>在<a target="_blank" rel="noopener" href="https://alexewerlof.medium.com/nuances-of-setting-an-sla-78da372ba460">Some practical advice when setting SLA</a>中聊到了一些关于设置SLA的好的建议，值得一读，我把其中的一些要点记录如下。</p>
+<ul>
+<li>SLA是有法律（Legal）和财务（Finance）的考虑的，是对客户的承诺。SLA是对外的，SLO是对内的，这是SLA和SLO的主要区别。</li>
+<li>高SLA是有成本的，要定义合适的SLA（而不是尽量追求高SLA）。通常来说，每增加一个9，运维和组织的成本需要增加10倍。高SLA带来的成本有下面几个方面。<ul>
+<li>基础设施成本 - 更多的硬件资源</li>
+<li>复杂度 - 更高的复杂度带来更高的维护成本</li>
+<li>效率 - 更高的SLA通常意味着更谨慎（少、慢）的发布，更多的测试和流程。</li>
+</ul>
+</li>
+<li>考虑服务依赖的第三方的SLA</li>
+<li>SLA的设置要符合业务需求。比如对于医疗类的服务，可能5个9的高可用性都很有必要，但是对于其他的比如社交媒体，可能就不用那么高。</li>
+<li>SLA的设置要务实。最常用的方法就是看看历史数据来决定一个合理的值。</li>
+<li>要考虑SLA的设置是日历月还是回看窗口。假设SLA设置一个月可以有1个小时的不可用时间，那么如果月末和月初都发生了50分钟的事故，如果按照日历月，SLA还是满足的，但是对用户的影响可能是巨大的，这样就需要考虑使用回看窗口。</li>
+<li>考虑适合用平均无故障时间（MTBF）还是平均修复时间（MTTR）。通常来说如果一个服务是连续的，比如在线视频服务，平均无故障时间更合适。反之，比如一个REST API，可能平均修复时间更合适。</li>
+<li>测量工具。如果SLA对应的SLI的测量工具不可用了，SLI的值肯定就不可靠了。</li>
+<li>测量的位置。比如可用性的检查，可以在k8s内部（这个通常不是好的测量位置），也可以在k8s外面但是在同一个云提供商里，还可以在云提供商之外，甚至在用户端。要根据服务的具体业务场景来决定合适的测量位置。</li>
+<li>状态页面。有一个页面可以给客户随时看服务状态是建立信任的好方法。</li>
+<li>采样。有些业务场景可能针对每一次服务计算SLI太过于昂贵，这个时候就需要考虑采样，当然采样要保证统计上能覆盖所有的数据。</li>
+<li>根据人造的访问来计算还是根据实际的访问来计算。</li>
+<li>SLA不只是可用性（Availability或者uptime）。SLA的制定需要考虑业务需求，有时候可能需要延迟（Latency）、失败率（Error Rate）、CPU或者网络的饱和度（Saturation）。</li>
+</ul>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/DevOps/">DevOps</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	<div class="share-jiathis">
+	  
+<div class="jiathis_style_24x24">
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_googleplus"></a>
+	<a class="jiathis_button_douban"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"",
+    summary:"",
+     ralateuid:{"tsina":"1656049415"},hideMore:false}
+    
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+1886896" charset="utf-8"></script>      
+
+	 </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2023/12/28/code-review-best-practices/" title="代码审查（Code Review）的一些最佳实践">
+  <strong>上一篇：</strong><br/>
+  <span>
+  代码审查（Code Review）的一些最佳实践</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/2023/11/15/developer-productivity/"  title="程序员的开发效率可以衡量吗？">
+ <strong>下一篇：</strong><br/> 
+ <span>程序员的开发效率可以衡量吗？
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2023/12/21/how-to-set-sla/" data-title="关于Service Level Agreement (SLA)的一些建议" data-url="http://fresky.github.io/2023/12/21/how-to-set-sla/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ 
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <br/>
+<div class="widget-wrap">
+  <p class="asidetitle">Total Posts: 421</p>
+</div>
+
+
+  </br>
+
+  <div class="widget-wrap">
+    <p class="asidetitle">Recent Posts</p>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            * <a href="/2023/12/28/code-review-best-practices/">代码审查（Code Review）的一些最佳实践</a>
+          </li>
+        
+          <li>
+            * <a href="/2023/12/21/how-to-set-sla/">关于Service Level Agreement (SLA)的一些建议</a>
+          </li>
+        
+          <li>
+            * <a href="/2023/11/15/developer-productivity/">程序员的开发效率可以衡量吗？</a>
+          </li>
+        
+          <li>
+            * <a href="/2023/02/20/meeting-tips/">开好会议的一些小技巧</a>
+          </li>
+        
+          <li>
+            * <a href="/2022/12/06/good-meeting/">什么是好的会议</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/Programming/" title="Programming">Programming<sup>196</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>132</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Debug/" title="Debug">Debug<sup>35</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Other/" title="Other">Other<sup>32</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>19</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Development/" title="Development">Development<sup>16</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Testing/" title="Testing">Testing<sup>13</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Manage/" title="Manage">Manage<sup>12</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Design/" title="Design">Design<sup>9</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Process/" title="Process">Process<sup>8</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Life/" title="Life">Life<sup>6</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>5</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Cloud/" title="Cloud">Cloud<sup>3</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Installer/" title="Installer">Installer<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Productivity/" title="Productivity">Productivity<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/DevOps/" title="DevOps">DevOps<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/1656049415" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		<a href="https://github.com/fresky" target="_blank" class="icon-github" title="github"></a>
+		
+		
+		<a href="http://stackoverflow.com/users/304115" target="_blank" class="icon-stack-overflow" title="stackoverflow"></a>
+		
+		
+		
+		
+		<a href="https://www.linkedin.com/in/daweix" target="_blank" class="icon-linkedin" title="linkedin"></a>
+		
+		
+		<a href="https://www.douban.com/people/fresky" target="_blank" class="icon-douban" title="豆瓣"></a>
+		
+		
+		
+		
+		<a href="mailto:dawei.xu@gmail.com" target="_blank" class="icon-email" title="Email Me"></a>
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2024 
+		
+		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"fresky"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-47027591-1', 'auto');  
+ga('send', 'pageview');
+</script>
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fc461a6c03d4676862a12df80e9304bfd' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000250782'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1000250782' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>

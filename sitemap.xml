@@ -2,16 +2,1941 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://fresky.github.io/2023/11/15/developer-productivity/</loc>
+    <loc>http://fresky.github.io/2020/03/10/common-branching-models/</loc>
     
-    <lastmod>2023-11-15T06:15:45.251Z</lastmod>
+    <lastmod>2024-02-02T02:30:41.547Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2023/12/28/code-review-best-practices/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.049Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2023/12/21/how-to-set-sla/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.048Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://fresky.github.io/2022/05/25/how-to-be-a-good-architect/</loc>
     
-    <lastmod>2023-03-15T03:27:51.644Z</lastmod>
+    <lastmod>2024-01-10T01:35:29.047Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2020/05/22/pricing-psychology/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.046Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2020/05/12/estimation/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.045Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2020/02/07/soft-skill-questions/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.042Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2019/10/25/visual-vocabulary/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.041Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2019/02/18/package-net-core-in-one-single-exe/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.040Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2018/10/10/how-to-choose-brand-color/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.039Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2018/04/03/use-debuggerdisplay-in-assemblyinfo/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.038Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2018/03/23/how-to-crash-a-process/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.037Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2018/03/20/how-to-check-ssd-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.036Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2018/03/03/words-for-better-essay/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.034Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2017/06/02/tips-for-tech-conference/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.033Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2016/11/06/scrum-standup-meeting-tool/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.032Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2016/11/05/write-any-javascript-code-with-6-characters/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.031Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2016/08/12/compute-pixel-from-longitude-latitude/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.030Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2016/06/08/use-swashbuckle-to-add-swagger-api-help-for-asp-net-core/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.029Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2016/05/23/how-to-choose-cpp-and-csharp-compiler-version-in-visual-studio/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.027Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2016/05/21/use-roslynpad-as-lightweight-csharp-editor/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.026Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2016/03/06/use-benchmarkdotnet-for-csharp-benchmark/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.025Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/12/19/setup-shadowsocks-on-azure/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.024Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/11/07/setup-git-service-gogs-in-ubuntu/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.022Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/10/14/color-in-logo/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.021Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/10/13/story-about-windows-file-name/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.020Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/09/23/20-common-bias/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.018Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/09/22/how-to-check-if-windows-update-waiting-for-system-to-reboot/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.017Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/09/17/how-to-monitor-a-process-is-launched/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.016Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/09/16/how-to-change-time-back-after-user-change-time-in-windows/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.015Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/09/14/why-only-throw-invalidoperation-exception-when-launch-from-vs/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.014Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/08/20/how-csharp-get-window-title/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.012Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/08/20/get-process-id-by-name/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.010Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/08/19/how-to-get-the-window-title/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.009Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/08/12/how-to-parse-2-digit-year/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.008Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/07/15/debug-in-visual-studio-with-pseudovariables/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.007Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/07/14/how-to-remove-the-maximize-and-minimize-button/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.006Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/07/13/visual-cpp-compiler-optimization/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.004Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/07/09/check-ssd-disk-with-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.003Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/07/08/know-your-computer-from-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.002Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/07/04/how-to-find-the-context-record-for-cpp-exception/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.001Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/06/28/algo-visualization/</loc>
+    
+    <lastmod>2024-01-10T01:35:29.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/06/25/start-from-LAA/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.999Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/06/21/how-to-get-the-call-stack-from-code/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.998Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/06/21/how-to-attack-the-memory-leak-issue/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.997Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/06/17/customize-your-debugger-for-cpp-object/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.995Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/06/12/difference-between-moq4-net35-and-net4-version/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.995Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/05/24/float-in-csharp-and-cplusplus/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.992Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/05/22/avoid-finalizer-in-cshapr/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.992Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/05/17/tips-about-csharp-optimization/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.991Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/05/17/error-database-of-static-analysis-by-pvs-studio/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.990Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/04/29/compare-of-programming-typing-system/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.989Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/04/26/how-to-ask-questions/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.987Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/04/16/10-ways-to-improve-productivity/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.986Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/04/03/can-we-call-a-private-method-of-csharp-class/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.985Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/04/02/when-use-property-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.984Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/03/30/how-to-manipulate-2-lists/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.983Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/03/31/csharp-reachability/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.983Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/03/28/use-windbg-to-see-when-jit/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.981Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/03/25/how-to-debug-when-savefiledialog-is-disposed/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.980Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/03/24/csharp-performance-benchmar/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.979Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/03/23/null-coalescing-operator-precedence-is-lower-than-addition/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.978Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/03/22/the-rules-and-guidelines-of-gethashcode/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.977Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/03/20/how-to-check-the-finalizer-thread-is-blocked/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.975Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/03/16/build-regular-expressions-with-the-help-from-verbalexpressions/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.974Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/02/10/what-s-the-mean-of-compare-this-to-null/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.972Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/02/04/code-review-practices-from-smartbear/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.971Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/01/14/form-timer-callback-is-called-after-the-form-disposed/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.970Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/01/12/do-we-need-dispose-after-show-and-showdialog/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.969Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2015/01/09/how-to-detect-dead%2520-code/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.968Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/12/22/use-csharp-to-build-msi-with-wix-sharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.967Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/12/22/cpp-quiz-from-pvs-studio/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.965Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/12/18/do-you-really-know-c-tryparse/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.964Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/09/24/dot-net-samples-in-github-now/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.963Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/08/11/how-to-launch-multiple-windows-media-players/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.962Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/06/23/how-to-fix-class-not-registered-exception-for-com/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.960Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/05/23/do-not-use-same-names-in-com-interface-which-only-different-in-capitalizatoin/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.959Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/05/14/is-invokerequired-reliable/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.958Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/04/21/how-to-determine-the-file-type-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.957Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/04/21/fix-cannot-find-notepad-plus-plus-installation-issue-of-cs-script/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.955Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/04/11/tpl-dataflow-example-to-analyze-text-file/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.954Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/04/11/a-list-of-foundational-javascript-tools/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.953Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/04/09/minicodeeditor-168-bytes-online-html-slash-js-slash-css-editor/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.951Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/04/09/good-tools-and-websites/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.950Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/04/04/serialization-in-cpp-with-open-source-header-only-lib-cereal/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.948Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/04/02/see-code-complexity-in-visual-studio-with-extension-codemaid/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.947Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/03/31/make-your-notepadd-plus-plus-as-csharp-ide-with-intellisense-and-code-execution/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.946Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/03/28/read-key-value-pair-from-property-file-with-linq-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.944Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/03/15/good-tools-and-websites/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.942Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/03/11/learn-git-visually-by-learngitbranching/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.941Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/03/03/develop-android-app-in-visual-studio-with-android-plus-plus/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.939Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/03/02/real-time-net-error-reporting-service-exceptionless-is-open-source-now/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.938Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/03/01/write-your-own-flappy-bird-in-code-dot-org/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.936Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/02/28/how-to-run-subset-of-tests-in-google-test/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.935Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/02/27/see-dot-net-source-code-in-web-and-integrate-with-visual-studio-go-to-definition/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.934Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/02/18/clrmd-find-dac-location-from-symbol-server/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.933Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/02/17/use-clrmd-to-create-your-own-csharp-debugger/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.931Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/02/14/csharp-code-nippets-on-demand-by-bing-code-search/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.929Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/02/10/technology-radar-from-thoughtworks/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.927Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/01/24/sync-lastest-post-from-octopress-to-metaweblog/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.925Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/01/17/visual-studio-extension-pdbproj-load-project-from-pdb/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.924Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/01/09/runnable-online-ide-plus-code-snippet/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.923Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/01/09/parse-logs-in-linqpad-with-tx-driver/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.921Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/01/07/coding-style/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.920Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/01/06/crtp-static-polymorphism-in-c-plus-plus/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.919Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2014/01/03/cpp-static-dispatch-crtp-vs-dynamic-dispatch-virtual-method/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.917Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/12/31/whats-the-programming-language/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.915Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/12/31/learn-x-in-y-minute/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.914Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/11/20/github-resume/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.912Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/11/19/windows-history/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.911Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/11/12/github-pages-guide/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.909Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/11/11/browserswarm-a-tool-that-automates-your-testing-of-javascript-across-browsers/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.908Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/11/04/apk-downloader/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.906Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/10/17/math-library-for-c-number/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.905Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/10/16/c-plus-plus-timeline/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.903Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/09/26/gist-tab-not-work-for-octopress/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.902Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/09/24/convert-metaweblog-posts-to-octropress/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.900Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/09/18/popular-coding-convention-on-github/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.899Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/09/15/blog-in-github-pages-with-octopress/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.897Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/09/11/why-have-Run-Time-Check-Failure-0-The-value-of-ESP-was-not-properly-saved-across-a-function-call-error/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.895Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/08/26/projecteuler-programming-to-solve-math-problems/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.892Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/08/22/Codility-automatic-testing-programming-skills/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.891Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/08/19/unit-test-generator-vs-addin/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.889Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/08/16/dotPeek-dot-net-decompiler-from-jetbrains/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.887Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/31/wpf-progressbar-spinner-with-elapse-time/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.884Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/25/acid-and-base-in-db-transaction/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.883Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/23/how-to-choose-nosql-db/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.881Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/22/good-tools-and-websites/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.879Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/19/windows-live-writer-plugin-markdowninlivewriter-support-code-syntax-highlight/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.732Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/18/choosealicense-addalicense-github-license/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.730Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.729Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/16/windows-live-writer-plugin-markdowninlivewriter/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.727Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/16/how-to-install-gitlab-in-windows-github-open-source-alternative/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.725Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/12/how-to-interview-programmer-by-matt-rogish/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.723Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/12/api-difference-of-microsoft-apis/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.722Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/09/where-to-download-different-versions-of-microsoft-files/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.721Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/09/compare-of-5-timers-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.719Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/08/visual-website-for-retrospective/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.718Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/08/tasks-are-not-threads/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.716Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/08/code-workshop-instead-of-code-review/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/07/15-workplace-barriers-better-code/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.712Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/06/tldrlegal-opensource-license-search-engine/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.710Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/06/how-to-opensource-your-code/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.709Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/04/pInvokeStackImbalance-mda-default-is-on-in-dot-net-4/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.708Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/07/04/dot-net-library-of-google-api/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.706Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/30/csharp-string-for-reflection-need-backus-naur-form/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.705Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/27/intresting-captcha-website/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.703Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/27/how-to-troubleshot-sql-server/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.624Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/27/git-ignore-template/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.623Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/20/where-is-my-timer-csharp-gc/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.622Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/17/2-funny-vs-addins-to-hear-and-talk/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.621Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/14/common-mistakes-of-website/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.620Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/09/codeinlivewriter-code-syntax-highlight-plugin-for-windows-live-writer/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.619Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/08/time-counter-and-memory-counter-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.617Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/08/gitlab-opensource-github-clone/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.616Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/07/constrained-execution-regions-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.615Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/06/04/d-0-9-difference-in-regex/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.614Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.613Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/05/24/c4305-and-c4800-compiler-warning-in-cpp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.612Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/05/22/intresting-app-recaptcha/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.611Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/05/20/8-things-you-should-not-do-every-day/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.610Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/05/16/use-csharp-as-script-language/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.609Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/05/15/allow-upload-file-of-any-type-in-osqa/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.608Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/05/10/poor-mans-agile-scrum-in-5-simple-steps/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.607Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/05/07/how-color-affect-marketing/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.605Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/05/06/obscure-cpp-features/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.604Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/04/25/preprocessor-directives-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.603Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/04/18/how-to-avoid-computer-to-sleep-or-screen-saver-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.602Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/03/15/what-is-the-value-of-uninitialized-pointer-in-cpp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.601Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/03/01/Developers-Guide-to-Images/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/02/27/yield-return-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.599Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/02/24/difference-between-func-and-expression/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.598Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/02/20/compare-of-csharp-different-serialization/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.597Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/02/19/static-constructor-surprise-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.596Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.595Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/02/18/10-reasons-you-fail-to-be-a-better-developer/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.594Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/02/16/50-javascript-charting-and-graphics-libraries/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.593Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/02/05/online-cpp-compiler/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.592Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/02/05/a-lightweight-logger-for-cpp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.590Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/02/05/deadlock-caused-by-csharp-static-constructor/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.590Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/01/31/one-line-browser-notepad/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.589Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/01/21/web-developer-checklist/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.588Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/01/21/unit-library-for-cpp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.587Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/01/21/get-system-info-with-windows-management-instrumentation-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.586Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/01/09/stop-using-story-point/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.585Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2013/01/05/how-to-start-open-source-project/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.584Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/28/when-to-replace-default-new-and-delete-in-cpp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.583Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.582Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/26/csharp-memory-model/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.581Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/25/python-replace-javascript/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.580Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/25/cpp-ruby-coffeescript-language-complexity/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.579Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/25/12-tools-about-big-data/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.577Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/24/extern-alias-to-solve-same-type-name-in-2-assemblies-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.576Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/23/how-to-implement-idisposable-interface-correctly-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.575Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/23/how-to-dump-cpp-objects-memory-layout-and-crack-name-mangling/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.573Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/22/dependency-injection-in-net-by-unity-and-strcturemap/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.572Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/21/which-overload-function-will-be-called-when-pass-null-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.571Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/20/fuslogvw-help-to-solve-dot-net-framework-can-not-find-assembly/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.570Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/18/using-mpgo-and-ngen-to-optimize-csharp-app-starting-performance/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.569Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/17/how-to-write-move-constructor-in-cpp11/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.567Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/12/swig-connect-cpp-programs-with-other-languages/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.566Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/11/want-speed-pass-by-value/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.565Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.564Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/09/should-use-reference-in-cpp-exception/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.563Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/08/free-csharp-code-analysis-tool-nitriq/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.562Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/05/cpp-operator-overloading-checklist/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.561Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/04/how-to-prevent-class-being-base-class-in-cpp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.560Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/04/csharp-exploratory-testing-tool-pex/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.559Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/03/can-not-use-base-class-pointer-for-array-of-child-class-pointer-in-cpp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.558Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/30/use-whiteboard-instead-of-ppt/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.556Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/12/01/where-your-cloud-data-really-lives/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.556Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/27/how-to-check-process-is-64bit-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.555Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/26/how-to-check-dot-net-framework-version-in-registry/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.554Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/25/when-cpp-compiler-generate-copy-constructors-for-us/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.552Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/26/8-things-you-probably-didnt-know-about-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.552Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.551Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/22/rx-is-open-source/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.549Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/22/idlemonitor-monitor-user-away-application-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.548Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/19/use-bit-operator-for-memory-allocation/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.547Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/19/match-all-printable-character-in-regex/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.546Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/11/15/how-much-of-bug/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.545Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/27/callerinfo-to-log-in-csharp-45/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.542Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/25/csharp-overload-checking-not-always-performed-at-compiler-time/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.541Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/24/csharp-decompiler-plugin-assembly-visualizer/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.540Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/19/discussion-about-scrum/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.539Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/17/funny-comments/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.538Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/15/fatal-exceptions-you-can-not-catch-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.536Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/09/dot-net-assembly-structure/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.535Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/09/combine-multiple-png-to-gif-with-python-and-javascript/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.533Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/09/check-process-is-64bit-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.532Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/06/why-we-have-minus-zero/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.530Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/10/02/whats-the-difference-between-doing-this-and-that-in-charp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.529Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/09/28/remove-xml-declaration-and-xml-namespace-in-c#-xml-serializer/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.528Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/09/10/run-csharp-in-browser/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.525Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/09/10/freeverything-simple-disk-cleanup-tool-based-on-everything/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.524Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.523Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/09/05/microsoft-free-security-tools-banned-for-cpp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.522Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/08/14/solve-can-not-find-resource-named-in-wpf/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.520Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/08/10/pay-attention-to-cpp-constructor/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.518Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/08/06/how-to-data-binding-radio-button-in-wpf/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.517Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/25/why-string-indexof-string-return-1-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.516Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/24/how-get-all-types-in-dll-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.515Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/19/deadlock-caused-by-locking-pulic-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.514Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/17/run-sql-command-in-bat-file/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.513Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/17/not-everything-derives-from-object-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.512Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.510Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.509Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/16/customize-your-own-debugger-visualizer-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.508Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.507Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.506Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/11/why-you-can-not-see-your-wpf-app-icon/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.505Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/10/summary-about-cpp-macro/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.504Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/10/mozilla-thimble-online-html-editor/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.503Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/06/how-to-record-startup-time-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.501Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.500Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/05/microsoft-fakes-framework/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.499Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/07/03/mutation-test/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.498Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/06/29/branch-prediction-why-is-processing-a-sorted-array-faster-than-an-unsorted-array/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.497Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2012/02/24/how-to-remote-debug-asp-dot-net-and-silverlight/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.495Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2011/06/24/difference-between-push-back-and-resize-in-cpp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.494Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2011/06/23/dot-net-2-timer-elapsed-event-will-catch-all-exception-for-you/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.492Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2011/01/11/where-system-environment-variables-stored-in-registry/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.490Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2011/01/11/length-limit-of-http-url/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.489Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2011/01/11/GetEnvironmentVariable-issue-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.488Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/12/16/how-to-work-with-rtf-in-csharp/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.486Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/12/08/difference-between-response-write-and-clientscript-registerstartupscript-in-asp-dot-net/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.479Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.478Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/11/08/customize-csharp-dropdown-list/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.477Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/11/03/insert-travel-map-to-blog/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.475Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/11/02/add-checkbox-to-csharp-tree-view/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.475Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/29/set-firefox-default-google-serach-to-com-not-hk/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.473Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/20/put-wcf-service-to-web-config/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.472Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/15/android/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.471Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/11/solve-could-not-load-file-or-assembly-in-wcf-service/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.470Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.468Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/09/how-to-convert-rtf-to-silverlight-rightextbox/</loc>
+    
+    <lastmod>2024-01-10T01:35:28.466Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2023/11/15/developer-productivity/</loc>
+    
+    <lastmod>2023-11-15T06:15:45.251Z</lastmod>
     
   </url>
   
@@ -93,13 +2018,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2020/05/22/pricing-psychology/</loc>
-    
-    <lastmod>2020-05-22T16:43:26.673Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2020/05/21/windows-update-history/</loc>
     
     <lastmod>2020-05-21T08:35:58.029Z</lastmod>
@@ -110,13 +2028,6 @@
     <loc>http://fresky.github.io/2020/05/05/remote-work/</loc>
     
     <lastmod>2020-05-14T08:27:54.141Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2020/05/12/estimation/</loc>
-    
-    <lastmod>2020-05-13T06:43:57.628Z</lastmod>
     
   </url>
   
@@ -142,37 +2053,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2020/02/07/soft-skill-questions/</loc>
-    
-    <lastmod>2020-03-17T08:30:43.667Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2020/03/16/one-on-one-talk/</loc>
     
     <lastmod>2020-03-17T02:52:57.658Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2020/03/10/common-branching-models/</loc>
-    
-    <lastmod>2020-03-10T12:02:38.641Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2019/02/18/package-net-core-in-one-single-exe/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.315Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2018/10/10/how-to-choose-brand-color/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.315Z</lastmod>
     
   </url>
   
@@ -184,28 +2067,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2019/10/25/visual-vocabulary/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.315Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2018/03/23/how-to-crash-a-process/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.314Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2018/04/05/generate-diagram-and-flowchart-with-mermain-in-markdown/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.314Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2018/04/03/use-debuggerdisplay-in-assemblyinfo/</loc>
     
     <lastmod>2019-12-20T08:29:07.314Z</lastmod>
     
@@ -227,20 +2089,6 @@
   
   <url>
     <loc>http://fresky.github.io/2018/03/06/should-we-innovate/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.313Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2018/03/20/how-to-check-ssd-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.313Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2018/03/03/words-for-better-essay/</loc>
     
     <lastmod>2019-12-20T08:29:07.313Z</lastmod>
     
@@ -275,27 +2123,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2016/11/06/scrum-standup-meeting-tool/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.311Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2017/06/02/tips-for-tech-conference/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.311Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2016/11/05/write-any-javascript-code-with-6-characters/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.311Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2017/08/26/how-to-choose-slide/</loc>
     
     <lastmod>2019-12-20T08:29:07.311Z</lastmod>
@@ -310,42 +2137,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2016/05/23/how-to-choose-cpp-and-csharp-compiler-version-in-visual-studio/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.310Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2016/06/08/use-swashbuckle-to-add-swagger-api-help-for-asp-net-core/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.310Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2016/08/12/compute-pixel-from-longitude-latitude/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.310Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2015/11/08/use-rufus-to-create-bootable-usb-installer-for-windows-10/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.309Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2016/03/06/use-benchmarkdotnet-for-csharp-benchmark/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.309Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/12/19/setup-shadowsocks-on-azure/</loc>
     
     <lastmod>2019-12-20T08:29:07.309Z</lastmod>
     
@@ -359,56 +2151,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2016/05/21/use-roslynpad-as-lightweight-csharp-editor/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.309Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/10/13/story-about-windows-file-name/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.308Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/10/14/color-in-logo/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.308Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/11/07/setup-git-service-gogs-in-ubuntu/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.308Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/09/17/how-to-monitor-a-process-is-launched/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.307Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2015/09/24/create-a-system-user-cmd/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.307Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/09/23/20-common-bias/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.307Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/09/22/how-to-check-if-windows-update-waiting-for-system-to-reboot/</loc>
     
     <lastmod>2019-12-20T08:29:07.307Z</lastmod>
     
@@ -422,112 +2165,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2015/09/14/why-only-throw-invalidoperation-exception-when-launch-from-vs/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.306Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/09/16/how-to-change-time-back-after-user-change-time-in-windows/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.306Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/08/12/how-to-parse-2-digit-year/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.305Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/08/19/how-to-get-the-window-title/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.305Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/08/20/get-process-id-by-name/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.305Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/08/20/how-csharp-get-window-title/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.305Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/07/09/check-ssd-disk-with-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.304Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/07/13/visual-cpp-compiler-optimization/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.304Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/07/15/debug-in-visual-studio-with-pseudovariables/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.304Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/07/14/how-to-remove-the-maximize-and-minimize-button/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.304Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/07/04/how-to-find-the-context-record-for-cpp-exception/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.303Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/06/28/algo-visualization/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.303Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/07/08/know-your-computer-from-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.303Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/06/21/how-to-get-the-call-stack-from-code/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.302Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2015/06/23/debug-32bit-application-s-dump-captured-by-64bit-task-manager/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.302Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/06/25/start-from-LAA/</loc>
     
     <lastmod>2019-12-20T08:29:07.302Z</lastmod>
     
@@ -537,41 +2175,6 @@
     <loc>http://fresky.github.io/2015/06/05/tdd-cyles/</loc>
     
     <lastmod>2019-12-20T08:29:07.301Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/06/17/customize-your-debugger-for-cpp-object/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.301Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/06/12/difference-between-moq4-net35-and-net4-version/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.301Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/06/21/how-to-attack-the-memory-leak-issue/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.301Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/05/24/float-in-csharp-and-cplusplus/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.300Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/05/22/avoid-finalizer-in-cshapr/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.300Z</lastmod>
     
   </url>
   
@@ -597,21 +2200,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2015/05/17/error-database-of-static-analysis-by-pvs-studio/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.299Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2015/05/01/compare-of-different-bool-in-windows/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.299Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/05/17/tips-about-csharp-optimization/</loc>
     
     <lastmod>2019-12-20T08:29:07.299Z</lastmod>
     
@@ -632,34 +2221,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2015/04/26/how-to-ask-questions/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.298Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/04/29/compare-of-programming-typing-system/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.298Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/04/03/can-we-call-a-private-method-of-csharp-class/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.297Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/04/02/when-use-property-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.297Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2015/04/15/how-to-debug-msbuild/</loc>
     
     <lastmod>2019-12-20T08:29:07.297Z</lastmod>
@@ -667,65 +2228,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2015/04/16/10-ways-to-improve-productivity/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.297Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/03/28/use-windbg-to-see-when-jit/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.296Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/03/30/how-to-manipulate-2-lists/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.296Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2015/04/01/unicode-and-character-set/</loc>
     
     <lastmod>2019-12-20T08:29:07.296Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/03/31/csharp-reachability/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.296Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/03/23/null-coalescing-operator-precedence-is-lower-than-addition/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.295Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/03/24/csharp-performance-benchmar/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.295Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/03/25/how-to-debug-when-savefiledialog-is-disposed/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.295Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/03/16/build-regular-expressions-with-the-help-from-verbalexpressions/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.294Z</lastmod>
     
   </url>
   
@@ -744,27 +2249,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2015/03/20/how-to-check-the-finalizer-thread-is-blocked/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.294Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/03/22/the-rules-and-guidelines-of-gethashcode/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.294Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/02/04/code-review-practices-from-smartbear/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.293Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2015/02/06/how-fast-tech-company-reach-1-billion/</loc>
     
     <lastmod>2019-12-20T08:29:07.293Z</lastmod>
@@ -772,72 +2256,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2015/02/10/what-s-the-mean-of-compare-this-to-null/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.293Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/01/12/do-we-need-dispose-after-show-and-showdialog/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.292Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/01/09/how-to-detect-dead%2520-code/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.292Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2015/01/14/form-timer-callback-is-called-after-the-form-disposed/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.292Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/12/18/do-you-really-know-c-tryparse/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.291Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/12/22/use-csharp-to-build-msi-with-wix-sharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.291Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/12/22/cpp-quiz-from-pvs-studio/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.291Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2015/01/08/how-to-manage-the-search-engine-in-firefox-34/</loc>
     
     <lastmod>2019-12-20T08:29:07.291Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/08/11/how-to-launch-multiple-windows-media-players/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.290Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/09/24/dot-net-samples-in-github-now/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.290Z</lastmod>
     
   </url>
   
@@ -856,13 +2277,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2014/06/23/how-to-fix-class-not-registered-exception-for-com/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.289Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2014/07/16/atom-cheat-sheet-for-windows/</loc>
     
     <lastmod>2019-12-20T08:29:07.289Z</lastmod>
@@ -871,20 +2285,6 @@
   
   <url>
     <loc>http://fresky.github.io/2014/05/04/using-camstudio-and-keycastow-to-record-demo-video/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.288Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/05/14/is-invokerequired-reliable/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.288Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/05/23/do-not-use-same-names-in-com-interface-which-only-different-in-capitalizatoin/</loc>
     
     <lastmod>2019-12-20T08:29:07.288Z</lastmod>
     
@@ -919,83 +2319,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2014/04/11/tpl-dataflow-example-to-analyze-text-file/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.286Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/04/21/fix-cannot-find-notepad-plus-plus-installation-issue-of-cs-script/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.286Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/04/21/how-to-determine-the-file-type-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.286Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/04/09/good-tools-and-websites/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.285Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/04/09/minicodeeditor-168-bytes-online-html-slash-js-slash-css-editor/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.285Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/04/11/a-list-of-foundational-javascript-tools/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.285Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/03/31/make-your-notepadd-plus-plus-as-csharp-ide-with-intellisense-and-code-execution/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.284Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/04/02/see-code-complexity-in-visual-studio-with-extension-codemaid/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.284Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/04/04/serialization-in-cpp-with-open-source-header-only-lib-cereal/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.284Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/03/15/good-tools-and-websites/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.283Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/03/28/read-key-value-pair-from-property-file-with-linq-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.283Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2014/03/19/markdown-editor-haroopad/</loc>
     
     <lastmod>2019-12-20T08:29:07.283Z</lastmod>
@@ -1003,77 +2326,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2014/02/28/how-to-run-subset-of-tests-in-google-test/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.282Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/03/02/real-time-net-error-reporting-service-exceptionless-is-open-source-now/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.282Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/03/01/write-your-own-flappy-bird-in-code-dot-org/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.282Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/03/03/develop-android-app-in-visual-studio-with-android-plus-plus/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.282Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/03/11/learn-git-visually-by-learngitbranching/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.282Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/02/14/csharp-code-nippets-on-demand-by-bing-code-search/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.281Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/02/17/use-clrmd-to-create-your-own-csharp-debugger/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.281Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/02/18/clrmd-find-dac-location-from-symbol-server/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.281Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/02/27/see-dot-net-source-code-in-web-and-integrate-with-visual-studio-go-to-definition/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.281Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2014/01/26/my-favorite-visual-studio-2013-feature/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.280Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/01/24/sync-lastest-post-from-octopress-to-metaweblog/</loc>
     
     <lastmod>2019-12-20T08:29:07.280Z</lastmod>
     
@@ -1087,84 +2340,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2014/02/10/technology-radar-from-thoughtworks/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.280Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/01/07/coding-style/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.279Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/01/09/parse-logs-in-linqpad-with-tx-driver/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.279Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/01/17/visual-studio-extension-pdbproj-load-project-from-pdb/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.279Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/01/09/runnable-online-ide-plus-code-snippet/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.279Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/12/31/whats-the-programming-language/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.278Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/01/06/crtp-static-polymorphism-in-c-plus-plus/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.278Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2014/01/03/cpp-static-dispatch-crtp-vs-dynamic-dispatch-virtual-method/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.278Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/11/19/it-salary/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.277Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/11/19/windows-history/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.277Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/11/20/github-resume/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.277Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/12/31/learn-x-in-y-minute/</loc>
     
     <lastmod>2019-12-20T08:29:07.277Z</lastmod>
     
@@ -1185,86 +2361,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/11/04/apk-downloader/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.276Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/11/11/browserswarm-a-tool-that-automates-your-testing-of-javascript-across-browsers/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.276Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/11/12/github-pages-guide/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.276Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/11/18/who-are-developers/</loc>
     
     <lastmod>2019-12-20T08:29:07.276Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/09/26/gist-tab-not-work-for-octopress/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.275Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/09/24/convert-metaweblog-posts-to-octropress/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.275Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/10/17/math-library-for-c-number/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.275Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/10/16/c-plus-plus-timeline/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.275Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/09/11/why-have-Run-Time-Check-Failure-0-The-value-of-ESP-was-not-properly-saved-across-a-function-call-error/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.274Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/09/15/blog-in-github-pages-with-octopress/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.274Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/08/26/projecteuler-programming-to-solve-math-problems/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.274Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/09/18/popular-coding-convention-on-github/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.274Z</lastmod>
     
   </url>
   
@@ -1283,69 +2382,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/08/16/dotPeek-dot-net-decompiler-from-jetbrains/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.273Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/08/19/unit-test-generator-vs-addin/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.273Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/08/22/Codility-automatic-testing-programming-skills/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.273Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/22/good-tools-and-websites/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.272Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/23/how-to-choose-nosql-db/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.272Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/25/acid-and-base-in-db-transaction/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.272Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/31/wpf-progressbar-spinner-with-elapse-time/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.272Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/18/ask-bug-guy-in-coverity/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.271Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/18/choosealicense-addalicense-github-license/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.271Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/07/18/markdown-implementations-list/</loc>
     
     <lastmod>2019-12-20T08:29:07.271Z</lastmod>
@@ -1353,49 +2389,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/07/19/windows-live-writer-plugin-markdowninlivewriter-support-code-syntax-highlight/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.271Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/16/how-to-install-gitlab-in-windows-github-open-source-alternative/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.270Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/16/windows-live-writer-plugin-markdowninlivewriter/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.270Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/09/where-to-download-different-versions-of-microsoft-files/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.269Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/07/10/make-slides-show-forever-by-autohotkey/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.269Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/12/api-difference-of-microsoft-apis/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.269Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/12/how-to-interview-programmer-by-matt-rogish/</loc>
     
     <lastmod>2019-12-20T08:29:07.269Z</lastmod>
     
@@ -1409,48 +2403,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/07/08/code-workshop-instead-of-code-review/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.268Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/08/visual-website-for-retrospective/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.268Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/09/compare-of-5-timers-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.268Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/08/tasks-are-not-threads/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.268Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/06/how-to-opensource-your-code/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.267Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/06/tldrlegal-opensource-license-search-engine/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.267Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/07/07/14-characters-of-coder/</loc>
     
     <lastmod>2019-12-20T08:29:07.267Z</lastmod>
@@ -1458,51 +2410,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/07/07/15-workplace-barriers-better-code/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.267Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/06/30/csharp-string-for-reflection-need-backus-naur-form/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.266Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/07/01/go-read-alternative-to-google-reader/</loc>
     
     <lastmod>2019-12-20T08:29:07.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/04/pInvokeStackImbalance-mda-default-is-on-in-dot-net-4/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/07/04/dot-net-library-of-google-api/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.266Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/06/27/how-to-troubleshot-sql-server/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.265Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/06/27/intresting-captcha-website/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.265Z</lastmod>
     
   </url>
   
@@ -1521,13 +2431,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/06/20/where-is-my-timer-csharp-gc/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.264Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/06/21/honeywords-simple-way-to-avoid-password-cracking/</loc>
     
     <lastmod>2019-12-20T08:29:07.264Z</lastmod>
@@ -1536,13 +2439,6 @@
   
   <url>
     <loc>http://fresky.github.io/2013/06/21/how-to-spread-your-code/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.264Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/06/27/git-ignore-template/</loc>
     
     <lastmod>2019-12-20T08:29:07.264Z</lastmod>
     
@@ -1577,72 +2473,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/06/14/common-mistakes-of-website/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.262Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/06/17/2-funny-vs-addins-to-hear-and-talk/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.262Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/06/08/time-counter-and-memory-counter-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.261Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/06/08/gitlab-opensource-github-clone/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.261Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/06/09/codeinlivewriter-code-syntax-highlight-plugin-for-windows-live-writer/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.261Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/06/04/d-0-9-difference-in-regex/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.260Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/06/07/complexity-for-common-algorithms/</loc>
     
     <lastmod>2019-12-20T08:29:07.260Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/06/07/constrained-execution-regions-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.260Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/05/22/intresting-app-recaptcha/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.259Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/05/24/c4305-and-c4800-compiler-warning-in-cpp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.259Z</lastmod>
     
   </url>
   
@@ -1657,20 +2490,6 @@
     <loc>http://fresky.github.io/2013/06/03/useful-tools-worflowy-trello/</loc>
     
     <lastmod>2019-12-20T08:29:07.259Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/05/28/cool-website-network-graph-programming-languages-influence/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.259Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/05/20/8-things-you-should-not-do-every-day/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.258Z</lastmod>
     
   </url>
   
@@ -1710,27 +2529,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/05/15/allow-upload-file-of-any-type-in-osqa/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.257Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/05/10/poor-mans-agile-scrum-in-5-simple-steps/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.257Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/05/16/use-csharp-as-script-language/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.257Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know/</loc>
     
     <lastmod>2019-12-20T08:29:07.256Z</lastmod>
@@ -1745,28 +2543,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/05/06/obscure-cpp-features/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.256Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/05/07/how-color-affect-marketing/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.256Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/04/24/code-digger-vs2012-extension-of-pex/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.255Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/04/25/preprocessor-directives-in-csharp/</loc>
     
     <lastmod>2019-12-20T08:29:07.255Z</lastmod>
     
@@ -1783,13 +2560,6 @@
     <loc>http://fresky.github.io/2013/05/01/numbers-every-programmer-should-know-continued/</loc>
     
     <lastmod>2019-12-20T08:29:07.255Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/04/18/how-to-avoid-computer-to-sleep-or-screen-saver-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.254Z</lastmod>
     
   </url>
   
@@ -1836,27 +2606,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/03/15/what-is-the-value-of-uninitialized-pointer-in-cpp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.253Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/03/01/Developers-Guide-to-Images/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.252Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/02/27/yield-return-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.252Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/03/07/understand-your-code-with-doxygen-and-graphviz/</loc>
     
     <lastmod>2019-12-20T08:29:07.252Z</lastmod>
@@ -1867,55 +2616,6 @@
     <loc>http://fresky.github.io/2013/03/01/command-query-responsibility-segregation/</loc>
     
     <lastmod>2019-12-20T08:29:07.252Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/02/19/exception-in-csharp-static-constructor/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.251Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/02/18/10-reasons-you-fail-to-be-a-better-developer/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.251Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/02/19/static-constructor-surprise-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.251Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/02/20/compare-of-csharp-different-serialization/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.251Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/02/24/difference-between-func-and-expression/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.251Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/02/05/online-cpp-compiler/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.250Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/02/16/50-javascript-charting-and-graphics-libraries/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.250Z</lastmod>
     
   </url>
   
@@ -1941,58 +2641,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/01/31/one-line-browser-notepad/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.249Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/02/05/a-lightweight-logger-for-cpp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.249Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/02/05/deadlock-caused-by-csharp-static-constructor/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.249Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2013/01/11/vs-addin-tfs-source-control-history-visualization/</loc>
     
     <lastmod>2019-12-20T08:29:07.248Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/01/21/unit-library-for-cpp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.248Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/01/21/get-system-info-with-windows-management-instrumentation-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.248Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/01/21/web-developer-checklist/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.248Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2013/01/05/how-to-start-open-source-project/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.247Z</lastmod>
     
   </url>
   
@@ -2004,28 +2655,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2013/01/09/stop-using-story-point/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.247Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/28/evolution-of-synchronization-in-windows-and-cpp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.246Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/12/28/how-to-answer-which-is-faster/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.246Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/28/when-to-replace-default-new-and-delete-in-cpp/</loc>
     
     <lastmod>2019-12-20T08:29:07.246Z</lastmod>
     
@@ -2039,107 +2669,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/12/25/12-tools-about-big-data/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.245Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/25/python-replace-javascript/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.245Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/26/csharp-memory-model/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.245Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/25/cpp-ruby-coffeescript-language-complexity/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.245Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/23/how-to-implement-idisposable-interface-correctly-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.244Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/24/extern-alias-to-solve-same-type-name-in-2-assemblies-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.244Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/21/which-overload-function-will-be-called-when-pass-null-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.243Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/22/dependency-injection-in-net-by-unity-and-strcturemap/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.243Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/23/how-to-dump-cpp-objects-memory-layout-and-crack-name-mangling/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.243Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/17/how-to-write-move-constructor-in-cpp11/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.242Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/18/using-mpgo-and-ngen-to-optimize-csharp-app-starting-performance/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.242Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/12/19/vs2012-visualizing-and-understanding-code/</loc>
     
     <lastmod>2019-12-20T08:29:07.242Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/20/fuslogvw-help-to-solve-dot-net-framework-can-not-find-assembly/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.242Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/11/want-speed-pass-by-value/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.241Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/12/swig-connect-cpp-programs-with-other-languages/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.241Z</lastmod>
     
   </url>
   
@@ -2165,20 +2697,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/12/09/should-use-reference-in-cpp-exception/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.240Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/10/how-cpp-find-overload-functions/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.240Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/12/10/the-story-of-nokia-meego/</loc>
     
     <lastmod>2019-12-20T08:29:07.240Z</lastmod>
@@ -2193,13 +2711,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/12/05/cpp-operator-overloading-checklist/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.239Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/12/07/how-to-review-unit-test-code/</loc>
     
     <lastmod>2019-12-20T08:29:07.239Z</lastmod>
@@ -2207,86 +2718,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/12/08/free-csharp-code-analysis-tool-nitriq/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.239Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/01/where-your-cloud-data-really-lives/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.238Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/12/02/how-to-test-complex-systems/</loc>
     
     <lastmod>2019-12-20T08:29:07.238Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/04/csharp-exploratory-testing-tool-pex/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.238Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/04/how-to-prevent-class-being-base-class-in-cpp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.238Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/12/03/can-not-use-base-class-pointer-for-array-of-child-class-pointer-in-cpp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.238Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/11/25/when-cpp-compiler-generate-copy-constructors-for-us/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.237Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/11/26/8-things-you-probably-didnt-know-about-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.237Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/11/27/how-to-check-process-is-64bit-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.237Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/11/26/how-to-check-dot-net-framework-version-in-registry/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.237Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/11/30/use-whiteboard-instead-of-ppt/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.237Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/11/22/rx-is-open-source/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.236Z</lastmod>
     
   </url>
   
@@ -2305,35 +2739,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/11/25/turn-on-c4265-in-visual-studio-destructor-is-not-virtual/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.236Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/11/17/top-20-online-ide/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.235Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/11/19/match-all-printable-character-in-regex/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.235Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/11/19/use-bit-operator-for-memory-allocation/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.235Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/11/22/idlemonitor-monitor-user-away-application-in-csharp/</loc>
     
     <lastmod>2019-12-20T08:29:07.235Z</lastmod>
     
@@ -2354,20 +2760,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/11/15/how-much-of-bug/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.234Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/10/27/callerinfo-to-log-in-csharp-45/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.234Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/10/24/cool-slr-simulation-website/</loc>
     
     <lastmod>2019-12-20T08:29:07.233Z</lastmod>
@@ -2382,20 +2774,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/10/25/csharp-overload-checking-not-always-performed-at-compiler-time/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.233Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/10/24/csharp-decompiler-plugin-assembly-visualizer/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.233Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/10/23/visualize-worldwide-attack-in-real-time/</loc>
     
     <lastmod>2019-12-20T08:29:07.233Z</lastmod>
@@ -2403,37 +2781,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/10/15/fatal-exceptions-you-can-not-catch-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.232Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/10/17/firefox-plugin-display-imdb-in-douban/</loc>
     
     <lastmod>2019-12-20T08:29:07.232Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/10/17/funny-comments/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.232Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/10/19/discussion-about-scrum/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.232Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/10/09/dot-net-assembly-structure/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.231Z</lastmod>
     
   </url>
   
@@ -2480,65 +2830,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/10/09/check-process-is-64bit-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.230Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/10/09/combine-multiple-png-to-gif-with-python-and-javascript/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.230Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/09/29/coding-checklist-from-construx/</loc>
     
     <lastmod>2019-12-20T08:29:07.229Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/10/02/whats-the-difference-between-doing-this-and-that-in-charp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.229Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/10/06/why-we-have-minus-zero/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.229Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/09/10/buildzipper-zip-build-result-for-csharp-project/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.228Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/09/10/freeverything-simple-disk-cleanup-tool-based-on-everything/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.228Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/09/10/run-csharp-in-browser/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.228Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/09/28/remove-xml-declaration-and-xml-namespace-in-c#-xml-serializer/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.228Z</lastmod>
     
   </url>
   
@@ -2558,13 +2852,6 @@
   
   <url>
     <loc>http://fresky.github.io/2012/08/21/find-cloned-code-in-csharp-with-visual-studio-2012/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.227Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/09/05/microsoft-free-security-tools-banned-for-cpp/</loc>
     
     <lastmod>2019-12-20T08:29:07.227Z</lastmod>
     
@@ -2592,118 +2879,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/08/10/pay-attention-to-cpp-constructor/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.226Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/08/14/solve-can-not-find-resource-named-in-wpf/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.226Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/19/deadlock-caused-by-locking-pulic-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.225Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/24/how-get-all-types-in-dll-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.225Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/25/why-string-indexof-string-return-1-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.225Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/08/06/how-to-data-binding-radio-button-in-wpf/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.225Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/16/customize-your-own-debugger-visualizer-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.224Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/17/define-first-and-last-in-enum-loop-it/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.224Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/17/disable-single-tree-node-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.224Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/17/not-everything-derives-from-object-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.224Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/17/run-sql-command-in-bat-file/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.224Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/10/summary-about-cpp-macro/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.223Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/11/why-you-can-not-see-your-wpf-app-icon/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.223Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/13/difference-between-if-debug-and-conditional-debug-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.223Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/13/print-message-to-anywhere-in-visual-studio-print-on-breakpoint/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.223Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/06/how-to-record-startup-time-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.222Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2012/07/06/what-is-oxcdcdcdcd/</loc>
     
     <lastmod>2019-12-20T08:29:07.222Z</lastmod>
@@ -2714,48 +2889,6 @@
     <loc>http://fresky.github.io/2012/07/10/how-to-find-the-optimized-this-pointer-in-windbg/</loc>
     
     <lastmod>2019-12-20T08:29:07.222Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/10/mozilla-thimble-online-html-editor/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.222Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/06/29/branch-prediction-why-is-processing-a-sorted-array-faster-than-an-unsorted-array/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.221Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/03/mutation-test/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.221Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/05/microsoft-fakes-framework/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.221Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2012/07/05/where-do-i-start-learn-windows-8/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.221Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2011/06/24/difference-between-push-back-and-resize-in-cpp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.220Z</lastmod>
     
   </url>
   
@@ -2774,27 +2907,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2012/02/24/how-to-remote-debug-asp-dot-net-and-silverlight/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.220Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2011/01/11/length-limit-of-http-url/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.219Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2011/01/11/where-system-environment-variables-stored-in-registry/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.219Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2011/01/16/windows-xp-take-too-long-to-unlock/</loc>
     
     <lastmod>2019-12-20T08:29:07.219Z</lastmod>
@@ -2809,27 +2921,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2011/06/23/dot-net-2-timer-elapsed-event-will-catch-all-exception-for-you/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.219Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/12/08/difference-between-response-write-and-clientscript-registerstartupscript-in-asp-dot-net/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.218Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/12/16/how-to-work-with-rtf-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.218Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2011/01/01/happy-new-year/</loc>
     
     <lastmod>2019-12-20T08:29:07.218Z</lastmod>
@@ -2837,77 +2928,7 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2011/01/11/GetEnvironmentVariable-issue-in-csharp/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.218Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/11/08/how-to-fix-issue-that-firefox-can-not-open-buzz/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.217Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/20/put-wcf-service-to-web-config/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.216Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/29/set-firefox-default-google-serach-to-com-not-hk/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.216Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/11/03/insert-travel-map-to-blog/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.216Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/11/08/customize-csharp-dropdown-list/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.216Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/11/02/add-checkbox-to-csharp-tree-view/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.216Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.215Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2010/10/09/thailand-travel/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.215Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/11/solve-could-not-load-file-or-assembly-in-wcf-service/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.215Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/15/android/</loc>
     
     <lastmod>2019-12-20T08:29:07.215Z</lastmod>
     
@@ -2922,13 +2943,6 @@
   
   <url>
     <loc>http://fresky.github.io/2010/10/09/europe-travel-visa-traffic-hotel/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.214Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/09/how-to-convert-rtf-to-silverlight-rightextbox/</loc>
     
     <lastmod>2019-12-20T08:29:07.214Z</lastmod>
     

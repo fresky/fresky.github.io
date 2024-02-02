@@ -26,7 +26,7 @@
 <meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_releasefromtrunk_hotfix.png">
 <meta property="og:image" content="http://fresky.github.io/images/trunkbaseddevelopment_branchforrelease.png">
 <meta property="article:published_time" content="2020-03-10T05:54:45.000Z">
-<meta property="article:modified_time" content="2020-03-10T12:02:38.641Z">
+<meta property="article:modified_time" content="2024-02-02T02:30:41.547Z">
 <meta property="article:author" content="Dawei XU">
 <meta property="article:tag" content="Development">
 <meta name="twitter:card" content="summary">
@@ -128,7 +128,7 @@
 <p>举个例子，如果我的产品是持续发布的，比如发布周期是1天两次，那么这个<strong>产品支持阶段</strong>就是半天，而我们大部分hotfix开发测试的时间也得差不多半天了吧，所以对于这种持续发布的产品，<strong>hotfix</strong>就不需要了。</p>
 <h2 id="Release分支"><a href="#Release分支" class="headerlink" title="Release分支"></a>Release分支</h2><p>对于<strong>release</strong>分支，也有几个概念。第一个是<strong>版本稳定时间</strong>，比如我们要上线一个版本，需要做一系列的测试才有足够的信心认为这个版本已经足够稳定可以发布了，这个时间就是<strong>版本稳定时间</strong>，他基本上就是在上线之前我们需要的手动测试或者自动化测试要花费的时间。第二个概念是<strong>代码冻结日期</strong>，<strong>代码冻结日期</strong>=<strong>产品发布日期</strong>-<strong>版本稳定时间</strong>。只有在<strong>版本稳定时间</strong>比较长的情况下才需要<strong>release</strong>分支，因为<strong>release</strong>分支存在的意义就是让我们可以在这个<strong>release</strong>分支冻结代码，然后在这个分支上做发布前的测试。</p>
 <p>举个例子，如果我们的产品有覆盖率非常全的自动化测试，而且这个自动化测试只需要5分钟就能跑完。那么我们的<strong>版本稳定时间</strong>就是5分钟，那么我们就不需要有<strong>代码冻结日期</strong>，也不需要有<strong>release</strong>分支，因为我们只需要5分钟的时间就知道这个产品能不能发布了。</p>
-<h1 id="GitHub-Flow"><a href="#GitHub-Flow" class="headerlink" title="GitHub Flow"></a>GitHub Flow</h1><p>从上面的分析我们可以看到，如果一个产品是持续发布的，其实就没有<strong>hotfix</strong>和<strong>release</strong>分支存在的意义了，同时，因为是持续发布，所以<strong>develop</strong>分支和<strong>master</strong>分支差别不大，那么也就没有必要维护这连哥哥主分支了，这其实就是我们下面要说的<strong>GitHub Flow</strong>。</p>
+<h1 id="GitHub-Flow"><a href="#GitHub-Flow" class="headerlink" title="GitHub Flow"></a>GitHub Flow</h1><p>从上面的分析我们可以看到，如果一个产品是持续发布的，其实就没有<strong>hotfix</strong>和<strong>release</strong>分支存在的意义了，同时，因为是持续发布，所以<strong>develop</strong>分支和<strong>master</strong>分支差别不大，那么也就没有必要维护这两个主分支了，这其实就是我们下面要说的<strong>GitHub Flow</strong>。</p>
 <p><strong>GitHub Flow</strong>最早是在2011年的这篇文章<a target="_blank" rel="noopener" href="http://scottchacon.com/2011/08/31/github-flow.html">GitHub Flow</a>中提出来的，如下图所示。</p>
 <img src="/images/githubflow1.png">
 <p><strong>GitHub Flow</strong>有如下要点：</p>
@@ -265,7 +265,7 @@
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 419</p>
+  <p class="asidetitle">Total Posts: 421</p>
 </div>
 
 
@@ -277,6 +277,14 @@
       <ul>
         
           <li>
+            * <a href="/2023/12/28/code-review-best-practices/">代码审查（Code Review）的一些最佳实践</a>
+          </li>
+        
+          <li>
+            * <a href="/2023/12/21/how-to-set-sla/">关于Service Level Agreement (SLA)的一些建议</a>
+          </li>
+        
+          <li>
             * <a href="/2023/11/15/developer-productivity/">程序员的开发效率可以衡量吗？</a>
           </li>
         
@@ -286,14 +294,6 @@
         
           <li>
             * <a href="/2022/12/06/good-meeting/">什么是好的会议</a>
-          </li>
-        
-          <li>
-            * <a href="/2022/11/25/manage-up-how-to-tell/">向上管理中需要怎么跟老板沟通</a>
-          </li>
-        
-          <li>
-            * <a href="/2022/11/23/manage-up-what-to-tell/">向上管理中需要告诉老板什么</a>
           </li>
         
       </ul>
@@ -308,31 +308,27 @@
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/CSharp/" title="CSharp">CSharp<sup>133</sup></a></li>
+				<li><a href="/tags/Programming/" title="Programming">Programming<sup>196</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Tool/" title="Tool">Tool<sup>92</sup></a></li>
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>132</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Other/" title="Other">Other<sup>62</sup></a></li>
+				<li><a href="/tags/Debug/" title="Debug">Debug<sup>35</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/CPP/" title="CPP">CPP<sup>50</sup></a></li>
+				<li><a href="/tags/Other/" title="Other">Other<sup>32</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Resource/" title="Resource">Resource<sup>35</sup></a></li>
+				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>19</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Debug/" title="Debug">Debug<sup>33</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+				<li><a href="/tags/Development/" title="Development">Development<sup>16</sup></a></li>
 			
 		
 			
@@ -344,47 +340,35 @@
 			
 		
 			
-				<li><a href="/tags/Github/" title="Github">Github<sup>11</sup></a></li>
+				<li><a href="/tags/Design/" title="Design">Design<sup>9</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Development/" title="Development">Development<sup>9</sup></a></li>
+				<li><a href="/tags/Process/" title="Process">Process<sup>8</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Design/" title="Design">Design<sup>6</sup></a></li>
+				<li><a href="/tags/Life/" title="Life">Life<sup>6</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>6</sup></a></li>
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>5</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
+				<li><a href="/tags/Cloud/" title="Cloud">Cloud<sup>3</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
+				<li><a href="/tags/Installer/" title="Installer">Installer<sup>2</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
+				<li><a href="/tags/Productivity/" title="Productivity">Productivity<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Regex/" title="Regex">Regex<sup>3</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Opensource/" title="Opensource">Opensource<sup>3</sup></a></li>
+				<li><a href="/tags/DevOps/" title="DevOps">DevOps<sup>1</sup></a></li>
 			
 		
 		</ul>
@@ -430,7 +414,7 @@
 		
 
 		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2023 
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2024 
 		
 		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
 		

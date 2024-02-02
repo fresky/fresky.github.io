@@ -78,6 +78,47 @@
   
 <section class="post" itemscope itemprop="blogitem">
   
+    <a href="/2015/09/16/how-to-change-time-back-after-user-change-time-in-windows/" title="Windows下如何检测用户修改了系统时间并且把系统时间改回来" itemprop="url">
+  
+    <h1 itemprop="name">Windows下如何检测用户修改了系统时间并且把系统时间改回来</h1>
+    
+     
+           <p itemprop="description" >有些时候我们不希望用户在使用我们的软件时修改系统时间，那么怎么检测用户是否修改系统时间呢？Windows会在系统时间修改时发送WM_TIMECHANGE消息，所以可以在C++的WindowProc函数中处理这个消息。如果是C#，可以直接用SystemEvents.TimeChan</p>
+        
+    
+    <time datetime="2015-09-16T12:04:36.000Z" itemprop="datePublished">Sep 16 2015</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
+    <a href="/2015/09/14/why-only-throw-invalidoperation-exception-when-launch-from-vs/" title="为什么只有在用Visual Studio启动程序时会抛出InvalidOperationException异常" itemprop="url">
+  
+    <h1 itemprop="name">为什么只有在用Visual Studio启动程序时会抛出InvalidOperationException异常</h1>
+    
+     
+           <p itemprop="description" >在我之前的博文C#中只使用Invokerequired来判断是不是UI线程可靠吗？提到过除了检查InvokeRequired，还需要检查IsHandleCreated。今天再分享一段关于InvokeRequired的代码。
+1234567891011121314public pa</p>
+        
+    
+    <time datetime="2015-09-14T10:22:24.000Z" itemprop="datePublished">Sep 14 2015</time>
+  </a>
+</section>
+
+
+
+
+
+
+  
+<section class="post" itemscope itemprop="blogitem">
+  
     <a href="/2015/09/11/analyze-wait-chain/" title="使用Windows的分析等待链（analyze wait chain）来诊断没用响应的应用" itemprop="url">
   
     <h1 itemprop="name">使用Windows的分析等待链（analyze wait chain）来诊断没用响应的应用</h1>
@@ -438,52 +479,9 @@ C#的Process.</p>
 
 
 
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2015/06/05/tdd-cyles/" title="TDD中的迭代" itemprop="url">
-  
-    <h1 itemprop="name">TDD中的迭代</h1>
-    
-     
-           <p itemprop="description" >一般人讨论TDD主要是集中在先写测试，还是后写测试上，其实我觉得先写后写都无所谓，重要是要写。另外其实TDD还包含很多别的我认为更重要的东西。The Cycles of TDD是Uncle Bob说的在TDD中包含的迭代。
-
-秒级迭代（nano-cycle）。TDD的3个定律，就</p>
-        
-    
-    <time datetime="2015-06-05T01:07:35.000Z" itemprop="datePublished">Jun 5 2015</time>
-  </a>
-</section>
-
-
-
-
-
-
-  
-<section class="post" itemscope itemprop="blogitem">
-  
-    <a href="/2015/06/03/use-procdump-to-detect-hung-window/" title="使用ProcDump在程序没有响应时自动收集dump" itemprop="url">
-  
-    <h1 itemprop="name">使用ProcDump在程序没有响应时自动收集dump</h1>
-    
-     
-           <p itemprop="description" >我在如何生成Dump文件中提到过可以使用ProcDump根据CPU使用情况，异常情况，程序是否没有反应，性能计数等来收集dump。
-今天举个具体的例子看看怎么用ProcDump来自动收集Hung的dump，ProcDump的-h参数会在window不响应window消息（就是我们</p>
-        
-    
-    <time datetime="2015-06-03T09:39:05.000Z" itemprop="datePublished">Jun 3 2015</time>
-  </a>
-</section>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix unexpand">
-    <a class="extend prev" rel="prev" href="/page/3/">&lt;span&gt;&lt;&#x2F;span&gt;Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/21/">21</a><a class="extend next" rel="next" href="/page/5/">Next&lt;span&gt;&lt;&#x2F;span&gt;</a>
+    <a class="extend prev" rel="prev" href="/page/3/">&lt;span&gt;&lt;&#x2F;span&gt;Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/22/">22</a><a class="extend next" rel="next" href="/page/5/">Next&lt;span&gt;&lt;&#x2F;span&gt;</a>
   </nav>
 
 </div>
@@ -499,7 +497,7 @@ C#的Process.</p>
 
   <br/>
 <div class="widget-wrap">
-  <p class="asidetitle">Total Posts: 419</p>
+  <p class="asidetitle">Total Posts: 421</p>
 </div>
 
 
@@ -511,6 +509,14 @@ C#的Process.</p>
       <ul>
         
           <li>
+            * <a href="/2023/12/28/code-review-best-practices/">代码审查（Code Review）的一些最佳实践</a>
+          </li>
+        
+          <li>
+            * <a href="/2023/12/21/how-to-set-sla/">关于Service Level Agreement (SLA)的一些建议</a>
+          </li>
+        
+          <li>
             * <a href="/2023/11/15/developer-productivity/">程序员的开发效率可以衡量吗？</a>
           </li>
         
@@ -520,14 +526,6 @@ C#的Process.</p>
         
           <li>
             * <a href="/2022/12/06/good-meeting/">什么是好的会议</a>
-          </li>
-        
-          <li>
-            * <a href="/2022/11/25/manage-up-how-to-tell/">向上管理中需要怎么跟老板沟通</a>
-          </li>
-        
-          <li>
-            * <a href="/2022/11/23/manage-up-what-to-tell/">向上管理中需要告诉老板什么</a>
           </li>
         
       </ul>
@@ -542,31 +540,27 @@ C#的Process.</p>
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/CSharp/" title="CSharp">CSharp<sup>133</sup></a></li>
+				<li><a href="/tags/Programming/" title="Programming">Programming<sup>196</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Tool/" title="Tool">Tool<sup>92</sup></a></li>
+				<li><a href="/tags/Tool/" title="Tool">Tool<sup>132</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Other/" title="Other">Other<sup>62</sup></a></li>
+				<li><a href="/tags/Debug/" title="Debug">Debug<sup>35</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/CPP/" title="CPP">CPP<sup>50</sup></a></li>
+				<li><a href="/tags/Other/" title="Other">Other<sup>32</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Resource/" title="Resource">Resource<sup>35</sup></a></li>
+				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>19</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Debug/" title="Debug">Debug<sup>33</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Html/" title="Html">Html<sup>13</sup></a></li>
+				<li><a href="/tags/Development/" title="Development">Development<sup>16</sup></a></li>
 			
 		
 			
@@ -578,47 +572,35 @@ C#的Process.</p>
 			
 		
 			
-				<li><a href="/tags/Github/" title="Github">Github<sup>11</sup></a></li>
+				<li><a href="/tags/Design/" title="Design">Design<sup>9</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Development/" title="Development">Development<sup>9</sup></a></li>
+				<li><a href="/tags/Process/" title="Process">Process<sup>8</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Design/" title="Design">Design<sup>6</sup></a></li>
+				<li><a href="/tags/Life/" title="Life">Life<sup>6</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/SoftSkill/" title="SoftSkill">SoftSkill<sup>6</sup></a></li>
+				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>5</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Life/" title="Life">Life<sup>5</sup></a></li>
+				<li><a href="/tags/Cloud/" title="Cloud">Cloud<sup>3</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Database/" title="Database">Database<sup>4</sup></a></li>
+				<li><a href="/tags/Installer/" title="Installer">Installer<sup>2</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Agile/" title="Agile">Agile<sup>4</sup></a></li>
+				<li><a href="/tags/Productivity/" title="Productivity">Productivity<sup>1</sup></a></li>
 			
 		
 			
-				<li><a href="/tags/Algorithm/" title="Algorithm">Algorithm<sup>4</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Python/" title="Python">Python<sup>3</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Regex/" title="Regex">Regex<sup>3</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Opensource/" title="Opensource">Opensource<sup>3</sup></a></li>
+				<li><a href="/tags/DevOps/" title="DevOps">DevOps<sup>1</sup></a></li>
 			
 		
 		</ul>
@@ -664,7 +646,7 @@ C#的Process.</p>
 		
 
 		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2023 
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2024 
 		
 		<a href="/about" target="_blank" title="Dawei XU">Dawei XU</a>
 		

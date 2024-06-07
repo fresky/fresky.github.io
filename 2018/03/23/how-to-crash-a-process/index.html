@@ -4,29 +4,29 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>如何在一个进程中注入崩溃 | Dawei XU</title>
+    <title>如何在一个进程中注入崩溃 | Dawei XU 徐大伟</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Dawei XU">
     
 
     
-    <meta name="description" content="我们在设计一个系统时经常需要考虑如果某个进程崩溃之后系统应该作何反应。可以用force any running process to crash中介绍的方法在一个进程中注入一个异常导致它崩溃。 这个方法使用了CreateRemoteThread.aspx)API。CreateRemoteThread可以在目标进程内创建一个线程来执行一段代码，只要这段代码能够crash，我们就能做到在目标进程中注入">
+    <meta name="description" content="我们在设计一个系统时经常需要考虑如果某个进程崩溃之后系统应该作何反应。可以用force any running process to crash中介绍的方法在一个进程中注入一个异常导致它崩溃。 这个方法使用了CreateRemoteThreadAPI。CreateRemoteThread可以在目标进程内创建一个线程来执行一段代码，只要这段代码能够crash，我们就能做到在目标进程中注入一个崩溃了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="如何在一个进程中注入崩溃">
 <meta property="og:url" content="http://fresky.github.io/2018/03/23/how-to-crash-a-process/index.html">
-<meta property="og:site_name" content="Dawei XU">
-<meta property="og:description" content="我们在设计一个系统时经常需要考虑如果某个进程崩溃之后系统应该作何反应。可以用force any running process to crash中介绍的方法在一个进程中注入一个异常导致它崩溃。 这个方法使用了CreateRemoteThread.aspx)API。CreateRemoteThread可以在目标进程内创建一个线程来执行一段代码，只要这段代码能够crash，我们就能做到在目标进程中注入">
+<meta property="og:site_name" content="Dawei XU 徐大伟">
+<meta property="og:description" content="我们在设计一个系统时经常需要考虑如果某个进程崩溃之后系统应该作何反应。可以用force any running process to crash中介绍的方法在一个进程中注入一个异常导致它崩溃。 这个方法使用了CreateRemoteThreadAPI。CreateRemoteThread可以在目标进程内创建一个线程来执行一段代码，只要这段代码能够crash，我们就能做到在目标进程中注入一个崩溃了。">
 <meta property="og:locale">
 <meta property="article:published_time" content="2018-03-23T15:21:22.000Z">
-<meta property="article:modified_time" content="2024-01-10T01:35:29.037Z">
+<meta property="article:modified_time" content="2024-02-04T08:47:42.685Z">
 <meta property="article:author" content="Dawei XU">
 <meta property="article:tag" content="Debug">
 <meta property="article:tag" content="Programming">
 <meta name="twitter:card" content="summary">
 
     
-    <link rel="alternative" href="/atom.xml" title="Dawei XU" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="Dawei XU 徐大伟" type="application/atom+xml">
     
     
     <link rel="icon" href="/img/favicon.ico">
@@ -46,11 +46,11 @@
 <div>
 		
 			<div id="imglogo">
-				<a href="/"><img src="/img/logo.png" alt="Dawei XU" title="Dawei XU"/></a>
+				<a href="/"><img src="/img/logo.png" alt="Dawei XU 徐大伟" title="Dawei XU 徐大伟"/></a>
 			</div>
 			
 			<div id="textlogo">
-				<h1 class="site-name"><a href="/" title="Dawei XU">Dawei XU</a></h1>
+				<h1 class="site-name"><a href="/" title="Dawei XU 徐大伟">Dawei XU 徐大伟</a></h1>
 				<h2 class="blog-motto">Flying in the free sky</h2>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
@@ -106,7 +106,7 @@
 		</div>
 		
 		<p>我们在设计一个系统时经常需要考虑如果某个进程崩溃之后系统应该作何反应。可以用<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/10686231/force-any-running-process-to-crash">force any running process to crash</a>中介绍的方法在一个进程中注入一个异常导致它崩溃。</p>
-<p>这个方法使用了<a target="_blank" rel="noopener" href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms682437(v=vs.85"><code>CreateRemoteThread</code></a>.aspx)API。<code>CreateRemoteThread</code>可以在目标进程内创建一个线程来执行一段代码，只要这段代码能够crash，我们就能做到在目标进程中注入一个崩溃了。下面是根据这个方法实现的C#的代码。</p>
+<p>这个方法使用了<a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createremotethread"><code>CreateRemoteThread</code></a>API。<code>CreateRemoteThread</code>可以在目标进程内创建一个线程来执行一段代码，只要这段代码能够crash，我们就能做到在目标进程中注入一个崩溃了。下面是根据这个方法实现的C#的代码。</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title">CrashInjecter</span></span><br><span class="line">&#123;</span><br><span class="line">    [<span class="meta">Flags</span>]</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">enum</span> ProcessAccessFlags : <span class="built_in">uint</span></span><br><span class="line">    &#123;</span><br><span class="line">        All = <span class="number">0x001F0FFF</span>,</span><br><span class="line">        Terminate = <span class="number">0x00000001</span>,</span><br><span class="line">        CreateThread = <span class="number">0x00000002</span>,</span><br><span class="line">        VirtualMemoryOperation = <span class="number">0x00000008</span>,</span><br><span class="line">        VirtualMemoryRead = <span class="number">0x00000010</span>,</span><br><span class="line">        VirtualMemoryWrite = <span class="number">0x00000020</span>,</span><br><span class="line">        DuplicateHandle = <span class="number">0x00000040</span>,</span><br><span class="line">        CreateProcess = <span class="number">0x000000080</span>,</span><br><span class="line">        SetQuota = <span class="number">0x00000100</span>,</span><br><span class="line">        SetInformation = <span class="number">0x00000200</span>,</span><br><span class="line">        QueryInformation = <span class="number">0x00000400</span>,</span><br><span class="line">        QueryLimitedInformation = <span class="number">0x00001000</span>,</span><br><span class="line">        Synchronize = <span class="number">0x00100000</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    [<span class="meta">DllImport(<span class="string">&quot;kernel32.dll&quot;</span>, SetLastError = true)</span>]</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">extern</span> IntPtr <span class="title">OpenProcess</span>(<span class="params"></span></span></span><br><span class="line"><span class="params"><span class="function">        ProcessAccessFlags processAccess,</span></span></span><br><span class="line"><span class="params"><span class="function">        <span class="built_in">bool</span> bInheritHandle,</span></span></span><br><span class="line"><span class="params"><span class="function">        <span class="built_in">int</span> processId</span></span></span><br><span class="line"><span class="params"><span class="function">    </span>)</span>;</span><br><span class="line"></span><br><span class="line">    [<span class="meta">DllImport(<span class="string">&quot;kernel32.dll&quot;</span>)</span>]</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">extern</span> IntPtr <span class="title">CreateRemoteThread</span>(<span class="params">IntPtr hProcess,</span></span></span><br><span class="line"><span class="params"><span class="function">        IntPtr lpThreadAttributes, <span class="built_in">uint</span> dwStackSize, IntPtr lpStartAddress,</span></span></span><br><span class="line"><span class="params"><span class="function">        IntPtr lpParameter, <span class="built_in">uint</span> dwCreationFlags, <span class="keyword">out</span> IntPtr lpThreadId</span>)</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Crash</span>(<span class="params"><span class="built_in">int</span> processId</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">var</span> hProcess = OpenProcess(ProcessAccessFlags.All, <span class="literal">false</span>, processId);</span><br><span class="line">        CreateRemoteThread(hProcess, IntPtr.Zero, <span class="number">0</span>, IntPtr.Zero, IntPtr.Zero, <span class="number">0</span>, <span class="keyword">out</span> _);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>  
 	</div>
 		<footer class="article-footer clearfix">

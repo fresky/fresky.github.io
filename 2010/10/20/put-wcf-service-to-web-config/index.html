@@ -11,15 +11,15 @@
     
 
     
-    <meta name="description" content="如果在Silverlight中使用了WCF service，会生成一个ServiceReferences.ClientConfig配置文件，里面描述了WCF service的地址等信息。最后会放在生成的.xap中，可以用zip软件打开.xap，看到这个文件。如果开发时的WCF service和部署时的WCF service地址不一样，就需要每次部署时手动修改.xap包中的这个文件，比较麻烦而且容易">
+    <meta name="description" content="如果在Silverlight中使用了WCF service，会生成一个ServiceReferences.ClientConfig配置文件，里面描述了WCF service的地址等信息。最后会放在生成的.xap中，可以用zip软件打开.xap，看到这个文件。 如果开发时的WCF service和部署时的WCF service地址不一样，就需要每次部署时手动修改.xap包中的这个文件，比较麻烦而且容">
 <meta property="og:type" content="article">
 <meta property="og:title" content="把Silverlight的WCF service配置地址放到web.config中">
 <meta property="og:url" content="http://fresky.github.io/2010/10/20/put-wcf-service-to-web-config/index.html">
 <meta property="og:site_name" content="Dawei XU 徐大伟">
-<meta property="og:description" content="如果在Silverlight中使用了WCF service，会生成一个ServiceReferences.ClientConfig配置文件，里面描述了WCF service的地址等信息。最后会放在生成的.xap中，可以用zip软件打开.xap，看到这个文件。如果开发时的WCF service和部署时的WCF service地址不一样，就需要每次部署时手动修改.xap包中的这个文件，比较麻烦而且容易">
+<meta property="og:description" content="如果在Silverlight中使用了WCF service，会生成一个ServiceReferences.ClientConfig配置文件，里面描述了WCF service的地址等信息。最后会放在生成的.xap中，可以用zip软件打开.xap，看到这个文件。 如果开发时的WCF service和部署时的WCF service地址不一样，就需要每次部署时手动修改.xap包中的这个文件，比较麻烦而且容">
 <meta property="og:locale">
 <meta property="article:published_time" content="2010-10-19T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-01-10T01:35:28.472Z">
+<meta property="article:modified_time" content="2024-12-27T06:45:13.646Z">
 <meta property="article:author" content="Dawei XU">
 <meta property="article:tag" content="Programming">
 <meta name="twitter:card" content="summary">
@@ -37,7 +37,7 @@
     
 <link rel="stylesheet" href="/css/style.css">
 
-<meta name="generator" content="Hexo 6.2.0"></head>
+<meta name="generator" content="Hexo 6.3.0"></head>
 
   <body>
     <header>
@@ -104,7 +104,10 @@
 		
 		</div>
 		
-		<p>如果在Silverlight中使用了WCF service，会生成一个ServiceReferences.ClientConfig配置文件，里面描述了WCF service的地址等信息。最后会放在生成的.xap中，可以用zip软件打开.xap，看到这个文件。<br /><br />如果开发时的WCF service和部署时的WCF service地址不一样，就需要每次部署时手动修改.xap包中的这个文件，比较麻烦而且容易出错。<br /><br />一个解决办法是把Service的地址放到web.config中，变成可配置的。然后在调用Siverlight的aspx或者html中通过initParms传给Silvergliht。下面是示例代码：<br /><br />aspx文件中：<br /></p>
+		<p>如果在Silverlight中使用了WCF service，会生成一个ServiceReferences.ClientConfig配置文件，里面描述了WCF service的地址等信息。最后会放在生成的.xap中，可以用zip软件打开.xap，看到这个文件。</p>
+<p>如果开发时的WCF service和部署时的WCF service地址不一样，就需要每次部署时手动修改.xap包中的这个文件，比较麻烦而且容易出错。</p>
+<p>一个解决办法是把Service的地址放到web.config中，变成可配置的。然后在调用Siverlight的aspx或者html中通过initParms传给Silvergliht。下面是示例代码：</p>
+<p>aspx文件中：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">param</span> <span class="attr">name</span>=<span class="string">&quot;initParams&quot;</span> <span class="attr">value</span>=<span class="string">&quot;wcfServiceUrl=&lt;%=ConfigurationManager.AppSettings[&quot;</span><span class="attr">WCFServiceAddress</span>&quot;] %&gt;</span> &quot; /&gt;</span><br></pre></td></tr></table></figure>
 <p>Silverlight文件初始化WCF Service是不用默认的构造函数，用这种方式：</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">BasicHttpBinding binding = <span class="keyword">new</span> BasicHttpBinding(BasicHttpSecurityMode.None);</span><br><span class="line">binding.MaxReceivedMessageSize = <span class="built_in">int</span>.MaxValue;</span><br><span class="line">binding.MaxBufferSize = <span class="built_in">int</span>.MaxValue;</span><br><span class="line">ServiceClient sc = <span class="keyword">new</span> ServiceClient(binding, <span class="keyword">new</span> EndpointAddress(<span class="keyword">new</span> Uri(wcfServiceUrl)));</span><br></pre></td></tr></table></figure>  

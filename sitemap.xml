@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://fresky.github.io/2010/11/02/add-checkbox-to-csharp-tree-view/</loc>
+    
+    <lastmod>2024-12-27T06:45:27.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/20/put-wcf-service-to-web-config/</loc>
+    
+    <lastmod>2024-12-27T06:45:13.646Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/09/thailand-travel/</loc>
+    
+    <lastmod>2024-12-27T06:44:27.947Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/</loc>
+    
+    <lastmod>2024-12-27T06:42:28.809Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/09/how-to-convert-rtf-to-silverlight-rightextbox/</loc>
+    
+    <lastmod>2024-12-27T06:42:12.164Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/09/europe-travel-visa-traffic-hotel/</loc>
+    
+    <lastmod>2024-12-27T06:41:48.004Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/09/europe-travel-summary/</loc>
+    
+    <lastmod>2024-12-27T06:14:45.745Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/15/android/</loc>
+    
+    <lastmod>2024-12-27T06:12:30.673Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://fresky.github.io/2010/10/09/edit-xml-in-gvim/</loc>
+    
+    <lastmod>2024-12-27T06:11:27.371Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://fresky.github.io/2018/03/23/how-to-crash-a-process/</loc>
     
     <lastmod>2024-02-04T08:47:42.685Z</lastmod>
@@ -1885,13 +1948,6 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2010/11/02/add-checkbox-to-csharp-tree-view/</loc>
-    
-    <lastmod>2024-01-10T01:35:28.475Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2010/10/29/set-firefox-default-google-serach-to-com-not-hk/</loc>
     
     <lastmod>2024-01-10T01:35:28.473Z</lastmod>
@@ -1899,37 +1955,9 @@
   </url>
   
   <url>
-    <loc>http://fresky.github.io/2010/10/20/put-wcf-service-to-web-config/</loc>
-    
-    <lastmod>2024-01-10T01:35:28.472Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/15/android/</loc>
-    
-    <lastmod>2024-01-10T01:35:28.471Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://fresky.github.io/2010/10/11/solve-could-not-load-file-or-assembly-in-wcf-service/</loc>
     
     <lastmod>2024-01-10T01:35:28.470Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/09/how-to-get-readonly-textbox-text-in-asp-dot-net/</loc>
-    
-    <lastmod>2024-01-10T01:35:28.468Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/09/how-to-convert-rtf-to-silverlight-rightextbox/</loc>
-    
-    <lastmod>2024-01-10T01:35:28.466Z</lastmod>
     
   </url>
   
@@ -2924,34 +2952,6 @@
     <loc>http://fresky.github.io/2011/01/01/happy-new-year/</loc>
     
     <lastmod>2019-12-20T08:29:07.218Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/09/thailand-travel/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.215Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/09/europe-travel-summary/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.214Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/09/europe-travel-visa-traffic-hotel/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.214Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://fresky.github.io/2010/10/09/edit-xml-in-gvim/</loc>
-    
-    <lastmod>2019-12-20T08:29:07.213Z</lastmod>
     
   </url>
   
